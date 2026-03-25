@@ -1,0 +1,78 @@
+source_blocks:
+  colombia_domestic_prices:
+    priority_rank: 1
+    recommended_sources:
+      - institution: "DANE"
+        dataset_name: "SIPSA wholesale price information"
+        url: "https://geoportal.dane.gov.co/geovisores/territorio/precios-mayoristas-sipsa/"
+        access_type: "web_portal_or_download"
+        expected_frequency: "daily_weekly_monthly"
+        notes: "Primary candidate for Colombian cocoa price proxies."
+
+  international_prices:
+    priority_rank: 2
+    recommended_sources:
+      - institution: "International Cocoa Organization"
+        dataset_name: "Quarterly Bulletin of Cocoa Statistics"
+        url: "https://www.icco.org/quarterly-bulletin-of-cocoa-statistics-2/"
+        access_type: "publication_and_tabular_statistics"
+        expected_frequency: "daily_monthly_quarterly"
+        notes: "Specialized cocoa benchmark source."
+      - institution: "World Bank Prospects Group"
+        dataset_name: "Commodities Price Data (The Pink Sheet)"
+        url: "https://thedocs.worldbank.org/en/doc/18675f1d1639c7a34d463f59263ba0a2-0050012025/world-bank-commodities-price-data-the-pink-sheet"
+        access_type: "xlsx_pdf"
+        expected_frequency: "monthly"
+        notes: "Cross-commodity benchmark with public downloads."
+
+  eu_market_prices:
+    priority_rank: 2
+    recommended_sources:
+      - institution: "Eurostat"
+        dataset_name: "Harmonised Index of Consumer Prices (HICP)"
+        url: "https://ec.europa.eu/eurostat/cache/metadata/en/prc_hicp_esms.htm"
+        access_type: "database_api_metadata"
+        expected_frequency: "monthly"
+        notes: "Use for chocolate, cocoa, or confectionery sub-indices."
+
+  trade_linkages:
+    priority_rank: 2
+    recommended_sources:
+      - institution: "United Nations Statistics Division"
+        dataset_name: "UN Comtrade"
+        url: "https://comtradedeveloper.un.org/apis"
+        access_type: "api_portal"
+        expected_frequency: "annual_and_some_monthly"
+        notes: "Use HS 1801, 1803, 1804, 1805, 1806 for cocoa trade linkages."
+
+  macro_controls:
+    priority_rank: 3
+    recommended_sources:
+      - institution: "Banco de la Republica or other official central-bank source"
+        dataset_name: "Historical exchange-rate series"
+        url: "https://www.banrep.gov.co/"
+        access_type: "official_database"
+        expected_frequency: "daily_monthly"
+        notes: "Use for COP/USD and related exchange rates."
+      - institution: "DANE"
+        dataset_name: "Consumer price index"
+        url: "https://www.dane.gov.co/"
+        access_type: "official_database"
+        expected_frequency: "monthly"
+        notes: "Use as deflator for Colombian nominal series."
+
+  climate_extension:
+    priority_rank: 4
+    recommended_sources:
+      - institution: "NASA POWER"
+        dataset_name: "Temporal APIs"
+        url: "https://power.larc.nasa.gov/docs/services/api/temporal/"
+        access_type: "api"
+        expected_frequency: "daily_monthly"
+        notes: "Use for department-level climate proxies motivated by the 2025 cocoa biomass-density paper."
+      - institution: "Ecological Informatics"
+        dataset_name: "Optimizing cocoa biomass density through integrated irrigation and drainage management under water stress: A linear programming approach"
+        url: "https://doi.org/10.1016/j.ecoinf.2025.103262"
+        access_type: "journal_article"
+        expected_frequency: "not_a_time_series_source"
+        notes: "Use for contextual variable selection, not mechanical merging into the core price model."

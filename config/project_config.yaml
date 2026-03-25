@@ -1,0 +1,52 @@
+project:
+  name: "Cocoa volatility and supply chain vulnerability of smallholder cocoa farmers to global commodity price volatility: From Colombian farms to European markets"
+  slug: "cocoa_volatility"
+  run_date: "2026-03-25"
+  timezone: "America/Bogota"
+  default_frequency: "monthly"
+
+analysis:
+  start_date: "2000-01-01"
+  end_date: null
+  aggregation_method: "mean"
+  deflator_base: 100.0
+  log_transform: true
+  compute_returns: true
+  stationarity_tests:
+    - "adf"
+    - "kpss"
+    - "pp"
+  arima_orders:
+    - [1, 1, 1]
+    - [2, 1, 1]
+    - [1, 1, 2]
+  max_var_lags: 12
+  impulse_response_horizon: 12
+
+series:
+  domestic_price: "colombia_cocoa_price_cop_kg"
+  international_price: "world_cocoa_price_usd_mt"
+  eu_price: "eu_hicp_chocolate_index"
+  exchange_rate: "cop_usd_exchange_rate"
+  inflation_index: "colombia_cpi_index"
+
+trade:
+  hs_codes:
+    - "1801"
+    - "1803"
+    - "1804"
+    - "1805"
+    - "1806"
+
+climate_extension:
+  enabled: true
+  department_selection_rule: "top_5_latest_official_cocoa_production"
+  preferred_frequency: "monthly"
+  nasa_power_parameters:
+    - "PRECTOTCORR"
+    - "T2M"
+    - "T2M_MAX"
+    - "T2M_MIN"
+    - "RH2M"
+    - "WS2M"
+    - "ALLSKY_SFC_SW_DWN"

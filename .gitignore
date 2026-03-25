@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local editors
+.vscode/
+.idea/
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Data and outputs generated during runs
+outputs/logs/*.log
+outputs/tables/*
+outputs/figures/*
+outputs/maps/*
+outputs/appendix/*
+data/interim/cleaned/*
+data/interim/harmonized/*
+data/interim/merged/*
+data/processed/analysis_ready/*
+data/processed/model_inputs/*
+data/processed/final_series/*
+
+# Keep placeholder files
+!outputs/**/.gitkeep
+!data/**/.gitkeep
