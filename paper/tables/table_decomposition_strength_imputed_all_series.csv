@@ -1,0 +1,13 @@
+variable,label,source_block,trend_strength,seasonal_strength,residual_std
+colombia_cocoa_price_cop_kg,Colombian cocoa price,colombia_domestic_prices,0.7256131257127323,0.0,5113.768588296957
+world_cocoa_price_usd_mt,World cocoa benchmark price,international_prices,0.8210789386942968,0.09301821589373616,1193.1550082057506
+eu_hicp_chocolate_index,EU chocolate or cocoa consumer price index,eu_market_prices,0.9929423452708999,0.4542058321560972,1.680327747905353
+cop_usd_exchange_rate,COP to USD exchange rate,macro_controls,0.3707039258486864,0.06271569507761876,242.80017490993814
+brent_oil_usd_bbl,Brent oil price,macro_controls,0.5363465411408835,0.1701546753030373,9.24825885741479
+nasa_precipitation_mm_day,NASA precipitation,climate_extension,0.0,0.5047056606206972,2.5256102675713805
+nasa_temperature_c,NASA air temperature,climate_extension,0.19151848276481176,0.11473415129708453,1.101320804137931
+nasa_temperature_max_c,NASA max air temperature,climate_extension,0.15968802892063994,0.1699901899297328,2.3275553371112387
+nasa_temperature_min_c,NASA min air temperature,climate_extension,0.16100892459053406,0.2928527713808755,0.6705282754183197
+nasa_relative_humidity_pct,NASA relative humidity,climate_extension,0.24856190347330975,0.23840419248678824,6.6331287377987875
+nasa_wind_speed_ms,NASA wind speed,climate_extension,0.22238089972590713,0.47009601388973676,0.01054709894062698
+nasa_surface_solar_radiation_mj_m2_day,NASA surface solar radiation,climate_extension,0.1737957542400872,0.690965882994558,0.6351242535428803

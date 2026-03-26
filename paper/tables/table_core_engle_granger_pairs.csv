@@ -1,0 +1,7 @@
+statistic,p_value,critical_value_1pct,critical_value_5pct,critical_value_10pct,sample_variant,model_id,dependent_variable,explanatory_variable
+-2.9871167256086073,0.11329968453505262,-4.124073179546328,-3.458559104190696,-3.1286565359477123,balanced_non_imputed,world_to_colombia_levels,log_colombia_cocoa_price_cop_kg,log_world_cocoa_price_usd_mt
+-1.2829636801797262,0.8348174001871831,-4.124073179546328,-3.458559104190696,-3.1286565359477123,balanced_non_imputed,world_to_eu_levels,log_eu_hicp_chocolate_index,log_world_cocoa_price_usd_mt
+-0.9143523906987054,0.9179247539940605,-4.124073179546328,-3.458559104190696,-3.1286565359477123,balanced_non_imputed,colombia_to_eu_levels,log_eu_hicp_chocolate_index,log_colombia_cocoa_price_cop_kg
+-2.9146567367668967,0.13191022235956334,-4.1194525,-3.456155221893491,-3.1270174556213015,imputed_shared_window,world_to_colombia_levels,log_colombia_cocoa_price_cop_kg,log_world_cocoa_price_usd_mt
+-1.3319372426067295,0.8198905549811204,-4.1194525,-3.456155221893491,-3.1270174556213015,imputed_shared_window,world_to_eu_levels,log_eu_hicp_chocolate_index,log_world_cocoa_price_usd_mt
+-0.7845803825113659,0.9367001582249577,-4.1194525,-3.456155221893491,-3.1270174556213015,imputed_shared_window,colombia_to_eu_levels,log_eu_hicp_chocolate_index,log_colombia_cocoa_price_cop_kg

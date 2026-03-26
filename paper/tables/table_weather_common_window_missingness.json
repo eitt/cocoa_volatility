@@ -1,0 +1,30 @@
+[
+  {
+    "variable": "nasa_precipitation_mm_day",
+    "missing_observations": 0
+  },
+  {
+    "variable": "nasa_temperature_c",
+    "missing_observations": 0
+  },
+  {
+    "variable": "nasa_temperature_max_c",
+    "missing_observations": 0
+  },
+  {
+    "variable": "nasa_temperature_min_c",
+    "missing_observations": 0
+  },
+  {
+    "variable": "nasa_relative_humidity_pct",
+    "missing_observations": 0
+  },
+  {
+    "variable": "nasa_wind_speed_ms",
+    "missing_observations": 0
+  },
+  {
+    "variable": "nasa_surface_solar_radiation_mj_m2_day",
+    "missing_observations": 1
+  }
+]

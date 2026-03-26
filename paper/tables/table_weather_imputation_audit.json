@@ -1,0 +1,9 @@
+[
+  {
+    "date": "2025-12-01T00:00:00.000",
+    "variable": "nasa_surface_solar_radiation_mj_m2_day",
+    "original_value": null,
+    "knn_imputed_value": 18.392,
+    "iterative_imputed_value": 18.3870040004
+  }
+]

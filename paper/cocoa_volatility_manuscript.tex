@@ -15,10 +15,16 @@
 \usepackage{hyperref}
 \usepackage[numbers]{natbib}
 \usepackage{caption}
+\usepackage{academicons}
+\usepackage{xcolor}
+
+\definecolor{orcidgreen}{HTML}{A6CE39}
 
 \hypersetup{
   colorlinks=true,
   linkcolor=black,
+  filecolor=black,
+  urlcolor=blue
   citecolor=black,
   urlcolor=blue
 }
@@ -32,20 +38,25 @@ Evidence from Colombian Domestic Prices, International Cocoa Benchmarks, Europea
 
 % Replace the placeholder author metadata before submission.
 \author{
-Author 1\\
-\small Affiliation pending\\
-\small \texttt{author1@example.com}
+Leonardo H. Talero-Sarmiento\,%
+\href{https://orcid.org/0000-0002-4129-9163}{\textcolor{orcidgreen}{\aiOrcid}}\
+\small Universidad Autonoma de Bucaramanga\\
+\small \texttt{ltalero@unab.edu.co}
 \and
-Author 2\\
-\small Affiliation pending\\
-\small \texttt{author2@example.com}
+Gabriel Weber\,%
+\href{https://orcid.org/0000-0003-2120-1648}{\textcolor{orcidgreen}{\aiOrcid}}\\
+\small ESSCA School of Management\\
+\small \texttt{gabriel.weber@essca.fr}
 }
 
-\date{March 26, 2026}
+\date{\today}
+
 
 \begin{document}
 
 \maketitle
+
+\tableofcontents
 
 \begin{abstract}
 This paper develops a reproducible monthly workflow for studying how cocoa-price volatility travels from international commodity markets into Colombian producer-linked prices and European downstream chocolate prices, and how that process can be interpreted through a smallholder-vulnerability lens. The data contribution is central: the project harmonizes official or documented source blocks for Colombian weekly cacao reference prices from AgroNet, the World Bank monthly cocoa benchmark, Eurostat chocolate-price indicators, Colombian exchange rates, Brent oil prices, and NASA POWER weather variables for San Vicente de Chucur\'{\i}, Santander. The main empirical challenge is unequal sample length across the supply chain. The paper therefore separates full-history descriptive context from an aligned common window and reports transparent block-specific imputation only where a single missing observation would otherwise break the shared monthly series. Two complementary strategies are defined. The first treats weather as contextual vulnerability information around a core supply-chain transmission system. The second, more demanding strategy treats weather as part of an augmented cointegration system, but only as an exploratory extension because the climate-augmented common window remains short. Preliminary results suggest that global cocoa returns are the dominant short-run driver of Colombian cocoa returns, while weather variables sharpen the vulnerability interpretation more than they overturn the price-transmission story. The draft is designed to be directly connected to repository figures, tables, and bibliography assets.
@@ -263,7 +274,7 @@ Table~\ref{tab:stats_overview} highlights two features that matter for the rest 
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.95\textwidth]{../outputs/figures/figure_indexed_core_series_common_window_imputed.png}
+\includegraphics[width=0.95\textwidth]{figures/figure_indexed_core_series_common_window_imputed.png}
 \caption{Indexed core series in the imputed shared monthly window. The figure compares proportional movements across Colombian cocoa, the world cocoa benchmark, the EU chocolate index, the exchange rate, and Brent oil in the common aligned sample.}
 \label{fig:indexed_core}
 \end{figure}
@@ -272,7 +283,7 @@ The common-window plot in Figure~\ref{fig:indexed_core} shows the close comoveme
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.90\textwidth]{../outputs/figures/figure_correlation_heatmap_levels_common_window_imputed.png}
+\includegraphics[width=0.90\textwidth]{figures/figure_correlation_heatmap_levels_common_window_imputed.png}
 \caption{Correlation heatmap for the imputed aligned core system. The strongest relationship is between Colombian cocoa and the world cocoa benchmark, while the exchange rate is weakly associated with the price system in levels over the shared window.}
 \label{fig:core_corrplot}
 \end{figure}
@@ -309,7 +320,7 @@ The cointegration and causality diagnostics reinforce a cautious reading. The bi
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth]{../outputs/figures/figure_core_return_impulse_response.png}
+\includegraphics[width=\textwidth]{figures/figure_core_return_impulse_response.png}
 \caption{Impulse-response matrix for the core return VAR. Acronyms identify the return series for world cocoa, Colombian cocoa, and the EU chocolate index.}
 \label{fig:irf}
 \end{figure}
@@ -320,7 +331,7 @@ The weather chapter asks a different question. It does not ask whether local wea
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth]{../outputs/figures/figure_climate_core_correlation_common_sample.png}
+\includegraphics[width=\textwidth]{figures/figure_climate_core_correlation_common_sample.png}
 \caption{Climate-core correlation matrix in the aligned common sample. This figure plays the parallel role for the weather block that the impulse-response matrix plays for the core transmission block: it summarizes how the selected weather variables and the wider climate block relate to the price system without forcing an unstable weather-augmented VAR in a 51-observation complete sample.}
 \label{fig:weather_corrplot}
 \end{figure}
@@ -329,7 +340,7 @@ Figure~\ref{fig:weather_corrplot} is included because the second block is not cu
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{../outputs/figures/figure_climate_series_panels_common_window.png}
+\includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{figures/figure_climate_series_panels_common_window.png}
 \caption{Weather panels for the aligned common window in San Vicente de Chucur\'{\i}, Santander. These series provide the empirical context for the vulnerability chapter and for the exploratory climate-augmented approach.}
 \label{fig:climate_panels}
 \end{figure}
@@ -362,7 +373,7 @@ The weather extension improves adjusted $R^2$ only modestly relative to the core
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.93\textwidth]{../outputs/figures/figure_weather_vulnerability_index.png}
+\includegraphics[width=0.93\textwidth]{figures/figure_weather_vulnerability_index.png}
 \caption{Exploratory weather-extended vulnerability indicators. The farmer exposure index combines domestic volatility, fitted market-transmission shock, and weather stress; the livelihood-risk score additionally incorporates world volatility.}
 \label{fig:vulnerability}
 \end{figure}

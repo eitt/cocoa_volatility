@@ -1,0 +1,8 @@
+variable,label,source_block,trend_strength,seasonal_strength,residual_std
+nasa_precipitation_mm_day,NASA precipitation,climate_extension,0.0,0.5047056606206972,2.5256102675713805
+nasa_temperature_c,NASA air temperature,climate_extension,0.19151848276481176,0.11473415129708453,1.101320804137931
+nasa_temperature_max_c,NASA max air temperature,climate_extension,0.15968802892063994,0.1699901899297328,2.3275553371112387
+nasa_temperature_min_c,NASA min air temperature,climate_extension,0.16100892459053406,0.2928527713808755,0.6705282754183197
+nasa_relative_humidity_pct,NASA relative humidity,climate_extension,0.24856190347330975,0.23840419248678824,6.6331287377987875
+nasa_wind_speed_ms,NASA wind speed,climate_extension,0.22238089972590713,0.47009601388973676,0.01054709894062698
+nasa_surface_solar_radiation_mj_m2_day,NASA surface solar radiation,climate_extension,0.1737957542400872,0.690965882994558,0.6351242535428803

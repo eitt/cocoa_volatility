@@ -1,0 +1,2 @@
+date,variable,original_value,knn_imputed_value,iterative_imputed_value
+2025-12-01,nasa_surface_solar_radiation_mj_m2_day,,18.392,18.387004000363667

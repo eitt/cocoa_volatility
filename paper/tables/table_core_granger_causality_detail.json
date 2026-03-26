@@ -1,0 +1,164 @@
+[
+  {
+    "lag": 1,
+    "statistic": 4.0539517818,
+    "p_value": 0.0496934317,
+    "sample_variant": "imputed_shared_window",
+    "direction_id": "world_to_colombia",
+    "cause_variable": "dlog_world_cocoa_price_usd_mt",
+    "effect_variable": "dlog_colombia_cocoa_price_cop_kg"
+  },
+  {
+    "lag": 2,
+    "statistic": 2.7386346601,
+    "p_value": 0.075444029,
+    "sample_variant": "imputed_shared_window",
+    "direction_id": "world_to_colombia",
+    "cause_variable": "dlog_world_cocoa_price_usd_mt",
+    "effect_variable": "dlog_colombia_cocoa_price_cop_kg"
+  },
+  {
+    "lag": 3,
+    "statistic": 3.5318080229,
+    "p_value": 0.0227267367,
+    "sample_variant": "imputed_shared_window",
+    "direction_id": "world_to_colombia",
+    "cause_variable": "dlog_world_cocoa_price_usd_mt",
+    "effect_variable": "dlog_colombia_cocoa_price_cop_kg"
+  },
+  {
+    "lag": 1,
+    "statistic": 6.6347613209,
+    "p_value": 0.0131350326,
+    "sample_variant": "imputed_shared_window",
+    "direction_id": "colombia_to_world",
+    "cause_variable": "dlog_colombia_cocoa_price_cop_kg",
+    "effect_variable": "dlog_world_cocoa_price_usd_mt"
+  },
+  {
+    "lag": 2,
+    "statistic": 2.7346290668,
+    "p_value": 0.0757139387,
+    "sample_variant": "imputed_shared_window",
+    "direction_id": "colombia_to_world",
+    "cause_variable": "dlog_colombia_cocoa_price_cop_kg",
+    "effect_variable": "dlog_world_cocoa_price_usd_mt"
+  },
+  {
+    "lag": 3,
+    "statistic": 3.3780752122,
+    "p_value": 0.0269485937,
+    "sample_variant": "imputed_shared_window",
+    "direction_id": "colombia_to_world",
+    "cause_variable": "dlog_colombia_cocoa_price_cop_kg",
+    "effect_variable": "dlog_world_cocoa_price_usd_mt"
+  },
+  {
+    "lag": 1,
+    "statistic": 0.0007330714,
+    "p_value": 0.9785119381,
+    "sample_variant": "imputed_shared_window",
+    "direction_id": "colombia_to_eu",
+    "cause_variable": "dlog_colombia_cocoa_price_cop_kg",
+    "effect_variable": "dlog_eu_hicp_chocolate_index"
+  },
+  {
+    "lag": 2,
+    "statistic": 0.2233110825,
+    "p_value": 0.8007470404,
+    "sample_variant": "imputed_shared_window",
+    "direction_id": "colombia_to_eu",
+    "cause_variable": "dlog_colombia_cocoa_price_cop_kg",
+    "effect_variable": "dlog_eu_hicp_chocolate_index"
+  },
+  {
+    "lag": 3,
+    "statistic": 0.2360821329,
+    "p_value": 0.8707058848,
+    "sample_variant": "imputed_shared_window",
+    "direction_id": "colombia_to_eu",
+    "cause_variable": "dlog_colombia_cocoa_price_cop_kg",
+    "effect_variable": "dlog_eu_hicp_chocolate_index"
+  },
+  {
+    "lag": 1,
+    "statistic": 0.1586339368,
+    "p_value": 0.6921834671,
+    "sample_variant": "imputed_shared_window",
+    "direction_id": "eu_to_colombia",
+    "cause_variable": "dlog_eu_hicp_chocolate_index",
+    "effect_variable": "dlog_colombia_cocoa_price_cop_kg"
+  },
+  {
+    "lag": 2,
+    "statistic": 0.2485677165,
+    "p_value": 0.7809807905,
+    "sample_variant": "imputed_shared_window",
+    "direction_id": "eu_to_colombia",
+    "cause_variable": "dlog_eu_hicp_chocolate_index",
+    "effect_variable": "dlog_colombia_cocoa_price_cop_kg"
+  },
+  {
+    "lag": 3,
+    "statistic": 0.5656896067,
+    "p_value": 0.6406696222,
+    "sample_variant": "imputed_shared_window",
+    "direction_id": "eu_to_colombia",
+    "cause_variable": "dlog_eu_hicp_chocolate_index",
+    "effect_variable": "dlog_colombia_cocoa_price_cop_kg"
+  },
+  {
+    "lag": 1,
+    "statistic": 0.1740048177,
+    "p_value": 0.6784366747,
+    "sample_variant": "imputed_shared_window",
+    "direction_id": "world_to_eu",
+    "cause_variable": "dlog_world_cocoa_price_usd_mt",
+    "effect_variable": "dlog_eu_hicp_chocolate_index"
+  },
+  {
+    "lag": 2,
+    "statistic": 0.5217491537,
+    "p_value": 0.5970277443,
+    "sample_variant": "imputed_shared_window",
+    "direction_id": "world_to_eu",
+    "cause_variable": "dlog_world_cocoa_price_usd_mt",
+    "effect_variable": "dlog_eu_hicp_chocolate_index"
+  },
+  {
+    "lag": 3,
+    "statistic": 1.0891536297,
+    "p_value": 0.3641963595,
+    "sample_variant": "imputed_shared_window",
+    "direction_id": "world_to_eu",
+    "cause_variable": "dlog_world_cocoa_price_usd_mt",
+    "effect_variable": "dlog_eu_hicp_chocolate_index"
+  },
+  {
+    "lag": 1,
+    "statistic": 0.0289803434,
+    "p_value": 0.8655399481,
+    "sample_variant": "imputed_shared_window",
+    "direction_id": "eu_to_world",
+    "cause_variable": "dlog_eu_hicp_chocolate_index",
+    "effect_variable": "dlog_world_cocoa_price_usd_mt"
+  },
+  {
+    "lag": 2,
+    "statistic": 1.7191656561,
+    "p_value": 0.1907766237,
+    "sample_variant": "imputed_shared_window",
+    "direction_id": "eu_to_world",
+    "cause_variable": "dlog_eu_hicp_chocolate_index",
+    "effect_variable": "dlog_world_cocoa_price_usd_mt"
+  },
+  {
+    "lag": 3,
+    "statistic": 1.653414526,
+    "p_value": 0.1915897074,
+    "sample_variant": "imputed_shared_window",
+    "direction_id": "eu_to_world",
+    "cause_variable": "dlog_eu_hicp_chocolate_index",
+    "effect_variable": "dlog_world_cocoa_price_usd_mt"
+  }
+]

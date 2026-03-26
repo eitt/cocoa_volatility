@@ -1,0 +1,29 @@
+[
+  {
+    "lag": 1,
+    "statistic": 4.0539517818,
+    "p_value": 0.0496934317,
+    "sample_variant": "imputed_shared_window",
+    "direction_id": "world_to_colombia",
+    "cause_variable": "dlog_world_cocoa_price_usd_mt",
+    "effect_variable": "dlog_colombia_cocoa_price_cop_kg"
+  },
+  {
+    "lag": 2,
+    "statistic": 2.7386346601,
+    "p_value": 0.075444029,
+    "sample_variant": "imputed_shared_window",
+    "direction_id": "world_to_colombia",
+    "cause_variable": "dlog_world_cocoa_price_usd_mt",
+    "effect_variable": "dlog_colombia_cocoa_price_cop_kg"
+  },
+  {
+    "lag": 3,
+    "statistic": 3.5318080229,
+    "p_value": 0.0227267367,
+    "sample_variant": "imputed_shared_window",
+    "direction_id": "world_to_colombia",
+    "cause_variable": "dlog_world_cocoa_price_usd_mt",
+    "effect_variable": "dlog_colombia_cocoa_price_cop_kg"
+  }
+]

@@ -1,0 +1,6 @@
+variable,test,lags,statistic,p_value,f_statistic,f_p_value,observations,series_form,base_variable
+colombia_cocoa_price_cop_kg_log_return,arch_lm,6.0,3.321381202671735,0.7675622418284435,0.5058499648240202,0.80009984776181,52.0,log_return,colombia_cocoa_price_cop_kg
+world_cocoa_price_usd_mt_log_return,arch_lm,6.0,16.105267148295347,0.013199971178278414,3.501761898432569,0.007242634285283989,52.0,log_return,world_cocoa_price_usd_mt
+eu_hicp_chocolate_index_log_return,arch_lm,6.0,18.360388244572658,0.005391938697369964,4.317807523699678,0.001971948347263994,52.0,log_return,eu_hicp_chocolate_index
+cop_usd_exchange_rate_log_return,arch_lm,6.0,2.1703071119437194,0.903387895322137,0.32185934461517485,0.9215685320150913,52.0,log_return,cop_usd_exchange_rate
+brent_oil_usd_bbl_log_return,arch_lm,6.0,11.168397182300826,0.0833092756121298,2.084158517335513,0.0772954656841003,52.0,log_return,brent_oil_usd_bbl

@@ -1,0 +1,42 @@
+[
+  {
+    "sample_name": "merged_panel_calendar",
+    "variables": "colombia_cocoa_price_cop_kg, world_cocoa_price_usd_mt, eu_hicp_chocolate_index, cop_usd_exchange_rate, brent_oil_usd_bbl",
+    "rows": 795,
+    "start_date": "1960-01-01",
+    "end_date": "2026-03-01",
+    "span_months": 795
+  },
+  {
+    "sample_name": "price_system_overlap",
+    "variables": "colombia_cocoa_price_cop_kg, world_cocoa_price_usd_mt, eu_hicp_chocolate_index",
+    "rows": 52,
+    "start_date": "2021-08-01",
+    "end_date": "2025-12-01",
+    "span_months": 53
+  },
+  {
+    "sample_name": "full_controls_overlap",
+    "variables": "colombia_cocoa_price_cop_kg, world_cocoa_price_usd_mt, eu_hicp_chocolate_index, cop_usd_exchange_rate, brent_oil_usd_bbl",
+    "rows": 52,
+    "start_date": "2021-08-01",
+    "end_date": "2025-12-01",
+    "span_months": 53
+  },
+  {
+    "sample_name": "common_calendar_window",
+    "variables": "colombia_cocoa_price_cop_kg, world_cocoa_price_usd_mt, eu_hicp_chocolate_index, cop_usd_exchange_rate, brent_oil_usd_bbl",
+    "rows": 53,
+    "start_date": "2021-08-01",
+    "end_date": "2025-12-01",
+    "span_months": 53
+  },
+  {
+    "sample_name": "balanced_common_sample",
+    "variables": "colombia_cocoa_price_cop_kg, world_cocoa_price_usd_mt, eu_hicp_chocolate_index, cop_usd_exchange_rate, brent_oil_usd_bbl",
+    "rows": 52,
+    "start_date": "2021-08-01",
+    "end_date": "2025-12-01",
+    "span_months": 53
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "chapter": "core_transmission",
+    "model_id": "core_domestic_returns",
+    "sample_variant": "imputed_shared_window",
+    "dependent_variable": "dlog_colombia_cocoa_price_cop_kg",
+    "specification": "dlog_domestic ~ dlog_world + dlog_fx + dlog_brent",
+    "parameter": "const",
+    "coefficient": 0.0013803863,
+    "std_error": 0.008934709,
+    "t_stat": 0.1544970612,
+    "p_value": 0.8772178282,
+    "ci_lower": -0.0161313216,
+    "ci_upper": 0.0188920942
+  },
+  {
+    "chapter": "core_transmission",
+    "model_id": "core_domestic_returns",
+    "sample_variant": "imputed_shared_window",
+    "dependent_variable": "dlog_colombia_cocoa_price_cop_kg",
+    "specification": "dlog_domestic ~ dlog_world + dlog_fx + dlog_brent",
+    "parameter": "dlog_world_cocoa_price_usd_mt",
+    "coefficient": 0.7957009138,
+    "std_error": 0.1797386897,
+    "t_stat": 4.4269873962,
+    "p_value": 9.5558e-06,
+    "ci_lower": 0.4434195554,
+    "ci_upper": 1.1479822722
+  },
+  {
+    "chapter": "core_transmission",
+    "model_id": "core_domestic_returns",
+    "sample_variant": "imputed_shared_window",
+    "dependent_variable": "dlog_colombia_cocoa_price_cop_kg",
+    "specification": "dlog_domestic ~ dlog_world + dlog_fx + dlog_brent",
+    "parameter": "dlog_cop_usd_exchange_rate",
+    "coefficient": 0.2176236522,
+    "std_error": 0.2042706365,
+    "t_stat": 1.0653692375,
+    "p_value": 0.286708872,
+    "ci_lower": -0.1827394384,
+    "ci_upper": 0.6179867429
+  },
+  {
+    "chapter": "core_transmission",
+    "model_id": "core_domestic_returns",
+    "sample_variant": "imputed_shared_window",
+    "dependent_variable": "dlog_colombia_cocoa_price_cop_kg",
+    "specification": "dlog_domestic ~ dlog_world + dlog_fx + dlog_brent",
+    "parameter": "dlog_brent_oil_usd_bbl",
+    "coefficient": 0.0292160327,
+    "std_error": 0.0673739532,
+    "t_stat": 0.4336398754,
+    "p_value": 0.6645499736,
+    "ci_lower": -0.1028344891,
+    "ci_upper": 0.1612665545
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "statistic": -2.9871167256,
+    "p_value": 0.1132996845,
+    "critical_value_1pct": -4.1240731795,
+    "critical_value_5pct": -3.4585591042,
+    "critical_value_10pct": -3.1286565359,
+    "sample_variant": "balanced_non_imputed",
+    "model_id": "world_to_colombia_levels",
+    "dependent_variable": "log_colombia_cocoa_price_cop_kg",
+    "explanatory_variable": "log_world_cocoa_price_usd_mt"
+  },
+  {
+    "statistic": -1.2829636802,
+    "p_value": 0.8348174002,
+    "critical_value_1pct": -4.1240731795,
+    "critical_value_5pct": -3.4585591042,
+    "critical_value_10pct": -3.1286565359,
+    "sample_variant": "balanced_non_imputed",
+    "model_id": "world_to_eu_levels",
+    "dependent_variable": "log_eu_hicp_chocolate_index",
+    "explanatory_variable": "log_world_cocoa_price_usd_mt"
+  },
+  {
+    "statistic": -0.9143523907,
+    "p_value": 0.917924754,
+    "critical_value_1pct": -4.1240731795,
+    "critical_value_5pct": -3.4585591042,
+    "critical_value_10pct": -3.1286565359,
+    "sample_variant": "balanced_non_imputed",
+    "model_id": "colombia_to_eu_levels",
+    "dependent_variable": "log_eu_hicp_chocolate_index",
+    "explanatory_variable": "log_colombia_cocoa_price_cop_kg"
+  },
+  {
+    "statistic": -2.9146567368,
+    "p_value": 0.1319102224,
+    "critical_value_1pct": -4.1194525,
+    "critical_value_5pct": -3.4561552219,
+    "critical_value_10pct": -3.1270174556,
+    "sample_variant": "imputed_shared_window",
+    "model_id": "world_to_colombia_levels",
+    "dependent_variable": "log_colombia_cocoa_price_cop_kg",
+    "explanatory_variable": "log_world_cocoa_price_usd_mt"
+  },
+  {
+    "statistic": -1.3319372426,
+    "p_value": 0.819890555,
+    "critical_value_1pct": -4.1194525,
+    "critical_value_5pct": -3.4561552219,
+    "critical_value_10pct": -3.1270174556,
+    "sample_variant": "imputed_shared_window",
+    "model_id": "world_to_eu_levels",
+    "dependent_variable": "log_eu_hicp_chocolate_index",
+    "explanatory_variable": "log_world_cocoa_price_usd_mt"
+  },
+  {
+    "statistic": -0.7845803825,
+    "p_value": 0.9367001582,
+    "critical_value_1pct": -4.1194525,
+    "critical_value_5pct": -3.4561552219,
+    "critical_value_10pct": -3.1270174556,
+    "sample_variant": "imputed_shared_window",
+    "model_id": "colombia_to_eu_levels",
+    "dependent_variable": "log_eu_hicp_chocolate_index",
+    "explanatory_variable": "log_colombia_cocoa_price_cop_kg"
+  }
+]

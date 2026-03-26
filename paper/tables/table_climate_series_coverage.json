@@ -1,0 +1,65 @@
+[
+  {
+    "variable": "nasa_precipitation_mm_day",
+    "non_missing_observations": 312,
+    "missing_observations": 0,
+    "coverage_share": 1.0,
+    "first_observation": "2000-01-01",
+    "last_observation": "2025-12-01",
+    "span_months": 312
+  },
+  {
+    "variable": "nasa_temperature_c",
+    "non_missing_observations": 312,
+    "missing_observations": 0,
+    "coverage_share": 1.0,
+    "first_observation": "2000-01-01",
+    "last_observation": "2025-12-01",
+    "span_months": 312
+  },
+  {
+    "variable": "nasa_temperature_max_c",
+    "non_missing_observations": 312,
+    "missing_observations": 0,
+    "coverage_share": 1.0,
+    "first_observation": "2000-01-01",
+    "last_observation": "2025-12-01",
+    "span_months": 312
+  },
+  {
+    "variable": "nasa_temperature_min_c",
+    "non_missing_observations": 312,
+    "missing_observations": 0,
+    "coverage_share": 1.0,
+    "first_observation": "2000-01-01",
+    "last_observation": "2025-12-01",
+    "span_months": 312
+  },
+  {
+    "variable": "nasa_relative_humidity_pct",
+    "non_missing_observations": 312,
+    "missing_observations": 0,
+    "coverage_share": 1.0,
+    "first_observation": "2000-01-01",
+    "last_observation": "2025-12-01",
+    "span_months": 312
+  },
+  {
+    "variable": "nasa_wind_speed_ms",
+    "non_missing_observations": 312,
+    "missing_observations": 0,
+    "coverage_share": 1.0,
+    "first_observation": "2000-01-01",
+    "last_observation": "2025-12-01",
+    "span_months": 312
+  },
+  {
+    "variable": "nasa_surface_solar_radiation_mj_m2_day",
+    "non_missing_observations": 311,
+    "missing_observations": 1,
+    "coverage_share": 0.9967948718,
+    "first_observation": "2000-01-01",
+    "last_observation": "2025-11-01",
+    "span_months": 311
+  }
+]

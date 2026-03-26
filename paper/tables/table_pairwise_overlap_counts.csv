@@ -1,0 +1,6 @@
+variable,colombia_cocoa_price_cop_kg,world_cocoa_price_usd_mt,eu_hicp_chocolate_index,cop_usd_exchange_rate,brent_oil_usd_bbl
+colombia_cocoa_price_cop_kg,55,54,52,55,55
+world_cocoa_price_usd_mt,54,794,109,412,466
+eu_hicp_chocolate_index,52,109,109,109,109
+cop_usd_exchange_rate,55,412,109,413,413
+brent_oil_usd_bbl,55,466,109,413,467

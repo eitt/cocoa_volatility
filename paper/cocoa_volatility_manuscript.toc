@@ -1,0 +1,16 @@
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
+\contentsline {section}{\numberline {2}Materials and Methods}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Data Architecture and Sample Design}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Variable Data Card}{3}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Transformations}{5}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Imputation Strategy}{6}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Core Transmission Equations}{6}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Two Weather Strategies}{6}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}Hypotheses}{7}{subsection.2.7}%
+\contentsline {section}{\numberline {3}Preliminary Results}{7}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Descriptive and Statistical Properties}{7}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Preliminary Core Transmission Results}{10}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Preliminary Weather-Extended Results}{12}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Preliminary Answers to the Hypotheses}{16}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Discussion and Limitations}{17}{section.4}%
+\contentsline {section}{\numberline {5}Conclusion}{17}{section.5}%

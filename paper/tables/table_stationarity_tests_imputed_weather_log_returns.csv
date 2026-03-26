@@ -1,0 +1,22 @@
+variable,test,statistic,p_value,lags,observations,status,series_form,base_variable,label,unit,source_block
+nasa_precipitation_mm_day_log_return,adf,-3.608996295174447,0.005591348818684477,9.0,42.0,,log_return,nasa_precipitation_mm_day,NASA precipitation,mm/day,climate_extension
+nasa_precipitation_mm_day_log_return,kpss,0.2684792850503168,0.1,1.0,52.0,,log_return,nasa_precipitation_mm_day,NASA precipitation,mm/day,climate_extension
+nasa_precipitation_mm_day_log_return,pp,,,,52.0,arch_not_installed,log_return,nasa_precipitation_mm_day,NASA precipitation,mm/day,climate_extension
+nasa_temperature_c_log_return,adf,-4.833758547281073,4.685054685135976e-05,2.0,49.0,,log_return,nasa_temperature_c,NASA air temperature,degC,climate_extension
+nasa_temperature_c_log_return,kpss,0.11043296842604092,0.1,1.0,52.0,,log_return,nasa_temperature_c,NASA air temperature,degC,climate_extension
+nasa_temperature_c_log_return,pp,,,,52.0,arch_not_installed,log_return,nasa_temperature_c,NASA air temperature,degC,climate_extension
+nasa_temperature_max_c_log_return,adf,-3.7489821472979137,0.003474616151526011,7.0,44.0,,log_return,nasa_temperature_max_c,NASA max air temperature,degC,climate_extension
+nasa_temperature_max_c_log_return,kpss,0.08968512184880156,0.1,2.0,52.0,,log_return,nasa_temperature_max_c,NASA max air temperature,degC,climate_extension
+nasa_temperature_max_c_log_return,pp,,,,52.0,arch_not_installed,log_return,nasa_temperature_max_c,NASA max air temperature,degC,climate_extension
+nasa_temperature_min_c_log_return,adf,-10.256440026448958,4.348819303888097e-18,0.0,51.0,,log_return,nasa_temperature_min_c,NASA min air temperature,degC,climate_extension
+nasa_temperature_min_c_log_return,kpss,0.06450656989553093,0.1,2.0,52.0,,log_return,nasa_temperature_min_c,NASA min air temperature,degC,climate_extension
+nasa_temperature_min_c_log_return,pp,,,,52.0,arch_not_installed,log_return,nasa_temperature_min_c,NASA min air temperature,degC,climate_extension
+nasa_relative_humidity_pct_log_return,adf,-5.136973303734796,1.1807519386002108e-05,3.0,48.0,,log_return,nasa_relative_humidity_pct,NASA relative humidity,%,climate_extension
+nasa_relative_humidity_pct_log_return,kpss,0.1566096024237476,0.1,1.0,52.0,,log_return,nasa_relative_humidity_pct,NASA relative humidity,%,climate_extension
+nasa_relative_humidity_pct_log_return,pp,,,,52.0,arch_not_installed,log_return,nasa_relative_humidity_pct,NASA relative humidity,%,climate_extension
+nasa_wind_speed_ms_log_return,adf,-8.3515368485866,2.9855100959976836e-13,0.0,51.0,,log_return,nasa_wind_speed_ms,NASA wind speed,m/s,climate_extension
+nasa_wind_speed_ms_log_return,kpss,0.15271158363758247,0.1,4.0,52.0,,log_return,nasa_wind_speed_ms,NASA wind speed,m/s,climate_extension
+nasa_wind_speed_ms_log_return,pp,,,,52.0,arch_not_installed,log_return,nasa_wind_speed_ms,NASA wind speed,m/s,climate_extension
+nasa_surface_solar_radiation_mj_m2_day_log_return,adf,-4.576747911518996,0.00014253481071651387,10.0,41.0,,log_return,nasa_surface_solar_radiation_mj_m2_day,NASA surface solar radiation,MJ/m^2/day,climate_extension
+nasa_surface_solar_radiation_mj_m2_day_log_return,kpss,0.1476245651039087,0.1,12.0,52.0,,log_return,nasa_surface_solar_radiation_mj_m2_day,NASA surface solar radiation,MJ/m^2/day,climate_extension
+nasa_surface_solar_radiation_mj_m2_day_log_return,pp,,,,52.0,arch_not_installed,log_return,nasa_surface_solar_radiation_mj_m2_day,NASA surface solar radiation,MJ/m^2/day,climate_extension

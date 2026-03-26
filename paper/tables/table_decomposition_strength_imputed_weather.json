@@ -1,0 +1,58 @@
+[
+  {
+    "variable": "nasa_precipitation_mm_day",
+    "label": "NASA precipitation",
+    "source_block": "climate_extension",
+    "trend_strength": 0.0,
+    "seasonal_strength": 0.5047056606,
+    "residual_std": 2.5256102676
+  },
+  {
+    "variable": "nasa_temperature_c",
+    "label": "NASA air temperature",
+    "source_block": "climate_extension",
+    "trend_strength": 0.1915184828,
+    "seasonal_strength": 0.1147341513,
+    "residual_std": 1.1013208041
+  },
+  {
+    "variable": "nasa_temperature_max_c",
+    "label": "NASA max air temperature",
+    "source_block": "climate_extension",
+    "trend_strength": 0.1596880289,
+    "seasonal_strength": 0.1699901899,
+    "residual_std": 2.3275553371
+  },
+  {
+    "variable": "nasa_temperature_min_c",
+    "label": "NASA min air temperature",
+    "source_block": "climate_extension",
+    "trend_strength": 0.1610089246,
+    "seasonal_strength": 0.2928527714,
+    "residual_std": 0.6705282754
+  },
+  {
+    "variable": "nasa_relative_humidity_pct",
+    "label": "NASA relative humidity",
+    "source_block": "climate_extension",
+    "trend_strength": 0.2485619035,
+    "seasonal_strength": 0.2384041925,
+    "residual_std": 6.6331287378
+  },
+  {
+    "variable": "nasa_wind_speed_ms",
+    "label": "NASA wind speed",
+    "source_block": "climate_extension",
+    "trend_strength": 0.2223808997,
+    "seasonal_strength": 0.4700960139,
+    "residual_std": 0.0105470989
+  },
+  {
+    "variable": "nasa_surface_solar_radiation_mj_m2_day",
+    "label": "NASA surface solar radiation",
+    "source_block": "climate_extension",
+    "trend_strength": 0.1737957542,
+    "seasonal_strength": 0.690965883,
+    "residual_std": 0.6351242535
+  }
+]

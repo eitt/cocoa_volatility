@@ -1,0 +1,8 @@
+variable,non_missing_observations,missing_observations,coverage_share,first_observation,last_observation,span_months
+nasa_precipitation_mm_day,312,0,1.0,2000-01-01,2025-12-01,312
+nasa_temperature_c,312,0,1.0,2000-01-01,2025-12-01,312
+nasa_temperature_max_c,312,0,1.0,2000-01-01,2025-12-01,312
+nasa_temperature_min_c,312,0,1.0,2000-01-01,2025-12-01,312
+nasa_relative_humidity_pct,312,0,1.0,2000-01-01,2025-12-01,312
+nasa_wind_speed_ms,312,0,1.0,2000-01-01,2025-12-01,312
+nasa_surface_solar_radiation_mj_m2_day,311,1,0.9967948717948718,2000-01-01,2025-11-01,311

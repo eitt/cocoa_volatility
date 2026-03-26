@@ -1,0 +1,167 @@
+[
+  {
+    "variable": "colombia_cocoa_price_cop_kg",
+    "test": "adf",
+    "statistic": -1.2693456781,
+    "p_value": 0.6430774504,
+    "lags": 0.0,
+    "observations": 52.0,
+    "status": null,
+    "series_form": "level",
+    "base_variable": "colombia_cocoa_price_cop_kg"
+  },
+  {
+    "variable": "colombia_cocoa_price_cop_kg",
+    "test": "kpss",
+    "statistic": 0.85877402,
+    "p_value": 0.01,
+    "lags": 4.0,
+    "observations": 53.0,
+    "status": null,
+    "series_form": "level",
+    "base_variable": "colombia_cocoa_price_cop_kg"
+  },
+  {
+    "variable": "colombia_cocoa_price_cop_kg",
+    "test": "pp",
+    "statistic": null,
+    "p_value": null,
+    "lags": null,
+    "observations": 53.0,
+    "status": "arch_not_installed",
+    "series_form": "level",
+    "base_variable": "colombia_cocoa_price_cop_kg"
+  },
+  {
+    "variable": "world_cocoa_price_usd_mt",
+    "test": "adf",
+    "statistic": -1.2579408093,
+    "p_value": 0.648188206,
+    "lags": 0.0,
+    "observations": 52.0,
+    "status": null,
+    "series_form": "level",
+    "base_variable": "world_cocoa_price_usd_mt"
+  },
+  {
+    "variable": "world_cocoa_price_usd_mt",
+    "test": "kpss",
+    "statistic": 0.9289746363,
+    "p_value": 0.01,
+    "lags": 4.0,
+    "observations": 53.0,
+    "status": null,
+    "series_form": "level",
+    "base_variable": "world_cocoa_price_usd_mt"
+  },
+  {
+    "variable": "world_cocoa_price_usd_mt",
+    "test": "pp",
+    "statistic": null,
+    "p_value": null,
+    "lags": null,
+    "observations": 53.0,
+    "status": "arch_not_installed",
+    "series_form": "level",
+    "base_variable": "world_cocoa_price_usd_mt"
+  },
+  {
+    "variable": "eu_hicp_chocolate_index",
+    "test": "adf",
+    "statistic": 0.4834810663,
+    "p_value": 0.9843622738,
+    "lags": 4.0,
+    "observations": 48.0,
+    "status": null,
+    "series_form": "level",
+    "base_variable": "eu_hicp_chocolate_index"
+  },
+  {
+    "variable": "eu_hicp_chocolate_index",
+    "test": "kpss",
+    "statistic": 1.106201729,
+    "p_value": 0.01,
+    "lags": 4.0,
+    "observations": 53.0,
+    "status": null,
+    "series_form": "level",
+    "base_variable": "eu_hicp_chocolate_index"
+  },
+  {
+    "variable": "eu_hicp_chocolate_index",
+    "test": "pp",
+    "statistic": null,
+    "p_value": null,
+    "lags": null,
+    "observations": 53.0,
+    "status": "arch_not_installed",
+    "series_form": "level",
+    "base_variable": "eu_hicp_chocolate_index"
+  },
+  {
+    "variable": "cop_usd_exchange_rate",
+    "test": "adf",
+    "statistic": -1.5180266439,
+    "p_value": 0.5245757178,
+    "lags": 0.0,
+    "observations": 52.0,
+    "status": null,
+    "series_form": "level",
+    "base_variable": "cop_usd_exchange_rate"
+  },
+  {
+    "variable": "cop_usd_exchange_rate",
+    "test": "kpss",
+    "statistic": 0.1376145008,
+    "p_value": 0.1,
+    "lags": 4.0,
+    "observations": 53.0,
+    "status": null,
+    "series_form": "level",
+    "base_variable": "cop_usd_exchange_rate"
+  },
+  {
+    "variable": "cop_usd_exchange_rate",
+    "test": "pp",
+    "statistic": null,
+    "p_value": null,
+    "lags": null,
+    "observations": 53.0,
+    "status": "arch_not_installed",
+    "series_form": "level",
+    "base_variable": "cop_usd_exchange_rate"
+  },
+  {
+    "variable": "brent_oil_usd_bbl",
+    "test": "adf",
+    "statistic": -1.6436748688,
+    "p_value": 0.460341219,
+    "lags": 0.0,
+    "observations": 52.0,
+    "status": null,
+    "series_form": "level",
+    "base_variable": "brent_oil_usd_bbl"
+  },
+  {
+    "variable": "brent_oil_usd_bbl",
+    "test": "kpss",
+    "statistic": 0.607714308,
+    "p_value": 0.0219350629,
+    "lags": 4.0,
+    "observations": 53.0,
+    "status": null,
+    "series_form": "level",
+    "base_variable": "brent_oil_usd_bbl"
+  },
+  {
+    "variable": "brent_oil_usd_bbl",
+    "test": "pp",
+    "statistic": null,
+    "p_value": null,
+    "lags": null,
+    "observations": 53.0,
+    "status": "arch_not_installed",
+    "series_form": "level",
+    "base_variable": "brent_oil_usd_bbl"
+  }
+]
