@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import ast
 from datetime import date
+import json
 from pathlib import Path
 import re
 from typing import Any
@@ -165,6 +166,15 @@ def build_timestamped_filename(stem: str, suffix: str, run_date: date | None = N
     return f"{active_date.isoformat()}_{stem}{suffix}"
 
 
+def write_dataframe_json(dataframe: pd.DataFrame, output_path: str | Path) -> Path:
+    """Write a dataframe as JSON records with ISO-formatted dates."""
+    path = Path(output_path)
+    ensure_directory(path.parent)
+    records = json.loads(dataframe.to_json(orient="records", date_format="iso"))
+    path.write_text(json.dumps(records, indent=2), encoding="utf-8")
+    return path
+
+
 def write_dataframe(dataframe: pd.DataFrame, output_path: str | Path, index: bool = False) -> Path:
     """Write a dataframe using an output format inferred from the suffix."""
     path = Path(output_path)
@@ -172,6 +182,10 @@ def write_dataframe(dataframe: pd.DataFrame, output_path: str | Path, index: boo
 
     if path.suffix == ".csv":
         dataframe.to_csv(path, index=index)
+        write_dataframe_json(dataframe, path.with_suffix(".json"))
+    elif path.suffix == ".json":
+        write_dataframe_json(dataframe, path)
+        dataframe.to_csv(path.with_suffix(".csv"), index=index)
     elif path.suffix == ".xlsx":
         dataframe.to_excel(path, index=index)
     elif path.suffix == ".parquet":

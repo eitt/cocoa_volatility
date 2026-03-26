@@ -28,11 +28,14 @@ def load_tabular_file(file_path: str | Path, **kwargs) -> pd.DataFrame:
     raise ValueError(f"Unsupported file format: {path.suffix}")
 
 
-def build_file_registry(source_name: str, raw_directory: str | Path) -> pd.DataFrame:
+def build_file_registry(
+    source_name: str,
+    raw_directory: str | Path,
+    patterns: tuple[str, ...] = ("*.csv", "*.xlsx", "*.parquet"),
+) -> pd.DataFrame:
     """Create a file-level registry for a source directory."""
     records = [
         {"source_name": source_name, "file_name": path.name, "file_path": str(path)}
-        for path in list_raw_files(raw_directory)
+        for path in list_raw_files(raw_directory, patterns=patterns)
     ]
     return pd.DataFrame(records)
-

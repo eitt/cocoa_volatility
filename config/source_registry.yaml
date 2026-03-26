@@ -2,12 +2,18 @@ source_blocks:
   colombia_domestic_prices:
     priority_rank: 1
     recommended_sources:
+      - institution: "AgroNet / Ministerio de Agricultura y Desarrollo Rural"
+        dataset_name: "Precio de referencia semanal de compra de cacao"
+        url: "https://agronet.gov.co/noticias/precio-de-referencia-semanal-de-compra-de-cacao-fuente-industria-nacional-exportadores-0"
+        access_type: "web_table"
+        expected_frequency: "weekly"
+        notes: "Primary official domestic cacao series used by the current workflow and aggregated to monthly means for the merged panel."
       - institution: "DANE"
-        dataset_name: "SIPSA wholesale price information"
-        url: "https://geoportal.dane.gov.co/geovisores/territorio/precios-mayoristas-sipsa/"
+        dataset_name: "SIPSA wholesale price historical series"
+        url: "https://www.dane.gov.co/index.php/estadisticas-por-tema/agropecuario/sistema-de-informacion-de-precios-sipsa/mayoristas-boletin-mensual-1"
         access_type: "web_portal_or_download"
         expected_frequency: "daily_weekly_monthly"
-        notes: "Primary candidate for Colombian cocoa price proxies."
+        notes: "Supplementary wholesale market context. Recent historical workbooks appear to expose chocolate products more clearly than cacao beans."
 
   international_prices:
     priority_rank: 2
@@ -24,6 +30,12 @@ source_blocks:
         access_type: "xlsx_pdf"
         expected_frequency: "monthly"
         notes: "Cross-commodity benchmark with public downloads."
+      - institution: "Yahoo Finance"
+        dataset_name: "ICE cocoa futures continuous contract (CC=F)"
+        url: "https://finance.yahoo.com/quote/CC%3DF/history/"
+        access_type: "web_api_or_history_download"
+        expected_frequency: "daily_monthly"
+        notes: "Practical secondary market feed for cocoa futures, useful for daily volatility work alongside the official monthly benchmark."
 
   eu_market_prices:
     priority_rank: 2
@@ -33,7 +45,7 @@ source_blocks:
         url: "https://ec.europa.eu/eurostat/cache/metadata/en/prc_hicp_esms.htm"
         access_type: "database_api_metadata"
         expected_frequency: "monthly"
-        notes: "Use for chocolate, cocoa, or confectionery sub-indices."
+        notes: "Primary EU downstream block now uses the official Eurostat HICP monthly index for EU27 chocolate (COICOP CP01183)."
 
   trade_linkages:
     priority_rank: 2
@@ -48,12 +60,18 @@ source_blocks:
   macro_controls:
     priority_rank: 3
     recommended_sources:
-      - institution: "Banco de la Republica or other official central-bank source"
-        dataset_name: "Historical exchange-rate series"
-        url: "https://www.banrep.gov.co/"
-        access_type: "official_database"
+      - institution: "Banco de la República / Superintendencia Financiera de Colombia"
+        dataset_name: "Tasa Representativa del Mercado (TRM)"
+        url: "https://www.banrep.gov.co/es/estadisticas-economicas/series-estadisticas-historicas-colombia"
+        access_type: "official_rest_service"
         expected_frequency: "daily_monthly"
-        notes: "Use for COP/USD and related exchange rates."
+        notes: "Primary official COP/USD source for the macro-control block."
+      - institution: "U.S. Energy Information Administration"
+        dataset_name: "Europe Brent Spot Price FOB"
+        url: "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_m.htm"
+        access_type: "official_history_table"
+        expected_frequency: "daily_monthly"
+        notes: "Primary Brent oil control used for energy and commodity-cycle exposure."
       - institution: "DANE"
         dataset_name: "Consumer price index"
         url: "https://www.dane.gov.co/"

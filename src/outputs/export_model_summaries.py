@@ -17,4 +17,7 @@ def export_text_summary(summary_text: str, output_path: str | Path) -> Path:
 
 def model_result_to_text(result) -> str:
     """Convert a statsmodels result object to a text summary."""
-    return result.summary().as_text()
+    summary = result.summary()
+    if hasattr(summary, "as_text"):
+        return summary.as_text()
+    return str(summary)

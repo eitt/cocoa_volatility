@@ -1,0 +1,9 @@
+colombia_domestic_prices:
+  agronet:
+    source_name: "AgroNet / Ministerio de Agricultura y Desarrollo Rural"
+    dataset_name: "Precio de referencia semanal de compra de cacao"
+    weekly_page_url: "https://agronet.gov.co/noticias/precio-de-referencia-semanal-de-compra-de-cacao-fuente-industria-nacional-exportadores-0"
+    expected_frequency: "weekly"
+    aggregation_method: "monthly_mean"
+    unit: "cop/kg"
+    market_scope: "colombia_reference_purchase_price"

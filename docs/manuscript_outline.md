@@ -17,12 +17,15 @@
 - domestic price series
 - international benchmark series
 - EU downstream price indicators
-- trade and macro controls
-- optional climate extension
+- macro controls
+- climate extension for San Vicente de Chucuri
+- explicit discussion of unequal sample lengths and the aligned common-window strategy
 
 ## 4. Empirical Strategy
 
 - descriptive statistics
+- data availability and overlap diagnostics
+- common-window alignment and imputation sensitivity
 - stationarity and transformation rules
 - ARIMA and volatility methods
 - co-integration and transmission models
@@ -30,14 +33,18 @@
 
 ## 5. Results
 
-- descriptive patterns
+- descriptive patterns in the full panel
+- aligned same-length descriptive patterns
+- climate context figures and climate-core correlations
 - stationarity findings
-- dynamic models
-- transmission and vulnerability discussion
+- Chapter 1: core supply-chain transmission
+- Chapter 2: weather-extended vulnerability
+- robustness and integrated interpretation across the two chapters
 
 ## 6. Robustness and Extensions
 
 - alternative data definitions
+- imputed versus non-imputed aligned windows
 - climate extension
 - sample splits
 

@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "cocoa-volatility"
 version = "0.1.0"
-description = "Functional research pipeline for cocoa price volatility, transmission, and smallholder vulnerability."
+description = "Functional research pipeline for cocoa price transmission, macro and climate integration, and descriptive volatility analysis."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
@@ -19,6 +19,7 @@ dependencies = [
   "requests>=2.32",
   "openpyxl>=3.1",
   "pyarrow>=16.0",
+  "scikit-learn>=1.5",
   "xlsxwriter>=3.2",
 ]
 

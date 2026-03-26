@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99e
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: cocoa_volatility_manuscript.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: plainnat.bst
+Reallocating 'name_of_file' (item size: 1) to 31 items.
+Database file #1: ../references/cocoa_volatility.bib
+You've used 14 entries,
+            2773 wiz_defined-function locations,
+            684 strings with 8420 characters,
+and the built_in function-call counts, 5757 in all, are:
+= -- 537
+> -- 278
+< -- 11
++ -- 98
+- -- 84
+* -- 417
+:= -- 899
+add.period$ -- 57
+call.type$ -- 14
+change.case$ -- 70
+chr.to.int$ -- 14
+cite$ -- 28
+duplicate$ -- 248
+empty$ -- 505
+format.name$ -- 104
+if$ -- 1207
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 7
+newline$ -- 93
+num.names$ -- 56
+pop$ -- 147
+preamble$ -- 1
+purify$ -- 56
+quote$ -- 0
+skip$ -- 196
+stack$ -- 0
+substring$ -- 193
+swap$ -- 14
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 154
+warning$ -- 0
+while$ -- 55
+width$ -- 0
+write$ -- 212

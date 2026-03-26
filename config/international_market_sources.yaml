@@ -1,0 +1,14 @@
+international_cocoa:
+  yahoo_finance:
+    symbol: "CC=F"
+    source_name: "Yahoo Finance"
+    dataset_name: "ICE cocoa futures continuous contract"
+    base_url: "https://query1.finance.yahoo.com/v8/finance/chart"
+    start_date: "2000-01-01"
+    intervals:
+      - "1d"
+      - "1mo"
+  world_bank:
+    source_name: "World Bank Prospects Group"
+    dataset_name: "Commodities Price Data (The Pink Sheet)"
+    monthly_workbook_url: "https://thedocs.worldbank.org/en/doc/74e8be41ceb20fa0da750cda2f6b9e4e-0050012026/related/CMO-Historical-Data-Monthly.xlsx"

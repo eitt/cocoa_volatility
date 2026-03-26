@@ -17,6 +17,15 @@ variables:
       - "use monthly average if source is daily"
       - "preserve source methodology in metadata"
 
+  world_cocoa_futures_usd_mt:
+    label: "World cocoa futures price"
+    source_block: "international_prices"
+    unit: "USD/metric_ton"
+    preferred_frequency: "daily_or_monthly"
+    transformation_notes:
+      - "retain both daily and monthly versions for market-volatility analysis"
+      - "treat Yahoo Finance as a practical secondary market feed rather than the manuscript's core official benchmark"
+
   eu_hicp_chocolate_index:
     label: "EU chocolate or cocoa consumer price index"
     source_block: "eu_market_prices"
@@ -25,6 +34,42 @@ variables:
     transformation_notes:
       - "retain base year metadata"
       - "log differences can be used as inflation-like growth measures"
+
+  eu_hicp_cocoa_powdered_chocolate_index:
+    label: "EU cocoa and powdered chocolate consumer price index"
+    source_block: "eu_market_prices"
+    unit: "index"
+    preferred_frequency: "monthly"
+    transformation_notes:
+      - "retain base year metadata"
+      - "use as a narrower cocoa-adjacent downstream robustness indicator"
+
+  eu_hicp_sweets_aggregate_index:
+    label: "EU sugar, jam, honey, chocolate and confectionery consumer price index"
+    source_block: "eu_market_prices"
+    unit: "index"
+    preferred_frequency: "monthly"
+    transformation_notes:
+      - "retain base year metadata"
+      - "use as a broader downstream food-sweets aggregate for robustness checks"
+
+  eu_hicp_confectionery_index:
+    label: "EU confectionery consumer price index"
+    source_block: "eu_market_prices"
+    unit: "index"
+    preferred_frequency: "monthly"
+    transformation_notes:
+      - "retain base year metadata"
+      - "use alongside chocolate to test downstream substitution or spillover effects"
+
+  fr_hicp_chocolate_index:
+    label: "France chocolate consumer price index"
+    source_block: "eu_market_prices"
+    unit: "index"
+    preferred_frequency: "monthly"
+    transformation_notes:
+      - "retain base year metadata"
+      - "use when a longer single-country chocolate series is preferable to the shorter EU27 aggregate"
 
   colombia_exports_cocoa_usd:
     label: "Colombian cocoa exports to Europe"
@@ -42,6 +87,15 @@ variables:
     transformation_notes:
       - "monthly average preferred for alignment with price series"
 
+  brent_oil_usd_bbl:
+    label: "Brent oil price"
+    source_block: "macro_controls"
+    unit: "USD/barrel"
+    preferred_frequency: "monthly"
+    transformation_notes:
+      - "use official monthly Brent history when available"
+      - "retain daily history separately for volatility or event-study extensions"
+
   nasa_power_precipitation:
     label: "NASA POWER precipitation variable"
     source_block: "climate_extension"
@@ -49,3 +103,59 @@ variables:
     preferred_frequency: "monthly"
     transformation_notes:
       - "derive anomalies only after confirming parameter definition"
+
+  nasa_precipitation_mm_day:
+    label: "NASA precipitation"
+    source_block: "climate_extension"
+    unit: "mm/day"
+    preferred_frequency: "monthly"
+    transformation_notes:
+      - "NASA POWER PRECTOTCORR monthly average"
+
+  nasa_temperature_c:
+    label: "NASA air temperature"
+    source_block: "climate_extension"
+    unit: "degC"
+    preferred_frequency: "monthly"
+    transformation_notes:
+      - "NASA POWER T2M monthly average"
+
+  nasa_temperature_max_c:
+    label: "NASA max air temperature"
+    source_block: "climate_extension"
+    unit: "degC"
+    preferred_frequency: "monthly"
+    transformation_notes:
+      - "NASA POWER T2M_MAX monthly average"
+
+  nasa_temperature_min_c:
+    label: "NASA min air temperature"
+    source_block: "climate_extension"
+    unit: "degC"
+    preferred_frequency: "monthly"
+    transformation_notes:
+      - "NASA POWER T2M_MIN monthly average"
+
+  nasa_relative_humidity_pct:
+    label: "NASA relative humidity"
+    source_block: "climate_extension"
+    unit: "%"
+    preferred_frequency: "monthly"
+    transformation_notes:
+      - "NASA POWER RH2M monthly average"
+
+  nasa_wind_speed_ms:
+    label: "NASA wind speed"
+    source_block: "climate_extension"
+    unit: "m/s"
+    preferred_frequency: "monthly"
+    transformation_notes:
+      - "NASA POWER WS2M monthly average"
+
+  nasa_surface_solar_radiation_mj_m2_day:
+    label: "NASA surface solar radiation"
+    source_block: "climate_extension"
+    unit: "MJ/m^2/day"
+    preferred_frequency: "monthly"
+    transformation_notes:
+      - "NASA POWER ALLSKY_SFC_SW_DWN monthly average"

@@ -1,0 +1,38 @@
+[
+  {
+    "download_date": "2026-03-25",
+    "location_id": "san_vicente_de_chucuri",
+    "location_name": "San Vicente de Chucuri",
+    "department": "Santander",
+    "frequency": "monthly",
+    "request_start": 2000,
+    "request_end": 2025,
+    "parameter_count": 7,
+    "parameters": "PRECTOTCORR,T2M,T2M_MAX,T2M_MIN,RH2M,WS2M,ALLSKY_SFC_SW_DWN",
+    "community": "AG",
+    "raw_json_file": "2026-03-25_san_vicente_de_chucuri_monthly_nasa_power_raw.json",
+    "harmonized_long_file": "2026-03-25_san_vicente_de_chucuri_monthly_nasa_power_long.csv",
+    "harmonized_wide_file": "2026-03-25_san_vicente_de_chucuri_monthly_nasa_power_wide.csv",
+    "long_rows": 2184,
+    "wide_rows": 312,
+    "source_url": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR%2CT2M%2CT2M_MAX%2CT2M_MIN%2CRH2M%2CWS2M%2CALLSKY_SFC_SW_DWN&community=AG&longitude=-73.5207543&latitude=6.9287793&format=JSON&start=2000&end=2025"
+  },
+  {
+    "download_date": "2026-03-25",
+    "location_id": "san_vicente_de_chucuri",
+    "location_name": "San Vicente de Chucuri",
+    "department": "Santander",
+    "frequency": "daily",
+    "request_start": 20000101,
+    "request_end": 20260324,
+    "parameter_count": 7,
+    "parameters": "PRECTOTCORR,T2M,T2M_MAX,T2M_MIN,RH2M,WS2M,ALLSKY_SFC_SW_DWN",
+    "community": "AG",
+    "raw_json_file": "2026-03-25_san_vicente_de_chucuri_daily_nasa_power_raw.json",
+    "harmonized_long_file": "2026-03-25_san_vicente_de_chucuri_daily_nasa_power_long.csv",
+    "harmonized_wide_file": "2026-03-25_san_vicente_de_chucuri_daily_nasa_power_wide.csv",
+    "long_rows": 67060,
+    "wide_rows": 9578,
+    "source_url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=PRECTOTCORR%2CT2M%2CT2M_MAX%2CT2M_MIN%2CRH2M%2CWS2M%2CALLSKY_SFC_SW_DWN&community=AG&longitude=-73.5207543&latitude=6.9287793&format=JSON&start=20000101&end=20260324"
+  }
+]

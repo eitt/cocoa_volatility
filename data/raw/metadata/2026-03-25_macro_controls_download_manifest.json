@@ -1,0 +1,44 @@
+[
+  {
+    "download_date": "2026-03-25",
+    "source_institution": "Banco de la Rep\u00fablica / Superintendencia Financiera de Colombia",
+    "source_dataset": "Tasa Representativa del Mercado (TRM)",
+    "series_name": "cop_usd_exchange_rate",
+    "frequency": "daily",
+    "request_start": "1991-11-27",
+    "request_end": "2026-03-26",
+    "raw_file": "2026-03-25_banrep_trm_daily_raw.json",
+    "raw_csv_file": "2026-03-25_banrep_trm_daily_raw.csv",
+    "harmonized_file": "2026-03-25_banrep_trm_daily.csv",
+    "rows": 12539,
+    "source_url": "https://suameca.banrep.gov.co/estadisticas-economicas-back/rest/estadisticaEconomicaRestService/consultaInformacionSerieXTipoDatoXFechaDesde?idSerie=1&tipoDato=0&cantDatos=35&frecuenciaDatos=year"
+  },
+  {
+    "download_date": "2026-03-25",
+    "source_institution": "U.S. Energy Information Administration",
+    "source_dataset": "Europe Brent Spot Price FOB",
+    "series_name": "brent_oil_usd_bbl",
+    "frequency": "daily",
+    "request_start": "1987-05-20",
+    "request_end": "2026-03-23",
+    "raw_file": "2026-03-25_eia_brent_daily_raw.html",
+    "raw_csv_file": "2026-03-25_eia_brent_daily_raw.csv",
+    "harmonized_file": "2026-03-25_eia_brent_daily.csv",
+    "rows": 9856,
+    "source_url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=RBRTE&f=D"
+  },
+  {
+    "download_date": "2026-03-25",
+    "source_institution": "U.S. Energy Information Administration",
+    "source_dataset": "Europe Brent Spot Price FOB",
+    "series_name": "brent_oil_usd_bbl",
+    "frequency": "monthly",
+    "request_start": "1987-05-01",
+    "request_end": "2026-02-01",
+    "raw_file": "2026-03-25_eia_brent_monthly_raw.html",
+    "raw_csv_file": "2026-03-25_eia_brent_monthly_raw.csv",
+    "harmonized_file": "2026-03-25_eia_brent_monthly.csv",
+    "rows": 466,
+    "source_url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=RBRTE&f=M"
+  }
+]

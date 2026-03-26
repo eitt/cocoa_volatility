@@ -11,6 +11,7 @@ raw_colombia: "data/raw/colombia"
 raw_international: "data/raw/international"
 raw_eu: "data/raw/eu"
 raw_trade: "data/raw/trade"
+raw_macro: "data/raw/macro"
 raw_climate: "data/raw/climate"
 raw_metadata: "data/raw/metadata"
 

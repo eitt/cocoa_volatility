@@ -1,0 +1,402 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage[numbers]{natbib}
+\usepackage{caption}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  urlcolor=blue
+}
+
+\setstretch{1.15}
+\setlength{\parskip}{0.45em}
+\setlength{\parindent}{0pt}
+
+\title{\textbf{Cocoa Price Volatility and Smallholder Vulnerability Across the Supply Chain:}\\
+Evidence from Colombian Domestic Prices, International Cocoa Benchmarks, European Downstream Prices, Macro Controls, and Local Weather Context}
+
+% Replace the placeholder author metadata before submission.
+\author{
+Author 1\\
+\small Affiliation pending\\
+\small \texttt{author1@example.com}
+\and
+Author 2\\
+\small Affiliation pending\\
+\small \texttt{author2@example.com}
+}
+
+\date{March 26, 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This paper develops a reproducible monthly workflow for studying how cocoa-price volatility travels from international commodity markets into Colombian producer-linked prices and European downstream chocolate prices, and how that process can be interpreted through a smallholder-vulnerability lens. The data contribution is central: the project harmonizes official or documented source blocks for Colombian weekly cacao reference prices from AgroNet, the World Bank monthly cocoa benchmark, Eurostat chocolate-price indicators, Colombian exchange rates, Brent oil prices, and NASA POWER weather variables for San Vicente de Chucur\'{\i}, Santander. The main empirical challenge is unequal sample length across the supply chain. The paper therefore separates full-history descriptive context from an aligned common window and reports transparent block-specific imputation only where a single missing observation would otherwise break the shared monthly series. Two complementary strategies are defined. The first treats weather as contextual vulnerability information around a core supply-chain transmission system. The second, more demanding strategy treats weather as part of an augmented cointegration system, but only as an exploratory extension because the climate-augmented common window remains short. Preliminary results suggest that global cocoa returns are the dominant short-run driver of Colombian cocoa returns, while weather variables sharpen the vulnerability interpretation more than they overturn the price-transmission story. The draft is designed to be directly connected to repository figures, tables, and bibliography assets.
+
+\textbf{Keywords:} cocoa; price transmission; volatility; cointegration; imputation; climate vulnerability; Colombia; Europe
+\end{abstract}
+
+\section{Introduction}
+
+Price-transmission studies in agricultural markets often confront two linked problems. First, the producer, benchmark, downstream, macroeconomic, and climate series needed to describe the full chain rarely begin at the same date or come from a single official source. Second, the econometric strategy is often discussed more clearly than the data architecture that makes the strategy credible. This matters especially in cocoa, where producer-linked prices can be shaped by international benchmark movements, exchange-rate swings, downstream food-price dynamics, and local production stress at the same time. A useful empirical design therefore needs to be explicit not only about cointegration and causality tests, but also about how uneven data histories, missing months, and source transitions are handled \citep{acosta_ihle_voncramon_2019,hakkio_rush_1991}.
+
+This paper addresses that gap by building the data context and the methods together. The repository integrates a Colombian domestic cocoa block from AgroNet's official weekly cacao reference series \citep{agronet_cacao}, an international cocoa benchmark from the World Bank Pink Sheet \citep{worldbank_pinksheet}, a secondary futures-market block from Yahoo Finance \citep{yahoo_finance_ccf}, downstream European price indicators from Eurostat \citep{eurostat_hicp}, macro controls from the Colombian exchange-rate system and Brent oil series \citep{banrep_trm,eia_brent}, and a location-specific climate block from NASA POWER \citep{nasa_power_api}. The resulting design makes it possible to distinguish between long historical coverage for context and a much shorter common window for direct cross-series comparison.
+
+The paper also makes a methodological contribution by treating missingness as part of the empirical design rather than as an invisible preprocessing step. In the aligned core sample there is only one missing Colombian monthly observation; in the weather block there is only one missing solar-radiation month. Instead of silently dropping the affected observations or silently filling them, the workflow exports both KNN and iterative multivariate imputation candidates and keeps the block structure explicit \citep{troyanskaya_etal_2001,vanbuuren_groothuisoudshoorn_2011}. That design supports transparent sensitivity analysis while preserving the continuity needed for same-length figures and selected model variants.
+
+The substantive motivation is vulnerability. For smallholder cocoa farmers, exposure to global price movements is not only a question of average prices. It is also a question of short-run volatility, exchange-rate pass-through, lagged downstream adjustment, and the interaction between market shocks and local environmental stress. The climate block is therefore not introduced as a mechanical replacement for market analysis. Instead, it is treated in two distinct ways: as contextual stress that can enrich the interpretation of volatility and vulnerability, and as a more ambitious but still exploratory candidate component of a climate-augmented cointegration system \citep{engle_granger_1987,johansen_1991,talero_sarmiento_etal_2025}.
+
+The rest of the draft is organized as follows. Section~\ref{sec:methods} presents the data design, transformations, equations, imputation strategy, and the two empirical approaches. Section~\ref{sec:results} reports preliminary descriptive, stationarity, transmission, and vulnerability results using the current aligned panel. Section~\ref{sec:discussion} discusses limitations and the implications for the next modeling stage.
+
+\section{Materials and Methods}
+\label{sec:methods}
+
+\subsection{Data Architecture and Sample Design}
+
+The repository currently maintains a full merged monthly panel with 795 observations from January 1960 to March 2026. The direct cross-series analysis, however, must be conducted on a much shorter aligned window because the AgroNet Colombian series begins in August 2021 and the current Eurostat legacy endpoint runs through December 2025. The core shared calendar window therefore contains 53 monthly rows from August 2021 to December 2025, while the balanced non-imputed core sample contains 52 complete observations. Requiring the full climate block reduces the complete sample to 51 observations because the solar-radiation series is missing December 2025.
+
+\subsection{Variable Data Card}
+
+Table~\ref{tab:data_card} summarizes the main variables used in the manuscript-oriented analysis layer. The first five variables form the core supply-chain transmission system. The selected weather variables are the preferred weather block for the vulnerability chapter, while the remaining climate variables remain available in the repository for descriptive and robustness work.
+
+\begingroup
+\scriptsize
+\setlength{\LTleft}{0pt}
+\setlength{\LTright}{0pt}
+\begin{longtable}{@{}p{2.4cm}p{3.8cm}p{1.5cm}p{2.0cm}p{3.0cm}@{}}
+\caption{Variable data card for the current manuscript draft}
+\label{tab:data_card}\\
+\toprule
+Variable & Operational definition & Unit & Source & Current usable window \\
+\midrule
+\endfirsthead
+\toprule
+Variable & Operational definition & Unit & Source & Current usable window \\
+\midrule
+\endhead
+Colombian cocoa price & Monthly mean from AgroNet's official weekly cacao reference series & COP/kg & AgroNet & 2021-08 to 2026-03 \\
+World cocoa benchmark & Monthly cocoa benchmark extracted from the World Bank Pink Sheet & USD/metric ton & World Bank & 1960-01 to 2026-02 \\
+EU chocolate index & EU27 chocolate HICP consumer-price index & index & Eurostat & 2016-12 to 2025-12 \\
+COP/USD exchange rate & Monthly mean of the Colombian peso per U.S. dollar & COP/USD & Banco de la Republica & 1991-11 to 2026-03 \\
+Brent oil price & Monthly Europe Brent spot price & USD/barrel & EIA & 1987-05 to 2026-03 \\
+NASA precipitation & Monthly average precipitation at San Vicente de Chucur\'{\i} & mm/day & NASA POWER & 2000-01 to 2025-12 \\
+NASA air temperature & Monthly mean air temperature at San Vicente de Chucur\'{\i} & degC & NASA POWER & 2000-01 to 2025-12 \\
+NASA max temperature & Monthly maximum air temperature at San Vicente de Chucur\'{\i} & degC & NASA POWER & 2000-01 to 2025-12 \\
+NASA min temperature & Monthly minimum air temperature at San Vicente de Chucur\'{\i} & degC & NASA POWER & 2000-01 to 2025-12 \\
+NASA relative humidity & Monthly mean relative humidity at San Vicente de Chucur\'{\i} & \% & NASA POWER & 2000-01 to 2025-12 \\
+NASA wind speed & Monthly mean wind speed at San Vicente de Chucur\'{\i} & m/s & NASA POWER & 2000-01 to 2025-12 \\
+NASA solar radiation & Monthly mean surface solar radiation at San Vicente de Chucur\'{\i} & MJ/m$^2$/day & NASA POWER & 2000-01 to 2025-11 observed; 2025-12 imputed in the aligned weather panel \\
+\bottomrule
+\end{longtable}
+\endgroup
+
+\begin{table}[H]
+\centering
+\caption{Sample design and imputation structure}
+\label{tab:sample_design}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{p{5.5cm}p{2.5cm}p{4.0cm}p{3.3cm}}
+\toprule
+Panel or artifact & Observations & Date span & Note \\
+\midrule
+Full merged monthly panel & 795 & 1960-01 to 2026-03 & Long-history context across all merged sources \\
+Shared core calendar window & 53 & 2021-08 to 2025-12 & Core comparison window before removing missing values \\
+Balanced non-imputed core sample & 52 & 2021-08 to 2025-12 & Complete observations for Colombia, world cocoa, EU chocolate, FX, and Brent \\
+Climate-augmented complete sample & 51 & 2021-08 to 2025-12 & Complete observations when weather variables are also required \\
+Primary imputed core panel & 53 & 2021-08 to 2025-12 & One Colombian cocoa value imputed for 2025-09 \\
+Primary imputed all-series panel & 53 & 2021-08 to 2025-12 & One Colombian cocoa value and one solar-radiation value imputed \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+The two affected cells are small in number but important in consequence. The missing Colombian cocoa price at September 2025 would interrupt the shared core window, and the missing solar-radiation value at December 2025 would prevent a fully aligned weather-extended panel. The workflow therefore reports both KNN and iterative multivariate estimates for each missing cell and uses the iterative block-specific completion as the primary imputed panel for continuity-sensitive outputs.
+
+\subsection{Transformations}
+
+Let $P_{i,t}$ denote the monthly level of series $i$ at time $t$. For positive-valued series, the log-return transformation is:
+\begin{equation}
+r_{i,t} = \Delta \ln(P_{i,t}) = \ln(P_{i,t}) - \ln(P_{i,t-1}).
+\label{eq:logreturn}
+\end{equation}
+
+Equation~\eqref{eq:logreturn} is useful for three reasons in this setting. First, it allows heterogeneous units such as COP/kg, USD/metric ton, price indices, and USD/barrel to be compared on a proportional-change scale. Second, it helps stabilize variance relative to raw levels. Third, it aligns naturally with the short-run transmission question, which is whether changes in world cocoa conditions are associated with changes in Colombian and EU series in the same monthly window.
+
+Rolling volatility is summarized using the repository's rolling log-return measures, which support a vulnerability interpretation focused on instability rather than only on average price level.
+
+\subsection{Imputation Strategy}
+
+The project uses a transparent block-specific imputation rule rather than a one-shot black-box completion. Let $X_t$ denote the core supply-chain block and $W_t$ the weather block. Missing values are imputed within block:
+\begin{equation}
+\tilde{X}_t = \mathcal{I}_{X}(X_t), \qquad \tilde{W}_t = \mathcal{I}_{W}(W_t),
+\label{eq:block_imputation}
+\end{equation}
+where $\mathcal{I}_{X}(\cdot)$ and $\mathcal{I}_{W}(\cdot)$ are block-specific imputation operators. The primary operator is iterative multivariate imputation \citep{vanbuuren_groothuisoudshoorn_2011}; KNN imputation is retained as a sensitivity benchmark \citep{troyanskaya_etal_2001}. This design avoids forcing missing weather observations to be inferred mechanically from price variables, or missing price observations from weather variables.
+
+For the current sample, the core missing value at 2025-09 for Colombian cocoa was estimated at 27{,}134.89 under KNN and 23{,}855.55 under iterative imputation. The missing solar-radiation value at 2025-12 was estimated at 18.392 under KNN and 18.387 under iterative imputation.
+
+\subsection{Core Transmission Equations}
+
+The baseline long-run domestic-price equation is:
+\begin{equation}
+\ln(P^{COL}_{t}) = \alpha_0 + \alpha_1 \ln(P^{WLD}_{t}) + \alpha_2 \ln(FX_t) + \alpha_3 \ln(OIL_t) + u_t,
+\label{eq:core_levels}
+\end{equation}
+where $P^{COL}_{t}$ is the Colombian cocoa price, $P^{WLD}_{t}$ is the world cocoa benchmark price, $FX_t$ is the COP/USD exchange rate, and $OIL_t$ is the Brent oil price.
+
+The short-run transmission equation is:
+\begin{equation}
+\Delta \ln(P^{COL}_{t}) = \beta_0 + \beta_1 \Delta \ln(P^{WLD}_{t}) + \beta_2 \Delta \ln(FX_t) + \beta_3 \Delta \ln(OIL_t) + \varepsilon_t.
+\label{eq:core_returns}
+\end{equation}
+
+Equations~\eqref{eq:core_levels}--\eqref{eq:core_returns} are estimated with HAC-robust standard errors. The EU downstream block is modeled in parallel using the EU chocolate index as the dependent variable.
+
+\subsection{Two Weather Strategies}
+
+\textbf{Approach A: Weather as contextual vulnerability information.} The first approach keeps the core price-transmission system separate and treats weather variables as contextual stress indicators around the domestic-price and volatility models:
+\begin{equation}
+\Delta \ln(P^{COL}_{t}) = \gamma_0 + \gamma_1 \Delta \ln(P^{WLD}_{t}) + \gamma_2 \Delta \ln(FX_t) + \gamma_3 \Delta \ln(OIL_t) + \gamma_4 W_{t-1} + \nu_t,
+\label{eq:weather_context}
+\end{equation}
+where $W_{t-1}$ contains lagged standardized precipitation, solar radiation, and maximum temperature. This is the current preferred specification because it respects the short climate-augmented sample while still allowing weather to influence the vulnerability interpretation.
+
+\textbf{Approach B: Weather inside an augmented cointegration system.} The second approach defines a larger state vector:
+\begin{equation}
+Z_t =
+\begin{bmatrix}
+\ln(P^{COL}_{t}) &
+\ln(P^{WLD}_{t}) &
+\ln(P^{EU}_{t}) &
+\ln(FX_t) &
+\ln(OIL_t) &
+W_t
+\end{bmatrix}^{\prime},
+\label{eq:augmented_state}
+\end{equation}
+and considers an exploratory VECM:
+\begin{equation}
+\Delta Z_t = \Pi Z_{t-1} + \sum_{k=1}^{p-1} \Gamma_k \Delta Z_{t-k} + \eta_t.
+\label{eq:vecm}
+\end{equation}
+
+This second strategy is scientifically useful because it asks whether climate variables participate in the same long-run adjustment mechanism as price variables. However, with only 51 complete climate-augmented observations in the current monthly overlap, it is not yet the preferred reporting strategy. In this draft it is framed as an exploratory extension and a future robustness path rather than as the paper's main identification claim \citep{johansen_1991,hakkio_rush_1991}.
+
+\subsection{Hypotheses}
+
+\begin{enumerate}
+  \item \textbf{H1:} World cocoa price changes transmit positively to Colombian cocoa price changes in the aligned monthly sample.
+  \item \textbf{H2:} EU downstream chocolate prices adjust more slowly and more weakly than Colombian producer-linked prices.
+  \item \textbf{H3:} Weather variables improve the vulnerability interpretation but do not overturn the dominance of market transmission in the short aligned sample.
+  \item \textbf{H4:} A climate-augmented cointegration system is conceptually relevant but empirically fragile under the current climate-augmented overlap.
+\end{enumerate}
+
+\section{Preliminary Results}
+\label{sec:results}
+
+\subsection{Descriptive and Statistical Properties}
+
+The aligned data already show a strong contrast between the price system and the weather system. The core price levels behave mostly like non-stationary series in the shared window: ADF does not reject a unit root for Colombian cocoa, world cocoa, EU chocolate, COP/USD, or Brent, while KPSS rejects stationarity for all of them except the exchange rate. By contrast, several weather variables are more stable in levels. Precipitation, maximum temperature, minimum temperature, humidity, wind speed, and solar radiation reject the ADF unit-root null at conventional levels in the current aligned window.
+
+\begin{table}[H]
+\centering
+\caption{Descriptive statistics for the core system and selected weather variables in the imputed aligned window}
+\label{tab:descriptive_stats}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{p{4.0cm}rrrrr}
+\toprule
+Series & Mean & Std. dev. & Median & Min & Max \\
+\midrule
+Colombian cocoa price & 17{,}334.75 & 9{,}168.37 & 12{,}536.69 & 7{,}926.08 & 34{,}395.33 \\
+World cocoa benchmark & 4{,}943.44 & 2{,}660.61 & 3{,}630.14 & 2{,}239.13 & 10{,}745.11 \\
+EU chocolate index & 128.83 & 19.73 & 125.20 & 104.25 & 164.99 \\
+COP/USD exchange rate & 4{,}147.16 & 302.33 & 4{,}047.41 & 3{,}773.38 & 4{,}926.66 \\
+Brent oil price & 82.61 & 13.41 & 80.92 & 62.54 & 122.71 \\
+NASA precipitation & 5.73 & 3.59 & 5.08 & 0.03 & 14.67 \\
+NASA max temperature & 31.93 & 3.04 & 30.79 & 28.67 & 39.15 \\
+NASA solar radiation & 18.24 & 1.19 & 18.18 & 15.68 & 20.62 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Selected preliminary statistical properties from the imputed aligned panel}
+\label{tab:stats_overview}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{p{4.2cm}rrrrr}
+\toprule
+Series & Mean level & Annualized vol. & ADF level $p$ & ADF return $p$ & ARCH-LM $p$ \\
+\midrule
+Colombian cocoa price & 17{,}334.75 & 0.376 & 0.643 & 0.000 & 0.768 \\
+World cocoa benchmark & 4{,}943.44 & 0.367 & 0.648 & 0.000 & 0.013 \\
+EU chocolate index & 128.83 & 0.030 & 0.984 & 0.013 & 0.005 \\
+COP/USD exchange rate & 4{,}147.16 & 0.110 & 0.525 & 0.000 & 0.903 \\
+Brent oil price & 82.61 & 0.258 & 0.460 & 0.081 & 0.083 \\
+NASA precipitation & 5.73 & 3.106 & 0.000 & 0.006 & 0.070 \\
+NASA max temperature & 31.93 & 0.152 & 0.018 & 0.003 & 0.438 \\
+NASA solar radiation & 18.25 & 0.283 & 0.000 & 0.000 & 0.434 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+Table~\ref{tab:stats_overview} highlights two features that matter for the rest of the paper. First, Colombian cocoa and world cocoa returns are both much more volatile than the downstream EU chocolate index, which is consistent with the idea of slower downstream adjustment. Second, weather variables are better treated as structured environmental context than as obvious drivers of a large multivariate market system in this short sample.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth]{../outputs/figures/figure_indexed_core_series_common_window_imputed.png}
+\caption{Indexed core series in the imputed shared monthly window. The figure compares proportional movements across Colombian cocoa, the world cocoa benchmark, the EU chocolate index, the exchange rate, and Brent oil in the common aligned sample.}
+\label{fig:indexed_core}
+\end{figure}
+
+The common-window plot in Figure~\ref{fig:indexed_core} shows the close comovement between the Colombian and world cocoa series during the aligned period, alongside the smoother evolution of the EU downstream index. The same descriptive stage also reports a level correlation of 0.961 between Colombian cocoa and world cocoa and a log-return correlation of 0.768 between the same pair in the aligned sample.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.90\textwidth]{../outputs/figures/figure_correlation_heatmap_levels_common_window_imputed.png}
+\caption{Correlation heatmap for the imputed aligned core system. The strongest relationship is between Colombian cocoa and the world cocoa benchmark, while the exchange rate is weakly associated with the price system in levels over the shared window.}
+\label{fig:core_corrplot}
+\end{figure}
+
+Figure~\ref{fig:core_corrplot} makes the core dependence structure explicit. Colombian cocoa and world cocoa are highly correlated in levels ($0.961$), and both are positively associated with the EU chocolate index. Brent is negatively correlated with the three price indicators in the shared window, while COP/USD is comparatively weak in simple level correlation even though it remains important in the regression-based transmission equations.
+
+\subsection{Preliminary Core Transmission Results}
+
+The baseline transmission chapter provides the strongest evidence in the current draft. In the imputed long-run domestic-price equation, the elasticity on the world cocoa benchmark is 0.990, while the coefficient on the exchange rate is 0.902. In the short-run domestic-return equation, the world cocoa return coefficient is 0.796 with $p<0.001$, whereas the exchange-rate and Brent return coefficients are not conventionally significant. The model fit remains substantial, with adjusted $R^2=0.965$ for the level equation and adjusted $R^2=0.581$ for the domestic return equation.
+
+\begin{table}[H]
+\centering
+\caption{Core transmission results from the imputed aligned sample}
+\label{tab:core_results}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{p{5.1cm}rrrr}
+\toprule
+Model component & Coefficient & Std. error & $p$-value & Adj. $R^2$ \\
+\midrule
+$\ln(P^{COL}_{t}) \leftarrow \ln(P^{WLD}_{t})$ & 0.990 & 0.037 & 0.000 & 0.965 \\
+$\ln(P^{COL}_{t}) \leftarrow \ln(FX_t)$ & 0.902 & 0.147 & 0.000 & 0.965 \\
+$\ln(P^{COL}_{t}) \leftarrow \ln(OIL_t)$ & 0.140 & 0.084 & 0.096 & 0.965 \\
+$\Delta \ln(P^{COL}_{t}) \leftarrow \Delta \ln(P^{WLD}_{t})$ & 0.796 & 0.180 & 0.000 & 0.581 \\
+$\Delta \ln(P^{COL}_{t}) \leftarrow \Delta \ln(FX_t)$ & 0.218 & 0.204 & 0.287 & 0.581 \\
+$\Delta \ln(P^{COL}_{t}) \leftarrow \Delta \ln(OIL_t)$ & 0.029 & 0.067 & 0.665 & 0.581 \\
+$\ln(P^{EU}_{t}) \leftarrow \ln(P^{WLD}_{t})$ & 0.296 & 0.126 & 0.018 & 0.727 \\
+$\Delta \ln(P^{EU}_{t}) \leftarrow \Delta \ln(P^{WLD}_{t})$ & -0.023 & 0.010 & 0.023 & -0.007 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+The cointegration and causality diagnostics reinforce a cautious reading. The bivariate Engle--Granger test for world cocoa and Colombian cocoa does not reject the null of no cointegration at conventional levels in the imputed aligned sample ($p=0.132$). By contrast, directional predictability is stronger in returns: Granger causality from world cocoa returns to Colombian cocoa returns is strongest at lag 3 ($p=0.023$), and the compact return VAR selects lag order 1. These results suggest that short-run transmission is more defensible than strong long-run equilibrium claims in the current overlap.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{../outputs/figures/figure_core_return_impulse_response.png}
+\caption{Impulse-response matrix for the core return VAR. Acronyms identify the return series for world cocoa, Colombian cocoa, and the EU chocolate index.}
+\label{fig:irf}
+\end{figure}
+
+\subsection{Preliminary Weather-Extended Results}
+
+The weather chapter asks a different question. It does not ask whether local weather replaces market transmission. It asks whether local weather stress helps explain how market volatility is experienced in the producing location. The selected weather variables are precipitation, solar radiation, and maximum temperature because they capture hydrological stress, seasonal radiation structure, and heat stress, respectively.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{../outputs/figures/figure_climate_core_correlation_common_sample.png}
+\caption{Climate-core correlation matrix in the aligned common sample. This figure plays the parallel role for the weather block that the impulse-response matrix plays for the core transmission block: it summarizes how the selected weather variables and the wider climate block relate to the price system without forcing an unstable weather-augmented VAR in a 51-observation complete sample.}
+\label{fig:weather_corrplot}
+\end{figure}
+
+Figure~\ref{fig:weather_corrplot} is included because the second block is not currently estimated as a full weather-augmented VAR or VECM. Under the current climate-augmented overlap, such a system would be too parameter-heavy for defensible impulse-response analysis. The corrplot therefore provides the manuscript's visual bridge between the weather data and the vulnerability interpretation. It shows, for example, that humidity is positively associated with the three price variables in the aligned sample, while temperature variables are negatively associated with the EU chocolate index and weakly to moderately associated with the core market variables.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{../outputs/figures/figure_climate_series_panels_common_window.png}
+\caption{Weather panels for the aligned common window in San Vicente de Chucur\'{\i}, Santander. These series provide the empirical context for the vulnerability chapter and for the exploratory climate-augmented approach.}
+\label{fig:climate_panels}
+\end{figure}
+
+\begin{table}[H]
+\centering
+\caption{Weather-extended domestic models from the imputed aligned sample}
+\label{tab:weather_results}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{p{5.3cm}rrrr}
+\toprule
+Model component & Coefficient & Std. error & $p$-value & Adj. $R^2$ \\
+\midrule
+$\ln(P^{COL}_{t}) \leftarrow \ln(P^{WLD}_{t})$ & 0.977 & 0.037 & 0.000 & 0.966 \\
+$\ln(P^{COL}_{t}) \leftarrow$ solar radiation$_t$ ($z$) & 0.028 & 0.016 & 0.075 & 0.966 \\
+$\ln(P^{COL}_{t}) \leftarrow$ precipitation$_t$ ($z$) & 0.024 & 0.020 & 0.247 & 0.966 \\
+$\ln(P^{COL}_{t}) \leftarrow$ max temperature$_t$ ($z$) & -0.009 & 0.019 & 0.627 & 0.966 \\
+$\Delta \ln(P^{COL}_{t}) \leftarrow \Delta \ln(P^{WLD}_{t})$ & 0.773 & 0.157 & 0.000 & 0.595 \\
+$\Delta \ln(P^{COL}_{t}) \leftarrow$ max temperature$_{t-1}$ ($z$) & 0.023 & 0.015 & 0.119 & 0.595 \\
+$\Delta \ln(P^{COL}_{t}) \leftarrow$ precipitation$_{t-1}$ ($z$) & 0.003 & 0.010 & 0.725 & 0.595 \\
+$\Delta \ln(P^{COL}_{t}) \leftarrow$ solar radiation$_{t-1}$ ($z$) & -0.008 & 0.008 & 0.330 & 0.595 \\
+Domestic rolling volatility $\leftarrow$ world rolling volatility & 0.954 & 0.051 & 0.000 & 0.917 \\
+Domestic rolling volatility $\leftarrow$ weather stress$_{t-1}$ & 0.013 & 0.012 & 0.253 & 0.917 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+The weather extension improves adjusted $R^2$ only modestly relative to the core domestic models. The improvement is 0.0017 in levels and 0.0139 in returns. This is substantively useful because it suggests that weather matters more for vulnerability framing than for replacing the benchmark market variables in the core transmission mechanism.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.93\textwidth]{../outputs/figures/figure_weather_vulnerability_index.png}
+\caption{Exploratory weather-extended vulnerability indicators. The farmer exposure index combines domestic volatility, fitted market-transmission shock, and weather stress; the livelihood-risk score additionally incorporates world volatility.}
+\label{fig:vulnerability}
+\end{figure}
+
+The exploratory vulnerability index identifies May 2024, April 2024, November 2024, December 2024, and October 2025 as the highest-risk months in the current aligned sample. These dates should be interpreted carefully, but they are consistent with the broader idea that vulnerability in this system is produced by the interaction of transmitted market shocks and local stress conditions, not by weather alone.
+
+\subsection{Preliminary Answers to the Hypotheses}
+
+\textbf{H1 is supported.} The clearest result in the draft is the positive and statistically strong effect of world cocoa returns on Colombian cocoa returns.
+
+\textbf{H2 is partially supported.} The EU downstream series moves with the system in levels, but the short-run return response is much weaker and the EU return model has poor fit.
+
+\textbf{H3 is partially supported.} Weather variables do not dominate the market system, but they do improve the vulnerability narrative and contribute modestly to model fit, especially through solar radiation in levels and heat stress in lagged returns.
+
+\textbf{H4 is provisionally supported.} The climate-augmented system remains theoretically attractive but empirically fragile under the current 51-observation complete weather overlap. For now, the manuscript should emphasize weather as contextual vulnerability information and present climate-augmented cointegration as an exploratory extension rather than as the main result.
+
+\section{Discussion and Limitations}
+\label{sec:discussion}
+
+The main limitation is sample length. The core aligned monthly window contains only 53 months, and the fully complete climate-augmented overlap contains only 51 months. This is enough for transparent descriptive work and cautious reduced-form analysis, but it is short for strong multivariate cointegration claims in a system that mixes domestic, benchmark, downstream, macro, and climate variables \citep{hakkio_rush_1991}. That is why the draft distinguishes so carefully between the core transmission chapter and the weather-augmented extension.
+
+A second limitation is the structure of the missing-data problem. Although only two cells needed imputation, any imputed value is still an estimate rather than a recovered observation. The manuscript therefore treats imputation as a continuity device and a sensitivity tool, not as a solution to fundamental data scarcity. The non-imputed balanced sample should remain the main reference for aligned descriptive reporting, while imputed variants are best understood as supportive continuity artifacts.
+
+A third limitation is measurement. The Colombian domestic series is a national weekly reference series aggregated to monthly means, not a farm-gate micro panel. The EU downstream series is a consumer-price index, not a wholesale chocolate margin. The weather block is a location-level NASA POWER climate panel, not a farm-observed yield or disease dataset. These features do not invalidate the analysis, but they shape the type of claim the paper can make. The paper is strongest when it speaks about transmission, volatility, and vulnerability context across linked market layers rather than about farm-level agronomic causality.
+
+The current draft also inherits institutional source transitions. The Eurostat downstream endpoint used here is the legacy COICOP series running through December 2025, after which the classification changes. The Brent monthly series required a March 2026 extension derived from the official daily history because the official monthly page stopped at February 2026 at the time of download. These transitions are documented rather than hidden, but they still matter for replication and future updates.
+
+Finally, the paper should resist over-claiming from the weather chapter. The current evidence does not show that local weather overwhelms international market transmission. Instead, it shows that vulnerability is best read as the interaction of a volatile market chain and a structured environmental setting. That distinction is important both methodologically and substantively.
+
+\section{Conclusion}
+
+This draft establishes a paper-ready empirical structure for studying cocoa volatility and smallholder vulnerability across the supply chain. Its main contribution is not only a set of preliminary regressions, but a transparent data and methods architecture linking Colombian domestic prices, world cocoa benchmarks, EU downstream prices, macro controls, and local weather context. Preliminary evidence supports strong short-run transmission from world cocoa prices into Colombian cocoa prices, weaker and slower downstream EU adjustment, and a weather block that is more useful for vulnerability interpretation than for replacing the core market story. The next stage should deepen robustness, especially through longer domestic coverage, alternative downstream indicators, and carefully justified climate-augmented systems.
+
+\bibliographystyle{plainnat}
+\bibliography{../references/cocoa_volatility}
+
+\end{document}

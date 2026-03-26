@@ -1,0 +1,119 @@
+\begin{thebibliography}{14}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Acosta et~al.(2019)Acosta, Ihle, and von
+  Cramon-Taubadel]{acosta_ihle_voncramon_2019}
+Alejandro Acosta, Rico Ihle, and Stephan von Cramon-Taubadel.
+\newblock Combining market structure and econometric methods for price
+  transmission analysis.
+\newblock \emph{Food Security}, 11\penalty0 (4):\penalty0 941--951, 2019.
+\newblock \doi{10.1007/s12571-019-00951-w}.
+
+\bibitem[{Banco de la Republica}(2026)]{banrep_trm}
+{Banco de la Republica}.
+\newblock Tasa de cambio representativa del mercado ({TRM}).
+\newblock \url{https://www.banrep.gov.co/es/glosario/tasa-cambio-trm}, 2026.
+\newblock Official Colombian central-bank reference page for the exchange-rate
+  series used in the macro-control block. Accessed 2026-03-26.
+
+\bibitem[Engle and Granger(1987)]{engle_granger_1987}
+Robert~F. Engle and Clive W.~J. Granger.
+\newblock Co-integration and error correction: Representation, estimation, and
+  testing.
+\newblock \emph{Econometrica}, 55\penalty0 (2):\penalty0 251--276, 1987.
+
+\bibitem[{Eurostat}(2026)]{eurostat_hicp}
+{Eurostat}.
+\newblock Harmonised index of consumer prices (hicp) metadata.
+\newblock
+  \url{https://ec.europa.eu/eurostat/cache/metadata/en/prc_hicp_esms.htm},
+  2026.
+\newblock Official metadata for monthly HICP series. Accessed 2026-03-25.
+
+\bibitem[Hakkio and Rush(1991)]{hakkio_rush_1991}
+Craig~S. Hakkio and Mark Rush.
+\newblock Cointegration: How short is the long-run?
+\newblock \emph{Journal of International Money and Finance}, 10\penalty0
+  (4):\penalty0 571--581, 1991.
+\newblock \doi{10.1016/0261-5606(91)90008-8}.
+
+\bibitem[Johansen(1991)]{johansen_1991}
+Soren Johansen.
+\newblock Estimation and hypothesis testing of cointegration vectors in
+  gaussian vector autoregressive models.
+\newblock \emph{Econometrica}, 59\penalty0 (6):\penalty0 1551--1580, 1991.
+
+\bibitem[{Ministerio de Agricultura y Desarrollo Rural}(2026)]{agronet_cacao}
+{Ministerio de Agricultura y Desarrollo Rural}.
+\newblock Precio de referencia semanal de compra de cacao - fuente industria
+  nacional - exportadores.
+\newblock
+  \url{https://www.agronet.gov.co/Noticias/Paginas/Precio-de-referencia-semanal-de-compra-de-cacao---Fuente-Industria.aspx},
+  2026.
+\newblock Official AgroNet weekly cacao reference series used for the Colombian
+  domestic price block. Accessed 2026-03-26.
+
+\bibitem[{National Aeronautics and Space Administration}(2026)]{nasa_power_api}
+{National Aeronautics and Space Administration}.
+\newblock Nasa power temporal apis documentation.
+\newblock \url{https://power.larc.nasa.gov/docs/services/api/temporal/}, 2026.
+\newblock Official documentation for daily and monthly analysis-ready
+  meteorological data. Accessed 2026-03-25.
+
+\bibitem[Talero-Sarmiento et~al.(2025)Talero-Sarmiento, Lamos-Diaz, and
+  Marquez-Gonzalez]{talero_sarmiento_etal_2025}
+Leonardo~H. Talero-Sarmiento, Henry Lamos-Diaz, and Juan~D. Marquez-Gonzalez.
+\newblock Optimizing cocoa biomass density through integrated irrigation and
+  drainage management under water stress: A linear programming approach.
+\newblock \emph{Ecological Informatics}, 90:\penalty0 103262, 2025.
+\newblock \doi{10.1016/j.ecoinf.2025.103262}.
+\newblock URL \url{https://doi.org/10.1016/j.ecoinf.2025.103262}.
+
+\bibitem[Troyanskaya et~al.(2001)Troyanskaya, Cantor, Sherlock, Brown, Hastie,
+  Tibshirani, Botstein, and Altman]{troyanskaya_etal_2001}
+Olga Troyanskaya, Michael Cantor, Gavin Sherlock, Pat Brown, Trevor Hastie,
+  Robert Tibshirani, David Botstein, and Russ~B. Altman.
+\newblock Missing value estimation methods for dna microarrays.
+\newblock \emph{Bioinformatics}, 17\penalty0 (6):\penalty0 520--525, 2001.
+\newblock \doi{10.1093/bioinformatics/17.6.520}.
+\newblock URL \url{https://doi.org/10.1093/bioinformatics/17.6.520}.
+
+\bibitem[{U.S. Energy Information Administration}(2026)]{eia_brent}
+{U.S. Energy Information Administration}.
+\newblock Europe brent spot price {FOB}.
+\newblock
+  \url{https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=RBRTE&f=M},
+  2026.
+\newblock Official Brent history page used for the oil-price control series.
+  Accessed 2026-03-26.
+
+\bibitem[van Buuren and
+  Groothuis-Oudshoorn(2011)]{vanbuuren_groothuisoudshoorn_2011}
+Stef van Buuren and Karin Groothuis-Oudshoorn.
+\newblock {mice}: Multivariate imputation by chained equations in {R}.
+\newblock \emph{Journal of Statistical Software}, 45\penalty0 (3):\penalty0
+  1--67, 2011.
+\newblock \doi{10.18637/jss.v045.i03}.
+\newblock URL \url{https://www.jstatsoft.org/article/view/v045i03}.
+
+\bibitem[{World Bank Prospects Group}(2025)]{worldbank_pinksheet}
+{World Bank Prospects Group}.
+\newblock World bank commodities price data (the pink sheet).
+\newblock
+  \url{https://thedocs.worldbank.org/en/doc/18675f1d1639c7a34d463f59263ba0a2-0050012025/world-bank-commodities-price-data-the-pink-sheet},
+  2025.
+\newblock Public monthly commodity benchmark data, including cocoa. Accessed
+  2026-03-25.
+
+\bibitem[{Yahoo Finance}(2026)]{yahoo_finance_ccf}
+{Yahoo Finance}.
+\newblock Cocoa mar 26 ({CC=F}) historical data.
+\newblock \url{https://finance.yahoo.com/quote/CC%3DF/history/}, 2026.
+\newblock Secondary market-data feed used for cocoa futures history and
+  volatility diagnostics. Accessed 2026-03-26.
+
+\end{thebibliography}

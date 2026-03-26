@@ -1,0 +1,22 @@
+locations:
+  - location_id: "san_vicente_de_chucuri"
+    location_name: "San Vicente de Chucuri"
+    municipality: "San Vicente de Chucuri"
+    department: "Santander"
+    country: "Colombia"
+    latitude: 6.9287793
+    longitude: -73.5207543
+    coordinate_source: "OpenStreetMap Nominatim administrative centroid"
+    coordinate_source_url: "https://nominatim.openstreetmap.org/search?q=San+Vicente+de+Chucuri%2C+Santander%2C+Colombia&format=jsonv2&limit=1"
+
+downloads:
+  monthly:
+    start: "2000"
+    end: null
+  daily:
+    start: "20000101"
+    end: null
+
+nasa_power:
+  community: "AG"
+  format: "JSON"

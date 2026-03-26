@@ -1,7 +1,7 @@
 project:
   name: "Cocoa volatility and supply chain vulnerability of smallholder cocoa farmers to global commodity price volatility: From Colombian farms to European markets"
   slug: "cocoa_volatility"
-  run_date: "2026-03-25"
+  run_date: "2026-03-26"
   timezone: "America/Bogota"
   default_frequency: "monthly"
 
@@ -9,9 +9,19 @@ analysis:
   start_date: "2000-01-01"
   end_date: null
   aggregation_method: "mean"
+  common_window_start: "2021-08-01"
+  common_window_end: "2025-12-01"
+  common_window_rows: 53
+  balanced_common_sample_rows: 52
+  climate_augmented_common_sample_rows: 51
   deflator_base: 100.0
   log_transform: true
   compute_returns: true
+  primary_imputation_method: "iterative_multivariate"
+  figure_palette: "Okabe-Ito"
+  correlation_heatmap_bounds:
+    - -1.0
+    - 1.0
   stationarity_tests:
     - "adf"
     - "kpss"
@@ -28,6 +38,7 @@ series:
   international_price: "world_cocoa_price_usd_mt"
   eu_price: "eu_hicp_chocolate_index"
   exchange_rate: "cop_usd_exchange_rate"
+  oil_price: "brent_oil_usd_bbl"
   inflation_index: "colombia_cpi_index"
 
 trade:

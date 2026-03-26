@@ -26,12 +26,22 @@ def main() -> None:
         "international": ROOT / PATHS["raw_international"],
         "eu": ROOT / PATHS["raw_eu"],
         "trade": ROOT / PATHS["raw_trade"],
+        "macro": ROOT / PATHS["raw_macro"],
         "climate": ROOT / PATHS["raw_climate"],
+    }
+    source_patterns = {
+        "colombia": ("*.csv", "*.xlsx", "*.parquet", "*.html", "*.json"),
+        "international": ("*.csv", "*.xlsx", "*.parquet", "*.json"),
+        "eu": ("*.csv", "*.xlsx", "*.parquet", "*.json"),
+        "trade": ("*.csv", "*.xlsx", "*.parquet", "*.json"),
+        "macro": ("*.csv", "*.xlsx", "*.parquet", "*.html", "*.json"),
+        "climate": ("*.csv", "*.xlsx", "*.parquet", "*.json"),
     }
 
     registries = []
     for source_name, directory in source_directories.items():
-        registry = build_file_registry(source_name, directory)
+        patterns = source_patterns.get(source_name, ("*.csv", "*.xlsx", "*.parquet"))
+        registry = build_file_registry(source_name, directory, patterns=patterns)
         logger.info("Found %s files for %s", len(registry), source_name)
         registries.append(registry)
 

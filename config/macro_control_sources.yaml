@@ -1,0 +1,16 @@
+macro_controls:
+  banco_republica:
+    source_name: "Banco de la República / Superintendencia Financiera de Colombia"
+    dataset_name: "Tasa Representativa del Mercado (TRM)"
+    series_id: 1
+    tipo_dato: 0
+    cant_datos: 35
+    frecuencia_datos: "year"
+    unit: "COP/USD"
+  eia:
+    source_name: "U.S. Energy Information Administration"
+    dataset_name: "Europe Brent Spot Price FOB"
+    series_code: "RBRTE"
+    unit: "USD/barrel"
+    daily_url: "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=RBRTE&f=D"
+    monthly_url: "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=RBRTE&f=M"
