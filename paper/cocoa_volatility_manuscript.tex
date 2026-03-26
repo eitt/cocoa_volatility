@@ -232,6 +232,34 @@ and the corresponding exploratory VECM is written as:
 
 This second approach is conceptually attractive because it asks whether climatic conditions enter the same long-run adjustment mechanism as international benchmarks, domestic producer prices, downstream European prices, and macroeconomic controls. However, the climate-augmented sample currently comprises only 51 complete monthly observations, rendering the system empirically fragile for formal reporting. For that reason, the present draft treats the augmented VECM as an exploratory extension and a possible robustness path rather than as the main empirical claim of the paper \citep{johansen_1991,hakkio_rush_1991}.
 
+\subsection{Exploratory Vulnerability Indicators}
+
+The weather chapter also constructs three exploratory indicators that are used for interpretation rather than as validated welfare scales. The first step is to summarize contemporaneous local climatic stress from the selected weather variables: precipitation, surface solar radiation, and maximum temperature. Let $w_{j,t}$ denote the value of weather variable $j$ in month $t$, and let $z(w_{j,t})$ denote its within-sample standardized value. The weather-stress index is then defined as:
+\begin{equation}
+\text{WeatherStressIndex}_t = \frac{1}{J} \sum_{j=1}^{J} \left| z(w_{j,t}) \right|,
+\label{eq:weather_stress_index}
+\end{equation}
+where $J=3$ in the current draft. By construction, this index is larger when the month exhibits bigger absolute deviations from the aligned-sample mean across the selected weather dimensions, regardless of sign. The plotted weather-stress series is the standardized version of that composite:
+\begin{equation}
+\text{WeatherStressZ}_t = z(\text{WeatherStressIndex}_t).
+\label{eq:weather_stress_z}
+\end{equation}
+
+Positive values of $\text{WeatherStressZ}_t$ therefore indicate above-average combined weather anomaly within the aligned sample, while negative values indicate relatively mild weather conditions in comparative terms.
+
+The farmer exposure index combines three standardized channels: domestic cocoa volatility, the magnitude of the fitted market-transmission shock from the core domestic return model, and weather stress. Let $\sigma^{COL}_t$ denote rolling domestic return volatility and let $\widehat{m}_t = \left| \widehat{\Delta \ln(P^{COL}_{t})} \right|$ denote the absolute fitted value from the core short-run transmission equation. The resulting indicator is:
+\begin{equation}
+\text{FarmerExposureIndex}_t = z(\sigma^{COL}_t) + z(\widehat{m}_t) + \text{WeatherStressZ}_t.
+\label{eq:farmer_exposure}
+\end{equation}
+
+This index should be interpreted as an exposure score: it rises when domestic volatility is elevated, when the fitted market-transmission shock is large in magnitude, and when local weather conditions are unusually stressful. Finally, the livelihood-risk score adds a dependence-like external pressure term based on world cocoa volatility:
+\begin{equation}
+\text{LivelihoodRiskScore}_t = \text{FarmerExposureIndex}_t + z(\sigma^{WLD}_t),
+\label{eq:livelihood_risk}
+\end{equation}
+where $\sigma^{WLD}_t$ denotes rolling world-cocoa return volatility. In the present draft, these indicators are best read as transparent composite heuristics for vulnerability-oriented interpretation, not as structural welfare measures or causal estimates of household outcomes.
+
 \subsection{Hypotheses}
 
 The empirical analysis is organized around four working hypotheses. First, increases in world cocoa prices are expected to transmit positively to Colombian cocoa price changes within the aligned monthly sample. Second, European downstream chocolate prices are expected to adjust more slowly and less strongly than Colombian producer-linked prices. Third, weather variables are expected to improve the interpretation of vulnerability, but not to overturn the dominant role of market transmission in the short aligned sample. Fourth, a climate-augmented cointegration system is considered conceptually relevant, although its empirical implementation is constrained by the current overlap in the available data.
@@ -332,7 +360,27 @@ $\Delta \ln(P^{EU}_{t}) \leftarrow \Delta \ln(P^{WLD}_{t})$ & -0.023 & 0.010 & 0
 }
 \end{table}
 
-The cointegration and causality diagnostics support a cautious interpretation of the core transmission results. The bivariate Engle--Granger test for world cocoa and Colombian cocoa does not reject the null of no cointegration in the imputed aligned sample ($p=0.132$). By contrast, the short-run evidence is stronger: Granger causality from world cocoa returns to Colombian cocoa returns is strongest at lag 3 ($p=0.023$), and the compact return VAR selects lag order 1. Taken together, these results suggest that short-run transmission is better supported than strong long-run equilibrium claims in the current sample.
+\begin{table}[H]
+\centering
+\caption{Lag-specific pairwise Granger-causality $p$-values in the imputed aligned core return system}
+\label{tab:granger_pvalues}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{p{4.6cm}rrrr}
+\toprule
+Direction & Lag 1 $p$ & Lag 2 $p$ & Lag 3 $p$ & Best lag ($p$) \\
+\midrule
+World cocoa $\rightarrow$ Colombian cocoa & 0.050 & 0.075 & 0.023 & 3 (0.023) \\
+Colombian cocoa $\rightarrow$ World cocoa & 0.013 & 0.076 & 0.027 & 1 (0.013) \\
+Colombian cocoa $\rightarrow$ EU chocolate & 0.979 & 0.801 & 0.871 & 2 (0.801) \\
+EU chocolate $\rightarrow$ Colombian cocoa & 0.692 & 0.781 & 0.641 & 3 (0.641) \\
+World cocoa $\rightarrow$ EU chocolate & 0.678 & 0.597 & 0.364 & 3 (0.364) \\
+EU chocolate $\rightarrow$ World cocoa & 0.866 & 0.191 & 0.192 & 2 (0.191) \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+The cointegration and causality diagnostics support a cautious interpretation of the core transmission results. The bivariate Engle--Granger test for world cocoa and Colombian cocoa does not reject the null of no cointegration in the imputed aligned sample ($p=0.132$). Table~\ref{tab:granger_pvalues} reports the lag-specific Granger evidence. The strongest predictive linkage is from world cocoa returns to Colombian cocoa returns at lag 3 ($p=0.023$), but the reverse Colombia-to-world pairwise test is also significant at lags 1 and 3. In a short reduced-form sample, these results should be read as predictive precedence rather than as structural proof that domestic prices drive the world benchmark. Taken together with the regression elasticities and the impulse-response evidence, the results still support a world-to-Colombia transmission interpretation more strongly than the reverse.
 
 \begin{figure}[H]
 \centering
@@ -387,14 +435,32 @@ Domestic rolling volatility $\leftarrow$ weather stress$_{t-1}$ & 0.013 & 0.012 
 
 The weather extension improves adjusted $R^2$ only modestly relative to the core domestic models. The improvement is 0.0017 in levels and 0.0139 in returns. This is substantively useful because it suggests that weather matters more for vulnerability framing than for replacing the benchmark market variables in the core transmission mechanism.
 
+\begin{table}[H]
+\centering
+\caption{Definition and empirical range of the exploratory vulnerability indicators}
+\label{tab:vulnerability_definitions}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{p{3.0cm}p{8.2cm}rr}
+\toprule
+Indicator & Construction in the current draft & Mean & Std. dev. \\
+\midrule
+Weather stress index & Mean absolute standardized anomaly across precipitation, solar radiation, and maximum temperature & 0.798 & 0.356 \\
+Weather stress ($z$-score) & Standardized weather-stress index; positive values indicate above-average combined weather anomaly in the aligned sample & 0.000 & 1.010 \\
+Farmer exposure index & $z(\sigma^{COL}_t) + z(\widehat{m}_t) + \text{WeatherStressZ}_t$ & 0.758 & 1.691 \\
+Livelihood risk score & $\text{FarmerExposureIndex}_t + z(\sigma^{WLD}_t)$ & 0.758 & 2.429 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.93\textwidth]{figures/figure_weather_vulnerability_index.png}
-\caption{Exploratory weather-extended vulnerability indicators. The farmer exposure index combines domestic volatility, fitted market-transmission shock, and weather stress; the livelihood-risk score additionally incorporates world volatility.}
+\caption{Exploratory weather-extended vulnerability indicators. Weather stress ($z$-score) standardizes the average absolute anomaly across precipitation, solar radiation, and maximum temperature; the farmer exposure index adds domestic volatility and fitted market-transmission shock; the livelihood-risk score additionally incorporates world-cocoa volatility.}
 \label{fig:vulnerability}
 \end{figure}
 
-The exploratory vulnerability index identifies May 2024, April 2024, November 2024, December 2024, and October 2025 as the highest-risk months in the current aligned sample. These dates should be interpreted carefully, but they are consistent with the broader idea that vulnerability in this system is produced by the interaction of transmitted market shocks and local stress conditions, not by weather alone.
+Table~\ref{tab:vulnerability_definitions} and Figure~\ref{fig:vulnerability} clarify the meaning of the exploratory indicators. Weather stress is not a raw climate level; it is a relative anomaly score within the aligned sample. The farmer exposure index should therefore be read as a standardized combination of domestic volatility, predicted market-shock magnitude, and local weather anomaly. The livelihood-risk score adds world-cocoa volatility in order to represent an external market-pressure layer on top of local exposure. The highest-risk months under this exploratory scoring are May 2024, April 2024, November 2024, December 2024, and October 2025. These dates should be interpreted carefully, but they are consistent with the broader idea that vulnerability in this system is produced by the interaction of transmitted market shocks and local stress conditions, not by weather alone.
 
 \subsection{Preliminary Answers to the Hypotheses}
 
