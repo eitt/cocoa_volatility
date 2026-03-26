@@ -1,0 +1,42 @@
+[
+  {
+    "variable": "colombia_cocoa_price_cop_kg",
+    "colombia_cocoa_price_cop_kg": 1.0,
+    "world_cocoa_price_usd_mt": 0.961219297,
+    "eu_hicp_chocolate_index": 0.7328351316,
+    "cop_usd_exchange_rate": -0.0843024112,
+    "brent_oil_usd_bbl": -0.4611071712
+  },
+  {
+    "variable": "world_cocoa_price_usd_mt",
+    "colombia_cocoa_price_cop_kg": 0.961219297,
+    "world_cocoa_price_usd_mt": 1.0,
+    "eu_hicp_chocolate_index": 0.7894314619,
+    "cop_usd_exchange_rate": -0.1614559433,
+    "brent_oil_usd_bbl": -0.4985044471
+  },
+  {
+    "variable": "eu_hicp_chocolate_index",
+    "colombia_cocoa_price_cop_kg": 0.7328351316,
+    "world_cocoa_price_usd_mt": 0.7894314619,
+    "eu_hicp_chocolate_index": 1.0,
+    "cop_usd_exchange_rate": -0.1201009314,
+    "brent_oil_usd_bbl": -0.6773614334
+  },
+  {
+    "variable": "cop_usd_exchange_rate",
+    "colombia_cocoa_price_cop_kg": -0.0843024112,
+    "world_cocoa_price_usd_mt": -0.1614559433,
+    "eu_hicp_chocolate_index": -0.1201009314,
+    "cop_usd_exchange_rate": 1.0,
+    "brent_oil_usd_bbl": 0.0202837389
+  },
+  {
+    "variable": "brent_oil_usd_bbl",
+    "colombia_cocoa_price_cop_kg": -0.4611071712,
+    "world_cocoa_price_usd_mt": -0.4985044471,
+    "eu_hicp_chocolate_index": -0.6773614334,
+    "cop_usd_exchange_rate": 0.0202837389,
+    "brent_oil_usd_bbl": 1.0
+  }
+]

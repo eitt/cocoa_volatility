@@ -1,0 +1,6 @@
+variable,label,trend_strength,seasonal_strength,residual_std
+colombia_cocoa_price_cop_kg,Colombian cocoa price,0.7256131257127323,0.0,5113.768588296957
+world_cocoa_price_usd_mt,World cocoa benchmark price,0.8210789386942968,0.09301821589373616,1193.1550082057506
+eu_hicp_chocolate_index,EU chocolate or cocoa consumer price index,0.9929423452708999,0.4542058321560972,1.680327747905353
+cop_usd_exchange_rate,COP to USD exchange rate,0.3707039258486864,0.06271569507761876,242.80017490993814
+brent_oil_usd_bbl,Brent oil price,0.5363465411408835,0.1701546753030373,9.24825885741479

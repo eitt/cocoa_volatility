@@ -1,0 +1,17 @@
+[
+  {
+    "variable": "nasa_precipitation_mm_day",
+    "label": "NASA precipitation",
+    "selection_reason": "hydrological stress proxy and the most volatile weather-return series"
+  },
+  {
+    "variable": "nasa_surface_solar_radiation_mj_m2_day",
+    "label": "NASA surface solar radiation",
+    "selection_reason": "strongest seasonal weather structure in the aligned sample"
+  },
+  {
+    "variable": "nasa_temperature_max_c",
+    "label": "NASA max air temperature",
+    "selection_reason": "heat-stress proxy for crop and farm conditions"
+  }
+]

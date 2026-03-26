@@ -1,0 +1,16 @@
+[
+  {
+    "sample_name": "balanced_non_imputed",
+    "rows": 52,
+    "start_date": "2021-08-01",
+    "end_date": "2025-12-01",
+    "variables": "colombia_cocoa_price_cop_kg, world_cocoa_price_usd_mt, eu_hicp_chocolate_index, cop_usd_exchange_rate, brent_oil_usd_bbl"
+  },
+  {
+    "sample_name": "imputed_shared_window",
+    "rows": 53,
+    "start_date": "2021-08-01",
+    "end_date": "2025-12-01",
+    "variables": "colombia_cocoa_price_cop_kg, world_cocoa_price_usd_mt, eu_hicp_chocolate_index, cop_usd_exchange_rate, brent_oil_usd_bbl"
+  }
+]

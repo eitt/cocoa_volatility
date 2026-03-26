@@ -1,0 +1,4 @@
+variable,label,selection_reason
+nasa_precipitation_mm_day,NASA precipitation,hydrological stress proxy and the most volatile weather-return series
+nasa_surface_solar_radiation_mj_m2_day,NASA surface solar radiation,strongest seasonal weather structure in the aligned sample
+nasa_temperature_max_c,NASA max air temperature,heat-stress proxy for crop and farm conditions

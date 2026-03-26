@@ -1,0 +1,6 @@
+variable,non_missing_observations,missing_observations,coverage_share,first_observation,last_observation,span_months
+colombia_cocoa_price_cop_kg,55,740,0.06918238993710692,2021-08-01,2026-03-01,56
+world_cocoa_price_usd_mt,794,1,0.9987421383647799,1960-01-01,2026-02-01,794
+eu_hicp_chocolate_index,109,686,0.1371069182389937,2016-12-01,2025-12-01,109
+cop_usd_exchange_rate,413,382,0.519496855345912,1991-11-01,2026-03-01,413
+brent_oil_usd_bbl,467,328,0.5874213836477987,1987-05-01,2026-03-01,467

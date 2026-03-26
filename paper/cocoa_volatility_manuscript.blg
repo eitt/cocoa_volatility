@@ -3,11 +3,11 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: cocoa_volatility_manuscript.aux
 Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: plainnat.bst
-Reallocating 'name_of_file' (item size: 1) to 31 items.
-Database file #1: ../references/cocoa_volatility.bib
+Reallocating 'name_of_file' (item size: 1) to 28 items.
+Database file #1: references/cocoa_volatility.bib
 You've used 14 entries,
             2773 wiz_defined-function locations,
-            684 strings with 8420 characters,
+            684 strings with 8417 characters,
 and the built_in function-call counts, 5757 in all, are:
 = -- 537
 > -- 278

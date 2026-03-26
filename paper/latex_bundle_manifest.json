@@ -1,0 +1,952 @@
+[
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\figures\\.gitkeep",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\figures\\.gitkeep",
+    "size_bytes": 1
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\figures\\figure_climate_core_correlation_common_sample.png",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\figures\\figure_climate_core_correlation_common_sample.png",
+    "size_bytes": 605833
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\figures\\figure_climate_data_availability.png",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\figures\\figure_climate_data_availability.png",
+    "size_bytes": 149344
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\figures\\figure_climate_series_panels.png",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\figures\\figure_climate_series_panels.png",
+    "size_bytes": 1514833
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\figures\\figure_climate_series_panels_common_window.png",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\figures\\figure_climate_series_panels_common_window.png",
+    "size_bytes": 934277
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\figures\\figure_core_domestic_return_actual_vs_fitted.png",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\figures\\figure_core_domestic_return_actual_vs_fitted.png",
+    "size_bytes": 259717
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\figures\\figure_core_eu_return_actual_vs_fitted.png",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\figures\\figure_core_eu_return_actual_vs_fitted.png",
+    "size_bytes": 296757
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\figures\\figure_core_log_returns_panels.png",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\figures\\figure_core_log_returns_panels.png",
+    "size_bytes": 664609
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\figures\\figure_core_log_returns_panels_common_window.png",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\figures\\figure_core_log_returns_panels_common_window.png",
+    "size_bytes": 755606
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\figures\\figure_core_log_returns_panels_common_window_imputed.png",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\figures\\figure_core_log_returns_panels_common_window_imputed.png",
+    "size_bytes": 764572
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\figures\\figure_core_return_impulse_response.png",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\figures\\figure_core_return_impulse_response.png",
+    "size_bytes": 576994
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\figures\\figure_core_series_panels.png",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\figures\\figure_core_series_panels.png",
+    "size_bytes": 513798
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\figures\\figure_core_series_panels_common_window.png",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\figures\\figure_core_series_panels_common_window.png",
+    "size_bytes": 570823
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\figures\\figure_core_series_panels_common_window_imputed.png",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\figures\\figure_core_series_panels_common_window_imputed.png",
+    "size_bytes": 577249
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\figures\\figure_correlation_heatmap_levels.png",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\figures\\figure_correlation_heatmap_levels.png",
+    "size_bytes": 164027
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\figures\\figure_correlation_heatmap_levels_common_sample.png",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\figures\\figure_correlation_heatmap_levels_common_sample.png",
+    "size_bytes": 164027
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\figures\\figure_correlation_heatmap_levels_common_window_imputed.png",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\figures\\figure_correlation_heatmap_levels_common_window_imputed.png",
+    "size_bytes": 169915
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\figures\\figure_correlation_heatmap_log_returns.png",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\figures\\figure_correlation_heatmap_log_returns.png",
+    "size_bytes": 182384
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\figures\\figure_correlation_heatmap_log_returns_common_sample.png",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\figures\\figure_correlation_heatmap_log_returns_common_sample.png",
+    "size_bytes": 182384
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\figures\\figure_correlation_heatmap_log_returns_common_window_imputed.png",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\figures\\figure_correlation_heatmap_log_returns_common_window_imputed.png",
+    "size_bytes": 187198
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\figures\\figure_data_availability.png",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\figures\\figure_data_availability.png",
+    "size_bytes": 140035
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\figures\\figure_data_availability_common_window.png",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\figures\\figure_data_availability_common_window.png",
+    "size_bytes": 121629
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\figures\\figure_impulse_response.png",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\figures\\figure_impulse_response.png",
+    "size_bytes": 576994
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\figures\\figure_indexed_core_series.png",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\figures\\figure_indexed_core_series.png",
+    "size_bytes": 310483
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\figures\\figure_indexed_core_series_common_sample.png",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\figures\\figure_indexed_core_series_common_sample.png",
+    "size_bytes": 310483
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\figures\\figure_indexed_core_series_common_window_imputed.png",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\figures\\figure_indexed_core_series_common_window_imputed.png",
+    "size_bytes": 313693
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\figures\\figure_macro_controls_panels.png",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\figures\\figure_macro_controls_panels.png",
+    "size_bytes": 277495
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\figures\\figure_macro_controls_panels_common_window.png",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\figures\\figure_macro_controls_panels_common_window.png",
+    "size_bytes": 258770
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\figures\\figure_rolling_volatility.png",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\figures\\figure_rolling_volatility.png",
+    "size_bytes": 155985
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\figures\\figure_rolling_volatility_core_imputed.png",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\figures\\figure_rolling_volatility_core_imputed.png",
+    "size_bytes": 588127
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\figures\\figure_rolling_volatility_weather_imputed.png",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\figures\\figure_rolling_volatility_weather_imputed.png",
+    "size_bytes": 889862
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\figures\\figure_stl_decomposition_brent_oil_usd_bbl_imputed.png",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\figures\\figure_stl_decomposition_brent_oil_usd_bbl_imputed.png",
+    "size_bytes": 357067
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\figures\\figure_stl_decomposition_colombia_cocoa_price_cop_kg_imputed.png",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\figures\\figure_stl_decomposition_colombia_cocoa_price_cop_kg_imputed.png",
+    "size_bytes": 311969
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\figures\\figure_stl_decomposition_cop_usd_exchange_rate_imputed.png",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\figures\\figure_stl_decomposition_cop_usd_exchange_rate_imputed.png",
+    "size_bytes": 385673
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\figures\\figure_stl_decomposition_eu_hicp_chocolate_index_imputed.png",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\figures\\figure_stl_decomposition_eu_hicp_chocolate_index_imputed.png",
+    "size_bytes": 313958
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\figures\\figure_stl_decomposition_nasa_precipitation_mm_day_imputed.png",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\figures\\figure_stl_decomposition_nasa_precipitation_mm_day_imputed.png",
+    "size_bytes": 406187
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\figures\\figure_stl_decomposition_nasa_relative_humidity_pct_imputed.png",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\figures\\figure_stl_decomposition_nasa_relative_humidity_pct_imputed.png",
+    "size_bytes": 351038
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\figures\\figure_stl_decomposition_nasa_surface_solar_radiation_mj_m2_day_imputed.png",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\figures\\figure_stl_decomposition_nasa_surface_solar_radiation_mj_m2_day_imputed.png",
+    "size_bytes": 437080
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\figures\\figure_stl_decomposition_nasa_temperature_c_imputed.png",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\figures\\figure_stl_decomposition_nasa_temperature_c_imputed.png",
+    "size_bytes": 345703
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\figures\\figure_stl_decomposition_nasa_temperature_max_c_imputed.png",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\figures\\figure_stl_decomposition_nasa_temperature_max_c_imputed.png",
+    "size_bytes": 332445
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\figures\\figure_stl_decomposition_nasa_temperature_min_c_imputed.png",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\figures\\figure_stl_decomposition_nasa_temperature_min_c_imputed.png",
+    "size_bytes": 408864
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\figures\\figure_stl_decomposition_nasa_wind_speed_ms_imputed.png",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\figures\\figure_stl_decomposition_nasa_wind_speed_ms_imputed.png",
+    "size_bytes": 357719
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\figures\\figure_stl_decomposition_world_cocoa_price_usd_mt_imputed.png",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\figures\\figure_stl_decomposition_world_cocoa_price_usd_mt_imputed.png",
+    "size_bytes": 334745
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\figures\\figure_weather_domestic_levels_actual_vs_fitted.png",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\figures\\figure_weather_domestic_levels_actual_vs_fitted.png",
+    "size_bytes": 220682
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\figures\\figure_weather_domestic_returns_actual_vs_fitted.png",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\figures\\figure_weather_domestic_returns_actual_vs_fitted.png",
+    "size_bytes": 262621
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\figures\\figure_weather_vulnerability_index.png",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\figures\\figure_weather_vulnerability_index.png",
+    "size_bytes": 372316
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\docs\\citation_justification.md",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\references\\citation_justification.md",
+    "size_bytes": 5268
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\references\\cocoa_volatility.bib",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\references\\cocoa_volatility.bib",
+    "size_bytes": 8020
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_arch_lm_tests_imputed_all_series_log_returns.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_arch_lm_tests_imputed_all_series_log_returns.csv",
+    "size_bytes": 2698
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_arch_lm_tests_imputed_all_series_log_returns.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_arch_lm_tests_imputed_all_series_log_returns.json",
+    "size_bytes": 5431
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_arch_lm_tests_imputed_log_returns.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_arch_lm_tests_imputed_log_returns.csv",
+    "size_bytes": 915
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_arch_lm_tests_imputed_log_returns.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_arch_lm_tests_imputed_log_returns.json",
+    "size_bytes": 1724
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_arch_lm_tests_imputed_weather_log_returns.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_arch_lm_tests_imputed_weather_log_returns.csv",
+    "size_bytes": 1608
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_arch_lm_tests_imputed_weather_log_returns.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_arch_lm_tests_imputed_weather_log_returns.json",
+    "size_bytes": 3151
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_climate_core_correlation_common_sample.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_climate_core_correlation_common_sample.csv",
+    "size_bytes": 3308
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_climate_core_correlation_common_sample.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_climate_core_correlation_common_sample.json",
+    "size_bytes": 7296
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_climate_series_coverage.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_climate_series_coverage.csv",
+    "size_bytes": 568
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_climate_series_coverage.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_climate_series_coverage.json",
+    "size_bytes": 1812
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_climate_summary_statistics.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_climate_summary_statistics.csv",
+    "size_bytes": 784
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_climate_summary_statistics.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_climate_summary_statistics.json",
+    "size_bytes": 1585
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_climate_summary_statistics_common_window.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_climate_summary_statistics_common_window.csv",
+    "size_bytes": 730
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_climate_summary_statistics_common_window.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_climate_summary_statistics_common_window.json",
+    "size_bytes": 1563
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_common_sample_windows.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_common_sample_windows.csv",
+    "size_bytes": 891
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_common_sample_windows.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_common_sample_windows.json",
+    "size_bytes": 1474
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_common_window_missing_rows.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_common_window_missing_rows.csv",
+    "size_bytes": 176
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_common_window_missing_rows.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_common_window_missing_rows.json",
+    "size_bytes": 250
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_common_window_missingness.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_common_window_missingness.csv",
+    "size_bytes": 163
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_common_window_missingness.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_common_window_missingness.json",
+    "size_bytes": 430
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_core_engle_granger_pairs.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_core_engle_granger_pairs.csv",
+    "size_bytes": 1327
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_core_engle_granger_pairs.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_core_engle_granger_pairs.json",
+    "size_bytes": 2475
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_core_granger_causality_detail.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_core_granger_causality_detail.csv",
+    "size_bytes": 2601
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_core_granger_causality_detail.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_core_granger_causality_detail.json",
+    "size_bytes": 5191
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_core_granger_causality_summary.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_core_granger_causality_summary.csv",
+    "size_bytes": 936
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_core_granger_causality_summary.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_core_granger_causality_summary.json",
+    "size_bytes": 1823
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_core_transmission_coefficients.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_core_transmission_coefficients.csv",
+    "size_bytes": 7815
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_core_transmission_coefficients.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_core_transmission_coefficients.json",
+    "size_bytes": 13766
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_core_transmission_model_fit.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_core_transmission_model_fit.csv",
+    "size_bytes": 2155
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_core_transmission_model_fit.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_core_transmission_model_fit.json",
+    "size_bytes": 3761
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_core_transmission_samples.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_core_transmission_samples.csv",
+    "size_bytes": 389
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_core_transmission_samples.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_core_transmission_samples.json",
+    "size_bytes": 558
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_correlation_matrix_levels.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_correlation_matrix_levels.csv",
+    "size_bytes": 671
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_correlation_matrix_levels.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_correlation_matrix_levels.json",
+    "size_bytes": 1372
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_correlation_matrix_levels_common_sample.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_correlation_matrix_levels_common_sample.csv",
+    "size_bytes": 671
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_correlation_matrix_levels_common_sample.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_correlation_matrix_levels_common_sample.json",
+    "size_bytes": 1372
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_correlation_matrix_levels_common_window_imputed.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_correlation_matrix_levels_common_window_imputed.csv",
+    "size_bytes": 667
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_correlation_matrix_levels_common_window_imputed.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_correlation_matrix_levels_common_window_imputed.json",
+    "size_bytes": 1370
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_correlation_matrix_log_returns.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_correlation_matrix_log_returns.csv",
+    "size_bytes": 793
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_correlation_matrix_log_returns.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_correlation_matrix_log_returns.json",
+    "size_bytes": 1698
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_correlation_matrix_log_returns_common_sample.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_correlation_matrix_log_returns_common_sample.csv",
+    "size_bytes": 793
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_correlation_matrix_log_returns_common_sample.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_correlation_matrix_log_returns_common_sample.json",
+    "size_bytes": 1698
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_correlation_matrix_log_returns_common_window_imputed.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_correlation_matrix_log_returns_common_window_imputed.csv",
+    "size_bytes": 787
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_correlation_matrix_log_returns_common_window_imputed.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_correlation_matrix_log_returns_common_window_imputed.json",
+    "size_bytes": 1700
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_decomposition_strength_imputed.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_decomposition_strength_imputed.csv",
+    "size_bytes": 586
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_decomposition_strength_imputed.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_decomposition_strength_imputed.json",
+    "size_bytes": 1047
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_decomposition_strength_imputed_all_series.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_decomposition_strength_imputed_all_series.csv",
+    "size_bytes": 1550
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_decomposition_strength_imputed_all_series.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_decomposition_strength_imputed_all_series.json",
+    "size_bytes": 2991
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_decomposition_strength_imputed_weather.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_decomposition_strength_imputed_weather.csv",
+    "size_bytes": 933
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_decomposition_strength_imputed_weather.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_decomposition_strength_imputed_weather.json",
+    "size_bytes": 1734
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_engle_granger_results.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_engle_granger_results.csv",
+    "size_bytes": 725
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_engle_granger_results.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_engle_granger_results.json",
+    "size_bytes": 1236
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_granger_causality.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_granger_causality.csv",
+    "size_bytes": 516
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_granger_causality.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_granger_causality.json",
+    "size_bytes": 881
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_imputation_audit.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_imputation_audit.csv",
+    "size_bytes": 151
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_imputation_audit.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_imputation_audit.json",
+    "size_bytes": 218
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_imputation_reference_correlations.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_imputation_reference_correlations.csv",
+    "size_bytes": 671
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_imputation_reference_correlations.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_imputation_reference_correlations.json",
+    "size_bytes": 1372
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_log_return_summary_statistics.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_log_return_summary_statistics.csv",
+    "size_bytes": 960
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_log_return_summary_statistics.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_log_return_summary_statistics.json",
+    "size_bytes": 1342
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_log_return_summary_statistics_common_sample.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_log_return_summary_statistics_common_sample.csv",
+    "size_bytes": 980
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_log_return_summary_statistics_common_sample.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_log_return_summary_statistics_common_sample.json",
+    "size_bytes": 1351
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_log_return_summary_statistics_common_window_imputed.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_log_return_summary_statistics_common_window_imputed.csv",
+    "size_bytes": 974
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_log_return_summary_statistics_common_window_imputed.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_log_return_summary_statistics_common_window_imputed.json",
+    "size_bytes": 1348
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_log_summary_statistics.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_log_summary_statistics.csv",
+    "size_bytes": 853
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_log_summary_statistics.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_log_summary_statistics.json",
+    "size_bytes": 1305
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_pairwise_overlap_counts.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_pairwise_overlap_counts.csv",
+    "size_bytes": 340
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_pairwise_overlap_counts.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_pairwise_overlap_counts.json",
+    "size_bytes": 1171
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_pairwise_overlap_counts_common_window.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_pairwise_overlap_counts_common_window.csv",
+    "size_bytes": 324
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_pairwise_overlap_counts_common_window.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_pairwise_overlap_counts_common_window.json",
+    "size_bytes": 1155
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_pass_through_results.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_pass_through_results.csv",
+    "size_bytes": 1279
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_pass_through_results.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_pass_through_results.json",
+    "size_bytes": 2020
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_series_coverage.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_series_coverage.csv",
+    "size_bytes": 501
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_series_coverage.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_series_coverage.json",
+    "size_bytes": 1331
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_series_coverage_common_window.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_series_coverage_common_window.csv",
+    "size_bytes": 425
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_series_coverage_common_window.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_series_coverage_common_window.json",
+    "size_bytes": 1279
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_stationarity_tests.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_stationarity_tests.csv",
+    "size_bytes": 2
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_stationarity_tests.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_stationarity_tests.json",
+    "size_bytes": 2
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_stationarity_tests_imputed_all_series_levels.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_stationarity_tests_imputed_all_series_levels.csv",
+    "size_bytes": 5410
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_stationarity_tests_imputed_all_series_levels.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_stationarity_tests_imputed_all_series_levels.json",
+    "size_bytes": 13882
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_stationarity_tests_imputed_all_series_log_returns.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_stationarity_tests_imputed_all_series_log_returns.csv",
+    "size_bytes": 5973
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_stationarity_tests_imputed_all_series_log_returns.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_stationarity_tests_imputed_all_series_log_returns.json",
+    "size_bytes": 14433
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_stationarity_tests_imputed_levels.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_stationarity_tests_imputed_levels.csv",
+    "size_bytes": 1513
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_stationarity_tests_imputed_levels.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_stationarity_tests_imputed_levels.json",
+    "size_bytes": 4155
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_stationarity_tests_imputed_log_returns.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_stationarity_tests_imputed_log_returns.csv",
+    "size_bytes": 1751
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_stationarity_tests_imputed_log_returns.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_stationarity_tests_imputed_log_returns.json",
+    "size_bytes": 4380
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_stationarity_tests_imputed_weather_levels.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_stationarity_tests_imputed_weather_levels.csv",
+    "size_bytes": 3159
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_stationarity_tests_imputed_weather_levels.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_stationarity_tests_imputed_weather_levels.json",
+    "size_bytes": 8053
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_stationarity_tests_imputed_weather_log_returns.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_stationarity_tests_imputed_weather_log_returns.csv",
+    "size_bytes": 3484
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_stationarity_tests_imputed_weather_log_returns.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_stationarity_tests_imputed_weather_log_returns.json",
+    "size_bytes": 8379
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_statistical_properties_all_series_overview.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_statistical_properties_all_series_overview.csv",
+    "size_bytes": 11479
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_statistical_properties_all_series_overview.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_statistical_properties_all_series_overview.json",
+    "size_bytes": 24259
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_statistical_properties_imputed_all_series_levels.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_statistical_properties_imputed_all_series_levels.csv",
+    "size_bytes": 3305
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_statistical_properties_imputed_all_series_levels.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_statistical_properties_imputed_all_series_levels.json",
+    "size_bytes": 6921
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_statistical_properties_imputed_all_series_log_returns.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_statistical_properties_imputed_all_series_log_returns.csv",
+    "size_bytes": 4352
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_statistical_properties_imputed_all_series_log_returns.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_statistical_properties_imputed_all_series_log_returns.json",
+    "size_bytes": 7530
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_statistical_properties_imputed_levels.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_statistical_properties_imputed_levels.csv",
+    "size_bytes": 1233
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_statistical_properties_imputed_levels.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_statistical_properties_imputed_levels.json",
+    "size_bytes": 2412
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_statistical_properties_imputed_log_returns.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_statistical_properties_imputed_log_returns.csv",
+    "size_bytes": 1633
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_statistical_properties_imputed_log_returns.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_statistical_properties_imputed_log_returns.json",
+    "size_bytes": 2596
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_statistical_properties_imputed_weather_levels.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_statistical_properties_imputed_weather_levels.csv",
+    "size_bytes": 1937
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_statistical_properties_imputed_weather_levels.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_statistical_properties_imputed_weather_levels.json",
+    "size_bytes": 3953
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_statistical_properties_imputed_weather_log_returns.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_statistical_properties_imputed_weather_log_returns.csv",
+    "size_bytes": 2584
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_statistical_properties_imputed_weather_log_returns.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_statistical_properties_imputed_weather_log_returns.json",
+    "size_bytes": 4378
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_statistical_properties_weather_overview.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_statistical_properties_weather_overview.csv",
+    "size_bytes": 6978
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_statistical_properties_weather_overview.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_statistical_properties_weather_overview.json",
+    "size_bytes": 14053
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_summary_statistics.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_summary_statistics.csv",
+    "size_bytes": 653
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_summary_statistics.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_summary_statistics.json",
+    "size_bytes": 1223
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_summary_statistics_common_sample.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_summary_statistics_common_sample.csv",
+    "size_bytes": 651
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_summary_statistics_common_sample.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_summary_statistics_common_sample.json",
+    "size_bytes": 1229
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_summary_statistics_common_window.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_summary_statistics_common_window.csv",
+    "size_bytes": 622
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_summary_statistics_common_window.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_summary_statistics_common_window.json",
+    "size_bytes": 1213
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_summary_statistics_common_window_imputed.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_summary_statistics_common_window_imputed.csv",
+    "size_bytes": 609
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_summary_statistics_common_window_imputed.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_summary_statistics_common_window_imputed.json",
+    "size_bytes": 1208
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_volatility_summary_imputed_all_series_log_returns.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_volatility_summary_imputed_all_series_log_returns.csv",
+    "size_bytes": 3901
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_volatility_summary_imputed_all_series_log_returns.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_volatility_summary_imputed_all_series_log_returns.json",
+    "size_bytes": 7483
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_volatility_summary_imputed_log_returns.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_volatility_summary_imputed_log_returns.csv",
+    "size_bytes": 1473
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_volatility_summary_imputed_log_returns.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_volatility_summary_imputed_log_returns.json",
+    "size_bytes": 2574
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_volatility_summary_imputed_weather_log_returns.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_volatility_summary_imputed_weather_log_returns.csv",
+    "size_bytes": 2345
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_volatility_summary_imputed_weather_log_returns.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_volatility_summary_imputed_weather_log_returns.json",
+    "size_bytes": 4353
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_vulnerability_component_summary.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_vulnerability_component_summary.csv",
+    "size_bytes": 1776
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_vulnerability_component_summary.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_vulnerability_component_summary.json",
+    "size_bytes": 2645
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_vulnerability_metrics.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_vulnerability_metrics.csv",
+    "size_bytes": 10978
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_vulnerability_metrics.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_vulnerability_metrics.json",
+    "size_bytes": 29948
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_weather_common_window_missingness.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_weather_common_window_missingness.csv",
+    "size_bytes": 228
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_weather_common_window_missingness.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_weather_common_window_missingness.json",
+    "size_bytes": 613
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_weather_imputation_audit.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_weather_imputation_audit.csv",
+    "size_bytes": 150
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_weather_imputation_audit.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_weather_imputation_audit.json",
+    "size_bytes": 222
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_weather_imputation_reference_correlations.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_weather_imputation_reference_correlations.csv",
+    "size_bytes": 1231
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_weather_imputation_reference_correlations.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_weather_imputation_reference_correlations.json",
+    "size_bytes": 2652
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_weather_variable_selection.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_weather_variable_selection.csv",
+    "size_bytes": 373
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_weather_variable_selection.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_weather_variable_selection.json",
+    "size_bytes": 565
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_weather_vs_core_model_comparison.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_weather_vs_core_model_comparison.csv",
+    "size_bytes": 391
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_weather_vs_core_model_comparison.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_weather_vs_core_model_comparison.json",
+    "size_bytes": 577
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_weather_vulnerability_coefficients.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_weather_vulnerability_coefficients.csv",
+    "size_bytes": 4756
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_weather_vulnerability_coefficients.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_weather_vulnerability_coefficients.json",
+    "size_bytes": 7678
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_weather_vulnerability_model_fit.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_weather_vulnerability_model_fit.csv",
+    "size_bytes": 734
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_weather_vulnerability_model_fit.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_weather_vulnerability_model_fit.json",
+    "size_bytes": 1054
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_weather_vulnerability_volatility_coefficients.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_weather_vulnerability_volatility_coefficients.csv",
+    "size_bytes": 1509
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_weather_vulnerability_volatility_coefficients.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_weather_vulnerability_volatility_coefficients.json",
+    "size_bytes": 2248
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_weather_vulnerability_volatility_fit.csv",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_weather_vulnerability_volatility_fit.csv",
+    "size_bytes": 437
+  },
+  {
+    "source_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\outputs\\tables\\table_weather_vulnerability_volatility_fit.json",
+    "destination_path": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\paper\\tables\\table_weather_vulnerability_volatility_fit.json",
+    "size_bytes": 539
+  }
+]

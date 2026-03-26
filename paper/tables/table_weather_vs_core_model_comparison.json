@@ -1,0 +1,20 @@
+[
+  {
+    "comparison": "long_run_domestic_levels",
+    "core_adj_r_squared": 0.9646327322,
+    "weather_adj_r_squared": 0.9663762782,
+    "delta_adj_r_squared": 0.001743546,
+    "core_aic": -91.8974235173,
+    "weather_aic": -91.9253166133,
+    "delta_aic": -0.0278930959
+  },
+  {
+    "comparison": "short_run_domestic_returns",
+    "core_adj_r_squared": 0.5812447584,
+    "weather_adj_r_squared": 0.5951429726,
+    "delta_adj_r_squared": 0.0138982142,
+    "core_aic": -124.7100249356,
+    "weather_aic": -123.8211639729,
+    "delta_aic": 0.8888609627
+  }
+]

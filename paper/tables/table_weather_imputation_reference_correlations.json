@@ -1,0 +1,72 @@
+[
+  {
+    "variable": "nasa_precipitation_mm_day",
+    "nasa_precipitation_mm_day": 1.0,
+    "nasa_temperature_c": -0.5705858072,
+    "nasa_temperature_max_c": -0.556170469,
+    "nasa_temperature_min_c": -0.1802191217,
+    "nasa_relative_humidity_pct": 0.6460043428,
+    "nasa_wind_speed_ms": 0.0419653774,
+    "nasa_surface_solar_radiation_mj_m2_day": -0.4006313799
+  },
+  {
+    "variable": "nasa_temperature_c",
+    "nasa_precipitation_mm_day": -0.5705858072,
+    "nasa_temperature_c": 1.0,
+    "nasa_temperature_max_c": 0.9577814319,
+    "nasa_temperature_min_c": 0.6463471406,
+    "nasa_relative_humidity_pct": -0.930950279,
+    "nasa_wind_speed_ms": -0.5364206313,
+    "nasa_surface_solar_radiation_mj_m2_day": 0.348559963
+  },
+  {
+    "variable": "nasa_temperature_max_c",
+    "nasa_precipitation_mm_day": -0.556170469,
+    "nasa_temperature_c": 0.9577814319,
+    "nasa_temperature_max_c": 1.0,
+    "nasa_temperature_min_c": 0.5133483044,
+    "nasa_relative_humidity_pct": -0.9439087409,
+    "nasa_wind_speed_ms": -0.5338701232,
+    "nasa_surface_solar_radiation_mj_m2_day": 0.2104191528
+  },
+  {
+    "variable": "nasa_temperature_min_c",
+    "nasa_precipitation_mm_day": -0.1802191217,
+    "nasa_temperature_c": 0.6463471406,
+    "nasa_temperature_max_c": 0.5133483044,
+    "nasa_temperature_min_c": 1.0,
+    "nasa_relative_humidity_pct": -0.4353035374,
+    "nasa_wind_speed_ms": -0.5895907743,
+    "nasa_surface_solar_radiation_mj_m2_day": 0.2263835912
+  },
+  {
+    "variable": "nasa_relative_humidity_pct",
+    "nasa_precipitation_mm_day": 0.6460043428,
+    "nasa_temperature_c": -0.930950279,
+    "nasa_temperature_max_c": -0.9439087409,
+    "nasa_temperature_min_c": -0.4353035374,
+    "nasa_relative_humidity_pct": 1.0,
+    "nasa_wind_speed_ms": 0.4557344473,
+    "nasa_surface_solar_radiation_mj_m2_day": -0.3059081732
+  },
+  {
+    "variable": "nasa_wind_speed_ms",
+    "nasa_precipitation_mm_day": 0.0419653774,
+    "nasa_temperature_c": -0.5364206313,
+    "nasa_temperature_max_c": -0.5338701232,
+    "nasa_temperature_min_c": -0.5895907743,
+    "nasa_relative_humidity_pct": 0.4557344473,
+    "nasa_wind_speed_ms": 1.0,
+    "nasa_surface_solar_radiation_mj_m2_day": 0.0637788974
+  },
+  {
+    "variable": "nasa_surface_solar_radiation_mj_m2_day",
+    "nasa_precipitation_mm_day": -0.4006313799,
+    "nasa_temperature_c": 0.348559963,
+    "nasa_temperature_max_c": 0.2104191528,
+    "nasa_temperature_min_c": 0.2263835912,
+    "nasa_relative_humidity_pct": -0.3059081732,
+    "nasa_wind_speed_ms": 0.0637788974,
+    "nasa_surface_solar_radiation_mj_m2_day": 1.0
+  }
+]

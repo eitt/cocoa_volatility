@@ -1,0 +1,47 @@
+[
+  {
+    "variable": "colombia_cocoa_price_cop_kg",
+    "non_missing_observations": 55,
+    "missing_observations": 740,
+    "coverage_share": 0.0691823899,
+    "first_observation": "2021-08-01",
+    "last_observation": "2026-03-01",
+    "span_months": 56
+  },
+  {
+    "variable": "world_cocoa_price_usd_mt",
+    "non_missing_observations": 794,
+    "missing_observations": 1,
+    "coverage_share": 0.9987421384,
+    "first_observation": "1960-01-01",
+    "last_observation": "2026-02-01",
+    "span_months": 794
+  },
+  {
+    "variable": "eu_hicp_chocolate_index",
+    "non_missing_observations": 109,
+    "missing_observations": 686,
+    "coverage_share": 0.1371069182,
+    "first_observation": "2016-12-01",
+    "last_observation": "2025-12-01",
+    "span_months": 109
+  },
+  {
+    "variable": "cop_usd_exchange_rate",
+    "non_missing_observations": 413,
+    "missing_observations": 382,
+    "coverage_share": 0.5194968553,
+    "first_observation": "1991-11-01",
+    "last_observation": "2026-03-01",
+    "span_months": 413
+  },
+  {
+    "variable": "brent_oil_usd_bbl",
+    "non_missing_observations": 467,
+    "missing_observations": 328,
+    "coverage_share": 0.5874213836,
+    "first_observation": "1987-05-01",
+    "last_observation": "2026-03-01",
+    "span_months": 467
+  }
+]

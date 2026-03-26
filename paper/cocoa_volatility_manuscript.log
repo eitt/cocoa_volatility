@@ -1,9 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.3.4)  26 MAR 2026 10:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.3.4)  26 MAR 2026 10:38
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**./cocoa_volatility_manuscript.tex
-(cocoa_volatility_manuscript.tex
+**c:/Users/LEONA/Documents/GitHub/cocoa_volatility/paper/cocoa_volatility_manuscript.tex
+(c:/Users/LEONA/Documents/GitHub/cocoa_volatility/paper/cocoa_volatility_manuscript.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
 (C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -22,18 +23,14 @@ File: size11.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
 \bibindent=\dimen148
-)
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+) (C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
-
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+ (C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
-)
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+) (C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
-
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+ (C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
 ))
 \Gm@cnth=\count283
@@ -48,17 +45,13 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 \Gm@layouthoffset=\dimen155
 \Gm@layoutvoffset=\dimen156
 \Gm@dimlist=\toks18
-
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+ (C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
-)
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+) (C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
 Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks19
 \inpenc@posthook=\toks20
-)
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/lm\lmodern.sty
+) (C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/lm\lmodern.sty
 Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
@@ -92,32 +85,24 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
-)
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
+) (C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
-)
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+) (C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
-
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+ (C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
-
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+ (C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
-)
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
-fg
+) (C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
-
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+ (C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen157
 \Gin@req@width=\dimen158
-)
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+) (C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen159
 \lightrulewidth=\dimen160
@@ -136,8 +121,7 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@thisruleclass=\count288
 \@lastruleclass=\count289
 \@thisrulewidth=\dimen171
-)
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
+) (C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
 Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
 \LTleft=\skip51
 \LTright=\skip52
@@ -155,8 +139,7 @@ Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
 \c@LT@tables=\count293
 \c@LT@chunks=\count294
 \LT@p@ftn=\toks21
-)
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+) (C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
 \col@sep=\dimen173
 \ar@mcellbox=\box58
@@ -165,25 +148,21 @@ Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
 \extratabsurround=\skip55
 \backup@length=\skip56
 \ar@cellbox=\box59
-)
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+) (C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2025/07/09 v2.17z AMS math features
 \@mathmargin=\skip57
 
 For additional information on amsmath, use the `?' option.
 (C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2024/11/17 v2.01 AMS text
-
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+ (C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks23
 \ex@=\dimen175
-))
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+)) (C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen176
-)
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+) (C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count295
@@ -199,717 +178,4 @@ LaTeX Info: Redefining \dots on input line 498.
 LaTeX Info: Redefining \cdots on input line 619.
 \Mathstrutbox@=\box60
 \strutbox@=\box61
-LaTeX Info: Redefining \big on input line 721.
-LaTeX Info: Redefining \Big on input line 722.
-LaTeX Info: Redefining \bigg on input line 723.
-LaTeX Info: Redefining \Bigg on input line 724.
-\big@size=\dimen177
-LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
-\macc@depth=\count300
-LaTeX Info: Redefining \bmod on input line 904.
-LaTeX Info: Redefining \pmod on input line 909.
-LaTeX Info: Redefining \smash on input line 939.
-LaTeX Info: Redefining \relbar on input line 969.
-LaTeX Info: Redefining \Relbar on input line 970.
-\c@MaxMatrixCols=\count301
-\dotsspace@=\muskip17
-\c@parentequation=\count302
-\dspbrk@lvl=\count303
-\tag@help=\toks24
-\row@=\count304
-\column@=\count305
-\maxfields@=\count306
-\andhelp@=\toks25
-\eqnshift@=\dimen178
-\alignsep@=\dimen179
-\tagshift@=\dimen180
-\tagwidth@=\dimen181
-\totwidth@=\dimen182
-\lineht@=\dimen183
-\@envbody=\toks26
-\multlinegap=\skip58
-\multlinetaggap=\skip59
-\mathdisplay@stack=\toks27
-LaTeX Info: Redefining \[ on input line 2950.
-LaTeX Info: Redefining \] on input line 2951.
-)
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
-Package: amssymb 2013/01/14 v3.01 AMS font symbols
-
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
-Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\symAMSa=\mathgroup4
-\symAMSb=\mathgroup5
-LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
-LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
-Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count307
-\float@exts=\toks28
-\float@box=\box62
-\@float@everytoks=\toks29
-\@floatcapt=\box63
-)
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
-Package: hyperref 2026-01-29 v7.01p Hypertext links for LaTeX
-
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
-Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-)
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
-keys.sty
-Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-)
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.s
-ty
-Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
-Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
-)
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
-.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
-ty
-Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-)
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-))
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
-Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-)
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
-Package: nameref 2026-01-29 v2.58 Cross-referencing by name of section
-
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
-Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-)
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettit
-lestring.sty
-Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
-
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
-Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
-))
-\c@section@level=\count308
-)
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
-Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count309
-)
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.s
-ty
-Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
-)
-)
-\@linkdim=\dimen184
-\Hy@linkcounter=\count310
-\Hy@pagecounter=\count311
- (C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
-File: pd1enc.def 2026-01-29 v7.01p Hyperref: PDFDocEncoding definition (HO)
-Now handling font encoding PD1 ...
-... no UTF-8 mapping file for font encoding PD1
-) (C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
-Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
-)
-\Hy@SavedSpaceFactor=\count312
- (C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
-File: puenc.def 2026-01-29 v7.01p Hyperref: PDF Unicode definition (HO)
-Now handling font encoding PU ...
-... no UTF-8 mapping file for font encoding PU
-)
-Package hyperref Info: Hyper figures OFF on input line 4201.
-Package hyperref Info: Link nesting OFF on input line 4206.
-Package hyperref Info: Hyper index ON on input line 4209.
-Package hyperref Info: Plain pages OFF on input line 4216.
-Package hyperref Info: Backreferencing OFF on input line 4221.
-Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4468.
-\c@Hy@tempcnt=\count313
-
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
-\Urlmuskip=\muskip18
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-)
-LaTeX Info: Redefining \url on input line 4807.
-\XeTeXLinkMargin=\dimen185
-
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
-Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
-
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc
-.sty
-Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
-)
-))
-\Fld@menulength=\count314
-\Field@Width=\dimen186
-\Fld@charsize=\dimen187
-Package hyperref Info: Hyper figures OFF on input line 6084.
-Package hyperref Info: Link nesting OFF on input line 6089.
-Package hyperref Info: Hyper index ON on input line 6092.
-Package hyperref Info: backreferencing OFF on input line 6099.
-Package hyperref Info: Link coloring OFF on input line 6104.
-Package hyperref Info: Link coloring with OCG OFF on input line 6109.
-Package hyperref Info: PDF/A mode OFF on input line 6114.
-\Hy@abspage=\count315
-\c@Item=\count316
-\c@Hfootnote=\count317
-)
-Package hyperref Info: Driver (autodetected): hpdftex.
-
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
-File: hpdftex.def 2026-01-29 v7.01p Hyperref driver for pdfTeX
-\Fld@listcount=\count318
-\c@bookmark@seq@number=\count319
-
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
-echeck.sty
-Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
-
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquec
-ounter.sty
-Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
-)
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-84.
-)
-\Hy@SectionHShift=\skip60
-)
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
-Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip61
-\bibsep=\skip62
-LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count320
-)
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
-Package: caption 2023/08/05 v3.6o Customizing captions (AR)
-
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
-Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen188
-\captionmargin=\dimen189
-\caption@leftmargin=\dimen190
-\caption@rightmargin=\dimen191
-\caption@width=\dimen192
-\caption@indent=\dimen193
-\caption@parindent=\dimen194
-\caption@hangindent=\dimen195
-Package caption Info: Standard document class detected.
-)
-\c@caption@flags=\count321
-\c@continuedfloat=\count322
-Package caption Info: float package is loaded.
-Package caption Info: hyperref package is loaded.
-Package caption Info: longtable package is loaded.
-
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/caption\ltcaption.sty
-Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
-))
-Package hyperref Info: Option `colorlinks' set `true' on input line 24.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 46
-.
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
-File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
-tex.def
-File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count323
-) (cocoa_volatility_manuscript.aux)
-\openout1 = `cocoa_volatility_manuscript.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-
-*geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
-*geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
-* paper: <default>
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
-* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=469.75502pt
-* \textheight=650.43001pt
-* \oddsidemargin=0.0pt
-* \evensidemargin=0.0pt
-* \topmargin=-37.0pt
-* \headheight=12.0pt
-* \headsep=25.0pt
-* \topskip=11.0pt
-* \footskip=30.0pt
-* \marginparwidth=59.0pt
-* \marginparsep=10.0pt
-* \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
-
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
-ii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count324
-\scratchdimen=\dimen196
-\scratchbox=\box64
-\nofMPsegments=\count325
-\nofMParguments=\count326
-\everyMPshowfont=\toks30
-\MPscratchCnt=\count327
-\MPscratchDim=\dimen197
-\MPnumerator=\count328
-\makeMPintoPDFobject=\count329
-\everyMPtoPDFconversion=\toks31
-)
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
-ase.sty
-Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
-fg
-File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
-)) (C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
-Package: color 2025/01/14 v1.3e Standard LaTeX Color (DPC)
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package color Info: Driver file: pdftex.def on input line 149.
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
-)
-Package hyperref Info: Link coloring ON on input line 46.
- (cocoa_volatility_manuscript.out) (cocoa_volatility_manuscript.out)
-\@outlinefile=\write3
-\openout3 = `cocoa_volatility_manuscript.out'.
-
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 4
-9.
-
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
-File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 4
-9.
-
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
-File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-49.
-
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
-File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-49.
-
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
-File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 49.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 49.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 49.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 49.
-
-
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 49.
-
-
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 4
-9.
-
-(C:\Users\LEONA\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [1
-
-{C:/Users/LEONA/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/LEON
-A/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}] [2]
-Overfull \hbox (469.75502pt too wide) detected at line 84
-[]
- []
-
-
-Underfull \hbox (badness 10000) in alignment at lines 83--89
-[] [] [] [] []
- []
-
-
-Underfull \hbox (badness 10000) in alignment at lines 89--93
-[] [] [] [] []
- []
-
-
-Underfull \hbox (badness 4403) in paragraph at lines 94--94
-[]|\T1/lmr/m/n/8 Colombian co-coa
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 94--94
-[]|\T1/lmr/m/n/8 Monthly mean from
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 94--94
-\T1/lmr/m/n/8 AgroNet's of-fi-cial weekly
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 95--95
-[]|\T1/lmr/m/n/8 World co-coa
- []
-
-
-Underfull \hbox (badness 3954) in paragraph at lines 95--95
-[]|\T1/lmr/m/n/8 Monthly co-coa bench-mark
- []
-
-
-Underfull \hbox (badness 2980) in paragraph at lines 95--95
-\T1/lmr/m/n/8 ex-tracted from the World
- []
-
-
-Overfull \hbox (2.76804pt too wide) in paragraph at lines 95--95
-[]|\T1/lmr/m/n/8 USD/metric
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 96--96
-[]|\T1/lmr/m/n/8 EU27 choco-late HICP
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 97--97
-[]|\T1/lmr/m/n/8 COP/USD ex-
- []
-
-
-Overfull \hbox (0.88571pt too wide) in paragraph at lines 98--98
-[]|\T1/lmr/m/n/8 USD/barrel| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 99--99
-[]|\T1/lmr/m/n/8 NASA pre-cip-i-ta-
- []
-
-
-Underfull \hbox (badness 2245) in paragraph at lines 99--99
-[]|\T1/lmr/m/n/8 Monthly av-er-age pre-cip-i-ta-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 99--99
-[]|\T1/lmr/m/n/8 NASA
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--100
-[]|\T1/lmr/m/n/8 NASA
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 101--101
-[]|\T1/lmr/m/n/8 NASA
- []
-
-
-Underfull \hbox (badness 1953) in paragraph at lines 102--102
-[]|\T1/lmr/m/n/8 NASA min tem-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 102--102
-[]|\T1/lmr/m/n/8 NASA
- []
-
-
-Underfull \hbox (badness 1888) in paragraph at lines 103--103
-\T1/lmr/m/n/8 mid-ity at San Vi-cente de
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 103--103
-[]|\T1/lmr/m/n/8 NASA
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 104--104
-[]|\T1/lmr/m/n/8 NASA
- []
-
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 105.
-
-Overfull \hbox (2.44073pt too wide) in paragraph at lines 105--105
-[]|\T1/lmr/m/n/8 MJ/m$[]$/day| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 105--105
-[]|\T1/lmr/m/n/8 NASA
- []
-
-
-Underfull \hbox (badness 5563) in paragraph at lines 105--106
-\T1/lmr/m/n/8 served; 2025-12 im-
- []
-
-
-Underfull \hbox (badness 1406) in paragraph at lines 105--106
-\T1/lmr/m/n/8 puted in the aligned
- []
-
-
-Underfull \hbox (badness 10000) in alignment at lines 93--107
-[] [] [] [] []
- []
-
-
-ignored: Infinite glue shrinkage found in box being split [3]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 127.
-
-Underfull \hbox (badness 10000) in paragraph at lines 127--127
-[]|\T1/lmr/m/n/10.95 Long-history con-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 127--127
-\T1/lmr/m/n/10.95 text across all
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 127--127
-[]|\T1/lmr/m/n/10.95 Core com-par-i-son
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 127--127
-\T1/lmr/m/n/10.95 win-dow be-fore
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 127--127
-\T1/lmr/m/n/10.95 re-mov-ing miss-ing
- []
-
-
-Underfull \hbox (badness 2435) in paragraph at lines 127--127
-[]|\T1/lmr/m/n/10.95 Complete ob-ser-va-
- []
-
-
-Underfull \hbox (badness 4805) in paragraph at lines 127--127
-\T1/lmr/m/n/10.95 world co-coa, EU
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 127--127
-[]|\T1/lmr/m/n/10.95 Climate-augmented com-plete
- []
-
-
-Underfull \hbox (badness 2435) in paragraph at lines 127--127
-[]|\T1/lmr/m/n/10.95 Complete ob-ser-va-
- []
-
-
-Underfull \hbox (badness 3449) in paragraph at lines 127--127
-\T1/lmr/m/n/10.95 vari-ables are also
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 127--127
-[]|\T1/lmr/m/n/10.95 One Colom-bian
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 127--127
-\T1/lmr/m/n/10.95 co-coa value and
- []
-
-
-Underfull \hbox (badness 1348) in paragraph at lines 127--127
-\T1/lmr/m/n/10.95 one solar-radiation
- []
-
-[4{C:/Users/LEONA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}]
-[5{C:/Users/LEONA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.en
-c}{C:/Users/LEONA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.en
-c}] [6{C:/Users/LEONA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathe
-x.enc}]
-Underfull \hbox (badness 10000) in paragraph at lines 237--237
-[]|\T1/lmr/m/n/10.95 COP/USD ex-change
- []
-
-
-Underfull \hbox (badness 4013) in paragraph at lines 237--237
-[]|\T1/lmr/m/n/10.95 NASA max tem-per-a-
- []
-
-[7]
-<../outputs/figures/figure_indexed_core_series_common_window_imputed.png, id=16
-7, 712.8231pt x 353.1594pt>
-File: ../outputs/figures/figure_indexed_core_series_common_window_imputed.png G
-raphic file (type png)
-<use ../outputs/figures/figure_indexed_core_series_common_window_imputed.png>
-Package pdftex.def Info: ../outputs/figures/figure_indexed_core_series_common_w
-indow_imputed.png  used on input line 266.
-(pdftex.def)             Requested size: 446.26582pt x 221.09589pt.
-<../outputs/figures/figure_correlation_heatmap_levels_common_window_imputed.png
-, id=170, 421.8159pt x 322.806pt>
-File: ../outputs/figures/figure_correlation_heatmap_levels_common_window_impute
-d.png Graphic file (type png)
-<use ../outputs/figures/figure_correlation_heatmap_levels_common_window_imputed
-.png>
-Package pdftex.def Info: ../outputs/figures/figure_correlation_heatmap_levels_c
-ommon_window_imputed.png  used on input line 275.
-(pdftex.def)             Requested size: 422.77664pt x 323.53911pt.
- [8 <../outputs/figures/figure_indexed_core_series_common_window_imputed.png>] 
-[9 <../outputs/figures/figure_correlation_heatmap_levels_common_window_imputed.
-png>]
-<../outputs/figures/figure_core_return_impulse_response.png, id=184, 872.2989pt
- x 662.9568pt>
-File: ../outputs/figures/figure_core_return_impulse_response.png Graphic file (
-type png)
-<use ../outputs/figures/figure_core_return_impulse_response.png>
-Package pdftex.def Info: ../outputs/figures/figure_core_return_impulse_response
-.png  used on input line 312.
-(pdftex.def)             Requested size: 469.75502pt x 357.02022pt.
- [10]
-<../outputs/figures/figure_climate_core_correlation_common_sample.png, id=190, 
-1007.6847pt x 771.3618pt>
-File: ../outputs/figures/figure_climate_core_correlation_common_sample.png Grap
-hic file (type png)
-<use ../outputs/figures/figure_climate_core_correlation_common_sample.png>
-Package pdftex.def Info: ../outputs/figures/figure_climate_core_correlation_com
-mon_sample.png  used on input line 323.
-(pdftex.def)             Requested size: 469.75502pt x 359.58583pt.
- [11 <../outputs/figures/figure_core_return_impulse_response.png>]
-Overfull \hbox (7.81464pt too wide) in paragraph at lines 328--329
-\T1/lmr/m/n/10.95 VAR or VECM. Un-der the cur-rent climate-augmented over-lap, 
-such a sys-tem would be too parameter-
- []
-
-<../outputs/figures/figure_climate_series_panels_common_window.png, id=198, 857
-.604pt x 1391.6793pt>
-File: ../outputs/figures/figure_climate_series_panels_common_window.png Graphic
- file (type png)
-<use ../outputs/figures/figure_climate_series_panels_common_window.png>
-Package pdftex.def Info: ../outputs/figures/figure_climate_series_panels_common
-_window.png  used on input line 332.
-(pdftex.def)             Requested size: 328.68022pt x 533.36676pt.
-[12 <../outputs/figures/figure_climate_core_correlation_common_sample.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 358--358
-[]|$\OT1/lmr/m/n/10.95 ^^A [](\OML/lmm/m/it/10.95 P[]\OT1/lmr/m/n/10.95 ) \OMS/
-lmsy/m/n/10.95  $ \T1/lmr/m/n/10.95 max
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 358--358
-[]|$\OT1/lmr/m/n/10.95 ^^A [](\OML/lmm/m/it/10.95 P[]\OT1/lmr/m/n/10.95 ) \OMS/
-lmsy/m/n/10.95  $ \T1/lmr/m/n/10.95 so-lar
- []
-
-[13 <../outputs/figures/figure_climate_series_panels_common_window.png>]
-<../outputs/figures/figure_weather_vulnerability_index.png, id=212, 712.3413pt 
-x 353.1594pt>
-File: ../outputs/figures/figure_weather_vulnerability_index.png Graphic file (t
-ype png)
-<use ../outputs/figures/figure_weather_vulnerability_index.png>
-Package pdftex.def Info: ../outputs/figures/figure_weather_vulnerability_index.
-png  used on input line 365.
-(pdftex.def)             Requested size: 436.86871pt x 216.59087pt.
-
-[14] [15 <../outputs/figures/figure_weather_vulnerability_index.png>] [16]
-(cocoa_volatility_manuscript.bbl [17]
-Underfull \hbox (badness 10000) in paragraph at lines 104--111
-\T1/lmtt/m/n/10.95 / / thedocs . worldbank . org / en / doc / 18675f1d1639c7a34
-d463f59263ba0a2-[]0050012025 /
- []
-
-) [18] (cocoa_volatility_manuscript.aux)
- ***********
-LaTeX2e <2025-11-01>
-L3 programming layer <2026-01-19>
- ***********
-Package rerunfilecheck Info: File `cocoa_volatility_manuscript.out' has not cha
-nged.
-(rerunfilecheck)             Checksum: 9BAFE3F646A1F072A95D850CD2CF1B0B;2843.
- ) 
-Here is how much of TeX's memory you used:
- 12875 strings out of 467867
- 205887 string characters out of 5418335
- 627020 words of memory out of 5000000
- 41495 multiletter control sequences out of 15000+600000
- 686932 words of font info for 82 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 75i,13n,79p,1700b,633s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/LEONA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pf
-b><C:/Users/LEONA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pf
-b><C:/Users/LEONA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pf
-b><C:/Users/LEONA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pf
-b><C:/Users/LEONA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb
-><C:/Users/LEONA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb>
-<C:/Users/LEONA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><
-C:/Users/LEONA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C
-:/Users/LEONA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/
-Users/LEONA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Us
-ers/LEONA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Us
-ers/LEONA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Us
-ers/LEONA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Use
-rs/LEONA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-Output written on cocoa_volatility_manuscript.pdf (18 pages, 2903655 bytes).
-PDF statistics:
- 342 PDF objects out of 1000 (max. 8388607)
- 73 named destinations out of 1000 (max. 500000)
- 159 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+LaTeX

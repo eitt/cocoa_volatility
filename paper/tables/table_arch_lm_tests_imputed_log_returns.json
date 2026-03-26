@@ -1,0 +1,62 @@
+[
+  {
+    "variable": "colombia_cocoa_price_cop_kg_log_return",
+    "test": "arch_lm",
+    "lags": 6.0,
+    "statistic": 3.3213812027,
+    "p_value": 0.7675622418,
+    "f_statistic": 0.5058499648,
+    "f_p_value": 0.8000998478,
+    "observations": 52.0,
+    "series_form": "log_return",
+    "base_variable": "colombia_cocoa_price_cop_kg"
+  },
+  {
+    "variable": "world_cocoa_price_usd_mt_log_return",
+    "test": "arch_lm",
+    "lags": 6.0,
+    "statistic": 16.1052671483,
+    "p_value": 0.0131999712,
+    "f_statistic": 3.5017618984,
+    "f_p_value": 0.0072426343,
+    "observations": 52.0,
+    "series_form": "log_return",
+    "base_variable": "world_cocoa_price_usd_mt"
+  },
+  {
+    "variable": "eu_hicp_chocolate_index_log_return",
+    "test": "arch_lm",
+    "lags": 6.0,
+    "statistic": 18.3603882446,
+    "p_value": 0.0053919387,
+    "f_statistic": 4.3178075237,
+    "f_p_value": 0.0019719483,
+    "observations": 52.0,
+    "series_form": "log_return",
+    "base_variable": "eu_hicp_chocolate_index"
+  },
+  {
+    "variable": "cop_usd_exchange_rate_log_return",
+    "test": "arch_lm",
+    "lags": 6.0,
+    "statistic": 2.1703071119,
+    "p_value": 0.9033878953,
+    "f_statistic": 0.3218593446,
+    "f_p_value": 0.921568532,
+    "observations": 52.0,
+    "series_form": "log_return",
+    "base_variable": "cop_usd_exchange_rate"
+  },
+  {
+    "variable": "brent_oil_usd_bbl_log_return",
+    "test": "arch_lm",
+    "lags": 6.0,
+    "statistic": 11.1683971823,
+    "p_value": 0.0833092756,
+    "f_statistic": 2.0841585173,
+    "f_p_value": 0.0772954657,
+    "observations": 52.0,
+    "series_form": "log_return",
+    "base_variable": "brent_oil_usd_bbl"
+  }
+]
