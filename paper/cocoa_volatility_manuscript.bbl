@@ -1,9 +1,25 @@
-\begin{thebibliography}{19}
+\begin{thebibliography}{29}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Acosta et~al.(2019)Acosta, Ihle, and von
+  Cramon-Taubadel]{acosta_ihle_voncramon_2019}
+Alejandro Acosta, Rico Ihle, and Stephan von Cramon-Taubadel.
+\newblock Combining market structure and econometric methods for price
+  transmission analysis.
+\newblock \emph{Food Security}, 11\penalty0 (4):\penalty0 941--951, 2019.
+\newblock \doi{10.1007/s12571-019-00951-w}.
+
+\bibitem[Adger(2006)]{Adger2006}
+W.~Neil Adger.
+\newblock Vulnerability.
+\newblock \emph{Global Environmental Change}, 16\penalty0 (3):\penalty0
+  268--281, 2006.
+\newblock \doi{10.1016/j.gloenvcha.2006.02.006}.
+\newblock URL \url{https://doi.org/10.1016/j.gloenvcha.2006.02.006}.
 
 \bibitem[Akrofi-Atitianti et~al.(2018)Akrofi-Atitianti, Ifejika~Speranza,
   Bockel, and Asare]{AkrofiAtitianti2018}
@@ -14,6 +30,23 @@ Felix Akrofi-Atitianti, Chinwe Ifejika~Speranza, Louis Bockel, and Richard
 \newblock \emph{Land}, 7\penalty0 (1):\penalty0 30, 2018.
 \newblock \doi{10.3390/land7010030}.
 \newblock URL \url{https://doi.org/10.3390/land7010030}.
+
+\bibitem[Ericksen(2008)]{Ericksen2008}
+Polly~J. Ericksen.
+\newblock Conceptualizing food systems for global environmental change
+  research.
+\newblock \emph{Global Environmental Change}, 18\penalty0 (1):\penalty0
+  234--245, 2008.
+\newblock \doi{10.1016/j.gloenvcha.2007.09.002}.
+\newblock URL \url{https://doi.org/10.1016/j.gloenvcha.2007.09.002}.
+
+\bibitem[Gereffi et~al.(2005)Gereffi, Humphrey, and Sturgeon]{Gereffi2005}
+Gary Gereffi, John Humphrey, and Timothy Sturgeon.
+\newblock The governance of global value chains.
+\newblock \emph{Review of International Political Economy}, 12\penalty0
+  (1):\penalty0 78--104, 2005.
+\newblock \doi{10.1080/09692290500049805}.
+\newblock URL \url{https://doi.org/10.1080/09692290500049805}.
 
 \bibitem[Hakkio and Rush(1991)]{hakkio_rush_1991}
 Craig~S. Hakkio and Mark Rush.
@@ -31,6 +64,15 @@ Johanna Jacobi, Monika Schneider, Patrick Bottazzi, Maria~Isabel Pillco,
 \newblock \emph{Renewable Agriculture and Food Systems}, 2013.
 \newblock \doi{10.1017/S174217051300029X}.
 \newblock URL \url{https://doi.org/10.1017/S174217051300029X}.
+
+\bibitem[Jim{\'e}nez-Rodr{\'\i}guez and
+  Morales-Zumaquero(2022)]{JimenezRodriguez2022}
+Rebeca Jim{\'e}nez-Rodr{\'\i}guez and Amalia Morales-Zumaquero.
+\newblock Commodity price pass-through along the pricing chain.
+\newblock \emph{Review of World Economics}, 158\penalty0 (1):\penalty0
+  109--125, 2022.
+\newblock \doi{10.1007/s10290-021-00425-2}.
+\newblock URL \url{https://doi.org/10.1007/s10290-021-00425-2}.
 
 \bibitem[Johansen(1991)]{johansen_1991}
 Soren Johansen.
@@ -80,6 +122,21 @@ Fiona Lahive, Paul Hadley, and Andrew~J. Daymond.
   (1):\penalty0 5, 2019.
 \newblock \doi{10.1007/s13593-018-0552-0}.
 \newblock URL \url{https://doi.org/10.1007/s13593-018-0552-0}.
+
+\bibitem[Merkle et~al.(2021)Merkle, Moran, Warren, and Alexander]{Merkle2021}
+Magnus Merkle, Dominic Moran, Frances Warren, and Peter Alexander.
+\newblock How does market power affect the resilience of food supply?
+\newblock \emph{Global Food Security}, 30:\penalty0 100556, 2021.
+\newblock \doi{10.1016/j.gfs.2021.100556}.
+\newblock URL \url{https://doi.org/10.1016/j.gfs.2021.100556}.
+
+\bibitem[Meyer and von Cramon-Taubadel(2004)]{MeyerCramon2004}
+Jochen Meyer and Stephan von Cramon-Taubadel.
+\newblock Asymmetric price transmission: A survey.
+\newblock \emph{Journal of Agricultural Economics}, 55\penalty0 (3):\penalty0
+  581--611, 2004.
+\newblock \doi{10.1111/j.1477-9552.2004.tb00116.x}.
+\newblock URL \url{https://doi.org/10.1111/j.1477-9552.2004.tb00116.x}.
 
 \bibitem[Mithofer et~al.(2017)Mithofer, Roshetko, Donovan, Nathalie, Robiglio,
   Wau, Sonwa, and Blare]{Mithofer2017}
@@ -134,6 +191,15 @@ Leonardo~H. Talero-Sarmiento, Henry Lamos-Diaz, and Juan~D. Marquez-Gonzalez.
 \newblock \doi{10.1016/j.ecoinf.2025.103262}.
 \newblock URL \url{https://doi.org/10.1016/j.ecoinf.2025.103262}.
 
+\bibitem[Tendall et~al.(2015)Tendall, Joerin, Kopainsky, Edwards, Shreck, Le,
+  Kruetli, Grant, and Six]{Tendall2015}
+Danielle~M. Tendall, Jonas Joerin, Birgit Kopainsky, Peter Edwards, Aimee
+  Shreck, Quang~Bao Le, Pius Kruetli, Michelle Grant, and Johan Six.
+\newblock Food system resilience: Defining the concept.
+\newblock \emph{Global Food Security}, 6:\penalty0 17--23, 2015.
+\newblock \doi{10.1016/j.gfs.2015.08.001}.
+\newblock URL \url{https://doi.org/10.1016/j.gfs.2015.08.001}.
+
 \bibitem[Troyanskaya et~al.(2001)Troyanskaya, Cantor, Sherlock, Brown, Hastie,
   Tibshirani, Botstein, and Altman]{troyanskaya_etal_2001}
 Olga Troyanskaya, Michael Cantor, Gavin Sherlock, Pat Brown, Trevor Hastie,
@@ -150,6 +216,19 @@ Komi Tsowou and Samuel~K. Gayi.
 \newblock \emph{Journal of African Trade}, 2019.
 \newblock \doi{10.2991/jat.k.190916.001}.
 \newblock URL \url{https://doi.org/10.2991/jat.k.190916.001}.
+
+\bibitem[Turner et~al.(2003)Turner, Kasperson, Matson, McCarthy, Corell,
+  Christensen, Eckley, Kasperson, Luers, Martello, Polsky, Pulsipher, and
+  Schiller]{Turner2003}
+B.~L. Turner, Roger~E. Kasperson, Pamela~A. Matson, James~J. McCarthy,
+  Robert~W. Corell, Lindsey Christensen, Noelle Eckley, Jeanne~X. Kasperson,
+  Amy Luers, Marybeth~L. Martello, Colin Polsky, Alexander Pulsipher, and
+  Andrew Schiller.
+\newblock A framework for vulnerability analysis in sustainability science.
+\newblock \emph{Proceedings of the National Academy of Sciences of the United
+  States of America}, 100\penalty0 (14):\penalty0 8074--8079, 2003.
+\newblock \doi{10.1073/pnas.1231335100}.
+\newblock URL \url{https://doi.org/10.1073/pnas.1231335100}.
 
 \bibitem[Vaast and Somarriba(2014)]{Vaast2014}
 Philippe Vaast and Eduardo Somarriba.
@@ -178,5 +257,18 @@ R.~W. Verburg, Eric Rahn, P.~A. Verweij, Marijke van Kuijk, and Jaboury
 \newblock \emph{Environmental Science \& Policy}, 2019.
 \newblock \doi{10.1016/j.envsci.2019.03.017}.
 \newblock URL \url{https://doi.org/10.1016/j.envsci.2019.03.017}.
+
+\bibitem[Zurek et~al.(2022)Zurek, Ingram, Sanderson~Bellamy, Goold, Lyon,
+  Alexander, Barnes, Bebber, Breeze, Bruce, Collins, Davies, Doherty, Ensor,
+  Franco, Gatto, Hess, Lamprinopoulou, Liu, et~al.]{Zurek2022}
+Monika Zurek, John Ingram, Angelina Sanderson~Bellamy, Conor Goold, Christopher
+  Lyon, Peter Alexander, Andrew Barnes, Daniel~P. Bebber, Tom~D. Breeze, Ann
+  Bruce, Laura~M. Collins, Jessica Davies, Bob Doherty, Jon Ensor, Sofia~C.
+  Franco, Andrea Gatto, Tim Hess, Christina Lamprinopoulou, Lin Liu, et~al.
+\newblock Food system resilience: Concepts, issues, and challenges.
+\newblock \emph{Annual Review of Environment and Resources}, 47:\penalty0
+  511--534, 2022.
+\newblock \doi{10.1146/annurev-environ-112320-050744}.
+\newblock URL \url{https://doi.org/10.1146/annurev-environ-112320-050744}.
 
 \end{thebibliography}

@@ -1,5 +1,5 @@
 {
-  "paper_count": 15,
+  "paper_count": 24,
   "scope": "Cocoa-led retained corpus aligned to manuscript gap and methods, with carefully labelled comparative coffee support",
   "gap_questions": [
     "How strongly are international cocoa shocks transmitted to Colombian producer-linked prices once exchange-rate and oil conditions are taken into account?",
@@ -7,6 +7,95 @@
     "How should localized weather variability enter the analysis: as a direct price driver or as contextual vulnerability that intensifies exposure?"
   ],
   "papers": [
+    {
+      "key": "Turner2003",
+      "authors": "Turner et al.",
+      "year": 2003,
+      "journal": "Proceedings of the National Academy of Sciences",
+      "title": "A Framework for Vulnerability Analysis in Sustainability Science",
+      "doi": "10.1073/pnas.1231335100",
+      "evidence_status": "abstract_verified",
+      "retrieval": "https://doi.org/10.1073/pnas.1231335100",
+      "gap_role": "vulnerability as exposure plus sensitivity and resilience",
+      "quote": "vulnerability is registered not by exposure to hazards (perturbations and stresses) alone but also resides in the sensitivity and resilience of the system",
+      "interpretation": "This supports the manuscript's separation between transmitted shocks and the conditions that amplify or buffer harm.",
+      "manuscript_use": [
+        "Introduction",
+        "Literature Review",
+        "Methods",
+        "Discussion",
+        "Conclusion"
+      ]
+    },
+    {
+      "key": "Adger2006",
+      "authors": "Adger",
+      "year": 2006,
+      "journal": "Global Environmental Change",
+      "title": "Vulnerability",
+      "doi": "10.1016/j.gloenvcha.2006.02.006",
+      "evidence_status": "abstract_verified",
+      "retrieval": "https://doi.org/10.1016/j.gloenvcha.2006.02.006",
+      "gap_role": "vulnerability as exposure and limited adaptive capacity",
+      "quote": "from exposure to stresses associated with environmental and social change and from the absence of capacity to adapt",
+      "interpretation": "The paper supports framing vulnerability as interaction between external stress and limited capacity to respond.",
+      "manuscript_use": [
+        "Introduction",
+        "Literature Review",
+        "Methods",
+        "Discussion",
+        "Conclusion"
+      ]
+    },
+    {
+      "key": "Tendall2015",
+      "authors": "Tendall et al.",
+      "year": 2015,
+      "journal": "Global Food Security",
+      "title": "Food System Resilience: Defining the Concept",
+      "doi": "10.1016/j.gfs.2015.08.001",
+      "evidence_status": "abstract_verified",
+      "retrieval": "https://doi.org/10.1016/j.gfs.2015.08.001",
+      "gap_role": "food-system resilience as a multi-dimensional framing",
+      "quote": "Food system resilience has multiple dimensions.",
+      "interpretation": "This supports treating cocoa price shocks as resilience-relevant when they shape broader livelihood and system outcomes.",
+      "manuscript_use": [
+        "Introduction"
+      ]
+    },
+    {
+      "key": "Ericksen2008",
+      "authors": "Ericksen",
+      "year": 2008,
+      "journal": "Global Environmental Change",
+      "title": "Conceptualizing Food Systems for Global Environmental Change Research",
+      "doi": "10.1016/j.gloenvcha.2007.09.002",
+      "evidence_status": "abstract_verified",
+      "retrieval": "https://doi.org/10.1016/j.gloenvcha.2007.09.002",
+      "gap_role": "food systems as linked social and environmental processes",
+      "quote": "tradeoffs are often between different scales or levels of decision-making or management",
+      "interpretation": "The paper supports the manuscript's cross-scale framing of transmission, institutions, and environmental context.",
+      "manuscript_use": [
+        "Introduction"
+      ]
+    },
+    {
+      "key": "Zurek2022",
+      "authors": "Zurek et al.",
+      "year": 2022,
+      "journal": "Annual Review of Environment and Resources",
+      "title": "Food System Resilience: Concepts, Issues, and Challenges",
+      "doi": "10.1146/annurev-environ-112320-050744",
+      "evidence_status": "abstract_verified",
+      "retrieval": "https://doi.org/10.1146/annurev-environ-112320-050744",
+      "gap_role": "resilience framing requires specifying shock, actor, and timescale",
+      "quote": "Resilience of what? Resilience to what? Resilience from whose perspective? Resilience for how long?",
+      "interpretation": "This supports the manuscript's decision to define resilience narrowly around producer-linked exposure to transmitted cocoa shocks.",
+      "manuscript_use": [
+        "Introduction",
+        "Discussion"
+      ]
+    },
     {
       "key": "TsowouGayi2019",
       "authors": "Tsowou and Gayi",
@@ -61,6 +150,24 @@
       ]
     },
     {
+      "key": "JimenezRodriguez2022",
+      "authors": "Jimenez-Rodriguez and Morales-Zumaquero",
+      "year": 2022,
+      "journal": "Review of World Economics",
+      "title": "Commodity Price Pass-through Along the Pricing Chain",
+      "doi": "10.1007/s10290-021-00425-2",
+      "evidence_status": "pdf_audited",
+      "retrieval": "papers/conceptual_support/Commodity_price_pass-through_along_the_pricing_chain.pdf",
+      "gap_role": "uneven pass-through from commodity prices along the pricing chain",
+      "quote": "there is evidence in favour of partial pass-through from commodity prices to producer prices",
+      "interpretation": "This supports comparing producer-linked and downstream prices rather than assuming that commodity shocks move uniformly across the chain.",
+      "manuscript_use": [
+        "Introduction",
+        "Literature Review",
+        "Methods"
+      ]
+    },
+    {
       "key": "Mithofer2017",
       "authors": "Mithofer et al.",
       "year": 2017,
@@ -77,6 +184,46 @@
         "Literature Review",
         "Methods",
         "Discussion"
+      ]
+    },
+    {
+      "key": "Gereffi2005",
+      "authors": "Gereffi et al.",
+      "year": 2005,
+      "journal": "Review of International Political Economy",
+      "title": "The Governance of Global Value Chains",
+      "doi": "10.1080/09692290500049805",
+      "evidence_status": "abstract_verified",
+      "retrieval": "https://doi.org/10.1080/09692290500049805",
+      "gap_role": "value-chain governance shapes the distribution of adjustment",
+      "quote": "three variables that play a large role in determining how global value chains are governed and change",
+      "interpretation": "The article supports the claim that chain structure and governance influence how shocks are coordinated and absorbed.",
+      "manuscript_use": [
+        "Introduction",
+        "Literature Review",
+        "Methods",
+        "Discussion",
+        "Conclusion"
+      ]
+    },
+    {
+      "key": "Merkle2021",
+      "authors": "Merkle et al.",
+      "year": 2021,
+      "journal": "Global Food Security",
+      "title": "How Does Market Power Affect the Resilience of Food Supply?",
+      "doi": "10.1016/j.gfs.2021.100556",
+      "evidence_status": "abstract_verified",
+      "retrieval": "https://doi.org/10.1016/j.gfs.2021.100556",
+      "gap_role": "market power mediates food-system resilience and shock distribution",
+      "quote": "Food system shocks are mediated through value chains and underlying market structures, characterised by elements of power.",
+      "interpretation": "This supports the manuscript's argument that vulnerability depends on how adjustment is distributed across the chain.",
+      "manuscript_use": [
+        "Introduction",
+        "Literature Review",
+        "Methods",
+        "Discussion",
+        "Conclusion"
       ]
     },
     {
@@ -113,6 +260,22 @@
         "Introduction",
         "Literature Review",
         "Discussion"
+      ]
+    },
+    {
+      "key": "MeyerCramon2004",
+      "authors": "Meyer and von Cramon-Taubadel",
+      "year": 2004,
+      "journal": "Journal of Agricultural Economics",
+      "title": "Asymmetric Price Transmission: A Survey",
+      "doi": "10.1111/j.1477-9552.2004.tb00116.x",
+      "evidence_status": "abstract_verified",
+      "retrieval": "https://doi.org/10.1111/j.1477-9552.2004.tb00116.x",
+      "gap_role": "price-transmission methods and asymmetry remain unsettled",
+      "quote": "the existing literature is far from being unified or conclusive",
+      "interpretation": "The survey supports cautious interpretation of asymmetric adjustment and motivates a transparent empirical design.",
+      "manuscript_use": [
+        "Literature Review"
       ]
     },
     {
