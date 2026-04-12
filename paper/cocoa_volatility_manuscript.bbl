@@ -1,4 +1,4 @@
-\begin{thebibliography}{14}
+\begin{thebibliography}{19}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -47,6 +47,13 @@ A.~Jumah and Robert~M. Kunst.
 \newblock \doi{10.1093/erae/28.3.307}.
 \newblock URL \url{https://doi.org/10.1093/erae/28.3.307}.
 
+\bibitem[Koh et~al.(2020)Koh, Garrett, Janetos, and Mueller]{Koh2020}
+I.~Koh, Rachael Garrett, Anthony~C. Janetos, and Nathaniel~D. Mueller.
+\newblock Climate risks to brazilian coffee production.
+\newblock \emph{Environmental Research Letters}, 2020.
+\newblock \doi{10.1088/1748-9326/aba471}.
+\newblock URL \url{https://doi.org/10.1088/1748-9326/aba471}.
+
 \bibitem[Laderach et~al.(2013)Laderach, Martinez-Valle, Schroth, and
   Castro]{Laderach2013}
 Peter Laderach, Armando Martinez-Valle, Goetz Schroth, and Nixon Castro.
@@ -55,6 +62,15 @@ Peter Laderach, Armando Martinez-Valle, Goetz Schroth, and Nixon Castro.
 \newblock \emph{Climatic Change}, 119\penalty0 (3-4):\penalty0 841--854, 2013.
 \newblock \doi{10.1007/s10584-013-0774-8}.
 \newblock URL \url{https://doi.org/10.1007/s10584-013-0774-8}.
+
+\bibitem[Laderach et~al.(2016)Laderach, Ramirez-Villegas, Navarro~Racines,
+  Zelaya, Martinez-Valle, and Jarvis]{Laderach2016}
+Peter Laderach, Julian Ramirez-Villegas, Carlos~E. Navarro~Racines, Carlos
+  Zelaya, Armando Martinez-Valle, and Andy Jarvis.
+\newblock Climate change adaptation of coffee production in space and time.
+\newblock \emph{Climatic Change}, 2016.
+\newblock \doi{10.1007/s10584-016-1788-9}.
+\newblock URL \url{https://doi.org/10.1007/s10584-016-1788-9}.
 
 \bibitem[Lahive et~al.(2019)Lahive, Hadley, and Daymond]{Lahive2019}
 Fiona Lahive, Paul Hadley, and Andrew~J. Daymond.
@@ -77,6 +93,17 @@ Dagmar Mithofer, James~M. Roshetko, Jason~A. Donovan, Ewane Nathalie, Valentina
 \newblock \doi{10.1080/21513732.2018.1432691}.
 \newblock URL \url{https://doi.org/10.1080/21513732.2018.1432691}.
 
+\bibitem[Morales et~al.(2022)Morales, Robiglio, Baca, Bunn, and
+  Reyes]{Morales2022}
+Laura~V. Morales, Valentina Robiglio, Maria Baca, Christian Bunn, and Martin
+  Reyes.
+\newblock Planning for adaptation: A system approach to understand the value
+  chain's role in supporting smallholder coffee farmers' adaptive capacity in
+  peru.
+\newblock \emph{Frontiers in Climate}, 2022.
+\newblock \doi{10.3389/fclim.2022.788369}.
+\newblock URL \url{https://doi.org/10.3389/fclim.2022.788369}.
+
 \bibitem[Niether et~al.(2020)Niether, Jacobi, Blaser, Andres, and
   Armengot]{Niether2020}
 Wiebke Niether, Johanna Jacobi, Wilma~J. Blaser, Christian Andres, and Laura
@@ -97,6 +124,15 @@ Goetz Schroth, Peter Laderach, Armando~Isaac Martinez-Valle, Christian Bunn,
   2016.
 \newblock \doi{10.1016/j.scitotenv.2016.03.024}.
 \newblock URL \url{https://doi.org/10.1016/j.scitotenv.2016.03.024}.
+
+\bibitem[Talero-Sarmiento et~al.(2025)Talero-Sarmiento, Lamos-Diaz, and
+  Marquez-Gonzalez]{talero_sarmiento_etal_2025}
+Leonardo~H. Talero-Sarmiento, Henry Lamos-Diaz, and Juan~D. Marquez-Gonzalez.
+\newblock Optimizing cocoa biomass density through integrated irrigation and
+  drainage management under water stress: A linear programming approach.
+\newblock \emph{Ecological Informatics}, 90:\penalty0 103262, 2025.
+\newblock \doi{10.1016/j.ecoinf.2025.103262}.
+\newblock URL \url{https://doi.org/10.1016/j.ecoinf.2025.103262}.
 
 \bibitem[Troyanskaya et~al.(2001)Troyanskaya, Cantor, Sherlock, Brown, Hastie,
   Tibshirani, Botstein, and Altman]{troyanskaya_etal_2001}
@@ -132,5 +168,15 @@ Stef van Buuren and Karin Groothuis-Oudshoorn.
   1--67, 2011.
 \newblock \doi{10.18637/jss.v045.i03}.
 \newblock URL \url{https://www.jstatsoft.org/article/view/v045i03}.
+
+\bibitem[Verburg et~al.(2019)Verburg, Rahn, Verweij, van Kuijk, and
+  Ghazoul]{Verburg2019}
+R.~W. Verburg, Eric Rahn, P.~A. Verweij, Marijke van Kuijk, and Jaboury
+  Ghazoul.
+\newblock An innovation perspective to climate change adaptation in coffee
+  systems.
+\newblock \emph{Environmental Science \& Policy}, 2019.
+\newblock \doi{10.1016/j.envsci.2019.03.017}.
+\newblock URL \url{https://doi.org/10.1016/j.envsci.2019.03.017}.
 
 \end{thebibliography}

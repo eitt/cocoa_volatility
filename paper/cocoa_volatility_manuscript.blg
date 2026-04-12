@@ -5,44 +5,44 @@ Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: plainnat.bst
 Reallocating 'name_of_file' (item size: 1) to 28 items.
 Database file #1: references/cocoa_volatility.bib
-You've used 14 entries,
+You've used 19 entries,
             2773 wiz_defined-function locations,
-            717 strings with 9036 characters,
-and the built_in function-call counts, 7634 in all, are:
-= -- 702
-> -- 526
+            753 strings with 10521 characters,
+and the built_in function-call counts, 10305 in all, are:
+= -- 933
+> -- 748
 < -- 6
-+ -- 176
-- -- 162
-* -- 705
-:= -- 1227
-add.period$ -- 67
-call.type$ -- 14
-change.case$ -- 96
-chr.to.int$ -- 14
-cite$ -- 28
-duplicate$ -- 285
-empty$ -- 526
-format.name$ -- 186
-if$ -- 1552
++ -- 250
+- -- 231
+* -- 952
+:= -- 1672
+add.period$ -- 92
+call.type$ -- 19
+change.case$ -- 134
+chr.to.int$ -- 19
+cite$ -- 38
+duplicate$ -- 386
+empty$ -- 689
+format.name$ -- 260
+if$ -- 2089
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 14
-newline$ -- 103
-num.names$ -- 56
-pop$ -- 146
+missing$ -- 19
+newline$ -- 138
+num.names$ -- 76
+pop$ -- 210
 preamble$ -- 1
-purify$ -- 82
+purify$ -- 115
 quote$ -- 0
-skip$ -- 233
+skip$ -- 316
 stack$ -- 0
-substring$ -- 259
-swap$ -- 14
+substring$ -- 287
+swap$ -- 19
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 154
+type$ -- 209
 warning$ -- 0
-while$ -- 62
+while$ -- 78
 width$ -- 0
-write$ -- 236
+write$ -- 317
