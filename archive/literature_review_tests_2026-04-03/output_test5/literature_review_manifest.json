@@ -1,0 +1,107 @@
+{
+  "paper_count": 5,
+  "papers": [
+    {
+      "paper_id": "P001",
+      "title": "Learning from social–ecological crisis for legal resilience building: multi-scale dynamics in the coffee rust epidemic",
+      "doi": "10.1007/s11625-019-00703-x",
+      "journal": "Sustainability Science",
+      "year": 2019,
+      "authors": [
+        "Antoine Libert-Amico",
+        "Claudia Ituarte‐Lima",
+        "Thomas Elmqvist"
+      ],
+      "pdf_path": "papers_test5\\10.1007_s11625-019-00703-x__Learning_from_social_ecological_crisis_for_legal_resilience_building_multi-scale_dynamics_in.pdf",
+      "matched_buckets": [
+        "vulnerability"
+      ],
+      "search_queries": [
+        "coffee climate adaptation smallholder",
+        "coffee rust smallholder resilience"
+      ],
+      "answer_count": 3
+    },
+    {
+      "paper_id": "P002",
+      "title": "Smallholder telecoupling and potential sustainability",
+      "doi": "10.5751/es-09935-230130",
+      "journal": "Ecology and Society",
+      "year": 2018,
+      "authors": [
+        "Karl S. Zimmerer",
+        "Éric F. Lambin",
+        "Steven J. Vanek"
+      ],
+      "pdf_path": "papers_test5\\10.5751_es-09935-230130__Smallholder_telecoupling_and_potential_sustainability.pdf",
+      "matched_buckets": [
+        "justice"
+      ],
+      "search_queries": [
+        "telecoupling sustainability smallholder commodity"
+      ],
+      "answer_count": 3
+    },
+    {
+      "paper_id": "P003",
+      "title": "Agriculture, food and global value chains: issues, methods and challenges",
+      "doi": "10.36253/bae-13517",
+      "journal": "Bio-based and Applied Economics",
+      "year": 2022,
+      "authors": [
+        "Margherita Scoppola"
+      ],
+      "pdf_path": "papers_test5\\10.36253_bae-13517__Agriculture_food_and_global_value_chains_issues_methods_and_challenges.pdf",
+      "matched_buckets": [
+        "price"
+      ],
+      "search_queries": [
+        "\"price transmission\" coffee"
+      ],
+      "answer_count": 1
+    },
+    {
+      "paper_id": "P004",
+      "title": "Planning for Adaptation: A System Approach to Understand the Value Chain's Role in Supporting Smallholder Coffee Farmers' Adaptive Capacity in Peru",
+      "doi": "10.3389/fclim.2022.788369",
+      "journal": "Frontiers in Climate",
+      "year": 2022,
+      "authors": [
+        "Laura V. Morales",
+        "Valentina Robiglio",
+        "María Baca",
+        "Christian Bunn",
+        "Martin Reyes"
+      ],
+      "pdf_path": "papers_test5\\10.3389_fclim.2022.788369__Planning_for_Adaptation_A_System_Approach_to_Understand_the_Value_Chain_s_Role_in_Supporting_.pdf",
+      "matched_buckets": [
+        "vulnerability"
+      ],
+      "search_queries": [
+        "coffee climate adaptation smallholder",
+        "smallholder climate vulnerability coffee"
+      ],
+      "answer_count": 4
+    },
+    {
+      "paper_id": "P005",
+      "title": "Trade Reforms and Integration of Cocoa Farmers into World Markets: Evidence from African and non-African Countries",
+      "doi": "10.2991/jat.k.190916.001",
+      "journal": "Journal of African Trade",
+      "year": 2019,
+      "authors": [
+        "Komi Tsowou",
+        "Samuel K. Gayi"
+      ],
+      "pdf_path": "papers_test5\\10.2991_jat.k.190916.001__Trade_Reforms_and_Integration_of_Cocoa_Farmers_into_World_Markets_Evidence_from_African_and_no.pdf",
+      "matched_buckets": [
+        "price"
+      ],
+      "search_queries": [
+        "\"asymmetric price transmission\" cocoa",
+        "\"price transmission\" cocoa"
+      ],
+      "answer_count": 4
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "scientific-writing": {
+      "source": "smithery.ai",
+      "sourceType": "well-known",
+      "computedHash": "ccc643803bfd2448f289e3e309c3a7c062ceb9630155ae800217f04a769450b7"
+    }
+  }
+}

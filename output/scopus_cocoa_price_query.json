@@ -1,0 +1,187 @@
+{
+  "query": "TITLE-ABS-KEY(cocoa AND (price AND transmission OR market AND integration OR exchange AND rate))",
+  "total": 23,
+  "count": 20,
+  "entries": [
+    {
+      "title": "The effect of temperature anomaly and macroeconomic fundamentals on agricultural commodity futures returns",
+      "doi": "10.1016/j.eneco.2021.105377",
+      "year": "2021",
+      "source": "Energy Economics",
+      "cited_by": 59,
+      "authors": "Makkonen A.",
+      "eid": "2-s2.0-85109039621"
+    },
+    {
+      "title": "Macroeconomic uncertainty and conditional stock-price volatility in frontier African markets: Evidence from Ghana",
+      "doi": "10.1108/15265940910980641",
+      "year": "2009",
+      "source": "Journal of Risk Finance",
+      "cited_by": 38,
+      "authors": "Adjasi C.K.D.",
+      "eid": "2-s2.0-85015409892"
+    },
+    {
+      "title": "ASYMMETRIC DEPENDENCE BETWEEN EXCHANGE RATE AND COMMODITY PRICES IN GHANA",
+      "doi": "10.1142/S2010495222500129",
+      "year": "2022",
+      "source": "Annals of Financial Economics",
+      "cited_by": 20,
+      "authors": "Archer C.",
+      "eid": "2-s2.0-85132042242"
+    },
+    {
+      "title": "Do oil prices and exchange rates account for agricultural commodity market spillovers? Evidence from the Diebold and Yilmaz Index",
+      "doi": "10.1080/03031853.2019.1694046",
+      "year": "2020",
+      "source": "Agrekon",
+      "cited_by": 18,
+      "authors": "Balcilar M.",
+      "eid": "2-s2.0-85085045586"
+    },
+    {
+      "title": "Revisiting the linkage between oil and agricultural commodity prices: Panel evidence from an Agrarian state",
+      "doi": "10.1002/ijfe.2083",
+      "year": "2021",
+      "source": "International Journal of Finance and Economics",
+      "cited_by": 18,
+      "authors": "Gokmenoglu K.K.",
+      "eid": "2-s2.0-85089149691"
+    },
+    {
+      "title": "The effects of dollar/sterling exchange rate volatility on futures markets for coffee and cocoa",
+      "doi": "10.1093/erae/28.3.307",
+      "year": "2001",
+      "source": "European Review of Agricultural Economics",
+      "cited_by": 18,
+      "authors": "Jumah A.",
+      "eid": "2-s2.0-0035612989"
+    },
+    {
+      "title": "Trade, exchange rate, and agricultural pricing policies in Ghana",
+      "doi": "N/A",
+      "year": "1990",
+      "source": "Trade Exchange Rate and Agricultural Pricing Policies in Ghana",
+      "cited_by": 15,
+      "authors": "Stryker J.D.",
+      "eid": "2-s2.0-85013441913"
+    },
+    {
+      "title": "Competitiveness, production, and productivity of cocoa in Indonesia",
+      "doi": "10.1088/1755-1315/157/1/012067",
+      "year": "2018",
+      "source": "Iop Conference Series Earth and Environmental Science",
+      "cited_by": 12,
+      "authors": "Fahmid I.M.",
+      "eid": "2-s2.0-85048362560"
+    },
+    {
+      "title": "The research on the impact of the changes of commodity price level in the world commodity exchanges on variation of general price level",
+      "doi": "10.14254/2071-789X.2014/7-4/5",
+      "year": "2014",
+      "source": "Economics and Sociology",
+      "cited_by": 10,
+      "authors": "Miečinskienė A.",
+      "eid": "2-s2.0-84928249680"
+    },
+    {
+      "title": "Ghana and South Korea: Lessons from world bank case studies",
+      "doi": "10.1002/pad.4230110312",
+      "year": "1991",
+      "source": "Public Administration and Development",
+      "cited_by": 9,
+      "authors": "Werlin H.",
+      "eid": "2-s2.0-0026276790"
+    },
+    {
+      "title": "Interest rate differentials, market integration, and the efficiency of commodity futures markets",
+      "doi": "10.1080/096031099332564",
+      "year": "1999",
+      "source": "Applied Financial Economics",
+      "cited_by": 9,
+      "authors": "Jumah A.",
+      "eid": "2-s2.0-0011901309"
+    },
+    {
+      "title": "Review of economic history of cocoa with special reference to India",
+      "doi": "10.25081/jpc.2018.v46.i2.3727",
+      "year": "2018",
+      "source": "Journal of Plantation Crops",
+      "cited_by": 8,
+      "authors": "Jayasekhar S.",
+      "eid": "2-s2.0-85087369927"
+    },
+    {
+      "title": "Intraregional trade in West Africa. Impacts of Ghana's cocoa exports and economic growth",
+      "doi": "10.1016/0306-9192(92)90087-E",
+      "year": "1992",
+      "source": "Food Policy",
+      "cited_by": 7,
+      "authors": "Abdulai A.",
+      "eid": "2-s2.0-0027084067"
+    },
+    {
+      "title": "Adjustment with growth: Nigerian experience with structural adjustment policy reform",
+      "doi": "10.1002/jid.4010030405",
+      "year": "1991",
+      "source": "Journal of International Development",
+      "cited_by": 7,
+      "authors": "Oyejide T.",
+      "eid": "2-s2.0-0026363131"
+    },
+    {
+      "title": "Analysis of Indonesian Cocoa Export Competitiveness in International Market",
+      "doi": "10.37637/ab.v6i2.1266",
+      "year": "2023",
+      "source": "Agro Bali",
+      "cited_by": 7,
+      "authors": "Izzatin N.R.",
+      "eid": "2-s2.0-105020081725"
+    },
+    {
+      "title": "A differentiated good model of coffee and cocoa exports with reference to the CFA franc zone",
+      "doi": "10.1080/00036849400000028",
+      "year": "1994",
+      "source": "Applied Economics",
+      "cited_by": 6,
+      "authors": "Usman A.A.",
+      "eid": "2-s2.0-0028597602"
+    },
+    {
+      "title": "The Financialization of Coffee, Cocoa and Cotton Value Chains: The Role of Physical Actors",
+      "doi": "10.1111/dech.12802",
+      "year": "2023",
+      "source": "Development and Change",
+      "cited_by": 5,
+      "authors": "Tröster B.",
+      "eid": "2-s2.0-85178206206"
+    },
+    {
+      "title": "Dynamic causalities between world oil price and Indonesia’s Cocoa market: Evidence from the 2008 global financial crisis and the 2011 European debt crisis",
+      "doi": "N/A",
+      "year": "2021",
+      "source": "Regional Science Inquiry",
+      "cited_by": 5,
+      "authors": "Mukhlis M.",
+      "eid": "2-s2.0-85099257703"
+    },
+    {
+      "title": "Socio-economic aspect and carrying capacity of agricultural land resources to support the development of strategic agricultural commodities",
+      "doi": "10.1088/1755-1315/648/1/012019",
+      "year": "2021",
+      "source": "Iop Conference Series Earth and Environmental Science",
+      "cited_by": 2,
+      "authors": "Mamat H.S.",
+      "eid": "2-s2.0-85102318162"
+    },
+    {
+      "title": "Managing multiple international risks simultaneously with an optimal hedging model",
+      "doi": "10.1016/0169-5150(91)90014-c",
+      "year": "1991",
+      "source": "Agricultural Economics",
+      "cited_by": 2,
+      "authors": "Sarassoro G.F.",
+      "eid": "2-s2.0-0026333843"
+    }
+  ]
+}

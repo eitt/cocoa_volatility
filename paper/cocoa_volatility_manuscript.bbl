@@ -1,38 +1,19 @@
-\begin{thebibliography}{13}
+\begin{thebibliography}{14}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Acosta et~al.(2019)Acosta, Ihle, and von
-  Cramon-Taubadel]{acosta_ihle_voncramon_2019}
-Alejandro Acosta, Rico Ihle, and Stephan von Cramon-Taubadel.
-\newblock Combining market structure and econometric methods for price
-  transmission analysis.
-\newblock \emph{Food Security}, 11\penalty0 (4):\penalty0 941--951, 2019.
-\newblock \doi{10.1007/s12571-019-00951-w}.
-
-\bibitem[{Banco de la Republica}(2026)]{banrep_trm}
-{Banco de la Republica}.
-\newblock Tasa de cambio representativa del mercado ({TRM}).
-\newblock \url{https://www.banrep.gov.co/es/glosario/tasa-cambio-trm}, 2026.
-\newblock Official Colombian central-bank reference page for the exchange-rate
-  series used in the macro-control block. Accessed 2026-03-26.
-
-\bibitem[Engle and Granger(1987)]{engle_granger_1987}
-Robert~F. Engle and Clive W.~J. Granger.
-\newblock Co-integration and error correction: Representation, estimation, and
-  testing.
-\newblock \emph{Econometrica}, 55\penalty0 (2):\penalty0 251--276, 1987.
-
-\bibitem[{Eurostat}(2026)]{eurostat_hicp}
-{Eurostat}.
-\newblock Harmonised index of consumer prices (hicp) metadata.
-\newblock
-  \url{https://ec.europa.eu/eurostat/cache/metadata/en/prc_hicp_esms.htm},
-  2026.
-\newblock Official metadata for monthly HICP series. Accessed 2026-03-25.
+\bibitem[Akrofi-Atitianti et~al.(2018)Akrofi-Atitianti, Ifejika~Speranza,
+  Bockel, and Asare]{AkrofiAtitianti2018}
+Felix Akrofi-Atitianti, Chinwe Ifejika~Speranza, Louis Bockel, and Richard
+  Asare.
+\newblock Assessing climate smart agriculture and its determinants of practice
+  in ghana: A case of the cocoa production system.
+\newblock \emph{Land}, 7\penalty0 (1):\penalty0 30, 2018.
+\newblock \doi{10.3390/land7010030}.
+\newblock URL \url{https://doi.org/10.3390/land7010030}.
 
 \bibitem[Hakkio and Rush(1991)]{hakkio_rush_1991}
 Craig~S. Hakkio and Mark Rush.
@@ -41,37 +22,81 @@ Craig~S. Hakkio and Mark Rush.
   (4):\penalty0 571--581, 1991.
 \newblock \doi{10.1016/0261-5606(91)90008-8}.
 
+\bibitem[Jacobi et~al.(2013)Jacobi, Schneider, Bottazzi, Pillco, Calizaya, and
+  Rist]{Jacobi2013}
+Johanna Jacobi, Monika Schneider, Patrick Bottazzi, Maria~Isabel Pillco,
+  Patricia Calizaya, and Stephan Rist.
+\newblock Agroecosystem resilience and farmers' perceptions of climate change
+  impacts on cocoa farms in alto beni, bolivia.
+\newblock \emph{Renewable Agriculture and Food Systems}, 2013.
+\newblock \doi{10.1017/S174217051300029X}.
+\newblock URL \url{https://doi.org/10.1017/S174217051300029X}.
+
 \bibitem[Johansen(1991)]{johansen_1991}
 Soren Johansen.
 \newblock Estimation and hypothesis testing of cointegration vectors in
   gaussian vector autoregressive models.
 \newblock \emph{Econometrica}, 59\penalty0 (6):\penalty0 1551--1580, 1991.
 
-\bibitem[{Ministerio de Agricultura y Desarrollo Rural}(2026)]{agronet_cacao}
-{Ministerio de Agricultura y Desarrollo Rural}.
-\newblock Precio de referencia semanal de compra de cacao - fuente industria
-  nacional - exportadores.
-\newblock
-  \url{https://www.agronet.gov.co/Noticias/Paginas/Precio-de-referencia-semanal-de-compra-de-cacao---Fuente-Industria.aspx},
-  2026.
-\newblock Official AgroNet weekly cacao reference series used for the Colombian
-  domestic price block. Accessed 2026-03-26.
+\bibitem[Jumah and Kunst(2001)]{Jumah2001}
+A.~Jumah and Robert~M. Kunst.
+\newblock The effects of dollar/sterling exchange rate volatility on futures
+  markets for coffee and cocoa.
+\newblock \emph{European Review of Agricultural Economics}, 28\penalty0
+  (3):\penalty0 307--320, 2001.
+\newblock \doi{10.1093/erae/28.3.307}.
+\newblock URL \url{https://doi.org/10.1093/erae/28.3.307}.
 
-\bibitem[{National Aeronautics and Space Administration}(2026)]{nasa_power_api}
-{National Aeronautics and Space Administration}.
-\newblock Nasa power temporal apis documentation.
-\newblock \url{https://power.larc.nasa.gov/docs/services/api/temporal/}, 2026.
-\newblock Official documentation for daily and monthly analysis-ready
-  meteorological data. Accessed 2026-03-25.
+\bibitem[Laderach et~al.(2013)Laderach, Martinez-Valle, Schroth, and
+  Castro]{Laderach2013}
+Peter Laderach, Armando Martinez-Valle, Goetz Schroth, and Nixon Castro.
+\newblock Predicting the future climatic suitability for cocoa farming of the
+  world's leading producer countries, ghana and cote d'ivoire.
+\newblock \emph{Climatic Change}, 119\penalty0 (3-4):\penalty0 841--854, 2013.
+\newblock \doi{10.1007/s10584-013-0774-8}.
+\newblock URL \url{https://doi.org/10.1007/s10584-013-0774-8}.
 
-\bibitem[Talero-Sarmiento et~al.(2025)Talero-Sarmiento, Lamos-Diaz, and
-  Marquez-Gonzalez]{talero_sarmiento_etal_2025}
-Leonardo~H. Talero-Sarmiento, Henry Lamos-Diaz, and Juan~D. Marquez-Gonzalez.
-\newblock Optimizing cocoa biomass density through integrated irrigation and
-  drainage management under water stress: A linear programming approach.
-\newblock \emph{Ecological Informatics}, 90:\penalty0 103262, 2025.
-\newblock \doi{10.1016/j.ecoinf.2025.103262}.
-\newblock URL \url{https://doi.org/10.1016/j.ecoinf.2025.103262}.
+\bibitem[Lahive et~al.(2019)Lahive, Hadley, and Daymond]{Lahive2019}
+Fiona Lahive, Paul Hadley, and Andrew~J. Daymond.
+\newblock The physiological responses of cacao to the environment and the
+  implications for climate change resilience. a review.
+\newblock \emph{Agronomy for Sustainable Development}, 39\penalty0
+  (1):\penalty0 5, 2019.
+\newblock \doi{10.1007/s13593-018-0552-0}.
+\newblock URL \url{https://doi.org/10.1007/s13593-018-0552-0}.
+
+\bibitem[Mithofer et~al.(2017)Mithofer, Roshetko, Donovan, Nathalie, Robiglio,
+  Wau, Sonwa, and Blare]{Mithofer2017}
+Dagmar Mithofer, James~M. Roshetko, Jason~A. Donovan, Ewane Nathalie, Valentina
+  Robiglio, Duman Wau, Denis~J. Sonwa, and Trent Blare.
+\newblock Unpacking `sustainable' cocoa: Do sustainability standards,
+  development projects and policies address producer concerns in indonesia,
+  cameroon and peru?
+\newblock \emph{International Journal of Biodiversity Science, Ecosystem
+  Services \& Management}, 13\penalty0 (1):\penalty0 444--469, 2017.
+\newblock \doi{10.1080/21513732.2018.1432691}.
+\newblock URL \url{https://doi.org/10.1080/21513732.2018.1432691}.
+
+\bibitem[Niether et~al.(2020)Niether, Jacobi, Blaser, Andres, and
+  Armengot]{Niether2020}
+Wiebke Niether, Johanna Jacobi, Wilma~J. Blaser, Christian Andres, and Laura
+  Armengot.
+\newblock Cocoa agroforestry systems versus monocultures: A multi-dimensional
+  meta-analysis.
+\newblock \emph{Environmental Research Letters}, 2020.
+\newblock \doi{10.1088/1748-9326/abb053}.
+\newblock URL \url{https://doi.org/10.1088/1748-9326/abb053}.
+
+\bibitem[Schroth et~al.(2016)Schroth, Laderach, Martinez-Valle, Bunn, and
+  Jassogne]{Schroth2016}
+Goetz Schroth, Peter Laderach, Armando~Isaac Martinez-Valle, Christian Bunn,
+  and Laurence Jassogne.
+\newblock Vulnerability to climate change of cocoa in west africa: Patterns,
+  opportunities and limits to adaptation.
+\newblock \emph{Science of The Total Environment}, 556:\penalty0 231--241,
+  2016.
+\newblock \doi{10.1016/j.scitotenv.2016.03.024}.
+\newblock URL \url{https://doi.org/10.1016/j.scitotenv.2016.03.024}.
 
 \bibitem[Troyanskaya et~al.(2001)Troyanskaya, Cantor, Sherlock, Brown, Hastie,
   Tibshirani, Botstein, and Altman]{troyanskaya_etal_2001}
@@ -82,14 +107,22 @@ Olga Troyanskaya, Michael Cantor, Gavin Sherlock, Pat Brown, Trevor Hastie,
 \newblock \doi{10.1093/bioinformatics/17.6.520}.
 \newblock URL \url{https://doi.org/10.1093/bioinformatics/17.6.520}.
 
-\bibitem[{U.S. Energy Information Administration}(2026)]{eia_brent}
-{U.S. Energy Information Administration}.
-\newblock Europe brent spot price {FOB}.
-\newblock
-  \url{https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=RBRTE&f=M},
-  2026.
-\newblock Official Brent history page used for the oil-price control series.
-  Accessed 2026-03-26.
+\bibitem[Tsowou and Gayi(2019)]{TsowouGayi2019}
+Komi Tsowou and Samuel~K. Gayi.
+\newblock Trade reforms and integration of cocoa farmers into world markets:
+  Evidence from african and non-african countries.
+\newblock \emph{Journal of African Trade}, 2019.
+\newblock \doi{10.2991/jat.k.190916.001}.
+\newblock URL \url{https://doi.org/10.2991/jat.k.190916.001}.
+
+\bibitem[Vaast and Somarriba(2014)]{Vaast2014}
+Philippe Vaast and Eduardo Somarriba.
+\newblock Trade-offs between crop intensification and ecosystem services: The
+  role of agroforestry in cocoa cultivation.
+\newblock \emph{Agroforestry Systems}, 88\penalty0 (6):\penalty0 947--956,
+  2014.
+\newblock \doi{10.1007/s10457-014-9762-x}.
+\newblock URL \url{https://doi.org/10.1007/s10457-014-9762-x}.
 
 \bibitem[van Buuren and
   Groothuis-Oudshoorn(2011)]{vanbuuren_groothuisoudshoorn_2011}
@@ -99,14 +132,5 @@ Stef van Buuren and Karin Groothuis-Oudshoorn.
   1--67, 2011.
 \newblock \doi{10.18637/jss.v045.i03}.
 \newblock URL \url{https://www.jstatsoft.org/article/view/v045i03}.
-
-\bibitem[{World Bank Prospects Group}(2025)]{worldbank_pinksheet}
-{World Bank Prospects Group}.
-\newblock World bank commodities price data (the pink sheet).
-\newblock
-  \url{https://thedocs.worldbank.org/en/doc/18675f1d1639c7a34d463f59263ba0a2-0050012025/world-bank-commodities-price-data-the-pink-sheet},
-  2025.
-\newblock Public monthly commodity benchmark data, including cocoa. Accessed
-  2026-03-25.
 
 \end{thebibliography}

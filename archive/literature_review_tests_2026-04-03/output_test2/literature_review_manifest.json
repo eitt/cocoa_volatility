@@ -1,0 +1,62 @@
+{
+  "paper_count": 3,
+  "papers": [
+    {
+      "paper_id": "P001",
+      "title": "Learning from social–ecological crisis for legal resilience building: multi-scale dynamics in the coffee rust epidemic",
+      "doi": "10.1007/s11625-019-00703-x",
+      "journal": "Sustainability Science",
+      "year": 2019,
+      "authors": [
+        "Antoine Libert-Amico",
+        "Claudia Ituarte‐Lima",
+        "Thomas Elmqvist"
+      ],
+      "pdf_path": "papers_test2\\10.1007_s11625-019-00703-x__Learning_from_social_ecological_crisis_for_legal_resilience_building_multi-scale_dynamics_in.pdf",
+      "matched_buckets": [
+        "vulnerability"
+      ],
+      "search_queries": [
+        "coffee climate adaptation smallholder",
+        "coffee rust smallholder resilience"
+      ],
+      "answer_count": 3
+    },
+    {
+      "paper_id": "P002",
+      "title": "The Water Footprint Concept and Water's Grand Environmental Challenges",
+      "doi": "10.1016/j.oneear.2020.02.010",
+      "journal": "One Earth",
+      "year": 2020,
+      "authors": [
+        "Rick J. Hogeboom"
+      ],
+      "pdf_path": "papers_test2\\10.1016_j.oneear.2020.02.010__The_Water_Footprint_Concept_and_Water_s_Grand_Environmental_Challenges.pdf",
+      "matched_buckets": [
+        "justice"
+      ],
+      "search_queries": [
+        "sustainability standards agriculture value chain"
+      ],
+      "answer_count": 3
+    },
+    {
+      "paper_id": "P003",
+      "title": "Agriculture, food and global value chains: issues, methods and challenges",
+      "doi": "10.36253/bae-13517",
+      "journal": "Bio-based and Applied Economics",
+      "year": 2022,
+      "authors": [
+        "Margherita Scoppola"
+      ],
+      "pdf_path": "papers_test2\\10.36253_bae-13517__Agriculture_food_and_global_value_chains_issues_methods_and_challenges.pdf",
+      "matched_buckets": [
+        "price"
+      ],
+      "search_queries": [
+        "\"price transmission\" coffee"
+      ],
+      "answer_count": 2
+    }
+  ]
+}

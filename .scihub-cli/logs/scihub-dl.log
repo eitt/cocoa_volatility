@@ -1,0 +1,157 @@
+2026-04-12 10:01:27,161 - INFO - Saved config to C:\Users\LEONA\Documents\GitHub\cocoa_volatility\.scihub-cli\config.json
+2026-04-12 10:01:27,161 - INFO - Email saved to config: ltalero@unab.edu.co
+2026-04-12 10:01:27,164 - INFO - CORE source disabled by configuration
+2026-04-12 10:01:27,176 - INFO - Academic-only filter enabled: kept 1/1 identifiers (dropped 0 non-academic or non-document URLs)
+2026-04-12 10:01:27,176 - INFO - Found 1 papers to download (1 unique after normalization)
+2026-04-12 10:01:27,176 - INFO - Processing 1/1: 10.1007/s10584-013-0774-8
+2026-04-12 10:01:27,176 - INFO - Downloading paper: 10.1007/s10584-013-0774-8
+2026-04-12 10:01:28,390 - INFO - [Router] Year 2013 < 2021, using OpenAlex -> Unpaywall -> Europe PMC OA -> Europe PMC -> arXiv -> CORE -> Sci-Hub
+2026-04-12 10:01:28,390 - WARNING - [Router] Source 'CORE' not available, skipping
+2026-04-12 10:01:28,390 - INFO - [Router] Parallel query to 5 sources: ['OpenAlex', 'Unpaywall', 'Europe PMC OA', 'Europe PMC', 'arXiv']
+2026-04-12 10:01:29,394 - WARNING - Unpaywall API for 10.1007/s10584-013-0774-8 failed with unknown error (attempt 1), retrying in 0.0s...
+2026-04-12 10:01:29,489 - ERROR - Unpaywall API for 10.1007/s10584-013-0774-8 failed after 2 attempts
+2026-04-12 10:01:32,006 - WARNING - [Router] All sources failed for 10.1007/s10584-013-0774-8 (parallel)
+2026-04-12 10:01:32,006 - INFO - [Router] Fast sources exhausted, trying slow sources: ['Sci-Hub']
+2026-04-12 10:01:32,007 - INFO - [Router] Trying Sci-Hub for 10.1007/s10584-013-0774-8...
+2026-04-12 10:01:32,007 - INFO - Finding working mirror...
+2026-04-12 10:01:32,007 - INFO - [Tier 1] Testing easy mirrors in parallel...
+2026-04-12 10:01:32,240 - INFO - Saved config to C:\Users\LEONA\Documents\GitHub\cocoa_volatility\.scihub-cli\config.json
+2026-04-12 10:01:32,240 - INFO - Email saved to config: ltalero@unab.edu.co
+2026-04-12 10:01:32,242 - INFO - CORE source disabled by configuration
+2026-04-12 10:01:32,253 - INFO - Academic-only filter enabled: kept 1/1 identifiers (dropped 0 non-academic or non-document URLs)
+2026-04-12 10:01:32,253 - INFO - Found 1 papers to download (1 unique after normalization)
+2026-04-12 10:01:32,253 - INFO - Processing 1/1: 10.1016/j.scitotenv.2016.03.024
+2026-04-12 10:01:32,253 - INFO - Downloading paper: 10.1016/j.scitotenv.2016.03.024
+2026-04-12 10:01:34,152 - INFO - SUCCESS: Using easy mirror: https://sci-hub.vg
+2026-04-12 10:01:34,154 - INFO - Cached mirror for 3600s: https://sci-hub.vg
+2026-04-12 10:01:35,649 - INFO - [Router] Year 2016 < 2021, using OpenAlex -> Unpaywall -> Europe PMC OA -> Europe PMC -> arXiv -> CORE -> Sci-Hub
+2026-04-12 10:01:35,649 - WARNING - [Router] Source 'CORE' not available, skipping
+2026-04-12 10:01:35,649 - INFO - [Router] Parallel query to 5 sources: ['OpenAlex', 'Unpaywall', 'Europe PMC OA', 'Europe PMC', 'arXiv']
+2026-04-12 10:01:36,629 - WARNING - [Sci-Hub] Detected blocked mirror page for https://sci-hub.vg
+2026-04-12 10:01:36,629 - INFO - Added https://sci-hub.vg to blacklist for 300s
+2026-04-12 10:01:36,629 - INFO - [Sci-Hub] Switching mirror to https://sci-hub.mk for 10.1007/s10584-013-0774-8
+2026-04-12 10:01:37,429 - INFO - [OpenAlex] Found OA paper (status: hybrid): 10.1016/j.scitotenv.2016.03.024
+2026-04-12 10:01:37,429 - INFO - [Router] OpenAlex found PDF (parallel)
+2026-04-12 10:01:37,429 - INFO - [Router] SUCCESS: Using OpenAlex (parallel, priority)
+2026-04-12 10:01:37,430 - INFO - Downloading via candidate URL (1/1): https://hdl.handle.net/10568/72586
+2026-04-12 10:01:37,430 - INFO - Downloading to C:\Users\LEONA\AppData\Local\Temp\scihub_fallback_06g49fex\out\[2016] - Vulnerability to climate change of cocoa in West Africa_ Patterns, opportunities....pdf
+2026-04-12 10:01:37,680 - WARNING - [Unpaywall] No PDF URL in OA location for 10.1016/j.scitotenv.2016.03.024
+2026-04-12 10:01:38,783 - WARNING - [Sci-Hub] Detected blocked mirror page for https://sci-hub.mk
+2026-04-12 10:01:38,783 - INFO - Added https://sci-hub.mk to blacklist for 300s
+2026-04-12 10:01:38,784 - WARNING - [Sci-Hub] All mirrors returned block pages; cooling down for 120s
+2026-04-12 10:01:38,784 - WARNING - [Sci-Hub] Could not extract download URL for 10.1007/s10584-013-0774-8
+2026-04-12 10:01:38,784 - INFO - [Router] Sci-Hub did not find PDF, trying next source...
+2026-04-12 10:01:38,784 - WARNING - [Router] All sources failed for 10.1007/s10584-013-0774-8
+2026-04-12 10:01:38,784 - ERROR - Could not find PDF URL for 10.1007/s10584-013-0774-8 from any source
+2026-04-12 10:01:38,784 - INFO - Downloaded 0/1 papers
+2026-04-12 10:01:38,784 - WARNING - The following papers failed to download:
+2026-04-12 10:01:38,785 - WARNING -   - 10.1007/s10584-013-0774-8: Could not find PDF URL for 10.1007/s10584-013-0774-8 from any source
+2026-04-12 10:01:38,787 - WARNING - Failure report saved to: C:\Users\LEONA\AppData\Local\Temp\scihub_fallback_ewgx6ig0\out\download-report.json
+2026-04-12 10:01:38,963 - INFO - Saved config to C:\Users\LEONA\Documents\GitHub\cocoa_volatility\.scihub-cli\config.json
+2026-04-12 10:01:38,963 - INFO - Email saved to config: ltalero@unab.edu.co
+2026-04-12 10:01:38,966 - INFO - CORE source disabled by configuration
+2026-04-12 10:01:38,983 - INFO - Academic-only filter enabled: kept 1/1 identifiers (dropped 0 non-academic or non-document URLs)
+2026-04-12 10:01:38,983 - INFO - Found 1 papers to download (1 unique after normalization)
+2026-04-12 10:01:38,983 - INFO - Processing 1/1: 10.1016/j.jrurstud.2018.08.004
+2026-04-12 10:01:38,983 - INFO - Downloading paper: 10.1016/j.jrurstud.2018.08.004
+2026-04-12 10:01:41,130 - INFO - [Router] Year 2018 < 2021, using OpenAlex -> Unpaywall -> Europe PMC OA -> Europe PMC -> arXiv -> CORE -> Sci-Hub
+2026-04-12 10:01:41,130 - WARNING - [Router] Source 'CORE' not available, skipping
+2026-04-12 10:01:41,131 - INFO - [Router] Parallel query to 5 sources: ['OpenAlex', 'Unpaywall', 'Europe PMC OA', 'Europe PMC', 'arXiv']
+2026-04-12 10:01:41,230 - ERROR - download from https://hdl.handle.net/10568/72586 failed after 1 attempts
+2026-04-12 10:01:41,230 - ERROR - Download failed after all retries: HTTP 429
+2026-04-12 10:01:41,232 - ERROR - Failed to download 10.1016/j.scitotenv.2016.03.024: HTTP 429
+2026-04-12 10:01:41,232 - INFO - Downloaded 0/1 papers
+2026-04-12 10:01:41,232 - WARNING - The following papers failed to download:
+2026-04-12 10:01:41,232 - WARNING -   - 10.1016/j.scitotenv.2016.03.024: HTTP 429
+2026-04-12 10:01:41,234 - WARNING - Failure report saved to: C:\Users\LEONA\AppData\Local\Temp\scihub_fallback_06g49fex\out\download-report.json
+2026-04-12 10:01:43,110 - INFO - [Unpaywall] Fast-fail skip derived PDF candidate: https://www.sciencedirect.com/science/article/pii/S0743016717312937/pdfft
+2026-04-12 10:01:43,110 - WARNING - [Unpaywall] No PDF URL in OA location for 10.1016/j.jrurstud.2018.08.004
+2026-04-12 10:01:43,130 - INFO - [OpenAlex] Fast-fail skip derived PDF candidate: https://www.sciencedirect.com/science/article/pii/S0743016717312937/pdfft
+2026-04-12 10:01:43,130 - INFO - [OpenAlex] Found OA paper (status: bronze): 10.1016/j.jrurstud.2018.08.004
+2026-04-12 10:01:43,130 - INFO - [Router] OpenAlex found PDF (parallel)
+2026-04-12 10:01:43,132 - INFO - [Router] SUCCESS: Using OpenAlex (parallel, priority)
+2026-04-12 10:01:43,133 - INFO - Downloading via candidate URL (1/1): http://hdl.handle.net/2117/125071
+2026-04-12 10:01:43,133 - INFO - Downloading to C:\Users\LEONA\AppData\Local\Temp\scihub_fallback_icdx798e\out\[2018] - Livelihood strategies of cacao producers in Ecuador_ Effects of national policie....pdf
+2026-04-12 10:01:48,863 - WARNING - Response is not a PDF: text/html; charset=utf-8
+2026-04-12 10:01:49,489 - INFO - [Fast-Fail HTML] Trying extracted candidate: https://upcommons.upc.edu/bitstreams/e8bb0128-f11e-43f9-a2c4-d428073ce482/download
+2026-04-12 10:01:49,489 - INFO - Downloading to C:\Users\LEONA\AppData\Local\Temp\scihub_fallback_icdx798e\out\[2018] - Livelihood strategies of cacao producers in Ecuador_ Effects of national policie....pdf
+2026-04-12 10:01:53,236 - WARNING - Response is not a PDF: application/vnd.openxmlformats-officedocument.wordprocessingml.document;charset=UTF-8
+2026-04-12 10:01:53,686 - ERROR - download from https://upcommons.upc.edu/bitstreams/e8bb0128-f11e-43f9-a2c4-d428073ce482/download failed after 1 attempts
+2026-04-12 10:01:53,686 - ERROR - Download failed after all retries: Download error: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\LEONA\\AppData\\Local\\Temp\\tmpf9l15xhl.pdf'
+2026-04-12 10:01:53,686 - INFO - Fast-fail enabled: skipping bypass and HTML recovery
+2026-04-12 10:01:53,686 - ERROR - Permanent failure: Server returned HTML instead of PDF (Content-Type: text/html; charset=utf-8)
+2026-04-12 10:01:53,686 - INFO - Retrying sources after download failure (round 1/1)
+2026-04-12 10:01:53,686 - INFO - [Router] Year 2018 < 2021, using OpenAlex -> Unpaywall -> Europe PMC OA -> Europe PMC -> arXiv -> CORE -> Sci-Hub
+2026-04-12 10:01:53,686 - WARNING - [Router] Source 'CORE' not available, skipping
+2026-04-12 10:01:53,686 - INFO - [Router] Trying Unpaywall for 10.1016/j.jrurstud.2018.08.004...
+2026-04-12 10:01:53,686 - WARNING - [Unpaywall] No PDF URL in OA location for 10.1016/j.jrurstud.2018.08.004
+2026-04-12 10:01:53,687 - INFO - [Router] Unpaywall did not find PDF, trying next source...
+2026-04-12 10:01:53,687 - INFO - [Router] Trying Europe PMC OA for 10.1016/j.jrurstud.2018.08.004...
+2026-04-12 10:01:53,687 - INFO - [Router] Europe PMC OA did not find PDF, trying next source...
+2026-04-12 10:01:53,687 - INFO - [Router] Trying Europe PMC for 10.1016/j.jrurstud.2018.08.004...
+2026-04-12 10:01:53,687 - INFO - [Router] Europe PMC did not find PDF, trying next source...
+2026-04-12 10:01:53,687 - INFO - [Router] Trying Sci-Hub for 10.1016/j.jrurstud.2018.08.004...
+2026-04-12 10:01:53,687 - INFO - Finding working mirror...
+2026-04-12 10:01:53,687 - INFO - [Tier 1] Testing easy mirrors in parallel...
+2026-04-12 10:01:55,371 - INFO - SUCCESS: Using easy mirror: https://sci-hub.ee
+2026-04-12 10:01:55,371 - INFO - Cached mirror for 3600s: https://sci-hub.ee
+2026-04-12 10:01:56,307 - WARNING - Got 403 accessing page, attempting cloudscraper bypass...
+2026-04-12 10:01:57,458 - INFO - Successfully fetched page using cloudscraper bypass
+2026-04-12 10:01:58,397 - WARNING - Got 403 accessing page, attempting cloudscraper bypass...
+2026-04-12 10:01:59,416 - INFO - Successfully fetched page using cloudscraper bypass
+2026-04-12 10:01:59,417 - WARNING - [Sci-Hub] Failed to access page: 403
+2026-04-12 10:01:59,417 - INFO - Added https://sci-hub.ee to blacklist for 300s
+2026-04-12 10:01:59,417 - INFO - [Sci-Hub] Switching mirror to https://sci-hub.vg for 10.1016/j.jrurstud.2018.08.004
+2026-04-12 10:02:00,550 - WARNING - [Sci-Hub] Detected blocked mirror page for https://sci-hub.vg
+2026-04-12 10:02:00,550 - INFO - Added https://sci-hub.vg to blacklist for 300s
+2026-04-12 10:02:00,550 - INFO - [Sci-Hub] Switching mirror to https://sci-hub.mk for 10.1016/j.jrurstud.2018.08.004
+2026-04-12 10:02:01,671 - WARNING - [Sci-Hub] Detected blocked mirror page for https://sci-hub.mk
+2026-04-12 10:02:01,671 - INFO - Added https://sci-hub.mk to blacklist for 300s
+2026-04-12 10:02:01,671 - INFO - [Sci-Hub] Switching mirror to https://sci-hub.ren for 10.1016/j.jrurstud.2018.08.004
+2026-04-12 10:02:02,624 - WARNING - Got 403 accessing page, attempting cloudscraper bypass...
+2026-04-12 10:02:03,652 - INFO - Successfully fetched page using cloudscraper bypass
+2026-04-12 10:02:04,806 - WARNING - Got 403 accessing page, attempting cloudscraper bypass...
+2026-04-12 10:02:06,393 - INFO - Successfully fetched page using cloudscraper bypass
+2026-04-12 10:02:06,396 - WARNING - [Sci-Hub] Failed to access page: 403
+2026-04-12 10:02:06,397 - INFO - Added https://sci-hub.ren to blacklist for 300s
+2026-04-12 10:02:06,397 - WARNING - [Sci-Hub] Could not extract download URL for 10.1016/j.jrurstud.2018.08.004
+2026-04-12 10:02:06,397 - INFO - [Router] Sci-Hub did not find PDF, trying next source...
+2026-04-12 10:02:06,397 - WARNING - [Router] All sources failed for 10.1016/j.jrurstud.2018.08.004
+2026-04-12 10:02:06,398 - ERROR - Failed to download 10.1016/j.jrurstud.2018.08.004: Server returned HTML instead of PDF (Content-Type: text/html; charset=utf-8)
+2026-04-12 10:02:06,398 - INFO - Downloaded 0/1 papers
+2026-04-12 10:02:06,398 - WARNING - The following papers failed to download:
+2026-04-12 10:02:06,398 - WARNING -   - 10.1016/j.jrurstud.2018.08.004: Server returned HTML instead of PDF (Content-Type: text/html; charset=utf-8)
+2026-04-12 10:02:06,402 - WARNING - Failure report saved to: C:\Users\LEONA\AppData\Local\Temp\scihub_fallback_icdx798e\out\download-report.json
+2026-04-12 10:06:32,683 - INFO - Saved config to C:\Users\LEONA\Documents\GitHub\cocoa_volatility\.scihub-cli\config.json
+2026-04-12 10:06:32,683 - INFO - Email saved to config: ltalero@unab.edu.co
+2026-04-12 10:06:32,687 - INFO - CORE source disabled by configuration
+2026-04-12 10:06:32,702 - INFO - Academic-only filter enabled: kept 1/1 identifiers (dropped 0 non-academic or non-document URLs)
+2026-04-12 10:06:32,703 - INFO - Found 1 papers to download (1 unique after normalization)
+2026-04-12 10:06:32,703 - INFO - Processing 1/1: 10.1093/erae/28.3.307
+2026-04-12 10:06:32,703 - INFO - Downloading paper: 10.1093/erae/28.3.307
+2026-04-12 10:06:37,430 - INFO - [Router] Year 2001 < 2021, using OpenAlex -> Unpaywall -> Europe PMC OA -> Europe PMC -> arXiv -> CORE -> Sci-Hub
+2026-04-12 10:06:37,430 - WARNING - [Router] Source 'CORE' not available, skipping
+2026-04-12 10:06:37,430 - INFO - [Router] Parallel query to 5 sources: ['OpenAlex', 'Unpaywall', 'Europe PMC OA', 'Europe PMC', 'arXiv']
+2026-04-12 10:06:40,781 - WARNING - Unpaywall API for 10.1093/erae/28.3.307 failed with unknown error (attempt 1), retrying in 0.0s...
+2026-04-12 10:06:40,881 - ERROR - Unpaywall API for 10.1093/erae/28.3.307 failed after 2 attempts
+2026-04-12 10:06:41,698 - WARNING - [Router] All sources failed for 10.1093/erae/28.3.307 (parallel)
+2026-04-12 10:06:41,699 - INFO - [Router] Fast sources exhausted, trying slow sources: ['Sci-Hub']
+2026-04-12 10:06:41,699 - INFO - [Router] Trying Sci-Hub for 10.1093/erae/28.3.307...
+2026-04-12 10:06:41,699 - INFO - Finding working mirror...
+2026-04-12 10:06:41,699 - INFO - [Tier 1] Testing easy mirrors in parallel...
+2026-04-12 10:06:44,913 - INFO - SUCCESS: Using easy mirror: https://sci-hub.vg
+2026-04-12 10:06:44,913 - INFO - Cached mirror for 3600s: https://sci-hub.vg
+2026-04-12 10:06:46,806 - WARNING - [Sci-Hub] Detected blocked mirror page for https://sci-hub.vg
+2026-04-12 10:06:46,807 - INFO - Added https://sci-hub.vg to blacklist for 300s
+2026-04-12 10:06:46,807 - INFO - [Sci-Hub] Switching mirror to https://sci-hub.mk for 10.1093/erae/28.3.307
+2026-04-12 10:06:48,516 - WARNING - [Sci-Hub] Detected blocked mirror page for https://sci-hub.mk
+2026-04-12 10:06:48,516 - INFO - Added https://sci-hub.mk to blacklist for 300s
+2026-04-12 10:06:48,516 - WARNING - [Sci-Hub] All mirrors returned block pages; cooling down for 120s
+2026-04-12 10:06:48,517 - WARNING - [Sci-Hub] Could not extract download URL for 10.1093/erae/28.3.307
+2026-04-12 10:06:48,517 - INFO - [Router] Sci-Hub did not find PDF, trying next source...
+2026-04-12 10:06:48,517 - WARNING - [Router] All sources failed for 10.1093/erae/28.3.307
+2026-04-12 10:06:48,517 - ERROR - Could not find PDF URL for 10.1093/erae/28.3.307 from any source
+2026-04-12 10:06:48,518 - INFO - Downloaded 0/1 papers
+2026-04-12 10:06:48,518 - WARNING - The following papers failed to download:
+2026-04-12 10:06:48,518 - WARNING -   - 10.1093/erae/28.3.307: Could not find PDF URL for 10.1093/erae/28.3.307 from any source
+2026-04-12 10:06:48,522 - WARNING - Failure report saved to: C:\Users\LEONA\AppData\Local\Temp\scihub_fallback_4k_eaoo3\out\download-report.json

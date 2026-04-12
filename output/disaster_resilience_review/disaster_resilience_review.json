@@ -1,0 +1,1397 @@
+{
+  "paper_count": 33,
+  "themes": {
+    "economic_impacts": "Economic impacts of disasters",
+    "risk_assessment_modelling": "Risk assessment & modelling",
+    "ecosystem_services_natural_capital": "Ecosystem services & natural capital",
+    "governance_institutions": "Governance & institutions",
+    "behavioral_responses": "Behavioral responses",
+    "adaptation_resilience_strategies": "Adaptation & resilience strategies"
+  },
+  "records": [
+    {
+      "paper_id": "P001",
+      "bibtex_key": "Hallegatte2010",
+      "doi": "10.1007/s10584-010-9978-3",
+      "title": "Assessing climate change impacts, sea level rise and storm surge risk in port cities: a case study on Copenhagen",
+      "journal": "Climatic Change",
+      "year": 2010,
+      "authors": [
+        "Stéphane Hallegatte",
+        "Nicola Ranger",
+        "Olivier Mestre",
+        "Patrice Dumas",
+        "Jan Corfee-Morlot",
+        "Celine Herweijer",
+        "Robert M. Wood"
+      ],
+      "research_question": "This study explores how storm surge risk might change in the future as a result of anthropogenic climate change and the implications for investment in protection infrastructure.",
+      "quote": "Results call for the introduction of adaptation in long-term urban planning",
+      "interpretation": "The quote provides direct evidence relevant to economic impacts of disasters and supports only the claim explicitly stated in the original text.",
+      "category": "Literature Findings",
+      "theme": "economic_impacts",
+      "theme_label": "Economic impacts of disasters",
+      "method_class": "mixed methods",
+      "gap_note": "",
+      "method_note": "storm surge risk in the city of Copenhagen",
+      "pdf_path": "papers\\disaster_resilience_review\\10.1007_s10584-010-9978-3__Assessing_climate_change_impacts_sea_level_rise_and_storm_surge_risk_in_port_cities_a_case_st.pdf",
+      "source_url": "https://doi.org/10.1007/s10584-010-9978-3",
+      "openalex_id": "https://openalex.org/W2258996570",
+      "landing_urls": [
+        "https://doi.org/10.1007/s10584-010-9978-3",
+        "https://enpc.hal.science/hal-00719265",
+        "http://hdl.handle.net/10.1007/s10584-010-9978-3",
+        "http://agritrop.cirad.fr/566605/",
+        "https://link.springer.com/content/pdf/10.1007/s10584-010-9978-3.pdf"
+      ],
+      "query_themes": [
+        "behavioral_responses",
+        "economic_impacts",
+        "ecosystem_services_natural_capital"
+      ],
+      "search_queries": [
+        "\"disaster preparedness\" education experience resilience",
+        "\"disaster preparedness\" education resilience natural hazard",
+        "wetlands disaster risk reduction resilience natural capital"
+      ]
+    },
+    {
+      "paper_id": "P002",
+      "bibtex_key": "Jones2016",
+      "doi": "10.1007/s10113-016-0995-2",
+      "title": "‘Subjective resilience’: using perceptions to quantify household resilience to climate extremes and disasters",
+      "journal": "Regional Environmental Change",
+      "year": 2016,
+      "authors": [
+        "Lindsey Jones",
+        "Thomas Tanner"
+      ],
+      "research_question": "The paper investigates ‘Subjective resilience’: using perceptions to quantify household resilience to climate extremes and disasters.",
+      "quote": "we show how it has the potential to be aggregated to inform sub-national or national resilience metrics",
+      "interpretation": "The quote provides direct evidence relevant to behavioral responses and supports only the claim explicitly stated in the original text.",
+      "category": "Literature Findings",
+      "theme": "behavioral_responses",
+      "theme_label": "Behavioral responses",
+      "method_class": "vulnerability indices",
+      "gap_note": "",
+      "method_note": "So far, efforts to measure resilience have largely focused on the use of ‘objective’ frameworks and methods of indicator selection.",
+      "pdf_path": "papers\\disaster_resilience_review\\10.1007_s10113-016-0995-2___Subjective_resilience_using_perceptions_to_quantify_household_resilience_to_climate_extremes.pdf",
+      "source_url": "https://doi.org/10.1007/s10113-016-0995-2",
+      "openalex_id": "https://openalex.org/W2463295351",
+      "landing_urls": [
+        "https://doi.org/10.1007/s10113-016-0995-2",
+        "https://link.springer.com/content/pdf/10.1007%2Fs10113-016-0995-2.pdf"
+      ],
+      "query_themes": [
+        "behavioral_responses",
+        "governance_institutions"
+      ],
+      "search_queries": [
+        "\"community resilience\" disaster governance policy",
+        "\"coping strategies\" drought resilience household",
+        "\"risk perception\" disaster adaptation resilience household",
+        "\"social vulnerability\" perception disaster adaptation"
+      ]
+    },
+    {
+      "paper_id": "P003",
+      "bibtex_key": "Ranger2010",
+      "doi": "10.1007/s10584-010-9979-2",
+      "title": "An assessment of the potential impact of climate change on flood risk in Mumbai",
+      "journal": "Climatic Change",
+      "year": 2010,
+      "authors": [
+        "Nicola Ranger",
+        "Stéphane Hallegatte",
+        "Subhamoy Bhattacharya",
+        "Murthy Bachu",
+        "Satya Priya",
+        "K. Dhore",
+        "Farhat Rafique",
+        "P. Mathur",
+        "Nicolas Naville",
+        "Fanny Henriet",
+        "Celine Herweijer",
+        "Sanjib Pohit",
+        "Jan Corfee-Morlot"
+      ],
+      "research_question": "We conclude that, while this study explores only the upper-bound climate scenario, the risk-assessment core demonstrated in this study could form an important quantitative tool in developing city-scale adaptation strategies.",
+      "quote": "adaptation could significantly reduce future losses; for example, estimates suggest that by improving the drainage system in Mumbai, losses associated with a 1-in-100 year flood",
+      "interpretation": "The quote provides direct evidence relevant to risk assessment & modelling and supports only the claim explicitly stated in the original text.",
+      "category": "Literature Findings",
+      "theme": "risk_assessment_modelling",
+      "theme_label": "Risk assessment & modelling",
+      "method_class": "spatial risk modelling",
+      "gap_note": "",
+      "method_note": "is likely to lead to an increase in flood risk in Mumbai.",
+      "pdf_path": "papers\\disaster_resilience_review\\10.1007_s10584-010-9979-2__An_assessment_of_the_potential_impact_of_climate_change_on_flood_risk_in_Mumbai.pdf",
+      "source_url": "https://doi.org/10.1007/s10584-010-9979-2",
+      "openalex_id": "https://openalex.org/W2160342298",
+      "landing_urls": [
+        "https://doi.org/10.1007/s10584-010-9979-2",
+        "https://enpc.hal.science/hal-00719120",
+        "http://hdl.handle.net/10.1007/s10584-010-9979-2",
+        "https://link.springer.com/content/pdf/10.1007/s10584-010-9979-2.pdf"
+      ],
+      "query_themes": [
+        "economic_impacts"
+      ],
+      "search_queries": [
+        "\"economic resilience\" disaster household welfare adaptation",
+        "\"natural disaster\" economic resilience policy adaptation",
+        "\"post-disaster\" economic recovery resilience policy"
+      ]
+    },
+    {
+      "paper_id": "P004",
+      "bibtex_key": "Aryal2021",
+      "doi": "10.1038/s41598-021-89391-1",
+      "title": "Climate risks and adaptation strategies of farmers in East Africa and South Asia",
+      "journal": "Scientific Reports",
+      "year": 2021,
+      "authors": [
+        "Jeetendra Prakash Aryal",
+        "Tek B. Sapkota",
+        "Dil Bahadur Rahut",
+        "Paswel Marenya",
+        "Clare Stirling"
+      ],
+      "research_question": "Employing comprehensive data from 2822 farm households in Ethiopia and Kenya (East Africa; EA) and 1902 farm households in Bangladesh, India, and Nepal (South Asia; SA), this study investigates the main climate risks that farmers faced and the adaptation strategies they used.",
+      "quote": "Studies in both regions show that adoption of adaptation strategies depends on numerous factors, including economic, social, political, and institutional environments2,3,29,30.",
+      "interpretation": "The quote provides direct evidence relevant to economic impacts of disasters and supports only the claim explicitly stated in the original text.",
+      "category": "Literature Findings",
+      "theme": "economic_impacts",
+      "theme_label": "Economic impacts of disasters",
+      "method_class": "mixed methods",
+      "gap_note": "",
+      "method_note": "",
+      "pdf_path": "papers\\disaster_resilience_review\\10.1038_s41598-021-89391-1__Climate_risks_and_adaptation_strategies_of_farmers_in_East_Africa_and_South_Asia.pdf",
+      "source_url": "https://doi.org/10.1038/s41598-021-89391-1",
+      "openalex_id": "https://openalex.org/W3163127763",
+      "landing_urls": [
+        "https://doi.org/10.1038/s41598-021-89391-1",
+        "https://pubmed.ncbi.nlm.nih.gov/34006938",
+        "https://doaj.org/article/96e9a163b7f44ada85c4f6ddd113b774",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/8131377",
+        "https://www.nature.com/articles/s41598-021-89391-1.pdf"
+      ],
+      "query_themes": [
+        "behavioral_responses",
+        "economic_impacts"
+      ],
+      "search_queries": [
+        "\"coping strategies\" drought resilience household",
+        "\"household coping\" drought disaster resilience policy",
+        "flood drought cyclone livelihood resilience adaptation policy"
+      ]
+    },
+    {
+      "paper_id": "P005",
+      "bibtex_key": "Menndez2020",
+      "doi": "10.1038/s41598-020-61136-6",
+      "title": "The Global Flood Protection Benefits of Mangroves",
+      "journal": "Scientific Reports",
+      "year": 2020,
+      "authors": [
+        "Pelayo Menéndez",
+        "Íñigo J. Losada",
+        "Saúl Torres-Ortega",
+        "Siddharth Narayan",
+        "Michael W. Beck"
+      ],
+      "research_question": "We assess the people and property damaged with and without mangroves across 700,000 km of mangrove coastlines globally.",
+      "quote": "These results demonstrate the value of mangroves as natural coastal defenses at global",
+      "interpretation": "The quote provides direct evidence relevant to ecosystem services & natural capital and supports only the claim explicitly stated in the original text.",
+      "category": "Literature Findings",
+      "theme": "ecosystem_services_natural_capital",
+      "theme_label": "Ecosystem services & natural capital",
+      "method_class": "spatial risk modelling",
+      "gap_note": "",
+      "method_note": "We couple spatially-explicit 2-D hydrodynamic analyses with economic models, and find that mangroves provide flood protection benefits exceeding $US 65 billion per year.",
+      "pdf_path": "papers\\disaster_resilience_review\\10.1038_s41598-020-61136-6__The_Global_Flood_Protection_Benefits_of_Mangroves.pdf",
+      "source_url": "https://doi.org/10.1038/s41598-020-61136-6",
+      "openalex_id": "https://openalex.org/W3011179511",
+      "landing_urls": [
+        "https://doi.org/10.1038/s41598-020-61136-6",
+        "https://pubmed.ncbi.nlm.nih.gov/32157114",
+        "https://escholarship.org/uc/item/94s6s4g3",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/7064529",
+        "http://hdl.handle.net/10902/19191",
+        "https://www.nature.com/articles/s41598-020-61136-6.pdf"
+      ],
+      "query_themes": [
+        "ecosystem_services_natural_capital",
+        "risk_assessment_modelling"
+      ],
+      "search_queries": [
+        "\"disaster risk reduction\" resilience modelling adaptation",
+        "\"ecosystem services\" disaster resilience natural capital adaptation",
+        "\"ecosystem-based adaptation\" disaster resilience policy",
+        "\"risk assessment\" disaster resilience ecosystem services",
+        "mangroves storm protection resilience ecosystem services adaptation",
+        "wetlands disaster risk reduction resilience natural capital"
+      ]
+    },
+    {
+      "paper_id": "P006",
+      "bibtex_key": "Djalante2011",
+      "doi": "10.1007/s13753-011-0015-6",
+      "title": "Adaptive governance and managing resilience to natural hazards",
+      "journal": "International Journal of Disaster Risk Science",
+      "year": 2011,
+      "authors": [
+        "Riyanti Djalante",
+        "Cameron Holley",
+        "Frank Thomalla"
+      ],
+      "research_question": "Finally, we analyze the wider implications of AG for DRR.",
+      "quote": "Our review shows that there are four characteristics of AG that are important to help increase resilience to natural hazards.",
+      "interpretation": "The quote provides direct evidence relevant to governance & institutions and supports only the claim explicitly stated in the original text.",
+      "category": "Literature Findings",
+      "theme": "governance_institutions",
+      "theme_label": "Governance & institutions",
+      "method_class": "mixed methods",
+      "gap_note": "",
+      "method_note": "",
+      "pdf_path": "papers\\disaster_resilience_review\\10.1007_s13753-011-0015-6__Adaptive_governance_and_managing_resilience_to_natural_hazards.pdf",
+      "source_url": "https://doi.org/10.1007/s13753-011-0015-6",
+      "openalex_id": "https://openalex.org/W2095487553",
+      "landing_urls": [
+        "https://doi.org/10.1007/s13753-011-0015-6",
+        "https://link.springer.com/content/pdf/10.1007/s13753-011-0015-6.pdf"
+      ],
+      "query_themes": [
+        "adaptation_resilience_strategies",
+        "behavioral_responses",
+        "economic_impacts",
+        "governance_institutions",
+        "risk_assessment_modelling"
+      ],
+      "search_queries": [
+        "\"adaptation strategy\" disaster resilience policy",
+        "\"adaptive capacity\" natural disaster resilience policy",
+        "\"community resilience\" disaster governance policy",
+        "\"disaster governance\" resilience institutions adaptation",
+        "\"disaster preparedness\" education experience resilience",
+        "\"disaster preparedness\" education resilience natural hazard",
+        "\"disaster risk reduction\" resilience modelling adaptation",
+        "\"post-disaster\" economic recovery resilience policy"
+      ]
+    },
+    {
+      "paper_id": "P007",
+      "bibtex_key": "Singh2016",
+      "doi": "10.1007/s10584-016-1817-8",
+      "title": "Pathways for drought resilient livelihoods based on people’s perception",
+      "journal": "Climatic Change",
+      "year": 2016,
+      "authors": [
+        "Pramod K. Singh",
+        "Harpalsinh Chudasama"
+      ],
+      "research_question": "The paper investigates Pathways for drought resilient livelihoods based on people’s perception.",
+      "quote": "In order to understand people’s response to the impacts of drought and their coping strategies, it is crucial to understand their perceptions.",
+      "interpretation": "The quote provides direct evidence relevant to behavioral responses and supports only the claim explicitly stated in the original text.",
+      "category": "Literature Findings",
+      "theme": "behavioral_responses",
+      "theme_label": "Behavioral responses",
+      "method_class": "spatial risk modelling",
+      "gap_note": "",
+      "method_note": "climatic conditions led to droughts of varying intensities each year",
+      "pdf_path": "papers\\disaster_resilience_review\\10.1007_s10584-016-1817-8__Pathways_for_drought_resilient_livelihoods_based_on_people_s_perception.pdf",
+      "source_url": "https://doi.org/10.1007/s10584-016-1817-8",
+      "openalex_id": "https://openalex.org/W2547010944",
+      "landing_urls": [
+        "https://doi.org/10.1007/s10584-016-1817-8",
+        "http://link.springer.com/10.1007/s10584-016-1817-8",
+        "https://link.springer.com/content/pdf/10.1007%2Fs10584-016-1817-8.pdf"
+      ],
+      "query_themes": [
+        "adaptation_resilience_strategies",
+        "economic_impacts"
+      ],
+      "search_queries": [
+        "\"adaptation strategy\" disaster resilience policy",
+        "\"natural disaster\" economic resilience policy adaptation"
+      ]
+    },
+    {
+      "paper_id": "P008",
+      "bibtex_key": "Angeli2022",
+      "doi": "10.1016/j.ijdrr.2022.102829",
+      "title": "A multi-hazard framework for spatial-temporal impact analysis",
+      "journal": "International Journal of Disaster Risk Reduction",
+      "year": 2022,
+      "authors": [
+        "Silvia De Angeli",
+        "Bruce D. Malamud",
+        "Lauro Rossi",
+        "Faith E. Taylor",
+        "Eva Trasforini",
+        "Roberto Rudari"
+      ],
+      "research_question": "In addition to focusing on multi-hazard causal dependencies, this paper evaluates how hazards overlap in space and time, resulting in four types of impact interactions.",
+      "quote": "and then combined with intense rain results in a levee collapse",
+      "interpretation": "The quote identifies the paper's analytical design or measurement strategy and should be read as a methodological contribution rather than an outcome claim.",
+      "category": "Methodology",
+      "theme": "risk_assessment_modelling",
+      "theme_label": "Risk assessment & modelling",
+      "method_class": "qualitative institutional analysis",
+      "gap_note": "",
+      "method_note": "and then combined with intense rain results in a levee collapse",
+      "pdf_path": "papers\\disaster_resilience_review\\10.1016_j.ijdrr.2022.102829__A_multi-hazard_framework_for_spatial-temporal_impact_analysis.pdf",
+      "source_url": "https://doi.org/10.1016/j.ijdrr.2022.102829",
+      "openalex_id": "https://openalex.org/W4210281388",
+      "landing_urls": [
+        "https://doi.org/10.1016/j.ijdrr.2022.102829",
+        "http://www.scopus.com/inward/record.url?scp=85126630002&partnerID=8YFLogxK",
+        "https://hal.science/hal-04306206",
+        "https://durham-repository.worktribe.com/output/1176687",
+        "http://hdl.handle.net/11567/1082682",
+        "https://kclpure.kcl.ac.uk/portal/en/publications/4ecbb34f-20f9-4827-85f2-d5dac9eced0c",
+        "https://linkinghub.elsevier.com/science/article/pii/S2212420922000486/pdfft?md5=4e2766588c05d2085497ca57fe448757&pid=1-s2.0-S2212420922000486-main.pdf"
+      ],
+      "query_themes": [
+        "economic_impacts",
+        "risk_assessment_modelling"
+      ],
+      "search_queries": [
+        "\"multi-hazard\" resilience index policy",
+        "\"post-disaster\" economic recovery resilience policy"
+      ]
+    },
+    {
+      "paper_id": "P009",
+      "bibtex_key": "Roberts2017",
+      "doi": "10.1073/pnas.1701262114",
+      "title": "Marine reserves can mitigate and promote adaptation to climate change",
+      "journal": "Proceedings of the National Academy of Sciences",
+      "year": 2017,
+      "authors": [
+        "Callum M. Roberts",
+        "Bethan C. O’Leary",
+        "Douglas J. McCauley",
+        "Philippe Cury",
+        "Carlos M. Duarte",
+        "Jane Lubchenco",
+        "Daniel Pauly",
+        "Andrea Sáenz‐Arroyo",
+        "U. Rashid Sumaila",
+        "Rod W. Wilson",
+        "Boris Worm",
+        "Juan Carlos Castilla"
+      ],
+      "research_question": "We explore the role of managed ecosystems in mitigating climate change by promoting carbon sequestration and storage and by buffering against uncertainty in management, environmental fluctuations, directional change, and extreme events.",
+      "quote": "We suggest that further quantification of these effects",
+      "interpretation": "The quote provides direct evidence relevant to ecosystem services & natural capital and supports only the claim explicitly stated in the original text.",
+      "category": "Literature Findings",
+      "theme": "ecosystem_services_natural_capital",
+      "theme_label": "Ecosystem services & natural capital",
+      "method_class": "mixed methods",
+      "gap_note": "",
+      "method_note": "",
+      "pdf_path": "papers\\disaster_resilience_review\\10.1073_pnas.1701262114__Marine_reserves_can_mitigate_and_promote_adaptation_to_climate_change.pdf",
+      "source_url": "https://doi.org/10.1073/pnas.1701262114",
+      "openalex_id": "https://openalex.org/W2624603405",
+      "landing_urls": [
+        "https://doi.org/10.1073/pnas.1701262114",
+        "https://pubmed.ncbi.nlm.nih.gov/28584096",
+        "https://orcid.org/0000-0003-2276-4258>,",
+        "https://hal.umontpellier.fr/hal-01927867",
+        "https://archimer.ifremer.fr/doc/00625/73712/",
+        "https://escholarship.org/uc/item/2jq7q85p",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/5474809",
+        "http://www.vliz.be/nl/open-marien-archief?module=ref&refid=293706",
+        "http://hdl.handle.net/10754/625600",
+        "https://www.pnas.org/content/pnas/114/24/6167.full.pdf"
+      ],
+      "query_themes": [
+        "economic_impacts",
+        "ecosystem_services_natural_capital"
+      ],
+      "search_queries": [
+        "\"ecosystem services\" disaster resilience natural capital adaptation",
+        "\"ecosystem-based adaptation\" disaster resilience policy",
+        "flood drought cyclone livelihood resilience adaptation policy",
+        "mangroves storm protection resilience ecosystem services adaptation",
+        "wetlands disaster risk reduction resilience natural capital"
+      ]
+    },
+    {
+      "paper_id": "P010",
+      "bibtex_key": "Zhu2024",
+      "doi": "10.1016/j.ijdrr.2024.104243",
+      "title": "Enhancing urban flood resilience: A coupling coordinated evaluation and geographical factor analysis under SES-PSR framework",
+      "journal": "International Journal of Disaster Risk Reduction",
+      "year": 2024,
+      "authors": [
+        "Shi‐Yao Zhu",
+        "Haibo Feng",
+        "Mehrdad Arashpour",
+        "Fan Zhang"
+      ],
+      "research_question": "The paper investigates Enhancing urban flood resilience: A coupling coordinated evaluation and geographical factor analysis under SES-PSR framework.",
+      "quote": "and researchers in their efforts to enhance urban flood resilience for sustainable development in the future.",
+      "interpretation": "The quote provides direct evidence relevant to governance & institutions and supports only the claim explicitly stated in the original text.",
+      "category": "Literature Findings",
+      "theme": "governance_institutions",
+      "theme_label": "Governance & institutions",
+      "method_class": "vulnerability indices",
+      "gap_note": "",
+      "method_note": "UFR related studies mainly focused on the assessment and various indicator-based systems have been constructed to measure the resilience of urban flood hazards.",
+      "pdf_path": "papers\\disaster_resilience_review\\10.1016_j.ijdrr.2024.104243__Enhancing_urban_flood_resilience_A_coupling_coordinated_evaluation_and_geographical_factor_.pdf",
+      "source_url": "https://doi.org/10.1016/j.ijdrr.2024.104243",
+      "openalex_id": "https://openalex.org/W4390534399",
+      "landing_urls": [
+        "https://doi.org/10.1016/j.ijdrr.2024.104243",
+        "http://hdl.handle.net/10397/104029"
+      ],
+      "query_themes": [
+        "governance_institutions"
+      ],
+      "search_queries": [
+        "\"disaster governance\" resilience institutions adaptation",
+        "\"institutional resilience\" natural hazards policy adaptation"
+      ]
+    },
+    {
+      "paper_id": "P011",
+      "bibtex_key": "Liao2012",
+      "doi": "10.5751/es-05231-170448",
+      "title": "A Theory on Urban Resilience to Floods--A Basis for Alternative Planning Practices",
+      "journal": "Ecology and Society",
+      "year": 2012,
+      "authors": [
+        "Kuei‐Hsien Liao"
+      ],
+      "research_question": "The paper investigates A Theory on Urban Resilience to Floods--A Basis for Alternative Planning Practices.",
+      "quote": "Overall, resilience theory suggests a paradigm shift in flood hazard management that should focus on building resilience as opposed to maintaining stability.",
+      "interpretation": "The quote provides direct evidence relevant to economic impacts of disasters and supports only the claim explicitly stated in the original text.",
+      "category": "Literature Findings",
+      "theme": "economic_impacts",
+      "theme_label": "Economic impacts of disasters",
+      "method_class": "mixed methods",
+      "gap_note": "",
+      "method_note": "I develop a theory on \"urban resilience to floods\" as an alternative framework for urban flood hazard management.",
+      "pdf_path": "papers\\disaster_resilience_review\\10.5751_es-05231-170448__A_Theory_on_Urban_Resilience_to_Floods--A_Basis_for_Alternative_Planning_Practices.pdf",
+      "source_url": "https://doi.org/10.5751/es-05231-170448",
+      "openalex_id": "https://openalex.org/W2121828008",
+      "landing_urls": [
+        "https://doi.org/10.5751/es-05231-170448",
+        "https://doaj.org/article/2ec9ebe21bec47c2a4f47f453d8ad9ba",
+        "http://hdl.handle.net/10535/8705",
+        "https://www.ecologyandsociety.org/vol17/iss4/art48/ES-2012-5231.pdf"
+      ],
+      "query_themes": [
+        "adaptation_resilience_strategies",
+        "economic_impacts",
+        "ecosystem_services_natural_capital"
+      ],
+      "search_queries": [
+        "\"adaptive capacity\" natural disaster resilience policy",
+        "\"ecosystem services\" disaster resilience natural capital adaptation",
+        "\"natural disaster\" economic resilience policy adaptation",
+        "wetlands disaster risk reduction resilience natural capital"
+      ]
+    },
+    {
+      "paper_id": "P012",
+      "bibtex_key": "Johannessen2017",
+      "doi": "10.5751/es-08870-220101",
+      "title": "What does resilience mean for urban water services?",
+      "journal": "Ecology and Society",
+      "year": 2017,
+      "authors": [
+        "Åse Johannessen",
+        "Christine Wamsler"
+      ],
+      "research_question": "We explore how resilience thinking can be translated into urban water practice to develop the conceptual understanding of transitions toward sustainability.",
+      "quote": "we find that human agency is a strong driver of transition processes",
+      "interpretation": "The quote provides direct evidence relevant to behavioral responses and supports only the claim explicitly stated in the original text.",
+      "category": "Literature Findings",
+      "theme": "behavioral_responses",
+      "theme_label": "Behavioral responses",
+      "method_class": "qualitative institutional analysis",
+      "gap_note": "",
+      "method_note": "The study is based on a literature review",
+      "pdf_path": "papers\\disaster_resilience_review\\10.5751_es-08870-220101__What_does_resilience_mean_for_urban_water_services.pdf",
+      "source_url": "https://doi.org/10.5751/es-08870-220101",
+      "openalex_id": "https://openalex.org/W2578567552",
+      "landing_urls": [
+        "https://doi.org/10.5751/es-08870-220101",
+        "https://doaj.org/article/09f1e754b23244eca85a1a0379b4333d",
+        "https://lup.lub.lu.se/record/ccdb559c-6850-442a-aa54-8466ea549116",
+        "https://www.ecologyandsociety.org/vol22/iss1/art1/ES-2016-8870.pdf"
+      ],
+      "query_themes": [
+        "adaptation_resilience_strategies",
+        "ecosystem_services_natural_capital"
+      ],
+      "search_queries": [
+        "\"ecosystem-based adaptation\" disaster resilience policy",
+        "\"transformational adaptation\" disaster resilience"
+      ]
+    },
+    {
+      "paper_id": "P013",
+      "bibtex_key": "Henderson2024",
+      "doi": "10.1016/j.ijdrr.2024.105096",
+      "title": "‘It's not really their problem’: Reactive institutional community engagement and flood policy implementation",
+      "journal": "International Journal of Disaster Risk Reduction",
+      "year": 2024,
+      "authors": [
+        "Fiona Henderson",
+        "Brad Bennett",
+        "Rachel Dohain-Lesueur",
+        "Karin Helwig"
+      ],
+      "research_question": "This study explores the implementation of recent innovative egalitarian Scottish flood policies which attempt to prioritise equity in real-world settings.",
+      "quote": "These findings are considered alongside the wider research field, collectively demonstrating an urgent need for transformative governance of flood risk.",
+      "interpretation": "The quote provides direct evidence relevant to governance & institutions and supports only the claim explicitly stated in the original text.",
+      "category": "Literature Findings",
+      "theme": "governance_institutions",
+      "theme_label": "Governance & institutions",
+      "method_class": "qualitative institutional analysis",
+      "gap_note": "",
+      "method_note": "highlight key issues in place-based flood-related policy implementation using two exemplar 2024 Scottish media articles within a wider case study of each place.",
+      "pdf_path": "papers\\disaster_resilience_review\\10.1016_j.ijdrr.2024.105096___It_s_not_really_their_problem_Reactive_institutional_community_engagement_and_flood_policy.pdf",
+      "source_url": "https://doi.org/10.1016/j.ijdrr.2024.105096",
+      "openalex_id": "https://openalex.org/W4405350200",
+      "landing_urls": [
+        "https://doi.org/10.1016/j.ijdrr.2024.105096",
+        "https://researchonline.gcu.ac.uk/en/publications/fcb5b4ca-6d85-40e3-99fa-39782ebee9c8"
+      ],
+      "query_themes": [
+        "governance_institutions"
+      ],
+      "search_queries": [
+        "\"equitable resilience\" disaster governance"
+      ]
+    },
+    {
+      "paper_id": "P014",
+      "bibtex_key": "Hussain2016",
+      "doi": "10.1007/s12571-016-0607-5",
+      "title": "Household food security in the face of climate change in the Hindu-Kush Himalayan region",
+      "journal": "Food Security",
+      "year": 2016,
+      "authors": [
+        "Abid Hussain",
+        "Golam Rasul",
+        "Bidhubhusan Mahapatra",
+        "Sabarnee Tuladhar"
+      ],
+      "research_question": "This study investigates whether these scientific findings were mirrored in local people’s perception of climate change and its impacts on agriculture and household food security.",
+      "quote": "One-fourth of households in SM decided to migrate as an adaptation measure, either to other areas of China or overseas to find off-farm income opportunities.",
+      "interpretation": "The quote provides direct evidence relevant to economic impacts of disasters and supports only the claim explicitly stated in the original text.",
+      "category": "Literature Findings",
+      "theme": "economic_impacts",
+      "theme_label": "Economic impacts of disasters",
+      "method_class": "qualitative institutional analysis",
+      "gap_note": "",
+      "method_note": "Type and nature of collected data For this study, both quantitative and qualitative data were analyzed.",
+      "pdf_path": "papers\\disaster_resilience_review\\10.1007_s12571-016-0607-5__Household_food_security_in_the_face_of_climate_change_in_the_Hindu-Kush_Himalayan_region.pdf",
+      "source_url": "https://doi.org/10.1007/s12571-016-0607-5",
+      "openalex_id": "https://openalex.org/W2527216798",
+      "landing_urls": [
+        "https://doi.org/10.1007/s12571-016-0607-5",
+        "http://link.springer.com/10.1007/s12571-016-0607-5",
+        "https://link.springer.com/content/pdf/10.1007%2Fs12571-016-0607-5.pdf"
+      ],
+      "query_themes": [
+        "behavioral_responses"
+      ],
+      "search_queries": [
+        "\"coping strategies\" drought resilience household"
+      ]
+    },
+    {
+      "paper_id": "P015",
+      "bibtex_key": "Graveline2022",
+      "doi": "10.1007/s13753-022-00419-0",
+      "title": "Disaster Risk Resilience: Conceptual Evolution, Key Issues, and Opportunities",
+      "journal": "International Journal of Disaster Risk Science",
+      "year": 2022,
+      "authors": [
+        "Marie-Hélène Graveline",
+        "Daniel Germaın"
+      ],
+      "research_question": "The paper investigates Disaster Risk Resilience: Conceptual Evolution, Key Issues, and Opportunities.",
+      "quote": "Considered the opposite of vulnerability for a long time",
+      "interpretation": "The quote provides direct evidence relevant to risk assessment & modelling and supports only the claim explicitly stated in the original text.",
+      "category": "Literature Findings",
+      "theme": "risk_assessment_modelling",
+      "theme_label": "Risk assessment & modelling",
+      "method_class": "vulnerability indices",
+      "gap_note": "",
+      "method_note": "Over the past 20 years, more than 30,000 articles with the term resilience in the title or keywords have been indexed in the SCOPUS database.",
+      "pdf_path": "papers\\disaster_resilience_review\\10.1007_s13753-022-00419-0__Disaster_Risk_Resilience_Conceptual_Evolution_Key_Issues_and_Opportunities.pdf",
+      "source_url": "https://doi.org/10.1007/s13753-022-00419-0",
+      "openalex_id": "https://openalex.org/W4283260494",
+      "landing_urls": [
+        "https://doi.org/10.1007/s13753-022-00419-0",
+        "https://link.springer.com/content/pdf/10.1007/s13753-022-00419-0.pdf"
+      ],
+      "query_themes": [
+        "adaptation_resilience_strategies",
+        "ecosystem_services_natural_capital",
+        "risk_assessment_modelling"
+      ],
+      "search_queries": [
+        "\"ecosystem-based adaptation\" disaster resilience policy",
+        "\"multi-hazard\" resilience index policy",
+        "\"resilience strategy\" natural hazard adaptation governance",
+        "\"socio-ecological resilience\" natural hazard model policy"
+      ]
+    },
+    {
+      "paper_id": "P016",
+      "bibtex_key": "AitsiSelmi2015",
+      "doi": "10.1007/s13753-015-0050-9",
+      "title": "The Sendai Framework for Disaster Risk Reduction: Renewing the Global Commitment to People’s Resilience, Health, and Well-being",
+      "journal": "International Journal of Disaster Risk Science",
+      "year": 2015,
+      "authors": [
+        "Amina Aitsi-Selmi",
+        "Shinichi Egawa",
+        "Hiroyuki Sasaki",
+        "Chadia Wannous",
+        "Virginia Murray"
+      ],
+      "research_question": "The paper investigates The Sendai Framework for Disaster Risk Reduction: Renewing the Global Commitment to People’s Resilience, Health, and Well-being.",
+      "quote": "Progress in disaster risk reduction (DRR) research has shown that it is often not the hazard that determines a disaster",
+      "interpretation": "The quote provides direct evidence relevant to risk assessment & modelling and supports only the claim explicitly stated in the original text.",
+      "category": "Literature Findings",
+      "theme": "risk_assessment_modelling",
+      "theme_label": "Risk assessment & modelling",
+      "method_class": "vulnerability indices",
+      "gap_note": "",
+      "method_note": "UNISDR also worked with representatives of governments",
+      "pdf_path": "papers\\disaster_resilience_review\\10.1007_s13753-015-0050-9__The_Sendai_Framework_for_Disaster_Risk_Reduction_Renewing_the_Global_Commitment_to_People_s_R.pdf",
+      "source_url": "https://doi.org/10.1007/s13753-015-0050-9",
+      "openalex_id": "https://openalex.org/W604249450",
+      "landing_urls": [
+        "https://doi.org/10.1007/s13753-015-0050-9",
+        "https://link.springer.com/content/pdf/10.1007/s13753-015-0050-9.pdf"
+      ],
+      "query_themes": [
+        "behavioral_responses",
+        "economic_impacts",
+        "governance_institutions",
+        "risk_assessment_modelling"
+      ],
+      "search_queries": [
+        "\"community resilience\" disaster governance policy",
+        "\"disaster preparedness\" education experience resilience",
+        "\"disaster preparedness\" education resilience natural hazard",
+        "\"disaster risk reduction\" resilience modelling adaptation",
+        "\"natural disaster\" economic resilience policy adaptation",
+        "\"post-disaster\" economic recovery resilience policy",
+        "\"risk assessment\" disaster resilience ecosystem services"
+      ]
+    },
+    {
+      "paper_id": "P017",
+      "bibtex_key": "Fisher2015",
+      "doi": "10.1007/s10584-015-1459-2",
+      "title": "Drought tolerant maize for farmer adaptation to drought in sub-Saharan Africa: Determinants of adoption in eastern and southern Africa",
+      "journal": "Climatic Change",
+      "year": 2015,
+      "authors": [
+        "Monica Fisher",
+        "Tsedeke Abate",
+        "Rodney Lunduka",
+        "Woinishet Asnake",
+        "Yoseph Alemayehu",
+        "Ruth Madulu"
+      ],
+      "research_question": "This study evaluates prospects for widespread adoption of DT maize in SSA, by measuring adoption levels and determinants in three countries in eastern Africa (Ethiopia, Tanzania, and Uganda) and three countries in southern Africa (Malawi, Zambia, and Zimbabwe).",
+      "quote": "Our results have implications for policies that will enhance adoption of DT maize and increase resilience of smallholder farmers to drought in SSA.",
+      "interpretation": "The quote provides direct evidence relevant to risk assessment & modelling and supports only the claim explicitly stated in the original text.",
+      "category": "Literature Findings",
+      "theme": "risk_assessment_modelling",
+      "theme_label": "Risk assessment & modelling",
+      "method_class": "spatial risk modelling",
+      "gap_note": "",
+      "method_note": "maize is important for food security",
+      "pdf_path": "papers\\disaster_resilience_review\\10.1007_s10584-015-1459-2__Drought_tolerant_maize_for_farmer_adaptation_to_drought_in_sub-Saharan_Africa_Determinants_of.pdf",
+      "source_url": "https://doi.org/10.1007/s10584-015-1459-2",
+      "openalex_id": "https://openalex.org/W2146398007",
+      "landing_urls": [
+        "https://doi.org/10.1007/s10584-015-1459-2",
+        "http://hdl.handle.net/10.1007/s10584-015-1459-2",
+        "https://link.springer.com/content/pdf/10.1007/s10584-015-1459-2.pdf"
+      ],
+      "query_themes": [
+        "behavioral_responses"
+      ],
+      "search_queries": [
+        "\"coping strategies\" drought resilience household"
+      ]
+    },
+    {
+      "paper_id": "P018",
+      "bibtex_key": "Peck2022",
+      "doi": "10.5751/es-13544-270405",
+      "title": "A new framework for flood adaptation: introducing the Flood Adaptation Hierarchy",
+      "journal": "Ecology and Society",
+      "year": 2022,
+      "authors": [
+        "Andrew Peck",
+        "Stevie Adams",
+        "Andrea Armstrong",
+        "Anna Bartlett",
+        "Marci L. Bortman",
+        "Alison Branco",
+        "Michelle Brown",
+        "Jessica Donohue",
+        "Mali‘o Kodis",
+        "Michael McCann",
+        "Elizabeth Smith"
+      ],
+      "research_question": "The paper investigates A new framework for flood adaptation: introducing the Flood Adaptation Hierarchy.",
+      "quote": "The current flood adaptation approach is failing to take advantage of the benefits provided by intact ecosystems",
+      "interpretation": "The quote provides direct evidence relevant to economic impacts of disasters and supports only the claim explicitly stated in the original text.",
+      "category": "Literature Findings",
+      "theme": "economic_impacts",
+      "theme_label": "Economic impacts of disasters",
+      "method_class": "mixed methods",
+      "gap_note": "",
+      "method_note": "Rooted in the experiences of the United States, we propose a new framework, the Flood Adaptation Hierarchy, which prioritizes outcomes into six tiers.",
+      "pdf_path": "papers\\disaster_resilience_review\\10.5751_es-13544-270405__A_new_framework_for_flood_adaptation_introducing_the_Flood_Adaptation_Hierarchy.pdf",
+      "source_url": "https://doi.org/10.5751/es-13544-270405",
+      "openalex_id": "https://openalex.org/W4313061463",
+      "landing_urls": [
+        "https://doi.org/10.5751/es-13544-270405",
+        "https://doaj.org/article/9520d18634684a9f9d25982f611b1fda",
+        "https://www.ecologyandsociety.org/vol27/iss4/art5/ES-2022-13544.pdf"
+      ],
+      "query_themes": [
+        "ecosystem_services_natural_capital"
+      ],
+      "search_queries": [
+        "\"natural infrastructure\" flood resilience adaptation"
+      ]
+    },
+    {
+      "paper_id": "P019",
+      "bibtex_key": "Parsons2021",
+      "doi": "10.1016/j.ijdrr.2021.102422",
+      "title": "Disaster resilience in Australia: A geographic assessment using an index of coping and adaptive capacity",
+      "journal": "International Journal of Disaster Risk Reduction",
+      "year": 2021,
+      "authors": [
+        "Melissa Parsons",
+        "Ian Reeve",
+        "James McGregor",
+        "Peter Hastings",
+        "Graham R. Marshall",
+        "Judith McNeill",
+        "Richard Stayner",
+        "Sonya Glavac"
+      ],
+      "research_question": "The paper investigates Disaster resilience in Australia: A geographic assessment using an index of coping and adaptive capacity.",
+      "quote": "eight themes of disaster resilience across social",
+      "interpretation": "The quote provides direct evidence relevant to risk assessment & modelling and supports only the claim explicitly stated in the original text.",
+      "category": "Literature Findings",
+      "theme": "risk_assessment_modelling",
+      "theme_label": "Risk assessment & modelling",
+      "method_class": "vulnerability indices",
+      "gap_note": "",
+      "method_note": "This paper reports a national-scale assessment of disaster resilience, using the Australian Disaster Resilience Index.",
+      "pdf_path": "papers\\disaster_resilience_review\\10.1016_j.ijdrr.2021.102422__Disaster_resilience_in_Australia_A_geographic_assessment_using_an_index_of_coping_and_adapt.pdf",
+      "source_url": "https://doi.org/10.1016/j.ijdrr.2021.102422",
+      "openalex_id": "https://openalex.org/W3176057858",
+      "landing_urls": [
+        "https://doi.org/10.1016/j.ijdrr.2021.102422",
+        "https://hdl.handle.net/1959.11/30995"
+      ],
+      "query_themes": [
+        "economic_impacts",
+        "risk_assessment_modelling"
+      ],
+      "search_queries": [
+        "\"economic resilience\" disaster household welfare adaptation",
+        "\"socio-ecological resilience\" natural hazard model policy"
+      ]
+    },
+    {
+      "paper_id": "P020",
+      "bibtex_key": "Kondo2021",
+      "doi": "10.1016/j.ijdrr.2021.102219",
+      "title": "Maladaptation, fragmentation, and other secondary effects of centralized post-disaster urban planning: The case of the 2011 “cascading” disaster in Japan",
+      "journal": "International Journal of Disaster Risk Reduction",
+      "year": 2021,
+      "authors": [
+        "Tamiyo Kondo",
+        "Gonzalo Lizarralde"
+      ],
+      "research_question": "This paper explores the secondary effects of urban planning efforts put in place by the Japanese government after the 2011 disaster, and ultimately, seeks to answer the following questions: What are the con sequences of the mitigation measures taken to “Build Back Better” in the Tohoku region?",
+      "quote": "Our results reveal the secondary effects of planning interventions",
+      "interpretation": "The quote provides direct evidence relevant to risk assessment & modelling and supports only the claim explicitly stated in the original text.",
+      "category": "Literature Findings",
+      "theme": "risk_assessment_modelling",
+      "theme_label": "Risk assessment & modelling",
+      "method_class": "vulnerability indices",
+      "gap_note": "",
+      "method_note": "We used GIS spatial analysis to identify urban footprint changes, which proved to be reliable indicators of internal migration.",
+      "pdf_path": "papers\\disaster_resilience_review\\10.1016_j.ijdrr.2021.102219__Maladaptation_fragmentation_and_other_secondary_effects_of_centralized_post-disaster_urban_.pdf",
+      "source_url": "https://doi.org/10.1016/j.ijdrr.2021.102219",
+      "openalex_id": "https://openalex.org/W3145573337",
+      "landing_urls": [
+        "https://doi.org/10.1016/j.ijdrr.2021.102219",
+        "https://hdl.handle.net/20.500.14094/90008329",
+        "https://www.sciencedirect.com/science/article/am/pii/S2212420921001850?via%3Dihub"
+      ],
+      "query_themes": [
+        "governance_institutions"
+      ],
+      "search_queries": [
+        "\"institutional resilience\" natural hazards policy adaptation"
+      ]
+    },
+    {
+      "paper_id": "P021",
+      "bibtex_key": "Yang2024",
+      "doi": "10.1038/s41598-024-65206-x",
+      "title": "The role of social capital in the impact of multiple shocks on households’ coping strategies in underdeveloped rural areas",
+      "journal": "Scientific Reports",
+      "year": 2024,
+      "authors": [
+        "Yuying Yang",
+        "Yanfang Huang",
+        "Jiaqi Huang",
+        "Fengying Nie"
+      ],
+      "research_question": "Recognizing that social capital is not uniformly distributed among community members, and social ties can be a stratified and differentiated resource20,21, we explore the varying mediating effects of social capital among different groups.",
+      "quote": "Additionally, the findings provide policymakers with practical insights regarding differentiated and preemptive risk governance approaches.",
+      "interpretation": "The quote provides direct evidence relevant to economic impacts of disasters and supports only the claim explicitly stated in the original text.",
+      "category": "Literature Findings",
+      "theme": "economic_impacts",
+      "theme_label": "Economic impacts of disasters",
+      "method_class": "mixed methods",
+      "gap_note": "It should be emphasized that the role of social capital in rural development remains a relatively underexplored area of research",
+      "method_note": "Utilizing two waves of a rural household panel survey data collected in six underdeveloped counties in 2015",
+      "pdf_path": "papers\\disaster_resilience_review\\10.1038_s41598-024-65206-x__The_role_of_social_capital_in_the_impact_of_multiple_shocks_on_households_coping_strategies_.pdf",
+      "source_url": "https://doi.org/10.1038/s41598-024-65206-x",
+      "openalex_id": "https://openalex.org/W4399859682",
+      "landing_urls": [
+        "https://doi.org/10.1038/s41598-024-65206-x",
+        "https://pubmed.ncbi.nlm.nih.gov/38902363",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/11190275",
+        "https://doaj.org/article/a19ce56763f1450599d8e5e86e4a28a8",
+        "https://www.nature.com/articles/s41598-024-65206-x.pdf"
+      ],
+      "query_themes": [
+        "behavioral_responses"
+      ],
+      "search_queries": [
+        "\"coping strategies\" drought resilience household"
+      ]
+    },
+    {
+      "paper_id": "P022",
+      "bibtex_key": "Almutairi2020",
+      "doi": "10.1007/s11069-020-03875-3",
+      "title": "Coastal community resilience frameworks for disaster risk management",
+      "journal": "Natural Hazards",
+      "year": 2020,
+      "authors": [
+        "Arif Almutairi",
+        "Monjur Mourshed",
+        "Raed Fawzi Mohammed Ameen"
+      ],
+      "research_question": "The paper investigates Coastal community resilience frameworks for disaster risk management.",
+      "quote": "This study provides a systematic review of coastal community resilience frameworks for disaster risk management, covering their content, structure, and assessment.",
+      "interpretation": "The quote identifies the paper's analytical design or measurement strategy and should be read as a methodological contribution rather than an outcome claim.",
+      "category": "Methodology",
+      "theme": "risk_assessment_modelling",
+      "theme_label": "Risk assessment & modelling",
+      "method_class": "vulnerability indices",
+      "gap_note": "",
+      "method_note": "Sixty-four critical resilience criteria under four dimensions are identified by analyzing the convergence and divergence of the consideration of assessment indicators in the reviewed frameworks.",
+      "pdf_path": "papers\\disaster_resilience_review\\10.1007_s11069-020-03875-3__Coastal_community_resilience_frameworks_for_disaster_risk_management.pdf",
+      "source_url": "https://doi.org/10.1007/s11069-020-03875-3",
+      "openalex_id": "https://openalex.org/W3007021395",
+      "landing_urls": [
+        "https://doi.org/10.1007/s11069-020-03875-3",
+        "http://link.springer.com/10.1007/s11069-020-03875-3",
+        "https://orca.cardiff.ac.uk/id/eprint/129779/",
+        "https://link.springer.com/content/pdf/10.1007/s11069-020-03875-3.pdf"
+      ],
+      "query_themes": [
+        "adaptation_resilience_strategies",
+        "risk_assessment_modelling"
+      ],
+      "search_queries": [
+        "\"multi-hazard\" resilience index policy",
+        "\"urban resilience\" disaster infrastructure governance"
+      ]
+    },
+    {
+      "paper_id": "P023",
+      "bibtex_key": "Mainka2011",
+      "doi": "10.5751/es-03858-160113",
+      "title": "Ecosystem Considerations for Postdisaster Recovery: Lessons from China, Pakistan, and Elsewhere for Recovery Planning in Haiti",
+      "journal": "Ecology and Society",
+      "year": 2011,
+      "authors": [
+        "Susan A. Mainka",
+        "Jeffrey A. McNeely"
+      ],
+      "research_question": "This paper considers the impacts of extreme natural events on the environment and the services healthy ecosystems provide in support of human well-being 1IUCN - International Union for Conservation of Nature",
+      "quote": "In developing longer term plans, lessons learned from previous postdisaster recovery efforts suggest that relevant policies should include:",
+      "interpretation": "The quote provides direct evidence relevant to ecosystem services & natural capital and supports only the claim explicitly stated in the original text.",
+      "category": "Literature Findings",
+      "theme": "ecosystem_services_natural_capital",
+      "theme_label": "Ecosystem services & natural capital",
+      "method_class": "vulnerability indices",
+      "gap_note": "",
+      "method_note": "as measured by the Human Development Index (HDI)",
+      "pdf_path": "papers\\disaster_resilience_review\\10.5751_es-03858-160113__Ecosystem_Considerations_for_Postdisaster_Recovery_Lessons_from_China_Pakistan_and_Elsewhere_fo.pdf",
+      "source_url": "https://doi.org/10.5751/es-03858-160113",
+      "openalex_id": "https://openalex.org/W2374267615",
+      "landing_urls": [
+        "https://doi.org/10.5751/es-03858-160113",
+        "https://doaj.org/article/a2ac9638b8ba4a729f789cedacf60785",
+        "http://hdl.handle.net/10535/7569",
+        "https://www.ecologyandsociety.org/vol16/iss1/art13/ES-2010-3858.pdf"
+      ],
+      "query_themes": [
+        "ecosystem_services_natural_capital"
+      ],
+      "search_queries": [
+        "\"natural infrastructure\" flood resilience adaptation"
+      ]
+    },
+    {
+      "paper_id": "P024",
+      "bibtex_key": "Kelman2016",
+      "doi": "10.1007/s11069-016-2294-0",
+      "title": "Learning from the history of disaster vulnerability and resilience research and practice for climate change",
+      "journal": "Natural Hazards",
+      "year": 2016,
+      "authors": [
+        "Ilan Kelman",
+        "J. C. Gaillard",
+        "James Lewis",
+        "Jessica Mercer"
+      ],
+      "research_question": "The paper investigates Learning from the history of disaster vulnerability and resilience research and practice for climate change.",
+      "quote": "This chapter describes the importance of older vulnerability and resilience research for contemporary investigations involving climate change, suggesting ways forward without disciplinary blinkers.",
+      "interpretation": "The quote provides direct evidence relevant to risk assessment & modelling and supports only the claim explicitly stated in the original text.",
+      "category": "Literature Findings",
+      "theme": "risk_assessment_modelling",
+      "theme_label": "Risk assessment & modelling",
+      "method_class": "mixed methods",
+      "gap_note": "",
+      "method_note": "",
+      "pdf_path": "papers\\disaster_resilience_review\\10.1007_s11069-016-2294-0__Learning_from_the_history_of_disaster_vulnerability_and_resilience_research_and_practice_for_.pdf",
+      "source_url": "https://doi.org/10.1007/s11069-016-2294-0",
+      "openalex_id": "https://openalex.org/W2309839112",
+      "landing_urls": [
+        "https://doi.org/10.1007/s11069-016-2294-0",
+        "http://link.springer.com/10.1007/s11069-016-2294-0",
+        "https://discovery.ucl.ac.uk/id/eprint/1477387/",
+        "https://link.springer.com/content/pdf/10.1007/s11069-016-2294-0.pdf"
+      ],
+      "query_themes": [
+        "economic_impacts",
+        "governance_institutions",
+        "risk_assessment_modelling"
+      ],
+      "search_queries": [
+        "\"community resilience\" disaster governance policy",
+        "\"disaster risk reduction\" resilience modelling adaptation",
+        "\"post-disaster\" economic recovery resilience policy"
+      ]
+    },
+    {
+      "paper_id": "P025",
+      "bibtex_key": "Freddi2021",
+      "doi": "10.1016/j.ijdrr.2021.102267",
+      "title": "Innovations in earthquake risk reduction for resilience: Recent advances and challenges",
+      "journal": "International Journal of Disaster Risk Reduction",
+      "year": 2021,
+      "authors": [
+        "Fabio Freddi",
+        "Carmine Galasso",
+        "Gemma Cremen",
+        "Andrea Dall’Asta",
+        "Luigi Di Sarno",
+        "Agathoklis Giaralis",
+        "Fernando Gutiérrez‐Urzúa",
+        "Christian Málaga‐Chuquitaype",
+        "Stergios-Aristoteles Mitoulis",
+        "Crescenzo Petrone",
+        "Anastasios Sextos",
+        "Luís Sousa",
+        "Karim Tarbali",
+        "Enrico Tubaldi",
+        "John Wardman",
+        "Gordon Woo"
+      ],
+      "research_question": "The paper investigates Innovations in earthquake risk reduction for resilience: Recent advances and challenges.",
+      "quote": "but often show a brittle behaviour that may strongly reduce global robustness in the case of extreme",
+      "interpretation": "The quote provides direct evidence relevant to economic impacts of disasters and supports only the claim explicitly stated in the original text.",
+      "category": "Literature Findings",
+      "theme": "economic_impacts",
+      "theme_label": "Economic impacts of disasters",
+      "method_class": "mixed methods",
+      "gap_note": "",
+      "method_note": "sensors) risk-reduction strategies for the enhancement of structural",
+      "pdf_path": "papers\\disaster_resilience_review\\10.1016_j.ijdrr.2021.102267__Innovations_in_earthquake_risk_reduction_for_resilience_Recent_advances_and_challenges.pdf",
+      "source_url": "https://doi.org/10.1016/j.ijdrr.2021.102267",
+      "openalex_id": "https://openalex.org/W3155257921",
+      "landing_urls": [
+        "https://doi.org/10.1016/j.ijdrr.2021.102267",
+        "https://openaccess.city.ac.uk/view/creators_id/agathoklis=2Egiaralis=2E1.html>",
+        "https://strathprints.strath.ac.uk/view/author/1330238.html>",
+        "https://hal.science/hal-04200245",
+        "https://discovery.ucl.ac.uk/id/eprint/10126734/",
+        "https://hdl.handle.net/11581/467554",
+        "https://research.birmingham.ac.uk/en/publications/c597752f-1124-45d8-a9af-abc3ffac84ac",
+        "http://hdl.handle.net/10044/1/95100"
+      ],
+      "query_themes": [
+        "risk_assessment_modelling"
+      ],
+      "search_queries": [
+        "\"multi-hazard\" resilience index policy"
+      ]
+    },
+    {
+      "paper_id": "P026",
+      "bibtex_key": "Birkmann2023",
+      "doi": "10.1016/j.ijdrr.2023.103965",
+      "title": "Strengthening resilience in reconstruction after extreme events – Insights from flood affected communities in Germany",
+      "journal": "International Journal of Disaster Risk Reduction",
+      "year": 2023,
+      "authors": [
+        "Joern Birkmann",
+        "Holger Schüttrumpf",
+        "John Handmer",
+        "Annegret H. Thieken",
+        "Christian Kuhlicke",
+        "Alessa Truedinger",
+        "Holger Sauter",
+        "Elena‐Maria Klopries",
+        "Stefan Greiving",
+        "Ali Jamshed",
+        "Bruno Merz",
+        "William Solecki",
+        "Lothar Kirschbauer"
+      ],
+      "research_question": "Based on the reconstruction process in Germany after the extreme floods of 2021 with more than 180 deaths, we explore challenges and opportunities to strengthen resilient recovery in one of the world's wealthiest and most technologically advanced countries.",
+      "quote": "The results are also highly relevant for other world regions hit by extreme events",
+      "interpretation": "The quote provides direct evidence relevant to economic impacts of disasters and supports only the claim explicitly stated in the original text.",
+      "category": "Literature Findings",
+      "theme": "economic_impacts",
+      "theme_label": "Economic impacts of disasters",
+      "method_class": "qualitative institutional analysis",
+      "gap_note": "",
+      "method_note": "design of funding schemes or the challenge of rapid recovery versus resilience building in the medium",
+      "pdf_path": "papers\\disaster_resilience_review\\10.1016_j.ijdrr.2023.103965__Strengthening_resilience_in_reconstruction_after_extreme_events_Insights_from_flood_affecte.pdf",
+      "source_url": "https://doi.org/10.1016/j.ijdrr.2023.103965",
+      "openalex_id": "https://openalex.org/W4386226633",
+      "landing_urls": [
+        "https://doi.org/10.1016/j.ijdrr.2023.103965",
+        "https://publications.rwth-aachen.de/record/968518",
+        "https://gfzpublic.gfz-potsdam.de/pubman/item/item_5022539",
+        "https://gfzpublic.gfz.de/pubman/item/item_5022539",
+        "https://pure.iiasa.ac.at/view/iiasa/3014.html>"
+      ],
+      "query_themes": [
+        "adaptation_resilience_strategies",
+        "governance_institutions"
+      ],
+      "search_queries": [
+        "\"disaster governance\" resilience institutions adaptation",
+        "\"resilient recovery\" disaster adaptation",
+        "\"resilient recovery\" governance disaster institutions"
+      ]
+    },
+    {
+      "paper_id": "P027",
+      "bibtex_key": "Sadik2018",
+      "doi": "10.1007/s13753-018-0166-9",
+      "title": "A Study on Cyclone Aila Recovery in Koyra, Bangladesh: Evaluating the Inclusiveness of Recovery with Respect to Predisaster Vulnerability Reduction",
+      "journal": "International Journal of Disaster Risk Science",
+      "year": 2018,
+      "authors": [
+        "Md. Shibly Sadik",
+        "Hajime Nakagawa",
+        "Rezaur Rahman",
+        "Rajib Shaw",
+        "Kenji Kawaike",
+        "Kumiko Fujita"
+      ],
+      "research_question": "The paper investigates A Study on Cyclone Aila Recovery in Koyra, Bangladesh: Evaluating the Inclusiveness of Recovery with Respect to Predisaster Vulnerability Reduction.",
+      "quote": "The scoring result shows that the degree of inclusion of vulnerability reduction within the recovery was poor.",
+      "interpretation": "The quote provides direct evidence relevant to economic impacts of disasters and supports only the claim explicitly stated in the original text.",
+      "category": "Literature Findings",
+      "theme": "economic_impacts",
+      "theme_label": "Economic impacts of disasters",
+      "method_class": "vulnerability indices",
+      "gap_note": "",
+      "method_note": "a set of 23 indicators were selected to represent the most desirable vulnerability reduction measures to implement during recovery.",
+      "pdf_path": "papers\\disaster_resilience_review\\10.1007_s13753-018-0166-9__A_Study_on_Cyclone_Aila_Recovery_in_Koyra_Bangladesh_Evaluating_the_Inclusiveness_of_Recovery.pdf",
+      "source_url": "https://doi.org/10.1007/s13753-018-0166-9",
+      "openalex_id": "https://openalex.org/W2790354763",
+      "landing_urls": [
+        "https://doi.org/10.1007/s13753-018-0166-9",
+        "https://doaj.org/article/25cba6ca71d042b38c94eeceace7ed51",
+        "https://link.springer.com/content/pdf/10.1007%2Fs13753-018-0166-9.pdf"
+      ],
+      "query_themes": [
+        "governance_institutions"
+      ],
+      "search_queries": [
+        "\"disaster governance\" resilience institutions adaptation"
+      ]
+    },
+    {
+      "paper_id": "P028",
+      "bibtex_key": "Wamsler2017",
+      "doi": "10.1007/s11625-017-0428-2",
+      "title": "Mindfulness in sustainability science, practice, and teaching",
+      "journal": "Sustainability Science",
+      "year": 2017,
+      "authors": [
+        "Christine Wamsler",
+        "Johannes Brossmann",
+        "Heidi Hendersson",
+        "Rakel Kristjansdottir",
+        "Colin McDonald",
+        "Phil Scarampi"
+      ],
+      "research_question": "This paper explores the current role of mindfulness in sustainability science, practice, and teaching.",
+      "quote": "and risk reduction teaching The analysis revealed the following core conceptual trajectories",
+      "interpretation": "The quote provides direct evidence relevant to economic impacts of disasters and supports only the claim explicitly stated in the original text.",
+      "category": "Literature Findings",
+      "theme": "economic_impacts",
+      "theme_label": "Economic impacts of disasters",
+      "method_class": "qualitative institutional analysis",
+      "gap_note": "",
+      "method_note": "Based on a qualitative literature review that is complemented by an experimental learning lab",
+      "pdf_path": "papers\\disaster_resilience_review\\10.1007_s11625-017-0428-2__Mindfulness_in_sustainability_science_practice_and_teaching.pdf",
+      "source_url": "https://doi.org/10.1007/s11625-017-0428-2",
+      "openalex_id": "https://openalex.org/W2590698382",
+      "landing_urls": [
+        "https://doi.org/10.1007/s11625-017-0428-2",
+        "https://pubmed.ncbi.nlm.nih.gov/30147776",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/6086276",
+        "https://lup.lub.lu.se/record/a55e2d69-b519-45c9-8596-c1f9ced2187c",
+        "https://link.springer.com/content/pdf/10.1007%2Fs11625-017-0428-2.pdf"
+      ],
+      "query_themes": [
+        "economic_impacts"
+      ],
+      "search_queries": [
+        "\"post-disaster\" economic recovery resilience policy"
+      ]
+    },
+    {
+      "paper_id": "P029",
+      "bibtex_key": "Orchard2019",
+      "doi": "10.1007/s11625-019-00768-8",
+      "title": "Exploring synergies and trade-offs among the sustainable development goals: collective action and adaptive capacity in marginal mountainous areas of India",
+      "journal": "Sustainability Science",
+      "year": 2019,
+      "authors": [
+        "Steven Orchard",
+        "Dominic Glover",
+        "Shova Thapa Karki",
+        "Seife Ayele",
+        "Debashish Sen",
+        "Roshan Rathod",
+        "Pedram Rowhani"
+      ],
+      "research_question": "Adopting a mixed method approach, we analyse the relationships between collective action and the adaptive capacity of each village, the sites where apparent trade-offs and synergies among SDGs occur.",
+      "quote": "we identify three broad approaches to adaptive capacity relating to the SDGs",
+      "interpretation": "The quote provides direct evidence relevant to governance & institutions and supports only the claim explicitly stated in the original text.",
+      "category": "Literature Findings",
+      "theme": "governance_institutions",
+      "theme_label": "Governance & institutions",
+      "method_class": "spatial risk modelling",
+      "gap_note": "2017), how specific actions interact with SDGs remains unclear, particularly in the context of MMA (FAO 2015; Pandey et al.",
+      "method_note": "actions that support each approach entail inherent synergies",
+      "pdf_path": "papers\\disaster_resilience_review\\10.1007_s11625-019-00768-8__Exploring_synergies_and_trade-offs_among_the_sustainable_development_goals_collective_action.pdf",
+      "source_url": "https://doi.org/10.1007/s11625-019-00768-8",
+      "openalex_id": "https://openalex.org/W2991779142",
+      "landing_urls": [
+        "https://doi.org/10.1007/s11625-019-00768-8",
+        "https://figshare.com/articles/journal_contribution/Exploring_synergies_and_trade-offs_among_the_sustainable_development_goals_collective_action_and_adaptive_capacity_in_marginal_mountainous_areas_of_India/23473511",
+        "http://sro.sussex.ac.uk/id/eprint/88326/1/Orchard%20et%20al%20%282019%29%20Exploring%20synergies%20and%20trade-offs%20among%20the%20sustainable%20development%20goals%20-%20collective%20action%20and%20adaptive%20capacity%20in%20marginal%20mountainous%20areas%20of%20India.pdf",
+        "http://sro.sussex.ac.uk/id/eprint/88885/1/ExploringSynergiesAndTrade-off.pdf",
+        "https://link.springer.com/content/pdf/10.1007/s11625-019-00768-8.pdf"
+      ],
+      "query_themes": [
+        "adaptation_resilience_strategies"
+      ],
+      "search_queries": [
+        "\"transformative resilience\" disaster adaptation socio-ecological"
+      ]
+    },
+    {
+      "paper_id": "P030",
+      "bibtex_key": "Frankenberg2013",
+      "doi": "10.5751/es-05377-180216",
+      "title": "Education, Vulnerability, and Resilience after a Natural Disaster",
+      "journal": "Ecology and Society",
+      "year": 2013,
+      "authors": [
+        "Elizabeth Frankenberg",
+        "Bondan Sikoki",
+        "Cecep Sumantri",
+        "Wayan Suriastini",
+        "Duncan Thomas"
+      ],
+      "research_question": "Using longitudinal population-representative survey data collected in two provinces on the island of Sumatra, Indonesia, before and after the 2004 Indian Ocean tsunami, we examine changes in a broad array of indicators of well-being of adults.",
+      "quote": "we describe the measures that we use to indicate vulnerability to the immediate",
+      "interpretation": "The quote provides direct evidence relevant to economic impacts of disasters and supports only the claim explicitly stated in the original text.",
+      "category": "Literature Findings",
+      "theme": "economic_impacts",
+      "theme_label": "Economic impacts of disasters",
+      "method_class": "vulnerability indices",
+      "gap_note": "",
+      "method_note": "after the 2004 Indian Ocean tsunami",
+      "pdf_path": "papers\\disaster_resilience_review\\10.5751_es-05377-180216__Education_Vulnerability_and_Resilience_after_a_Natural_Disaster.pdf",
+      "source_url": "https://doi.org/10.5751/es-05377-180216",
+      "openalex_id": "https://openalex.org/W2330716548",
+      "landing_urls": [
+        "https://doi.org/10.5751/es-05377-180216",
+        "https://pubmed.ncbi.nlm.nih.gov/25170339",
+        "https://doaj.org/article/6f8535109d9445b8b1ba30365669b90d",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/4144011",
+        "https://www.ecologyandsociety.org/vol18/iss2/art16/ES-2012-5377.pdf"
+      ],
+      "query_themes": [
+        "economic_impacts"
+      ],
+      "search_queries": [
+        "\"post-disaster\" economic recovery resilience policy"
+      ]
+    },
+    {
+      "paper_id": "P031",
+      "bibtex_key": "Bakema2018",
+      "doi": "10.1111/disa.12322",
+      "title": "Learning from the rubble: the case of Christchurch, New Zealand, after the 2010 and 2011 earthquakes",
+      "journal": "Disasters",
+      "year": 2018,
+      "authors": [
+        "Melanie Bakema",
+        "Constanza Parra",
+        "Philip McCann"
+      ],
+      "research_question": "This paper assesses learning processes among state and non-state actors and the ways in which these are bridged and scaled up to wider improvements in governance.",
+      "quote": "resilience Introduction Disaster-affected societies often reveal a desire to see the adverse post-event situation as an opportunity to ‘rebuild better’.",
+      "interpretation": "The quote provides direct evidence relevant to governance & institutions and supports only the claim explicitly stated in the original text.",
+      "category": "Literature Findings",
+      "theme": "governance_institutions",
+      "theme_label": "Governance & institutions",
+      "method_class": "qualitative institutional analysis",
+      "gap_note": "",
+      "method_note": "It assesses this aspect by combining literature on resilience",
+      "pdf_path": "papers\\disaster_resilience_review\\10.1111_disa.12322__Learning_from_the_rubble_the_case_of_Christchurch_New_Zealand_after_the_2010_and_2011_earthquakes.pdf",
+      "source_url": "https://doi.org/10.1111/disa.12322",
+      "openalex_id": "https://openalex.org/W2903647285",
+      "landing_urls": [
+        "https://doi.org/10.1111/disa.12322",
+        "https://pubmed.ncbi.nlm.nih.gov/30565291",
+        "https://research.rug.nl/en/publications/c4dad6a2-77e2-487e-8a43-15afc1956410",
+        "https://lirias.kuleuven.be/handle/123456789/631197",
+        "https://research.manchester.ac.uk/en/publications/404b6567-2ebe-40f8-ad4c-8b79f8242983",
+        "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/disa.12322"
+      ],
+      "query_themes": [
+        "governance_institutions"
+      ],
+      "search_queries": [
+        "\"disaster governance\" resilience institutions adaptation"
+      ]
+    },
+    {
+      "paper_id": "P032",
+      "bibtex_key": "Garschagen2021",
+      "doi": "10.1007/s10584-021-03209-7",
+      "title": "Global patterns of disaster and climate risk—an analysis of the consistency of leading index-based assessments and their results",
+      "journal": "Climatic Change",
+      "year": 2021,
+      "authors": [
+        "Matthias Garschagen",
+        "Deepal Doshi",
+        "Jonathan Reith",
+        "Michael Hagenlocher"
+      ],
+      "research_question": "This paper analyses and compares the design, data, and results of four of the leading global climate and disaster risk indices: The World Risk Index, the INFORM Risk Index, ND-GAIN Index, and the Climate Risk Index.",
+      "quote": "there is surprisingly little agreement in the results on hazard exposure",
+      "interpretation": "The quote provides direct evidence relevant to risk assessment & modelling and supports only the claim explicitly stated in the original text.",
+      "category": "Literature Findings",
+      "theme": "risk_assessment_modelling",
+      "theme_label": "Risk assessment & modelling",
+      "method_class": "vulnerability indices",
+      "gap_note": "and how consistent their findings are on country-level risk",
+      "method_note": "and results of four of the leading global climate",
+      "pdf_path": "papers\\disaster_resilience_review\\10.1007_s10584-021-03209-7__Global_patterns_of_disaster_and_climate_risk_an_analysis_of_the_consistency_of_leading_index.pdf",
+      "source_url": "https://doi.org/10.1007/s10584-021-03209-7",
+      "openalex_id": "https://openalex.org/W3212592957",
+      "landing_urls": [
+        "https://doi.org/10.1007/s10584-021-03209-7",
+        "http://link.springer.com/10.1007/s10584-021-03209-7",
+        "http://resolver.sub.uni-goettingen.de/purl?gldocs-11858/11053",
+        "https://epub.ub.uni-muenchen.de/90938/",
+        "https://repository.publisso.de/resource/frl:6445062",
+        "https://link.springer.com/content/pdf/10.1007/s10584-021-03209-7.pdf"
+      ],
+      "query_themes": [
+        "risk_assessment_modelling"
+      ],
+      "search_queries": [
+        "\"multi-hazard\" resilience index policy"
+      ]
+    },
+    {
+      "paper_id": "P033",
+      "bibtex_key": "Eakin2025",
+      "doi": "10.5751/es-16059-300220",
+      "title": "Negotiating informality and urban resilience: implications for equity",
+      "journal": "Ecology and Society",
+      "year": 2025,
+      "authors": [
+        "Hallie Eakin",
+        "Johan Enqvist",
+        "Maike Hamann",
+        "Nadine Methner",
+        "Melusi Sibanda",
+        "John Sullivan",
+        "Ernita van Wyk",
+        "Gina Ziervogel"
+      ],
+      "research_question": "We explore the role of informality in urban resilience in relation to two cases of urban environmental crises: drought in Cape Town, South Africa, and flooding in Lilongwe, Malawi.",
+      "quote": "Across the African urban context, a review of existing urban resilience policy documents associated with six cities in which informality plays a strong role revealed",
+      "interpretation": "The quote provides direct evidence relevant to governance & institutions and supports only the claim explicitly stated in the original text.",
+      "category": "Literature Findings",
+      "theme": "governance_institutions",
+      "theme_label": "Governance & institutions",
+      "method_class": "spatial risk modelling",
+      "gap_note": "",
+      "method_note": "The cases illustrate how managing resilience at one spatial or temporal scale can mask or generate inequitable outcomes at other scales.",
+      "pdf_path": "papers\\disaster_resilience_review\\10.5751_es-16059-300220__Negotiating_informality_and_urban_resilience_implications_for_equity.pdf",
+      "source_url": "https://doi.org/10.5751/es-16059-300220",
+      "openalex_id": "https://openalex.org/W4410439637",
+      "landing_urls": [
+        "https://doi.org/10.5751/es-16059-300220",
+        "https://doaj.org/article/4daa945c50794530ba2987c3dd5adf69",
+        "https://www.ecologyandsociety.org/vol30/iss2/art20/ES-2025-16059.pdf"
+      ],
+      "query_themes": [
+        "governance_institutions"
+      ],
+      "search_queries": [
+        "\"equitable resilience\" disaster governance"
+      ]
+    }
+  ]
+}

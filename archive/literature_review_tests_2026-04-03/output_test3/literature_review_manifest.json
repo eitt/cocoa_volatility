@@ -1,0 +1,64 @@
+{
+  "paper_count": 3,
+  "papers": [
+    {
+      "paper_id": "P001",
+      "title": "Learning from social–ecological crisis for legal resilience building: multi-scale dynamics in the coffee rust epidemic",
+      "doi": "10.1007/s11625-019-00703-x",
+      "journal": "Sustainability Science",
+      "year": 2019,
+      "authors": [
+        "Antoine Libert-Amico",
+        "Claudia Ituarte‐Lima",
+        "Thomas Elmqvist"
+      ],
+      "pdf_path": "papers_test3\\10.1007_s11625-019-00703-x__Learning_from_social_ecological_crisis_for_legal_resilience_building_multi-scale_dynamics_in.pdf",
+      "matched_buckets": [
+        "vulnerability"
+      ],
+      "search_queries": [
+        "coffee climate adaptation smallholder",
+        "coffee rust smallholder resilience"
+      ],
+      "answer_count": 3
+    },
+    {
+      "paper_id": "P002",
+      "title": "Smallholder telecoupling and potential sustainability",
+      "doi": "10.5751/es-09935-230130",
+      "journal": "Ecology and Society",
+      "year": 2018,
+      "authors": [
+        "Karl S. Zimmerer",
+        "Éric F. Lambin",
+        "Steven J. Vanek"
+      ],
+      "pdf_path": "papers_test3\\10.5751_es-09935-230130__Smallholder_telecoupling_and_potential_sustainability.pdf",
+      "matched_buckets": [
+        "justice"
+      ],
+      "search_queries": [
+        "telecoupling sustainability smallholder commodity"
+      ],
+      "answer_count": 3
+    },
+    {
+      "paper_id": "P003",
+      "title": "Agriculture, food and global value chains: issues, methods and challenges",
+      "doi": "10.36253/bae-13517",
+      "journal": "Bio-based and Applied Economics",
+      "year": 2022,
+      "authors": [
+        "Margherita Scoppola"
+      ],
+      "pdf_path": "papers_test3\\10.36253_bae-13517__Agriculture_food_and_global_value_chains_issues_methods_and_challenges.pdf",
+      "matched_buckets": [
+        "price"
+      ],
+      "search_queries": [
+        "\"price transmission\" coffee"
+      ],
+      "answer_count": 1
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+{
+    "paper_count":  8,
+    "papers":  [
+                   {
+                       "paper_id":  "P004",
+                       "title":  "Planning for Adaptation: A System Approach to Understand the Value Chain\u0027s Role in Supporting Smallholder Coffee Farmers\u0027 Adaptive Capacity in Peru",
+                       "doi":  "10.3389/fclim.2022.788369",
+                       "journal":  "Frontiers in Climate",
+                       "year":  2022,
+                       "authors":  [
+                                       "Laura V. Morales",
+                                       "Valentina Robiglio",
+                                       "María Baca",
+                                       "Christian Bunn",
+                                       "Martin Reyes"
+                                   ],
+                       "pdf_path":  "papers\\10.3389_fclim.2022.788369__Planning_for_Adaptation_A_System_Approach_to_Understand_the_Value_Chain_s_Role_in_Supporting_.pdf",
+                       "matched_buckets":  [
+                                               "vulnerability"
+                                           ],
+                       "search_queries":  [
+                                              "coffee climate adaptation smallholder",
+                                              "smallholder climate vulnerability coffee"
+                                          ],
+                       "answer_count":  4
+                   },
+                   {
+                       "paper_id":  "P005",
+                       "title":  "Trade Reforms and Integration of Cocoa Farmers into World Markets: Evidence from African and non-African Countries",
+                       "doi":  "10.2991/jat.k.190916.001",
+                       "journal":  "Journal of African Trade",
+                       "year":  2019,
+                       "authors":  [
+                                       "Komi Tsowou",
+                                       "Samuel K. Gayi"
+                                   ],
+                       "pdf_path":  "papers\\10.2991_jat.k.190916.001__Trade_Reforms_and_Integration_of_Cocoa_Farmers_into_World_Markets_Evidence_from_African_and_no.pdf",
+                       "matched_buckets":  [
+                                               "price"
+                                           ],
+                       "search_queries":  [
+                                              "\"asymmetric price transmission\" cocoa",
+                                              "\"price transmission\" cocoa"
+                                          ],
+                       "answer_count":  4
+                   },
+                   {
+                       "paper_id":  "P006",
+                       "title":  "Climate risks to Brazilian coffee production",
+                       "doi":  "10.1088/1748-9326/aba471",
+                       "journal":  "Environmental Research Letters",
+                       "year":  2020,
+                       "authors":  [
+                                       "I. Koh",
+                                       "Rachael Garrett",
+                                       "Anthony C. Janetos",
+                                       "Nathaniel D. Mueller"
+                                   ],
+                       "pdf_path":  "papers\\10.1088_1748-9326_aba471__Climate_risks_to_Brazilian_coffee_production.pdf",
+                       "matched_buckets":  [
+                                               "vulnerability"
+                                           ],
+                       "search_queries":  [
+                                              "coffee climate adaptation smallholder",
+                                              "smallholder climate vulnerability coffee"
+                                          ],
+                       "answer_count":  2
+                   },
+                   {
+                       "paper_id":  "P008",
+                       "title":  "The Influence of Exchange Rate Changes on Agricultural Prices: The Case of Cocoa and Maize in Ghana (1966-2008)",
+                       "doi":  "10.12691/ajrd-5-3-4",
+                       "journal":  "American journal of rural development",
+                       "year":  2017,
+                       "authors":  [
+                                       "Adu-Gyamfi Poku"
+                                   ],
+                       "pdf_path":  "papers\\10.12691_ajrd-5-3-4__The_Influence_of_Exchange_Rate_Changes_on_Agricultural_Prices_The_Case_of_Cocoa_and_Maize_in_Ghana_.pdf",
+                       "matched_buckets":  [
+                                               "price"
+                                           ],
+                       "search_queries":  [
+                                              "\"price transmission\" cocoa"
+                                          ],
+                       "answer_count":  2
+                   },
+                   {
+                       "paper_id":  "P010",
+                       "title":  "Climate change adaptation of coffee production in space and time",
+                       "doi":  "10.1007/s10584-016-1788-9",
+                       "journal":  "Climatic Change",
+                       "year":  2016,
+                       "authors":  [
+                                       "Peter Läderach",
+                                       "Julián Ramírez-Villegas",
+                                       "Carlos E. Navarro Racines",
+                                       "Carlos Zelaya",
+                                       "Armando Martinez–Valle",
+                                       "Andy Jarvis"
+                                   ],
+                       "pdf_path":  "papers\\10.1007_s10584-016-1788-9__Climate_change_adaptation_of_coffee_production_in_space_and_time.pdf",
+                       "matched_buckets":  [
+                                               "justice",
+                                               "vulnerability"
+                                           ],
+                       "search_queries":  [
+                                              "coffee climate adaptation smallholder",
+                                              "smallholder climate vulnerability cocoa",
+                                              "sustainability standards coffee cocoa value chain smallholder"
+                                          ],
+                       "answer_count":  3
+                   },
+                   {
+                       "paper_id":  "P011",
+                       "title":  "Agroecosystem resilience and farmers’ perceptions of climate change impacts on cocoa farms in Alto Beni, Bolivia",
+                       "doi":  "10.1017/s174217051300029x",
+                       "journal":  "Renewable Agriculture and Food Systems",
+                       "year":  2013,
+                       "authors":  [
+                                       "Johanna Jacobi",
+                                       "Monika Schneider",
+                                       "Patrick Bottazzi",
+                                       "Maria Isabel Pillco",
+                                       "Patricia Calizaya",
+                                       "Stephan Rist"
+                                   ],
+                       "pdf_path":  "papers\\10.1017_s174217051300029x__Agroecosystem_resilience_and_farmers_perceptions_of_climate_change_impacts_on_cocoa_farms_in_.pdf",
+                       "matched_buckets":  [
+                                               "vulnerability"
+                                           ],
+                       "search_queries":  [
+                                              "cocoa agroforestry resilience smallholder climate",
+                                              "cocoa farmers resilience climate"
+                                          ],
+                       "answer_count":  3
+                   },
+                   {
+                       "paper_id":  "P012",
+                       "title":  "Cocoa agroforestry systems versus monocultures: a multi-dimensional meta-analysis",
+                       "doi":  "10.1088/1748-9326/abb053",
+                       "journal":  "Environmental Research Letters",
+                       "year":  2020,
+                       "authors":  [
+                                       "Wiebke Niether",
+                                       "Johanna Jacobi",
+                                       "Wilma J. Blaser",
+                                       "Christian Andrès",
+                                       "Laura Armengot"
+                                   ],
+                       "pdf_path":  "papers\\10.1088_1748-9326_abb053__Cocoa_agroforestry_systems_versus_monocultures_a_multi-dimensional_meta-analysis.pdf",
+                       "matched_buckets":  [
+                                               "justice",
+                                               "vulnerability"
+                                           ],
+                       "search_queries":  [
+                                              "cocoa agroforestry resilience smallholder climate",
+                                              "cocoa value chain living income farmers",
+                                              "sustainability standards coffee cocoa value chain smallholder"
+                                          ],
+                       "answer_count":  2
+                   },
+                   {
+                       "paper_id":  "P020",
+                       "title":  "An innovation perspective to climate change adaptation in coffee systems",
+                       "doi":  "10.1016/j.envsci.2019.03.017",
+                       "journal":  "Environmental Science \u0026 Policy",
+                       "year":  2019,
+                       "authors":  [
+                                       "R.W. Verburg",
+                                       "Eric Rahn",
+                                       "P.A. Verweij",
+                                       "Marijke van Kuijk",
+                                       "Jaboury Ghazoul"
+                                   ],
+                       "pdf_path":  "papers\\10.1016_j.envsci.2019.03.017__An_innovation_perspective_to_climate_change_adaptation_in_coffee_systems.pdf",
+                       "matched_buckets":  [
+                                               "vulnerability"
+                                           ],
+                       "search_queries":  [
+                                              "coffee climate adaptation smallholder",
+                                              "coffee rust smallholder resilience",
+                                              "smallholder climate vulnerability coffee"
+                                          ],
+                       "answer_count":  3
+                   }
+               ]
+}
