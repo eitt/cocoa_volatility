@@ -1,0 +1,84 @@
+2026-04-15 18:46:31,519 | INFO | v2_disaster_pipeline | Running v2 pipeline on C:\Users\LEONA\Documents\GitHub\cocoa_volatility\REPORTE_DE_EVENTOS_POR_DESASTRES_NATURALES_Y_ANTRÓPICOS_(Histórico)_20260415.csv
+2026-04-15 18:46:31,705 | INFO | v2_disaster_pipeline | cleaned_registry shape: rows=970 columns=63
+2026-04-15 18:46:31,842 | INFO | v2_disaster_pipeline | translated_registry shape: rows=970 columns=73
+2026-04-15 18:46:48,288 | INFO | v2_disaster_pipeline | Running v2 pipeline on C:\Users\LEONA\Documents\GitHub\cocoa_volatility\REPORTE_DE_EVENTOS_POR_DESASTRES_NATURALES_Y_ANTRÓPICOS_(Histórico)_20260415.csv
+2026-04-15 18:46:48,460 | INFO | v2_disaster_pipeline | cleaned_registry shape: rows=970 columns=63
+2026-04-15 18:46:48,587 | INFO | v2_disaster_pipeline | translated_registry shape: rows=970 columns=73
+2026-04-15 18:46:48,773 | INFO | v2_disaster_pipeline | classified_registry shape: rows=970 columns=78
+2026-04-15 18:46:48,882 | INFO | v2_disaster_pipeline | monthly_panel shape: rows=55 columns=23
+2026-04-15 18:47:06,285 | INFO | v2_disaster_pipeline | Running v2 pipeline on C:\Users\LEONA\Documents\GitHub\cocoa_volatility\REPORTE_DE_EVENTOS_POR_DESASTRES_NATURALES_Y_ANTRÓPICOS_(Histórico)_20260415.csv
+2026-04-15 18:47:06,434 | INFO | v2_disaster_pipeline | cleaned_registry shape: rows=970 columns=63
+2026-04-15 18:47:06,566 | INFO | v2_disaster_pipeline | translated_registry shape: rows=970 columns=73
+2026-04-15 18:47:06,760 | INFO | v2_disaster_pipeline | classified_registry shape: rows=970 columns=78
+2026-04-15 18:47:06,854 | INFO | v2_disaster_pipeline | monthly_panel shape: rows=55 columns=23
+2026-04-15 18:47:09,817 | INFO | v2_disaster_pipeline | Completed v2 pipeline using branch=pca_index
+2026-04-15 18:47:51,871 | INFO | v2_disaster_pipeline | Running v2 pipeline on C:\Users\LEONA\Documents\GitHub\cocoa_volatility\REPORTE_DE_EVENTOS_POR_DESASTRES_NATURALES_Y_ANTRÓPICOS_(Histórico)_20260415.csv
+2026-04-15 18:47:51,976 | INFO | v2_disaster_pipeline | cleaned_registry shape: rows=970 columns=63
+2026-04-15 18:47:52,106 | INFO | v2_disaster_pipeline | translated_registry shape: rows=970 columns=73
+2026-04-15 18:47:52,305 | INFO | v2_disaster_pipeline | classified_registry shape: rows=970 columns=78
+2026-04-15 18:47:52,397 | INFO | v2_disaster_pipeline | monthly_panel shape: rows=55 columns=23
+2026-04-15 18:47:55,331 | INFO | v2_disaster_pipeline | Completed v2 pipeline using branch=pca_index
+2026-04-15 18:59:43,006 | INFO | v2_disaster_pipeline | Running v2 pipeline on C:\Users\LEONA\Documents\GitHub\cocoa_volatility\REPORTE_DE_EVENTOS_POR_DESASTRES_NATURALES_Y_ANTRÓPICOS_(Histórico)_20260415.csv
+2026-04-15 18:59:43,232 | INFO | v2_disaster_pipeline | cleaned_registry shape: rows=970 columns=63
+2026-04-15 18:59:43,408 | INFO | v2_disaster_pipeline | translated_registry shape: rows=970 columns=73
+2026-04-15 18:59:43,684 | INFO | v2_disaster_pipeline | classified_registry shape: rows=970 columns=78
+2026-04-15 18:59:43,815 | INFO | v2_disaster_pipeline | monthly_panel shape: rows=55 columns=23
+2026-04-15 19:00:38,340 | INFO | v2_disaster_pipeline | Rendered Pandoc outputs: {'docx': 'C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\reports\\v2\\disaster_crisis_report_v2.docx', 'pdf': 'C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\reports\\v2\\disaster_crisis_report_v2.pdf'}
+2026-04-15 19:00:38,342 | INFO | v2_disaster_pipeline | Completed v2 pipeline using branch=structural_fallback
+2026-04-15 19:08:54,959 | INFO | v2_disaster_pipeline | Running v2 pipeline on C:\Users\LEONA\Documents\GitHub\cocoa_volatility\REPORTE_DE_EVENTOS_POR_DESASTRES_NATURALES_Y_ANTRÓPICOS_(Histórico)_20260415.csv
+2026-04-15 19:08:55,110 | INFO | v2_disaster_pipeline | cleaned_registry shape: rows=970 columns=63
+2026-04-15 19:08:55,280 | INFO | v2_disaster_pipeline | translated_registry shape: rows=970 columns=73
+2026-04-15 19:08:55,523 | INFO | v2_disaster_pipeline | classified_registry shape: rows=970 columns=78
+2026-04-15 19:08:55,659 | INFO | v2_disaster_pipeline | monthly_panel shape: rows=55 columns=23
+2026-04-15 19:09:18,304 | INFO | v2_disaster_pipeline | Rendered Pandoc outputs: {'docx': 'C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\reports\\v2\\disaster_crisis_report_v2.docx', 'pdf': 'C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\reports\\v2\\disaster_crisis_report_v2.pdf'}
+2026-04-15 19:09:18,306 | INFO | v2_disaster_pipeline | Completed v2 pipeline using branch=pca_index
+2026-04-15 19:20:27,671 | INFO | v2_disaster_pipeline | Running v2 pipeline on C:\Users\LEONA\Documents\GitHub\cocoa_volatility\REPORTE_DE_EVENTOS_POR_DESASTRES_NATURALES_Y_ANTRÓPICOS_(Histórico)_20260415.csv
+2026-04-15 19:20:27,814 | INFO | v2_disaster_pipeline | cleaned_registry shape: rows=970 columns=63
+2026-04-15 19:20:27,953 | INFO | v2_disaster_pipeline | translated_registry shape: rows=970 columns=73
+2026-04-15 19:20:28,244 | INFO | v2_disaster_pipeline | classified_registry shape: rows=970 columns=78
+2026-04-15 19:20:28,372 | INFO | v2_disaster_pipeline | monthly_panel shape: rows=55 columns=23
+2026-04-15 19:22:44,644 | INFO | v2_disaster_pipeline | Running v2 pipeline on C:\Users\LEONA\Documents\GitHub\cocoa_volatility\REPORTE_DE_EVENTOS_POR_DESASTRES_NATURALES_Y_ANTRÓPICOS_(Histórico)_20260415.csv
+2026-04-15 19:22:44,812 | INFO | v2_disaster_pipeline | cleaned_registry shape: rows=970 columns=63
+2026-04-15 19:22:44,958 | INFO | v2_disaster_pipeline | translated_registry shape: rows=970 columns=73
+2026-04-15 19:22:45,325 | INFO | v2_disaster_pipeline | classified_registry shape: rows=970 columns=78
+2026-04-15 19:22:45,510 | INFO | v2_disaster_pipeline | monthly_panel shape: rows=55 columns=23
+2026-04-15 19:23:10,092 | INFO | v2_disaster_pipeline | Rendered Pandoc outputs: {'docx': 'C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\reports\\v2\\disaster_crisis_report_v2.docx', 'pdf': 'C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\reports\\v2\\disaster_crisis_report_v2.pdf'}
+2026-04-15 19:23:10,094 | INFO | v2_disaster_pipeline | Completed v2 pipeline using branch=pca_index
+2026-04-15 19:28:26,473 | INFO | v2_disaster_pipeline | Running v2 pipeline on C:\Users\LEONA\Documents\GitHub\cocoa_volatility\REPORTE_DE_EVENTOS_POR_DESASTRES_NATURALES_Y_ANTRÓPICOS_(Histórico)_20260415.csv
+2026-04-15 19:28:26,604 | INFO | v2_disaster_pipeline | cleaned_registry shape: rows=970 columns=63
+2026-04-15 19:28:26,737 | INFO | v2_disaster_pipeline | translated_registry shape: rows=970 columns=73
+2026-04-15 19:28:26,983 | INFO | v2_disaster_pipeline | classified_registry shape: rows=970 columns=78
+2026-04-15 19:28:27,106 | INFO | v2_disaster_pipeline | monthly_panel shape: rows=55 columns=23
+2026-04-15 19:28:48,186 | INFO | v2_disaster_pipeline | Rendered Pandoc outputs: {'docx': 'C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\reports\\v2\\disaster_crisis_report_v2.docx', 'pdf': 'C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\reports\\v2\\disaster_crisis_report_v2.pdf'}
+2026-04-15 19:28:48,187 | INFO | v2_disaster_pipeline | Completed v2 pipeline using branch=pca_index
+2026-04-15 19:30:14,248 | INFO | v2_disaster_pipeline | Running v2 pipeline on C:\Users\LEONA\Documents\GitHub\cocoa_volatility\REPORTE_DE_EVENTOS_POR_DESASTRES_NATURALES_Y_ANTRÓPICOS_(Histórico)_20260415.csv
+2026-04-15 19:30:14,388 | INFO | v2_disaster_pipeline | cleaned_registry shape: rows=970 columns=63
+2026-04-15 19:30:14,528 | INFO | v2_disaster_pipeline | translated_registry shape: rows=970 columns=73
+2026-04-15 19:30:47,901 | INFO | v2_disaster_pipeline | Running v2 pipeline on C:\Users\LEONA\Documents\GitHub\cocoa_volatility\REPORTE_DE_EVENTOS_POR_DESASTRES_NATURALES_Y_ANTRÓPICOS_(Histórico)_20260415.csv
+2026-04-15 19:30:48,059 | INFO | v2_disaster_pipeline | cleaned_registry shape: rows=970 columns=63
+2026-04-15 19:30:48,266 | INFO | v2_disaster_pipeline | translated_registry shape: rows=970 columns=73
+2026-04-15 19:30:48,558 | INFO | v2_disaster_pipeline | classified_registry shape: rows=594 columns=78
+2026-04-15 19:30:48,651 | INFO | v2_disaster_pipeline | monthly_panel shape: rows=36 columns=23
+2026-04-15 19:31:09,955 | INFO | v2_disaster_pipeline | Rendered Pandoc outputs: {'docx': 'C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\reports\\v2\\disaster_crisis_report_v2.docx', 'pdf': 'C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\reports\\v2\\disaster_crisis_report_v2.pdf'}
+2026-04-15 19:31:09,956 | INFO | v2_disaster_pipeline | Completed v2 pipeline using branch=pca_index
+2026-04-15 19:33:51,437 | INFO | v2_disaster_pipeline | Running v2 pipeline on C:\Users\LEONA\Documents\GitHub\cocoa_volatility\REPORTE_DE_EVENTOS_POR_DESASTRES_NATURALES_Y_ANTRÓPICOS_(Histórico)_20260415.csv
+2026-04-15 19:33:51,615 | INFO | v2_disaster_pipeline | cleaned_registry shape: rows=970 columns=63
+2026-04-15 19:33:51,783 | INFO | v2_disaster_pipeline | translated_registry shape: rows=970 columns=73
+2026-04-15 19:33:52,105 | INFO | v2_disaster_pipeline | classified_registry shape: rows=594 columns=78
+2026-04-15 19:33:52,224 | INFO | v2_disaster_pipeline | monthly_panel shape: rows=36 columns=23
+2026-04-15 19:34:14,673 | INFO | v2_disaster_pipeline | Rendered Pandoc outputs: {'docx': 'C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\reports\\v2\\disaster_crisis_report_v2.docx', 'pdf': 'C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\reports\\v2\\disaster_crisis_report_v2.pdf'}
+2026-04-15 19:34:14,674 | INFO | v2_disaster_pipeline | Completed v2 pipeline using branch=pca_index
+2026-04-15 19:35:13,563 | INFO | v2_disaster_pipeline | Running v2 pipeline on C:\Users\LEONA\Documents\GitHub\cocoa_volatility\REPORTE_DE_EVENTOS_POR_DESASTRES_NATURALES_Y_ANTRÓPICOS_(Histórico)_20260415.csv
+2026-04-15 19:35:13,740 | INFO | v2_disaster_pipeline | cleaned_registry shape: rows=970 columns=63
+2026-04-15 19:35:13,952 | INFO | v2_disaster_pipeline | translated_registry shape: rows=970 columns=73
+2026-04-15 19:35:14,264 | INFO | v2_disaster_pipeline | classified_registry shape: rows=594 columns=78
+2026-04-15 19:35:14,363 | INFO | v2_disaster_pipeline | monthly_panel shape: rows=36 columns=23
+2026-04-15 19:35:37,294 | INFO | v2_disaster_pipeline | Rendered Pandoc outputs: {'docx': 'C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\reports\\v2\\disaster_crisis_report_v2.docx', 'pdf': 'C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\reports\\v2\\disaster_crisis_report_v2.pdf'}
+2026-04-15 19:35:37,296 | INFO | v2_disaster_pipeline | Completed v2 pipeline using branch=pca_index
+2026-04-15 19:40:04,033 | INFO | v2_disaster_pipeline | Running v2 pipeline on C:\Users\LEONA\Documents\GitHub\cocoa_volatility\REPORTE_DE_EVENTOS_POR_DESASTRES_NATURALES_Y_ANTRÓPICOS_(Histórico)_20260415.csv
+2026-04-15 19:40:04,194 | INFO | v2_disaster_pipeline | cleaned_registry shape: rows=970 columns=63
+2026-04-15 19:40:04,474 | INFO | v2_disaster_pipeline | translated_registry shape: rows=970 columns=73
+2026-04-15 19:40:04,784 | INFO | v2_disaster_pipeline | classified_registry shape: rows=594 columns=78
+2026-04-15 19:40:04,886 | INFO | v2_disaster_pipeline | monthly_panel shape: rows=36 columns=23
+2026-04-15 19:40:22,545 | INFO | v2_disaster_pipeline | Rendered Pandoc outputs: {'docx': 'C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\reports\\v2\\disaster_crisis_report_v2.docx', 'pdf': 'C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\reports\\v2\\disaster_crisis_report_v2.pdf'}
+2026-04-15 19:40:22,548 | INFO | v2_disaster_pipeline | Completed v2 pipeline using branch=pca_index

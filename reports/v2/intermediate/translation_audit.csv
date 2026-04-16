@@ -1,0 +1,1153 @@
+context,original_value,normalized_value,english_value,translation_strategy,matched_terms
+alerts,ROJA,roja,Red,exact_dictionary_match,roja
+alerts,,,Not reported,missing_value,
+environmental_authority,CAS,cas,CAS Environmental Authority,exact_dictionary_match,cas
+environmental_authority,CDMB,cdmb,CDMB Environmental Authority,exact_dictionary_match,cdmb
+environmental_authority,cas,cas,CAS Environmental Authority,exact_dictionary_match,cas
+environmental_authority,,,Not reported,missing_value,
+event_status,ACTIVO,activo,Active,exact_dictionary_match,activo
+event_status,ATENDIDO,atendido,Responded to,exact_dictionary_match,atendido
+event_status,,,Not reported,missing_value,
+event_type,ACCIDENTE MINERO,accidente minero,Mining accident,exact_dictionary_match,accidente minero
+event_type,ACCIDENTE VEHICULAR,accidente vehicular,Vehicle accident,exact_dictionary_match,accidente vehicular
+event_type,AVENIDA TORRENCIAL,avenida torrencial,Torrential flash flood,exact_dictionary_match,avenida torrencial
+event_type,CAIDA DE ROCAS,caida de rocas,Rockfall,exact_dictionary_match,caida de rocas
+event_type,CALAMIDAD PUBLICA,calamidad publica,Public emergency,exact_dictionary_match,calamidad publica
+event_type,CIERRE DE VIA,cierre de via,Road closure,exact_dictionary_match,cierre de via
+event_type,COLAPSO DE ESTRUCTURA,colapso de estructura,Structural collapse,exact_dictionary_match,colapso de estructura
+event_type,COLAPSO DE MINA,colapso de mina,Mine collapse,exact_dictionary_match,colapso de mina
+event_type,CRECIENTE SUBITA,creciente subita,Flash flood,exact_dictionary_match,creciente subita
+event_type,DERRAME DE CRUDO,derrame de crudo,Oil spill,exact_dictionary_match,derrame de crudo
+event_type,DESABASTECIMIENTO,desabastecimiento,Supply shortage,exact_dictionary_match,desabastecimiento
+event_type,DESBORDAMIENTO,desbordamiento,Overflow flood,exact_dictionary_match,desbordamiento
+event_type,DESLIZAMIENTOS,deslizamientos,Landslides,exact_dictionary_match,deslizamientos
+event_type,EROSION,erosion,Erosion,exact_dictionary_match,erosion
+event_type,EXPLOSION,explosion,Explosion,exact_dictionary_match,explosion
+event_type,EXPLOSION DE MINA,explosion de mina,Mine explosion,exact_dictionary_match,explosion de mina
+event_type,FUGA DE GAS,fuga de gas,Gas leak,exact_dictionary_match,fuga de gas
+event_type,GRANIZADA,granizada,Hailstorm,exact_dictionary_match,granizada
+event_type,HELADAS,heladas,Frost,exact_dictionary_match,heladas
+event_type,INCENDIO ESTRUCTURAL,incendio estructural,Structural fire,exact_dictionary_match,incendio estructural
+event_type,INCENDIO FORESTAL,incendio forestal,Forest fire,exact_dictionary_match,incendio forestal
+event_type,INUDACIONES,inudaciones,Floods,exact_dictionary_match,inudaciones
+event_type,INUNDACION,inundacion,Flood,exact_dictionary_match,inundacion
+event_type,INUNDACIONES,inundaciones,Floods,exact_dictionary_match,inundaciones
+event_type,INUNDACIONES Y DESLIZAMIENTOS,inundaciones y deslizamientos,Floods and landslides,exact_dictionary_match,inundaciones y deslizamientos
+event_type,MOVIMIENTO EN MASA,movimiento en masa,Mass movement,exact_dictionary_match,movimiento en masa
+event_type,REMOCION EN MASA,remocion en masa,Mass movement,exact_dictionary_match,remocion en masa
+event_type,SISMO,sismo,Earthquake,exact_dictionary_match,sismo
+event_type,TORMENTAS ELECTRICAS,tormentas electricas,Thunderstorms,exact_dictionary_match,tormentas electricas
+event_type,VENDAVAL,vendaval,Windstorm,exact_dictionary_match,vendaval
+event_type,,,Not reported,missing_value,
+impact_area,RURAL,rural,Rural,exact_dictionary_match,rural
+impact_area,URB,urb,Urban,exact_dictionary_match,urb
+impact_area,URBA,urba,Urban,exact_dictionary_match,urba
+impact_area,URBANA,urbana,Urban,exact_dictionary_match,urbana
+impact_area,URBANO,urbano,Urban,exact_dictionary_match,urbano
+impact_area,URBANO Y RURAL,urbano y rural,Urban and rural,exact_dictionary_match,urbano y rural
+impact_area,,,Not reported,missing_value,
+known_or_handled_by,ALCALDE DE SAN ANDRES,alcalde de san andres,Alcalde of San Andres,token_dictionary_match,de
+known_or_handled_by,ALCALDE DEL PEÑON,alcalde del penon,Alcalde of the Penon,token_dictionary_match,del
+known_or_handled_by,ALCALDE EL CARMEN DE CHUCURI,alcalde el carmen de chucuri,Alcalde the Carmen of Chucuri,token_dictionary_match,"el, de"
+known_or_handled_by,ALCALDESA DE ARATOCA,alcaldesa de aratoca,Alcaldesa of Aratoca,token_dictionary_match,de
+known_or_handled_by,"ALCALDIA DE SAN ANDRES BOMBEROS DEL CERRITO, DEFENSA CIVIL GUACA",alcaldia de san andres bomberos del cerrito defensa civil guaca,Mayor's Office of San Andres Fire Department of the Cerrito Civil Defense Guaca,token_dictionary_match,"alcaldia, de, bomberos, del, defensa civil"
+known_or_handled_by,AMGRD DE CIMITARRA,amgrd de cimitarra,Amgrd of Cimitarra,token_dictionary_match,de
+known_or_handled_by,BOMBERODE MOLAGAVITA,bomberode molagavita,Bomberode Molagavita,standardized_passthrough,
+known_or_handled_by,BOMBEROS DE ARATOCA,bomberos de aratoca,Fire Department of Aratoca,token_dictionary_match,"bomberos, de"
+known_or_handled_by,BOMBEROS DE ARATOCA Y CURITI,bomberos de aratoca y curiti,Fire Department of Aratoca and Curiti,token_dictionary_match,"bomberos, de, y"
+known_or_handled_by,BOMBEROS DE BARBOSA,bomberos de barbosa,Fire Department of Barbosa,token_dictionary_match,"bomberos, de"
+known_or_handled_by,BOMBEROS DE BARICHARA,bomberos de barichara,Fire Department of Barichara,token_dictionary_match,"bomberos, de"
+known_or_handled_by,BOMBEROS DE BARRANCABERMEJA,bomberos de barrancabermeja,Fire Department of Barrancabermeja,token_dictionary_match,"bomberos, de"
+known_or_handled_by,BOMBEROS DE BETULIA,bomberos de betulia,Fire Department of Betulia,token_dictionary_match,"bomberos, de"
+known_or_handled_by,BOMBEROS DE BUCARAMANGA,bomberos de bucaramanga,Fire Department of Bucaramanga,token_dictionary_match,"bomberos, de"
+known_or_handled_by,BOMBEROS DE CARCASI,bomberos de carcasi,Fire Department of Carcasi,token_dictionary_match,"bomberos, de"
+known_or_handled_by,BOMBEROS DE CERRITO,bomberos de cerrito,Fire Department of Cerrito,token_dictionary_match,"bomberos, de"
+known_or_handled_by,BOMBEROS DE CHARALA,bomberos de charala,Fire Department of Charala,token_dictionary_match,"bomberos, de"
+known_or_handled_by,BOMBEROS DE CIMITARRA,bomberos de cimitarra,Fire Department of Cimitarra,token_dictionary_match,"bomberos, de"
+known_or_handled_by,BOMBEROS DE CONCEPCION,bomberos de concepcion,Fire Department of Concepcion,token_dictionary_match,"bomberos, de"
+known_or_handled_by,BOMBEROS DE CONTRATACION,bomberos de contratacion,Fire Department of Contratacion,token_dictionary_match,"bomberos, de"
+known_or_handled_by,BOMBEROS DE COROMORO,bomberos de coromoro,Fire Department of Coromoro,token_dictionary_match,"bomberos, de"
+known_or_handled_by,BOMBEROS DE CURITI,bomberos de curiti,Fire Department of Curiti,token_dictionary_match,"bomberos, de"
+known_or_handled_by,BOMBEROS DE ENCISO,bomberos de enciso,Fire Department of Enciso,token_dictionary_match,"bomberos, de"
+known_or_handled_by,BOMBEROS DE FLORIDABLANCA,bomberos de floridablanca,Fire Department of Floridablanca,token_dictionary_match,"bomberos, de"
+known_or_handled_by,BOMBEROS DE GALAN,bomberos de galan,Fire Department of Galan,token_dictionary_match,"bomberos, de"
+known_or_handled_by,BOMBEROS DE LA BELLEZA,bomberos de la belleza,Fire Department of the Belleza,token_dictionary_match,"bomberos, de, la"
+known_or_handled_by,BOMBEROS DE LANDAZURI,bomberos de landazuri,Fire Department of Landazuri,token_dictionary_match,"bomberos, de"
+known_or_handled_by,BOMBEROS DE LEBRIJA,bomberos de lebrija,Fire Department of Lebrija,token_dictionary_match,"bomberos, de"
+known_or_handled_by,BOMBEROS DE LOS SANTOS,bomberos de los santos,Fire Department of Los Santos,token_dictionary_match,"bomberos, de"
+known_or_handled_by,BOMBEROS DE MALAGA,bomberos de malaga,Fire Department of Malaga,token_dictionary_match,"bomberos, de"
+known_or_handled_by,BOMBEROS DE MATANZA,bomberos de matanza,Fire Department of Matanza,token_dictionary_match,"bomberos, de"
+known_or_handled_by,BOMBEROS DE MOGOTES,bomberos de mogotes,Fire Department of Mogotes,token_dictionary_match,"bomberos, de"
+known_or_handled_by,BOMBEROS DE MOLAGAVITA,bomberos de molagavita,Fire Department of Molagavita,token_dictionary_match,"bomberos, de"
+known_or_handled_by,BOMBEROS DE OCAMONTE,bomberos de ocamonte,Fire Department of Ocamonte,token_dictionary_match,"bomberos, de"
+known_or_handled_by,BOMBEROS DE OIBA,bomberos de oiba,Fire Department of Oiba,token_dictionary_match,"bomberos, de"
+known_or_handled_by,BOMBEROS DE PARAMO,bomberos de paramo,Fire Department of Paramo,token_dictionary_match,"bomberos, de"
+known_or_handled_by,BOMBEROS DE PIEDECUESTA,bomberos de piedecuesta,Fire Department of Piedecuesta,token_dictionary_match,"bomberos, de"
+known_or_handled_by,BOMBEROS DE PINCHOTE,bomberos de pinchote,Fire Department of Pinchote,token_dictionary_match,"bomberos, de"
+known_or_handled_by,BOMBEROS DE PLAYON,bomberos de playon,Fire Department of Playon,token_dictionary_match,"bomberos, de"
+known_or_handled_by,BOMBEROS DE PUERTO WILCHES,bomberos de puerto wilches,Fire Department of Puerto Wilches,token_dictionary_match,"bomberos, de"
+known_or_handled_by,BOMBEROS DE RIONEGRO,bomberos de rionegro,Fire Department of Rionegro,token_dictionary_match,"bomberos, de"
+known_or_handled_by,BOMBEROS DE SABANA,bomberos de sabana,Fire Department of Sabana,token_dictionary_match,"bomberos, de"
+known_or_handled_by,BOMBEROS DE SAN GIL,bomberos de san gil,Fire Department of San Gil,token_dictionary_match,"bomberos, de"
+known_or_handled_by,BOMBEROS DE SAN MIGUEL,bomberos de san miguel,Fire Department of San Miguel,token_dictionary_match,"bomberos, de"
+known_or_handled_by,BOMBEROS DE SAN VICENTE,bomberos de san vicente,Fire Department of San Vicente,token_dictionary_match,"bomberos, de"
+known_or_handled_by,BOMBEROS DE SIMACOTA,bomberos de simacota,Fire Department of Simacota,token_dictionary_match,"bomberos, de"
+known_or_handled_by,BOMBEROS DE SUAITA,bomberos de suaita,Fire Department of Suaita,token_dictionary_match,"bomberos, de"
+known_or_handled_by,BOMBEROS DE SURATA Y EJERCITO,bomberos de surata y ejercito,Fire Department of Surata and Ejercito,token_dictionary_match,"bomberos, de, y"
+known_or_handled_by,BOMBEROS DE TONA,bomberos de tona,Fire Department of Tona,token_dictionary_match,"bomberos, de"
+known_or_handled_by,BOMBEROS DE VELEZ,bomberos de velez,Fire Department of Velez,token_dictionary_match,"bomberos, de"
+known_or_handled_by,BOMBEROS DE VETAS,bomberos de vetas,Fire Department of Vetas,token_dictionary_match,"bomberos, de"
+known_or_handled_by,BOMBEROS DE VILLANUEVA,bomberos de villanueva,Fire Department of Villanueva,token_dictionary_match,"bomberos, de"
+known_or_handled_by,BOMBEROS DE ZAPATOCA,bomberos de zapatoca,Fire Department of Zapatoca,token_dictionary_match,"bomberos, de"
+known_or_handled_by,BOMBEROS DEL HATO,bomberos del hato,Fire Department of the Hato,token_dictionary_match,"bomberos, del"
+known_or_handled_by,BOMBEROS DEL PALMAR,bomberos del palmar,Fire Department of the Palmar,token_dictionary_match,"bomberos, del"
+known_or_handled_by,BOMBEROS DEL PARAMO,bomberos del paramo,Fire Department of the Paramo,token_dictionary_match,"bomberos, del"
+known_or_handled_by,BOMBEROS DEL PLAYON,bomberos del playon,Fire Department of the Playon,token_dictionary_match,"bomberos, del"
+known_or_handled_by,BOMBEROS DEL SOCORRO,bomberos del socorro,Fire Department of the Socorro,token_dictionary_match,"bomberos, del"
+known_or_handled_by,BOMBEROS EL SOCORRO,bomberos el socorro,Fire Department the Socorro,token_dictionary_match,"bomberos, el"
+known_or_handled_by,BOMBEROS OFICIALES DE BUCARAMANGA,bomberos oficiales de bucaramanga,Fire Department Oficiales of Bucaramanga,token_dictionary_match,"bomberos, de"
+known_or_handled_by,BOMBEROS PUERTO WILCHES,bomberos puerto wilches,Fire Department Puerto Wilches,token_dictionary_match,bomberos
+known_or_handled_by,BOMBEROS VALLE DE SAN JOSE,bomberos valle de san jose,Fire Department Valle of San Jose,token_dictionary_match,"bomberos, de"
+known_or_handled_by,BOMBEROS VOLUNTARIOS DE SAN MIGUEL,bomberos voluntarios de san miguel,Fire Department Volunteer of San Miguel,token_dictionary_match,"bomberos, voluntarios, de"
+known_or_handled_by,BOMBEROS Y DEFENSA CIVIL CURITI,bomberos y defensa civil curiti,Fire Department and Civil Defense Curiti,token_dictionary_match,"bomberos, y, defensa civil"
+known_or_handled_by,BOMBEROS ZAPATOCA,bomberos zapatoca,Fire Department Zapatoca,token_dictionary_match,bomberos
+known_or_handled_by,"BOMBEROS, DEFENSA CIVIL POLICIA",bomberos defensa civil policia,Fire Department Civil Defense Policia,token_dictionary_match,"bomberos, defensa civil"
+known_or_handled_by,BOMEROS DE ENCISO,bomeros de enciso,Bomeros of Enciso,token_dictionary_match,de
+known_or_handled_by,CMGD CEPITA,cmgd cepita,Cmgd Cepita,standardized_passthrough,
+known_or_handled_by,CMGD CURITI,cmgd curiti,Cmgd Curiti,standardized_passthrough,
+known_or_handled_by,CMGD SAN BENITO,cmgd san benito,Cmgd San Benito,standardized_passthrough,
+known_or_handled_by,CMGD VALLE DE SAN JOSE,cmgd valle de san jose,Cmgd Valle of San Jose,token_dictionary_match,de
+known_or_handled_by,CMGR DEL HATO,cmgr del hato,Cmgr of the Hato,token_dictionary_match,del
+known_or_handled_by,CMGR LANDAZURI,cmgr landazuri,Cmgr Landazuri,standardized_passthrough,
+known_or_handled_by,CMGR PIEDECUESTA,cmgr piedecuesta,Cmgr Piedecuesta,standardized_passthrough,
+known_or_handled_by,CMGR PUERTO WILCHES,cmgr puerto wilches,Cmgr Puerto Wilches,standardized_passthrough,
+known_or_handled_by,CMGRD AGUADA,cmgrd aguada,Municipal Disaster Risk Management Council Aguada,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD ALBANIA,cmgrd albania,Municipal Disaster Risk Management Council Albania,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD ARATOCA,cmgrd aratoca,Municipal Disaster Risk Management Council Aratoca,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD BARBOSA,cmgrd barbosa,Municipal Disaster Risk Management Council Barbosa,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD BARICHARA,cmgrd barichara,Municipal Disaster Risk Management Council Barichara,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD BARRANCABERMEJA,cmgrd barrancabermeja,Municipal Disaster Risk Management Council Barrancabermeja,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD BETULIA,cmgrd betulia,Municipal Disaster Risk Management Council Betulia,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD BOLIVAR,cmgrd bolivar,Municipal Disaster Risk Management Council Bolivar,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD BUCARAMANGA,cmgrd bucaramanga,Municipal Disaster Risk Management Council Bucaramanga,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD CALIFORNIA,cmgrd california,Municipal Disaster Risk Management Council California,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD CAPITANEJO,cmgrd capitanejo,Municipal Disaster Risk Management Council Capitanejo,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD CARCASI,cmgrd carcasi,Municipal Disaster Risk Management Council Carcasi,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD CEPITA,cmgrd cepita,Municipal Disaster Risk Management Council Cepita,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD CEPITA Y JORDAN,cmgrd cepita y jordan,Municipal Disaster Risk Management Council Cepita and Jordan,token_dictionary_match,"cmgrd, y"
+known_or_handled_by,CMGRD CERRITO,cmgrd cerrito,Municipal Disaster Risk Management Council Cerrito,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD CHARALA,cmgrd charala,Municipal Disaster Risk Management Council Charala,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD CHARTA,cmgrd charta,Municipal Disaster Risk Management Council Charta,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD CHIMA,cmgrd chima,Municipal Disaster Risk Management Council Chima,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD CIMIARRA,cmgrd cimiarra,Municipal Disaster Risk Management Council Cimiarra,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD CIMITARRA,cmgrd cimitarra,Municipal Disaster Risk Management Council Cimitarra,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD CONCENPCION,cmgrd concenpcion,Municipal Disaster Risk Management Council Concenpcion,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD CONCEPCION,cmgrd concepcion,Municipal Disaster Risk Management Council Concepcion,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD CONFINES,cmgrd confines,Municipal Disaster Risk Management Council Confines,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD CONTRATACION,cmgrd contratacion,Municipal Disaster Risk Management Council Contratacion,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD COROMORO,cmgrd coromoro,Municipal Disaster Risk Management Council Coromoro,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD CURITI,cmgrd curiti,Municipal Disaster Risk Management Council Curiti,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD DE AGUADA,cmgrd de aguada,Municipal Disaster Risk Management Council of Aguada,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE ALBANIA,cmgrd de albania,Municipal Disaster Risk Management Council of Albania,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE ARATOCA,cmgrd de aratoca,Municipal Disaster Risk Management Council of Aratoca,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE BARBOSA,cmgrd de barbosa,Municipal Disaster Risk Management Council of Barbosa,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE BARICHARA,cmgrd de barichara,Municipal Disaster Risk Management Council of Barichara,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE BARRANCABERMEJA,cmgrd de barrancabermeja,Municipal Disaster Risk Management Council of Barrancabermeja,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE BETULIA,cmgrd de betulia,Municipal Disaster Risk Management Council of Betulia,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE BOLIVAR,cmgrd de bolivar,Municipal Disaster Risk Management Council of Bolivar,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE BUCARAMANGA,cmgrd de bucaramanga,Municipal Disaster Risk Management Council of Bucaramanga,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE CABRERA,cmgrd de cabrera,Municipal Disaster Risk Management Council of Cabrera,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE CALIFORNIA,cmgrd de california,Municipal Disaster Risk Management Council of California,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE CAPITANEJO,cmgrd de capitanejo,Municipal Disaster Risk Management Council of Capitanejo,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE CARCASI,cmgrd de carcasi,Municipal Disaster Risk Management Council of Carcasi,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE CEPITA,cmgrd de cepita,Municipal Disaster Risk Management Council of Cepita,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE CERRITO,cmgrd de cerrito,Municipal Disaster Risk Management Council of Cerrito,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE CHARALA,cmgrd de charala,Municipal Disaster Risk Management Council of Charala,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE CHARTA,cmgrd de charta,Municipal Disaster Risk Management Council of Charta,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE CHIMA,cmgrd de chima,Municipal Disaster Risk Management Council of Chima,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE CHIMA BOMBEROS DE CONTRATACION,cmgrd de chima bomberos de contratacion,Municipal Disaster Risk Management Council of Chima Fire Department of Contratacion,token_dictionary_match,"cmgrd, de, bomberos, de"
+known_or_handled_by,CMGRD DE CHIPATA,cmgrd de chipata,Municipal Disaster Risk Management Council of Chipata,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE CIMITARRA,cmgrd de cimitarra,Municipal Disaster Risk Management Council of Cimitarra,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE CONCEPCION,cmgrd de concepcion,Municipal Disaster Risk Management Council of Concepcion,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE CONFINES,cmgrd de confines,Municipal Disaster Risk Management Council of Confines,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE CONTRATACION,cmgrd de contratacion,Municipal Disaster Risk Management Council of Contratacion,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE COROMORO,cmgrd de coromoro,Municipal Disaster Risk Management Council of Coromoro,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE CURITI,cmgrd de curiti,Municipal Disaster Risk Management Council of Curiti,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE ENCINO,cmgrd de encino,Municipal Disaster Risk Management Council of Encino,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE ENCISO,cmgrd de enciso,Municipal Disaster Risk Management Council of Enciso,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE FLORIAN Y LA BELLEZA,cmgrd de florian y la belleza,Municipal Disaster Risk Management Council of Florian and the Belleza,token_dictionary_match,"cmgrd, de, y, la"
+known_or_handled_by,CMGRD DE FLORIDABLANCA,cmgrd de floridablanca,Municipal Disaster Risk Management Council of Floridablanca,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE GALAN,cmgrd de galan,Municipal Disaster Risk Management Council of Galan,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE GAMBITA,cmgrd de gambita,Municipal Disaster Risk Management Council of Gambita,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE GIRON,cmgrd de giron,Municipal Disaster Risk Management Council of Giron,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE GUACA,cmgrd de guaca,Municipal Disaster Risk Management Council of Guaca,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE GUADALUPE,cmgrd de guadalupe,Municipal Disaster Risk Management Council of Guadalupe,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE GUAPOTA,cmgrd de guapota,Municipal Disaster Risk Management Council of Guapota,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE GUAVATA,cmgrd de guavata,Municipal Disaster Risk Management Council of Guavata,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE GUEPSA,cmgrd de guepsa,Municipal Disaster Risk Management Council of Guepsa,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE JORDAN,cmgrd de jordan,Municipal Disaster Risk Management Council of Jordan,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE LA BELLEZ,cmgrd de la bellez,Municipal Disaster Risk Management Council of the Bellez,token_dictionary_match,"cmgrd, de, la"
+known_or_handled_by,CMGRD DE LANDAZURI,cmgrd de landazuri,Municipal Disaster Risk Management Council of Landazuri,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE LEBRIJA,cmgrd de lebrija,Municipal Disaster Risk Management Council of Lebrija,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE LOS SANTOS,cmgrd de los santos,Municipal Disaster Risk Management Council of Los Santos,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE MACARAVITA,cmgrd de macaravita,Municipal Disaster Risk Management Council of Macaravita,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE MALAGA,cmgrd de malaga,Municipal Disaster Risk Management Council of Malaga,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE MATANZA,cmgrd de matanza,Municipal Disaster Risk Management Council of Matanza,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE MOGOTES,cmgrd de mogotes,Municipal Disaster Risk Management Council of Mogotes,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE MOLAGAVITA,cmgrd de molagavita,Municipal Disaster Risk Management Council of Molagavita,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE OCAMONTE,cmgrd de ocamonte,Municipal Disaster Risk Management Council of Ocamonte,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE OIBA,cmgrd de oiba,Municipal Disaster Risk Management Council of Oiba,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE ONZAGA,cmgrd de onzaga,Municipal Disaster Risk Management Council of Onzaga,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE PALMAS DEL SOCORRO,cmgrd de palmas del socorro,Municipal Disaster Risk Management Council of Palmas of the Socorro,token_dictionary_match,"cmgrd, de, del"
+known_or_handled_by,CMGRD DE PIEDECUES Y FLORIDABLANCA,cmgrd de piedecues y floridablanca,Municipal Disaster Risk Management Council of Piedecues and Floridablanca,token_dictionary_match,"cmgrd, de, y"
+known_or_handled_by,CMGRD DE PIEDECUESTA,cmgrd de piedecuesta,Municipal Disaster Risk Management Council of Piedecuesta,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE PINCHOTE,cmgrd de pinchote,Municipal Disaster Risk Management Council of Pinchote,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE PUERTO PARRA,cmgrd de puerto parra,Municipal Disaster Risk Management Council of Puerto Parra,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE PUERTO WILCHES,cmgrd de puerto wilches,Municipal Disaster Risk Management Council of Puerto Wilches,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE RIONEGRO,cmgrd de rionegro,Municipal Disaster Risk Management Council of Rionegro,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE SABANA DE TORRES,cmgrd de sabana de torres,Municipal Disaster Risk Management Council of Sabana of Torres,token_dictionary_match,"cmgrd, de, de"
+known_or_handled_by,CMGRD DE SAN ANDRES,cmgrd de san andres,Municipal Disaster Risk Management Council of San Andres,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE SAN BENITO,cmgrd de san benito,Municipal Disaster Risk Management Council of San Benito,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE SAN GIL,cmgrd de san gil,Municipal Disaster Risk Management Council of San Gil,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE SAN JOAQUIN,cmgrd de san joaquin,Municipal Disaster Risk Management Council of San Joaquin,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE SAN JOSE DE MIRANDA,cmgrd de san jose de miranda,Municipal Disaster Risk Management Council of San Jose of Miranda,token_dictionary_match,"cmgrd, de, de"
+known_or_handled_by,CMGRD DE SAN MIGUEL,cmgrd de san miguel,Municipal Disaster Risk Management Council of San Miguel,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE SAN VICENTE DE CHUCURI,cmgrd de san vicente de chucuri,Municipal Disaster Risk Management Council of San Vicente of Chucuri,token_dictionary_match,"cmgrd, de, de"
+known_or_handled_by,CMGRD DE SANTA BARBARA,cmgrd de santa barbara,Municipal Disaster Risk Management Council of Santa Barbara,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE SANTA HELENA DEL OPON,cmgrd de santa helena del opon,Municipal Disaster Risk Management Council of Santa Helena of the Opon,token_dictionary_match,"cmgrd, de, del"
+known_or_handled_by,CMGRD DE SIMACOTA,cmgrd de simacota,Municipal Disaster Risk Management Council of Simacota,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE SUAITA,cmgrd de suaita,Municipal Disaster Risk Management Council of Suaita,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE SUCRE,cmgrd de sucre,Municipal Disaster Risk Management Council of Sucre,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE SURATA,cmgrd de surata,Municipal Disaster Risk Management Council of Surata,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE TONA,cmgrd de tona,Municipal Disaster Risk Management Council of Tona,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE VELEZ,cmgrd de velez,Municipal Disaster Risk Management Council of Velez,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE VETAS,cmgrd de vetas,Municipal Disaster Risk Management Council of Vetas,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE VILLANUEVA,cmgrd de villanueva,Municipal Disaster Risk Management Council of Villanueva,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DE ZAPATOCA,cmgrd de zapatoca,Municipal Disaster Risk Management Council of Zapatoca,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD DEL CARMEN,cmgrd del carmen,Municipal Disaster Risk Management Council of the Carmen,token_dictionary_match,"cmgrd, del"
+known_or_handled_by,CMGRD DEL GUACAMAYO,cmgrd del guacamayo,Municipal Disaster Risk Management Council of the Guacamayo,token_dictionary_match,"cmgrd, del"
+known_or_handled_by,CMGRD DEL HATO,cmgrd del hato,Municipal Disaster Risk Management Council of the Hato,token_dictionary_match,"cmgrd, del"
+known_or_handled_by,CMGRD DEL PALMAR,cmgrd del palmar,Municipal Disaster Risk Management Council of the Palmar,token_dictionary_match,"cmgrd, del"
+known_or_handled_by,CMGRD DEL PARAMO,cmgrd del paramo,Municipal Disaster Risk Management Council of the Paramo,token_dictionary_match,"cmgrd, del"
+known_or_handled_by,CMGRD DEL PLAYON,cmgrd del playon,Municipal Disaster Risk Management Council of the Playon,token_dictionary_match,"cmgrd, del"
+known_or_handled_by,CMGRD DEL SOCORRO,cmgrd del socorro,Municipal Disaster Risk Management Council of the Socorro,token_dictionary_match,"cmgrd, del"
+known_or_handled_by,CMGRD EL CARMEN DE CHUCURI,cmgrd el carmen de chucuri,Municipal Disaster Risk Management Council the Carmen of Chucuri,token_dictionary_match,"cmgrd, el, de"
+known_or_handled_by,CMGRD EL GUACAMAYO,cmgrd el guacamayo,Municipal Disaster Risk Management Council the Guacamayo,token_dictionary_match,"cmgrd, el"
+known_or_handled_by,CMGRD EL HATO,cmgrd el hato,Municipal Disaster Risk Management Council the Hato,token_dictionary_match,"cmgrd, el"
+known_or_handled_by,CMGRD EL PLAYON,cmgrd el playon,Municipal Disaster Risk Management Council the Playon,token_dictionary_match,"cmgrd, el"
+known_or_handled_by,CMGRD EL SOCORRO,cmgrd el socorro,Municipal Disaster Risk Management Council the Socorro,token_dictionary_match,"cmgrd, el"
+known_or_handled_by,CMGRD ENCINO,cmgrd encino,Municipal Disaster Risk Management Council Encino,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD ENCISO,cmgrd enciso,Municipal Disaster Risk Management Council Enciso,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD ENCSO,cmgrd encso,Municipal Disaster Risk Management Council Encso,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD FLORIAN,cmgrd florian,Municipal Disaster Risk Management Council Florian,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD FLORIDABLANCA,cmgrd floridablanca,Municipal Disaster Risk Management Council Floridablanca,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD GAMBITA,cmgrd gambita,Municipal Disaster Risk Management Council Gambita,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD GIRON,cmgrd giron,Municipal Disaster Risk Management Council Giron,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD GUADALUPE,cmgrd guadalupe,Municipal Disaster Risk Management Council Guadalupe,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD GUAPOTA,cmgrd guapota,Municipal Disaster Risk Management Council Guapota,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD JESUS MARIA,cmgrd jesus maria,Municipal Disaster Risk Management Council Jesus Maria,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD LA BELLEZA,cmgrd la belleza,Municipal Disaster Risk Management Council the Belleza,token_dictionary_match,"cmgrd, la"
+known_or_handled_by,CMGRD LANDAZURI,cmgrd landazuri,Municipal Disaster Risk Management Council Landazuri,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD LEBRIJA,cmgrd lebrija,Municipal Disaster Risk Management Council Lebrija,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD LOS GUAPOTA,cmgrd los guapota,Municipal Disaster Risk Management Council Los Guapota,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD LOS SANTOS,cmgrd los santos,Municipal Disaster Risk Management Council Los Santos,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD MACARAVITA,cmgrd macaravita,Municipal Disaster Risk Management Council Macaravita,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD MATANZA,cmgrd matanza,Municipal Disaster Risk Management Council Matanza,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD MOGOTES,cmgrd mogotes,Municipal Disaster Risk Management Council Mogotes,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD MOLAGAVITA,cmgrd molagavita,Municipal Disaster Risk Management Council Molagavita,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD OCAMONTE,cmgrd ocamonte,Municipal Disaster Risk Management Council Ocamonte,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD OIBA,cmgrd oiba,Municipal Disaster Risk Management Council Oiba,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD ONZAGA,cmgrd onzaga,Municipal Disaster Risk Management Council Onzaga,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD PALMAS DEL SOCORRO,cmgrd palmas del socorro,Municipal Disaster Risk Management Council Palmas of the Socorro,token_dictionary_match,"cmgrd, del"
+known_or_handled_by,CMGRD PIEDECUESTA,cmgrd piedecuesta,Municipal Disaster Risk Management Council Piedecuesta,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD PINCHOTE,cmgrd pinchote,Municipal Disaster Risk Management Council Pinchote,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD PUENTE NACIONAL,cmgrd puente nacional,Municipal Disaster Risk Management Council Puente Nacional,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD PUERTO PARRA,cmgrd puerto parra,Municipal Disaster Risk Management Council Puerto Parra,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD PUERTO WILCHES,cmgrd puerto wilches,Municipal Disaster Risk Management Council Puerto Wilches,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD RIONEGRO,cmgrd rionegro,Municipal Disaster Risk Management Council Rionegro,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD SABANA DE TORRES,cmgrd sabana de torres,Municipal Disaster Risk Management Council Sabana of Torres,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD SAN ANDRES,cmgrd san andres,Municipal Disaster Risk Management Council San Andres,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD SAN BENITO,cmgrd san benito,Municipal Disaster Risk Management Council San Benito,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD SAN GIL,cmgrd san gil,Municipal Disaster Risk Management Council San Gil,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD SAN JOAQUIN,cmgrd san joaquin,Municipal Disaster Risk Management Council San Joaquin,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD SAN JOSE DE MIRANDA,cmgrd san jose de miranda,Municipal Disaster Risk Management Council San Jose of Miranda,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD SAN VICENTE,cmgrd san vicente,Municipal Disaster Risk Management Council San Vicente,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD SAN VICENTE DE CHUCURI,cmgrd san vicente de chucuri,Municipal Disaster Risk Management Council San Vicente of Chucuri,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD SANTA BARBARA,cmgrd santa barbara,Municipal Disaster Risk Management Council Santa Barbara,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD SANTA HELENA DEL OPON,cmgrd santa helena del opon,Municipal Disaster Risk Management Council Santa Helena of the Opon,token_dictionary_match,"cmgrd, del"
+known_or_handled_by,CMGRD SIMACOTA,cmgrd simacota,Municipal Disaster Risk Management Council Simacota,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD SUAITA,cmgrd suaita,Municipal Disaster Risk Management Council Suaita,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD SUCRE,cmgrd sucre,Municipal Disaster Risk Management Council Sucre,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD SURATA,cmgrd surata,Municipal Disaster Risk Management Council Surata,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD TONA,cmgrd tona,Municipal Disaster Risk Management Council Tona,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD VALLE DE SAN JOSE,cmgrd valle de san jose,Municipal Disaster Risk Management Council Valle of San Jose,token_dictionary_match,"cmgrd, de"
+known_or_handled_by,CMGRD VILLANUEVA,cmgrd villanueva,Municipal Disaster Risk Management Council Villanueva,token_dictionary_match,cmgrd
+known_or_handled_by,CMGRD ZAPATOCA,cmgrd zapatoca,Municipal Disaster Risk Management Council Zapatoca,token_dictionary_match,cmgrd
+known_or_handled_by,COMANDANTE DE BOMBEROS ARATOCA,comandante de bomberos aratoca,Comandante of Fire Department Aratoca,token_dictionary_match,"de, bomberos"
+known_or_handled_by,COMANDANTE DE BOMBEROS LOS SANTOS,comandante de bomberos los santos,Comandante of Fire Department Los Santos,token_dictionary_match,"de, bomberos"
+known_or_handled_by,COMANDANTE DE BOMBEROS PALMAR,comandante de bomberos palmar,Comandante of Fire Department Palmar,token_dictionary_match,"de, bomberos"
+known_or_handled_by,COMANDANTE DE BOMBEROS VELEZ,comandante de bomberos velez,Comandante of Fire Department Velez,token_dictionary_match,"de, bomberos"
+known_or_handled_by,DEFENSA CIVIL DE CIMITARRA,defensa civil de cimitarra,Civil Defense of Cimitarra,token_dictionary_match,"defensa civil, de"
+known_or_handled_by,DEFENSA CIVIL DE CURITI,defensa civil de curiti,Civil Defense of Curiti,token_dictionary_match,"defensa civil, de"
+known_or_handled_by,GOBERNACION DE SANTANDER,gobernacion de santander,Gobernacion of Santander,token_dictionary_match,de
+known_or_handled_by,INVIAS,invias,Invias,standardized_passthrough,
+known_or_handled_by,POLICIA DE CARRETERAS,policia de carreteras,Policia of Carreteras,token_dictionary_match,de
+known_or_handled_by,POLICIA NACIONAL DE JORDAN,policia nacional de jordan,National Police of Jordan,token_dictionary_match,"policia nacional, de"
+known_or_handled_by,POLICIA NACIONAL Y COMUNIDAD,policia nacional y comunidad,National Police and Comunidad,token_dictionary_match,"policia nacional, y"
+known_or_handled_by,QUEBRADA LA LOMERA Y LA JABONERA,quebrada la lomera y la jabonera,Quebrada the Lomera and the Jabonera,token_dictionary_match,"la, y, la"
+known_or_handled_by,RUTA DEL CACAO Y BOMBEROS DE FLORIDA,ruta del cacao y bomberos de florida,Ruta of the Cacao and Fire Department of Florida,token_dictionary_match,"del, y, bomberos, de"
+known_or_handled_by,SIMACOTA,simacota,Simacota,standardized_passthrough,
+known_or_handled_by,,,Not reported,missing_value,
+locality,12 VEREDA AFECTADAS,12 vereda afectadas,12 Rural Hamlet Afectadas,token_dictionary_match,vereda
+locality,29 VEREDAS,29 veredas,29 Veredas,locality_passthrough,
+locality,4 VEREDAS,4 veredas,4 Veredas,locality_passthrough,
+locality,"6 barrios así: los Laureles, Villa rosa, Santa Bárbara, Brisas del Poblado, bendición de Dios, los Álamos",6 barrios asi los laureles villa rosa santa barbara brisas del poblado bendicion de dios los alamos,6 Barrios Asi Los Laureles Villa Rosa Santa Barbara Brisas of the Poblado Bendicion of Dios Los Alamos,token_dictionary_match,"del, de"
+locality,8 BARRIOS,8 barrios,8 Barrios,locality_passthrough,
+locality,8 VEREDAS,8 veredas,8 Veredas,locality_passthrough,
+locality,9 CORREGIMIENTOS CUESTA RICA Y OTROS,9 corregimientos cuesta rica y otros,9 Corregimientos Cuesta Rica and Otros,token_dictionary_match,y
+locality,ALTO DE LOS CACAOS,alto de los cacaos,Alto of Los Cacaos,token_dictionary_match,de
+locality,ALTOS DE GUATIGUARA,altos de guatiguara,Altos of Guatiguara,token_dictionary_match,de
+locality,ANILLO VIAL Y SECTOR ACAPULCO,anillo vial y sector acapulco,Anillo Vial and Sector Acapulco,token_dictionary_match,y
+locality,AREA RURAL,area rural,Rural area,exact_dictionary_match,area rural
+locality,AREA URBANA Y RURAL,area urbana y rural,Area Urbana and Rural,token_dictionary_match,y
+locality,AREAS URBANA Y RURAL,areas urbana y rural,Areas Urbana and Rural,token_dictionary_match,y
+locality,ASENTAMIENTO ASOMIFLOR,asentamiento asomiflor,Asentamiento Asomiflor,locality_passthrough,
+locality,ASENTAMIENTO LA BENDICION DE DIOS,asentamiento la bendicion de dios,Asentamiento the Bendicion of Dios,token_dictionary_match,"la, de"
+locality,ASENTAMIENTO LA PAZ,asentamiento la paz,Asentamiento the Paz,token_dictionary_match,la
+locality,ASENTAMIENTO LUZ DE ESPERANZA,asentamiento luz de esperanza,Asentamiento Luz of Esperanza,token_dictionary_match,de
+locality,ASENTAMIENTOS CONVIVIR Y ALTOS DE ANDINA,asentamientos convivir y altos de andina,Asentamientos Convivir and Altos of Andina,token_dictionary_match,"y, de"
+locality,AUTOVIA BUCARAMANGA Pamplona,autovia bucaramanga pamplona,Autovia Bucaramanga Pamplona,locality_passthrough,
+locality,AVENIDA LA ROSITA,avenida la rosita,Avenida the Rosita,token_dictionary_match,la
+locality,BAJO RIONEGRO SECTOR EL TALADRO SAN RAFAEL,bajo rionegro sector el taladro san rafael,Bajo Rionegro Sector the Taladro San Rafael,token_dictionary_match,el
+locality,BAJO RIONEGRO SECTOR QUEBRADA PAYANDE,bajo rionegro sector quebrada payande,Bajo Rionegro Sector Quebrada Payande,locality_passthrough,
+locality,BAJO RIONEGRO Y CORREGIMIENTO LA TIGRA,bajo rionegro y corregimiento la tigra,Bajo Rionegro and Township the Tigra,token_dictionary_match,"y, corregimiento, la"
+locality,"BAJO RIONEGRO, PAPAYA, SAN JOSE DE LOS CHORROS",bajo rionegro papaya san jose de los chorros,Bajo Rionegro Papaya San Jose of Los Chorros,token_dictionary_match,de
+locality,BAJO SIMACOTA,bajo simacota,Bajo Simacota,locality_passthrough,
+locality,BAJO SIMACOTA SECTOR EL OPON,bajo simacota sector el opon,Bajo Simacota Sector the Opon,token_dictionary_match,el
+locality,"BAJO SIMACOTA, SECTOR EL OPON Y LA ROCHELA",bajo simacota sector el opon y la rochela,Bajo Simacota Sector the Opon and the Rochela,token_dictionary_match,"el, y, la"
+locality,BARRIO 20 DE AGOSTO,barrio 20 de agosto,Neighborhood 20 of Agosto,token_dictionary_match,"barrio, de"
+locality,BARRIO 7 DE AGOSTO,barrio 7 de agosto,Neighborhood 7 of Agosto,token_dictionary_match,"barrio, de"
+locality,BARRIO ALARES,barrio alares,Neighborhood Alares,token_dictionary_match,barrio
+locality,BARRIO ALTOS DEL CAMPESTRE,barrio altos del campestre,Neighborhood Altos of the Campestre,token_dictionary_match,"barrio, del"
+locality,BARRIO BARRO BLANCO,barrio barro blanco,Neighborhood Barro Blanco,token_dictionary_match,barrio
+locality,BARRIO BELLA VISTA CIENAGA YARI,barrio bella vista cienaga yari,Neighborhood Bella Vista Cienaga Yari,token_dictionary_match,barrio
+locality,BARRIO BELLA VISTA Y 3 ASENTAMIENTOS,barrio bella vista y 3 asentamientos,Neighborhood Bella Vista and 3 Asentamientos,token_dictionary_match,"barrio, y"
+locality,BARRIO BELLAVISTA,barrio bellavista,Neighborhood Bellavista,token_dictionary_match,barrio
+locality,BARRIO BOSTON,barrio boston,Neighborhood Boston,token_dictionary_match,barrio
+locality,"BARRIO BOSTOS, LA BENDICION DE DIOS Y OTROS",barrio bostos la bendicion de dios y otros,Neighborhood Bostos the Bendicion of Dios and Otros,token_dictionary_match,"barrio, la, de, y"
+locality,BARRIO CONVIVIR,barrio convivir,Neighborhood Convivir,token_dictionary_match,barrio
+locality,BARRIO EL CENTRO,barrio el centro,Neighborhood the Centro,token_dictionary_match,"barrio, el"
+locality,BARRIO EL CENTRO Y VIA NACIONAL,barrio el centro y via nacional,Neighborhood the Centro and Road Nacional,token_dictionary_match,"barrio, el, y, via"
+locality,BARRIO EL GUAYABITO,barrio el guayabito,Neighborhood the Guayabito,token_dictionary_match,"barrio, el"
+locality,BARRIO EL POBLADO Y GALAN,barrio el poblado y galan,Neighborhood the Poblado and Galan,token_dictionary_match,"barrio, el, y"
+locality,BARRIO EL REPOSO,barrio el reposo,Neighborhood the Reposo,token_dictionary_match,"barrio, el"
+locality,BARRIO ESTORAQUES,barrio estoraques,Neighborhood Estoraques,token_dictionary_match,barrio
+locality,BARRIO GALAN,barrio galan,Neighborhood Galan,token_dictionary_match,barrio
+locality,BARRIO LA BENDICION DE DIOS Y 7 DE AGOSTO,barrio la bendicion de dios y 7 de agosto,Neighborhood the Bendicion of Dios and 7 of Agosto,token_dictionary_match,"barrio, la, de, y, de"
+locality,BARRIO LA CADENA,barrio la cadena,Neighborhood the Cadena,token_dictionary_match,"barrio, la"
+locality,BARRIO LA COLINA,barrio la colina,Neighborhood the Colina,token_dictionary_match,"barrio, la"
+locality,BARRIO LA COLINA RIO DE ORO,barrio la colina rio de oro,Neighborhood the Colina Rio of Oro,token_dictionary_match,"barrio, la, de"
+locality,BARRIO LA FERIA,barrio la feria,Neighborhood the Feria,token_dictionary_match,"barrio, la"
+locality,BARRIO LA UNIVERSIDAD,barrio la universidad,Neighborhood the Universidad,token_dictionary_match,"barrio, la"
+locality,BARRIO LOS CEREZOS Y RICAURTE,barrio los cerezos y ricaurte,Neighborhood Los Cerezos and Ricaurte,token_dictionary_match,"barrio, y"
+locality,BARRIO LOS OJITOS,barrio los ojitos,Neighborhood Los Ojitos,token_dictionary_match,barrio
+locality,BARRIO NUEVA COLOMBIA,barrio nueva colombia,Neighborhood Nueva Colombia,token_dictionary_match,barrio
+locality,BARRIO ORO NEGRO,barrio oro negro,Neighborhood Oro Negro,token_dictionary_match,barrio
+locality,BARRIO PRIMERO DE MAYO,barrio primero de mayo,Neighborhood Primero of Mayo,token_dictionary_match,"barrio, de"
+locality,BARRIO RICAURTE,barrio ricaurte,Neighborhood Ricaurte,token_dictionary_match,barrio
+locality,BARRIO SAN JORGE,barrio san jorge,Neighborhood San Jorge,token_dictionary_match,barrio
+locality,BARRIO SAN MARTIN,barrio san martin,Neighborhood San Martin,token_dictionary_match,barrio
+locality,BARRIO TEJADITOS,barrio tejaditos,Neighborhood Tejaditos,token_dictionary_match,barrio
+locality,BARRIO VILLA HELENA,barrio villa helena,Neighborhood Villa Helena,token_dictionary_match,barrio
+locality,"BARRIO VILLA ROSA, CALLE 45 Y ZONA NORTE",barrio villa rosa calle 45 y zona norte,Neighborhood Villa Rosa Calle 45 and Zona Norte,token_dictionary_match,"barrio, y"
+locality,BARRIO VILLANUEVA,barrio villanueva,Neighborhood Villanueva,token_dictionary_match,barrio
+locality,"BARRIOS AQUILEO PARRA, PABLO SEXTO",barrios aquileo parra pablo sexto,"Barrios Aquileo Parra, Pablo Sexto",locality_passthrough,
+locality,"BARRIOS Carrizal y asentamientos Convivir, 5 de enero",barrios carrizal y asentamientos convivir 5 de enero,Barrios Carrizal and Asentamientos Convivir 5 of Enero,token_dictionary_match,"y, de"
+locality,BARRIOS EL CENTRO Y KENEDDY,barrios el centro y keneddy,Barrios the Centro and Keneddy,token_dictionary_match,"el, y"
+locality,"BARRIOS José Antonio Galán, café Madrid y zona Norte",barrios jose antonio galan cafe madrid y zona norte,Barrios Jose Antonio Galan Cafe Madrid and Zona Norte,token_dictionary_match,y
+locality,BARRIOS LA TRINIDAJ Y SANTA HELENA,barrios la trinidaj y santa helena,Barrios the Trinidaj and Santa Helena,token_dictionary_match,"la, y"
+locality,BARRIOS SANTA CRUZ Y LA COLINA,barrios santa cruz y la colina,Barrios Santa Cruz and the Colina,token_dictionary_match,"y, la"
+locality,BARRIOS VILLA PIEDRA DEL SOL Y SANTA COLOMA,barrios villa piedra del sol y santa coloma,Barrios Villa Piedra of the Sol and Santa Coloma,token_dictionary_match,"del, y"
+locality,BERRIOS EL CENTRO Y SAGRADO CORAZON,berrios el centro y sagrado corazon,Berrios the Centro and Sagrado Corazon,token_dictionary_match,"el, y"
+locality,CALLE 10 CON CARRERA 15,calle 10 con carrera 15,Calle 10 Con Carrera 15,locality_passthrough,
+locality,"CALLE 45, SECTOR EL PALENQUE",calle 45 sector el palenque,Calle 45 Sector the Palenque,token_dictionary_match,el
+locality,CALLE 8 Y SECTOR PASEO DEL MANGO,calle 8 y sector paseo del mango,Calle 8 and Sector Paseo of the Mango,token_dictionary_match,"y, del"
+locality,CARRERA 35 CENTRO DE BUCARAMANGA,carrera 35 centro de bucaramanga,Carrera 35 Centro of Bucaramanga,token_dictionary_match,de
+locality,CARRERA 6 SALIDA A BARBOSA,carrera 6 salida a barbosa,Carrera 6 Salida A Barbosa,locality_passthrough,
+locality,CASCO URBANO,casco urbano,Casco Urbano,locality_passthrough,
+locality,CASCO URBANO BARRIO EL CENTRO,casco urbano barrio el centro,Casco Urbano Neighborhood the Centro,token_dictionary_match,"barrio, el"
+locality,"CASCO URBANO BARRIOS BELLAVISTA, EL ELDA, 7 DE ABRIL",casco urbano barrios bellavista el elda 7 de abril,Casco Urbano Barrios Bellavista the Elda 7 of Abril,token_dictionary_match,"el, de"
+locality,CASCO URBANO CURITI,casco urbano curiti,Casco Urbano Curiti,locality_passthrough,
+locality,CASCO URBANO DE BARRANCABERMEJA,casco urbano de barrancabermeja,Casco Urbano of Barrancabermeja,token_dictionary_match,de
+locality,CASCO URBANO DE FLORIAN,casco urbano de florian,Casco Urbano of Florian,token_dictionary_match,de
+locality,CASCO URBANO DE SAN GIL ZONA TURISTICA,casco urbano de san gil zona turistica,Casco Urbano of San Gil Zona Turistica,token_dictionary_match,de
+locality,CASCO URBANO SECTORES DEL HOSPITAL REGIONAL,casco urbano sectores del hospital regional,Casco Urbano Sectores of the Hospital Regional,token_dictionary_match,del
+locality,"CASCO URBANO Y VEREDAS SAN Ignacio, san Isidro",casco urbano y veredas san ignacio san isidro,Casco Urbano and Veredas San Ignacio San Isidro,token_dictionary_match,y
+locality,CASCO URBANOS DE SAN GIL,casco urbanos de san gil,Casco Urbanos of San Gil,token_dictionary_match,de
+locality,CEMENTERIO LA RESURRECCION,cementerio la resurreccion,Cementerio the Resurreccion,token_dictionary_match,la
+locality,CENTRO,centro,Centro,locality_passthrough,
+locality,CENTRO POBLADO CASA DE BARRO,centro poblado casa de barro,Centro Poblado Casa of Barro,token_dictionary_match,de
+locality,CENTRO POBLADO CASCAJERO,centro poblado cascajero,Centro Poblado Cascajero,locality_passthrough,
+locality,CERCA AL CASCO URBANO (VEREDA san jose chaguete),cerca al casco urbano vereda san jose chaguete,Cerca Al Casco Urbano Rural Hamlet San Jose Chaguete,token_dictionary_match,vereda
+locality,CERCA AL CASCO URBANO JORDAN,cerca al casco urbano jordan,Cerca Al Casco Urbano Jordan,locality_passthrough,
+locality,CERRO LA HERMITA,cerro la hermita,Cerro the Hermita,token_dictionary_match,la
+locality,CERRO PICACHO DEL ZORRO,cerro picacho del zorro,Cerro Picacho of the Zorro,token_dictionary_match,del
+locality,CERRO SAN RAMON,cerro san ramon,Cerro San Ramon,locality_passthrough,
+locality,CIUDADELA NUEVO GIRON,ciudadela nuevo giron,Ciudadela Nuevo Giron,locality_passthrough,
+locality,COLAPSO ALCANTARILLADO MUNICIPAL,colapso alcantarillado municipal,Colapso Alcantarillado Municipal,locality_passthrough,
+locality,CORREGIMIENTO ACAPULCO,corregimiento acapulco,Township Acapulco,token_dictionary_match,corregimiento
+locality,CORREGIMIENTO BADO REAL,corregimiento bado real,Township Bado Real,token_dictionary_match,corregimiento
+locality,CORREGIMIENTO BARRIO NUEVO,corregimiento barrio nuevo,Township Neighborhood Nuevo,token_dictionary_match,"corregimiento, barrio"
+locality,CORREGIMIENTO BOCAS DEL ROSARIO,corregimiento bocas del rosario,Township Bocas of the Rosario,token_dictionary_match,"corregimiento, del"
+locality,CORREGIMIENTO CHINGALE,corregimiento chingale,Township Chingale,token_dictionary_match,corregimiento
+locality,CORREGIMIENTO DE BERLIN,corregimiento de berlin,Township of Berlin,token_dictionary_match,"corregimiento, de"
+locality,CORREGIMIENTO DE CINCELADA VEREDA TURE,corregimiento de cincelada vereda ture,Township of Cincelada Rural Hamlet Ture,token_dictionary_match,"corregimiento, de, vereda"
+locality,CORREGIMIENTO DE PUERTO ARAUJO,corregimiento de puerto araujo,Township of Puerto Araujo,token_dictionary_match,"corregimiento, de"
+locality,CORREGIMIENTO EL CENTRO SECTOR LA CARRILERA,corregimiento el centro sector la carrilera,Township the Centro Sector the Carrilera,token_dictionary_match,"corregimiento, el, la"
+locality,CORREGIMIENTO EL CENTRO SECTOR LA COLORADA,corregimiento el centro sector la colorada,Township the Centro Sector the Colorada,token_dictionary_match,"corregimiento, el, la"
+locality,CORREGIMIENTO EL MOHAN,corregimiento el mohan,Township the Mohan,token_dictionary_match,"corregimiento, el"
+locality,CORREGIMIENTO GALAPAGOS,corregimiento galapagos,Township Galapagos,token_dictionary_match,corregimiento
+locality,CORREGIMIENTO LA FUENTE,corregimiento la fuente,Township the Fuente,token_dictionary_match,"corregimiento, la"
+locality,CORREGIMIENTO LA INDIA,corregimiento la india,Township the India,token_dictionary_match,"corregimiento, la"
+locality,CORREGIMIENTO LA PLAZUELA,corregimiento la plazuela,Township the Plazuela,token_dictionary_match,"corregimiento, la"
+locality,CORREGIMIENTO LA PUTANA,corregimiento la putana,Township the Putana,token_dictionary_match,"corregimiento, la"
+locality,CORREGIMIENTO LA TIGRA,corregimiento la tigra,Township the Tigra,token_dictionary_match,"corregimiento, la"
+locality,"CORREGIMIENTO LA TIGRA, CUESTA RICA, BAJO RIONEGRO, HONDURAS",corregimiento la tigra cuesta rica bajo rionegro honduras,Township the Tigra Cuesta Rica Bajo Rionegro Honduras,token_dictionary_match,"corregimiento, la"
+locality,CORREGIMIENTO LAGUNA DE ORTICES,corregimiento laguna de ortices,Township Laguna of Ortices,token_dictionary_match,"corregimiento, de"
+locality,CORREGIMIENTO PLAN DE ARMAS,corregimiento plan de armas,Township Plan of Armas,token_dictionary_match,"corregimiento, de"
+locality,CORREGIMIENTO PROVINCIA,corregimiento provincia,Township Provincia,token_dictionary_match,corregimiento
+locality,CORREGIMIENTO PUENTE SOGAMOSO,corregimiento puente sogamoso,Township Puente Sogamoso,token_dictionary_match,corregimiento
+locality,CORREGIMIENTO PUERTO ARAUJO Y VEREDA EL SAN JUAN,corregimiento puerto araujo y vereda el san juan,Township Puerto Araujo and Rural Hamlet the San Juan,token_dictionary_match,"corregimiento, y, vereda, el"
+locality,CORREGIMIENTO PUERTO ARAUJO Y VEREDA EL VALIENTE,corregimiento puerto araujo y vereda el valiente,Township Puerto Araujo and Rural Hamlet the Valiente,token_dictionary_match,"corregimiento, y, vereda, el"
+locality,CORREGIMIENTO PUERTO NUEVO,corregimiento puerto nuevo,Township Puerto Nuevo,token_dictionary_match,corregimiento
+locality,CORREGIMIENTO RIACHUELO,corregimiento riachuelo,Township Riachuelo,token_dictionary_match,corregimiento
+locality,CORREGIMIENTO SAN BENITO NUEVO,corregimiento san benito nuevo,Township San Benito Nuevo,token_dictionary_match,corregimiento
+locality,CORREGIMIENTO SAN JOSE DE SUAITA,corregimiento san jose de suaita,Township San Jose of Suaita,token_dictionary_match,"corregimiento, de"
+locality,CORREGIMIENTO SAN JUAN BOSCO,corregimiento san juan bosco,Township San Juan Bosco,token_dictionary_match,corregimiento
+locality,CORREGIMIENTO SAN RAFAEL DE LEBRIJA,corregimiento san rafael de lebrija,Township San Rafael of Lebrija,token_dictionary_match,"corregimiento, de"
+locality,CORREGIMIENTO SANTA CRUZ,corregimiento santa cruz,Township Santa Cruz,token_dictionary_match,corregimiento
+locality,CORREGIMIENTO SANTA RITA,corregimiento santa rita,Township Santa Rita,token_dictionary_match,corregimiento
+locality,CORREGIMIENTO SINCELADA,corregimiento sincelada,Township Sincelada,token_dictionary_match,corregimiento
+locality,CORREGIMIENTOS CAMPO CAPOTE Y LAS MONTOYAS,corregimientos campo capote y las montoyas,Corregimientos Campo Capote and Las Montoyas,token_dictionary_match,y
+locality,"CORREGIMIENTOS PAPAYAL, SAN RAFAEL",corregimientos papayal san rafael,"Corregimientos Papayal, San Rafael",locality_passthrough,
+locality,"CORREGIMIENTOS PLAN DE ARMAS, MIRA LINDO Y SAN IGNACIO",corregimientos plan de armas mira lindo y san ignacio,Corregimientos Plan of Armas Mira Lindo and San Ignacio,token_dictionary_match,"de, y"
+locality,CORREGIMIIENTO DE SEVILLA,corregimiiento de sevilla,Corregimiiento of Sevilla,token_dictionary_match,de
+locality,CORREGIMINTO PROVINCIA,corregiminto provincia,Corregiminto Provincia,locality_passthrough,
+locality,CRECIENTE DEL RIO DE ORO,creciente del rio de oro,Creciente of the Rio of Oro,token_dictionary_match,"del, de"
+locality,CRECIENTE DEL RIO MOGOTICOS,creciente del rio mogoticos,Creciente of the Rio Mogoticos,token_dictionary_match,del
+locality,CRECIENTE RIO JORDAN Y PESCADERITO,creciente rio jordan y pescaderito,Creciente Rio Jordan and Pescaderito,token_dictionary_match,y
+locality,EL SOCORRO CENTRO,el socorro centro,The Socorro Centro,token_dictionary_match,el
+locality,ENTRADA AL MUNICIPIO SECTOR EL MATADERO,entrada al municipio sector el matadero,Entrada Al Municipio Sector the Matadero,token_dictionary_match,el
+locality,EROCION RIO MAGDALENA,erocion rio magdalena,Erocion Rio Magdalena,locality_passthrough,
+locality,ESCARPA SECTOR CRISTAL BAJO,escarpa sector cristal bajo,Escarpa Sector Cristal Bajo,locality_passthrough,
+locality,ESTACION DE SERVICIO ORIENTAL,estacion de servicio oriental,Estacion of Servicio Oriental,token_dictionary_match,de
+locality,FINCA LA FORTUNA,finca la fortuna,Finca the Fortuna,token_dictionary_match,la
+locality,FINCA LAS MARGARITAS,finca las margaritas,Finca Las Margaritas,locality_passthrough,
+locality,FINCA SAN ANTONIO VEREDA SAN ISIDRO,finca san antonio vereda san isidro,Finca San Antonio Rural Hamlet San Isidro,token_dictionary_match,vereda
+locality,FINCA SIPRIALES KM 16 VIA A BUCARAMANGA,finca sipriales km 16 via a bucaramanga,Finca Sipriales Km 16 Road A Bucaramanga,token_dictionary_match,via
+locality,HOSPITAL DE MATANZA,hospital de matanza,Hospital of Matanza,token_dictionary_match,de
+locality,KILOMETRO 16 VIA A BUCARAMANGA,kilometro 16 via a bucaramanga,Kilometro 16 Road A Bucaramanga,token_dictionary_match,via
+locality,KILOMETRO 18 VIA A BUCARAMANGA,kilometro 18 via a bucaramanga,Kilometro 18 Road A Bucaramanga,token_dictionary_match,via
+locality,KILOMETRO 3 VIA A BUCARAMANGA,kilometro 3 via a bucaramanga,Kilometro 3 Road A Bucaramanga,token_dictionary_match,via
+locality,KILOMETRO 8 FINCA EL MANATI,kilometro 8 finca el manati,Kilometro 8 Finca the Manati,token_dictionary_match,el
+locality,KM 16 VIA A BUCARAMANGA,km 16 via a bucaramanga,Km 16 Road A Bucaramanga,token_dictionary_match,via
+locality,KM 3 VIA A BUCARAMANGA,km 3 via a bucaramanga,Km 3 Road A Bucaramanga,token_dictionary_match,via
+locality,KM 50 VIA GIRON - ZAPATOCA,km 50 via giron - zapatoca,Km 50 Road Giron - Zapatoca,token_dictionary_match,via
+locality,KM 52 + 300 TRONCAL DEL CARARE,km 52 300 troncal del carare,Km 52 300 Troncal of the Carare,token_dictionary_match,del
+locality,KM 53 VIA BUCARAMANGA A BOGOTA,km 53 via bucaramanga a bogota,Km 53 Road Bucaramanga A Bogota,token_dictionary_match,via
+locality,KM 6 VIA A BUCARAMANGA,km 6 via a bucaramanga,Km 6 Road A Bucaramanga,token_dictionary_match,via
+locality,KM 8 VIA A BUCARAMANGA,km 8 via a bucaramanga,Km 8 Road A Bucaramanga,token_dictionary_match,via
+locality,"LAS POMPAS, LOS CANELOS",las pompas los canelos,"Las Pompas, Los Canelos",locality_passthrough,
+locality,LIMITES CON COBARACHIA (BOYACA),limites con cobarachia boyaca,Limites Con Cobarachia (Boyaca),locality_passthrough,
+locality,MERCADO CAMPESINO,mercado campesino,Mercado Campesino,locality_passthrough,
+locality,PARA DE IGUAQUE LIMITES CON BOYACA,para de iguaque limites con boyaca,Para of Iguaque Limites Con Boyaca,token_dictionary_match,de
+locality,PEÑA DE ORO CHIQUITO,pena de oro chiquito,Pena of Oro Chiquito,token_dictionary_match,de
+locality,PLAZA DE MERCADO Y SECTOR CENTRO,plaza de mercado y sector centro,Plaza of Mercado and Sector Centro,token_dictionary_match,"de, y"
+locality,PUENTE EL PALENQUE RIO FONCE,puente el palenque rio fonce,Puente the Palenque Rio Fonce,token_dictionary_match,el
+locality,PUENTE QUEBRADA SANTA CLARA,puente quebrada santa clara,Puente Quebrada Santa Clara,locality_passthrough,
+locality,PUENTE SOBRE EL RIO OIBITA/VIA NACIONAL,puente sobre el rio oibita via nacional,Puente Sobre the Rio Oibita Road Nacional,token_dictionary_match,"el, via"
+locality,PUERTO ARAUJO,puerto araujo,Puerto Araujo,locality_passthrough,
+locality,QUEBRADA BARICHARA,quebrada barichara,Quebrada Barichara,locality_passthrough,
+locality,QUEBRADA CURITI,quebrada curiti,Quebrada Curiti,locality_passthrough,
+locality,QUEBRADA EL BAUL Y MONTE OSCURO,quebrada el baul y monte oscuro,Quebrada the Baul and Monte Oscuro,token_dictionary_match,"el, y"
+locality,QUEBRADA EL CANELO,quebrada el canelo,Quebrada the Canelo,token_dictionary_match,el
+locality,QUEBRADA EL CONSUELO,quebrada el consuelo,Quebrada the Consuelo,token_dictionary_match,el
+locality,QUEBRADA EL PANTANO,quebrada el pantano,Quebrada the Pantano,token_dictionary_match,el
+locality,QUEBRADA EL ROPERO,quebrada el ropero,Quebrada the Ropero,token_dictionary_match,el
+locality,QUEBRADA FAVITERA,quebrada favitera,Quebrada Favitera,locality_passthrough,
+locality,QUEBRADA HELECHALES,quebrada helechales,Quebrada Helechales,locality_passthrough,
+locality,QUEBRADA LA ANGULA,quebrada la angula,Quebrada the Angula,token_dictionary_match,la
+locality,QUEBRADA LA CHIMERA,quebrada la chimera,Quebrada the Chimera,token_dictionary_match,la
+locality,QUEBRADA LA CHIMERA VEREDA SABANETA,quebrada la chimera vereda sabaneta,Quebrada the Chimera Rural Hamlet Sabaneta,token_dictionary_match,"la, vereda"
+locality,QUEBRADA LA GRANDE Y RIO DE ORO,quebrada la grande y rio de oro,Quebrada the Grande and Rio of Oro,token_dictionary_match,"la, y, de"
+locality,QUEBRADA LA HONDA,quebrada la honda,Quebrada the Honda,token_dictionary_match,la
+locality,QUEBRADA LA LEONA SECTOR SANTA CLARA,quebrada la leona sector santa clara,Quebrada the Leona Sector Santa Clara,token_dictionary_match,la
+locality,QUEBRADA LA LLORONA,quebrada la llorona,Quebrada the Llorona,token_dictionary_match,la
+locality,QUEBRADA LA MAGNOLIA,quebrada la magnolia,Quebrada the Magnolia,token_dictionary_match,la
+locality,QUEBRADA LA PARAMERA,quebrada la paramera,Quebrada the Paramera,token_dictionary_match,la
+locality,QUEBRADA LA PINCHOTA,quebrada la pinchota,Quebrada the Pinchota,token_dictionary_match,la
+locality,QUEBRADA LA WITOCA,quebrada la witoca,Quebrada the Witoca,token_dictionary_match,la
+locality,QUEBRADA LAS CAMELIAS BARRIO LA FERIA,quebrada las camelias barrio la feria,Quebrada Las Camelias Neighborhood the Feria,token_dictionary_match,"barrio, la"
+locality,QUEBRADA LAS CRUCES,quebrada las cruces,Quebrada Las Cruces,locality_passthrough,
+locality,QUEBRADA LAS LAJAS Y LA PINCHOTA,quebrada las lajas y la pinchota,Quebrada Las Lajas and the Pinchota,token_dictionary_match,"y, la"
+locality,QUEBRADA PENITENTE,quebrada penitente,Quebrada Penitente,locality_passthrough,
+locality,QUEBRADA PERCHIQUEZ,quebrada perchiquez,Quebrada Perchiquez,locality_passthrough,
+locality,QUEBRADA SANTA BARBARA,quebrada santa barbara,Quebrada Santa Barbara,locality_passthrough,
+locality,QUEBRADA SANTA CLARA,quebrada santa clara,Quebrada Santa Clara,locality_passthrough,
+locality,QUEBRADA SANTA ROSA PEDREGALES,quebrada santa rosa pedregales,Quebrada Santa Rosa Pedregales,locality_passthrough,
+locality,QUEBRADA SILGARA,quebrada silgara,Quebrada Silgara,locality_passthrough,
+locality,QUEBRADA TABACUTA,quebrada tabacuta,Quebrada Tabacuta,locality_passthrough,
+locality,QUEBRADAS CHIVIRITI Y LA WITOCA,quebradas chiviriti y la witoca,Quebradas Chiviriti and the Witoca,token_dictionary_match,"y, la"
+locality,QUEBRADAS EL MOLINO Y TAJAMAR,quebradas el molino y tajamar,Quebradas the Molino and Tajamar,token_dictionary_match,"el, y"
+locality,QUEBRADAS LA VEGA Y LA CHIRIGUA,quebradas la vega y la chirigua,Quebradas the Vega and the Chirigua,token_dictionary_match,"la, y, la"
+locality,QUEBRRADA SANTA CLARA,quebrrada santa clara,Quebrrada Santa Clara,locality_passthrough,
+locality,REPRESA LA BATANERA,represa la batanera,Represa the Batanera,token_dictionary_match,la
+locality,RIO CACHIRA SECTOR EL TALADRO,rio cachira sector el taladro,Rio Cachira Sector the Taladro,token_dictionary_match,el
+locality,RIO CASCAJALES,rio cascajales,Rio Cascajales,locality_passthrough,
+locality,RIO CHARTA SECTOR LA PLAYA,rio charta sector la playa,Rio Charta Sector the Playa,token_dictionary_match,la
+locality,RIO CHICAMOCHA,rio chicamocha,Rio Chicamocha,locality_passthrough,
+locality,RIO CUCHINERO,rio cuchinero,Rio Cuchinero,locality_passthrough,
+locality,RIO FRIO Y QUEBRADA LA IGLESIA,rio frio y quebrada la iglesia,Rio Frio and Quebrada the Iglesia,token_dictionary_match,"y, la"
+locality,RIO GUAYABITO BARRIO LOS PINOS,rio guayabito barrio los pinos,Rio Guayabito Neighborhood Los Pinos,token_dictionary_match,barrio
+locality,RIO HUERTAS,rio huertas,Rio Huertas,locality_passthrough,
+locality,RIO LEBRIJA SECTOR BOCAS DE LA TIGRA,rio lebrija sector bocas de la tigra,Rio Lebrija Sector Bocas of the Tigra,token_dictionary_match,"de, la"
+locality,RIO MAGDALENA VUELTA DE PERICOS,rio magdalena vuelta de pericos,Rio Magdalena Vuelta of Pericos,token_dictionary_match,de
+locality,RIO OPONCITO VEREDA LAS MARGARITAS,rio oponcito vereda las margaritas,Rio Oponcito Rural Hamlet Las Margaritas,token_dictionary_match,vereda
+locality,RIO PALERMO,rio palermo,Rio Palermo,locality_passthrough,
+locality,RIO TUNEVO VIA A MACARAVITA,rio tunevo via a macaravita,Rio Tunevo Road A Macaravita,token_dictionary_match,via
+locality,RIO VERGELANO,rio vergelano,Rio Vergelano,locality_passthrough,
+locality,RUTA DEL CACAO PR-26,ruta del cacao pr-26,Ruta of the Cacao Pr-26,token_dictionary_match,del
+locality,RUTA DEL CACAO PR-44+700,ruta del cacao pr-44 700,Ruta of the Cacao Pr-44 700,token_dictionary_match,del
+locality,SALIDA A CIMITARRA BARRIO ATALAYA,salida a cimitarra barrio atalaya,Salida A Cimitarra Neighborhood Atalaya,token_dictionary_match,barrio
+locality,SALIDA DEL PUEBLO HACIA ENCISO,salida del pueblo hacia enciso,Salida of the Pueblo Hacia Enciso,token_dictionary_match,del
+locality,SALIDA HACIA BUCARAMANGA,salida hacia bucaramanga,Salida Hacia Bucaramanga,locality_passthrough,
+locality,SAN JUAN BOSC LA VEREDA,san juan bosc la vereda,San Juan Bosc the Rural Hamlet,token_dictionary_match,"la, vereda"
+locality,SANTANDER,santander,Santander,locality_passthrough,
+locality,SCTOR TENERIFE CORREGIMIENTO EL CENTRO,sctor tenerife corregimiento el centro,Sctor Tenerife Township the Centro,token_dictionary_match,"corregimiento, el"
+locality,SECTOR ALTAMIRA,sector altamira,Sector Altamira,locality_passthrough,
+locality,SECTOR CASCO URBANO SUCRE,sector casco urbano sucre,Sector Casco Urbano Sucre,locality_passthrough,
+locality,SECTOR CENTRO DE LA CIUDAD,sector centro de la ciudad,Sector Centro of the Ciudad,token_dictionary_match,"de, la"
+locality,SECTOR CERRO RUITOQUE,sector cerro ruitoque,Sector Cerro Ruitoque,locality_passthrough,
+locality,SECTOR CIRO OLARTE VIA HACIA GUADALUPE,sector ciro olarte via hacia guadalupe,Sector Ciro Olarte Road Hacia Guadalupe,token_dictionary_match,via
+locality,SECTOR COLA DE PATOVIA SAN VICENTE - BARRANCABERMEJA,sector cola de patovia san vicente - barrancabermeja,Sector Cola of Patovia San Vicente - Barrancabermeja,token_dictionary_match,de
+locality,SECTOR CORTADERAS,sector cortaderas,Sector Cortaderas,locality_passthrough,
+locality,"SECTOR EL BOQUERON, SAN FRANCISCO",sector el boqueron san francisco,Sector the Boqueron San Francisco,token_dictionary_match,el
+locality,SECTOR EL CENTRO,sector el centro,Sector the Centro,token_dictionary_match,el
+locality,SECTOR EL CHAMIZAL VEREDA AVENDAÑO,sector el chamizal vereda avendano,Sector the Chamizal Rural Hamlet Avendano,token_dictionary_match,"el, vereda"
+locality,SECTOR EL CRUCE RUTA DEL SOL,sector el cruce ruta del sol,Sector the Cruce Ruta of the Sol,token_dictionary_match,"el, del"
+locality,SECTOR EL GUAYABO,sector el guayabo,Sector the Guayabo,token_dictionary_match,el
+locality,SECTOR EL GUAYABO RIO MAGDALENA,sector el guayabo rio magdalena,Sector the Guayabo Rio Magdalena,token_dictionary_match,el
+locality,SECTOR EL MADROÑO Y GUAYABAL,sector el madrono y guayabal,Sector the Madrono and Guayabal,token_dictionary_match,"el, y"
+locality,SECTOR EL MUELLE DE ECOPETROL,sector el muelle de ecopetrol,Sector the Muelle of Ecopetrol,token_dictionary_match,"el, de"
+locality,SECTOR EL PALENQUE VIA NACIONAL,sector el palenque via nacional,Sector the Palenque Road Nacional,token_dictionary_match,"el, via"
+locality,SECTOR EL PINO Y VEREDA LLANO GRANDE,sector el pino y vereda llano grande,Sector the Pino and Rural Hamlet Llano Grande,token_dictionary_match,"el, y, vereda"
+locality,SECTOR EL PUENTE,sector el puente,Sector the Puente,token_dictionary_match,el
+locality,SECTOR EL PUENTE/QUEBRADA SANTA ROSA,sector el puente quebrada santa rosa,Sector the Puente Quebrada Santa Rosa,token_dictionary_match,el
+locality,SECTOR EL TABLAZO,sector el tablazo,Sector the Tablazo,token_dictionary_match,el
+locality,SECTOR EL TANQUE VIA A SOTO NORTE,sector el tanque via a soto norte,Sector the Tanque Road A Soto Norte,token_dictionary_match,"el, via"
+locality,SECTOR EL VALIENTE,sector el valiente,Sector the Valiente,token_dictionary_match,el
+locality,SECTOR GUATIGUARA,sector guatiguara,Sector Guatiguara,locality_passthrough,
+locality,SECTOR GUATIGUARA Y VIA NACIONAL,sector guatiguara y via nacional,Sector Guatiguara and Road Nacional,token_dictionary_match,"y, via"
+locality,SECTOR KM 22+500 VIA SAN GIL,sector km 22 500 via san gil,Sector Km 22 500 Road San Gil,token_dictionary_match,via
+locality,SECTOR LA 200,sector la 200,Sector the 200,token_dictionary_match,la
+locality,SECTOR LA CANTERA,sector la cantera,Sector the Cantera,token_dictionary_match,la
+locality,SECTOR LA INMACULADA,sector la inmaculada,Sector the Inmaculada,token_dictionary_match,la
+locality,SECTOR LA PISCINA,sector la piscina,Sector the Piscina,token_dictionary_match,la
+locality,SECTOR LA PLAYA Y EL ZANCUDO,sector la playa y el zancudo,Sector the Playa and the Zancudo,token_dictionary_match,"la, y, el"
+locality,"SECTOR LA PLAYA, RIO CHARTA",sector la playa rio charta,Sector the Playa Rio Charta,token_dictionary_match,la
+locality,SECTOR LA TIGRANA,sector la tigrana,Sector the Tigrana,token_dictionary_match,la
+locality,SECTOR LA VATICOLA,sector la vaticola,Sector the Vaticola,token_dictionary_match,la
+locality,SECTOR LA VIRGEN VIA NACIONAL,sector la virgen via nacional,Sector the Virgen Road Nacional,token_dictionary_match,"la, via"
+locality,SECTOR LA Y VIA A SAN GIL,sector la y via a san gil,Sector the and Road A San Gil,token_dictionary_match,"la, y, via"
+locality,SECTOR LAS JUNTAS,sector las juntas,Sector Las Juntas,locality_passthrough,
+locality,SECTOR LO CUROS VIA A MALAGA,sector lo curos via a malaga,Sector Lo Curos Road A Malaga,token_dictionary_match,via
+locality,"SECTOR LOS CUROS, EL RECREO Y VIA A MALAGA",sector los curos el recreo y via a malaga,Sector Los Curos the Recreo and Road A Malaga,token_dictionary_match,"el, y, via"
+locality,SECTOR MATA DE CACAO,sector mata de cacao,Sector Mata of Cacao,token_dictionary_match,de
+locality,SECTOR MIRAMANGA,sector miramanga,Sector Miramanga,locality_passthrough,
+locality,SECTOR MONTE GRANDE,sector monte grande,Sector Monte Grande,locality_passthrough,
+locality,SECTOR ORIENTAL Y NORTE,sector oriental y norte,Sector Oriental and Norte,token_dictionary_match,y
+locality,SECTOR PEÑA NEGRA,sector pena negra,Sector Peña Negra,locality_passthrough,
+locality,SECTOR POZO 7,sector pozo 7,Sector Pozo 7,locality_passthrough,
+locality,SECTOR POZO 7 Y LA BENDICION DE DIOS,sector pozo 7 y la bendicion de dios,Sector Pozo 7 and the Bendicion of Dios,token_dictionary_match,"y, la, de"
+locality,SECTOR PUENTE SANTA CLARA,sector puente santa clara,Sector Puente Santa Clara,locality_passthrough,
+locality,SECTOR PUENTE TONA,sector puente tona,Sector Puente Tona,locality_passthrough,
+locality,SECTOR QUEBRADA EL CANELO,sector quebrada el canelo,Sector Quebrada the Canelo,token_dictionary_match,el
+locality,SECTOR RUITOQUE,sector ruitoque,Sector Ruitoque,locality_passthrough,
+locality,SECTOR RUITOQUE BAJO,sector ruitoque bajo,Sector Ruitoque Bajo,locality_passthrough,
+locality,SECTOR SEILAN,sector seilan,Sector Seilan,locality_passthrough,
+locality,SECTOR SUPARI,sector supari,Sector Supari,locality_passthrough,
+locality,SECTOR VANEGAS Y CONCHAL,sector vanegas y conchal,Sector Vanegas and Conchal,token_dictionary_match,y
+locality,SECTOR VERSALLES FINCA DEL SR JOSERONDEROS,sector versalles finca del sr joseronderos,Sector Versalles Finca of the Sr Joseronderos,token_dictionary_match,del
+locality,SECTOR VIJAGUAL,sector vijagual,Sector Vijagual,locality_passthrough,
+locality,SECTOR VILLAS DEL GIRARDOT,sector villas del girardot,Sector Villas of the Girardot,token_dictionary_match,del
+locality,SECTOR VUELTA PERICO,sector vuelta perico,Sector Vuelta Perico,locality_passthrough,
+locality,SECTORES CALLE 45 VIA A CHIMITA,sectores calle 45 via a chimita,Sectores Calle 45 Road A Chimita,token_dictionary_match,via
+locality,"SECTORES LUZ DE SALVACION, CRISTAL BAJO",sectores luz de salvacion cristal bajo,Sectores Luz of Salvacion Cristal Bajo,token_dictionary_match,de
+locality,SECTORES SITIO NUEVO Y VUELTA PERICO,sectores sitio nuevo y vuelta perico,Sectores Sitio Nuevo and Vuelta Perico,token_dictionary_match,y
+locality,SOCTOR ORIENTAL,soctor oriental,Soctor Oriental,locality_passthrough,
+locality,SUCTORES DEL PARAMO,suctores del paramo,Suctores of the Paramo,token_dictionary_match,del
+locality,TODA LA JURISDICCION,toda la jurisdiccion,Entire jurisdiction,exact_dictionary_match,toda la jurisdiccion
+locality,TODO EL CASCO URBANO,todo el casco urbano,Todo the Casco Urbano,token_dictionary_match,el
+locality,TRONCAL DEL CARARE,troncal del carare,Troncal of the Carare,token_dictionary_match,del
+locality,VARIAS VEREDAS,varias veredas,Varias Veredas,locality_passthrough,
+locality,VARIOS SECTORES,varios sectores,Varios Sectores,locality_passthrough,
+locality,VERA LAS MONTUYAS Y CIENAGA DEL CHUCURI,vera las montuyas y cienaga del chucuri,Vera Las Montuyas and Cienaga of the Chucuri,token_dictionary_match,"y, del"
+locality,VERDA LA VIRGINIA,verda la virginia,Verda the Virginia,token_dictionary_match,la
+locality,VEREA GUATIGUARA,verea guatiguara,Verea Guatiguara,locality_passthrough,
+locality,VEREA ROSA BLANCA,verea rosa blanca,Verea Rosa Blanca,locality_passthrough,
+locality,VERED LOS BURROS,vered los burros,Vered Los Burros,locality_passthrough,
+locality,VEREDA A NEGREÑA,vereda a negrena,Rural Hamlet A Negrena,token_dictionary_match,vereda
+locality,VEREDA ACAPULCO,vereda acapulco,Rural Hamlet Acapulco,token_dictionary_match,vereda
+locality,VEREDA AGUA BLANCA,vereda agua blanca,Rural Hamlet Agua Blanca,token_dictionary_match,vereda
+locality,VEREDA AGUA BONITA,vereda agua bonita,Rural Hamlet Agua Bonita,token_dictionary_match,vereda
+locality,VEREDA AGUA FRIA,vereda agua fria,Rural Hamlet Agua Fria,token_dictionary_match,vereda
+locality,VEREDA AGUA LOS PINOS,vereda agua los pinos,Rural Hamlet Agua Los Pinos,token_dictionary_match,vereda
+locality,VEREDA AGUADITA SECTOR LA RAYADA,vereda aguadita sector la rayada,Rural Hamlet Aguadita Sector the Rayada,token_dictionary_match,"vereda, la"
+locality,VEREDA AGUAS BLANCAS BAJO SIMACOTA,vereda aguas blancas bajo simacota,Rural Hamlet Aguas Blancas Bajo Simacota,token_dictionary_match,vereda
+locality,VEREDA AGUAS CLARAS,vereda aguas claras,Rural Hamlet Aguas Claras,token_dictionary_match,vereda
+locality,VEREDA AGUAS NEGRAS,vereda aguas negras,Rural Hamlet Aguas Negras,token_dictionary_match,vereda
+locality,VEREDA ALTA MIRA,vereda alta mira,Rural Hamlet Alta Mira,token_dictionary_match,vereda
+locality,VEREDA ANGOSTURAS,vereda angosturas,Rural Hamlet Angosturas,token_dictionary_match,vereda
+locality,VEREDA ARENAL,vereda arenal,Rural Hamlet Arenal,token_dictionary_match,vereda
+locality,VEREDA BACHIGA,vereda bachiga,Rural Hamlet Bachiga,token_dictionary_match,vereda
+locality,VEREDA BAJO PALMAS Y EL PAVO,vereda bajo palmas y el pavo,Rural Hamlet Bajo Palmas and the Pavo,token_dictionary_match,"vereda, y, el"
+locality,VEREDA BARBULA SECTOR EL MORAL,vereda barbula sector el moral,Rural Hamlet Barbula Sector the Moral,token_dictionary_match,"vereda, el"
+locality,VEREDA BARRIO NUENO,vereda barrio nueno,Rural Hamlet Neighborhood Nueno,token_dictionary_match,"vereda, barrio"
+locality,VEREDA BELLA VISTA,vereda bella vista,Rural Hamlet Bella Vista,token_dictionary_match,vereda
+locality,VEREDA BOCAS DE LA CORCOVADA,vereda bocas de la corcovada,Rural Hamlet Bocas of the Corcovada,token_dictionary_match,"vereda, de, la"
+locality,VEREDA BOCAS DE LA TIGRA,vereda bocas de la tigra,Rural Hamlet Bocas of the Tigra,token_dictionary_match,"vereda, de, la"
+locality,VEREDA BOCAS DEL CARARE Y CIENAGA,vereda bocas del carare y cienaga,Rural Hamlet Bocas of the Carare and Cienaga,token_dictionary_match,"vereda, del, y"
+locality,VEREDA BOMBONÁ SECTOR EL TERMINO,vereda bombona sector el termino,Rural Hamlet Bombona Sector the Termino,token_dictionary_match,"vereda, el"
+locality,VEREDA BOYAGA,vereda boyaga,Rural Hamlet Boyaga,token_dictionary_match,vereda
+locality,VEREDA BOYAGA SECTOR LA PAJA,vereda boyaga sector la paja,Rural Hamlet Boyaga Sector the Paja,token_dictionary_match,"vereda, la"
+locality,VEREDA BRISAS DEL TALADRO,vereda brisas del taladro,Rural Hamlet Brisas of the Taladro,token_dictionary_match,"vereda, del"
+locality,VEREDA CABRERITAS,vereda cabreritas,Rural Hamlet Cabreritas,token_dictionary_match,vereda
+locality,VEREDA CACHIRI VIA A CERRO TURBAY,vereda cachiri via a cerro turbay,Rural Hamlet Cachiri Road A Cerro Turbay,token_dictionary_match,"vereda, via"
+locality,VEREDA CACHIRICITO ALTO,vereda cachiricito alto,Rural Hamlet Cachiricito Alto,token_dictionary_match,vereda
+locality,VEREDA CACHIRICITO BAJO,vereda cachiricito bajo,Rural Hamlet Cachiricito Bajo,token_dictionary_match,vereda
+locality,VEREDA CAIRASCO,vereda cairasco,Rural Hamlet Cairasco,token_dictionary_match,vereda
+locality,VEREDA CALICHAL SECTOR EL TERMINO,vereda calichal sector el termino,Rural Hamlet Calichal Sector the Termino,token_dictionary_match,"vereda, el"
+locality,VEREDA CALICHANA,vereda calichana,Rural Hamlet Calichana,token_dictionary_match,vereda
+locality,VEREDA CAMPO GALA,vereda campo gala,Rural Hamlet Campo Gala,token_dictionary_match,vereda
+locality,VEREDA CANTA BARA,vereda canta bara,Rural Hamlet Canta Bara,token_dictionary_match,vereda
+locality,VEREDA CANTA VARA,vereda canta vara,Rural Hamlet Canta Vara,token_dictionary_match,vereda
+locality,VEREDA CANTABARA,vereda cantabara,Rural Hamlet Cantabara,token_dictionary_match,vereda
+locality,VEREDA CARABALI,vereda carabali,Rural Hamlet Carabali,token_dictionary_match,vereda
+locality,VEREDA CARABOBO,vereda carabobo,Rural Hamlet Carabobo,token_dictionary_match,vereda
+locality,VEREDA CARABOBO SECTOR TABETA,vereda carabobo sector tabeta,Rural Hamlet Carabobo Sector Tabeta,token_dictionary_match,vereda
+locality,VEREDA CARAGUA ALTO,vereda caragua alto,Rural Hamlet Caragua Alto,token_dictionary_match,vereda
+locality,VEREDA CARPINTEROS,vereda carpinteros,Rural Hamlet Carpinteros,token_dictionary_match,vereda
+locality,VEREDA CASCAME,vereda cascame,Rural Hamlet Cascame,token_dictionary_match,vereda
+locality,VEREDA CAÑO LIMON,vereda cano limon,Rural Hamlet Cano Limon,token_dictionary_match,vereda
+locality,VEREDA CEDRALES LIMITES CON CONTRATACION,vereda cedrales limites con contratacion,Rural Hamlet Cedrales Limites Con Contratacion,token_dictionary_match,vereda
+locality,VEREDA CENACUTA,vereda cenacuta,Rural Hamlet Cenacuta,token_dictionary_match,vereda
+locality,VEREDA CHOCA,vereda choca,Rural Hamlet Choca,token_dictionary_match,vereda
+locality,VEREDA CHOCOA,vereda chocoa,Rural Hamlet Chocoa,token_dictionary_match,vereda
+locality,VEREDA CINCELADA,vereda cincelada,Rural Hamlet Cincelada,token_dictionary_match,vereda
+locality,VEREDA CINCOMIL,vereda cincomil,Rural Hamlet Cincomil,token_dictionary_match,vereda
+locality,VEREDA CLAVELLINAS,vereda clavellinas,Rural Hamlet Clavellinas,token_dictionary_match,vereda
+locality,VEREDA CORRALFALSO,vereda corralfalso,Rural Hamlet Corralfalso,token_dictionary_match,vereda
+locality,VEREDA CUPAGA,vereda cupaga,Rural Hamlet Cupaga,token_dictionary_match,vereda
+locality,VEREDA CUTALIGUA,vereda cutaligua,Rural Hamlet Cutaligua,token_dictionary_match,vereda
+locality,VEREDA DORADAS FINCA LA CAMPIÑA,vereda doradas finca la campina,Rural Hamlet Doradas Finca the Campina,token_dictionary_match,"vereda, la"
+locality,VEREDA EL 15 EXTRACTORA MONTEREY,vereda el 15 extractora monterey,Rural Hamlet the 15 Extractora Monterey,token_dictionary_match,"vereda, el"
+locality,VEREDA EL ALTILLO,vereda el altillo,Rural Hamlet the Altillo,token_dictionary_match,"vereda, el"
+locality,VEREDA EL ALTO,vereda el alto,Rural Hamlet the Alto,token_dictionary_match,"vereda, el"
+locality,VEREDA EL APURE,vereda el apure,Rural Hamlet the Apure,token_dictionary_match,"vereda, el"
+locality,VEREDA EL ARENAL,vereda el arenal,Rural Hamlet the Arenal,token_dictionary_match,"vereda, el"
+locality,VEREDA EL ARENAS,vereda el arenas,Rural Hamlet the Arenas,token_dictionary_match,"vereda, el"
+locality,VEREDA EL BAMBU,vereda el bambu,Rural Hamlet the Bambu,token_dictionary_match,"vereda, el"
+locality,VEREDA EL CANEY,vereda el caney,Rural Hamlet the Caney,token_dictionary_match,"vereda, el"
+locality,VEREDA EL CANEY SECTOR EL CARRIZAL,vereda el caney sector el carrizal,Rural Hamlet the Caney Sector the Carrizal,token_dictionary_match,"vereda, el, el"
+locality,VEREDA EL CARACOL VIA HACIA LA LAGUNA DE ORTICES,vereda el caracol via hacia la laguna de ortices,Rural Hamlet the Caracol Road Hacia the Laguna of Ortices,token_dictionary_match,"vereda, el, via, la, de"
+locality,VEREDA EL CAUCHO,vereda el caucho,Rural Hamlet the Caucho,token_dictionary_match,"vereda, el"
+locality,VEREDA EL CENTRO,vereda el centro,Rural Hamlet the Centro,token_dictionary_match,"vereda, el"
+locality,VEREDA EL CERRO,vereda el cerro,Rural Hamlet the Cerro,token_dictionary_match,"vereda, el"
+locality,VEREDA EL CORRO,vereda el corro,Rural Hamlet the Corro,token_dictionary_match,"vereda, el"
+locality,VEREDA EL DIAMANTE,vereda el diamante,Rural Hamlet the Diamante,token_dictionary_match,"vereda, el"
+locality,VEREDA EL ESPINAL,vereda el espinal,Rural Hamlet the Espinal,token_dictionary_match,"vereda, el"
+locality,VEREDA EL FILO,vereda el filo,Rural Hamlet the Filo,token_dictionary_match,"vereda, el"
+locality,VEREDA EL GRAMAL Y BARRIO LA VICTORIA,vereda el gramal y barrio la victoria,Rural Hamlet the Gramal and Neighborhood the Victoria,token_dictionary_match,"vereda, el, y, barrio, la"
+locality,VEREDA EL GUACAL,vereda el guacal,Rural Hamlet the Guacal,token_dictionary_match,"vereda, el"
+locality,VEREDA EL GUACIMO,vereda el guacimo,Rural Hamlet the Guacimo,token_dictionary_match,"vereda, el"
+locality,VEREDA EL GUADUAL,vereda el guadual,Rural Hamlet the Guadual,token_dictionary_match,"vereda, el"
+locality,VEREDA EL GUALILO ENTRAL,vereda el gualilo entral,Rural Hamlet the Gualilo Entral,token_dictionary_match,"vereda, el"
+locality,VEREDA EL GUAMITO,vereda el guamito,Rural Hamlet the Guamito,token_dictionary_match,"vereda, el"
+locality,VEREDA EL GUAMO,vereda el guamo,Rural Hamlet the Guamo,token_dictionary_match,"vereda, el"
+locality,VEREDA EL GUAMO BAJO SIMACOTA,vereda el guamo bajo simacota,Rural Hamlet the Guamo Bajo Simacota,token_dictionary_match,"vereda, el"
+locality,VEREDA EL HOVO,vereda el hovo,Rural Hamlet the Hovo,token_dictionary_match,"vereda, el"
+locality,VEREDA EL LAVADERO,vereda el lavadero,Rural Hamlet the Lavadero,token_dictionary_match,"vereda, el"
+locality,VEREDA EL LLANITO,vereda el llanito,Rural Hamlet the Llanito,token_dictionary_match,"vereda, el"
+locality,VEREDA EL LUCHADERO,vereda el luchadero,Rural Hamlet the Luchadero,token_dictionary_match,"vereda, el"
+locality,VEREDA EL MANGLE,vereda el mangle,Rural Hamlet the Mangle,token_dictionary_match,"vereda, el"
+locality,VEREDA EL MARCITO,vereda el marcito,Rural Hamlet the Marcito,token_dictionary_match,"vereda, el"
+locality,VEREDA EL MORAL,vereda el moral,Rural Hamlet the Moral,token_dictionary_match,"vereda, el"
+locality,VEREDA EL MORRO,vereda el morro,Rural Hamlet the Morro,token_dictionary_match,"vereda, el"
+locality,VEREDA EL MOTOZO,vereda el motozo,Rural Hamlet the Motozo,token_dictionary_match,"vereda, el"
+locality,VEREDA EL NARANJO,vereda el naranjo,Rural Hamlet the Naranjo,token_dictionary_match,"vereda, el"
+locality,VEREDA EL NAUNO,vereda el nauno,Rural Hamlet the Nauno,token_dictionary_match,"vereda, el"
+locality,VEREDA EL NOVILLERO LIMITES CON SAN BENITO,vereda el novillero limites con san benito,Rural Hamlet the Novillero Limites Con San Benito,token_dictionary_match,"vereda, el"
+locality,VEREDA EL OROCO FINCA LA PEÑITA,vereda el oroco finca la penita,Rural Hamlet the Oroco Finca the Penita,token_dictionary_match,"vereda, el, la"
+locality,VEREDA EL PALCHAL,vereda el palchal,Rural Hamlet the Palchal,token_dictionary_match,"vereda, el"
+locality,VEREDA EL PALMAR,vereda el palmar,Rural Hamlet the Palmar,token_dictionary_match,"vereda, el"
+locality,VEREDA EL PANTANO,vereda el pantano,Rural Hamlet the Pantano,token_dictionary_match,"vereda, el"
+locality,VEREDA EL PERICO,vereda el perico,Rural Hamlet the Perico,token_dictionary_match,"vereda, el"
+locality,VEREDA EL PESCADO,vereda el pescado,Rural Hamlet the Pescado,token_dictionary_match,"vereda, el"
+locality,VEREDA EL PICACHO Y EL ZAQUE,vereda el picacho y el zaque,Rural Hamlet the Picacho and the Zaque,token_dictionary_match,"vereda, el, y, el"
+locality,VEREDA EL RAMAL,vereda el ramal,Rural Hamlet the Ramal,token_dictionary_match,"vereda, el"
+locality,VEREDA EL RECREO,vereda el recreo,Rural Hamlet the Recreo,token_dictionary_match,"vereda, el"
+locality,VEREDA EL RETIRO,vereda el retiro,Rural Hamlet the Retiro,token_dictionary_match,"vereda, el"
+locality,VEREDA EL SALADO,vereda el salado,Rural Hamlet the Salado,token_dictionary_match,"vereda, el"
+locality,VEREDA EL SALTO,vereda el salto,Rural Hamlet the Salto,token_dictionary_match,"vereda, el"
+locality,VEREDA EL SAMAN,vereda el saman,Rural Hamlet the Saman,token_dictionary_match,"vereda, el"
+locality,VEREDA EL TABLON,vereda el tablon,Rural Hamlet the Tablon,token_dictionary_match,"vereda, el"
+locality,VEREDA EL TANQUE,vereda el tanque,Rural Hamlet the Tanque,token_dictionary_match,"vereda, el"
+locality,VEREDA EL TIGRE,vereda el tigre,Rural Hamlet the Tigre,token_dictionary_match,"vereda, el"
+locality,VEREDA EL VOLADOR,vereda el volador,Rural Hamlet the Volador,token_dictionary_match,"vereda, el"
+locality,VEREDA EN TANQUE,vereda en tanque,Rural Hamlet En Tanque,token_dictionary_match,vereda
+locality,VEREDA ESPUMA BAJA,vereda espuma baja,Rural Hamlet Espuma Baja,token_dictionary_match,vereda
+locality,VEREDA GALAPAGOS,vereda galapagos,Rural Hamlet Galapagos,token_dictionary_match,vereda
+locality,VEREDA GAVILANES,vereda gavilanes,Rural Hamlet Gavilanes,token_dictionary_match,vereda
+locality,VEREDA GUARUMALES,vereda guarumales,Rural Hamlet Guarumales,token_dictionary_match,vereda
+locality,VEREDA GUATIGUARA,vereda guatiguara,Rural Hamlet Guatiguara,token_dictionary_match,vereda
+locality,VEREDA GUATIGUARA SECTOR PICO DEL GUILA,vereda guatiguara sector pico del guila,Rural Hamlet Guatiguara Sector Pico of the Guila,token_dictionary_match,"vereda, del"
+locality,VEREDA GUAURE,vereda guaure,Rural Hamlet Guaure,token_dictionary_match,vereda
+locality,VEREDA GUAUSA,vereda guausa,Rural Hamlet Guausa,token_dictionary_match,vereda
+locality,VEREDA HATOS SECTOR SANTA BARBARA,vereda hatos sector santa barbara,Rural Hamlet Hatos Sector Santa Barbara,token_dictionary_match,vereda
+locality,VEREDA HELECHALES,vereda helechales,Rural Hamlet Helechales,token_dictionary_match,vereda
+locality,"VEREDA HELECHALES, SECTOR LA JUDIA",vereda helechales sector la judia,Rural Hamlet Helechales Sector the Judia,token_dictionary_match,"vereda, la"
+locality,VEREDA HILARGUTA,vereda hilarguta,Rural Hamlet Hilarguta,token_dictionary_match,vereda
+locality,VEREDA HONDURAS,vereda honduras,Rural Hamlet Honduras,token_dictionary_match,vereda
+locality,VEREDA HONDURAS FINCA EL POMARROSO,vereda honduras finca el pomarroso,Rural Hamlet Honduras Finca the Pomarroso,token_dictionary_match,"vereda, el"
+locality,VEREDA HOYA GRANDE,vereda hoya grande,Rural Hamlet Hoya Grande,token_dictionary_match,vereda
+locality,VEREDA HOYA NEGRA,vereda hoya negra,Rural Hamlet Hoya Negra,token_dictionary_match,vereda
+locality,VEREDA INNOMINADA,vereda innominada,Rural Hamlet Innominada,token_dictionary_match,vereda
+locality,VEREDA JUNIN,vereda junin,Rural Hamlet Junin,token_dictionary_match,vereda
+locality,VEREDA JURADO SECTOR CORRAL FALSO,vereda jurado sector corral falso,Rural Hamlet Jurado Sector Corral Falso,token_dictionary_match,vereda
+locality,VEREDA KILOMETRO 20,vereda kilometro 20,Rural Hamlet Kilometro 20,token_dictionary_match,vereda
+locality,VEREDA KILOMETRO 8,vereda kilometro 8,Rural Hamlet Kilometro 8,token_dictionary_match,vereda
+locality,VEREDA KM 36,vereda km 36,Rural Hamlet Km 36,token_dictionary_match,vereda
+locality,VEREDA LA AMISTAD,vereda la amistad,Rural Hamlet the Amistad,token_dictionary_match,"vereda, la"
+locality,VEREDA LA AURORA,vereda la aurora,Rural Hamlet the Aurora,token_dictionary_match,"vereda, la"
+locality,VEREDA LA BATALLA,vereda la batalla,Rural Hamlet the Batalla,token_dictionary_match,"vereda, la"
+locality,VEREDA LA CALICHALA,vereda la calichala,Rural Hamlet the Calichala,token_dictionary_match,"vereda, la"
+locality,VEREDA LA CALICHANA,vereda la calichana,Rural Hamlet the Calichana,token_dictionary_match,"vereda, la"
+locality,VEREDA LA CASICA,vereda la casica,Rural Hamlet the Casica,token_dictionary_match,"vereda, la"
+locality,VEREDA LA COLINA,vereda la colina,Rural Hamlet the Colina,token_dictionary_match,"vereda, la"
+locality,VEREDA LA CUCHILLA,vereda la cuchilla,Rural Hamlet the Cuchilla,token_dictionary_match,"vereda, la"
+locality,VEREDA LA DOCTRINA,vereda la doctrina,Rural Hamlet the Doctrina,token_dictionary_match,"vereda, la"
+locality,VEREDA LA FLECHA,vereda la flecha,Rural Hamlet the Flecha,token_dictionary_match,"vereda, la"
+locality,VEREDA LA FUENTE,vereda la fuente,Rural Hamlet the Fuente,token_dictionary_match,"vereda, la"
+locality,VEREDA LA GOMEZ,vereda la gomez,Rural Hamlet the Gomez,token_dictionary_match,"vereda, la"
+locality,VEREDA LA GOMEZ FINCA DE TULIO TAMAYO,vereda la gomez finca de tulio tamayo,Rural Hamlet the Gomez Finca of Tulio Tamayo,token_dictionary_match,"vereda, la, de"
+locality,VEREDA LA HORMIGA,vereda la hormiga,Rural Hamlet the Hormiga,token_dictionary_match,"vereda, la"
+locality,VEREDA LA LAJITA,vereda la lajita,Rural Hamlet the Lajita,token_dictionary_match,"vereda, la"
+locality,VEREDA LA LOMA,vereda la loma,Rural Hamlet the Loma,token_dictionary_match,"vereda, la"
+locality,"VEREDA LA LOMA, QUEBRADA LA MICAINA",vereda la loma quebrada la micaina,Rural Hamlet the Loma Quebrada the Micaina,token_dictionary_match,"vereda, la, la"
+locality,VEREDA LA MESA,vereda la mesa,Rural Hamlet the Mesa,token_dictionary_match,"vereda, la"
+locality,VEREDA LA MIEL,vereda la miel,Rural Hamlet the Miel,token_dictionary_match,"vereda, la"
+locality,VEREDA LA MOJARRA,vereda la mojarra,Rural Hamlet the Mojarra,token_dictionary_match,"vereda, la"
+locality,VEREDA LA MONEDA,vereda la moneda,Rural Hamlet the Moneda,token_dictionary_match,"vereda, la"
+locality,VEREDA LA PAMPA,vereda la pampa,Rural Hamlet the Pampa,token_dictionary_match,"vereda, la"
+locality,VEREDA LA PARROQUIA,vereda la parroquia,Rural Hamlet the Parroquia,token_dictionary_match,"vereda, la"
+locality,VEREDA LA PEÑUELA,vereda la penuela,Rural Hamlet the Penuela,token_dictionary_match,"vereda, la"
+locality,VEREDA LA PIEDRA,vereda la piedra,Rural Hamlet the Piedra,token_dictionary_match,"vereda, la"
+locality,VEREDA LA PUTANASECTOR LA PLAVA,vereda la putanasector la plava,Rural Hamlet the Putanasector the Plava,token_dictionary_match,"vereda, la, la"
+locality,VEREDA LA RETIRADA,vereda la retirada,Rural Hamlet the Retirada,token_dictionary_match,"vereda, la"
+locality,VEREDA LA SALINA,vereda la salina,Rural Hamlet the Salina,token_dictionary_match,"vereda, la"
+locality,VEREDA LA SARDINA ALTA,vereda la sardina alta,Rural Hamlet the Sardina Alta,token_dictionary_match,"vereda, la"
+locality,VEREDA LA SELVA,vereda la selva,Rural Hamlet the Selva,token_dictionary_match,"vereda, la"
+locality,VEREDA LA TERRAZA,vereda la terraza,Rural Hamlet the Terraza,token_dictionary_match,"vereda, la"
+locality,VEREDA LA TIGRA,vereda la tigra,Rural Hamlet the Tigra,token_dictionary_match,"vereda, la"
+locality,VEREDA LA UNION,vereda la union,Rural Hamlet the Union,token_dictionary_match,"vereda, la"
+locality,VEREDA LA VALVULA,vereda la valvula,Rural Hamlet the Valvula,token_dictionary_match,"vereda, la"
+locality,VEREDA LA VICTORIA,vereda la victoria,Rural Hamlet the Victoria,token_dictionary_match,"vereda, la"
+locality,VEREDA LA ZAPATICA,vereda la zapatica,Rural Hamlet the Zapatica,token_dictionary_match,"vereda, la"
+locality,VEREDA LAGUNITAS,vereda lagunitas,Rural Hamlet Lagunitas,token_dictionary_match,vereda
+locality,VEREDA LAS AMARILLAS,vereda las amarillas,Rural Hamlet Las Amarillas,token_dictionary_match,vereda
+locality,VEREDA LAS FLORES,vereda las flores,Rural Hamlet Las Flores,token_dictionary_match,vereda
+locality,VEREDA LAS JOTAS,vereda las jotas,Rural Hamlet Las Jotas,token_dictionary_match,vereda
+locality,VEREDA LAS LAJAS,vereda las lajas,Rural Hamlet Las Lajas,token_dictionary_match,vereda
+locality,VEREDA LAS MONTOYAS Y LA MILITOSA,vereda las montoyas y la militosa,Rural Hamlet Las Montoyas and the Militosa,token_dictionary_match,"vereda, y, la"
+locality,VEREDA LAS PAMPAS,vereda las pampas,Rural Hamlet Las Pampas,token_dictionary_match,vereda
+locality,VEREDA LAS PRIMAVERAS,vereda las primaveras,Rural Hamlet Las Primaveras,token_dictionary_match,vereda
+locality,VEREDA LAS SARDINAS,vereda las sardinas,Rural Hamlet Las Sardinas,token_dictionary_match,vereda
+locality,VEREDA LEONES Y SAN ANTONIO,vereda leones y san antonio,Rural Hamlet Leones and San Antonio,token_dictionary_match,"vereda, y"
+locality,VEREDA LIMITES,vereda limites,Rural Hamlet Limites,token_dictionary_match,vereda
+locality,VEREDA LIMONCITO,vereda limoncito,Rural Hamlet Limoncito,token_dictionary_match,vereda
+locality,VEREDA LLANADAS Y PRADERA,vereda llanadas y pradera,Rural Hamlet Llanadas and Pradera,token_dictionary_match,"vereda, y"
+locality,VEREDA LLANO DE HIGUERAS,vereda llano de higueras,Rural Hamlet Llano of Higueras,token_dictionary_match,"vereda, de"
+locality,VEREDA LLANO DE PALMAS,vereda llano de palmas,Rural Hamlet Llano of Palmas,token_dictionary_match,"vereda, de"
+locality,VEREDA LLANO DE POPAS CORREGIMIENTO LLANO DE PALMAS,vereda llano de popas corregimiento llano de palmas,Rural Hamlet Llano of Popas Township Llano of Palmas,token_dictionary_match,"vereda, de, corregimiento, de"
+locality,VEREDA LLANO GRANDE QUEBRADA LAS CUEVAS,vereda llano grande quebrada las cuevas,Rural Hamlet Llano Grande Quebrada Las Cuevas,token_dictionary_match,vereda
+locality,VEREDA LOMA DEL BARCO,vereda loma del barco,Rural Hamlet Loma of the Barco,token_dictionary_match,"vereda, del"
+locality,VEREDA LOMA DEL NEGRO,vereda loma del negro,Rural Hamlet Loma of the Negro,token_dictionary_match,"vereda, del"
+locality,VEREDA LOS ARRAYANES,vereda los arrayanes,Rural Hamlet Los Arrayanes,token_dictionary_match,vereda
+locality,VEREDA LOS CARPINTEROS,vereda los carpinteros,Rural Hamlet Los Carpinteros,token_dictionary_match,vereda
+locality,VEREDA LOS CAUCHOS,vereda los cauchos,Rural Hamlet Los Cauchos,token_dictionary_match,vereda
+locality,VEREDA LOS GUAYABALES,vereda los guayabales,Rural Hamlet Los Guayabales,token_dictionary_match,vereda
+locality,VEREDA LOS GUAYABOS,vereda los guayabos,Rural Hamlet Los Guayabos,token_dictionary_match,vereda
+locality,VEREDA LOS MORROS,vereda los morros,Rural Hamlet Los Morros,token_dictionary_match,vereda
+locality,VEREDA LOS POZOS,vereda los pozos,Rural Hamlet Los Pozos,token_dictionary_match,vereda
+locality,VEREDA LOS ROBLES FINCA LA ESPERANZA,vereda los robles finca la esperanza,Rural Hamlet Los Robles Finca the Esperanza,token_dictionary_match,"vereda, la"
+locality,VEREDA LUBIGARA,vereda lubigara,Rural Hamlet Lubigara,token_dictionary_match,vereda
+locality,VEREDA MACANILLO,vereda macanillo,Rural Hamlet Macanillo,token_dictionary_match,vereda
+locality,VEREDA MANARIA,vereda manaria,Rural Hamlet Manaria,token_dictionary_match,vereda
+locality,VEREDA MANITAS Y CARRIZAL,vereda manitas y carrizal,Rural Hamlet Manitas and Carrizal,token_dictionary_match,"vereda, y"
+locality,VEREDA MARGUELINA,vereda marguelina,Rural Hamlet Marguelina,token_dictionary_match,vereda
+locality,VEREDA MESITAS DE SAN JAVIER,vereda mesitas de san javier,Rural Hamlet Mesitas of San Javier,token_dictionary_match,"vereda, de"
+locality,VEREDA MOGOTOCORO,vereda mogotocoro,Rural Hamlet Mogotocoro,token_dictionary_match,vereda
+locality,VEREDA MONCORA,vereda moncora,Rural Hamlet Moncora,token_dictionary_match,vereda
+locality,VEREDA MONJAS,vereda monjas,Rural Hamlet Monjas,token_dictionary_match,vereda
+locality,VEREDA MONTE OSCURO,vereda monte oscuro,Rural Hamlet Monte Oscuro,token_dictionary_match,vereda
+locality,VEREDA MONTECHIQUITO,vereda montechiquito,Rural Hamlet Montechiquito,token_dictionary_match,vereda
+locality,VEREDA MONTERREDONDA,vereda monterredonda,Rural Hamlet Monterredonda,token_dictionary_match,vereda
+locality,VEREDA MUSANDA,vereda musanda,Rural Hamlet Musanda,token_dictionary_match,vereda
+locality,VEREDA MUZANDA SECTOR PUERTO PRINCIPE,vereda muzanda sector puerto principe,Rural Hamlet Muzanda Sector Puerto Principe,token_dictionary_match,vereda
+locality,VEREDA NUEVA GRANADA,vereda nueva granada,Rural Hamlet Nueva Granada,token_dictionary_match,vereda
+locality,VEREDA OTRO MUNDO,vereda otro mundo,Rural Hamlet Otro Mundo,token_dictionary_match,vereda
+locality,VEREDA PALACÉ,vereda palace,Rural Hamlet Palace,token_dictionary_match,vereda
+locality,VEREDA PALACÉ PARTE ALTA,vereda palace parte alta,Rural Hamlet Palace Parte Alta,token_dictionary_match,vereda
+locality,VEREDA PALMA ALTA,vereda palma alta,Rural Hamlet Palma Alta,token_dictionary_match,vereda
+locality,VEREDA PALO BLANCO,vereda palo blanco,Rural Hamlet Palo Blanco,token_dictionary_match,vereda
+locality,VEREDA PALOMITAS,vereda palomitas,Rural Hamlet Palomitas,token_dictionary_match,vereda
+locality,"VEREDA PAPAYA, LA TIGRA Y SAN RAFAEL",vereda papaya la tigra y san rafael,Rural Hamlet Papaya the Tigra and San Rafael,token_dictionary_match,"vereda, la, y"
+locality,VEREDA PARAGUAY FINCA TIERRA BUENA,vereda paraguay finca tierra buena,Rural Hamlet Paraguay Finca Tierra Buena,token_dictionary_match,vereda
+locality,VEREDA PARAMITO,vereda paramito,Rural Hamlet Paramito,token_dictionary_match,vereda
+locality,VEREDA PAYOA,vereda payoa,Rural Hamlet Payoa,token_dictionary_match,vereda
+locality,VEREDA PAYOA VIA NACIONAL RUTA DEL SOL,vereda payoa via nacional ruta del sol,Rural Hamlet Payoa Road Nacional Ruta of the Sol,token_dictionary_match,"vereda, via, del"
+locality,VEREDA PENJAMO,vereda penjamo,Rural Hamlet Penjamo,token_dictionary_match,vereda
+locality,VEREDA PENJAMO SECTOR EL RODEO,vereda penjamo sector el rodeo,Rural Hamlet Penjamo Sector the Rodeo,token_dictionary_match,"vereda, el"
+locality,VEREDA PERALONSO,vereda peralonso,Rural Hamlet Peralonso,token_dictionary_match,vereda
+locality,VEREDA PERDIDA MEDIA,vereda perdida media,Rural Hamlet Perdida Media,token_dictionary_match,vereda
+locality,VEREDA PESCADERITO ALTO,vereda pescaderito alto,Rural Hamlet Pescaderito Alto,token_dictionary_match,vereda
+locality,VEREDA PEÑA MORADA,vereda pena morada,Rural Hamlet Pena Morada,token_dictionary_match,vereda
+locality,VEREDA PIEDRA ABAJO,vereda piedra abajo,Rural Hamlet Piedra Abajo,token_dictionary_match,vereda
+locality,VEREDA PIEDRA BLANCA,vereda piedra blanca,Rural Hamlet Piedra Blanca,token_dictionary_match,vereda
+locality,VEREDA PITIGUAO,vereda pitiguao,Rural Hamlet Pitiguao,token_dictionary_match,vereda
+locality,VEREDA PLANADAS Y SEVILLA,vereda planadas y sevilla,Rural Hamlet Planadas and Sevilla,token_dictionary_match,"vereda, y"
+locality,VEREDA PLATANAL,vereda platanal,Rural Hamlet Platanal,token_dictionary_match,vereda
+locality,VEREDA PLATANALA,vereda platanala,Rural Hamlet Platanala,token_dictionary_match,vereda
+locality,VEREDA PLATERA BAJA,vereda platera baja,Rural Hamlet Platera Baja,token_dictionary_match,vereda
+locality,VEREDA POZO NEGRO SECTOR ALTO,vereda pozo negro sector alto,Rural Hamlet Pozo Negro Sector Alto,token_dictionary_match,vereda
+locality,VEREDA POZO NUTRIA,vereda pozo nutria,Rural Hamlet Pozo Nutria,token_dictionary_match,vereda
+locality,VEREDA PRADERA SECTOR TRES ESQUINAS,vereda pradera sector tres esquinas,Rural Hamlet Pradera Sector Tres Esquinas,token_dictionary_match,vereda
+locality,VEREDA PROVINCIA Y BARRANCO COLORADO,vereda provincia y barranco colorado,Rural Hamlet Provincia and Barranco Colorado,token_dictionary_match,"vereda, y"
+locality,VEREDA PUENTES,vereda puentes,Rural Hamlet Puentes,token_dictionary_match,vereda
+locality,VEREDA PUERTO OLAYA,vereda puerto olaya,Rural Hamlet Puerto Olaya,token_dictionary_match,vereda
+locality,VEREDA PURNIA,vereda purnia,Rural Hamlet Purnia,token_dictionary_match,vereda
+locality,VEREDA QUEBRADAS,vereda quebradas,Rural Hamlet Quebradas,token_dictionary_match,vereda
+locality,VEREDA QUINALES,vereda quinales,Rural Hamlet Quinales,token_dictionary_match,vereda
+locality,VEREDA RICAURTE,vereda ricaurte,Rural Hamlet Ricaurte,token_dictionary_match,vereda
+locality,VEREDA ROSA BLANCA,vereda rosa blanca,Rural Hamlet Rosa Blanca,token_dictionary_match,vereda
+locality,VEREDA RUITOQUE BAJO,vereda ruitoque bajo,Rural Hamlet Ruitoque Bajo,token_dictionary_match,vereda
+locality,VEREDA SALADO BRAVO,vereda salado bravo,Rural Hamlet Salado Bravo,token_dictionary_match,vereda
+locality,VEREDA SAMACAL,vereda samacal,Rural Hamlet Samacal,token_dictionary_match,vereda
+locality,VEREDA SAN AGUSTIN,vereda san agustin,Rural Hamlet San Agustin,token_dictionary_match,vereda
+locality,VEREDA SAN ANTONIO,vereda san antonio,Rural Hamlet San Antonio,token_dictionary_match,vereda
+locality,VEREDA SAN ANTONIO SECTOR EL MOLINO,vereda san antonio sector el molino,Rural Hamlet San Antonio Sector the Molino,token_dictionary_match,"vereda, el"
+locality,VEREDA SAN BERNARDO,vereda san bernardo,Rural Hamlet San Bernardo,token_dictionary_match,vereda
+locality,VEREDA SAN IGNACIO,vereda san ignacio,Rural Hamlet San Ignacio,token_dictionary_match,vereda
+locality,VEREDA SAN ISIDRO ALTO,vereda san isidro alto,Rural Hamlet San Isidro Alto,token_dictionary_match,vereda
+locality,VEREDA SAN ISIDRO LIMITES CON EL MUNICIPIO DE LA PAZA,vereda san isidro limites con el municipio de la paza,Rural Hamlet San Isidro Limites Con the Municipio of the Paza,token_dictionary_match,"vereda, el, de, la"
+locality,VEREDA SAN JACINTO,vereda san jacinto,Rural Hamlet San Jacinto,token_dictionary_match,vereda
+locality,VEREDA SAN JAVIER,vereda san javier,Rural Hamlet San Javier,token_dictionary_match,vereda
+locality,VEREDA SAN JOSE,vereda san jose,Rural Hamlet San Jose,token_dictionary_match,vereda
+locality,VEREDA SAN JOSE DEL LLANO,vereda san jose del llano,Rural Hamlet San Jose of the Llano,token_dictionary_match,"vereda, del"
+locality,VEREDA SAN JOSE DEL TIGRE,vereda san jose del tigre,Rural Hamlet San Jose of the Tigre,token_dictionary_match,"vereda, del"
+locality,VEREDA SAN JUAN,vereda san juan,Rural Hamlet San Juan,token_dictionary_match,vereda
+locality,VEREDA SAN MIGUEL,vereda san miguel,Rural Hamlet San Miguel,token_dictionary_match,vereda
+locality,VEREDA SAN PABLO,vereda san pablo,Rural Hamlet San Pablo,token_dictionary_match,vereda
+locality,VEREDA SAN PEDRO,vereda san pedro,Rural Hamlet San Pedro,token_dictionary_match,vereda
+locality,VEREDA SAN PEDRO ALTO,vereda san pedro alto,Rural Hamlet San Pedro Alto,token_dictionary_match,vereda
+locality,VEREDA SAN PEDRO LA TIGRA,vereda san pedro la tigra,Rural Hamlet San Pedro the Tigra,token_dictionary_match,"vereda, la"
+locality,VEREDA SAN PEDRO SECTOR EL PICACHO,vereda san pedro sector el picacho,Rural Hamlet San Pedro Sector the Picacho,token_dictionary_match,"vereda, el"
+locality,VEREDA SAN RAFAEL,vereda san rafael,Rural Hamlet San Rafael,token_dictionary_match,vereda
+locality,VEREDA SAN ROQUE,vereda san roque,Rural Hamlet San Roque,token_dictionary_match,vereda
+locality,VEREDA SAN VICENTE,vereda san vicente,Rural Hamlet San Vicente,token_dictionary_match,vereda
+locality,VEREDA SANTA BARBARA,vereda santa barbara,Rural Hamlet Santa Barbara,token_dictionary_match,vereda
+locality,VEREDA SANTA ISABEL,vereda santa isabel,Rural Hamlet Santa Isabel,token_dictionary_match,vereda
+locality,VEREDA SANTA ROSA,vereda santa rosa,Rural Hamlet Santa Rosa,token_dictionary_match,vereda
+locality,VEREDA SANTA ROSA ALTO,vereda santa rosa alto,Rural Hamlet Santa Rosa Alto,token_dictionary_match,vereda
+locality,VEREDA SANTA ROSA BAJO,vereda santa rosa bajo,Rural Hamlet Santa Rosa Bajo,token_dictionary_match,vereda
+locality,VEREDA SANTA ROSALÍA,vereda santa rosalia,Rural Hamlet Santa Rosalia,token_dictionary_match,vereda
+locality,VEREDA SANTO DOMINGO,vereda santo domingo,Rural Hamlet Santo Domingo,token_dictionary_match,vereda
+locality,VEREDA SANTO DOMINGO DEL RAMO,vereda santo domingo del ramo,Rural Hamlet Santo Domingo of the Ramo,token_dictionary_match,"vereda, del"
+locality,VEREDA SANTUARIO,vereda santuario,Rural Hamlet Santuario,token_dictionary_match,vereda
+locality,VEREDA SAUCARA,vereda saucara,Rural Hamlet Saucara,token_dictionary_match,vereda
+locality,VEREDA SEVILLA,vereda sevilla,Rural Hamlet Sevilla,token_dictionary_match,vereda
+locality,VEREDA SIBERIA - PARAMO DEL ALMORZADERO,vereda siberia - paramo del almorzadero,Rural Hamlet Siberia - Paramo of the Almorzadero,token_dictionary_match,"vereda, del"
+locality,VEREDA SUSA Y VIA NACIONAL,vereda susa y via nacional,Rural Hamlet Susa and Road Nacional,token_dictionary_match,"vereda, y, via"
+locality,VEREDA TABACAL,vereda tabacal,Rural Hamlet Tabacal,token_dictionary_match,vereda
+locality,VEREDA TABETA,vereda tabeta,Rural Hamlet Tabeta,token_dictionary_match,vereda
+locality,VEREDA TAMBO REDONDO,vereda tambo redondo,Rural Hamlet Tambo Redondo,token_dictionary_match,vereda
+locality,VEREDA TENERIFE Y CAMPO 23,vereda tenerife y campo 23,Rural Hamlet Tenerife and Campo 23,token_dictionary_match,"vereda, y"
+locality,VEREDA TIERRA AZUL,vereda tierra azul,Rural Hamlet Tierra Azul,token_dictionary_match,vereda
+locality,VEREDA TIGANA,vereda tigana,Rural Hamlet Tigana,token_dictionary_match,vereda
+locality,VEREDA TINAGA,vereda tinaga,Rural Hamlet Tinaga,token_dictionary_match,vereda
+locality,VEREDA TOMBITA,vereda tombita,Rural Hamlet Tombita,token_dictionary_match,vereda
+locality,VEREDA TRES PORTONES,vereda tres portones,Rural Hamlet Tres Portones,token_dictionary_match,vereda
+locality,VEREDA TRIGUEROS,vereda trigueros,Rural Hamlet Trigueros,token_dictionary_match,vereda
+locality,VEREDA TURE,vereda ture,Rural Hamlet Ture,token_dictionary_match,vereda
+locality,VEREDA UCATA CERCA AL CERRO DEL PICACHO,vereda ucata cerca al cerro del picacho,Rural Hamlet Ucata Cerca Al Cerro of the Picacho,token_dictionary_match,"vereda, del"
+locality,VEREDA UTAPA,vereda utapa,Rural Hamlet Utapa,token_dictionary_match,vereda
+locality,VEREDA VAHONDO,vereda vahondo,Rural Hamlet Vahondo,token_dictionary_match,vereda
+locality,VEREDA VALPARAISO,vereda valparaiso,Rural Hamlet Valparaiso,token_dictionary_match,vereda
+locality,VEREDA VEGA DEL LIMON,vereda vega del limon,Rural Hamlet Vega of the Limon,token_dictionary_match,"vereda, del"
+locality,VEREDA VEGAS DE BETANIA,vereda vegas de betania,Rural Hamlet Vegas of Betania,token_dictionary_match,"vereda, de"
+locality,VEREDA VERICUTE,vereda vericute,Rural Hamlet Vericute,token_dictionary_match,vereda
+locality,VEREDA VERSALLES,vereda versalles,Rural Hamlet Versalles,token_dictionary_match,vereda
+locality,VEREDA VIJAGUAL,vereda vijagual,Rural Hamlet Vijagual,token_dictionary_match,vereda
+locality,VEREDA VILLA PAZA LIMITES CON MATANZA,vereda villa paza limites con matanza,Rural Hamlet Villa Paza Limites Con Matanza,token_dictionary_match,vereda
+locality,VEREDA ZAPATICA,vereda zapatica,Rural Hamlet Zapatica,token_dictionary_match,vereda
+locality,VEREDAEL PAPAYO,veredael papayo,Veredael Papayo,locality_passthrough,
+locality,VEREDAS AGUA BONITA Y LA RAYADA,veredas agua bonita y la rayada,Veredas Agua Bonita and the Rayada,token_dictionary_match,"y, la"
+locality,"VEREDAS ALTA MIRA, LAS PALMAS, SAN VICENTE",veredas alta mira las palmas san vicente,"Veredas Alta Mira, Las Palmas, San Vicente",locality_passthrough,
+locality,"VEREDAS BARRO HONDO, ENCALLADA, LA CHAPA",veredas barro hondo encallada la chapa,Veredas Barro Hondo Encallada the Chapa,token_dictionary_match,la
+locality,VEREDAS BOMBONA Y BARBULA,veredas bombona y barbula,Veredas Bombona and Barbula,token_dictionary_match,y
+locality,"VEREDAS CHUSCAL, VANEGAS Y CHUSPAS",veredas chuscal vanegas y chuspas,Veredas Chuscal Vanegas and Chuspas,token_dictionary_match,y
+locality,"VEREDAS CORRALFALSO, SIBERIA, PERALONSO",veredas corralfalso siberia peralonso,"Veredas Corralfalso, Siberia, Peralonso",locality_passthrough,
+locality,VEREDAS EL 80 Y LA FLECHA,veredas el 80 y la flecha,Veredas the 80 and the Flecha,token_dictionary_match,"el, y, la"
+locality,VEREDAS EL HALTILLO Y Agua Fria,veredas el haltillo y agua fria,Veredas the Haltillo and Agua Fria,token_dictionary_match,"el, y"
+locality,VEREDAS EL JUNCAL Y HUERTAS,veredas el juncal y huertas,Veredas the Juncal and Huertas,token_dictionary_match,"el, y"
+locality,VEREDAS EL MORTIÑO Y BOYAGA,veredas el mortino y boyaga,Veredas the Mortino and Boyaga,token_dictionary_match,"el, y"
+locality,VEREDAS GANITIVA Y CHAGUACA,veredas ganitiva y chaguaca,Veredas Ganitiva and Chaguaca,token_dictionary_match,y
+locality,"VEREDAS HIGURONES, POTRERO DE RODRIGUEZ Y OTROS",veredas higurones potrero de rodriguez y otros,Veredas Higurones Potrero of Rodriguez and Otros,token_dictionary_match,"de, y"
+locality,"VEREDAS LA BALSA, GALLEGOS, LA MELONA",veredas la balsa gallegos la melona,Veredas the Balsa Gallegos the Melona,token_dictionary_match,"la, la"
+locality,VEREDAS LA CAZUELA Y CAÑO LIMONES,veredas la cazuela y cano limones,Veredas the Cazuela and Cano Limones,token_dictionary_match,"la, y"
+locality,"VEREDAS LA CHAPA, PAVAS, POZO AZUL",veredas la chapa pavas pozo azul,Veredas the Chapa Pavas Pozo Azul,token_dictionary_match,la
+locality,VEREDAS LA MESA Y EL METAL,veredas la mesa y el metal,Veredas the Mesa and the Metal,token_dictionary_match,"la, y, el"
+locality,VEREDAS LA MILITOSA Y LA MUERTA,veredas la militosa y la muerta,Veredas the Militosa and the Muerta,token_dictionary_match,"la, y, la"
+locality,VEREDAS LA NEGREÑA Y TRES PORTONES,veredas la negrena y tres portones,Veredas the Negrena and Tres Portones,token_dictionary_match,"la, y"
+locality,"VEREDAS LA PRIMAVERA, L RONCANCIO HOYA NEGRA",veredas la primavera l roncancio hoya negra,Veredas the Primavera L Roncancio Hoya Negra,token_dictionary_match,la
+locality,VEREDAS MIRAFLORES Y LA CAÑADA,veredas miraflores y la canada,Veredas Miraflores and the Canada,token_dictionary_match,"y, la"
+locality,VEREDAS MONTERREDONDO Y EL JUNCAL,veredas monterredondo y el juncal,Veredas Monterredondo and the Juncal,token_dictionary_match,"y, el"
+locality,"VEREDAS OTRO MUNDO, EL CARMEN",veredas otro mundo el carmen,Veredas Otro Mundo the Carmen,token_dictionary_match,el
+locality,VEREDAS PALMAR Y PALMARITO,veredas palmar y palmarito,Veredas Palmar and Palmarito,token_dictionary_match,y
+locality,"VEREDAS PIEDRA ABAJO, TABACAL CRUZ GRANDE",veredas piedra abajo tabacal cruz grande,"Veredas Piedra Abajo, Tabacal Cruz Grande",locality_passthrough,
+locality,VEREDAS SAN ANTONIO Y SAN ALBERTO,veredas san antonio y san alberto,Veredas San Antonio and San Alberto,token_dictionary_match,y
+locality,VEREDAS SAN FRANCISCO Y SAN MIGUEL,veredas san francisco y san miguel,Veredas San Francisco and San Miguel,token_dictionary_match,y
+locality,VEREDAS SAN JUANCITO Y FONDO OSCURO,veredas san juancito y fondo oscuro,Veredas San Juancito and Fondo Oscuro,token_dictionary_match,y
+locality,VEREDAS SAN MIGUEL Y HOYO GRANDE,veredas san miguel y hoyo grande,Veredas San Miguel and Hoyo Grande,token_dictionary_match,y
+locality,VEREDAS SERVITA Y OVEJERAS,veredas servita y ovejeras,Veredas Servita and Ovejeras,token_dictionary_match,y
+locality,"VEREDAS TABETA, CARABOBO AGUABRI",veredas tabeta carabobo aguabri,"Veredas Tabeta, Carabobo Aguabri",locality_passthrough,
+locality,"VEREDAS TAMACARA, BARIRI,",veredas tamacara bariri,"Veredas Tamacara, Bariri,",locality_passthrough,
+locality,"VEREDAS YARIMA, LLANA FRIA, POZO NUTRIA",veredas yarima llana fria pozo nutria,"Veredas Yarima, Llana Fria, Pozo Nutria",locality_passthrough,
+locality,VIA A AGUAS CALIENTES,via a aguas calientes,Road A Aguas Calientes,token_dictionary_match,via
+locality,VIA A BARBOSA SECTOR ALTA MIRA,via a barbosa sector alta mira,Road A Barbosa Sector Alta Mira,token_dictionary_match,via
+locality,VIA A BUCARAMANGA SECTOR PEÑA DE ORO,via a bucaramanga sector pena de oro,Road A Bucaramanga Sector Pena of Oro,token_dictionary_match,"via, de"
+locality,VIA A CARCASI QUEBRADA SUPARÍ,via a carcasi quebrada supari,Road A Carcasi Quebrada Supari,token_dictionary_match,via
+locality,VIA A CIMITARRA KM 10,via a cimitarra km 10,Road A Cimitarra Km 10,token_dictionary_match,via
+locality,VIA A CONTRATACION,via a contratacion,Road A Contratacion,token_dictionary_match,via
+locality,VIA A CORREGIMIENTO GUANE,via a corregimiento guane,Road A Township Guane,token_dictionary_match,"via, corregimiento"
+locality,VIA A FLORIAN,via a florian,Road A Florian,token_dictionary_match,via
+locality,VIA A GUEPSA,via a guepsa,Road A Guepsa,token_dictionary_match,via
+locality,VIA A JESUS MARIAS,via a jesus marias,Road A Jesus Marias,token_dictionary_match,via
+locality,VIA A LA PROVINCIA DE SOTO NORTE SECTOR EL TANQUE,via a la provincia de soto norte sector el tanque,Road A the Provincia of Soto Norte Sector the Tanque,token_dictionary_match,"via, la, de, el"
+locality,VIA A LA VEREDA AGUA FRIA,via a la vereda agua fria,Road A the Rural Hamlet Agua Fria,token_dictionary_match,"via, la, vereda"
+locality,VIA A OIBA,via a oiba,Road A Oiba,token_dictionary_match,via
+locality,VIA A PUENTE NACIONAL,via a puente nacional,Road A Puente Nacional,token_dictionary_match,via
+locality,VIA A SAN JOAQUIN,via a san joaquin,Road A San Joaquin,token_dictionary_match,via
+locality,VIA A SANTA CRUZ DE LA COLINA,via a santa cruz de la colina,Road A Santa Cruz of the Colina,token_dictionary_match,"via, de, la"
+locality,VIA AL CARMEN DE CHUCURI,via al carmen de chucuri,Road Al Carmen of Chucuri,token_dictionary_match,"via, de"
+locality,VIA AL CORREGIMIENTO CACHIRI,via al corregimiento cachiri,Road Al Township Cachiri,token_dictionary_match,"via, corregimiento"
+locality,VIA AL CORREGIMIENTO GUANE,via al corregimiento guane,Road Al Township Guane,token_dictionary_match,"via, corregimiento"
+locality,VIA AL CORREGIMIENTO LAGUNA DE ORTICES,via al corregimiento laguna de ortices,Road Al Township Laguna of Ortices,token_dictionary_match,"via, corregimiento, de"
+locality,VIA AL CORREGIMIENTO SAN JOSE DE SUAITA,via al corregimiento san jose de suaita,Road Al Township San Jose of Suaita,token_dictionary_match,"via, corregimiento, de"
+locality,VIA AL CORREGIMIENTO SANTA RITA,via al corregimiento santa rita,Road Al Township Santa Rita,token_dictionary_match,"via, corregimiento"
+locality,VIA AL CORREGIMIENTO VADO REAL,via al corregimiento vado real,Road Al Township Vado Real,token_dictionary_match,"via, corregimiento"
+locality,VIA AL DEPARTAMENTO DE BOYACA,via al departamento de boyaca,Road Al Departamento of Boyaca,token_dictionary_match,"via, de"
+locality,VIA AL MUNICIPIO DE DUITAMA,via al municipio de duitama,Road Al Municipio of Duitama,token_dictionary_match,"via, de"
+locality,VIA ALTERNA A ENCISO,via alterna a enciso,Road Alterna A Enciso,token_dictionary_match,via
+locality,VIA BUCARAMANGA - MATANZA,via bucaramanga - matanza,Road Bucaramanga - Matanza,token_dictionary_match,via
+locality,VIA CALIFORNAIA A SURATA KM 3+700,via californaia a surata km 3 700,Road Californaia A Surata Km 3 700,token_dictionary_match,via
+locality,VIA CENTRAL A LA PROVINCIA DE SOTO NORTE,via central a la provincia de soto norte,Road Central A the Provincia of Soto Norte,token_dictionary_match,"via, la, de"
+locality,VIA CENTRAL Y HACIA SAN MIGUEL,via central y hacia san miguel,Road Central and Hacia San Miguel,token_dictionary_match,"via, y"
+locality,VIA DEPARTAMENTA SAN JOAQUIN - MOGOTES,via departamenta san joaquin - mogotes,Road Departamenta San Joaquin - Mogotes,token_dictionary_match,via
+locality,VIA DEPARTAMENTAL ENTRE PALMAR Y EL HATO,via departamental entre palmar y el hato,Road Departamental Entre Palmar and the Hato,token_dictionary_match,"via, y, el"
+locality,VIA DEPARTAMENTAL HACIA GUADALUPE,via departamental hacia guadalupe,Road Departamental Hacia Guadalupe,token_dictionary_match,via
+locality,VIA DEPARTAMENTAL SOCORRO - ZAPATOCA,via departamental socorro - zapatoca,Road Departamental Socorro - Zapatoca,token_dictionary_match,via
+locality,VIA DEPARTAMENTAL SUCRE A JESUS MARIA,via departamental sucre a jesus maria,Road Departamental Sucre A Jesus Maria,token_dictionary_match,via
+locality,VIA ENCISO - CARCASI SECTOR QUEBRADA CHIQUERITO,via enciso - carcasi sector quebrada chiquerito,Road Enciso - Carcasi Sector Quebrada Chiquerito,token_dictionary_match,via
+locality,VIA ENCISO - CARCASI SECTOR QUEBRADA SUPARI,via enciso - carcasi sector quebrada supari,Road Enciso - Carcasi Sector Quebrada Supari,token_dictionary_match,via
+locality,VIA ENTRE BUCARAMANGA Y SAN VICENTE SECT. EL TABLAZO,via entre bucaramanga y san vicente sect el tablazo,Road Entre Bucaramanga and San Vicente Sect the Tablazo,token_dictionary_match,"via, y, el"
+locality,VIA ENTRE CHARALA Y COROMORO,via entre charala y coromoro,Road Entre Charala and Coromoro,token_dictionary_match,"via, y"
+locality,VIA ENTRE ENCISO Y CARCASI BRADA CARRIZAL,via entre enciso y carcasi brada carrizal,Road Entre Enciso and Carcasi Brada Carrizal,token_dictionary_match,"via, y"
+locality,VIA ENTRE LISBOA U EL CASCO URBANO,via entre lisboa u el casco urbano,Road Entre Lisboa U the Casco Urbano,token_dictionary_match,"via, el"
+locality,VIA HACIA BELEN BOYACA,via hacia belen boyaca,Road Hacia Belen Boyaca,token_dictionary_match,via
+locality,VIA HACIA BUCARAMANGA,via hacia bucaramanga,Road Hacia Bucaramanga,token_dictionary_match,via
+locality,VIA HACIA BUCARAMANGA SECTOR ARBOL SOLO,via hacia bucaramanga sector arbol solo,Road Hacia Bucaramanga Sector Arbol Solo,token_dictionary_match,via
+locality,VIA HACIA CHARALA SECTOR EL INTRA,via hacia charala sector el intra,Road Hacia Charala Sector the Intra,token_dictionary_match,"via, el"
+locality,VIA HACIA EL CORREGIMIENTO ACAPULCO,via hacia el corregimiento acapulco,Road Hacia the Township Acapulco,token_dictionary_match,"via, el, corregimiento"
+locality,VIA HACIA EL CORREGIMIENTO CAMPO CAPOTE,via hacia el corregimiento campo capote,Road Hacia the Township Campo Capote,token_dictionary_match,"via, el, corregimiento"
+locality,VIA HACIA EL CORREGIMIENTO PAUJIL,via hacia el corregimiento paujil,Road Hacia the Township Paujil,token_dictionary_match,"via, el, corregimiento"
+locality,VIA HACIA EL CORREGIMIENTO SANTA CRUZ DE LA COLINA,via hacia el corregimiento santa cruz de la colina,Road Hacia the Township Santa Cruz of the Colina,token_dictionary_match,"via, el, corregimiento, de, la"
+locality,VIA HACIA EL DEPARTAMENTO DE BOYACA,via hacia el departamento de boyaca,Road Hacia the Departamento of Boyaca,token_dictionary_match,"via, el, de"
+locality,VIA HACIA EL MUNICIPIO DE BELEN BOYACA,via hacia el municipio de belen boyaca,Road Hacia the Municipio of Belen Boyaca,token_dictionary_match,"via, el, de"
+locality,VIA HACIA EL MUNICIPIO DE SAN BENITO,via hacia el municipio de san benito,Road Hacia the Municipio of San Benito,token_dictionary_match,"via, el, de"
+locality,VIA HACIA EL MUNICIPIO DE SUAITA,via hacia el municipio de suaita,Road Hacia the Municipio of Suaita,token_dictionary_match,"via, el, de"
+locality,VIA HACIA EL SOCORRO,via hacia el socorro,Road Hacia the Socorro,token_dictionary_match,"via, el"
+locality,VIA HACIA GIRON SECTOR PUENTE GOMEZ ORTIZ,via hacia giron sector puente gomez ortiz,Road Hacia Giron Sector Puente Gomez Ortiz,token_dictionary_match,via
+locality,VIA HACIA GUADALUPE Y CHIMA,via hacia guadalupe y chima,Road Hacia Guadalupe and Chima,token_dictionary_match,"via, y"
+locality,VIA HACIA GUAVATA,via hacia guavata,Road Hacia Guavata,token_dictionary_match,via
+locality,VIA HACIA GUEPSA,via hacia guepsa,Road Hacia Guepsa,token_dictionary_match,via
+locality,VIA HACIA JESUS MARIA,via hacia jesus maria,Road Hacia Jesus Maria,token_dictionary_match,via
+locality,VIA HACIA LA MESAS DE LOS SANTOS,via hacia la mesas de los santos,Road Hacia the Mesas of Los Santos,token_dictionary_match,"via, la, de"
+locality,VIA HACIA LA PROVINCIA DE SSOTO,via hacia la provincia de ssoto,Road Hacia the Provincia of Ssoto,token_dictionary_match,"via, la, de"
+locality,VIA HACIA SABOYA - BOYACA,via hacia saboya - boyaca,Road Hacia Saboya - Boyaca,token_dictionary_match,via
+locality,"VIA HACIA SAN JOAQUIN, SECTOR PLATANITO",via hacia san joaquin sector platanito,Road Hacia San Joaquin Sector Platanito,token_dictionary_match,via
+locality,VIA HACIA SAN VICENTE Y HACIA YARIMA,via hacia san vicente y hacia yarima,Road Hacia San Vicente and Hacia Yarima,token_dictionary_match,"via, y"
+locality,VIA HACIA SANTA HELENA DEL OPON,via hacia santa helena del opon,Road Hacia Santa Helena of the Opon,token_dictionary_match,"via, del"
+locality,VIA LISBOA - SAN VICENTE,via lisboa - san vicente,Road Lisboa - San Vicente,token_dictionary_match,via
+locality,VIA LOS CUROS - MALAGA PR 121 + 200,via los curos - malaga pr 121 200,Road Los Curos - Malaga Pr 121 200,token_dictionary_match,via
+locality,VIA LOS CUROS - MALAGA SECTOR LA JUDIA,via los curos - malaga sector la judia,Road Los Curos - Malaga Sector the Judia,token_dictionary_match,"via, la"
+locality,VIA LOS CUROS - MALAGA VEREDA CARTAGENA,via los curos - malaga vereda cartagena,Road Los Curos - Malaga Rural Hamlet Cartagena,token_dictionary_match,"via, vereda"
+locality,VIA NACIONAL A BOGOTA,via nacional a bogota,Road Nacional A Bogota,token_dictionary_match,via
+locality,VIA NACIONAL A OIBA,via nacional a oiba,Road Nacional A Oiba,token_dictionary_match,via
+locality,VIA NACIONAL BUCARAMANGA - SAN GIL,via nacional bucaramanga - san gil,Road Nacional Bucaramanga - San Gil,token_dictionary_match,via
+locality,VIA NACIONAL BUCARAMANGA SAN GIL,via nacional bucaramanga san gil,Road Nacional Bucaramanga San Gil,token_dictionary_match,via
+locality,VIA NACIONAL HACIA BARBOSA,via nacional hacia barbosa,Road Nacional Hacia Barbosa,token_dictionary_match,via
+locality,VIA NACIONAL HACIA PIEDECUESTA SECTOR MAC POLLO,via nacional hacia piedecuesta sector mac pollo,Road Nacional Hacia Piedecuesta Sector Mac Pollo,token_dictionary_match,via
+locality,VIA NACIONAL HACIA SAN GIL,via nacional hacia san gil,Road Nacional Hacia San Gil,token_dictionary_match,via
+locality,VIA NACIONAL LOS CUROS - MALAGA,via nacional los curos - malaga,Road Nacional Los Curos - Malaga,token_dictionary_match,via
+locality,VIA NACIONAL ONZAGA - SAN JOAQUIN,via nacional onzaga - san joaquin,Road Nacional Onzaga - San Joaquin,token_dictionary_match,via
+locality,VIA NACIONAL ONZAGA SAN JOAQUIN,via nacional onzaga san joaquin,Road Nacional Onzaga San Joaquin,token_dictionary_match,via
+locality,VIA NACIONAL PEZCADERO A CURITI,via nacional pezcadero a curiti,Road Nacional Pezcadero A Curiti,token_dictionary_match,via
+locality,VIA NACIONAL SAN GIL - CHARALA KM 18,via nacional san gil - charala km 18,Road Nacional San Gil - Charala Km 18,token_dictionary_match,via
+locality,VIA NACIONAL SAN GIL - SOCORRO,via nacional san gil - socorro,Road Nacional San Gil - Socorro,token_dictionary_match,via
+locality,VIA NACIONAL SECTOR EL PEAJE,via nacional sector el peaje,Road Nacional Sector the Peaje,token_dictionary_match,"via, el"
+locality,VIA NACIONAL SECTOR LISBOA,via nacional sector lisboa,Road Nacional Sector Lisboa,token_dictionary_match,via
+locality,VIA NACIONAL TRONCAL DEL CARARE,via nacional troncal del carare,Road Nacional Troncal of the Carare,token_dictionary_match,"via, del"
+locality,VIA NACIONAL VIA A PUERTO PARRA,via nacional via a puerto parra,Road Nacional Road A Puerto Parra,token_dictionary_match,"via, via"
+locality,VIA PRINCIPAL A BUCARAMANGA,via principal a bucaramanga,Road Principal A Bucaramanga,token_dictionary_match,via
+locality,VIA PRINCIPAL HACIA CAPITANEJO,via principal hacia capitanejo,Road Principal Hacia Capitanejo,token_dictionary_match,via
+locality,VIA PRINCIPAL HACIA VELEZ KM. 4,via principal hacia velez km 4,Road Principal Hacia Velez Km 4,token_dictionary_match,via
+locality,VIA PRINCIPAL KM 2 AL MUNICIPIO,via principal km 2 al municipio,Road Principal Km 2 Al Municipio,token_dictionary_match,via
+locality,VIA SAN BENITO A GUEPSA,via san benito a guepsa,Road San Benito A Guepsa,token_dictionary_match,via
+locality,VIA SAN GIL - CHARALA KM 11.5,via san gil - charala km 11 5,Road San Gil - Charala Km 11 5,token_dictionary_match,via
+locality,VIA SECTOR LIMONCITO - ALTA MIRA,via sector limoncito - alta mira,Road Sector Limoncito - Alta Mira,token_dictionary_match,via
+locality,VIA SECUNDARIA A SANTA HELENA,via secundaria a santa helena,Road Secundaria A Santa Helena,token_dictionary_match,via
+locality,VIA SURATA - CALIFORNIA SECTOR CASA ROJA,via surata - california sector casa roja,Road Surata - California Sector Casa Roja,token_dictionary_match,via
+locality,VIA TRONCAL DEL CARARE,via troncal del carare,Road Troncal of the Carare,token_dictionary_match,"via, del"
+locality,VIA TRONCAL DEL CARARE KM 6,via troncal del carare km 6,Road Troncal of the Carare Km 6,token_dictionary_match,"via, del"
+locality,VIA VEREDA SAN ANTONIO,via vereda san antonio,Road Rural Hamlet San Antonio,token_dictionary_match,"via, vereda"
+locality,VIAS HACIA LOS MUNICIPIOS DE BOLIVAR Y PUENTE NACIONAL,vias hacia los municipios de bolivar y puente nacional,Vias Hacia Los Municipios of Bolivar and Puente Nacional,token_dictionary_match,"de, y"
+locality,VUELTA PERICO,vuelta perico,Vuelta Perico,locality_passthrough,
+locality,Vereda Alsacia cerca a la quebrada la Carbona,vereda alsacia cerca a la quebrada la carbona,Rural Hamlet Alsacia Cerca A the Quebrada the Carbona,token_dictionary_match,"vereda, la, la"
+locality,ZONA INDUSTRIAL VIA A CHIMITA,zona industrial via a chimita,Zona Industrial Road A Chimita,token_dictionary_match,via
+locality,ZONA NORTE,zona norte,Zona Norte,locality_passthrough,
+locality,ZONA URBANA,zona urbana,Zona Urbana,locality_passthrough,
+locality,asentamiento Convivir y Altos de Andina,asentamiento convivir y altos de andina,Asentamiento Convivir and Altos of Andina,token_dictionary_match,"y, de"
+locality,"barrio la Cumbre, barrio El Carmen, vía hacia Acapulco y Ruitoque, barrio Bucarica",barrio la cumbre barrio el carmen via hacia acapulco y ruitoque barrio bucarica,Neighborhood the Cumbre Neighborhood the Carmen Road Hacia Acapulco and Ruitoque Neighborhood Bucarica,token_dictionary_match,"barrio, la, barrio, el, via, y, barrio"
+locality,"barrios San Martin, barrio Galán, barrio Colombia, Gallineral, 5 de Enero",barrios san martin barrio galan barrio colombia gallineral 5 de enero,Barrios San Martin Neighborhood Galan Neighborhood Colombia Gallineral 5 of Enero,token_dictionary_match,"barrio, barrio, de"
+locality,"veredas las Flores, Monchia y Agua Fría",veredas las flores monchia y agua fria,Veredas Las Flores Monchia and Agua Fria,token_dictionary_match,y
+locality,"veredas, Santa barbara, guaure, Arrayanes",veredas santa barbara guaure arrayanes,"Veredas, Santa Barbara, Guaure, Arrayanes",locality_passthrough,
+locality,,,Not reported,missing_value,
+municipality,AGUADA,aguada,Aguada,proper_noun_passthrough,
+municipality,ALBANIA,albania,Albania,proper_noun_passthrough,
+municipality,ARATOCA,aratoca,Aratoca,proper_noun_passthrough,
+municipality,BARBOSA,barbosa,Barbosa,proper_noun_passthrough,
+municipality,BARICHARA,barichara,Barichara,proper_noun_passthrough,
+municipality,BARRANCABERMEJA,barrancabermeja,Barrancabermeja,proper_noun_passthrough,
+municipality,BETULIA,betulia,Betulia,proper_noun_passthrough,
+municipality,BOLIVAR,bolivar,Bolivar,proper_noun_passthrough,
+municipality,BUCARAMANGA,bucaramanga,Bucaramanga,proper_noun_passthrough,
+municipality,CABRERA,cabrera,Cabrera,proper_noun_passthrough,
+municipality,CALIFORNIA,california,California,proper_noun_passthrough,
+municipality,CAPITANEJO,capitanejo,Capitanejo,proper_noun_passthrough,
+municipality,CARCASI,carcasi,Carcasi,proper_noun_passthrough,
+municipality,CARMEN,carmen,Carmen,proper_noun_passthrough,
+municipality,CEPITA,cepita,Cepita,proper_noun_passthrough,
+municipality,CERRITO,cerrito,Cerrito,proper_noun_passthrough,
+municipality,CHARALA,charala,Charala,proper_noun_passthrough,
+municipality,CHARTA,charta,Charta,proper_noun_passthrough,
+municipality,CHIMA,chima,Chima,proper_noun_passthrough,
+municipality,CHIPATA,chipata,Chipata,proper_noun_passthrough,
+municipality,CIMITARRA,cimitarra,Cimitarra,proper_noun_passthrough,
+municipality,CONCEPCION,concepcion,Concepcion,proper_noun_passthrough,
+municipality,CONFINES,confines,Confines,proper_noun_passthrough,
+municipality,CONTRATACION,contratacion,Contratacion,proper_noun_passthrough,
+municipality,COROMORO,coromoro,Coromoro,proper_noun_passthrough,
+municipality,CURITI,curiti,Curiti,proper_noun_passthrough,
+municipality,EL CARMEN DE CHUCURI,el carmen de chucuri,El Carmen De Chucuri,proper_noun_passthrough,
+municipality,EL GUACAMAYO,el guacamayo,El Guacamayo,proper_noun_passthrough,
+municipality,EL HATO,el hato,El Hato,proper_noun_passthrough,
+municipality,EL PALMAR,el palmar,El Palmar,proper_noun_passthrough,
+municipality,EL PEÑON,el penon,El Peñon,proper_noun_passthrough,
+municipality,EL PLAYON,el playon,El Playon,proper_noun_passthrough,
+municipality,EL SOCORRO,el socorro,El Socorro,proper_noun_passthrough,
+municipality,ENCINO,encino,Encino,proper_noun_passthrough,
+municipality,ENCISO,enciso,Enciso,proper_noun_passthrough,
+municipality,FLORDABLANCA,flordablanca,Flordablanca,proper_noun_passthrough,
+municipality,FLORIAN,florian,Florian,proper_noun_passthrough,
+municipality,FLORIDABLANCA,floridablanca,Floridablanca,proper_noun_passthrough,
+municipality,GALAN,galan,Galan,proper_noun_passthrough,
+municipality,GAMBITA,gambita,Gambita,proper_noun_passthrough,
+municipality,GIRON,giron,Giron,proper_noun_passthrough,
+municipality,GUACA,guaca,Guaca,proper_noun_passthrough,
+municipality,GUACAMAYO,guacamayo,Guacamayo,proper_noun_passthrough,
+municipality,GUADALUPE,guadalupe,Guadalupe,proper_noun_passthrough,
+municipality,GUAPOTA,guapota,Guapota,proper_noun_passthrough,
+municipality,GUAVATA,guavata,Guavata,proper_noun_passthrough,
+municipality,GUEPSA,guepsa,Guepsa,proper_noun_passthrough,
+municipality,HATO,hato,Hato,proper_noun_passthrough,
+municipality,JESUS MARIA,jesus maria,Jesus Maria,proper_noun_passthrough,
+municipality,JORDAN,jordan,Jordan,proper_noun_passthrough,
+municipality,LA BELLEZA,la belleza,La Belleza,proper_noun_passthrough,
+municipality,LANDAZURI,landazuri,Landazuri,proper_noun_passthrough,
+municipality,LEBRIJA,lebrija,Lebrija,proper_noun_passthrough,
+municipality,LOS SANTOS,los santos,Los Santos,proper_noun_passthrough,
+municipality,MACARAVITA,macaravita,Macaravita,proper_noun_passthrough,
+municipality,MALAGA,malaga,Malaga,proper_noun_passthrough,
+municipality,MATANZA,matanza,Matanza,proper_noun_passthrough,
+municipality,MOGOTES,mogotes,Mogotes,proper_noun_passthrough,
+municipality,MOLAGAVITA,molagavita,Molagavita,proper_noun_passthrough,
+municipality,OCAMONTE,ocamonte,Ocamonte,proper_noun_passthrough,
+municipality,OIBA,oiba,Oiba,proper_noun_passthrough,
+municipality,ONZAGA,onzaga,Onzaga,proper_noun_passthrough,
+municipality,PALMAR,palmar,Palmar,proper_noun_passthrough,
+municipality,PALMAS DEL SOCORRO,palmas del socorro,Palmas Del Socorro,proper_noun_passthrough,
+municipality,PARAMO,paramo,Paramo,proper_noun_passthrough,
+municipality,PIEDECUESTA,piedecuesta,Piedecuesta,proper_noun_passthrough,
+municipality,PINCHOTE,pinchote,Pinchote,proper_noun_passthrough,
+municipality,PUENTE NACIONAL,puente nacional,Puente Nacional,proper_noun_passthrough,
+municipality,PUERTO PARRA,puerto parra,Puerto Parra,proper_noun_passthrough,
+municipality,PUERTO PARRAS,puerto parras,Puerto Parras,proper_noun_passthrough,
+municipality,PUERTO WILCHES,puerto wilches,Puerto Wilches,proper_noun_passthrough,
+municipality,RIONEGRO,rionegro,Rionegro,proper_noun_passthrough,
+municipality,SABANA DE TORRES,sabana de torres,Sabana De Torres,proper_noun_passthrough,
+municipality,SAN ANDRES,san andres,San Andres,proper_noun_passthrough,
+municipality,SAN BENITO,san benito,San Benito,proper_noun_passthrough,
+municipality,SAN GIL,san gil,San Gil,proper_noun_passthrough,
+municipality,SAN JOAQUIN,san joaquin,San Joaquin,proper_noun_passthrough,
+municipality,SAN JOSE DE MIRANDA,san jose de miranda,San Jose De Miranda,proper_noun_passthrough,
+municipality,SAN MIGUEL,san miguel,San Miguel,proper_noun_passthrough,
+municipality,SAN VICENTE,san vicente,San Vicente,proper_noun_passthrough,
+municipality,SANTA BARBARA,santa barbara,Santa Barbara,proper_noun_passthrough,
+municipality,SANTA HELENA,santa helena,Santa Helena,proper_noun_passthrough,
+municipality,SANTA HELENA DEL OPON,santa helena del opon,Santa Helena Del Opon,proper_noun_passthrough,
+municipality,SIMACOTA,simacota,Simacota,proper_noun_passthrough,
+municipality,SUAITA,suaita,Suaita,proper_noun_passthrough,
+municipality,SUCRE,sucre,Sucre,proper_noun_passthrough,
+municipality,SUCRE Y LA BELLEZA,sucre y la belleza,Sucre Y La Belleza,proper_noun_passthrough,
+municipality,SURATA,surata,Surata,proper_noun_passthrough,
+municipality,TONA,tona,Tona,proper_noun_passthrough,
+municipality,VALLE DE SAN JOSE,valle de san jose,Valle De San Jose,proper_noun_passthrough,
+municipality,VELEZ,velez,Velez,proper_noun_passthrough,
+municipality,VETAS,vetas,Vetas,proper_noun_passthrough,
+municipality,VILLANUEVA,villanueva,Villanueva,proper_noun_passthrough,
+municipality,ZAPATOCA,zapatoca,Zapatoca,proper_noun_passthrough,
+probable_cause,ACCIDENTE VEHICULAR,accidente vehicular,Vehicle accident,exact_dictionary_match,accidente vehicular
+probable_cause,ATENTADO TERRORISTA,atentado terrorista,Terrorist attack,exact_dictionary_match,atentado terrorista
+probable_cause,CAIDA DE ROCAS,caida de rocas,Rockfall,exact_dictionary_match,caida de rocas
+probable_cause,COVID 19,covid 19,COVID-19,exact_dictionary_match,covid 19
+probable_cause,CRECIENTE SUBITA,creciente subita,Flash flood,exact_dictionary_match,creciente subita
+probable_cause,DESLIZAMIENTOS,deslizamientos,Landslides,exact_dictionary_match,deslizamientos
+probable_cause,FENOMENO DEL NIÑO,fenomeno del nino,El Nino phenomenon,exact_dictionary_match,fenomeno del nino
+probable_cause,FUERTES LLUVIAS,fuertes lluvias,Heavy rainfall,exact_dictionary_match,fuertes lluvias
+probable_cause,INDETERMINADO,indeterminado,Undetermined,exact_dictionary_match,indeterminado
+probable_cause,INUNDACIONES,inundaciones,Floods,exact_dictionary_match,inundaciones
+probable_cause,SEQUIA,sequia,Drought,exact_dictionary_match,sequia
+probable_cause,TEMPORADA SECA,temporada seca,Dry season,exact_dictionary_match,temporada seca
+probable_cause,,,Not reported,missing_value,
+shelters,,,Not reported,missing_value,

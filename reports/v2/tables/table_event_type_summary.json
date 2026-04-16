@@ -1,0 +1,82 @@
+[
+  {
+    "event_type_en": "Forest fire",
+    "event_count": 160,
+    "deaths_total": 0.0,
+    "injuries_total": 0.0,
+    "affected_families_total": 11.0,
+    "share_pct": 26.936026936
+  },
+  {
+    "event_type_en": "Floods",
+    "event_count": 78,
+    "deaths_total": 0.0,
+    "injuries_total": 0.0,
+    "affected_families_total": 5452.423,
+    "share_pct": 13.1313131313
+  },
+  {
+    "event_type_en": "Flash flood",
+    "event_count": 66,
+    "deaths_total": 4.0,
+    "injuries_total": 3.0,
+    "affected_families_total": 1438.0,
+    "share_pct": 11.1111111111
+  },
+  {
+    "event_type_en": "Mass movement",
+    "event_count": 66,
+    "deaths_total": 1.0,
+    "injuries_total": 6.0,
+    "affected_families_total": 339.0,
+    "share_pct": 11.1111111111
+  },
+  {
+    "event_type_en": "Thunderstorms",
+    "event_count": 48,
+    "deaths_total": 2.0,
+    "injuries_total": 6.0,
+    "affected_families_total": 2404.0,
+    "share_pct": 8.0808080808
+  },
+  {
+    "event_type_en": "Landslides",
+    "event_count": 47,
+    "deaths_total": 5.0,
+    "injuries_total": 8.0,
+    "affected_families_total": 224.0,
+    "share_pct": 7.9124579125
+  },
+  {
+    "event_type_en": "Supply shortage",
+    "event_count": 32,
+    "deaths_total": 0.0,
+    "injuries_total": 0.0,
+    "affected_families_total": 8715.3,
+    "share_pct": 5.3872053872
+  },
+  {
+    "event_type_en": "Torrential flash flood",
+    "event_count": 24,
+    "deaths_total": 2.0,
+    "injuries_total": 0.0,
+    "affected_families_total": 926.0,
+    "share_pct": 4.0404040404
+  },
+  {
+    "event_type_en": "Hailstorm",
+    "event_count": 24,
+    "deaths_total": 0.0,
+    "injuries_total": 0.0,
+    "affected_families_total": 145.0,
+    "share_pct": 4.0404040404
+  },
+  {
+    "event_type_en": "Road closure",
+    "event_count": 11,
+    "deaths_total": 0.0,
+    "injuries_total": 0.0,
+    "affected_families_total": 20.0,
+    "share_pct": 1.8518518519
+  }
+]

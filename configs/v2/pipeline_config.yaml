@@ -1,0 +1,79 @@
+project:
+  name: disaster-crisis-v2
+  title: Disaster and Crisis Event Analytics, Version 2.0
+  input_pattern: REPORTE_DE_EVENTOS*.csv
+  source_encoding: utf-8
+
+paths:
+  reports_root: reports/v2
+  figures_dir: reports/v2/figures
+  tables_dir: reports/v2/tables
+  intermediate_dir: reports/v2/intermediate
+  logs_dir: reports/v2/logs
+  manuscript_markdown: reports/v2/disaster_crisis_report_v2.md
+  manuscript_docx: reports/v2/disaster_crisis_report_v2.docx
+  manuscript_pdf: reports/v2/disaster_crisis_report_v2.pdf
+  summary_json: reports/v2/analysis_summary_v2.json
+  translation_dictionary: translation/es_en_dictionary.yaml
+  translation_documentation: docs/v2/translation_dictionary.md
+  schema: configs/v2/schema.yaml
+
+analysis:
+  monthly_frequency: MS
+  rolling_window_months: 6
+  stl_period: 12
+  shock_window_months: 6
+  pelt_penalty_multiplier: 2.5
+  earthquake_terms:
+    - sismo
+    - terremoto
+    - temblor
+    - movimiento sísmico
+    - movimiento sismico
+  earthquake_search_fields:
+    - event_type_es
+    - probable_cause_es
+    - observations_es
+  feasibility:
+    min_total_months: 24
+    min_nonzero_months: 12
+    min_total_events: 18
+    max_zero_share: 0.75
+    max_consecutive_zero_months: 12
+  fallback:
+    pca_min_features: 3
+    pca_min_months: 18
+    entropy_min_event_types: 2
+    entropy_min_months_with_events: 12
+    candidate_features:
+      - total_events
+      - unique_municipalities
+      - earthquake_events
+      - geophysical_events
+      - hydrometeorological_events
+      - infrastructure_service_events
+      - technological_anthropogenic_events
+      - affected_families_total
+      - destroyed_houses_total
+      - damaged_houses_total
+      - destroyed_aqueducts_total
+      - affected_roads_total
+      - affected_bridges_total
+      - affected_educational_establishments_total
+      - affected_hectares_total
+      - injuries_total
+      - missing_persons_total
+      - deaths_total
+      - human_impact_total
+      - housing_impact_total
+      - infrastructure_impact_total
+
+report:
+  title: Disaster Event Dynamics and Conditional Crisis Modeling in Santander, Colombia
+  author: Codex Version 2 Pipeline
+  keywords:
+    - disaster events
+    - earthquake screening
+    - crisis indicator
+    - translation architecture
+    - structural change

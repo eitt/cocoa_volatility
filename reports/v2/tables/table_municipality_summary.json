@@ -1,0 +1,72 @@
+[
+  {
+    "municipality_en": "Piedecuesta",
+    "event_count": 33,
+    "unique_event_types": 8,
+    "deaths_total": 2.0,
+    "affected_families_total": 227.0
+  },
+  {
+    "municipality_en": "Cimitarra",
+    "event_count": 28,
+    "unique_event_types": 9,
+    "deaths_total": 0.0,
+    "affected_families_total": 3069.0
+  },
+  {
+    "municipality_en": "Rionegro",
+    "event_count": 23,
+    "unique_event_types": 5,
+    "deaths_total": 0.0,
+    "affected_families_total": 922.0
+  },
+  {
+    "municipality_en": "Barrancabermeja",
+    "event_count": 21,
+    "unique_event_types": 7,
+    "deaths_total": 6.0,
+    "affected_families_total": 1047.423
+  },
+  {
+    "municipality_en": "Puerto Wilches",
+    "event_count": 17,
+    "unique_event_types": 7,
+    "deaths_total": 0.0,
+    "affected_families_total": 1636.0
+  },
+  {
+    "municipality_en": "Bucaramanga",
+    "event_count": 17,
+    "unique_event_types": 7,
+    "deaths_total": 0.0,
+    "affected_families_total": 551.0
+  },
+  {
+    "municipality_en": "Mogotes",
+    "event_count": 17,
+    "unique_event_types": 7,
+    "deaths_total": 0.0,
+    "affected_families_total": 350.0
+  },
+  {
+    "municipality_en": "Sabana De Torres",
+    "event_count": 16,
+    "unique_event_types": 4,
+    "deaths_total": 1.0,
+    "affected_families_total": 1026.0
+  },
+  {
+    "municipality_en": "Onzaga",
+    "event_count": 15,
+    "unique_event_types": 6,
+    "deaths_total": 0.0,
+    "affected_families_total": 117.0
+  },
+  {
+    "municipality_en": "Floridablanca",
+    "event_count": 13,
+    "unique_event_types": 6,
+    "deaths_total": 0.0,
+    "affected_families_total": 13.0
+  }
+]

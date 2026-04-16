@@ -1,0 +1,4 @@
+criterion,observed_value,threshold,rule,passes
+Total aligned months,35,24,>=,True
+Non-zero aligned months,4,12,>=,False
+Total aligned earthquake events,4,18,>=,False

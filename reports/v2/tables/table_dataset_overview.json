@@ -1,0 +1,30 @@
+[
+  {
+    "metric": "Source rows",
+    "value": 594
+  },
+  {
+    "metric": "Months in observation window",
+    "value": 36
+  },
+  {
+    "metric": "Date range start",
+    "value": "2021-08-01"
+  },
+  {
+    "metric": "Date range end",
+    "value": "2024-07-30"
+  },
+  {
+    "metric": "Distinct municipalities",
+    "value": 91
+  },
+  {
+    "metric": "Distinct event types",
+    "value": 25
+  },
+  {
+    "metric": "Earthquake-related events",
+    "value": 4
+  }
+]

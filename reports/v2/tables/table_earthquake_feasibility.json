@@ -1,0 +1,23 @@
+[
+  {
+    "criterion": "Total aligned months",
+    "observed_value": 35,
+    "threshold": 24,
+    "rule": ">=",
+    "passes": true
+  },
+  {
+    "criterion": "Non-zero aligned months",
+    "observed_value": 4,
+    "threshold": 12,
+    "rule": ">=",
+    "passes": false
+  },
+  {
+    "criterion": "Total aligned earthquake events",
+    "observed_value": 4,
+    "threshold": 18,
+    "rule": ">=",
+    "passes": false
+  }
+]

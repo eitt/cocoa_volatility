@@ -1,0 +1,107 @@
+[
+  {
+    "context": "alerts",
+    "translation_strategy": "exact_dictionary_match",
+    "value_count": 1
+  },
+  {
+    "context": "alerts",
+    "translation_strategy": "missing_value",
+    "value_count": 1
+  },
+  {
+    "context": "environmental_authority",
+    "translation_strategy": "exact_dictionary_match",
+    "value_count": 3
+  },
+  {
+    "context": "environmental_authority",
+    "translation_strategy": "missing_value",
+    "value_count": 1
+  },
+  {
+    "context": "event_status",
+    "translation_strategy": "exact_dictionary_match",
+    "value_count": 2
+  },
+  {
+    "context": "event_status",
+    "translation_strategy": "missing_value",
+    "value_count": 1
+  },
+  {
+    "context": "event_type",
+    "translation_strategy": "exact_dictionary_match",
+    "value_count": 30
+  },
+  {
+    "context": "event_type",
+    "translation_strategy": "missing_value",
+    "value_count": 1
+  },
+  {
+    "context": "impact_area",
+    "translation_strategy": "exact_dictionary_match",
+    "value_count": 6
+  },
+  {
+    "context": "impact_area",
+    "translation_strategy": "missing_value",
+    "value_count": 1
+  },
+  {
+    "context": "known_or_handled_by",
+    "translation_strategy": "token_dictionary_match",
+    "value_count": 242
+  },
+  {
+    "context": "known_or_handled_by",
+    "translation_strategy": "standardized_passthrough",
+    "value_count": 9
+  },
+  {
+    "context": "known_or_handled_by",
+    "translation_strategy": "missing_value",
+    "value_count": 1
+  },
+  {
+    "context": "locality",
+    "translation_strategy": "token_dictionary_match",
+    "value_count": 657
+  },
+  {
+    "context": "locality",
+    "translation_strategy": "locality_passthrough",
+    "value_count": 85
+  },
+  {
+    "context": "locality",
+    "translation_strategy": "exact_dictionary_match",
+    "value_count": 2
+  },
+  {
+    "context": "locality",
+    "translation_strategy": "missing_value",
+    "value_count": 1
+  },
+  {
+    "context": "municipality",
+    "translation_strategy": "proper_noun_passthrough",
+    "value_count": 94
+  },
+  {
+    "context": "probable_cause",
+    "translation_strategy": "exact_dictionary_match",
+    "value_count": 12
+  },
+  {
+    "context": "probable_cause",
+    "translation_strategy": "missing_value",
+    "value_count": 1
+  },
+  {
+    "context": "shelters",
+    "translation_strategy": "missing_value",
+    "value_count": 1
+  }
+]

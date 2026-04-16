@@ -1,0 +1,119 @@
+columns:
+  FECHA DE OCURRENCIA:
+    base_name: occurrence_date
+    type: datetime_occurrence
+  ESTADO DEL EVENTO:
+    base_name: event_status
+    type: categorical
+  FECHA DE CONCLUSION:
+    base_name: conclusion_date
+    type: datetime_iso
+  TIPO DE EVENTO:
+    base_name: event_type
+    type: categorical
+  CAUSA PROBABLE:
+    base_name: probable_cause
+    type: categorical
+  CONOCIDO/ATENDIDO:
+    base_name: known_or_handled_by
+    type: categorical
+  AUTORIDAD AMBIENTAL:
+    base_name: environmental_authority
+    type: categorical
+  MUNICIPIO:
+    base_name: municipality
+    type: categorical
+  AREA DE INCIDENCIA:
+    base_name: impact_area
+    type: categorical
+  BARRIO/VEREDA/CORREGIMIENTO:
+    base_name: locality
+    type: categorical
+  FAMILIAS AFECTADAS / DAMNIFICADAS:
+    base_name: affected_families
+    type: numeric
+  VIVIENDAS DESTRUIDAS:
+    base_name: destroyed_houses
+    type: numeric
+  VIVIENDAS AVERIADAS:
+    base_name: damaged_houses
+    type: numeric
+  ACUEDUCTOS DESTRUIDOS:
+    base_name: destroyed_aqueducts
+    type: numeric
+  VIAS AFECTADAS:
+    base_name: affected_roads
+    type: numeric
+  PUENTES OBSTRUIDOS/AFECTADOS:
+    base_name: affected_bridges
+    type: numeric
+  ESTABLECIMIENTOS EDUCATIVOS AFECTADOS:
+    base_name: affected_educational_establishments
+    type: numeric
+  AFECTACION HECTAREAS:
+    base_name: affected_hectares
+    type: numeric
+  EPICENTRO SISMO:
+    base_name: earthquake_epicenter
+    type: text
+  MAGNITUD RICHTER:
+    base_name: richter_magnitude
+    type: numeric
+  LOCALIZACION LAT/LONG/PROFU:
+    base_name: earthquake_location_depth
+    type: text
+  HERIDOS:
+    base_name: injuries
+    type: numeric
+  DESAPARECIDOS:
+    base_name: missing_persons
+    type: numeric
+  FALLECIDOS:
+    base_name: deaths
+    type: numeric
+  FECHA DE REPORTE:
+    base_name: report_date
+    type: datetime_iso
+  ALERTAS:
+    base_name: alerts
+    type: categorical
+  ALBERGUES:
+    base_name: shelters
+    type: categorical
+  OBSERVACIONES:
+    base_name: observations
+    type: text
+
+groups:
+  categorical_columns:
+    - event_status
+    - event_type
+    - probable_cause
+    - known_or_handled_by
+    - environmental_authority
+    - municipality
+    - impact_area
+    - locality
+    - alerts
+    - shelters
+  numeric_columns:
+    - affected_families
+    - destroyed_houses
+    - damaged_houses
+    - destroyed_aqueducts
+    - affected_roads
+    - affected_bridges
+    - affected_educational_establishments
+    - affected_hectares
+    - richter_magnitude
+    - injuries
+    - missing_persons
+    - deaths
+  date_columns:
+    - occurrence_date
+    - conclusion_date
+    - report_date
+  text_columns:
+    - earthquake_epicenter
+    - earthquake_location_depth
+    - observations

@@ -1,0 +1,45 @@
+{
+  "input_file": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\REPORTE_DE_EVENTOS_POR_DESASTRES_NATURALES_Y_ANTR\u00d3PICOS_(Hist\u00f3rico)_20260415.csv",
+  "branch": "pca_index",
+  "branch_label": "Composite Disaster Pressure Indicator (PCA)",
+  "branch_reason": "Because earthquakes proved too sparse as an isolated continuous transmission variable across the core window, V2 strictly constructs a Composite Disaster Proxy via PCA, testing its time-series validity against cocoa markets.",
+  "earthquake_feasibility": {
+    "total_months": 35,
+    "nonzero_months": 4,
+    "total_events": 4,
+    "zero_share": 0.8857142857142857,
+    "max_consecutive_zero_months": 12,
+    "is_viable": false
+  },
+  "selected_features": [
+    "total_events",
+    "unique_municipalities",
+    "earthquake_events",
+    "geophysical_events",
+    "hydrometeorological_events",
+    "infrastructure_service_events",
+    "technological_anthropogenic_events",
+    "affected_families_total",
+    "destroyed_houses_total",
+    "damaged_houses_total",
+    "destroyed_aqueducts_total",
+    "affected_roads_total",
+    "affected_bridges_total",
+    "affected_educational_establishments_total",
+    "affected_hectares_total",
+    "injuries_total",
+    "missing_persons_total",
+    "deaths_total",
+    "human_impact_total",
+    "housing_impact_total",
+    "infrastructure_impact_total"
+  ],
+  "explained_variance_ratio": 0.3307178666323286,
+  "shock_date": "2022-10-01",
+  "change_dates": [],
+  "artifacts": {
+    "markdown": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\reports\\v2\\disaster_crisis_report_v2.md",
+    "docx": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\reports\\v2\\disaster_crisis_report_v2.docx",
+    "pdf": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\reports\\v2\\disaster_crisis_report_v2.pdf"
+  }
+}

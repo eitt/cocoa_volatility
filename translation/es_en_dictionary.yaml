@@ -1,0 +1,385 @@
+atendido:
+  normalized_spanish_term: atendido
+  english_translation: Responded to
+  context: event_status
+  notes: Used when the event has already been handled by authorities.
+activo:
+  normalized_spanish_term: activo
+  english_translation: Active
+  context: event_status
+  notes: Event still active at the time of reporting.
+incendio forestal:
+  normalized_spanish_term: incendio forestal
+  english_translation: Forest fire
+  context: event_type
+  notes: Canonical translation for wildfire events.
+incendio  forestal:
+  normalized_spanish_term: incendio forestal
+  english_translation: Forest fire
+  context: event_type
+  notes: Handles duplicated whitespace in the source file.
+inundaciones:
+  normalized_spanish_term: inundaciones
+  english_translation: Floods
+  context: event_type
+  notes: Plural flood events.
+inundacion:
+  normalized_spanish_term: inundacion
+  english_translation: Flood
+  context: event_type
+  notes: Singular flood event.
+inudaciones:
+  normalized_spanish_term: inudaciones
+  english_translation: Floods
+  context: event_type
+  notes: Corrects source misspelling.
+inundaciones y deslizamientos:
+  normalized_spanish_term: inundaciones y deslizamientos
+  english_translation: Floods and landslides
+  context: event_type
+  notes: Compound hazard event.
+creciente subita:
+  normalized_spanish_term: creciente subita
+  english_translation: Flash flood
+  context: event_type
+  notes: Used for sudden river rise events.
+deslizamientos:
+  normalized_spanish_term: deslizamientos
+  english_translation: Landslides
+  context: event_type
+  notes: Mass wasting event class.
+movimiento en masa:
+  normalized_spanish_term: movimiento en masa
+  english_translation: Mass movement
+  context: event_type
+  notes: Broad mass movement category.
+remocion en masa:
+  normalized_spanish_term: remocion en masa
+  english_translation: Mass movement
+  context: event_type
+  notes: Alternative phrasing for mass movement.
+tormentas electricas:
+  normalized_spanish_term: tormentas electricas
+  english_translation: Thunderstorms
+  context: event_type
+  notes: Electrical storm events.
+granizada:
+  normalized_spanish_term: granizada
+  english_translation: Hailstorm
+  context: event_type
+  notes: Hail events.
+avenida torrencial:
+  normalized_spanish_term: avenida torrencial
+  english_translation: Torrential flash flood
+  context: event_type
+  notes: High-energy flood or debris-flow event.
+vendaval:
+  normalized_spanish_term: vendaval
+  english_translation: Windstorm
+  context: event_type
+  notes: Strong-wind event.
+sismo:
+  normalized_spanish_term: sismo
+  english_translation: Earthquake
+  context: event_type
+  notes: Primary earthquake label.
+terremoto:
+  normalized_spanish_term: terremoto
+  english_translation: Earthquake
+  context: event_type
+  notes: Alternate earthquake label.
+temblor:
+  normalized_spanish_term: temblor
+  english_translation: Earthquake tremor
+  context: event_type
+  notes: Colloquial earthquake label.
+movimiento sísmico:
+  normalized_spanish_term: movimiento sismico
+  english_translation: Seismic movement
+  context: detection
+  notes: Phrase used in narrative earthquake descriptions.
+movimiento sismico:
+  normalized_spanish_term: movimiento sismico
+  english_translation: Seismic movement
+  context: detection
+  notes: Accent-free variant used in matching.
+heladas:
+  normalized_spanish_term: heladas
+  english_translation: Frost
+  context: event_type
+  notes: Frost event.
+caida de rocas:
+  normalized_spanish_term: caida de rocas
+  english_translation: Rockfall
+  context: event_type
+  notes: Rockfall event.
+desbordamiento:
+  normalized_spanish_term: desbordamiento
+  english_translation: Overflow flood
+  context: event_type
+  notes: Overflow-related flooding.
+incendio estructural:
+  normalized_spanish_term: incendio estructural
+  english_translation: Structural fire
+  context: event_type
+  notes: Fire in a built structure.
+colapso de mina:
+  normalized_spanish_term: colapso de mina
+  english_translation: Mine collapse
+  context: event_type
+  notes: Mining collapse event.
+explosion de mina:
+  normalized_spanish_term: explosion de mina
+  english_translation: Mine explosion
+  context: event_type
+  notes: Mining explosion event.
+derrame de crudo:
+  normalized_spanish_term: derrame de crudo
+  english_translation: Oil spill
+  context: event_type
+  notes: Hydrocarbon spill event.
+erosion:
+  normalized_spanish_term: erosion
+  english_translation: Erosion
+  context: event_type
+  notes: Erosion event.
+accidente vehicular:
+  normalized_spanish_term: accidente vehicular
+  english_translation: Vehicle accident
+  context: event_type
+  notes: Transportation accident.
+accidente minero:
+  normalized_spanish_term: accidente minero
+  english_translation: Mining accident
+  context: event_type
+  notes: Mining accident.
+cierre de via:
+  normalized_spanish_term: cierre de via
+  english_translation: Road closure
+  context: event_type
+  notes: Access interruption event.
+desabastecimiento:
+  normalized_spanish_term: desabastecimiento
+  english_translation: Supply shortage
+  context: event_type
+  notes: Shortage or service disruption.
+explosion:
+  normalized_spanish_term: explosion
+  english_translation: Explosion
+  context: event_type
+  notes: Non-mining explosion event.
+calamidad publica:
+  normalized_spanish_term: calamidad publica
+  english_translation: Public emergency
+  context: event_type
+  notes: Administrative emergency declaration.
+colapso de estructura:
+  normalized_spanish_term: colapso de estructura
+  english_translation: Structural collapse
+  context: event_type
+  notes: Collapse of built infrastructure.
+fuga de gas:
+  normalized_spanish_term: fuga de gas
+  english_translation: Gas leak
+  context: event_type
+  notes: Gas leakage incident.
+fuertes lluvias:
+  normalized_spanish_term: fuertes lluvias
+  english_translation: Heavy rainfall
+  context: probable_cause
+  notes: Main hydrometeorological trigger in the registry.
+indeterminado:
+  normalized_spanish_term: indeterminado
+  english_translation: Undetermined
+  context: probable_cause
+  notes: Cause not specified in the source.
+fenomeno del niño:
+  normalized_spanish_term: fenomeno del nino
+  english_translation: El Nino phenomenon
+  context: probable_cause
+  notes: Climate anomaly reference.
+fenomeno del nino:
+  normalized_spanish_term: fenomeno del nino
+  english_translation: El Nino phenomenon
+  context: probable_cause
+  notes: Accent-free variant.
+sequia:
+  normalized_spanish_term: sequia
+  english_translation: Drought
+  context: probable_cause
+  notes: Dryness-related cause.
+temporada seca:
+  normalized_spanish_term: temporada seca
+  english_translation: Dry season
+  context: probable_cause
+  notes: Seasonal dryness as the trigger.
+covid 19:
+  normalized_spanish_term: covid 19
+  english_translation: COVID-19
+  context: probable_cause
+  notes: Public-health cause label.
+atentado terrorista:
+  normalized_spanish_term: atentado terrorista
+  english_translation: Terrorist attack
+  context: probable_cause
+  notes: Violent intentional event.
+rural:
+  normalized_spanish_term: rural
+  english_translation: Rural
+  context: impact_area
+  notes: Rural impact area.
+urbano:
+  normalized_spanish_term: urbano
+  english_translation: Urban
+  context: impact_area
+  notes: Urban impact area.
+urbana:
+  normalized_spanish_term: urbana
+  english_translation: Urban
+  context: impact_area
+  notes: Feminine variant of urban.
+urb:
+  normalized_spanish_term: urb
+  english_translation: Urban
+  context: impact_area
+  notes: Abbreviated urban label.
+urba:
+  normalized_spanish_term: urba
+  english_translation: Urban
+  context: impact_area
+  notes: Truncated urban label.
+urbano y rural:
+  normalized_spanish_term: urbano y rural
+  english_translation: Urban and rural
+  context: impact_area
+  notes: Mixed area coverage.
+urbano y  rural:
+  normalized_spanish_term: urbano y rural
+  english_translation: Urban and rural
+  context: impact_area
+  notes: Handles duplicated whitespace.
+roja:
+  normalized_spanish_term: roja
+  english_translation: Red
+  context: alerts
+  notes: Alert level.
+n/a:
+  normalized_spanish_term: n a
+  english_translation: Not reported
+  context: generic
+  notes: Generic missing-value token.
+na:
+  normalized_spanish_term: na
+  english_translation: Not reported
+  context: generic
+  notes: Generic missing-value token.
+cmgrd:
+  normalized_spanish_term: cmgrd
+  english_translation: Municipal Disaster Risk Management Council
+  context: known_or_handled_by
+  notes: Common reporting institution acronym.
+cas:
+  normalized_spanish_term: cas
+  english_translation: CAS Environmental Authority
+  context: environmental_authority
+  notes: Regional environmental authority acronym.
+cdmb:
+  normalized_spanish_term: cdmb
+  english_translation: CDMB Environmental Authority
+  context: environmental_authority
+  notes: Regional environmental authority acronym.
+alcaldia:
+  normalized_spanish_term: alcaldia
+  english_translation: Mayor's Office
+  context: known_or_handled_by
+  notes: Municipal administration token.
+bomberos:
+  normalized_spanish_term: bomberos
+  english_translation: Fire Department
+  context: known_or_handled_by
+  notes: Fire service token.
+voluntarios:
+  normalized_spanish_term: voluntarios
+  english_translation: Volunteer
+  context: known_or_handled_by
+  notes: Volunteer qualifier.
+cuerpo:
+  normalized_spanish_term: cuerpo
+  english_translation: Corps
+  context: known_or_handled_by
+  notes: Institutional token.
+defensa civil:
+  normalized_spanish_term: defensa civil
+  english_translation: Civil Defense
+  context: known_or_handled_by
+  notes: Civil protection institution.
+policia nacional:
+  normalized_spanish_term: policia nacional
+  english_translation: National Police
+  context: known_or_handled_by
+  notes: National police institution.
+ejercito nacional:
+  normalized_spanish_term: ejercito nacional
+  english_translation: National Army
+  context: known_or_handled_by
+  notes: National army institution.
+cruz roja:
+  normalized_spanish_term: cruz roja
+  english_translation: Red Cross
+  context: known_or_handled_by
+  notes: Humanitarian institution.
+de:
+  normalized_spanish_term: de
+  english_translation: of
+  context: generic
+  notes: Connector for institutional names.
+del:
+  normalized_spanish_term: del
+  english_translation: of the
+  context: generic
+  notes: Connector for institutional names.
+la:
+  normalized_spanish_term: la
+  english_translation: the
+  context: generic
+  notes: Definite article for tokenized translation.
+el:
+  normalized_spanish_term: el
+  english_translation: the
+  context: generic
+  notes: Definite article for tokenized translation.
+y:
+  normalized_spanish_term: y
+  english_translation: and
+  context: generic
+  notes: Coordination token.
+via:
+  normalized_spanish_term: via
+  english_translation: Road
+  context: generic
+  notes: Location token used in localities.
+vereda:
+  normalized_spanish_term: vereda
+  english_translation: Rural Hamlet
+  context: locality
+  notes: Rural settlement type.
+corregimiento:
+  normalized_spanish_term: corregimiento
+  english_translation: Township
+  context: locality
+  notes: Rural administrative unit.
+barrio:
+  normalized_spanish_term: barrio
+  english_translation: Neighborhood
+  context: locality
+  notes: Urban neighborhood unit.
+area rural:
+  normalized_spanish_term: area rural
+  english_translation: Rural area
+  context: locality
+  notes: Generic locality phrase.
+toda la jurisdiccion:
+  normalized_spanish_term: toda la jurisdiccion
+  english_translation: Entire jurisdiction
+  context: locality
+  notes: Used when the event covered the whole municipality.

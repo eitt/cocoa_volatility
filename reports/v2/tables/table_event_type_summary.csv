@@ -1,0 +1,11 @@
+event_type_en,event_count,deaths_total,injuries_total,affected_families_total,share_pct
+Forest fire,160,0.0,0.0,11.0,26.936026936026934
+Floods,78,0.0,0.0,5452.423,13.131313131313133
+Flash flood,66,4.0,3.0,1438.0,11.11111111111111
+Mass movement,66,1.0,6.0,339.0,11.11111111111111
+Thunderstorms,48,2.0,6.0,2404.0,8.080808080808081
+Landslides,47,5.0,8.0,224.0,7.912457912457913
+Supply shortage,32,0.0,0.0,8715.3,5.387205387205387
+Torrential flash flood,24,2.0,0.0,926.0,4.040404040404041
+Hailstorm,24,0.0,0.0,145.0,4.040404040404041
+Road closure,11,0.0,0.0,20.0,1.8518518518518516

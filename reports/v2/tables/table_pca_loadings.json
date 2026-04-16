@@ -1,0 +1,86 @@
+[
+  {
+    "feature": "hydrometeorological_events",
+    "loading": 0.3109413575
+  },
+  {
+    "feature": "infrastructure_impact_total",
+    "loading": 0.3106645894
+  },
+  {
+    "feature": "affected_roads_total",
+    "loading": 0.3034647843
+  },
+  {
+    "feature": "geophysical_events",
+    "loading": 0.2878005756
+  },
+  {
+    "feature": "housing_impact_total",
+    "loading": 0.2600691065
+  },
+  {
+    "feature": "damaged_houses_total",
+    "loading": 0.2577798873
+  },
+  {
+    "feature": "destroyed_houses_total",
+    "loading": 0.2452942103
+  },
+  {
+    "feature": "human_impact_total",
+    "loading": 0.2438490261
+  },
+  {
+    "feature": "missing_persons_total",
+    "loading": 0.2425650124
+  },
+  {
+    "feature": "injuries_total",
+    "loading": 0.2277903406
+  },
+  {
+    "feature": "unique_municipalities",
+    "loading": 0.2270350541
+  },
+  {
+    "feature": "deaths_total",
+    "loading": 0.2260757106
+  },
+  {
+    "feature": "total_events",
+    "loading": 0.2173126312
+  },
+  {
+    "feature": "affected_bridges_total",
+    "loading": 0.2021220216
+  },
+  {
+    "feature": "affected_educational_establishments_total",
+    "loading": 0.173062535
+  },
+  {
+    "feature": "technological_anthropogenic_events",
+    "loading": 0.1283199758
+  },
+  {
+    "feature": "affected_families_total",
+    "loading": 0.1201443531
+  },
+  {
+    "feature": "destroyed_aqueducts_total",
+    "loading": 0.1017258689
+  },
+  {
+    "feature": "earthquake_events",
+    "loading": -0.0644683413
+  },
+  {
+    "feature": "affected_hectares_total",
+    "loading": -0.0342846553
+  },
+  {
+    "feature": "infrastructure_service_events",
+    "loading": -0.0132057784
+  }
+]

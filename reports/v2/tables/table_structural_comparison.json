@@ -1,0 +1,23 @@
+[
+  {
+    "comparison": "Mean shift (Welch t-test)",
+    "before_value": 0.0016569065,
+    "after_value": 0.047832262,
+    "statistic": -2.3780873817,
+    "p_value": 0.0428685549
+  },
+  {
+    "comparison": "Variance shift (Levene test)",
+    "before_value": 0.0016036414,
+    "after_value": 0.0006584811,
+    "statistic": 1.3380270227,
+    "p_value": 0.2742672772
+  },
+  {
+    "comparison": "Distribution shift (KS test)",
+    "before_value": 0.0076805947,
+    "after_value": 0.046711831,
+    "statistic": 0.5,
+    "p_value": 0.474025974
+  }
+]
