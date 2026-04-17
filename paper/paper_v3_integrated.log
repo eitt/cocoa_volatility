@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.3.4)  16 APR 2026 20:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.3.4)  16 APR 2026 21:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -906,60 +906,35 @@ A/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/LEONA/Ap
 pData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rmtt.enc}{C:/Users/LEONA/AppD
 ata/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/LEONA/AppD
 ata/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}] [2] [3]
-<figures/figure_v1_long_run_coverage.png, id=149, 827.4915pt x 375.804pt>
+<figures/figure_v1_long_run_coverage.png, id=153, 827.4915pt x 375.804pt>
 File: figures/figure_v1_long_run_coverage.png Graphic file (type png)
 <use figures/figure_v1_long_run_coverage.png>
 Package pdftex.def Info: figures/figure_v1_long_run_coverage.png  used on input
- line 95.
+ line 97.
 (pdftex.def)             Requested size: 422.77664pt x 192.0073pt.
  [4]
-Underfull \hbox (badness 10000) in paragraph at lines 114--114
+Underfull \hbox (badness 10000) in paragraph at lines 116--116
 []|\OT1/lmr/m/n/8 Colombian co-coa
  []
 
 
-Underfull \hbox (badness 1571) in paragraph at lines 114--114
+Underfull \hbox (badness 1571) in paragraph at lines 116--116
 []|\OT1/lmr/m/n/8 Monthly av-er-age of AgroNet
  []
 
 
-Underfull \hbox (badness 6825) in paragraph at lines 115--115
+Underfull \hbox (badness 6825) in paragraph at lines 117--117
 []|\OT1/lmr/m/n/8 Monthly in-ter-na-tional co-coa
  []
 
 
-Overfull \hbox (6.21562pt too wide) in paragraph at lines 117--117
+Overfull \hbox (6.21562pt too wide) in paragraph at lines 119--119
 []|\OT1/lmr/m/n/8 COP/USD| 
  []
 
 
-Overfull \hbox (9.42162pt too wide) in paragraph at lines 118--118
+Overfull \hbox (9.42162pt too wide) in paragraph at lines 120--120
 []|\OT1/lmr/m/n/8 USD/barrel| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 119--119
-[]|\OT1/lmr/m/n/8 NASA
- []
-
-
-Underfull \hbox (badness 2310) in paragraph at lines 120--120
-[]|\OT1/lmr/m/n/8 NASA so-lar ra-di-a-
- []
-
-
-Overfull \hbox (10.97664pt too wide) in paragraph at lines 120--120
-[]|\OT1/lmr/m/n/8 MJ/m$[]$/day| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 120--120
-[]|\OT1/lmr/m/n/8 NASA
- []
-
-
-Underfull \hbox (badness 1365) in paragraph at lines 121--121
-[]|\OT1/lmr/m/n/8 Monthly mean max-i-mum air
  []
 
 
@@ -968,236 +943,261 @@ Underfull \hbox (badness 10000) in paragraph at lines 121--121
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--122
-[]|\OT1/lmr/m/n/8 Hydrometeorological
+Underfull \hbox (badness 2310) in paragraph at lines 122--122
+[]|\OT1/lmr/m/n/8 NASA so-lar ra-di-a-
  []
 
 
-Underfull \hbox (badness 8075) in paragraph at lines 122--122
-[]|\OT1/lmr/m/n/8 Monthly count of registry-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 122--122
-\OT1/lmr/m/n/8 coded hy-drom-e-te-o-ro-log-i-cal
+Overfull \hbox (10.97664pt too wide) in paragraph at lines 122--122
+[]|\OT1/lmr/m/n/8 MJ/m$[]$/day| 
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 122--122
-[]|\OT1/lmr/m/n/8 Disaster reg-
+[]|\OT1/lmr/m/n/8 NASA
  []
 
 
-Underfull \hbox (badness 1168) in paragraph at lines 123--123
-[]|\OT1/lmr/m/n/8 PCA dis-as-ter pres-
- []
-
-
-Underfull \hbox (badness 1389) in paragraph at lines 123--123
-[]|\OT1/lmr/m/n/8 First prin-ci-pal com-po-nent of
- []
-
-
-Underfull \hbox (badness 1377) in paragraph at lines 123--123
-\OT1/lmr/m/n/8 monthly multi-hazard dis-rup-
+Underfull \hbox (badness 1365) in paragraph at lines 123--123
+[]|\OT1/lmr/m/n/8 Monthly mean max-i-mum air
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 123--123
+[]|\OT1/lmr/m/n/8 NASA
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
+[]|\OT1/lmr/m/n/8 Hydrometeorological
+ []
+
+
+Underfull \hbox (badness 8075) in paragraph at lines 124--124
+[]|\OT1/lmr/m/n/8 Monthly count of registry-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
+\OT1/lmr/m/n/8 coded hy-drom-e-te-o-ro-log-i-cal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
+[]|\OT1/lmr/m/n/8 Disaster reg-
+ []
+
+
+Underfull \hbox (badness 1168) in paragraph at lines 125--125
+[]|\OT1/lmr/m/n/8 PCA dis-as-ter pres-
+ []
+
+
+Underfull \hbox (badness 1389) in paragraph at lines 125--125
+[]|\OT1/lmr/m/n/8 First prin-ci-pal com-po-nent of
+ []
+
+
+Underfull \hbox (badness 1377) in paragraph at lines 125--125
+\OT1/lmr/m/n/8 monthly multi-hazard dis-rup-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
 []|\OT1/lmr/m/n/8 Disaster reg-
  []
 
 [5 <./figures/figure_v1_long_run_coverage.png>]
-Underfull \hbox (badness 1270) in paragraph at lines 141--142
+Underfull \hbox (badness 1270) in paragraph at lines 143--144
 []|\OT1/lmr/m/n/10 Main lev-els com-par-isons
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 143--143
+Underfull \hbox (badness 10000) in paragraph at lines 145--145
 []|\OT1/lmr/m/n/10 Weather-augmented com-plete
  []
 
 
-Underfull \hbox (badness 4168) in paragraph at lines 143--144
+Underfull \hbox (badness 4168) in paragraph at lines 145--146
 []|\OT1/lmr/m/n/10 Contextual weather ex-
  []
 
+[6]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 155.
-[6] [7{C:/Users/LEONA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathe
-x.enc}] [8] [9]
-<figures/figure_indexed_core_series_common_window_imputed.png, id=208, 712.8231
+(Font)              <10.95> on input line 157.
+ [7{C:/Users/LEONA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.e
+nc}] [8] [9] [10]
+<figures/figure_indexed_core_series_common_window_imputed.png, id=226, 712.8231
 pt x 353.1594pt>
 File: figures/figure_indexed_core_series_common_window_imputed.png Graphic file
  (type png)
 <use figures/figure_indexed_core_series_common_window_imputed.png>
 Package pdftex.def Info: figures/figure_indexed_core_series_common_window_imput
-ed.png  used on input line 284.
+ed.png  used on input line 288.
 (pdftex.def)             Requested size: 446.26582pt x 221.09589pt.
- [10 <./figures/figure_indexed_core_series_common_window_imputed.png>]
-<figures/figure_weather_vulnerability_index.png, id=218, 712.3413pt x 353.1594p
+ [11 <./figures/figure_indexed_core_series_common_window_imputed.png>]
+<figures/figure_weather_vulnerability_index.png, id=236, 712.3413pt x 353.1594p
 t>
 File: figures/figure_weather_vulnerability_index.png Graphic file (type png)
 <use figures/figure_weather_vulnerability_index.png>
 Package pdftex.def Info: figures/figure_weather_vulnerability_index.png  used o
-n input line 323.
+n input line 327.
 (pdftex.def)             Requested size: 436.86871pt x 216.59087pt.
- [11]
-<figures/figure_monthly_event_totals.png, id=228, 602.25pt x 322.0833pt>
+ [12]
+<figures/figure_monthly_event_totals.png, id=245, 602.25pt x 322.0833pt>
 File: figures/figure_monthly_event_totals.png Graphic file (type png)
 <use figures/figure_monthly_event_totals.png>
 Package pdftex.def Info: figures/figure_monthly_event_totals.png  used on input
- line 332.
+ line 336.
 (pdftex.def)             Requested size: 225.4804pt x 120.58926pt.
-<figures/figure_hazard_domain_mix.png, id=229, 602.25pt x 344.2461pt>
+<figures/figure_hazard_domain_mix.png, id=246, 602.25pt x 344.2461pt>
 File: figures/figure_hazard_domain_mix.png Graphic file (type png)
 <use figures/figure_hazard_domain_mix.png>
 Package pdftex.def Info: figures/figure_hazard_domain_mix.png  used on input li
-ne 333.
+ne 337.
 (pdftex.def)             Requested size: 225.4804pt x 128.8871pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 351--351
+<figures/figure_contextual_overlay_alignment.png, id=248, 787.743pt x 641.0349p
+t>
+File: figures/figure_contextual_overlay_alignment.png Graphic file (type png)
+<use figures/figure_contextual_overlay_alignment.png>
+Package pdftex.def Info: figures/figure_contextual_overlay_alignment.png  used 
+on input line 346.
+(pdftex.def)             Requested size: 441.57086pt x 359.339pt.
+ [13 <./figures/figure_weather_vulnerability_index.png> <./figures/figure_month
+ly_event_totals.png> <./figures/figure_hazard_domain_mix.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 364--364
 []|\OT1/lmr/m/n/10 Hydrometeorological
  []
 
-[12 <./figures/figure_weather_vulnerability_index.png> <./figures/figure_monthl
-y_event_totals.png> <./figures/figure_hazard_domain_mix.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 375--375
+[14 <./figures/figure_contextual_overlay_alignment.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 388--388
 []|\OT1/lmr/m/n/10 Hydrometeorological
  []
 
-<figures/pca_indicator_change_points.png, id=242, 611.1633pt x 322.3242pt>
+<figures/pca_indicator_change_points.png, id=268, 611.1633pt x 322.3242pt>
 File: figures/pca_indicator_change_points.png Graphic file (type png)
 <use figures/pca_indicator_change_points.png>
 Package pdftex.def Info: figures/pca_indicator_change_points.png  used on input
- line 382.
+ line 395.
 (pdftex.def)             Requested size: 399.29463pt x 210.58534pt.
-[13] [14 <./figures/pca_indicator_change_points.png>] [15] [16]
-<figures/figure_correlation_heatmap_levels_common_window_imputed.png, id=268, 4
+[15] [16 <./figures/pca_indicator_change_points.png>] [17] [18] [19]
+<figures/figure_correlation_heatmap_levels_common_window_imputed.png, id=306, 4
 21.8159pt x 322.806pt>
 File: figures/figure_correlation_heatmap_levels_common_window_imputed.png Graph
 ic file (type png)
 <use figures/figure_correlation_heatmap_levels_common_window_imputed.png>
 Package pdftex.def Info: figures/figure_correlation_heatmap_levels_common_windo
-w_imputed.png  used on input line 436.
+w_imputed.png  used on input line 455.
 (pdftex.def)             Requested size: 422.77664pt x 323.53911pt.
-<figures/figure_climate_core_correlation_common_sample.png, id=269, 1007.6847pt
+<figures/figure_climate_core_correlation_common_sample.png, id=307, 1007.6847pt
  x 771.3618pt>
 File: figures/figure_climate_core_correlation_common_sample.png Graphic file (t
 ype png)
 <use figures/figure_climate_core_correlation_common_sample.png>
 Package pdftex.def Info: figures/figure_climate_core_correlation_common_sample.
-png  used on input line 443.
+png  used on input line 462.
 (pdftex.def)             Requested size: 469.75502pt x 359.58583pt.
- [17
+ [20
 
  <./figures/figure_correlation_heatmap_levels_common_window_imputed.png>]
-<figures/figure_climate_series_panels_common_window.png, id=277, 857.604pt x 13
+<figures/figure_climate_series_panels_common_window.png, id=315, 857.604pt x 13
 91.6793pt>
 File: figures/figure_climate_series_panels_common_window.png Graphic file (type
  png)
 <use figures/figure_climate_series_panels_common_window.png>
 Package pdftex.def Info: figures/figure_climate_series_panels_common_window.png
-  used on input line 450.
+  used on input line 469.
 (pdftex.def)             Requested size: 328.68022pt x 533.36676pt.
- [18 <./figures/figure_climate_core_correlation_common_sample.png>]
-<figures/figure_core_return_impulse_response.png, id=284, 872.2989pt x 662.9568
+ [21 <./figures/figure_climate_core_correlation_common_sample.png>]
+<figures/figure_core_return_impulse_response.png, id=322, 872.2989pt x 662.9568
 pt>
 File: figures/figure_core_return_impulse_response.png Graphic file (type png)
 <use figures/figure_core_return_impulse_response.png>
 Package pdftex.def Info: figures/figure_core_return_impulse_response.png  used 
-on input line 457.
+on input line 476.
 (pdftex.def)             Requested size: 469.75502pt x 357.02022pt.
- [19 <./figures/figure_climate_series_panels_common_window.png>]
-<figures/figure_v3_actual_vs_fitted.png, id=292, 610.9224pt x 319.9152pt>
+ [22 <./figures/figure_climate_series_panels_common_window.png>]
+<figures/figure_v3_actual_vs_fitted.png, id=329, 610.9224pt x 319.9152pt>
 File: figures/figure_v3_actual_vs_fitted.png Graphic file (type png)
 <use figures/figure_v3_actual_vs_fitted.png>
 Package pdftex.def Info: figures/figure_v3_actual_vs_fitted.png  used on input 
-line 464.
+line 483.
 (pdftex.def)             Requested size: 422.77664pt x 221.39584pt.
- [20 <./figures/figure_core_return_impulse_response.png>]
-<figures/figure_v3_integrated_heatmap.png, id=299, 691.1421pt x 569.7285pt>
+ [23 <./figures/figure_core_return_impulse_response.png>]
+<figures/figure_v3_integrated_heatmap.png, id=336, 691.1421pt x 569.7285pt>
 File: figures/figure_v3_integrated_heatmap.png Graphic file (type png)
 <use figures/figure_v3_integrated_heatmap.png>
 Package pdftex.def Info: figures/figure_v3_integrated_heatmap.png  used on inpu
-t line 471.
+t line 490.
 (pdftex.def)             Requested size: 385.20255pt x 317.53314pt.
- [21 <./figures/figure_v3_actual_vs_fitted.png>]
-<figures/figure_v3_descriptive_stack.png, id=306, 788.2248pt x 930.3558pt>
-File: figures/figure_v3_descriptive_stack.png Graphic file (type png)
-<use figures/figure_v3_descriptive_stack.png>
-Package pdftex.def Info: figures/figure_v3_descriptive_stack.png  used on input
- line 478.
-(pdftex.def)             Requested size: 291.2458pt x 343.75778pt.
- [22 <./figures/figure_v3_integrated_heatmap.png>]
-<figures/figure_top_municipalities.png, id=313, 615.7404pt x 360.8682pt>
+ [24 <./figures/figure_v3_actual_vs_fitted.png>]
+<figures/figure_top_municipalities.png, id=343, 615.7404pt x 360.8682pt>
 File: figures/figure_top_municipalities.png Graphic file (type png)
 <use figures/figure_top_municipalities.png>
 Package pdftex.def Info: figures/figure_top_municipalities.png  used on input l
-ine 485.
+ine 497.
 (pdftex.def)             Requested size: 375.80544pt x 220.25592pt.
- [23 <./figures/figure_v3_descriptive_stack.png>]
-<figures/figure_pca_loadings.png, id=320, 752.5716pt x 361.1091pt>
+<figures/figure_pca_loadings.png, id=344, 752.5716pt x 361.1091pt>
 File: figures/figure_pca_loadings.png Graphic file (type png)
 <use figures/figure_pca_loadings.png>
-Package pdftex.def Info: figures/figure_pca_loadings.png  used on input line 49
-2.
+Package pdftex.def Info: figures/figure_pca_loadings.png  used on input line 50
+4.
 (pdftex.def)             Requested size: 328.82707pt x 157.78096pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 508--508
+ [25 <./figures/figure_v3_integrated_heatmap.png> <./figures/figure_top_municip
+alities.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 520--520
 []|\OT1/lmr/m/n/10 Colombian co-coa $\OMS/lmsy/m/n/10 !$ \OT1/lmr/m/n/10 EU
  []
 
-[24 <./figures/figure_top_municipalities.png> <./figures/figure_pca_loadings.pn
-g>]
-Underfull \hbox (badness 10000) in paragraph at lines 530--530
+
+Underfull \hbox (badness 10000) in paragraph at lines 542--542
 []|$\OT1/lmr/m/n/10 ^^A [](\OML/lmm/m/it/10 P[]\OT1/lmr/m/n/10 ) \OMS/lmsy/m/n/
 10  $ \OT1/lmr/m/n/10 max
  []
 
 
-Underfull \hbox (badness 2409) in paragraph at lines 531--531
+Underfull \hbox (badness 2409) in paragraph at lines 543--543
 []|$\OT1/lmr/m/n/10 ^^A [](\OML/lmm/m/it/10 P[]\OT1/lmr/m/n/10 ) \OMS/lmsy/m/n/
 10  $ \OT1/lmr/m/n/10 precipitation$[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 534--534
+Underfull \hbox (badness 10000) in paragraph at lines 546--546
 []|\OT1/lmr/m/n/10 Domestic rolling volatil-ity $\OMS/lmsy/m/n/10  $
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 550--550
+[26 <./figures/figure_pca_loadings.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 562--562
 []|\OT1/lmr/m/n/10 Farmer ex-po-sure
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 551--551
+Underfull \hbox (badness 10000) in paragraph at lines 563--563
 []|\OT1/lmr/m/n/10 Livelihood risk
  []
 
 
-Underfull \hbox (badness 1005) in paragraph at lines 558--558
+Underfull \hbox (badness 1005) in paragraph at lines 570--570
 []\OT1/lmr/m/n/10.95 Table 12: |Disaster-indicator Granger-causality ma-trix re
 -tained from the disaster-extension
  []
 
-[25] (paper_v3_integrated.bbl [26] [27]) [28] (paper_v3_integrated.aux)
+(paper_v3_integrated.bbl [27] [28] [29]) [30] (paper_v3_integrated.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `paper_v3_integrated.out' has not changed.
-(rerunfilecheck)             Checksum: B2237EE116A544B438C6169FC4EA545A;3254.
+(rerunfilecheck)             Checksum: A29C8AB63BF32A7D95E3FD7831DF5A33;3097.
  ) 
 Here is how much of TeX's memory you used:
- 23513 strings out of 467867
- 444311 string characters out of 5418335
- 840043 words of memory out of 5000000
- 51894 multiletter control sequences out of 15000+600000
+ 23539 strings out of 467867
+ 444909 string characters out of 5418335
+ 837784 words of memory out of 5000000
+ 51912 multiletter control sequences out of 15000+600000
  694835 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,13n,118p,2034b,841s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,13n,118p,2105b,841s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/LEONA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pf
 b><C:/Users/LEONA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pf
 b><C:/Users/LEONA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pf
@@ -1217,9 +1217,9 @@ LEONA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/L
 EONA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/LE
 ONA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/LEO
 NA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-Output written on paper_v3_integrated.pdf (28 pages, 4785223 bytes).
+Output written on paper_v3_integrated.pdf (30 pages, 4642179 bytes).
 PDF statistics:
- 480 PDF objects out of 1000 (max. 8388607)
- 100 named destinations out of 1000 (max. 500000)
+ 516 PDF objects out of 1000 (max. 8388607)
+ 108 named destinations out of 1000 (max. 500000)
  224 words of extra memory for PDF output out of 10000 (max. 10000000)
 

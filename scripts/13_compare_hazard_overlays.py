@@ -2,7 +2,12 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
+import sys
 
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.dates as mdates
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import statsmodels.api as sm
@@ -10,9 +15,15 @@ from scipy import stats
 
 
 ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+from src.descriptive.visualization import PROJECT_PALETTE, save_figure
+
 PANEL_PATH = ROOT / "reports" / "v2" / "intermediate" / "v3_integrated_panel.csv"
 EVENT_PANEL_PATH = ROOT / "reports" / "v2" / "intermediate" / "04_monthly_event_panel.csv"
 OUTPUT_DIR = ROOT / "paper" / "tables"
+FIGURE_DIR = ROOT / "paper" / "figures"
 
 
 def _nested_window() -> pd.DataFrame:
@@ -23,7 +34,7 @@ def _nested_window() -> pd.DataFrame:
     merged = panel.merge(events, on="month", how="left")
 
     mask = (merged["month"] >= "2021-08-01") & (merged["month"] <= "2024-07-01")
-    df = merged.loc[mask].copy()
+    df = merged.loc[mask].sort_values("month").copy()
     df["colombia_return"] = df["colombia_cocoa_price_cop_kg_log_return"]
     df["world_volatility"] = df["world_return"].rolling(12, min_periods=6).std()
     return df
@@ -132,12 +143,55 @@ def _write_table(df: pd.DataFrame, stem: str) -> None:
     json_path.write_text(df.to_json(orient="records", indent=2), encoding="utf-8")
 
 
+def _build_context_overlay_figure(df: pd.DataFrame) -> None:
+    plot_df = df[
+        ["month", "world_return", "colombia_return", "hydrometeorological_events", "disaster_pressure"]
+    ].dropna(subset=["world_return", "colombia_return"]).copy()
+    if plot_df.empty:
+        return
+
+    episode_month = pd.Timestamp("2022-10-01")
+    series_specs = [
+        ("world_return", "World cocoa return", PROJECT_PALETTE[3], "Log return"),
+        ("colombia_return", "Colombian cocoa return", PROJECT_PALETTE[0], "Log return"),
+        ("hydrometeorological_events", "Hydrometeorological event count", PROJECT_PALETTE[2], "Count"),
+        ("disaster_pressure", "Composite territorial pressure (PCA)", PROJECT_PALETTE[4], "Std. index"),
+    ]
+
+    fig, axes = plt.subplots(4, 1, figsize=(11, 9), sharex=True)
+    for axis, (column, title, color, y_label) in zip(axes, series_specs):
+        axis.plot(plot_df["month"], plot_df[column], color=color, linewidth=2.4)
+        if column == "hydrometeorological_events":
+            axis.fill_between(
+                plot_df["month"],
+                plot_df[column].astype(float).to_numpy(),
+                color=color,
+                alpha=0.12,
+            )
+        axis.axvline(episode_month, color=PROJECT_PALETTE[7], linestyle="--", linewidth=1.1)
+        axis.set_title(title, loc="left", fontsize=11)
+        axis.set_ylabel(y_label)
+        axis.grid(True, alpha=0.25, linestyle="--")
+
+    axes[-1].set_xlabel("Month")
+    axes[-1].xaxis.set_major_formatter(mdates.DateFormatter("%Y-%m"))
+    for label in axes[-1].get_xticklabels():
+        label.set_rotation(30)
+        label.set_ha("right")
+
+    fig.suptitle("Nested-window alignment of core returns and contextual disaster pressure", fontsize=16)
+    fig.tight_layout(rect=[0, 0, 1, 0.98])
+    save_figure(fig, FIGURE_DIR / "figure_contextual_overlay_alignment.png")
+    plt.close(fig)
+
+
 def main() -> None:
     df = _nested_window()
     screening = _screen_direct_signals(df)
     comparison = _compare_overlay_models(df)
     _write_table(screening, "table_hazard_signal_screening")
     _write_table(comparison, "table_hazard_overlay_model_comparison")
+    _build_context_overlay_figure(df)
     summary = {
         "nested_window_start": "2021-08-01",
         "nested_window_end": "2024-07-01",

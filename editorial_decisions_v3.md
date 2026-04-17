@@ -2,145 +2,165 @@
 
 ## Purpose
 
-`paper/paper_v3_integrated.tex` was rebuilt as a journal-style article rather than a working-paper-style draft. The final structure treats benchmark transmission, environmental stress, and territorial resilience as one manuscript logic instead of two partially separate texts.
+This revision updates `paper/paper_v3_integrated.tex` so the disaster layer is framed in a methodologically defensible way. The paper now reads with a clearer hierarchy:
 
-## Which Prior Version Was Closest to Submission Quality
+- core contribution: benchmark transmission into Colombian cocoa prices, with secondary downstream evidence;
+- resilience extension: weather and disaster information as territorial exposure and contextual amplification;
+- interpretation: vulnerability depends on both market pass-through and the local conditions under which it is experienced.
 
-- `paper/cocoa_volatility_manuscript.tex` was the closest starting point for article structure, prose style, and core econometric exposition.
-- `reports/v2/disaster_crisis_report_v2.tex` contributed the disaster registry, hazard figures, and the resilience/disaster framing that was missing from the first version's main narrative.
-- The original `paper/paper_v3_integrated.tex` was used only as a partial bridge. It contained useful integration attempts, but it still had inconsistencies in reported statistics, incomplete figure/table coverage, and a weaker methodological justification than the final revision.
+The key editorial correction is that disaster variables are no longer written as if they were directly comparable econometric series to the world cocoa benchmark, exchange rate, oil price, or the main domestic price block.
 
-## What Was Retained From V1
+## What Changed in This Revision Pass
 
-- The main transmission architecture linking Colombian cocoa prices, the world cocoa benchmark, the EU chocolate index, the COP/USD exchange rate, and Brent oil.
-- The aligned-window logic distinguishing long historical coverage from the short comparable monthly estimation window.
-- The descriptive, stationarity, and transmission tables that anchor the benchmark pass-through story.
-- The weather-context logic, but rewritten more carefully so weather is treated as contextual environmental stress rather than as an unsupported replacement for the market mechanism.
-- The exploratory vulnerability indicators, retained as contextual interpretation rather than headline causal findings.
+- Rewrote the abstract so the paper states upfront that the disaster layer is a nested territorial exposure extension, not a co-equal transmission system.
+- Rewrote the introduction to explain why disaster data are used as contextual overlays, episode markers, and robustness tools rather than as benchmark-like monthly series.
+- Strengthened the conceptual framing with literature on composite territorial-risk indicators and contextual resilience measurement.
+- Rewrote the methods section so the disaster block is justified as:
+  - shorter than the core market window,
+  - sparse and irregular,
+  - partly zero-inflated,
+  - partly synthetic,
+  - and spatially mismatched relative to the climate point series and the producer-linked price system.
+- Rewrote the results text so the hazard tables are interpreted as contextual overlay screens, not as a contest among co-equal price drivers.
+- Rewrote the discussion and conclusion to make the limitations explicit and to emphasize contextual amplification instead of short-run price leadership.
 
-## What Was Retained From V2
+## Disaster Framing Revision
 
-- The long-run coverage figure and the disaster-event descriptive figures.
-- The official Santander disaster registry as the territorial hazard dataset.
-- The original disaster-extension insight that isolated earthquake counts are too sparse for direct time-series use.
-- The PCA-based multi-hazard indicator, but repositioned as a robustness overlay rather than the default main result.
-- The event-window logic around the October 2022 peak disruption episode.
-- The lower-level diagnostic figures and tables, moved to the supplementary section instead of discarded.
+The disaster layer is now explicitly positioned as a territorial resilience extension. In the revised manuscript it appears in five roles only:
 
-## Figure and Table Treatment
+- a descriptive exposure layer through the event totals and hazard-mix figures;
+- a contextual stress proxy through the PCA-based territorial-pressure index;
+- a parsimonious robustness extension through one-at-a-time hazard-overlay regressions;
+- an episode-level marker through hydrometeorological counts in the nested window;
+- an exploratory event-window comparison around the October 2022 peak pressure month.
 
-### V1 Figures
+The manuscript now states clearly across the introduction, methods, results, discussion, and conclusion that the disaster layer is not fully comparable to the market series because:
 
-- `figure_indexed_core_series_common_window_imputed.png`: retained in the main text.
-- `figure_correlation_heatmap_levels_common_window_imputed.png`: retained in the supplementary section.
-- `figure_core_return_impulse_response.png`: retained in the supplementary section.
-- `figure_climate_core_correlation_common_sample.png`: retained in the supplementary section.
-- `figure_climate_series_panels_common_window.png`: retained in the supplementary section.
-- `figure_weather_vulnerability_index.png`: retained in the main text because it carries the full-window environmental stress context.
+- the temporal window is shorter and only partially overlaps the main transmission sample;
+- the registry counts are sparse, irregular, and in some cases strongly zero-inflated;
+- the PCA measure is a synthetic territorial-pressure construct built from heterogeneous features;
+- the disaster registry, climate reference point, and producer-linked price system operate at different spatial scales.
 
-### V1 Tables
+## Fallacies Corrected or Softened
 
-- Data card: retained in updated form in the main text.
-- Sample design: retained in updated form in the main text.
-- Descriptive statistics: retained in the main text.
-- Statistical properties / stationarity overview: retained in the main text.
-- Core transmission results: retained in updated form in the main text.
-- Granger-causality table: moved to the supplementary section.
-- Weather-extended domestic models: moved to the supplementary section.
-- Vulnerability indicator definitions: moved to the supplementary section.
+### 1. Comparability fallacy
 
-### V2 Figures
+Corrected in the methods, results, discussion, and conclusion. The PCA measure is now described as a synthetic territorial-pressure indicator, not as a canonical economic time series. Hydrometeorological counts are described as contextual episode markers rather than as benchmark peers.
 
-- `figure_v1_long_run_coverage.png`: retained in the main text because it clarifies the historical-versus-aligned sample distinction.
-- `figure_monthly_event_totals.png` and `figure_hazard_domain_mix.png`: retained in the main text as the disaster descriptive backbone.
-- `figure_v3_actual_vs_fitted.png`: retained in the supplementary section.
-- `figure_v3_integrated_heatmap.png`: retained in the supplementary section.
-- `figure_v3_descriptive_stack.png`: retained in the supplementary section.
-- `figure_top_municipalities.png`: retained in the supplementary section.
-- `figure_pca_loadings.png`: retained in the supplementary section.
-- `pca_indicator_change_points.png`: retained in the main text because it directly supports the event-window interpretation.
+### 2. Overinterpretation fallacy
 
-### V2 Tables
+Corrected in the results and discussion. Weak coefficients and weak disaster-led diagnostics are no longer treated as evidence of disaster leadership. The text now says the disaster layer enriches interpretation even when it does not dominate short-run price formation.
 
-- Dataset overview and aligned-sample description: merged into the main-text data card and sample design tables.
-- Earthquake feasibility table: merged into the main-text hazard screening table.
-- Disaster causality table: retained in the supplementary section.
-- Return and volatility disaster-overlay tables: merged into the new main-text hazard overlay comparison table.
-- Structural comparison table: retained in updated form in the main text as the October 2022 event-window table.
-- PCA loadings table and municipality/event summaries: not foregrounded in the main text, but their associated evidence is preserved through the supplementary figures and the supporting hazard-selection outputs.
+### 3. Sample-window fallacy
 
-## Methodological Redesign Implemented
+Corrected in the introduction, data section, methods, and discussion. The shorter 35-observation disaster return window is now treated as a substantive reason for parsimony rather than as a minor technical footnote.
 
-- Kept the core HAC-robust levels and return models from V1.
-- Clarified the aligned sample architecture:
-  - full merged monthly panel,
-  - core aligned levels window,
-  - core aligned return window,
-  - weather-augmented sample,
-  - nested disaster levels window,
-  - nested disaster return window.
-- Reframed the weather block as contextual environmental stress rather than a competing core model.
-- Added explicit volatility and event-window equations so the paper no longer relies on partially implied methods.
-- Added a reproducible hazard-screening step through `scripts/13_compare_hazard_overlays.py`.
-- Exported two new manuscript-facing tables:
+### 4. Shock-selection endogeneity
+
+Softened and disclosed in the methods, results, and discussion. October 2022 is now described as an exploratory, data-driven peak month selected from the same nested hazard data used for screening, not as a strictly exogenous treatment date.
+
+### 5. Spatial-scale mismatch
+
+Added explicitly to the data and discussion sections. The manuscript now notes that the disaster registry is departmental, the climate data are point-based, and the price series are broader producer-linked references. This supports contextual interpretation but limits precise local causal attribution.
+
+### 6. Reporting automation fallacy
+
+Corrected editorially. Pipeline-stamped phrasing that overstated the role of the disaster variables was removed. Captions and narrative were manually revised so they no longer imply stronger evidence than the models actually provide.
+
+## Literature Integrated for the Revised Framing
+
+No additional external download was required in this pass because the project already contained a usable local resilience/disaster review and an expanded bibliography. The revised manuscript now leans more directly on existing references already present in `paper/references/cocoa_volatility.bib`, especially:
+
+- `Parsons2021` and `Garschagen2021` for composite territorial-risk and resilience indicators;
+- `Djalante2011` and `Birkmann2023` for resilience as context-sensitive absorption and governance under hazard conditions;
+- `hakkio_rush_1991` and `lutkepohl_2005` for short-sample caution in multivariate time-series work;
+- `acosta_ihle_voncramon_2019` for parsimonious price-transmission design logic when structure and timing differ across blocks.
+
+These citations were integrated to justify the revised methodological stance rather than to claim that the exact same design is standard in cocoa.
+
+## Figure Decisions
+
+The revision kept the V1 visual identity by using the project palette defined in the shared plotting helpers.
+
+### Figures retained in the main text
+
+- `figure_v1_long_run_coverage.png`
+- `figure_indexed_core_series_common_window_imputed.png`
+- `figure_weather_vulnerability_index.png`
+- `figure_monthly_event_totals.png`
+- `figure_hazard_domain_mix.png`
+- `pca_indicator_change_points.png`
+
+### Figure moved into the main text in updated form
+
+- The earlier V2-style descriptive stack was replaced by a cleaned figure generated in this pass:
+  - `paper/figures/figure_contextual_overlay_alignment.png`
+  - generated via `scripts/13_compare_hazard_overlays.py`
+  - purpose: show the nested-window alignment of world returns, Colombian returns, hydrometeorological counts, and composite territorial pressure without the pipeline-style V2 labeling.
+
+### Figures kept in the supplementary section
+
+- `figure_correlation_heatmap_levels_common_window_imputed.png`
+- `figure_climate_core_correlation_common_sample.png`
+- `figure_climate_series_panels_common_window.png`
+- `figure_core_return_impulse_response.png`
+- `figure_v3_actual_vs_fitted.png`
+- `figure_v3_integrated_heatmap.png`
+- `figure_top_municipalities.png`
+- `figure_pca_loadings.png`
+
+### Figures removed as separate displays because their evidence is preserved elsewhere
+
+- `figure_v3_descriptive_stack.png`
+
+Its evidence is now carried by the new cleaned main-text alignment figure, so the underlying V2 content was preserved without leaving a redundant pipeline-style display in the manuscript.
+
+## What Was Retained From V1 and V2
+
+### Retained from V1
+
+- the benchmark-transmission backbone;
+- the aligned-window logic;
+- the core descriptive, stationarity, and transmission tables;
+- the full-window weather-context block;
+- the project figure palette and visual identity.
+
+### Retained from V2
+
+- the Santander disaster registry;
+- the hazard descriptives;
+- the earthquake infeasibility result;
+- the PCA-based multi-hazard pressure construct;
+- the October 2022 episode logic;
+- the supporting diagnostic figures and tables that remain useful as supplementary evidence.
+
+## Empirical Redesign Implemented
+
+- Kept the core HAC-robust level and return models as the main empirical system.
+- Kept the weather block as contextual environmental stress rather than as a competing transmission model.
+- Kept the disaster block only in nested-window form.
+- Reframed hazard screening as selection of contextual overlays rather than selection of a rival benchmark series.
+- Kept the hydrometeorological count as the most defensible direct monthly episode marker.
+- Kept the PCA indicator only as a robustness and territorial-pressure construct.
+- Kept the event-window comparison, but relabeled it as exploratory and data-driven.
+- Updated `scripts/13_compare_hazard_overlays.py` to generate:
   - `paper/tables/table_hazard_signal_screening.csv`
   - `paper/tables/table_hazard_overlay_model_comparison.csv`
+  - `paper/figures/figure_contextual_overlay_alignment.png`
 
-## Direct Disaster Time-Series Feasibility
-
-- A direct disaster time series was **partially feasible**.
-- Isolated earthquake counts were **not feasible** for direct integration:
-  - 35 aligned return months,
-  - only 4 non-zero months,
-  - zero share of 0.886.
-- A broader direct environmental-disaster series **was feasible**:
-  - hydrometeorological event counts were non-zero in 30 of 35 aligned return months,
-  - they peak in October 2022,
-  - they outperform geophysical counts and total event counts in both nested-window return and volatility overlay fit.
-- For that reason, the final manuscript uses `hydrometeorological_events` as the primary direct hazard series in the nested-window overlay.
-
-## Synthetic Indicator Construction
-
-- A synthetic multi-hazard indicator was still constructed and tested.
-- The final manuscript retains the PCA disaster-pressure series as a robustness overlay rather than the default main result.
-- The retained PCA indicator uses 21 eligible monthly disaster features and explains 33.1% of the standardized variance.
-- Both the direct hydrometeorological series and the PCA indicator identify October 2022 as the main peak stress episode, which supports the event-window design.
-
-## How Reviewer Concerns Were Addressed
-
-1. Hazards now appear throughout the article, not only in the abstract.
-2. The gap statement was rewritten to explain why the question matters for smallholders, cooperatives, traders, and territorial governance.
-3. Formal hypotheses were removed from the introduction and replaced with integrated empirical expectations in the conceptual framing.
-4. The ecological-economics link was strengthened by treating the cocoa chain as a socio-ecological exposure system.
-5. The rationale for log differences was rewritten around shock transmission and instability, not only generic market econometrics.
-6. The weak short-run exchange-rate result is now discussed as a cautious institutional interpretation, not a hard claim.
-7. Novelty language was moderated. The paper now presents its contribution as empirical integration and methodological bridging.
-8. The contribution paragraph now explicitly links supply-chain transmission with resilience and territorial stress.
-9. The conclusion now includes transferability, future extensions, and practical resilience arrangements such as coordination, diversification, early-warning systems, and risk-sharing instruments.
-
-## Internal Review Pass
-
-The final manuscript was revised after a dedicated internal review pass that checked:
-
-- whether the resilience/disaster framing remained visible outside the abstract,
-- whether the direct-versus-synthetic hazard logic was honest and transparent,
-- whether the time-series claims stayed within the limits of the short sample,
-- whether V1 and V2 figures/tables had been preserved, merged, or explicitly relocated,
-- whether inconsistent reported values from the earlier V3 attempt were corrected.
-
-One specific correction from that review was the treatment of the PCA overlay: the earlier V3 draft contained inconsistent explained-variance reporting. The final manuscript aligns the text with the saved pipeline summary and treats the PCA series as a robustness layer instead of overpromoting it.
-
-## Remaining Empirical Limitations
+## Remaining Empirical Limits
 
 - The core return sample still contains only 52 monthly observations.
-- The nested disaster return sample still contains only 35 months.
-- The Colombian domestic price is a national reference series rather than a farm-gate micro panel.
-- The weather block is location-based and contextual, not household-specific.
-- The disaster registry supports monthly aggregation and event-window analysis, but not a strong fully dynamic hazard model.
-- The paper therefore remains strongest as a transparent resilience-oriented transmission study, not as a definitive causal model of disaster impacts.
+- The nested disaster return sample still contains only 35 observations.
+- The producer-linked cocoa price is still a broad reference series rather than a farm-gate panel.
+- The climate data remain point-based.
+- The disaster registry remains departmental and irregular.
+- The event window remains exploratory because the peak month is data-driven.
 
-## Build Status
+The paper is therefore strongest as a resilience-oriented transmission study with a contextual territorial exposure layer, not as a definitive causal model of disaster-led cocoa pricing.
 
-- `paper/paper_v3_integrated.tex` compiles successfully to `paper/paper_v3_integrated.pdf`.
-- Bibliography was refreshed with `bibtex`.
-- Remaining LaTeX warnings are layout-level table wrapping warnings, not build-breaking errors.
+## Build and Verification Status
+
+- `scripts/13_compare_hazard_overlays.py` runs successfully.
+- `python -m py_compile scripts/13_compare_hazard_overlays.py` passes.
+- The manuscript source has been updated to reference the new main-text contextual alignment figure and the revised methodological framing.

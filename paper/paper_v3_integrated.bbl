@@ -1,9 +1,17 @@
-\begin{thebibliography}{17}
+\begin{thebibliography}{23}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Acosta et~al.(2019)Acosta, Ihle, and von
+  Cramon-Taubadel]{acosta_ihle_voncramon_2019}
+Alejandro Acosta, Rico Ihle, and Stephan von Cramon-Taubadel.
+\newblock Combining market structure and econometric methods for price
+  transmission analysis.
+\newblock \emph{Food Security}, 11\penalty0 (4):\penalty0 941--951, 2019.
+\newblock \doi{10.1007/s12571-019-00951-w}.
 
 \bibitem[Adger(2006)]{Adger2006}
 W.~Neil Adger.
@@ -23,6 +31,27 @@ Felix Akrofi-Atitianti, Chinwe Ifejika~Speranza, Louis Bockel, and Richard
 \newblock \doi{10.3390/land7010030}.
 \newblock URL \url{https://doi.org/10.3390/land7010030}.
 
+\bibitem[Birkmann et~al.(2023)Birkmann, Schuettrumpf, Handmer, Thieken,
+  Kuhlicke, Truedinger, Sauter, Klopries, Greiving, Jamshed, Merz, Solecki, and
+  Kirschbauer]{Birkmann2023}
+Joern Birkmann, Holger Schuettrumpf, John Handmer, Annegret Thieken, Christian
+  Kuhlicke, Alessa Truedinger, Holger Sauter, Elena-Maria Klopries, Stefan
+  Greiving, Ali Jamshed, Bruno Merz, William Solecki, and Lothar Kirschbauer.
+\newblock Strengthening resilience in reconstruction after extreme events:
+  Insights from flood affected communities in germany.
+\newblock \emph{International Journal of Disaster Risk Reduction}, 96:\penalty0
+  103965, 2023.
+\newblock \doi{10.1016/j.ijdrr.2023.103965}.
+\newblock URL \url{https://doi.org/10.1016/j.ijdrr.2023.103965}.
+
+\bibitem[Djalante et~al.(2011)Djalante, Holley, and Thomalla]{Djalante2011}
+Riyanti Djalante, Cameron Holley, and Frank Thomalla.
+\newblock Adaptive governance and managing resilience to natural hazards.
+\newblock \emph{International Journal of Disaster Risk Science}, 2\penalty0
+  (4):\penalty0 1--14, 2011.
+\newblock \doi{10.1007/s13753-011-0015-6}.
+\newblock URL \url{https://doi.org/10.1007/s13753-011-0015-6}.
+
 \bibitem[Ericksen(2008)]{Ericksen2008}
 Polly~J. Ericksen.
 \newblock Conceptualizing food systems for global environmental change
@@ -31,6 +60,15 @@ Polly~J. Ericksen.
   234--245, 2008.
 \newblock \doi{10.1016/j.gloenvcha.2007.09.002}.
 \newblock URL \url{https://doi.org/10.1016/j.gloenvcha.2007.09.002}.
+
+\bibitem[Garschagen et~al.(2021)Garschagen, Doshi, Reith, and
+  Hagenlocher]{Garschagen2021}
+Matthias Garschagen, Deepal Doshi, Jonathan Reith, and Michael Hagenlocher.
+\newblock Global patterns of disaster and climate risk: An analysis of the
+  consistency of leading index-based assessments and their results.
+\newblock \emph{Climatic Change}, 169\penalty0 (1-2), 2021.
+\newblock \doi{10.1007/s10584-021-03209-7}.
+\newblock URL \url{https://doi.org/10.1007/s10584-021-03209-7}.
 
 \bibitem[Hakkio and Rush(1991)]{hakkio_rush_1991}
 Craig~S. Hakkio and Mark Rush.
@@ -66,6 +104,11 @@ Fiona Lahive, Paul Hadley, and Andrew~J. Daymond.
 \newblock \doi{10.1007/s13593-018-0552-0}.
 \newblock URL \url{https://doi.org/10.1007/s13593-018-0552-0}.
 
+\bibitem[Lutkepohl(2005)]{lutkepohl_2005}
+Helmut Lutkepohl.
+\newblock \emph{New Introduction to Multiple Time Series Analysis}.
+\newblock Springer, 2005.
+
 \bibitem[Meyer and von Cramon-Taubadel(2004)]{MeyerCramon2004}
 Jochen Meyer and Stephan von Cramon-Taubadel.
 \newblock Asymmetric price transmission: A survey.
@@ -95,6 +138,17 @@ Wiebke Niether, Johanna Jacobi, Wilma~J. Blaser, Christian Andres, and Laura
 \newblock \emph{Environmental Research Letters}, 2020.
 \newblock \doi{10.1088/1748-9326/abb053}.
 \newblock URL \url{https://doi.org/10.1088/1748-9326/abb053}.
+
+\bibitem[Parsons et~al.(2021)Parsons, Reeve, McGregor, Hastings, Marshall,
+  McNeill, Stayner, and Glavac]{Parsons2021}
+Melissa Parsons, Ian Reeve, James McGregor, Peter Hastings, Graham~R. Marshall,
+  Judith McNeill, Richard Stayner, and Sonya Glavac.
+\newblock Disaster resilience in australia: A geographic assessment using an
+  index of coping and adaptive capacity.
+\newblock \emph{International Journal of Disaster Risk Reduction}, 62:\penalty0
+  102422, 2021.
+\newblock \doi{10.1016/j.ijdrr.2021.102422}.
+\newblock URL \url{https://doi.org/10.1016/j.ijdrr.2021.102422}.
 
 \bibitem[Schroth et~al.(2016)Schroth, Laderach, Martinez-Valle, Bunn, and
   Jassogne]{Schroth2016}
