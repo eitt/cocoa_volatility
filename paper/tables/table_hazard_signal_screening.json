@@ -1,0 +1,50 @@
+[
+  {
+    "signal":"earthquake_events",
+    "label":"Earthquake events",
+    "months":35,
+    "nonzero_months":4,
+    "zero_share":0.8857142857,
+    "total_value":4.0,
+    "mean_value":0.1142857143,
+    "std_value":0.3228028511,
+    "peak_month":"2022-09-01",
+    "peak_value":1.0
+  },
+  {
+    "signal":"geophysical_events",
+    "label":"Geophysical events",
+    "months":35,
+    "nonzero_months":28,
+    "zero_share":0.2,
+    "total_value":121.0,
+    "mean_value":3.4571428571,
+    "std_value":3.0033594635,
+    "peak_month":"2022-11-01",
+    "peak_value":12.0
+  },
+  {
+    "signal":"hydrometeorological_events",
+    "label":"Hydrometeorological events",
+    "months":35,
+    "nonzero_months":30,
+    "zero_share":0.1428571429,
+    "total_value":273.0,
+    "mean_value":7.8,
+    "std_value":5.8701638418,
+    "peak_month":"2022-10-01",
+    "peak_value":20.0
+  },
+  {
+    "signal":"total_events",
+    "label":"Total recorded events",
+    "months":35,
+    "nonzero_months":35,
+    "zero_share":0.0,
+    "total_value":572.0,
+    "mean_value":16.3428571429,
+    "std_value":9.468035566,
+    "peak_month":"2024-01-01",
+    "peak_value":49.0
+  }
+]

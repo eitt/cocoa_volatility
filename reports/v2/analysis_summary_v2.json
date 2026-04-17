@@ -37,9 +37,11 @@
   "explained_variance_ratio": 0.3307178666323286,
   "shock_date": "2022-10-01",
   "change_dates": [],
+  "v3_integrated_panel": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\reports\\v2\\intermediate\\v3_integrated_panel.csv",
   "artifacts": {
     "markdown": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\reports\\v2\\disaster_crisis_report_v2.md",
     "docx": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\reports\\v2\\disaster_crisis_report_v2.docx",
-    "pdf": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\reports\\v2\\disaster_crisis_report_v2.pdf"
+    "pdf": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\reports\\v2\\disaster_crisis_report_v2.pdf",
+    "tex": "C:\\Users\\LEONA\\Documents\\GitHub\\cocoa_volatility\\reports\\v2\\disaster_crisis_report_v2.tex"
   }
 }

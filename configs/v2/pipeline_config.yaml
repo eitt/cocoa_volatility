@@ -13,6 +13,7 @@ paths:
   manuscript_markdown: reports/v2/disaster_crisis_report_v2.md
   manuscript_docx: reports/v2/disaster_crisis_report_v2.docx
   manuscript_pdf: reports/v2/disaster_crisis_report_v2.pdf
+  manuscript_tex: reports/v2/disaster_crisis_report_v2.tex
   summary_json: reports/v2/analysis_summary_v2.json
   translation_dictionary: translation/es_en_dictionary.yaml
   translation_documentation: docs/v2/translation_dictionary.md

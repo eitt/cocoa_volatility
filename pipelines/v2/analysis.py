@@ -13,6 +13,9 @@ from sklearn.preprocessing import StandardScaler
 from statsmodels.tsa.seasonal import STL
 import statsmodels.api as sm
 
+from src.econometrics.causality_tests import run_granger_causality
+from src.econometrics.cointegration_tests import run_engle_granger_test
+from src.econometrics.var_vecm_models import fit_var_model
 from pipelines.v2.change_points import detect_mean_shift_pelt
 from pipelines.v2.visualization import (
     plot_change_points,
@@ -220,13 +223,75 @@ def _run_ts_tests(series: pd.Series) -> dict[str, float]:
     }
 
 
+def _run_long_run_diagnostics(full_df: pd.DataFrame, domestic_col: str, world_col: str) -> dict[str, Any]:
+    """Calculate V1-style long-run benchmarks on the full historical sample."""
+    long_run = {}
+    
+    # 1. Full Sample Descriptive Stats
+    for col in [domestic_col, world_col]:
+        if col in full_df.columns:
+            series = full_df[col].dropna()
+            long_run[f"{col}_full_mean"] = float(series.mean())
+            long_run[f"{col}_full_std"] = float(series.std())
+            long_run[f"{col}_full_obs"] = len(series)
+            
+            # ADF on full sample
+            from statsmodels.tsa.stattools import adfuller
+            long_run[f"{col}_full_adf_p"] = adfuller(series)[1] if len(series) > 10 else np.nan
+
+    # 2. Bivariate Engle-Granger Cointegration
+    if domestic_col in full_df.columns and world_col in full_df.columns:
+        log_y = np.log(full_df[domestic_col])
+        log_x = np.log(full_df[world_col])
+        try:
+            coint_res = run_engle_granger_test(log_y, log_x)
+            long_run["engle_granger_p"] = coint_res["p_value"]
+            long_run["engle_granger_stat"] = coint_res["statistic"]
+        except Exception:
+            long_run["engle_granger_p"] = np.nan
+
+    return long_run
+
+
+def _run_granger_system(dataframe: pd.DataFrame, source: str, targets: list[str], maxlag: int = 4) -> pd.DataFrame:
+    """Run pairwise Granger causality tests from source to a list of targets."""
+    from statsmodels.tsa.stattools import grangercausalitytests
+    records = []
+    for target in targets:
+        if source not in dataframe.columns or target not in dataframe.columns:
+            continue
+        data = dataframe[[target, source]].dropna()
+        if len(data) < maxlag + 10:
+            continue
+        test_results = grangercausalitytests(data, maxlag=maxlag, verbose=False)
+        for lag, lag_result in test_results.items():
+            f_stat, p_val, *_ = lag_result[0]["ssr_ftest"]
+            records.append({
+                "source": source,
+                "target": target,
+                "lag": lag,
+                "f_statistic": float(f_stat),
+                "p_value": float(p_val),
+                "causal": p_val < 0.05
+            })
+    return pd.DataFrame(records)
+
+
 def _estimate_extensions(target_df: pd.DataFrame, signal_df: pd.DataFrame, signal_column: str, rolling_window_months: int) -> dict[str, pd.DataFrame]:
     """Estimate core V1 extensions with the composite disaster indicator overlay."""
     df = target_df.copy()
     if len(df) == len(signal_df):
         df["disaster_indicator"] = signal_df[signal_column].values
     else:
-        return {"return_extension": pd.DataFrame(), "volatility_extension": pd.DataFrame()}
+        return {"return_extension": pd.DataFrame(), "volatility_extension": pd.DataFrame(), "causality_matrix": pd.DataFrame()}
+    
+    # 1. Setup returns
+    return_pairs = [
+        ("colombia_cocoa_price_cop_kg_log_return", "Domestic Prices"),
+        ("world_return", "International Prices"),
+        ("fx_return", "Exchange Rate"),
+        ("oil_return", "Oil Prices")
+    ]
     
     if "log_world_cocoa_price_usd_mt" in df.columns:
         df["world_return"] = df["log_world_cocoa_price_usd_mt"].diff()
@@ -234,9 +299,9 @@ def _estimate_extensions(target_df: pd.DataFrame, signal_df: pd.DataFrame, signa
         df["oil_return"] = df["log_brent_oil_usd_bbl"].diff()
         df["colombia_return"] = df["colombia_cocoa_price_cop_kg_log_return"]
     else:
-        return {"return_extension": pd.DataFrame(), "volatility_extension": pd.DataFrame()}
+        return {"return_extension": pd.DataFrame(), "volatility_extension": pd.DataFrame(), "causality_matrix": pd.DataFrame()}
 
-    # 1. Return extension
+    # 2. Return extension (HAC - Domestic focus)
     data_ret = df[["colombia_return", "world_return", "fx_return", "oil_return", "disaster_indicator"]].dropna()
     if len(data_ret) > 10:
         X_ret = sm.add_constant(data_ret[["world_return", "fx_return", "oil_return", "disaster_indicator"]])
@@ -245,12 +310,13 @@ def _estimate_extensions(target_df: pd.DataFrame, signal_df: pd.DataFrame, signa
         ret_results = pd.DataFrame({
             "term": model_ret.params.index,
             "coefficient": model_ret.params.values,
+            "std_error": model_ret.bse.values,
             "p_value": model_ret.pvalues.values,
         })
     else:
         ret_results = pd.DataFrame()
 
-    # 2. Volatility extension
+    # 3. Volatility extension
     if "colombia_cocoa_price_cop_kg_log_return_rolling_volatility" in df.columns:
         df["world_volatility"] = df["world_return"].rolling(rolling_window_months, min_periods=2).var()
         data_vol = df[["colombia_cocoa_price_cop_kg_log_return_rolling_volatility", "world_volatility", "disaster_indicator"]].dropna()
@@ -268,7 +334,20 @@ def _estimate_extensions(target_df: pd.DataFrame, signal_df: pd.DataFrame, signa
     else:
         vol_results = pd.DataFrame()
         
-    return {"return_extension": ret_results, "volatility_extension": vol_results}
+    # 4. Granger Causality System
+    granger_targets = [p[0] for p in return_pairs if p[0] in df.columns]
+    causality_matrix = _run_granger_system(df, source="disaster_indicator", targets=granger_targets)
+
+    return {
+        "return_extension": ret_results, 
+        "volatility_extension": vol_results,
+        "causality_matrix": causality_matrix,
+        "core_benchmarks": {
+            "world_to_domestic_beta": float(model_ret.params["world_return"]) if not ret_results.empty else np.nan,
+            "world_to_domestic_p": float(model_ret.pvalues["world_return"]) if not ret_results.empty else np.nan,
+            "rsquared_adj": float(model_ret.rsquared_adj) if not ret_results.empty else np.nan,
+        }
+    }
 
 
 def _run_series_diagnostics(
@@ -349,6 +428,7 @@ def _run_series_diagnostics(
         )
 
     return {
+        "signal_values": signal_values,
         "series_df": target_df,
         "summary": _series_summary(target_df, value_column=target_column),
         "ts_tests": ts_tests,
@@ -433,6 +513,28 @@ def run_analysis(
     event_type_matrix = event_type_matrix[event_type_matrix["month"].isin(common_dates)].sort_values("month").reset_index(drop=True)
     target_df = target_df[target_df["month"].isin(common_dates)].sort_values("month").reset_index(drop=True)
     
+    # NEW: Calculate returns if missing
+    if "world_return" not in target_df.columns and "world_cocoa_price_usd_mt" in target_df.columns:
+        target_df["world_return"] = np.log(target_df["world_cocoa_price_usd_mt"]).diff()
+    if "fx_return" not in target_df.columns and "cop_usd_exchange_rate" in target_df.columns:
+        target_df["fx_return"] = np.log(target_df["cop_usd_exchange_rate"]).diff()
+    if "oil_return" not in target_df.columns and "brent_oil_usd_bbl" in target_df.columns:
+        target_df["oil_return"] = np.log(target_df["brent_oil_usd_bbl"]).diff()
+    
+    # NEW: Long-run baseline (using full available volatility_df)
+    long_run_stats = _run_long_run_diagnostics(
+        volatility_df, 
+        domestic_col="colombia_cocoa_price_cop_kg", 
+        world_col="world_cocoa_price_usd_mt"
+    )
+    
+    # NEW: Vulnerability Indices (Aligned window)
+    # We'll calculate a simple 'Farmer Exposure Index' based on the interaction 
+    # of domestic volatility and a rolling market shock (World return).
+    target_df["z_col_vol"] = stats.zscore(target_df["colombia_cocoa_price_cop_kg_log_return_rolling_volatility"].fillna(0))
+    target_df["z_wld_ret"] = stats.zscore(target_df["world_return"].fillna(0))
+    target_df["farmer_exposure_index"] = target_df["z_col_vol"] + target_df["z_wld_ret"].abs()
+    
     common_figures = {
         "monthly_totals": str(plot_monthly_event_totals(monthly, output_path=figures_dir / "figure_monthly_event_totals.png")),
         "hazard_mix": str(plot_hazard_domain_mix(monthly, output_path=figures_dir / "figure_hazard_domain_mix.png")),
@@ -498,8 +600,11 @@ def run_analysis(
                 "structural_comparison": diagnostics["structural_table"],
                 "return_extension": diagnostics["model_extensions"]["return_extension"],
                 "volatility_extension": diagnostics["model_extensions"]["volatility_extension"],
+                "causality_matrix": diagnostics["model_extensions"]["causality_matrix"],
+                "core_benchmarks": diagnostics["model_extensions"]["core_benchmarks"],
             },
             "branch_series": diagnostics["series_df"],
+            "disaster_indicator": diagnostics["signal_values"],
             "branch_summary": diagnostics["summary"],
             "ts_tests": diagnostics["ts_tests"],
             "change_dates": diagnostics["change_dates"],
@@ -539,8 +644,17 @@ def run_analysis(
                 "pca_loadings": pca_loadings,
                 "return_extension": diagnostics["model_extensions"]["return_extension"],
                 "volatility_extension": diagnostics["model_extensions"]["volatility_extension"],
+                "causality_matrix": diagnostics["model_extensions"]["causality_matrix"],
+                "core_benchmarks": diagnostics["model_extensions"]["core_benchmarks"],
             },
             "branch_series": diagnostics["series_df"],
+            "long_run_stats": long_run_stats,
+            "vulnerability_indices": {
+                "max_exposure": float(target_df["farmer_exposure_index"].max()),
+                "mean_exposure": float(target_df["farmer_exposure_index"].mean()),
+                "exposure_series": target_df[["month", "farmer_exposure_index"]]
+            },
+            "disaster_indicator": diagnostics["signal_values"],
             "branch_summary": diagnostics["summary"],
             "ts_tests": diagnostics["ts_tests"],
             "change_dates": diagnostics["change_dates"],
@@ -576,8 +690,10 @@ def run_analysis(
                 "structural_comparison": diagnostics["structural_table"],
                 "return_extension": diagnostics["model_extensions"]["return_extension"],
                 "volatility_extension": diagnostics["model_extensions"]["volatility_extension"],
+                "causality_matrix": diagnostics["model_extensions"]["causality_matrix"],
             },
             "branch_series": diagnostics["series_df"],
+            "disaster_indicator": diagnostics["signal_values"],
             "branch_summary": diagnostics["summary"],
             "ts_tests": diagnostics["ts_tests"],
             "change_dates": diagnostics["change_dates"],

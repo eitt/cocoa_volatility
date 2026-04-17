@@ -1,0 +1,17 @@
+source,target,lag,f_statistic,p_value,causal
+disaster_indicator,colombia_cocoa_price_cop_kg_log_return,1,0.024873495832610223,0.8757055178340413,False
+disaster_indicator,colombia_cocoa_price_cop_kg_log_return,2,0.013413460018417643,0.9866824356589753,False
+disaster_indicator,colombia_cocoa_price_cop_kg_log_return,3,0.053488542251502166,0.983314433251975,False
+disaster_indicator,colombia_cocoa_price_cop_kg_log_return,4,0.1375817850937779,0.9665870461860583,False
+disaster_indicator,world_return,1,0.20513167636594273,0.6538689312610875,False
+disaster_indicator,world_return,2,0.0429599001222709,0.9580151461368075,False
+disaster_indicator,world_return,3,0.09616876357475931,0.9614042492651228,False
+disaster_indicator,world_return,4,0.4451842842270881,0.774633027210111,False
+disaster_indicator,fx_return,1,0.6044611274295362,0.44296913869240984,False
+disaster_indicator,fx_return,2,0.2742723703623722,0.7622174342332801,False
+disaster_indicator,fx_return,3,0.2932797955871439,0.8298325853222681,False
+disaster_indicator,fx_return,4,0.7894015549438711,0.5450444320395611,False
+disaster_indicator,oil_return,1,0.7841225766227422,0.38292625176257367,False
+disaster_indicator,oil_return,2,0.5652091960606357,0.5748204753346404,False
+disaster_indicator,oil_return,3,0.513524821752819,0.6768422047795573,False
+disaster_indicator,oil_return,4,0.6598944599505967,0.6266568846750886,False

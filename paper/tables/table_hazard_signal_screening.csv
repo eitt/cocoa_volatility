@@ -1,0 +1,5 @@
+signal,label,months,nonzero_months,zero_share,total_value,mean_value,std_value,peak_month,peak_value
+earthquake_events,Earthquake events,35,4,0.8857142857142857,4.0,0.11428571428571428,0.32280285109067564,2022-09-01,1.0
+geophysical_events,Geophysical events,35,28,0.2,121.0,3.4571428571428573,3.003359463538604,2022-11-01,12.0
+hydrometeorological_events,Hydrometeorological events,35,30,0.14285714285714285,273.0,7.8,5.870163841785998,2022-10-01,20.0
+total_events,Total recorded events,35,35,0.0,572.0,16.34285714285714,9.468035565997393,2024-01-01,49.0

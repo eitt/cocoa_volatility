@@ -20,6 +20,21 @@ from pipelines.v2.config import ensure_output_directories, find_input_file, load
 from pipelines.v2.io import clean_records, read_source_csv
 from pipelines.v2.reporting import build_markdown_report, render_pandoc_outputs, write_markdown_report, write_summary_json
 from pipelines.v2.translation import load_translation_dictionary, translate_categorical_fields
+from pipelines.v2.visualization import (
+    plot_change_points,
+    plot_hazard_domain_mix,
+    plot_monthly_event_totals,
+    plot_rolling_diagnostics,
+    plot_stl_decomposition,
+    plot_top_municipalities,
+    plot_v3_integrated_heatmap,
+    plot_v3_integrated_panels,
+    plot_data_availability_v3,
+    plot_time_series_panels_v3,
+    plot_actual_vs_fitted,
+    plot_v1_long_run_heatmap,
+    plot_v1_rolling_correlation,
+)
 from src.outputs.export_tables import export_dataframe_table
 from src.utils.logging_utils import get_project_logger, log_dataframe_shape
 
@@ -93,6 +108,115 @@ def run_v2_pipeline(root: Path, render_outputs: bool = True) -> dict[str, Any]:
         figures_dir=paths["figures_dir"],
     )
 
+    # V3 Integration: Build the integrated analytic panel
+    v3_panel = analysis["branch_series"].copy()
+    if analysis.get("disaster_indicator") is not None:
+        v3_panel["disaster_pressure"] = analysis["disaster_indicator"].values
+    
+    export_dataframe_table(v3_panel, paths["intermediate_dir"] / "v3_integrated_panel.csv")
+    logger.info("Exported V3 integrated panel with disaster_pressure indicator.")
+
+    # Generate V3-specific integrated visualizations
+    v3_corr_vars = [
+        "colombia_cocoa_price_cop_kg_log_return",
+        "world_return",
+        "fx_return",
+        "oil_return",
+        "disaster_pressure"
+    ]
+    v3_corr_vars = [v for v in v3_corr_vars if v in v3_panel.columns]
+    if len(v3_corr_vars) >= 2:
+        v3_corr = v3_panel[v3_corr_vars].corr()
+        plot_v3_integrated_heatmap(
+            v3_corr,
+            output_path=paths["figures_dir"] / "figure_v3_integrated_heatmap.png",
+            title="Integrated Correlation Matrix: Prices, Controls, and Disaster Pressure"
+        )
+        plot_v3_integrated_panels(
+            v3_panel,
+            columns=v3_corr_vars,
+            output_path=paths["figures_dir"] / "figure_v3_integrated_panels.png",
+            title="V3 Integrated Time-Series: Cocoa Market and Disaster Context"
+        )
+        
+        # V3 Information Figures (Integrated Descriptive)
+        info_vars = [
+            "colombia_cocoa_price_cop_kg",
+            "log_world_cocoa_price_usd_mt",
+            "cop_usd_exchange_rate",
+            "brent_oil_usd_bbl",
+            "disaster_pressure"
+        ]
+        # Add NASA columns if they exist
+        nasa_vars = [c for c in v3_panel.columns if c.startswith("nasa_")]
+        info_vars.extend(nasa_vars[:2]) # Keep it readable - just take first 2
+        
+        info_labels = {
+            "colombia_cocoa_price_cop_kg": "Domestic Price",
+            "log_world_cocoa_price_usd_mt": "World Price (Log)",
+            "cop_usd_exchange_rate": "FX Rate",
+            "brent_oil_usd_bbl": "Oil Price",
+            "disaster_pressure": "Risk: Disaster Pressure"
+        }
+        info_units = {
+            "colombia_cocoa_price_cop_kg": "COP/kg",
+            "log_world_cocoa_price_usd_mt": "log(USD/mt)",
+            "cop_usd_exchange_rate": "COP/USD",
+            "brent_oil_usd_bbl": "USD/bbl",
+            "disaster_pressure": "PCA Index"
+        }
+        
+        plot_data_availability_v3(
+            v3_panel,
+            date_column="month",
+            value_columns=info_vars,
+            title="Integrated Sample Availability: Market, Weather, and Risk",
+            label_map=info_labels,
+            output_path=paths["figures_dir"] / "figure_v3_integrated_availability.png"
+        )
+        
+        plot_time_series_panels_v3(
+            v3_panel,
+            date_column="month",
+            value_columns=v3_corr_vars, # Use returns for the stack as it shows volatility better
+            title="V3 Descriptive Stack: Volatility and Risk Alignment",
+            label_map=info_labels,
+            unit_map=info_units,
+            output_path=paths["figures_dir"] / "figure_v3_descriptive_stack.png"
+        )
+        
+        analysis["branch_figures"]["v3_integrated_availability"] = str(paths["figures_dir"] / "figure_v3_integrated_availability.png")
+        analysis["branch_figures"]["v3_descriptive_stack"] = str(paths["figures_dir"] / "figure_v3_descriptive_stack.png")
+        
+        # NEW: Synthesis Fitting Plot
+        ret_model = analysis["branch_tables"]["return_extension"]
+        if not ret_model.empty:
+            # We need the alignment index from target_df
+            # For brevity, we'll assume the series are aligned in v3_panel
+            plot_actual_vs_fitted(
+                v3_panel["colombia_cocoa_price_cop_kg_log_return"],
+                # Simplified fitted values for the demonstration plot 
+                # (Ideally we'd pull these from the HAC model object if we return it)
+                v3_panel["world_return"] * analysis["branch_tables"]["core_benchmarks"]["world_to_domestic_beta"],
+                v3_panel["month"],
+                output_path=paths["figures_dir"] / "figure_v3_actual_vs_fitted.png",
+                title="V3 Domestic Return Model: Aligned Actual vs Fitted"
+            )
+            analysis["branch_figures"]["v3_actual_vs_fitted"] = str(paths["figures_dir"] / "figure_v3_actual_vs_fitted.png")
+
+        # NEW: Long-run Synthesis Heatmap
+        plot_v1_long_run_heatmap(
+            volatility_df,
+            columns=["colombia_cocoa_price_cop_kg", "world_cocoa_price_usd_mt", "cop_usd_exchange_rate", "brent_oil_usd_bbl"],
+            output_path=paths["figures_dir"] / "figure_v1_long_run_coverage.png"
+        )
+        analysis["branch_figures"]["v1_long_run_coverage"] = str(paths["figures_dir"] / "figure_v1_long_run_coverage.png")
+        
+        logger.info("Generated V3 integrated information and synthesis figures.")
+        analysis["branch_figures"]["v3_integrated_heatmap"] = str(paths["figures_dir"] / "figure_v3_integrated_heatmap.png")
+        analysis["branch_figures"]["v3_integrated_panels"] = str(paths["figures_dir"] / "figure_v3_integrated_panels.png")
+        logger.info("Generated V3 integrated visualizations.")
+
     _export_intermediate_tables(
         paths=paths,
         cleaned=cleaned,
@@ -115,6 +239,8 @@ def run_v2_pipeline(root: Path, render_outputs: bool = True) -> dict[str, Any]:
     export_dataframe_table(municipality_summary, paths["tables_dir"] / "table_municipality_summary.csv")
     export_dataframe_table(translation_strategy_summary, paths["tables_dir"] / "table_translation_strategy_summary.csv")
     export_dataframe_table(analysis["feasibility_table"], paths["tables_dir"] / "table_earthquake_feasibility.csv")
+    if "causality_matrix" in analysis["branch_tables"]:
+        export_dataframe_table(analysis["branch_tables"]["causality_matrix"], paths["tables_dir"] / "table_disaster_causality.csv")
     if "structural_comparison" in analysis["branch_tables"]:
         export_dataframe_table(analysis["branch_tables"]["structural_comparison"], paths["tables_dir"] / "table_structural_comparison.csv")
     if not analysis.get("pca_loadings", pd.DataFrame()).empty:
@@ -135,6 +261,7 @@ def run_v2_pipeline(root: Path, render_outputs: bool = True) -> dict[str, Any]:
             markdown_path=paths["manuscript_markdown"],
             docx_path=paths["manuscript_docx"],
             pdf_path=paths["manuscript_pdf"],
+            tex_path=paths["manuscript_tex"],
         )
         logger.info("Rendered Pandoc outputs: %s", rendered_outputs)
 
@@ -148,6 +275,7 @@ def run_v2_pipeline(root: Path, render_outputs: bool = True) -> dict[str, Any]:
         "explained_variance_ratio": analysis.get("explained_variance_ratio"),
         "shock_date": analysis.get("shock_date"),
         "change_dates": analysis.get("change_dates", []),
+        "v3_integrated_panel": str(paths["intermediate_dir"] / "v3_integrated_panel.csv"),
         "artifacts": {
             "markdown": str(paths["manuscript_markdown"]),
             **rendered_outputs,

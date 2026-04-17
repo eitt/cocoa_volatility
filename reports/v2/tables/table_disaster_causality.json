@@ -1,0 +1,130 @@
+[
+  {
+    "source": "disaster_indicator",
+    "target": "colombia_cocoa_price_cop_kg_log_return",
+    "lag": 1,
+    "f_statistic": 0.0248734958,
+    "p_value": 0.8757055178,
+    "causal": false
+  },
+  {
+    "source": "disaster_indicator",
+    "target": "colombia_cocoa_price_cop_kg_log_return",
+    "lag": 2,
+    "f_statistic": 0.01341346,
+    "p_value": 0.9866824357,
+    "causal": false
+  },
+  {
+    "source": "disaster_indicator",
+    "target": "colombia_cocoa_price_cop_kg_log_return",
+    "lag": 3,
+    "f_statistic": 0.0534885423,
+    "p_value": 0.9833144333,
+    "causal": false
+  },
+  {
+    "source": "disaster_indicator",
+    "target": "colombia_cocoa_price_cop_kg_log_return",
+    "lag": 4,
+    "f_statistic": 0.1375817851,
+    "p_value": 0.9665870462,
+    "causal": false
+  },
+  {
+    "source": "disaster_indicator",
+    "target": "world_return",
+    "lag": 1,
+    "f_statistic": 0.2051316764,
+    "p_value": 0.6538689313,
+    "causal": false
+  },
+  {
+    "source": "disaster_indicator",
+    "target": "world_return",
+    "lag": 2,
+    "f_statistic": 0.0429599001,
+    "p_value": 0.9580151461,
+    "causal": false
+  },
+  {
+    "source": "disaster_indicator",
+    "target": "world_return",
+    "lag": 3,
+    "f_statistic": 0.0961687636,
+    "p_value": 0.9614042493,
+    "causal": false
+  },
+  {
+    "source": "disaster_indicator",
+    "target": "world_return",
+    "lag": 4,
+    "f_statistic": 0.4451842842,
+    "p_value": 0.7746330272,
+    "causal": false
+  },
+  {
+    "source": "disaster_indicator",
+    "target": "fx_return",
+    "lag": 1,
+    "f_statistic": 0.6044611274,
+    "p_value": 0.4429691387,
+    "causal": false
+  },
+  {
+    "source": "disaster_indicator",
+    "target": "fx_return",
+    "lag": 2,
+    "f_statistic": 0.2742723704,
+    "p_value": 0.7622174342,
+    "causal": false
+  },
+  {
+    "source": "disaster_indicator",
+    "target": "fx_return",
+    "lag": 3,
+    "f_statistic": 0.2932797956,
+    "p_value": 0.8298325853,
+    "causal": false
+  },
+  {
+    "source": "disaster_indicator",
+    "target": "fx_return",
+    "lag": 4,
+    "f_statistic": 0.7894015549,
+    "p_value": 0.545044432,
+    "causal": false
+  },
+  {
+    "source": "disaster_indicator",
+    "target": "oil_return",
+    "lag": 1,
+    "f_statistic": 0.7841225766,
+    "p_value": 0.3829262518,
+    "causal": false
+  },
+  {
+    "source": "disaster_indicator",
+    "target": "oil_return",
+    "lag": 2,
+    "f_statistic": 0.5652091961,
+    "p_value": 0.5748204753,
+    "causal": false
+  },
+  {
+    "source": "disaster_indicator",
+    "target": "oil_return",
+    "lag": 3,
+    "f_statistic": 0.5135248218,
+    "p_value": 0.6768422048,
+    "causal": false
+  },
+  {
+    "source": "disaster_indicator",
+    "target": "oil_return",
+    "lag": 4,
+    "f_statistic": 0.65989446,
+    "p_value": 0.6266568847,
+    "causal": false
+  }
+]
