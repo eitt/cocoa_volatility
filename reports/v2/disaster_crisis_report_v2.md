@@ -11,36 +11,36 @@ fontsize: 11pt
 
 # Abstract
 
-This study extends the analysis of international cocoa price transmission and smallholder vulnerability by evaluating whether local disaster pressure helps identify the environmental conditions under which market exposure is experienced. Utilizing a nested sub-window of 36 months (August 2021 to July 2024) within the broader v1 core window, we incorporate 594 disaster records. Due to high zero-inflation in isolated seismic series (4 events), we implement a data-driven composite indicator. Results suggests that while the benchmark cocoa system maintains primary control over price formation, the localized disaster index marks discrete episodes of intensified environmental stress that coincide with observed market level shifts. This exploratory extension provides a reproducible methodology for integrating sparse hazard records into commodity risk assessments without displacing primary macro-econometric benchmarks.
+This study extends the analysis of international cocoa price transmission and smallholder vulnerability by asking whether local disaster pressure helps identify the conditions under which market exposure is experienced. We use a nested 36-month window (August 2021 to July 2024) inside the broader v1 core window and incorporate 594 disaster records. Because isolated seismic series are highly zero-inflated (4 events), we use a data-driven composite indicator. Results suggest that the benchmark cocoa system remains the main driver of price formation, while the localized disaster index marks discrete episodes of intensified environmental stress that coincide with observed market-level shifts. The extension offers a reproducible way to integrate sparse hazard records into commodity risk assessment without displacing the core macro-econometric benchmark system.
 
 **Keywords:** disaster events; earthquake screening; crisis indicator; translation architecture; structural change
 
 # Introduction
 
-Smallholder vulnerability in the global cocoa chain is primarily determined by the speed and symmetry of international price transmission. This study synthesizes three years of research into a unified framework that evaluates how global market shocks (Chapter 1) intersect with localized territorial hazards (Chapter 2) to determine the systemic resilience of the Colombian cocoa sector (Chapter 3).
+Smallholder vulnerability in the global cocoa chain depends heavily on how quickly and unevenly international price shocks are transmitted. This report synthesizes three years of work into one framework that examines how global market shocks (Chapter 1) interact with localized territorial hazards (Chapter 2) and what that interaction implies for systemic resilience in the Colombian cocoa sector (Chapter 3).
 
 # Chapter 1: Structural Market Transmission (Baseline)
 
-The primary cocoa price formation system is characterized by a high-fidelity linkage between global benchmarks and the domestic producer price. Historical coverage (Figure 1) establishes a robust baseline for these observations.
+The core price-formation system shows a strong link between global benchmarks and the domestic producer price. Historical coverage (Figure 1) provides the baseline for this comparison.
 
 ![Figure 1. Long-run Historical Data Coverage (1960-2026).](figures/figure_v1_long_run_coverage.png)
 
 **1.1 Long-run Connection Properties**
 
-Analysis of the full historical sample reveals that domestic prices internalize approximately **0.842** of world market shocks within the same month. While Engle-Granger tests (p=0.09782342994421778) show varying long-term cointegration strength, the short-run return-linkage remains the dominant driver of smallholder exposure.
+Analysis of the historical sample shows that domestic prices absorb approximately **0.842** of world market shocks within the same month. While Engle-Granger tests (p=0.09782342994421778) indicate limited long-run cointegration strength, short-run return linkage remains the dominant source of smallholder exposure in this dataset.
 
 **Table 1. Core Transmission Benchmarks (V1 Metadata).**
 
 | Metric | Value |
 | --- | --- |
 | World-to-Domestic Pass-through | 0.842 |
-| Model Adjusted R² | 0.633 |
+| Model Adjusted R^2 | 0.633 |
 | Engle-Granger p-value (Long-run) | 0.098 |
 | Full Sample Observations | 55 |
 
 ## Chapter 2: Territorial Hazard Dynamics in Santander
 
-The second layer identifies localized disaster pressure as an exploratory contextual overlay. Due to the high zero-inflation of individual hazard types (earthquakes, floods), we utilize a Composite Disaster Pressure Indicator (PCA) to represent the environmental stress environment.
+The second layer treats localized disaster pressure as a contextual overlay. Because individual hazard types are highly zero-inflated, we use a Composite Disaster Pressure Indicator (PCA) to represent environmental stress conditions.
 
 ![Figure 2. Monthly disaster-event totals.](figures/figure_monthly_event_totals.png)
 
@@ -60,13 +60,13 @@ The second layer identifies localized disaster pressure as an exploratory contex
 
 # Chapter 3: Integrated Resilience Analytics (Synthesis)
 
-When market shocks and disaster pressure are aligned, we observe the intersection of price-taker risk and environmental vulnerability. Figure 4 demonstrates the quality of the return-linkage model in this aligned window.
+When market shocks and disaster pressure are aligned, we can observe where price-taker risk and environmental vulnerability overlap. Figure 4 shows the fit of the return-linkage model in this aligned window.
 
 ![Figure 4. Aligned Return Model: Actual vs Fitted Analysis.](figures/figure_v3_actual_vs_fitted.png)
 
 **3.1 Systemic Granger Causality and Extensions**
 
-Table 3 confirms that localized disaster pressure functions as a contextual marker rather than a primary price setter. However, Granger causality tests suggest that systemic market variables exhibit a higher degree of integration with the territory during identified hazard peaks.
+Table 3 shows that localized disaster pressure is better interpreted as a contextual marker than as a primary price setter. Granger causality tests do not support strong short-run causal influence from the disaster indicator to the main market variables in this window.
 
 **Table 3. Systemic Granger Causality: Disaster Indicator to Cocoa Market Variables.**
 
@@ -91,7 +91,7 @@ Table 3 confirms that localized disaster pressure functions as a contextual mark
 
 **3.2 The Disaster Overlay Models**
 
-Model extensions (Table 4 and 5) show that while the disaster indicator remains a restrained predictor in continuous space, it captures discrete mean-shift episodes (Welch p=0.043) that mark periods of intensified market stress.
+Model extensions (Tables 4 and 5) indicate that the disaster indicator is weak as a continuous predictor, but still helps flag discrete mean-shift episodes (Welch p=0.043) associated with periods of intensified market stress.
 
 **Table 4. Return Model Extension (Synthesized Disaster Overlay).**
 
@@ -115,7 +115,7 @@ Model extensions (Table 4 and 5) show that while the disaster indicator remains 
 
 ### 4.1 Smallholder Vulnerability and 'Farmer Exposure'
 
-The synthesized findings introduce the **Farmer Exposure Index** (Mean: 0.61). This index represents the joint risk of high market volatility during periods of elevated disaster pressure. Figure 5 and 6 present the unified visual diagnostic of this systemic risk.
+The synthesized findings include a **Farmer Exposure Index** (mean: 0.61). This index summarizes joint risk when market volatility is high during periods of elevated disaster pressure. Figures 5 and 6 provide the integrated diagnostic view.
 
 ![Figure 5. Integrated Correlation Matrix (Market + Risk).](figures/figure_v3_integrated_heatmap.png)
 
@@ -123,7 +123,7 @@ The synthesized findings introduce the **Farmer Exposure Index** (Mean: 0.61). T
 
 ### 4.2 Enriched Interpretation: Resilience as Buffer Capacity
 
-The identification of natural hazards as **contextual amplifiers** has significant implications for territorial governance. Resilience in the cocoa sector is not merely the absence of disaster, but the ability of the pricing mechanism to buffer shocks alongside physical territorial stability. The coincidence of disaster peaks with market-level shifts suggests that territorial risk can exacerbate the 'price-taker' burden of smallholders. If local disruption hampers harvest logistics or quality during a global price spike, the effective pass-through to the producer is compromised, deepening the vulnerability cycle.
+Treating natural hazards as **contextual amplifiers** has direct implications for territorial governance. In the cocoa sector, resilience is not just the absence of disaster; it is the ability to absorb market shocks while maintaining territorial stability. The coincidence of disaster peaks with market-level shifts suggests that territorial risk can intensify the price-taker burden faced by smallholders. If local disruption affects harvest logistics or quality during a global price spike, effective pass-through to producers may weaken, deepening vulnerability.
 
 # Appendix: Municipality Detail and Technical Diagnostics
 
@@ -146,4 +146,5 @@ The following figures provide lower-level diagnostics for the territorial hazard
 
 # Limitations
 
-This synthesis is constrained by the 36-month overlap where high-fidelity disaster records are available. The findings should be treated as a reproducible methodology for vulnerability assessment rather than as proof of permanent structural transitions.
+This synthesis is constrained by the 36-month overlap in which high-quality disaster records are available. The findings should therefore be read as a reproducible vulnerability-assessment approach, not as proof of permanent structural transition.
+
