@@ -11,7 +11,8 @@
 \usepackage{amssymb}
 \usepackage{float}
 \usepackage{hyperref}
-\usepackage[numbers]{natbib}
+\usepackage[authoryear,round]{natbib}
+
 \usepackage{caption}
 \usepackage{orcidlink}
 
@@ -28,12 +29,14 @@
 
 \title{Benchmark Transmission, Environmental Stress, and Smallholder Resilience in the Cocoa Supply Chain: Evidence from Santander, Colombia}
 
+
 \author{
 Leonardo H. Talero-Sarmiento$^{1}$\,\orcidlink{0000-0002-4129-9163} \and
 Gabriel Weber$^{2}$\,\orcidlink{0000-0003-2120-1648} \and
-Ignazio Cabras$^{3}$\,\orcidlink{0000-0002-3418-8553} \and
-Katia Picaud-Bello$^{2}$\,\orcidlink{0000-0001-7538-0210} \and
-Stamatis Mantziaris$^{4}$\,\orcidlink{0000-0001-7047-1447}
+Francisco J. Perez-Galarce$^{3}$\,\orcidlink{0000-0002-6921-298X} \and
+Gilles Grolleau$^{2}$\,\orcidlink{} \and
+Stamatis Mantziaris$^{4}$\,\orcidlink{0000-0001-7047-1447} \and
+Tommaso Luzzati$^{5}$\,\orcidlink{}
 }
 \date{}
 
@@ -45,6 +48,8 @@ $^{1}$ Universidad Autonoma de Bucaramanga, Colombia \\
 $^{2}$ ESSCA School of Management, France \\
 $^{3}$ Northumbria University, UK \\
 $^{4}$ ELGO-DIMITRA, Greece \\
+$^{5}$ Università di Pisa, Italy \\
+
 \texttt{ltalero@unab.edu.co}
 \end{center}
 
@@ -55,32 +60,31 @@ Global cocoa benchmarks shape producer exposure, but territorial resilience also
 \textbf{Keywords:} cocoa price transmission; environmental stress; hydrometeorological events; smallholder vulnerability; resilience; Santander; Colombia
 
 \section{Introduction}
+\color{blue}
+Cocoa-producing territories are exposed to more than price risk alone. In global value chains, farmers often capture a disproportionately low share of total value added—sometimes less than 7\%—leaving them as highly vulnerable price-takers heavily exposed to international volatility \citep{CocoaBarometer2015, WCF2012}. In resilience-oriented food-systems analysis, harm depends on how these market shocks interact with exposure, sensitivity, and adaptive capacity rather than on any single disturbance taken in isolation \citep{Turner2003,Adger2006,Tendall2015,Zurek2022}. For cocoa smallholders in Santander, Colombia, that interaction is evident in two connected domains: benchmark volatility transmitted through international commodity markets, and localized environmental stress arising from rainfall disruption, transport damage, and other disaster-related conditions. These physical realities—such as hydrometeorological events triggering landslides on unpaved mountainous roads—interfere with harvest and marketing. Crucially, they create localized basis risk, where realized local prices deviate sharply from global benchmarks precisely because of these territorial disruptions.
 
-Cocoa-producing territories are exposed to more than price risk alone. In resilience-oriented food-systems analysis, harm depends on how shocks interact with exposure, sensitivity, and adaptive capacity rather than on any single disturbance taken in isolation \citep{Turner2003,Adger2006,Tendall2015,Zurek2022}. For cocoa smallholders in Santander, Colombia, that interaction is visible in two connected domains: benchmark volatility arriving through international commodity markets, and localized environmental stress linked to rainfall disruption, transport damage, and other disaster-related conditions that can interfere with harvest, marketing, or household coping.
+The empirical literature usually separates these domains. Cocoa and commodity-market studies explain pass-through from world prices, exchange-rate exposure, and uneven adjustment along the pricing chain \citep{TsowouGayi2019,Jumah2001,MeyerCramon2004,JimenezRodriguez2022}. A parallel body of work documents climatic suitability, water and heat stress, and the buffering role of agroforestry and diversified production systems in cocoa landscapes \citep{Schroth2016,Lahive2019,Niether2020}. What remains less developed is an empirical design that traces how benchmark shocks propagate to producer-linked prices while also incorporating reliable information on environmental stress and disaster conditions within the same territorial setting. That gap matters for academic interpretation and for smallholders, cooperatives, local traders, and territorial planners who must manage compounding vulnerability when market instability and localized environmental disruptions overlap.
 
-The empirical literature usually separates these domains. Cocoa and commodity-market studies explain pass-through from world prices, exchange-rate exposure, and uneven adjustment along the pricing chain \citep{TsowouGayi2019,Jumah2001,MeyerCramon2004,JimenezRodriguez2022}. A parallel body of work documents climatic suitability, water and heat stress, and the buffering role of agroforestry and diversified production systems in cocoa landscapes \citep{Schroth2016,Lahive2019,Niether2020}. What remains less developed is an empirical design that traces how benchmark shocks reach producer-linked prices while also incorporating defensible information on environmental stress and disaster conditions in the same territorial setting. That gap matters not only for academic interpretation, but also for smallholders, cooperatives, local traders, and territorial planners who must manage vulnerability when market instability and localized disruptions overlap.
+This article addresses that gap by integrating two earlier manuscript lines into one coherent study. The first line presents a supply-chain transmission analysis that links Colombian cocoa prices, world cocoa benchmarks, downstream European chocolate prices, the COP/USD exchange rate, and Brent oil prices. The second line is a weather-disaster-resilience extension that uses environmental variables and the official Santander event registry. The design is layered on purpose. It first estimates the core market-transmission mechanism in the fullest aligned monthly window. It then adds environmental stress in two complementary ways: a full-window weather-stress index built from local NASA POWER anomalies, and a nested disaster extension for August 2021--July 2024 that treats registry-based hazards as territorial exposure markers rather than as a second benchmark-like transmission system. Because the disaster data are shorter, irregular, partly zero-inflated, and partly synthetic via principal component analysis (PCA), they are analyzed using descriptive overlays, parsimonious robustness checks, and an exploratory event window rather than being forced into a co-equal market specification.
 
-This article addresses that gap by integrating two earlier manuscript lines into one coherent study. The first line is a supply-chain transmission analysis linking Colombian cocoa prices, world cocoa benchmarks, downstream European chocolate prices, the COP/USD exchange rate, and Brent oil prices. The second line is a disaster-resilience extension based on an official Santander event registry. The design is layered on purpose. It first estimates the core market-transmission mechanism in the fullest aligned monthly window. It then adds environmental stress in two complementary ways: a full-window weather-stress index built from local NASA POWER anomalies, and a nested disaster extension for August 2021--July 2024 that treats registry-based hazards as territorial exposure markers rather than as a second benchmark-like transmission system. Because the disaster data are shorter, irregular, partly zero-inflated, and partly synthetic, they are used through descriptive overlays, parsimonious robustness checks, and an exploratory event window rather than being forced into a co-equal market specification.
-
-The paper makes three concrete contributions. First, it keeps the benchmark-transmission logic of the original manuscript while grounding the resilience framing in observed hazard dynamics. Second, it shows how disaster information can be incorporated without overstating the evidence: hydrometeorological event counts are the most defensible monthly episode marker in the nested window, while a PCA-based multi-hazard indicator is most useful as a contextual territorial-pressure overlay. Third, it reframes the findings in ecological-economics terms by treating the cocoa chain as a socio-ecological system in which transmission defines exposure and environmental stress conditions how that exposure is absorbed or amplified.
+The paper makes three concrete contributions. First, it keeps the benchmark-transmission logic of the original manuscript while grounding the resilience framing in observed hazard dynamics. Second, it shows how disaster information can be incorporated without overstating the evidence: hydrometeorological event counts are the most defensible monthly episode marker in the nested window, while a PCA-based multi-hazard indicator is most useful as a contextual territorial-pressure overlay. Third, it reframes the findings in ecological-economics terms by treating the cocoa chain as a socio-ecological system (SES) in which market transmission defines the baseline exposure, and environmental stress conditions how that exposure is absorbed or amplified.
 
 The remainder of the article is organized as follows. Section~\ref{sec:framing} develops the conceptual framing. Section~\ref{sec:data} describes the territorial context, data architecture, and alignment decisions. Section~\ref{sec:methods} presents the empirical design, equations, and hazard-selection logic. Section~\ref{sec:results} reports the descriptive, transmission, and disaster-overlay findings. Section~\ref{sec:discussion} interprets those results in relation to vulnerability, resilience, and governance. Section~\ref{sec:conclusion} concludes with limitations, transferability, and practical implications.
 
 \section{Conceptual Framing}
 \label{sec:framing}
 
-Resilience in commodity systems is not adequately captured by prices, agronomy, or institutions taken separately. Vulnerability frameworks instead emphasize that shocks matter through their interaction with sensitivity and adaptive capacity \citep{Turner2003,Adger2006}. In a cocoa-producing territory, that implies that benchmark price shocks, environmental stress, and chain governance should be treated as related layers of one socio-ecological problem rather than as disconnected topics. This perspective is consistent with food-systems research that treats market, environmental, and institutional pressures as linked processes across scales \citep{Ericksen2008,Tendall2015,Zurek2022}.
+Resilience in commodity systems is not adequately captured by prices, agronomy, or institutions taken separately. Vulnerability frameworks instead emphasize that shocks matter through their interaction with sensitivity and adaptive capacity \citep{Turner2003,Adger2006}. In this context, we adopt a polycrisis or multi-hazard perspective to define a Socio-Ecological Systems (SES) vulnerability framework. We treat global market transmission as the primary mechanism of \textit{exposure}, while territorial and environmental stressors act as variables conditioning the system's \textit{sensitivity}. This perspective is consistent with food-systems research that treats market, environmental, and institutional pressures as linked, compounding processes across scales \citep{Ericksen2008,Tendall2015,Zurek2022}.
 
 From the market side, the key issue is transmission. Evidence from cocoa-market integration shows that stronger linkage to world prices can increase producer exposure to international volatility even when farmers do not capture a commensurate share of favorable movements \citep{TsowouGayi2019}. More broadly, pricing-chain studies show that commodity and energy shocks often pass through asymmetrically, incompletely, or with different timing across stages of the chain \citep{MeyerCramon2004,JimenezRodriguez2022}. Those findings matter for resilience because they shift the question from whether prices are volatile to who absorbs adjustment and under what institutional conditions. In that sense, benchmark transmission is not a side issue in vulnerability analysis; it is part of the exposure mechanism itself.
 
-From the environmental side, the relevant question is not whether every localized hazard directly sets monthly cocoa prices. Rather, it is whether climatic and disaster-related stressors help identify the context in which market shocks are experienced. Cocoa studies document sensitivity to heat and moisture stress, limits to climatic suitability, and the role of agroforestry and diversified production systems in buffering exposure \citep{Schroth2016,Lahive2019,Niether2020}. Producer-oriented studies also emphasize weak organizations, buyer dependence, and adaptation constraints \citep{Mithofer2017,AkrofiAtitianti2018}. Read together, this literature suggests that vulnerability in cocoa is jointly shaped by global market dependence and locally uneven buffering capacity.
+From the environmental side, the relevant question is not whether every localized hazard directly sets monthly global cocoa prices. Rather, it is whether climatic and disaster-related stressors define the localized capacity to absorb concurrent market shocks. The literature emphasizes the concept of \textit{buffer capacity} to explain this \citep{IfejikaSperanza2013}. Buffer capacity operates in two dimensions for cocoa farmers: \textit{ecological buffer capacity}, where agroforestry systems and biodiversity mitigate the physical impacts of climate extremes compared to monocultures \citep{VaastSomarriba2014, Schroth2016, Niether2020}; and \textit{socio-institutional buffer capacity}, where farmer networks and cooperatives modify the impact of market shocks by providing credit, shared transport, or collective bargaining when physical logistics (e.g., roads) are washed out \citep{Jacobi2014, Mithofer2017}. Furthermore, households' subjective perception of their capacity to adapt often dictates their actual resilience during overlapping crises \citep{JonesTanner2017}. Read together, this literature suggests that vulnerability in cocoa is jointly shaped by global market dependence and locally uneven buffering capacity.
 
 This methodological distinction is consistent with the disaster-risk literature. Composite resilience and hazard-pressure metrics are often used to summarize territorial stress when no single indicator adequately captures local disruption, but such indices are normally interpreted as contextual constructs whose meaning depends on spatial scope, variable selection, and aggregation choices rather than as canonical market series \citep{Parsons2021,Garschagen2021}. That logic fits the present article. The disaster layer is intended to locate periods of intensified territorial pressure and to enrich the resilience interpretation, not to mimic the stochastic properties of the benchmark price system.
 
 The ecological-economics relevance of the paper lies in that joint interpretation. This is not presented as a new theory of resilience. The contribution is more modest and more empirical: it operationalizes a bridge between benchmark transmission and territorial stress in a setting where the data do not support strong causal claims about every hazard channel. Environmental stress therefore enters the paper in a disciplined way. Weather anomalies are used as full-window contextual indicators. Official disaster records are used in a nested window where the overlap is sufficient. Hazard claims are narrowed to what the project data can defend, especially hydrometeorological and broader multi-hazard disruption rather than unsupported general statements about all natural hazards.
 
 The empirical design is guided by three expectations. First, world cocoa returns should transmit positively and robustly to Colombian producer-linked returns. Second, the European downstream chocolate index should adjust more slowly and less strongly than the producer-linked series, indicating uneven absorption of benchmark volatility. Third, environmental stress should be visible primarily as a contextual amplifier of exposure rather than as a stable substitute for the benchmark transmission channel.
-
 \section{Study Context and Data}
 \label{sec:data}
 
@@ -582,7 +586,7 @@ Disaster indicator & Oil return & 0.383 & 0.575 & 0.677 & 0.627 \\
 \end{tabular}
 \end{table}
 
-\bibliographystyle{plainnat}
+\bibliographystyle{apalike}
 \bibliography{references/cocoa_volatility}
 
 \end{document}
