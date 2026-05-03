@@ -1,225 +1,234 @@
-\begin{thebibliography}{23}
-\providecommand{\natexlab}[1]{#1}
-\providecommand{\url}[1]{\texttt{#1}}
-\expandafter\ifx\csname urlstyle\endcsname\relax
-  \providecommand{\doi}[1]{doi: #1}\else
-  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+\begin{thebibliography}{}
 
-\bibitem[Acosta et~al.(2019)Acosta, Ihle, and von
-  Cramon-Taubadel]{acosta_ihle_voncramon_2019}
-Alejandro Acosta, Rico Ihle, and Stephan von Cramon-Taubadel.
+\bibitem[Acosta et~al., 2019]{acosta_ihle_voncramon_2019}
+Acosta, A., Ihle, R., and von Cramon-Taubadel, S. (2019).
 \newblock Combining market structure and econometric methods for price
   transmission analysis.
-\newblock \emph{Food Security}, 11\penalty0 (4):\penalty0 941--951, 2019.
-\newblock \doi{10.1007/s12571-019-00951-w}.
+\newblock {\em Food Security}, 11(4):941--951.
 
-\bibitem[Adger(2006)]{Adger2006}
-W.~Neil Adger.
+\bibitem[Adger, 2006]{Adger2006}
+Adger, W.~N. (2006).
 \newblock Vulnerability.
-\newblock \emph{Global Environmental Change}, 16\penalty0 (3):\penalty0
-  268--281, 2006.
-\newblock \doi{10.1016/j.gloenvcha.2006.02.006}.
-\newblock URL \url{https://doi.org/10.1016/j.gloenvcha.2006.02.006}.
+\newblock {\em Global Environmental Change}, 16(3):268--281.
 
-\bibitem[Akrofi-Atitianti et~al.(2018)Akrofi-Atitianti, Ifejika~Speranza,
-  Bockel, and Asare]{AkrofiAtitianti2018}
-Felix Akrofi-Atitianti, Chinwe Ifejika~Speranza, Louis Bockel, and Richard
-  Asare.
-\newblock Assessing climate smart agriculture and its determinants of practice
-  in ghana: A case of the cocoa production system.
-\newblock \emph{Land}, 7\penalty0 (1):\penalty0 30, 2018.
-\newblock \doi{10.3390/land7010030}.
-\newblock URL \url{https://doi.org/10.3390/land7010030}.
+\bibitem[Bai and Perron, 1998]{BaiPerron1998}
+Bai, J. and Perron, P. (1998).
+\newblock Estimating and testing linear models with multiple structural
+  changes.
+\newblock {\em Econometrica}, 66(1):47--78.
 
-\bibitem[Birkmann et~al.(2023)Birkmann, Schuettrumpf, Handmer, Thieken,
-  Kuhlicke, Truedinger, Sauter, Klopries, Greiving, Jamshed, Merz, Solecki, and
-  Kirschbauer]{Birkmann2023}
-Joern Birkmann, Holger Schuettrumpf, John Handmer, Annegret Thieken, Christian
-  Kuhlicke, Alessa Truedinger, Holger Sauter, Elena-Maria Klopries, Stefan
-  Greiving, Ali Jamshed, Bruno Merz, William Solecki, and Lothar Kirschbauer.
+\bibitem[Bai and Perron, 2003]{BaiPerron2003}
+Bai, J. and Perron, P. (2003).
+\newblock Computation and analysis of multiple structural change models.
+\newblock {\em Journal of Applied Econometrics}, 18(1):1--22.
+
+\bibitem[Birkmann et~al., 2023]{Birkmann2023}
+Birkmann, J., Schuettrumpf, H., Handmer, J., Thieken, A., Kuhlicke, C.,
+  Truedinger, A., Sauter, H., Klopries, E.-M., Greiving, S., Jamshed, A., Merz,
+  B., Solecki, W., and Kirschbauer, L. (2023).
 \newblock Strengthening resilience in reconstruction after extreme events:
   Insights from flood affected communities in germany.
-\newblock \emph{International Journal of Disaster Risk Reduction}, 96:\penalty0
-  103965, 2023.
-\newblock \doi{10.1016/j.ijdrr.2023.103965}.
-\newblock URL \url{https://doi.org/10.1016/j.ijdrr.2023.103965}.
+\newblock {\em International Journal of Disaster Risk Reduction}, 96:103965.
 
-\bibitem[Djalante et~al.(2011)Djalante, Holley, and Thomalla]{Djalante2011}
-Riyanti Djalante, Cameron Holley, and Frank Thomalla.
+\bibitem[Cutter et~al., 2008]{Cutter2008}
+Cutter, S.~L., Barnes, L., Berry, M., Burton, C., Evans, E., Tate, E., and
+  Webb, J. (2008).
+\newblock A place-based model for understanding community resilience to natural
+  disasters.
+\newblock {\em Global Environmental Change}, 18(4):598--606.
+
+\bibitem[Djalante et~al., 2011]{Djalante2011}
+Djalante, R., Holley, C., and Thomalla, F. (2011).
 \newblock Adaptive governance and managing resilience to natural hazards.
-\newblock \emph{International Journal of Disaster Risk Science}, 2\penalty0
-  (4):\penalty0 1--14, 2011.
-\newblock \doi{10.1007/s13753-011-0015-6}.
-\newblock URL \url{https://doi.org/10.1007/s13753-011-0015-6}.
+\newblock {\em International Journal of Disaster Risk Science}, 2(4):1--14.
 
-\bibitem[Ericksen(2008)]{Ericksen2008}
-Polly~J. Ericksen.
-\newblock Conceptualizing food systems for global environmental change
-  research.
-\newblock \emph{Global Environmental Change}, 18\penalty0 (1):\penalty0
-  234--245, 2008.
-\newblock \doi{10.1016/j.gloenvcha.2007.09.002}.
-\newblock URL \url{https://doi.org/10.1016/j.gloenvcha.2007.09.002}.
+\bibitem[Folke, 2006]{Folke2006}
+Folke, C. (2006).
+\newblock Resilience: The emergence of a perspective for social--ecological
+  systems analyses.
+\newblock {\em Global Environmental Change}, 16(3):253--267.
 
-\bibitem[Garschagen et~al.(2021)Garschagen, Doshi, Reith, and
-  Hagenlocher]{Garschagen2021}
-Matthias Garschagen, Deepal Doshi, Jonathan Reith, and Michael Hagenlocher.
+\bibitem[Fountain and H{\"u}tz-Adams, 2015]{CocoaBarometer2015}
+Fountain, A.~C. and H{\"u}tz-Adams, F. (2015).
+\newblock Cocoa barometer 2015.
+\newblock Report, VOICE Network and S{\"U}DWIND Institute.
+
+\bibitem[Garschagen et~al., 2021]{Garschagen2021}
+Garschagen, M., Doshi, D., Reith, J., and Hagenlocher, M. (2021).
 \newblock Global patterns of disaster and climate risk: An analysis of the
   consistency of leading index-based assessments and their results.
-\newblock \emph{Climatic Change}, 169\penalty0 (1-2), 2021.
-\newblock \doi{10.1007/s10584-021-03209-7}.
-\newblock URL \url{https://doi.org/10.1007/s10584-021-03209-7}.
+\newblock {\em Climatic Change}, 169(1-2).
 
-\bibitem[Hakkio and Rush(1991)]{hakkio_rush_1991}
-Craig~S. Hakkio and Mark Rush.
+\bibitem[Gunderson and Holling, 2002]{GundersonHolling2002}
+Gunderson, L.~H. and Holling, C.~S., editors (2002).
+\newblock {\em Panarchy: Understanding Transformations in Human and Natural
+  Systems}.
+\newblock Island Press, Washington, DC.
+
+\bibitem[Hakkio and Rush, 1991]{hakkio_rush_1991}
+Hakkio, C.~S. and Rush, M. (1991).
 \newblock Cointegration: How short is the long-run?
-\newblock \emph{Journal of International Money and Finance}, 10\penalty0
-  (4):\penalty0 571--581, 1991.
-\newblock \doi{10.1016/0261-5606(91)90008-8}.
+\newblock {\em Journal of International Money and Finance}, 10(4):571--581.
 
-\bibitem[Jim{\'e}nez-Rodr{\'\i}guez and
-  Morales-Zumaquero(2022)]{JimenezRodriguez2022}
-Rebeca Jim{\'e}nez-Rodr{\'\i}guez and Amalia Morales-Zumaquero.
+\bibitem[Jacobi et~al., 2014]{Jacobi2014}
+Jacobi, J., Andres, C., Schneider, M., Pillco, M., Calizaya, P., and Rist, S.
+  (2014).
+\newblock Carbon stocks, tree diversity, and the role of organic certification
+  in different cocoa production systems in alto beni, bolivia.
+\newblock {\em Agroforestry Systems}, 88(6):1117--1132.
+
+\bibitem[Jacobi et~al., 2013]{Jacobi2013}
+Jacobi, J., Schneider, M., Bottazzi, P., Pillco, M.~I., Calizaya, P., and Rist,
+  S. (2013).
+\newblock Agroecosystem resilience and farmers' perceptions of climate change
+  impacts on cocoa farms in alto beni, bolivia.
+\newblock {\em Renewable Agriculture and Food Systems}.
+
+\bibitem[Jim{\'e}nez-Rodr{\'\i}guez and Morales-Zumaquero,
+  2022]{JimenezRodriguez2022}
+Jim{\'e}nez-Rodr{\'\i}guez, R. and Morales-Zumaquero, A. (2022).
 \newblock Commodity price pass-through along the pricing chain.
-\newblock \emph{Review of World Economics}, 158\penalty0 (1):\penalty0
-  109--125, 2022.
-\newblock \doi{10.1007/s10290-021-00425-2}.
-\newblock URL \url{https://doi.org/10.1007/s10290-021-00425-2}.
+\newblock {\em Review of World Economics}, 158(1):109--125.
 
-\bibitem[Jumah and Kunst(2001)]{Jumah2001}
-A.~Jumah and Robert~M. Kunst.
+\bibitem[Jumah and Kunst, 2001]{Jumah2001}
+Jumah, A. and Kunst, R.~M. (2001).
 \newblock The effects of dollar/sterling exchange rate volatility on futures
   markets for coffee and cocoa.
-\newblock \emph{European Review of Agricultural Economics}, 28\penalty0
-  (3):\penalty0 307--320, 2001.
-\newblock \doi{10.1093/erae/28.3.307}.
-\newblock URL \url{https://doi.org/10.1093/erae/28.3.307}.
+\newblock {\em European Review of Agricultural Economics}, 28(3):307--320.
 
-\bibitem[Lahive et~al.(2019)Lahive, Hadley, and Daymond]{Lahive2019}
-Fiona Lahive, Paul Hadley, and Andrew~J. Daymond.
+\bibitem[Lahive et~al., 2019]{Lahive2019}
+Lahive, F., Hadley, P., and Daymond, A.~J. (2019).
 \newblock The physiological responses of cacao to the environment and the
   implications for climate change resilience. a review.
-\newblock \emph{Agronomy for Sustainable Development}, 39\penalty0
-  (1):\penalty0 5, 2019.
-\newblock \doi{10.1007/s13593-018-0552-0}.
-\newblock URL \url{https://doi.org/10.1007/s13593-018-0552-0}.
+\newblock {\em Agronomy for Sustainable Development}, 39(1):5.
 
-\bibitem[Lutkepohl(2005)]{lutkepohl_2005}
-Helmut Lutkepohl.
-\newblock \emph{New Introduction to Multiple Time Series Analysis}.
-\newblock Springer, 2005.
+\bibitem[Lutkepohl, 2005]{lutkepohl_2005}
+Lutkepohl, H. (2005).
+\newblock {\em New Introduction to Multiple Time Series Analysis}.
+\newblock Springer.
 
-\bibitem[Meyer and von Cramon-Taubadel(2004)]{MeyerCramon2004}
-Jochen Meyer and Stephan von Cramon-Taubadel.
+\bibitem[Mechler et~al., 2025]{Mechler2025}
+Mechler, R., {\v{Z}}ebrowski, P., Clercq-Roques, R., Patil, P., and
+  Hochrainer-Stigler, S. (2025).
+\newblock Positive externalities in the polycrisis: Effectively addressing
+  disaster and climate risks for generating multiple resilience dividends.
+\newblock {\em International Journal of Disaster Risk Science}, 16:575--593.
+
+\bibitem[Meyer and von Cramon-Taubadel, 2004]{MeyerCramon2004}
+Meyer, J. and von Cramon-Taubadel, S. (2004).
 \newblock Asymmetric price transmission: A survey.
-\newblock \emph{Journal of Agricultural Economics}, 55\penalty0 (3):\penalty0
-  581--611, 2004.
-\newblock \doi{10.1111/j.1477-9552.2004.tb00116.x}.
-\newblock URL \url{https://doi.org/10.1111/j.1477-9552.2004.tb00116.x}.
+\newblock {\em Journal of Agricultural Economics}, 55(3):581--611.
 
-\bibitem[Mithofer et~al.(2017)Mithofer, Roshetko, Donovan, Nathalie, Robiglio,
-  Wau, Sonwa, and Blare]{Mithofer2017}
-Dagmar Mithofer, James~M. Roshetko, Jason~A. Donovan, Ewane Nathalie, Valentina
-  Robiglio, Duman Wau, Denis~J. Sonwa, and Trent Blare.
+\bibitem[Mithofer et~al., 2017]{Mithofer2017}
+Mithofer, D., Roshetko, J.~M., Donovan, J.~A., Nathalie, E., Robiglio, V., Wau,
+  D., Sonwa, D.~J., and Blare, T. (2017).
 \newblock Unpacking `sustainable' cocoa: Do sustainability standards,
   development projects and policies address producer concerns in indonesia,
   cameroon and peru?
-\newblock \emph{International Journal of Biodiversity Science, Ecosystem
-  Services \& Management}, 13\penalty0 (1):\penalty0 444--469, 2017.
-\newblock \doi{10.1080/21513732.2018.1432691}.
-\newblock URL \url{https://doi.org/10.1080/21513732.2018.1432691}.
+\newblock {\em International Journal of Biodiversity Science, Ecosystem
+  Services \& Management}, 13(1):444--469.
 
-\bibitem[Niether et~al.(2020)Niether, Jacobi, Blaser, Andres, and
-  Armengot]{Niether2020}
-Wiebke Niether, Johanna Jacobi, Wilma~J. Blaser, Christian Andres, and Laura
-  Armengot.
+\bibitem[Morales et~al., 2022]{Morales2022}
+Morales, L.~V., Robiglio, V., Baca, M., Bunn, C., and Reyes, M. (2022).
+\newblock Planning for adaptation: A system approach to understand the value
+  chain's role in supporting smallholder coffee farmers' adaptive capacity in
+  peru.
+\newblock {\em Frontiers in Climate}.
+
+\bibitem[{National Aeronautics and Space Administration}, 2026]{nasa_power_api}
+{National Aeronautics and Space Administration} (2026).
+\newblock Nasa power temporal apis documentation.
+\newblock \url{https://power.larc.nasa.gov/docs/services/api/temporal/}.
+\newblock Official documentation for daily and monthly analysis-ready
+  meteorological data. Accessed 2026-03-25.
+
+\bibitem[Niether et~al., 2020]{Niether2020}
+Niether, W., Jacobi, J., Blaser, W.~J., Andres, C., and Armengot, L. (2020).
 \newblock Cocoa agroforestry systems versus monocultures: A multi-dimensional
   meta-analysis.
-\newblock \emph{Environmental Research Letters}, 2020.
-\newblock \doi{10.1088/1748-9326/abb053}.
-\newblock URL \url{https://doi.org/10.1088/1748-9326/abb053}.
+\newblock {\em Environmental Research Letters}.
 
-\bibitem[Parsons et~al.(2021)Parsons, Reeve, McGregor, Hastings, Marshall,
-  McNeill, Stayner, and Glavac]{Parsons2021}
-Melissa Parsons, Ian Reeve, James McGregor, Peter Hastings, Graham~R. Marshall,
-  Judith McNeill, Richard Stayner, and Sonya Glavac.
+\bibitem[Parsons et~al., 2021]{Parsons2021}
+Parsons, M., Reeve, I., McGregor, J., Hastings, P., Marshall, G.~R., McNeill,
+  J., Stayner, R., and Glavac, S. (2021).
 \newblock Disaster resilience in australia: A geographic assessment using an
   index of coping and adaptive capacity.
-\newblock \emph{International Journal of Disaster Risk Reduction}, 62:\penalty0
-  102422, 2021.
-\newblock \doi{10.1016/j.ijdrr.2021.102422}.
-\newblock URL \url{https://doi.org/10.1016/j.ijdrr.2021.102422}.
+\newblock {\em International Journal of Disaster Risk Reduction}, 62:102422.
 
-\bibitem[Schroth et~al.(2016)Schroth, Laderach, Martinez-Valle, Bunn, and
-  Jassogne]{Schroth2016}
-Goetz Schroth, Peter Laderach, Armando~Isaac Martinez-Valle, Christian Bunn,
-  and Laurence Jassogne.
+\bibitem[Poku, 2017]{Poku2017}
+Poku, A.-G. (2017).
+\newblock The influence of exchange rate changes on agricultural prices: The
+  case of cocoa and maize in ghana (1966--2008).
+\newblock {\em American Journal of Rural Development}.
+
+\bibitem[Schroth et~al., 2016]{Schroth2016}
+Schroth, G., Laderach, P., Martinez-Valle, A.~I., Bunn, C., and Jassogne, L.
+  (2016).
 \newblock Vulnerability to climate change of cocoa in west africa: Patterns,
   opportunities and limits to adaptation.
-\newblock \emph{Science of The Total Environment}, 556:\penalty0 231--241,
-  2016.
-\newblock \doi{10.1016/j.scitotenv.2016.03.024}.
-\newblock URL \url{https://doi.org/10.1016/j.scitotenv.2016.03.024}.
+\newblock {\em Science of The Total Environment}, 556:231--241.
 
-\bibitem[Tendall et~al.(2015)Tendall, Joerin, Kopainsky, Edwards, Shreck, Le,
-  Kruetli, Grant, and Six]{Tendall2015}
-Danielle~M. Tendall, Jonas Joerin, Birgit Kopainsky, Peter Edwards, Aimee
-  Shreck, Quang~Bao Le, Pius Kruetli, Michelle Grant, and Johan Six.
+\bibitem[Talero-Sarmiento et~al., 2025]{talero_sarmiento_etal_2025}
+Talero-Sarmiento, L.~H., Lamos-Diaz, H., and Marquez-Gonzalez, J.~D. (2025).
+\newblock Optimizing cocoa biomass density through integrated irrigation and
+  drainage management under water stress: A linear programming approach.
+\newblock {\em Ecological Informatics}, 90:103262.
+
+\bibitem[Tate, 2012]{Tate2012}
+Tate, E. (2012).
+\newblock Social vulnerability indices: a comparative assessment using
+  uncertainty and sensitivity analysis.
+\newblock {\em Natural Hazards}, 63(2):325--347.
+
+\bibitem[Tendall et~al., 2015]{Tendall2015}
+Tendall, D.~M., Joerin, J., Kopainsky, B., Edwards, P., Shreck, A., Le, Q.~B.,
+  Kruetli, P., Grant, M., and Six, J. (2015).
 \newblock Food system resilience: Defining the concept.
-\newblock \emph{Global Food Security}, 6:\penalty0 17--23, 2015.
-\newblock \doi{10.1016/j.gfs.2015.08.001}.
-\newblock URL \url{https://doi.org/10.1016/j.gfs.2015.08.001}.
+\newblock {\em Global Food Security}, 6:17--23.
 
-\bibitem[Troyanskaya et~al.(2001)Troyanskaya, Cantor, Sherlock, Brown, Hastie,
-  Tibshirani, Botstein, and Altman]{troyanskaya_etal_2001}
-Olga Troyanskaya, Michael Cantor, Gavin Sherlock, Pat Brown, Trevor Hastie,
-  Robert Tibshirani, David Botstein, and Russ~B. Altman.
+\bibitem[Troyanskaya et~al., 2001]{troyanskaya_etal_2001}
+Troyanskaya, O., Cantor, M., Sherlock, G., Brown, P., Hastie, T., Tibshirani,
+  R., Botstein, D., and Altman, R.~B. (2001).
 \newblock Missing value estimation methods for dna microarrays.
-\newblock \emph{Bioinformatics}, 17\penalty0 (6):\penalty0 520--525, 2001.
-\newblock \doi{10.1093/bioinformatics/17.6.520}.
-\newblock URL \url{https://doi.org/10.1093/bioinformatics/17.6.520}.
+\newblock {\em Bioinformatics}, 17(6):520--525.
 
-\bibitem[Tsowou and Gayi(2019)]{TsowouGayi2019}
-Komi Tsowou and Samuel~K. Gayi.
+\bibitem[Tsowou and Gayi, 2019]{TsowouGayi2019}
+Tsowou, K. and Gayi, S.~K. (2019).
 \newblock Trade reforms and integration of cocoa farmers into world markets:
   Evidence from african and non-african countries.
-\newblock \emph{Journal of African Trade}, 2019.
-\newblock \doi{10.2991/jat.k.190916.001}.
-\newblock URL \url{https://doi.org/10.2991/jat.k.190916.001}.
+\newblock {\em Journal of African Trade}.
 
-\bibitem[Turner et~al.(2003)Turner, Kasperson, Matson, McCarthy, Corell,
-  Christensen, Eckley, Kasperson, Luers, Martello, Polsky, Pulsipher, and
-  Schiller]{Turner2003}
-B.~L. Turner, Roger~E. Kasperson, Pamela~A. Matson, James~J. McCarthy,
-  Robert~W. Corell, Lindsey Christensen, Noelle Eckley, Jeanne~X. Kasperson,
-  Amy Luers, Marybeth~L. Martello, Colin Polsky, Alexander Pulsipher, and
-  Andrew Schiller.
+\bibitem[Turner et~al., 2003]{Turner2003}
+Turner, B.~L., Kasperson, R.~E., Matson, P.~A., McCarthy, J.~J., Corell, R.~W.,
+  Christensen, L., Eckley, N., Kasperson, J.~X., Luers, A., Martello, M.~L.,
+  Polsky, C., Pulsipher, A., and Schiller, A. (2003).
 \newblock A framework for vulnerability analysis in sustainability science.
-\newblock \emph{Proceedings of the National Academy of Sciences of the United
-  States of America}, 100\penalty0 (14):\penalty0 8074--8079, 2003.
-\newblock \doi{10.1073/pnas.1231335100}.
-\newblock URL \url{https://doi.org/10.1073/pnas.1231335100}.
+\newblock {\em Proceedings of the National Academy of Sciences of the United
+  States of America}, 100(14):8074--8079.
 
-\bibitem[van Buuren and
-  Groothuis-Oudshoorn(2011)]{vanbuuren_groothuisoudshoorn_2011}
-Stef van Buuren and Karin Groothuis-Oudshoorn.
+\bibitem[Vaast and Somarriba, 2014]{VaastSomarriba2014}
+Vaast, P. and Somarriba, E. (2014).
+\newblock Trade-offs between crop intensification and ecosystem services: the
+  role of agroforestry in cocoa cultivation.
+\newblock {\em Agroforestry Systems}, 88(6):947--956.
+
+\bibitem[van Buuren and Groothuis-Oudshoorn,
+  2011]{vanbuuren_groothuisoudshoorn_2011}
+van Buuren, S. and Groothuis-Oudshoorn, K. (2011).
 \newblock {mice}: Multivariate imputation by chained equations in {R}.
-\newblock \emph{Journal of Statistical Software}, 45\penalty0 (3):\penalty0
-  1--67, 2011.
-\newblock \doi{10.18637/jss.v045.i03}.
-\newblock URL \url{https://www.jstatsoft.org/article/view/v045i03}.
+\newblock {\em Journal of Statistical Software}, 45(3):1--67.
 
-\bibitem[Zurek et~al.(2022)Zurek, Ingram, Sanderson~Bellamy, Goold, Lyon,
-  Alexander, Barnes, Bebber, Breeze, Bruce, Collins, Davies, Doherty, Ensor,
-  Franco, Gatto, Hess, Lamprinopoulou, Liu, et~al.]{Zurek2022}
-Monika Zurek, John Ingram, Angelina Sanderson~Bellamy, Conor Goold, Christopher
-  Lyon, Peter Alexander, Andrew Barnes, Daniel~P. Bebber, Tom~D. Breeze, Ann
-  Bruce, Laura~M. Collins, Jessica Davies, Bob Doherty, Jon Ensor, Sofia~C.
-  Franco, Andrea Gatto, Tim Hess, Christina Lamprinopoulou, Lin Liu, et~al.
+\bibitem[{World Cocoa Foundation}, 2012]{WCF2012}
+{World Cocoa Foundation} (2012).
+\newblock Cocoa market update.
+\newblock Report, World Cocoa Foundation, Washington, DC.
+
+\bibitem[Zurek et~al., 2022]{Zurek2022}
+Zurek, M., Ingram, J., Sanderson~Bellamy, A., Goold, C., Lyon, C., Alexander,
+  P., Barnes, A., Bebber, D.~P., Breeze, T.~D., Bruce, A., Collins, L.~M.,
+  Davies, J., Doherty, B., Ensor, J., Franco, S.~C., Gatto, A., Hess, T.,
+  Lamprinopoulou, C., Liu, L., et~al. (2022).
 \newblock Food system resilience: Concepts, issues, and challenges.
-\newblock \emph{Annual Review of Environment and Resources}, 47:\penalty0
-  511--534, 2022.
-\newblock \doi{10.1146/annurev-environ-112320-050744}.
-\newblock URL \url{https://doi.org/10.1146/annurev-environ-112320-050744}.
+\newblock {\em Annual Review of Environment and Resources}, 47:511--534.
 
 \end{thebibliography}

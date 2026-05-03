@@ -1,0 +1,11 @@
+# Paper V3 Reviewer Concern Alignment
+
+| Reviewer concern | Manuscript change made | Artifact created or used | Response type | Remaining limitation |
+| --- | --- | --- | --- | --- |
+| Formalize resilience upgrade through tipping-point/regime-shift diagnostics. | Added structural-break methodology and diagnostic results with cautious interpretation. | outputs/tables/table_v3_structural_breaks.csv | Methodological and empirical | BIC retains no-break baseline in a short monthly sample. |
+| Interpret NASA POWER anomalies as resilience-relevant stress indicators. | Reframed weather anomalies as natural-capital stress proxies. | outputs/tables/table_v3_weather_stress_summary.csv | Methodological and interpretive | No direct farm-level physiological thresholds. |
+| Justify hydrometeorological focus and earthquake exclusion. | Clarified hazard screening and earthquake sparsity. | outputs/tables/table_v3_hazard_screening.csv | Empirical | Registry counts are contextual markers. |
+| Make PCA pressure transparent. | Reported variable count, PC1 variance, loadings, and synthetic-pressure interpretation. | outputs/tables/table_v3_pca_pressure_loadings.csv; outputs/tables/table_v3_pca_pressure_top_months.csv | Empirical and methodological | PCA does not identify causal price effects. |
+| Discuss resilience dividend without overstating event-window evidence. | Reframed October 2022 comparison as exploratory episode stratification and buffer-capacity discussion. | outputs/tables/table_v3_event_window_tests.csv; outputs/appendix/v3_missing_artifacts_note.md | Empirical and interpretive | No agroforestry-density or monoculture data in repository. |
+| Strengthen basis-risk and financial-equity policy relevance. | Added discussion subsection on basis risk, territorial blindness, and financial equity. | outputs/tables/table_v3_basis_risk_markers.csv | Interpretive | Policy recommendations are not tested instruments. |
+| Use verified references for Bai-Perron and resilience dividends. | Added Bai and Perron references; retained verified Mechler et al. 2025 citation. | references/cocoa_volatility.bib; paper/references/cocoa_volatility.bib | Bibliographic | None for these cited items after verification. |

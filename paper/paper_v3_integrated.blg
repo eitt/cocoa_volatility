@@ -1,48 +1,48 @@
 This is BibTeX, Version 0.99e
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: paper_v3_integrated.aux
-Reallocating 'name_of_file' (item size: 1) to 9 items.
-The style file: plainnat.bst
+Reallocating 'name_of_file' (item size: 1) to 8 items.
+The style file: apalike.bst
 Reallocating 'name_of_file' (item size: 1) to 28 items.
 Database file #1: references/cocoa_volatility.bib
-You've used 23 entries,
-            2773 wiz_defined-function locations,
-            799 strings with 12042 characters,
-and the built_in function-call counts, 14187 in all, are:
-= -- 1253
-> -- 1151
-< -- 9
-+ -- 386
-- -- 363
-* -- 1359
-:= -- 2312
-add.period$ -- 111
-call.type$ -- 23
-change.case$ -- 188
-chr.to.int$ -- 23
-cite$ -- 46
-duplicate$ -- 471
-empty$ -- 874
-format.name$ -- 398
-if$ -- 2849
+You've used 37 entries,
+            1935 wiz_defined-function locations,
+            719 strings with 12318 characters,
+and the built_in function-call counts, 16293 in all, are:
+= -- 1538
+> -- 920
+< -- 18
++ -- 336
+- -- 326
+* -- 1516
+:= -- 2928
+add.period$ -- 112
+call.type$ -- 37
+change.case$ -- 347
+chr.to.int$ -- 37
+cite$ -- 37
+duplicate$ -- 504
+empty$ -- 978
+format.name$ -- 385
+if$ -- 3045
 int.to.chr$ -- 1
-int.to.str$ -- 1
-missing$ -- 24
-newline$ -- 165
-num.names$ -- 92
-pop$ -- 302
+int.to.str$ -- 0
+missing$ -- 35
+newline$ -- 189
+num.names$ -- 112
+pop$ -- 274
 preamble$ -- 1
-purify$ -- 166
+purify$ -- 347
 quote$ -- 0
-skip$ -- 410
+skip$ -- 383
 stack$ -- 0
-substring$ -- 448
-swap$ -- 23
+substring$ -- 1034
+swap$ -- 34
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 248
+type$ -- 218
 warning$ -- 0
-while$ -- 103
+while$ -- 122
 width$ -- 0
-write$ -- 387
+write$ -- 479
