@@ -1,0 +1,704 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{lmodern}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage[authoryear,round]{natbib}
+
+\usepackage{caption}
+\usepackage{orcidlink}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  urlcolor=blue
+}
+
+\setstretch{1.15}
+\setlength{\parskip}{0.45em}
+\setlength{\parindent}{0pt}
+
+\title{Benchmark Transmission, Environmental Stress, and Smallholder Resilience in the Cocoa Supply Chain: Evidence from Santander, Colombia}
+
+
+\author{
+Leonardo H. Talero-Sarmiento$^{1}$\,\orcidlink{0000-0002-4129-9163} \and
+Gabriel Weber$^{2}$\,\orcidlink{0000-0003-2120-1648} \and
+Francisco J. Perez-Galarce$^{3}$\,\orcidlink{0000-0002-6921-298X} \and
+Gilles Grolleau$^{2}$\,\orcidlink{0000-0003-2932-8870} \and
+Stamatis Mantziaris$^{4}$\,\orcidlink{0000-0001-7047-1447} \and
+Tommaso Luzzati$^{5}$\,\orcidlink{0000-0003-3835-7243}
+}
+\date{}
+
+\begin{document}
+\maketitle
+\begin{center}
+\small
+$^{1}$ Universidad Autonoma de Bucaramanga, Colombia \\
+$^{2}$ ESSCA School of Management, France \\
+$^{3}$ Northumbria University, UK \\
+$^{4}$ ELGO-DIMITRA, Greece \\
+$^{5}$ Università di Pisa, Italy \\
+
+\texttt{ltalero@unab.edu.co}
+\end{center}
+
+\begin{abstract}
+Global cocoa benchmarks shape producer exposure, but territorial resilience also depends on the environmental conditions under which benchmark shocks are absorbed. This article examines short-run transmission from the world cocoa benchmark to Colombian producer-linked prices and to a European downstream chocolate index, then extends that market analysis with contextual weather and disaster information for Santander, Colombia. Monthly AgroNet, World Bank, Eurostat, exchange-rate, oil, and NASA POWER series are harmonized for August 2021--December 2025, alongside an official departmental disaster registry covering 594 events from August 2021--July 2024. The empirical design separates a core transmission system from a nested territorial exposure layer. HAC-robust level and return models identify the benchmark pass-through mechanism, while weather anomalies, structural-break diagnostics, direct hazard screening, a PCA-based composite pressure index, and an exploratory event-window comparison are used as contextual resilience tools rather than as co-equal transmission series. International cocoa returns remain the dominant short-run driver of Colombian cocoa returns ($\beta \approx 0.80$, $p<0.001$), while the European downstream index adjusts more weakly. Weather variables add little incremental explanatory power to the core equations, but they identify months in which benchmark exposure coincides with natural-capital stress. In the shorter disaster window, earthquake counts are too sparse for direct use; hydrometeorological counts provide the most defensible monthly episode marker, while the composite index summarizes broader territorial disruption. The break diagnostic retains the no-break benchmark by BIC, and the October 2022 event window shows a higher post-episode mean with suggestive rather than confirmatory evidence. The contribution is therefore not a disaster-led pricing model, but a resilience-oriented extension showing how benchmark transmission and territorial exposure can be analyzed jointly under short and uneven data overlap.
+\end{abstract}
+
+\textbf{Keywords:} cocoa price transmission; environmental stress; hydrometeorological events; smallholder vulnerability; resilience; Santander; Colombia
+
+\section{Introduction}
+
+Cocoa-producing territories are exposed to more than price risk alone. In global value chains, farmers often capture a disproportionately low share of total value added — sometimes less than 7\% — leaving them highly vulnerable price-takers exposed to international volatility \citep{CocoaBarometer2015, WCF2012}. Yet, in resilience-oriented food-systems analysis, harm is not produced by a single disturbance in isolation. It emerges from the interaction between exposure, sensitivity, and adaptive capacity across socio-ecological systems \citep{Turner2003,Adger2006,Tendall2015,Zurek2022}. For cocoa smallholders in Santander, Colombia, this interaction is evident in the overlap between benchmark volatility transmitted through international commodity markets and localized environmental stress arising from rainfall disruption, transport damage, and disaster-related conditions. Hydrometeorological events, for example, may trigger landslides on unpaved mountainous roads, affecting harvest circulation, buyer access, and local marketing conditions. These territorial frictions create localized ``basis risk,'' in which realized local prices deviate from global benchmarks because market signals are filtered through place-specific disruptions.
+
+This dual exposure is not simply additive. On the market side, cocoa smallholders remain constrained by structurally weak bargaining positions, limited farmer organizations, dependence on a narrow set of buyers, and restricted capacity to capture value from globalized cocoa chains. Sustainability standards, development projects, and trade reforms may improve specific practices or forms of market participation, but they often leave unresolved the core problems of price volatility, weak producer organizations, and buyer dependence \citep{Mithofer2017}. Similarly, trade liberalization has strengthened the integration of cocoa farmers into world markets, but the evidence remains mixed regarding whether this integration has improved the value transmitted to farm-gate prices \citep{TsowouGayi2019}. On the environmental side, cocoa production is sensitive to climatic stressors, including heat, drought, flooding, rainfall disruptions, and disease pressure, while shade-based agroforestry can buffer climatic extremes but also entails trade-offs among productivity, ecosystem services, and livelihood strategies \citep{Jacobi2013,VaastSomarriba2014}. Santander is therefore a critical case because market exposure and territorial sensitivity converge: international benchmark volatility is transmitted through the cocoa chain to producers, while local hazards, road fragility, and disaster-related interruptions determine whether that exposure is absorbed, amplified, or displaced across the territory.
+
+The empirical literature usually treats these domains separately. Cocoa and commodity-market studies explain pass-through from world prices, exchange-rate exposure, and uneven adjustment along the pricing chain \citep{TsowouGayi2019,Jumah2001,MeyerCramon2004,JimenezRodriguez2022}. A parallel body of work examines climatic suitability, water and heat stress, agroforestry, and diversified production systems in cocoa landscapes \citep{Schroth2016,Lahive2019,Niether2020}. What remains less developed is an empirical design that traces how benchmark shocks propagate to producer-linked prices while also incorporating environmental stress and disaster conditions within the same territorial setting. This gap matters not only for academic interpretation, but also for smallholders, cooperatives, local traders, and territorial planners who must manage compounding vulnerability when market instability and localized environmental disruptions overlap.
+
+This article addresses that gap in working in two lines. The first line presents a supply-chain transmission analysis linking Colombian cocoa prices, world cocoa benchmarks, downstream European chocolate prices, the COP/USD exchange rate, and Brent oil prices. The second line extends the analysis through a weather-disaster-resilience component that uses local environmental variables and the official Santander event registry. The design is intentionally layered. It first estimates the core market-transmission mechanism in the fullest aligned monthly window. It then incorporates environmental stress in two complementary ways: a full-window weather-stress index built from local NASA POWER anomalies, and a nested disaster extension for August 2021--July 2024 that treats registry-based hazards as territorial exposure markers rather than as a second benchmark-like transmission system. Because the disaster data are shorter, irregular, partly zero-inflated, and partly synthetic through principal component analysis (PCA), they are analyzed using descriptive overlays, parsimonious robustness checks, and an exploratory event window rather than being forced into a co-equal market specification.
+
+This research makes three concrete contributions. First, it estimates the benchmark transmission mechanism linking international cocoa prices, domestic producer-linked prices, exchange-rate movements, downstream chocolate prices, and energy-market conditions. Second, it incorporates environmental and disaster information through a layered empirical design that avoids overstating the evidence: hydrometeorological event counts are treated as the most defensible monthly episode marker in the nested window, while the PCA-based multi-hazard indicator is used as a contextual territorial-pressure overlay. Third, it reframes cocoa-price transmission in ecological-economics terms by treating the cocoa chain as a socio-ecological system (SES), where market transmission defines baseline exposure and environmental stress conditions how that exposure is absorbed, amplified, or displaced across the territory.
+
+The remainder of the article is organized as follows. Section~\ref{sec:framing} develops the conceptual framing. Section~\ref{sec:data} describes the territorial context, data architecture, and alignment decisions. Section~\ref{sec:methods} presents the empirical design, equations, and hazard-selection logic. Section~\ref{sec:results} reports the descriptive, transmission, and disaster-overlay findings. Section~\ref{sec:discussion} interprets those results in relation to vulnerability, resilience, and governance. Section~\ref{sec:conclusion} concludes with limitations, transferability, and practical implications.
+
+\section{Conceptual Framing}
+\label{sec:framing}
+
+Resilience in commodity systems is not adequately captured by prices, agronomy, or institutions taken separately \citep{Niether2020,Mechler2025}. Vulnerability frameworks instead emphasize that harm emerges from the interaction between exposure, sensitivity, and adaptive capacity within coupled human--environment systems \citep{Turner2003,Adger2006}. In this article, we therefore treat the cocoa chain as a socio-ecological system (SES) organized across nested scales. Global benchmark volatility defines the primary exposure mechanism; territorial hazards and infrastructure fragility operate as a local sensitivity filter; and agroforestry, producer organization, and institutional response constitute forms of adaptive or buffer capacity. This framing moves the analysis beyond standard risk identification toward resilience dynamics, where shocks are absorbed, amplified, displaced, or reorganized across interconnected market, ecological, and territorial layers \citep{Folke2006,GundersonHolling2002,Tendall2015,Zurek2022}.
+
+From this perspective, global cocoa prices are not interpreted only as external market signals transmitted through a pricing chain. They represent an exposure dynamic that connects Santander's cocoa producers to international volatility, exchange-rate movements, energy-market conditions, and downstream demand. Evidence from cocoa-market integration shows that stronger linkage to world prices can increase producer exposure even when farmers do not capture a commensurate share of favorable movements \citep{TsowouGayi2019}. More broadly, pricing-chain studies show that commodity and energy shocks often pass through asymmetrically, incompletely, or with different timing across stages of the chain \citep{MeyerCramon2004,JimenezRodriguez2022}. These findings matter for resilience because they shift the question from whether prices move together to how exposure is distributed, who absorbs adjustment, and under what territorial or institutional conditions benchmark volatility becomes locally consequential \citep{Morales2022}.
+
+The territorial layer is conceptualized as a sensitivity filter rather than as a parallel market mechanism. Climatic anomalies, hydrometeorological events, landslides, and road interruptions need not directly determine monthly cocoa prices to matter for resilience; instead, they compound vulnerabilities by disrupting the physical and social infrastructure \citep{Morales2022}. Their role is to shape the local conditions under which market exposure is absorbed or amplified. In this sense, the PCA-based multi-hazard pressure index is interpreted as a territorial sensitivity construct representing the functional structure of the producing region \citep[consistent with][]{multihazard2022}: it summarizes periods in which environmental and disaster-related pressures may weaken mobility and buyer access---particularly during rainy seasons when unpaved roads become impassable \citep{TsowouGayi2019, Gatto2021}---as well as input supply, emergency response, and household coping capacity \citep{Hussain2016, Jones2016}. This interpretation is consistent with vulnerability analysis, in which exposure to stressors must be assessed in light of the affected system's sensitivity and its capacity to respond \citep{Turner2003,Adger2006}.
+
+
+
+Adaptive capacity enters the framework through ecological and socio-institutional buffers. Ecologically, agroforestry systems, shade cover, and biodiversity may reduce the physical impacts of climatic extremes compared with simpler production systems, although they also entail trade-offs among productivity, ecosystem services, and livelihood strategies \citep{VaastSomarriba2014,Schroth2016,Niether2020}. Socio-institutionally, farmer organizations, cooperatives, credit access, shared transport, collective bargaining, and local response networks may alter how households experience market and disaster shocks, especially when road access or buyer presence is disrupted \citep{Jacobi2014,Mithofer2017}. Buffer capacity therefore does not eliminate exposure; it mediates whether the system absorbs disturbance, reorganizes around it, or transfers its costs to more vulnerable actors.
+
+This logic is consistent with resilience thinking and panarchy. Resilience is not only the ability to return to a previous state after disturbance; it also concerns persistence, adaptation, and transformation in systems exposed to uncertainty, thresholds, and cross-scale interactions \citep{Folke2006}. The panarchy perspective posits that change unfolds through nested adaptive cycles, in which processes at one scale can either stabilize or destabilize dynamics at another \citep{GundersonHolling2002}. Applied to Santander, the global benchmark operates at the market-exposure layer, while departmental hazards, infrastructure, and institutions define the territorial layer through which this exposure is filtered. The empirical design therefore does not treat the disaster index as a co-equal price series. It treats it as an indicator of territorial pressure that helps identify when and how market exposure may become more damaging.
+
+Composite resilience and hazard-pressure metrics are useful in this setting because no single variable can fully capture localized disruption \citep{Cutter2008,Parsons2021}. However, such indicators must be interpreted as contextual constructs whose meaning depends on spatial scope, variable selection, and aggregation choices \citep{Tate2012,Garschagen2021}. That logic guides the present study. Weather anomalies serve as full-window contextual indicators of local environmental stress, whereas official disaster records are used within a nested window in which data overlap is sufficient for robust screening. Hazard claims are therefore limited to what the territorial data can substantiate — specifically, hydrometeorological and broader multi-hazard disruptions — rather than being generalized to all natural hazards \citep{Birkmann2023}.
+
+The ecological-economics contribution of this paper lies in operationalizing a bridge between global exposure dynamics and localized resilience conditions. Rather than treating market transmission and climate adaptation as separate research domains, the article examines how benchmark volatility reaches producer-linked prices and how territorial stress may condition the capacity of cocoa-producing territories to absorb that exposure. The empirical design is consequently layered: the benchmark system identifies exposure, the PCA-based pressure index represents the territorial sensitivity filter, and the discussion of agroforestry and socio-institutional support situates adaptive capacity within the broader SES.
+
+To fill this analytical gap, the empirical design is guided by three core expectations derived from vulnerability and resilience frameworks \citep{Turner2003,Folke2006,GundersonHolling2002,Mechler2025}. First, world cocoa returns are expected to transmit positively and robustly to Colombian producer-linked returns, establishing global benchmark volatility as the primary exposure mechanism \citep{TsowouGayi2019,Poku2017}. Second, the European downstream chocolate index should adjust more slowly and less strongly than the producer-linked series, indicating uneven absorption of benchmark volatility along the pricing chain, with smallholders acting as primary shock absorbers \citep{JimenezRodriguez2022,Morales2022}. Third, environmental stress should manifest primarily as a territorial amplifier of exposure---identified through discrete episodes of intensified pressure---rather than as a stable, month-to-month substitute for the core benchmark transmission channel \citep{Garschagen2021,Djalante2011,talero_sarmiento_etal_2025}.
+
+\section{Methodology}
+\label{sec:methods}
+The empirical strategy follows the layered logic of the conceptual framework. It first estimates benchmark exposure using monthly price-transmission models that link Colombian cocoa prices to world cocoa prices, exchange-rate movements, oil prices, and downstream European chocolate prices. It then introduces local environmental stress through weather anomalies and territorial sensitivity through Santander's official disaster registry. Rather than treating weather and disaster variables as co-equal price drivers, the methodology uses them to identify the conditions under which global market exposure may be absorbed, amplified, or displaced across the cocoa-producing territory. This design allows the analysis to combine econometric evidence on market transmission with resilience-oriented indicators of environmental and territorial pressure.
+
+\subsection{Study Context and Data}
+\label{sec:data}
+The territorial focus of this study is Santander, Colombia's leading cocoa-producing department, with a population of 2.3 million, and particular attention to San Vicente de Chucurí as the primary climate and production reference point (see Figure~\ref{fig:sanvicente}). Santander is an administrative territory comprising 87 municipalities, in which the capital, Bucaramanga, concentrates a significant portion of the departmental population: 59.9\% of the broader urban-metropolitan population, approximately 47.1\% within the city proper, and over 52.89\% within its metropolitan area. This demographic and administrative structure necessitates a layered data approach: disaster indicators are operationalized at the departmental level to capture wider institutional, logistical, and transport disruptions, while weather anomalies are centered on San Vicente de Chucurí to approximate local cocoa-growing conditions \citep{talero_sarmiento_etal_2025}.
+
+The departmental scale is analytically relevant because Santander's physical and economic geography links localized hazards to wider territorial disruptions. The department is characterized by steep Andean slopes, intermontane valleys, canyon systems, and river corridors associated with the Suárez, Chicamocha, Sogamoso, Lebrija, Opón, and Carare basins. In this topology, hydrometeorological events affect cocoa livelihoods not only through direct farm-level exposure. Landslides, floods, road deterioration, and temporary closures can disrupt the circulation of cocoa, food, labor, inputs, and buyers across municipalities, especially in rural production areas that depend on secondary and tertiary roads connected to Bucaramanga, Barrancabermeja, and other regional nodes. Therefore, a disaster recorded elsewhere in Santander may still influence San Vicente de Chucurí through transport costs, market access, buyer presence, emergency response, and household food availability.
+
+Meteorological data are derived from the NASA at its native spatial resolution of $0.5^{\circ} \times 0.5^{\circ}$, approximately $55 \times 55$ km at the equator, providing analysis-ready point-based anomalies for the municipality \citep{nasa_power_api}. The territory combines high cocoa specialization with intense exposure to rainfall variability, transport disruptions, and multi-hazard events, particularly landslides on unpaved secondary roads in the Yariguíes Range, which are critical for market access and household resilience. This configuration makes Santander a plausible setting for studying how global benchmark shocks interact with local stress conditions, creating localized ``basis risk'' where realized local prices deviate from global trends due to territorial frictions.
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\linewidth]{figures/fig0_san_vicente_chucuri_map.png}
+    \caption{Geographical location of San Vicente de Chucurí in Santander, Colombia. The map situates the municipality within the Colombian and South American contexts and highlights its location in the mountainous Yariguíes range, where cocoa-producing territories are shaped by rugged terrain, secondary-road access, and logistical sensitivity.}
+    \label{fig:sanvicente}
+\end{figure}
+
+
+\subsubsection{Data Sources}
+
+The integrated dataset combines four blocks. The first is the cocoa pricing chain: AgroNet weekly cacao reference prices aggregated to monthly Colombian producer-linked prices, the World Bank cocoa benchmark, and the Eurostat EU chocolate consumer price index. The second is a macro block composed of the COP/USD exchange rate and Brent oil prices, included because exchange-rate and energy movements help structure commodity-price transmission \citep{Jumah2001,JimenezRodriguez2022}. The third is a local weather block from NASA POWER for San Vicente de Chucuri, including precipitation, solar radiation, and temperature variables. The fourth is an official Santander disaster registry containing 594 event records from August 2021 to July 2024, including event categories, municipalities, and damage-related variables.
+
+Figure~\ref{fig:coverage} shows the long-run coverage of the main price and macro series. The historical depth is uneven, which is why the article distinguishes clearly between long-run descriptive coverage and the much shorter aligned estimation windows.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{figures/figure_v1_long_run_coverage.png}
+\caption{Long-run historical coverage of the main price and macro series used in the integrated analysis. The figure highlights the difference between long repository coverage and the much shorter aligned estimation windows imposed by the Colombian domestic price series and the disaster registry.}
+\label{fig:coverage}
+\end{figure}
+
+\subsubsection{Variable Card and Alignment}
+
+Table~\ref{tab:data_card} summarizes the principal variables. The five core series define the transmission system. Weather variables and disaster indicators provide territorial stress information rather than replacing the benchmark system, and the disaster block is interpreted as a nested contextual layer rather than as a co-equal econometric price series.
+
+\begin{table}[H]
+\centering
+\caption{Variable data card for the integrated analysis}
+\label{tab:data_card}
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{p{2.7cm}p{4.1cm}p{1.2cm}p{2.0cm}p{2.5cm}}
+\toprule
+Variable & Operational definition & Unit & Source & Usable window \\
+\midrule
+Colombian cocoa price & Monthly average of AgroNet weekly cacao reference prices & COP/kg & AgroNet & 2021-08 to 2026-03 \\
+World cocoa benchmark & Monthly international cocoa price & USD/ton & World Bank & 1960-01 to 2026-02 \\
+EU chocolate index & EU27 chocolate consumer price index & Index & Eurostat & 2016-12 to 2025-12 \\
+COP/USD exchange rate & Monthly average peso-dollar exchange rate & COP/USD & BanRep & 1991-11 to 2026-03 \\
+Brent oil price & Europe Brent monthly average spot price & USD/barrel & EIA & 1987-05 to 2026-03 \\
+NASA precipitation & Monthly mean precipitation for San Vicente de Chucuri & mm/day & NASA POWER & 2000-01 to 2025-12 \\
+NASA solar radiation & Monthly mean surface solar radiation & MJ/m$^2$/day & NASA POWER & 2000-01 to 2025-12 \\
+NASA max temperature & Monthly mean maximum air temperature & $^\circ$C & NASA POWER & 2000-01 to 2025-12 \\
+Hydrometeorological events & Monthly count of registry-coded hydrometeorological events & Count & Disaster registry & 2021-08 to 2024-07 \\
+PCA disaster pressure & First principal component of monthly multi-hazard disruption features & Std. index & Disaster registry & 2021-08 to 2024-07 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Table~\ref{tab:sample_design} reports the aligned windows used in the article. The full merged panel contains 795 monthly observations from January 1960 to March 2026, but direct comparative estimation is constrained by the overlap of the Colombian domestic series, the Eurostat downstream series, and the disaster registry. One domestic cocoa observation in September 2025 and one solar-radiation observation in December 2025 are completed through block-specific iterative imputation for continuity-sensitive figures. Those imputations do not create longer spans of observed data and are treated as transparent continuity devices rather than substitutes for additional information \citep{vanbuuren_groothuisoudshoorn_2011,troyanskaya_etal_2001}. The disaster registry is aggregated at the departmental level, the weather series are point-based for San Vicente de Chucuri, and the cocoa price series is a broader producer-linked reference. This scale mismatch is acceptable for contextual resilience analysis, but it cautions against reading the disaster layer as a precise local price-setting series.
+
+\begin{table}[H]
+\centering
+\caption{Sample design and aligned estimation windows}
+\label{tab:sample_design}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{p{5.1cm}p{1.7cm}p{3.2cm}p{4.0cm}}
+\toprule
+Panel or artifact & Obs. & Date span & Role in the article \\
+\midrule
+Full merged monthly panel & 795 & 1960-01 to 2026-03 & Long-run descriptive context \\
+Core aligned levels window & 53 & 2021-08 to 2025-12 & Main levels comparisons and figures \\
+Core aligned return window & 52 & 2021-09 to 2025-12 & Main short-run transmission models \\
+Weather-augmented complete sample & 51 & 2021-08 to 2025-12 & Contextual weather extension \\
+Nested disaster levels window & 36 & 2021-08 to 2024-07 & Disaster descriptives and registry aggregation \\
+Nested disaster return window & 35 & 2021-09 to 2024-07 & Direct hazard and event-window models \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Monthly Transformations and Volatility Measures}
+
+The empirical analysis is conducted at the monthly frequency. For each strictly positive price series $P_{i,t}$, the main object of interest is the log return:
+\begin{equation}
+r_{i,t} = \Delta \ln(P_{i,t}) = \ln(P_{i,t}) - \ln(P_{i,t-1}),
+\label{eq:logreturn}
+\end{equation}
+which captures proportional month-to-month changes along the cocoa chain. This transformation places variables measured in different units on a comparable scale and focuses the analysis on shock transmission rather than on nominal price levels alone.
+
+To describe instability in the series, the analysis also computes a 12-month rolling volatility measure:
+\begin{equation}
+\sigma_{i,t}^{(12)} =
+\sqrt{\frac{1}{m_t - 1}\sum_{j=0}^{m_t-1}\left(r_{i,t-j}-\bar r_{i,t}^{(12)}\right)^2},
+\label{eq:rolling_volatility}
+\end{equation}
+where $m_t$ is the number of non-missing observations available in the rolling window ending in month $t$. This measure is used to track periods of heightened volatility in producer-linked, benchmark, and downstream price series.
+
+Before estimating the main models, the series are examined through standard time-series diagnostics. Augmented Dickey--Fuller tests are applied to levels and returns, and ARCH-LM tests are used to identify volatility clustering. These diagnostics inform the empirical specification, but they are not used to motivate unnecessarily complex long-run systems in a short monthly sample \citep{hakkio_rush_1991}.
+
+\subsection{Benchmark Exposure and Market Transmission}
+
+
+The first step estimates the core relationship between Colombian cocoa prices and the main external market variables. In levels, the baseline association is written as:
+\begin{equation}
+\ln(P^{COL}_{t}) = \alpha_0 + \alpha_1 \ln(P^{WLD}_{t}) + \alpha_2 \ln(FX_t) + \alpha_3 \ln(OIL_t) + u_t,
+\label{eq:core_levels}
+\end{equation}
+where $P^{COL}_{t}$ is the Colombian cocoa price, $P^{WLD}_{t}$ is the world cocoa benchmark, $FX_t$ is the COP/USD exchange rate, and $OIL_t$ is the Brent oil price. The corresponding short-run model is estimated in returns:
+\begin{equation}
+r^{COL}_{t} = \beta_0 + \beta_1 r^{WLD}_{t} + \beta_2 r^{FX}_{t} + \beta_3 r^{OIL}_{t} + \varepsilon_t.
+\label{eq:core_returns}
+\end{equation}
+
+The return specification is the main model because it directly represents monthly exposure to external shocks. An analogous pair of equations is estimated for the downstream European chocolate index, allowing the analysis to compare producer-linked and downstream adjustment to the same benchmark conditions. All regressions use HAC-robust standard errors to account for heteroskedasticity and serial correlation in monthly data.
+
+The levels equations are interpreted as compact descriptions of co-movement over the aligned sample, not as definitive evidence of a fully identified long-run equilibrium. Pairwise Engle--Granger and Granger-causality diagnostics are therefore reported as supporting evidence only. Their role is to clarify the empirical structure of the series, while the main interpretation remains focused on reduced-form exposure and short-run transmission.
+
+\subsection{Regime Sensitivity in Benchmark Exposure}
+
+The analysis also examines whether benchmark exposure is stable across the sample or whether transmission changes across regimes. To do so, the core return equation is extended through a structural-break diagnostic inspired by the multiple-break framework of \citet{BaiPerron1998} and \citet{BaiPerron2003}:
+\begin{equation}
+r^{COL}_{t} = \beta_{0,j} + \beta_{1,j}r^{WLD}_{t} + \beta_{2,j}r^{FX}_{t} + \beta_{3,j}r^{OIL}_{t} + e_t,
+\quad t=T_{j-1}+1,\ldots,T_j .
+\label{eq:break_returns}
+\end{equation}
+
+Given the length of the aligned monthly return sample, the break analysis is deliberately conservative. The procedure searches over feasible one-break partitions, estimates segment-specific OLS residual sums of squares, imposes a minimum segment length of 18 months, and compares the no-break and one-break alternatives using BIC. Segment-specific coefficients are interpreted as regime-sensitivity diagnostics rather than as evidence that a particular disaster, policy change, or weather episode caused a structural transition. This step helps assess whether the benchmark-transmission relationship is sufficiently stable for the baseline model to remain the central empirical specification.
+\subsection{Weather Anomalies as Local Environmental Stress}
+
+Weather variables are introduced to represent local environmental stress in the cocoa-producing territory. The purpose is not to model the full climate system or to treat weather as an alternative price-transmission mechanism. Instead, the objective is to identify months in which local natural-capital conditions deviate from their usual range and may therefore condition how producers absorb benchmark-driven market exposure.
+
+Based on cocoa agronomic relevance, the weather-stress index combines precipitation, surface solar radiation, and maximum temperature:
+\begin{equation}
+\mathrm{WeatherStress}_t =
+\frac{1}{J}\sum_{j=1}^{J}\left|z(w_{j,t})\right|,
+\label{eq:weather_stress}
+\end{equation}
+where $w_{j,t}$ denotes each selected weather variable and $z(\cdot)$ is its within-sample standardized value. The absolute standardized anomaly is used because both unusually high and unusually low values may indicate stress relative to local conditions.
+
+The index is interpreted as a contextual anomaly score. Precipitation anomalies capture potential soil-moisture stress, flooding pressure, disease-favorable conditions, and harvest-logistics difficulties. Solar-radiation anomalies proxy changes in shade, evapotranspiration, and disease-pressure context. Maximum-temperature anomalies capture heat exposure relevant to flowering, pod development, and labor conditions. Together, these variables summarize local natural-capital stress that may affect the territorial conditions under which benchmark exposure is absorbed, amplified, or displaced.
+
+To connect the weather layer with the broader vulnerability framework, the weather-stress index is also used to construct two exploratory composite indicators for visual interpretation in the results section. The first is the farmer exposure index, which combines domestic cocoa-price instability, the fitted benchmark-transmission component, and local weather stress:
+\begin{equation}
+\mathrm{FarmerExposure}_t =
+z(\sigma^{COL}_t) + z(\widehat{m}_t) + \mathrm{WeatherStress}_t,
+\label{eq:farmer_exposure}
+\end{equation}
+where $\sigma^{COL}_t$ is the rolling volatility of Colombian cocoa returns and $\widehat{m}_t$ denotes the fitted benchmark-transmission component from the domestic return model.
+
+The second indicator is the livelihood risk score, which adds standardized world-cocoa volatility to capture the external benchmark-risk environment:
+\begin{equation}
+\mathrm{LivelihoodRisk}_t =
+\mathrm{FarmerExposure}_t + z(\sigma^{WLD}_t).
+\label{eq:livelihood_risk}
+\end{equation}
+These indicators are not estimated as causal models and should not be interpreted as direct measures of household welfare, farm-level losses, or adaptive capacity. They are exploratory composite measures used to visualize periods in which domestic price instability, benchmark exposure, and local natural-capital stress overlap.
+
+Thus, weather-extended domestic models are estimated as a sensitivity exercise by adding lagged standardized weather covariates to Equation~\ref{eq:core_returns}. This step examines whether local environmental stress materially changes the estimated benchmark-transmission relationship or whether its main contribution is to strengthen the territorial interpretation of vulnerability. In line with the layered empirical design, the weather variables are therefore evaluated as contextual resilience indicators rather than as coequal drivers of cocoa price transmission.
+
+\subsection{Disaster Records as a Territorial Sensitivity Filter}
+
+The official disaster registry is used to represent territorial pressure during the shorter period in which disaster and price data overlap. The registry is not treated as a second price-transmission system. Its role is instead to identify episodes in which local hazards, damages, and municipal spread may have altered the conditions under which cocoa producers, buyers, and households responded to market shocks.
+
+This interpretation follows from four features of the data. The disaster window is shorter than the core price window; the monthly hazard counts are sparse and irregular; the composite disaster indicator combines heterogeneous information on events, damage, and spatial spread; and the registry operates at a different spatial scale from both the point-based weather series and the broader producer-linked price series. For these reasons, the disaster layer is incorporated through descriptive overlays, a parsimonious hazard screen, and an exploratory event-window comparison rather than through a large joint dynamic system \citep{hakkio_rush_1991,lutkepohl_2005,acosta_ihle_voncramon_2019,Parsons2021,Garschagen2021}.
+
+The registry is first screened to identify direct hazard series with sufficient monthly variation and substantive relevance. Earthquake counts are assessed because they were part of the initial hazard candidate set, but their sparsity limits their usefulness for time-series analysis. Hydrometeorological counts, geophysical counts, and total event counts are then compared as possible territorial episode markers. The selected direct overlay uses standardized hydrometeorological counts $H_t$, which provide the most interpretable monthly signal in the nested disaster window:
+\begin{equation}
+r^{COL}_{t} = \gamma_0 + \gamma_1 r^{WLD}_{t} + \gamma_2 r^{FX}_{t} + \gamma_3 r^{OIL}_{t} + \gamma_4 H_t + \nu_t.
+\label{eq:hazard_return_overlay}
+\end{equation}
+
+A corresponding volatility model evaluates whether the same hazard marker is associated with changes in Colombian cocoa-price instability:
+\begin{equation}
+\sigma^{COL}_{t} = \delta_0 + \delta_1 \sigma^{WLD}_{t} + \delta_2 H_t + \upsilon_t.
+\label{eq:hazard_vol_overlay}
+\end{equation}
+
+These models remain intentionally modest. They ask whether a direct monthly hazard marker adds information after the benchmark channel has been accounted for. The coefficient on $H_t$ is therefore interpreted as evidence of territorial pressure associated with exposure, not as an autonomous benchmark-like price driver.
+
+\subsection{PCA-Based Multi-Hazard Pressure Index}
+
+
+To complement the direct hazard overlay, the analysis constructs a synthetic multi-hazard pressure index using principal component analysis. The index is based on 21 eligible standardized monthly disaster features covering event frequency, municipal spread, human impact, housing damage, and infrastructure damage:
+\begin{equation}
+D_t = \sum_{k=1}^{K} w_k z(F_{k,t}).
+\label{eq:pca_indicator}
+\end{equation}
+
+The PCA indicator summarizes broader territorial stress when no single registry variable captures the full scope of disruption. It is used as a robustness and interpretation layer rather than as the main disaster result. Loadings, variable blocks, explained variance, and peak months are reported to ensure transparency in the construction. Consistent with the composite-indicator literature, $D_t$ is treated as a synthetic territorial-pressure construct, not as a canonical economic time series or a direct causal determinant of cocoa prices \citep{Parsons2021,Garschagen2021}.
+
+\subsection{Event Windows and Resilience Episodes}
+
+Finally, the analysis examines whether disaster exposure appears as a discrete episode rather than as a stable monthly coefficient. The event design centers on the peak hazard month $t^{*}$ identified in the hazard screen:
+\begin{equation}
+r^{COL}_{t} = \theta_0 + \theta_1 \mathbf{1}(t \ge t^{*}) + e_t,
+\label{eq:event_shift}
+\end{equation}
+estimated over symmetric six-month windows before and after the peak.
+
+The comparison uses Welch, Levene, and Kolmogorov--Smirnov tests to assess changes in mean returns, variance, and distributional shape across the pre- and post-peak periods. Because the event month is selected from the registry itself, the design is exploratory rather than quasi-experimental. It identifies whether a period of heightened territorial pressure coincides with changes in producer-linked price behavior, but it does not attribute those changes to a specific disaster mechanism or to a particular form of adaptive capacity. The results are therefore used to inform the resilience interpretation cautiously, especially regarding how benchmark exposure and territorial stress overlap within the short disaster window.
+
+\section{Results}
+\label{sec:results}
+
+\subsection{Descriptive Structure and Statistical Properties}
+
+The aligned sample provides the first evidence for the separation of the global benchmark system from the territorial environmental block. Table~\ref{tab:descriptive_stats} reports the levels and dispersion of the series, revealing a fundamental imbalance in the supply chain's exposure. Colombian producer prices and the world cocoa benchmark exhibit far higher volatility than the EU downstream chocolate index, suggesting that price-risk exposure is concentrated at the upstream (producer) segment of the chain.
+
+\begin{table}[H]
+\centering
+\caption{Descriptive statistics for the core system and selected weather variables (Aligned Window)}
+\label{tab:descriptive_stats}
+\small
+\begin{tabular}{p{4.0cm}rrrrr}
+\toprule
+Series & Mean & Std. dev. & Median & Min & Max \\
+\midrule
+Colombian cocoa price & 17{,}334.75 & 9{,}168.37 & 12{,}536.69 & 7{,}926.08 & 34{,}395.33 \\
+World cocoa benchmark & 4{,}943.44 & 2{,}660.61 & 3{,}630.14 & 2{,}239.13 & 10{,}745.11 \\
+EU chocolate index & 128.83 & 19.73 & 125.20 & 104.25 & 164.99 \\
+COP/USD exchange rate & 4{,}147.16 & 302.33 & 4{,}047.41 & 3{,}773.38 & 4{,}926.66 \\
+Brent oil price & 82.61 & 13.41 & 80.92 & 62.54 & 122.71 \\
+NASA precipitation & 5.73 & 3.59 & 5.08 & 0.03 & 14.67 \\
+NASA max temperature & 31.93 & 3.04 & 30.79 & 28.67 & 39.15 \\
+NASA solar radiation & 18.24 & 1.19 & 18.18 & 15.68 & 20.62 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Table~\ref{tab:stats_overview} confirms that while price series behave as non-stationary processes in levels, the environmental series (precipitation, temperature) reject the Augmented Dickey-Fuller (ADF) test unit-root null already in levels ($p < 0.001$). This statistical divergence supports our methodological decision to treat environmental stress as a \textit{contextual sensitivity layer} rather than forcing the entire system into a single integrated specification.
+
+
+\begin{table}[H]
+\centering
+\caption{Statistical properties and stationarity diagnostics}
+\label{tab:stats_overview}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{p{4.2cm}rrrrr}
+\toprule
+Series & Mean level & Annualized vol. & ADF level $p$ & ADF return $p$ & ARCH-LM $p$ \\
+\midrule
+Colombian cocoa price & 17{,}334.75 & 0.376 & 0.643 & 0.000 & 0.768 \\
+World cocoa benchmark & 4{,}943.44 & 0.367 & 0.648 & 0.000 & 0.013 \\
+EU chocolate index & 128.83 & 0.030 & 0.984 & 0.013 & 0.005 \\
+COP/USD exchange rate & 4{,}147.16 & 0.110 & 0.525 & 0.000 & 0.903 \\
+Brent oil price & 82.61 & 0.258 & 0.460 & 0.081 & 0.083 \\
+NASA precipitation & 5.73 & 3.106 & 0.000 & 0.006 & 0.070 \\
+NASA max temperature & 31.93 & 0.152 & 0.018 & 0.003 & 0.438 \\
+NASA solar radiation & 18.25 & 0.283 & 0.000 & 0.000 & 0.434 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+Figure~\ref{fig:indexed_core} illustrates the proportional co-movement that defines the core transmission problem. Colombian and world cocoa prices move closely through the 2024--2025 boom and correction, whereas the EU downstream index follows a much smoother path.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth]{figures/figure_indexed_core_series_common_window_imputed.png}
+\caption{Indexed core series in the aligned monthly window (August 2021 = 100). The close co-movement between the Colombian and world cocoa series contrasts with the smoother adjustment of the downstream EU chocolate index.}
+\label{fig:indexed_core}
+\end{figure}
+
+\subsection{The Transmission Paradox: Producer Exposure vs. Downstream Buffering}
+
+The core transmission results in Table~\ref{tab:transmission_results} reveal a significant asymmetry in how market shocks propagate through the cocoa value chain. In the levels model, the coefficient for the global benchmark is near unity ($\alpha=0.990$, $p<0.001$), indicating that domestic producer-linked prices move in almost direct proportion to international prices. More critically, the return specification confirms that monthly benchmark shocks are transmitted rapidly to Colombian producers ($\beta=0.796$, $p<0.001$). This highly elastic pass-through identifies the global benchmark as the primary exposure channel, reflecting a possible structurally weak market position in which smallholders have limited short-run insulation against price volatility \citep{TsowouGayi2019}. This exposure is a hallmark of buyer dependence and low value capture, where the upstream segment lacks the institutional "buffer capacity" to delay or absorb global corrections \citep{Mithofer2017}.
+
+In stark contrast, the downstream EU chocolate index displays a pattern of significant insulation. While the levels model shows a modest positive association ($\alpha=0.296$, $p=0.018$), short-run returns are essentially decoupled from benchmark movements ($\beta=-0.023$, $p=0.023$) with an adjusted $R^2$ near zero. This decoupling suggests that the downstream segment—buffered maybe by long-term contracts, diverse cost components, and retail pricing strategies—successfully internalizes benchmark volatility. The "transmission paradox" thus emerges: smallholder producers, who are often most sensitive to climate-driven supply fluctuations \citep{Vaast2014}, are simultaneously the actors most directly exposed to the resulting market shocks, while the downstream layer remains structurally protected.
+
+
+\begin{table}[H]
+\centering
+\caption{Domestic and downstream price transmission results}
+\label{tab:transmission_results}
+\small
+\begin{tabular}{lrrrr}
+\toprule
+Model component & Coefficient & Std. error & $p$-value & Adj. $R^2$ \\
+\midrule
+\textit{Producer-linked domestic price} & & & & \\
+$\ln(P^{COL}_{t}) \leftarrow \ln(P^{WLD}_{t})$ & 0.990 & 0.037 & $<0.001$ & 0.965 \\
+$\ln(P^{COL}_{t}) \leftarrow \ln(FX_t)$ & 0.902 & 0.147 & $<0.001$ & 0.965 \\
+$\Delta \ln(P^{COL}_{t}) \leftarrow \Delta \ln(P^{WLD}_{t})$ & 0.796 & 0.180 & $<0.001$ & 0.581 \\
+$\Delta \ln(P^{COL}_{t}) \leftarrow \Delta \ln(FX_t)$ & 0.218 & 0.204 & 0.287 & 0.581 \\
+\midrule
+\textit{Downstream EU chocolate index} & & & & \\
+$\ln(P^{EU}_{t}) \leftarrow \ln(P^{WLD}_{t})$ & 0.296 & 0.126 & 0.018 & 0.727 \\
+$\Delta \ln(P^{EU}_{t}) \leftarrow \Delta \ln(P^{WLD}_{t})$ & -0.023 & 0.010 & 0.023 & -0.007 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+This "uneven adjustment" validates the socio-economic framing of the chain: the lack of local buffering at the producer level ensures that global instability is felt immediately at the territorial scale, underscoring the importance of ecological buffers such as agroforestry to prevent economic shocks from becoming livelihood collapses.
+
+\subsection{Structural Break Diagnostics: Assessing Transmission Stability under Polycrisis}
+\label{sec:structural_breaks}
+
+The structural-break diagnostic in Table~\ref{tab:structural_breaks} evaluates from a statistical point of view whether the recent cocoa price boom represents a regime shift in the transmission mechanism or an extreme realization within an already high-exposure structure. From a vulnerability perspective, this distinction matters because price shocks become more consequential when they interact with sensitivity and limited adaptive capacity across the cocoa socio-ecological system \citep{Turner2003,Adger2006}. In this sense, the test does not seek to prove a disaster-driven break in prices. It examines whether the relationship between Colombian producer-linked returns and the world benchmark changed sufficiently to justify a regime-sensitive interpretation of benchmark pass-through.
+
+Using the structural-break logic \citep{BaiPerron1998,BaiPerron2003}, the diagnostic identifies May 2024 as a candidate breakpoint. Under this partition, the world-benchmark coefficient declines from 1.126 in the first segment to 0.588 in the second segment, which is consistent with a possible attenuation of short-run pass-through during the peak-price period. However, the one-break candidate is not retained by the Bayesian Information Criterion (BIC), which favors the no-break baseline over the segmented model (-264.475 versus -258.141). Given the short monthly window, this result should be read as diagnostic rather than definitive.
+
+Substantively, the evidence points to persistence in the benchmark-transmission structure rather than to a confirmed structural regime change. The 2024 price boom occurred within a broader polycrisis context, in which international commodity volatility, environmental stress, and territorial disruption may overlap \citep{Mechler2025}. However, the available data do not provide sufficient support for claiming that this episode changed the underlying pass-through mechanism. Colombian producer-linked prices remain strongly exposed to the world benchmark, while the disaster and weather layers help identify the territorial conditions under which that exposure may become more damaging.
+
+For the resilience argument, the implication is important. The relevant tipping points in this system may be located less in the price-transmission equation itself and more in the territorial livelihood conditions through which price exposure is absorbed. The absence of a retained statistical break disciplines the interpretation: vulnerability is not presented as the result of a newly unstable pricing relationship, but as a persistent feature of a high-exposure chain operating under uneven adaptive capacity. The risk of regime stress is therefore contextual. Extreme benchmark volatility can still become harmful when it coincides with hydrometeorological events, road fragility, natural-capital stress, and limited local buffering capacity, even if the formal pass-through mechanism remains statistically stable within the aligned window.
+\begin{table}[H]
+\centering
+\caption{Bai-Perron structural-break diagnostic for core Colombian return transmission}
+\label{tab:structural_breaks}
+\small
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrl}
+\toprule
+Specification & Break date & Segment lengths & BIC & World $\beta$ (pre) & World $\beta$ (post) & Interpretation \\
+\midrule
+No-break baseline & -- & 52 & -264.475 & 0.796 & -- & Retained: Structural Persistence \\
+One-break candidate & 2024-05 & 32 / 20 & -258.141 & 1.126 & 0.588 & Not retained by BIC \\
+\bottomrule
+\end{tabular}
+}
+\caption*{\footnotesize Note: Lower BIC values indicate preferred specifications \citep{BaiPerron2003}. The May 2024 candidate identifies a potential attenuation of pass-through during the peak-price period, but the no-break model remains the statistically superior description of the sample. This confirms the persistence of the high-exposure regime.}
+\end{table}
+
+\subsection{Environmental Stress, Multi-Hazard Pressure, and Resilience Overlay}
+\label{sec:environmental_stress}
+
+The preceding results confirm that the Colombian producer-linked cocoa price remains persistently exposed to the global benchmark, with no identifiable structural breaks in the pass-through mechanism (Section~\ref{sec:structural_breaks}). However, in a Socio-Ecological Systems (SES) framework, market exposure alone does not dictate territorial outcomes. Rather, the impact of price volatility is filtered through the territory's \textit{sensitivity} and \textit{adaptive capacity} \citep{Turner2003, Adger2006}. In Santander, this filter is defined by a "polycrisis" environment where benchmark-driven exposure overlaps with hydrometeorological disruption and natural-capital stress. Figure~\ref{fig:vulnerability} illustrates this interaction by treating weather anomalies not merely as background variables, but as drivers of \textit{sensitivity}. By aligning NASA POWER anomalies with benchmark volatility, we identify critical windows in which price instability coincides with unfavorable physiological conditions for \textit{Theobroma cacao}.
+
+Before interpreting the vulnerability overlay, Table~\ref{tab:vulnerability_indicators} summarizes the construction and descriptive scale of the exploratory indicators used in Figure~\ref{fig:vulnerability}. These indicators translate the layered resilience framework into observable composite measures. The weather-stress index captures local natural-capital anomalies in precipitation, solar radiation, and maximum temperature. The farmer exposure index combines domestic cocoa-price volatility, the fitted benchmark-transmission component, and weather stress. The livelihood risk score extends this measure by adding world-cocoa volatility, thereby linking local exposure conditions to the external benchmark-risk environment. These measures should be interpreted as descriptive resilience indicators, not as causal estimates of household welfare or farm-level losses.
+
+\begin{table}[H]
+\centering
+\caption{Exploratory vulnerability indicators used in the socio-ecological overlay}
+\label{tab:vulnerability_indicators}
+\small
+\begin{tabular}{p{3.0cm}p{8.2cm}rr}
+\toprule
+Indicator & Construction & Mean & Std. dev. \\
+\midrule
+Weather stress index & Mean absolute standardized anomaly across precipitation, solar radiation, and maximum temperature & 0.798 & 0.356 \\
+Weather stress ($z$-score) & Standardized weather-stress index; positive values indicate above-average combined anomaly & 0.000 & 1.010 \\
+Farmer exposure index & $z(\sigma^{COL}_t) + z(\widehat{m}_t) + \mathrm{WeatherStress}_t$ & 0.758 & 1.691 \\
+Livelihood risk score & Farmer exposure index plus standardized world-cocoa volatility & 0.758 & 2.429 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.93\textwidth]{figures/figure_weather_vulnerability_index.png}
+\caption{Socio-ecological vulnerability overlay. The figure aligns local weather anomalies (natural-capital stress) with benchmark-driven exposure and volatility proxies, identifying "compounding shock" windows.}
+\label{fig:vulnerability}
+\end{figure}
+
+The weather-extended models in Table~\ref{tab:weather_extended_models} provide the quantitative counterpart to the visual vulnerability overlay in Figure~\ref{fig:vulnerability}. The results support a restrained interpretation of the environmental layer. In the level specification, the world cocoa benchmark remains the dominant predictor of Colombian producer-linked prices, with a coefficient close to unity and high statistical significance. Solar radiation shows only marginal evidence, while precipitation and maximum temperature are not statistically significant. In the return specification, the benchmark effect also remains robust: the coefficient on world cocoa returns is 0.773 and remains significant at $p<0.001$, whereas the lagged weather covariates are not significant. The rolling-volatility model leads to the same conclusion. Domestic cocoa volatility is strongly associated with world cocoa volatility, while lagged weather stress does not add statistically significant explanatory power. Therefore, weather anomalies should not be interpreted as an alternative price-transmission mechanism. Their role is contextual: they identify months in which benchmark exposure may coincide with natural-capital stress, thereby strengthening the resilience interpretation without displacing the benchmark channel.
+
+\begin{table}[H]
+\centering
+\caption{Weather-extended domestic transmission and volatility models}
+\label{tab:weather_extended_models}
+\small
+\begin{tabular}{p{5.3cm}rrrr}
+\toprule
+Model component & Coefficient & Std. error & $p$-value & Adj. $R^2$ \\
+\midrule
+$\ln(P^{COL}_{t}) \leftarrow \ln(P^{WLD}_{t})$ & 0.977 & 0.037 & $<0.001$ & 0.966 \\
+$\ln(P^{COL}_{t}) \leftarrow$ solar radiation$_t$ ($z$) & 0.028 & 0.016 & 0.075 & 0.966 \\
+$\ln(P^{COL}_{t}) \leftarrow$ precipitation$_t$ ($z$) & 0.024 & 0.020 & 0.247 & 0.966 \\
+$\ln(P^{COL}_{t}) \leftarrow$ max temperature$_t$ ($z$) & -0.009 & 0.019 & 0.627 & 0.966 \\
+$\Delta \ln(P^{COL}_{t}) \leftarrow \Delta \ln(P^{WLD}_{t})$ & 0.773 & 0.157 & $<0.001$ & 0.595 \\
+$\Delta \ln(P^{COL}_{t}) \leftarrow$ max temperature$_{t-1}$ ($z$) & 0.023 & 0.015 & 0.119 & 0.595 \\
+$\Delta \ln(P^{COL}_{t}) \leftarrow$ precipitation$_{t-1}$ ($z$) & 0.003 & 0.010 & 0.725 & 0.595 \\
+$\Delta \ln(P^{COL}_{t}) \leftarrow$ solar radiation$_{t-1}$ ($z$) & -0.008 & 0.008 & 0.330 & 0.595 \\
+Domestic rolling volatility $\leftarrow$ world rolling volatility & 0.954 & 0.051 & $<0.001$ & 0.917 \\
+Domestic rolling volatility $\leftarrow$ weather stress$_{t-1}$ & 0.013 & 0.012 & 0.253 & 0.917 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Multi-Hazard Pressure and Territorial Sensitivity}
+
+The nested disaster window sharpens the territorial interpretation. Figure~\ref{fig:disaster_dynamics} shows that the Santander disaster registry does not describe a single isolated shock, but a recurrent multi-hazard environment. Hydrometeorological and geophysical events dominate the coded event structure, whereas isolated earthquakes are too infrequent to support direct monthly integration. This pattern is relevant for the Sendai Framework's first priority, understanding disaster risk, because it shifts attention from individual hazards to the accumulation of recurrent territorial pressures \citep{UNISDR2015}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.48\textwidth]{figures/figure_monthly_event_totals.png}
+\includegraphics[width=0.48\textwidth]{figures/figure_hazard_domain_mix.png}
+\caption{Disaster event dynamics and hazard-domain composition in Santander, August 2021--July 2024. Monthly totals reveal recurrent pressure rather than isolated single-shock episodes, and the hazard mix is dominated by hydrometeorological and geophysical events.}
+\label{fig:disaster_dynamics}
+\end{figure}
+
+The relevance of these hazards extends beyond their physical occurrence. In a cocoa-producing territory, a landslide, flood, or road interruption can become a market-access constraint by affecting the movement of beans, buyers, labor, inputs, and emergency support. For smallholders, such disruptions may weaken bargaining power, delay sales, increase transport costs, or redirect transactions toward more immediate but less favorable local channels. In this sense, the disaster layer helps identify territorial sensitivity: the local conditions under which benchmark exposure may become more damaging, even when the global-to-domestic transmission mechanism itself remains statistically stable.
+
+Figure~\ref{fig:contextual_alignment} illustrates this distinction. The world and Colombian cocoa returns behave as continuous market series, whereas hydrometeorological counts and the composite territorial-pressure index behave as episodic stress signals. Their role is therefore not to replace the benchmark system, but to identify months in which localized disruption coincides with market instability.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.94\textwidth]{figures/figure_contextual_overlay_alignment.png}
+\caption{Nested return-window alignment of world and Colombian cocoa returns with hydrometeorological counts and the composite territorial-pressure index. The vertical line marks October 2022, the exploratory peak month identified from the hazard screen. The contrast in signal shape underscores that the disaster layer is episodic and contextual rather than benchmark-like.}
+\label{fig:contextual_alignment}
+\end{figure}
+
+Table~\ref{tab:hazard_screening} formalizes the selection of the most defensible hazard overlay. Earthquake counts are observed in only four months, with a zero-month share of 0.886, making them too sparse for direct monthly modeling. Hydrometeorological events, by contrast, are observed in 30 of the 35 months, peaking in October 2022. This makes them the most informative direct monthly episode marker among the candidate count variables. The PCA pressure index also peaks in October 2022, but is interpreted as a synthetic construct of territorial pressure rather than as a direct event count or causal price driver.
+
+\begin{table}[H]
+\centering
+\caption{Screening of contextual hazard-overlay candidates in the nested return window}
+\label{tab:hazard_screening}
+\small
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{p{3.3cm}rrrrrp{2.4cm}p{5.0cm}}
+\toprule
+Signal & Non-zero months & Zero share & Peak month & Peak value & Corr. with returns & Overlay coefficient & Interpretation decision \\
+\midrule
+Earthquake counts & 4 & 0.886 & 2022-09 & 1.000 & 0.005 & 0.003 ($p=0.633$) & Screened but too sparse for direct monthly modeling. \\
+Hydrometeorological counts & 30 & 0.143 & 2022-10 & 20.000 & -0.366 & -0.015 ($p=0.083$) & Most defensible direct monthly territorial episode marker. \\
+Geophysical counts & 28 & 0.200 & 2022-11 & 12.000 & -0.146 & 0.004 ($p=0.613$) & Contextual comparator, not preferred direct episode marker. \\
+Total event counts & 35 & 0.000 & 2024-01 & 49.000 & 0.065 & -0.002 ($p=0.823$) & Contextual comparator, not preferred direct episode marker. \\
+PCA pressure index & 35 & 0.000 & 2022-10 & 8.613 & -0.277 & -0.004 ($p=0.562$) & Synthetic territorial-pressure overlay, not a causal price driver. \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+Table~\ref{tab:hazard_models} reinforces this interpretation. Hydrometeorological events outperform the other direct count alternatives in the return and volatility overlays, but the estimated coefficients remain only marginally significant. The negative hydrometeorological coefficient in the return model ($p=0.083$) should therefore not be read as evidence that disasters determine cocoa prices. A more appropriate interpretation is that hydrometeorological pressure marks months in which territorial disruption may coincide with weaker local absorption of benchmark exposure. The same logic applies to the volatility overlay: the disaster variables are useful as contextual stress markers, but not as autonomous price-setting mechanisms.
+
+\begin{table}[H]
+\centering
+\caption{Contextual hazard-overlay comparison in the nested return window}
+\label{tab:hazard_models}
+\small
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{p{3.5cm}lrrrrrr}
+\toprule
+Signal & Type & Return adj. $R^2$ & Return coef. & Return $p$ & Vol. adj. $R^2$ & Vol. coef. & Vol. $p$ \\
+\midrule
+Hydrometeorological events & Direct & 0.653 & -0.015 & 0.083 & 0.935 & -0.003 & 0.074 \\
+Geophysical events & Direct & 0.633 & 0.004 & 0.613 & 0.932 & 0.002 & 0.286 \\
+Total recorded events & Direct & 0.632 & -0.002 & 0.823 & 0.932 & -0.002 & 0.140 \\
+PCA disaster pressure & Composite & 0.633 & -0.004 & 0.562 & 0.932 & -0.002 & 0.264 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+\subsubsection{Composite Pressure and Episode-Based Resilience Interpretation}
+
+The PCA-based pressure index adds a broader view of disruption. Its first principal component explains 33.1\% of the variance, with the largest positive loadings associated with hydrometeorological events, infrastructure impacts, affected roads, geophysical events, and housing impacts (see \ref{fig:supp_pca_loadings}). This construction makes the index useful for summarizing territorial pressure across several damage and spread dimensions. However, it should not be interpreted as a conventional economic time series or as an independent driver of cocoa returns.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.90\textwidth]{figures/figure_pca_loadings.png}
+\caption{Loadings for the first principal component of the multi-hazard disaster-pressure indicator. The figure is retained to document the composition of the synthetic robustness overlay used in the integrated article.}
+\label{fig:supp_pca_loadings}
+\end{figure}
+
+Figure~\ref{fig:pca_change_points} shows that the composite pressure index and Colombian cocoa return instability intensify around October 2022. The continuous PCA coefficient is weak, but the alignment between the hydrometeorological peak and the composite-pressure peak provides a useful episode-screening signal. This is the main reason the event-window comparison is retained: not because it identifies a causal disaster effect, but because it isolates a short period in which benchmark exposure and territorial stress overlap.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{figures/pca_indicator_change_points.png}
+\caption{Composite multi-hazard pressure and cocoa return instability in the nested disaster window. The peak stress episode occurs in October 2022, which also corresponds to the peak month of the direct hydrometeorological event series. The figure is interpreted as an episode-screening tool rather than as evidence of benchmark-like price leadership.}
+\label{fig:pca_change_points}
+\end{figure}
+
+
+
+Table~\ref{tab:mean_shifts} reports the six-month event-window comparison around the October 2022 pressure peak. Mean Colombian cocoa returns increase from 0.002 before the episode to 0.044 afterward, with a Welch $p$-value of 0.074. The variance and distribution tests are weaker. This pattern is suggestive rather than confirmatory. Because the event month is selected from the same hazard screen used in the analysis, the comparison should be interpreted as exploratory episode stratification rather than as exogenous shock identification.
+
+\begin{table}[H]
+\centering
+\caption{Exploratory event-window comparison around the October 2022 peak contextual-pressure month}
+\label{tab:mean_shifts}
+\small
+\begin{tabular}{lrrrrrr}
+\toprule
+Event month & Window & Pre mean & Post mean & Welch $p$ & Levene $p$ & KS $p$ \\
+\midrule
+2022-10 & 6 months & 0.002 & 0.044 & 0.074 & 0.546 & 0.474 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Resilience Dividend and Ecological Buffer Capacity}
+
+The event-window results motivate a resilience-dividend interpretation, but only in a cautious sense. The evidence does not demonstrate that agroforestry reduced price volatility, nor does it compare high-agroforestry and monoculture areas directly. The current data do not contain a farm-level or municipality-level agroforestry-density contrast that would allow such a claim. Instead, agroforestry is interpreted as a theoretically grounded form of ecological buffer capacity. In cocoa systems, shade trees, diversified production, soil cover, and biodiversity can help moderate microclimatic stress, preserve soil moisture, reduce heat exposure, and support household resilience under overlapping market and environmental disturbances \citep{VaastSomarriba2014,Niether2020,IfejikaSperanza2013}.
+
+This distinction is important. The transmission results show that Colombian producer-linked prices remain highly exposed to global benchmark shocks. The environmental and disaster overlays show that this exposure can coincide with territorial stress. The resilience dividend, therefore, is not observed as a direct econometric reduction in pass-through. It is better understood as the potential co-benefit of ecological and socio-institutional buffers that help prevent market volatility and environmental stress from translating into livelihood collapse \citep{Mechler2025,Zurek2022}. In this interpretation, agroforestry, cooperative organization, local transport coordination, and emergency liquidity are not substitutes for price-risk management. They are territorial mechanisms that may mitigate damage when high benchmark exposure meets local sensitivity.
+
+Consequently, the resilience observed in the Santander cocoa chain should not be described as evidence that institutions or ecosystems eliminate market exposure. The structural-break results indicate persistence in the benchmark-transmission mechanism, while the hazard and weather layers indicate the territorial conditions under which that persistent exposure becomes more consequential. The central policy implication is that resilience must be built on both sides of the system: financial instruments that account for benchmark volatility and territorial interventions that reduce basis risk, road disruption, natural-capital stress, and the unequal capacity of smallholders to absorb shocks.
+
+\section{Discussion}
+\label{sec:discussion}
+
+The results support a layered, socio-ecological interpretation of vulnerability in the Santander cocoa supply chain. The empirical evidence first identifies a strong market-exposure mechanism: Colombian producer-linked cocoa returns respond substantially and significantly to world cocoa benchmark returns. This result is not merely a statistical association; it indicates that the producer-linked segment is deeply embedded in international price movements, absorbing benchmark volatility with limited short-run insulation. This finding is consistent with the literature on cocoa-market integration, which demonstrates that stronger participation in global value chains often exacerbates exposure without improving producers' capacity to capture value \citep{TsowouGayi2019,Jumah2001,MeyerCramon2004}. In the context of Ecological Economics, however, this paper’s contribution is more specific: the global benchmark channel should be understood as the primary macro-level exposure layer of a territorial SES, rather than as a standalone econometric determinant of smallholder vulnerability.
+
+The contrast with the downstream European chocolate index reinforces this SES perspective. The results show that the downstream index is associated with the world benchmark in levels, but its short-run return response is weaker than that of the Colombian producer-linked series. While this difference reflects various cost components beyond raw cocoa, it is highly consistent with literature emphasizing asymmetric pass-through along agri-food chains \citep{MeyerCramon2004,JimenezRodriguez2022}. In resilience terms, this contrast highlights a structural inequity: the producer-linked segment absorbs volatility shocks directly, while the downstream consumer layer is buffered. This shifts the analytical focus from whether the supply chain is integrated to how the ecological and economic costs of that integration are disproportionately distributed at the territorial level.
+
+The structural-break evidence adds an important qualification to this vulnerability narrative. Although the 2024 cocoa-price boom is visually and economically prominent, the conservative break diagnostic retains the no-break specification by BIC. The statistical evidence is insufficient to claim a confirmed regime change. This result precludes framing vulnerability as the product of a newly unstable transmission mechanism. Instead, the evidence points to a persistent, structurally high-exposure system. This aligns closely with foundational vulnerability and SES frameworks, in which systemic harm arises not solely from the magnitude of novel external shocks, but also from the continuous interaction among exposure, sensitivity, and adaptive capacity \citep{Turner2003,Adger2006,Folke2006}. The 2024 price boom is thus best understood as an extreme realization within an already exposed SES, rather than a definitive transition to the same level of market mechanics.
+
+The weather and disaster results must be interpreted with similar discipline. Weather variables do not replace the world benchmark as the main explanatory channel; their incremental statistical contribution to the price equations is limited. However, these natural-capital stress indicators remain analytically vital. They identify the specific periods in which macroeconomic benchmark exposure coincides with localized ecological stress. Cocoa is highly sensitive to heat, precipitation anomalies, and microclimatic regulation \citep{Schroth2016,Lahive2019,Niether2020,talero_sarmiento_etal_2025}. Our results demonstrate that market exposure frequently materializes under degraded environmental conditions that severely compromise producers' buffer capacities—limiting their ability to absorb, delay, or respond to price shocks. 
+
+The nested disaster layer provides a robust territorial interpretation of this compounding risk, capturing the essence of local "basis risk." The PCA-based multi-hazard pressure index complements the hydrometeorological episode markers by summarizing broader socio-ecological disruptions (e.g., infrastructure failures, unpaved road collapses, housing damage). Consistent with disaster-risk literature \citep{Cutter2008,Tate2012,Garschagen2021}, this index acts as a contextual construct rather than a canonical economic time series. The disaster layer functions as a territorial sensitivity filter: it suggests that market exposure is frequently experienced under adverse localized conditions that standard financial benchmarks fail to capture. 
+
+The October 2022 event-window result vividly illustrates this cross-scale interaction. By identifying a period where hydrometeorological pressure and composite territorial disruption coincided with changes in producer-linked price behavior, we observe SES dynamics in action. This interpretation is firmly rooted in Panarchy and resilience thinking, in which disturbances at different spatial and temporal scales (global markets vs. local landslides) interact to compound vulnerability, even if they do not share the same causal econometric pathway \citep{Folke2006,GundersonHolling2002,Zurek2022}.
+
+This distinction clarifies the critical role of agroforestry and natural capital. While our dataset does not provide farm-level contrasts to directly estimate the dampening effect of shade trees on price pass-through, the empirical evidence of compounding eco-economic stress theoretically necessitates the use of ecological buffer capacities. Supported by recent literature on the "resilience dividend" and positive externalities in polycrises \citep{Mechler2025}, agroforestry should be viewed as a primary defense mechanism. Diversification, soil cover, and biodiversity provide microclimatic regulation that prevents global market shocks from precipitating local livelihood collapses during environmental stress events \citep{VaastSomarriba2014,Schroth2016,IfejikaSperanza2013}.
+
+The integrated findings have profound implications for policy, specifically regarding financial equity and basis risk. A standard benchmark-linked insurance or price-risk instrument may effectively track global cocoa prices but may entirely fail to capture localized losses arising from Santander's unpaved road deterioration, storage constraints, or emergency liquidity needs following a hydrometeorological event. This mismatch reflects a severe form of "territorial blindness" in current agricultural finance. The producers most exposed to global benchmark movements are simultaneously those least equipped to manage localized physical disruptions. Therefore, the empirical evidence strongly justifies the design of decentralized resilience funds: benchmark-aware financial instruments must be paired with territorially grounded mechanisms, such as cooperative storage, emergency rural-road contingencies, and local early-warning systems.
+
+Several limitations define the boundary of these claims. The core return sample contains 52 monthly observations, sufficient for reduced-form models and hazard screening, but not for large multivariate dynamic systems. Furthermore, the disaster registry is departmental, and the PCA index summarizes heterogeneous disruptions. These limitations, however, define the article's unique contribution: demonstrating how global benchmark exposure and local territorial stress can be rigorously analyzed jointly under the short, uneven, and scale-mismatched data conditions typical of smallholder realities in the Global South. 
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+This article examined the complex interaction between global benchmark transmission, environmental stress, and territorial resilience within the socio-ecological system of Santander's cocoa supply chain. The central empirical finding confirms that international cocoa benchmark returns remain the dominant short-run driver of Colombian producer-linked cocoa returns. However, contrasting this with the smoother adjustments of the downstream European chocolate index reveals a stark structural asymmetry: the producer-linked segment directly absorbs global volatility, while the downstream consumer layer remains highly buffered. 
+
+The integration of environmental and disaster metrics refines this narrative by capturing localized basis risk. While weather anomalies and multi-hazard PCA indices do not override the market-transmission mechanism, they successfully identify the natural-capital stress conditions that degrade producers' capacity to absorb market shocks. Hydrometeorological events and compounding infrastructure failures act as territorial sensitivity filters, illustrating how global economic exposure becomes acutely damaging when it interacts with local ecological disruptions.
+
+The contribution of this study is therefore both methodological and interpretive, bridging standard econometrics with Ecological Economics' resilience frameworks. By employing a layered design, the paper successfully distinguishes among exposure (benchmark transmission), sensitivity (weather anomalies and disaster events), and the theoretical need for adaptive capacity (agroforestry and institutional buffers). This structure allows for a rigorous assessment of commodity-market realities without stripping away the socio-ecological context in which smallholders operate.
+
+For territorial governance and policy, the findings demonstrate that producer resilience cannot be achieved through isolated climate-adaptation measures or standard price-risk tools. Current financial instruments often suffer from "territorial blindness," failing to protect farmers from the localized basis risk of unpaved road collapses and hydrometeorological shocks. A coherent, equitable resilience strategy requires decentralized resilience funds that combine global price-risk management with territorial-risk financing, cooperative coordination, rural logistics support, and the promotion of the "resilience dividends" generated by agroforestry. 
+
+Future research should seek to empirically validate the moderating effects of these buffers using long-term farm-gate price histories, municipality-level marketing data, and localized agroforestry density metrics. Until such granular data are available, this study provides defensible evidence that Santander's cocoa-producing territory operates within a persistent, high-exposure market structure, in which livelihood survival is dictated by the continuous, cross-scale interaction between global price volatility and local socio-ecological stress.
+
+
+\bibliographystyle{apalike}
+\bibliography{references/cocoa_volatility}
+
+
+\newpage
+\appendix
+
+\renewcommand{\theequation}{A.\arabic{equation}}
+\setcounter{equation}{0}
+\renewcommand{\thetable}{A.\arabic{table}}
+\setcounter{table}{0}
+\renewcommand{\thefigure}{A.\arabic{figure}}
+\setcounter{figure}{0}
+
+\section*{Supplementary Material}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{figures/figure_climate_series_panels_common_window.png}
+\caption{Climate series panels for San Vicente de Chucuri retained from the first manuscript version. These panels preserve the underlying environmental context summarized more compactly by the main-text weather-stress figure.}
+\label{fig:supp_climate_panels}
+\end{figure}
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.90\textwidth]{figures/figure_v3_actual_vs_fitted.png}
+\caption{Actual-versus-fitted domestic return model from the disaster-extension manuscript. The figure is retained as a supplementary model-diagnostic display, following the main article's shift in emphasis toward hazard screening and event-window interpretation.}
+\label{fig:supp_actual_fitted}
+\end{figure}
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.80\textwidth]{figures/figure_top_municipalities.png}
+\caption{Top municipalities by recorded events retained from the disaster-extension manuscript. The figure is kept as supplementary territorial detail rather than as a main-text result.}
+\label{fig:supp_municipalities}
+\end{figure}
+
+
+
+\begin{table}[H]
+\centering
+\caption{Lag-specific pairwise Granger-causality $p$-values in the aligned core return system}
+\label{tab:supp_granger}
+\small
+\begin{tabular}{p{4.6cm}rrrr}
+\toprule
+Direction & Lag 1 $p$ & Lag 2 $p$ & Lag 3 $p$ & Best lag ($p$) \\
+\midrule
+World cocoa $\rightarrow$ Colombian cocoa & 0.050 & 0.075 & 0.023 & 3 (0.023) \\
+Colombian cocoa $\rightarrow$ World cocoa & 0.013 & 0.076 & 0.027 & 1 (0.013) \\
+Colombian cocoa $\rightarrow$ EU chocolate & 0.979 & 0.801 & 0.871 & 2 (0.801) \\
+EU chocolate $\rightarrow$ Colombian cocoa & 0.692 & 0.781 & 0.641 & 3 (0.641) \\
+World cocoa $\rightarrow$ EU chocolate & 0.678 & 0.597 & 0.364 & 3 (0.364) \\
+EU chocolate $\rightarrow$ World cocoa & 0.866 & 0.191 & 0.192 & 2 (0.191) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+\centering
+\caption{Disaster-indicator Granger-causality matrix retained from the disaster-extension manuscript}
+\label{tab:supp_disaster_granger}
+\small
+\begin{tabular}{p{4.1cm}p{4.0cm}rrrr}
+\toprule
+Source & Target & Lag 1 $p$ & Lag 2 $p$ & Lag 3 $p$ & Lag 4 $p$ \\
+\midrule
+Disaster indicator & Colombian cocoa return & 0.876 & 0.987 & 0.983 & 0.967 \\
+Disaster indicator & World cocoa return & 0.654 & 0.958 & 0.961 & 0.775 \\
+Disaster indicator & FX return & 0.443 & 0.762 & 0.830 & 0.545 \\
+Disaster indicator & Oil return & 0.383 & 0.575 & 0.677 & 0.627 \\
+\bottomrule
+\end{tabular}
+\end{table}
+\end{document}
