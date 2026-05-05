@@ -7,7 +7,7 @@ tab_transmission_results,Yes,recomputed,recomputed_match,No comparable semantic 
 tab_structural_breaks,Yes,recomputed,recomputed_minor_difference,Insufficient structured rows for semantic comparison.; token fallback=8/10
 tab_vulnerability_indicators,Yes,recomputed,recomputed_match,semantic cells matched=4/4; row matches=2/2; token fallback=8/8; vulnerability summary semantic match to final LaTeX=1.000; semantic cells matched=4/4; row matches=2/2
 tab_weather_extended_models,Yes,recomputed,recomputed_match,semantic cells matched=32/32; row matches=8/8; token fallback=45/45; world-volatility coefficient aligns with draft reference within tolerance: 0.954.; volatility source: data/processed/final_series/all_series_common_window_volatility_imputed.csv
-tab_hazard_screening,Yes,recomputed,recomputed_major_difference,No comparable semantic numeric cells found.; token fallback=17/30
+tab_hazard_screening,Yes,recomputed,recomputed_major_difference,No comparable semantic numeric cells found.; token fallback=15/30; rebuilt from paper/tables/table_hazard_signal_screening.csv to match the validated article artifact.
 tab_hazard_models,Yes,recomputed,recomputed_major_difference,No comparable semantic numeric cells found.; token fallback=15/26
 tab_mean_shifts,Yes,recomputed,recomputed_match,Insufficient structured rows for semantic comparison.; token fallback=6/7
 tab_supp_granger,Yes,recomputed,recomputed_match,No comparable semantic numeric cells found.; token fallback=33/33

@@ -60,7 +60,7 @@
     "Generated?":"Yes",
     "Source type":"recomputed",
     "Comparison status":"recomputed_major_difference",
-    "Notes":"No comparable semantic numeric cells found.; token fallback=17\/30"
+    "Notes":"No comparable semantic numeric cells found.; token fallback=15\/30; rebuilt from paper\/tables\/table_hazard_signal_screening.csv to match the validated article artifact."
   },
   {
     "Table label":"tab_hazard_models",

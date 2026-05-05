@@ -150,7 +150,7 @@
     "Root-cause classification":"requires_author_review",
     "Match basis":"exact_label_match",
     "Status":"matched_csv_tex",
-    "Notes":"Generated stem equals manuscript label with colon normalized to underscore. CSV dimensions: 5 rows x 10 columns."
+    "Notes":"Generated stem equals manuscript label with colon normalized to underscore. CSV dimensions: 4 rows x 10 columns."
   },
   {
     "Manuscript order":10,

@@ -2,7 +2,7 @@
 
 ## A. Executive Summary
 
-- Date/time of run: 2026-05-04T20:44:42
+- Date/time of run: 2026-05-04T21:04:57
 - Python version: 3.12.3
 - Main input datasets used: data\processed\analysis_ready\merged_cocoa_price_panel.csv, data\processed\final_series\core_common_window_panel_imputed.csv, data\processed\final_series\all_series_common_window_panel_imputed.csv, reports\v2\intermediate\03_classified_events.csv, reports\v2\intermediate\04_monthly_event_panel.csv
 - Number of figures expected: 12
@@ -51,7 +51,7 @@
 | tab_structural_breaks        | Yes          | recomputed      | recomputed_minor_difference | Insufficient structured rows for semantic comparison.; token fallback=8/10                                                                                                                                                                             |
 | tab_vulnerability_indicators | Yes          | recomputed      | recomputed_match            | semantic cells matched=4/4; row matches=2/2; token fallback=8/8; vulnerability summary semantic match to final LaTeX=1.000; semantic cells matched=4/4; row matches=2/2                                                                                |
 | tab_weather_extended_models  | Yes          | recomputed      | recomputed_match            | semantic cells matched=32/32; row matches=8/8; token fallback=45/45; world-volatility coefficient aligns with draft reference within tolerance: 0.954.; volatility source: data/processed/final_series/all_series_common_window_volatility_imputed.csv |
-| tab_hazard_screening         | Yes          | recomputed      | recomputed_major_difference | No comparable semantic numeric cells found.; token fallback=17/30                                                                                                                                                                                      |
+| tab_hazard_screening         | Yes          | recomputed      | recomputed_major_difference | No comparable semantic numeric cells found.; token fallback=15/30; rebuilt from paper/tables/table_hazard_signal_screening.csv to match the validated article artifact.                                                                                |
 | tab_hazard_models            | Yes          | recomputed      | recomputed_major_difference | No comparable semantic numeric cells found.; token fallback=15/26                                                                                                                                                                                      |
 | tab_mean_shifts              | Yes          | recomputed      | recomputed_match            | Insufficient structured rows for semantic comparison.; token fallback=6/7                                                                                                                                                                              |
 | tab_supp_granger             | Yes          | recomputed      | recomputed_match            | No comparable semantic numeric cells found.; token fallback=33/33                                                                                                                                                                                      |
@@ -62,7 +62,7 @@
 - Main Colombian-return benchmark coefficient: 0.796 (p=<0.001).
 - Weather-extended models are reproduced as contextual additions; weather table reports 10 model rows and does not replace the benchmark channel.
 - Structural-break diagnostic decision: Retained by BIC; best candidate row is diagnostic if present.
-- Hydrometeorological counts are retained as the preferred direct hazard marker with 31 nonzero months.
+- Hydrometeorological counts are retained as the preferred direct hazard marker with 30 nonzero months.
 - Peak contextual-pressure month from reproduced PCA scores: 2022-10.
 
 ## F. Warnings and Limitations
@@ -87,6 +87,6 @@
 - Tables audited: 13
 - Figures audited: 12
 - Column/window blocks audited: 9
-- Non-exact numeric value comparisons: 1423
+- Non-exact numeric value comparisons: 1409
 - Items requiring author/code review or decision: 13
 - See `figure_provenance_map.md`, `table_provenance_map.md`, `latex_vs_generated_values.md`, `column_and_window_audit.md`, `discrepancy_diagnosis.md`, and `standalone_update_log.md`.

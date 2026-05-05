@@ -1,6 +1,5 @@
 Hazard series,Sample window,Total events,Nonzero months,Zero-month share,Peak month,Peak value,Correlation with Colombian returns,Overlay coefficient,Interpretation decision
-earthquake_events,2021-09 to 2024-07,4,4,0.8888888888888888,2022-09,1.0,0.0048220523161224054,0.002755182986750202,Screened contextual marker
-geophysical_events,2021-09 to 2024-07,124,29,0.19444444444444445,2022-11,12.0,-0.1462145171392008,0.004330925077864851,Screened contextual marker
-hydrometeorological_events,2021-09 to 2024-07,287,31,0.1388888888888889,2022-10,20.0,-0.3656265888919504,-0.01388309004496373,Preferred direct monthly marker
-total_events,2021-09 to 2024-07,594,36,0.0,2024-01,49.0,0.06456850510210964,-0.0011690630671803192,Screened contextual marker
-disaster_pressure,2021-09 to 2024-07,,36,0.0,2022-10,8.680849224281914,-0.2777585663490558,-0.003425590902079878,Screened contextual marker
+earthquake_events,2021-09 to 2024-07,4.0,4,0.8857142857142857,2022-09,1.0,,,Screened contextual marker
+geophysical_events,2021-09 to 2024-07,121.0,28,0.2,2022-11,12.0,,,Screened contextual marker
+hydrometeorological_events,2021-09 to 2024-07,273.0,30,0.1428571428571428,2022-10,20.0,,,Preferred direct monthly marker
+total_events,2021-09 to 2024-07,572.0,35,0.0,2024-01,49.0,,,Screened contextual marker

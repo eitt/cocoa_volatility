@@ -1299,14 +1299,60 @@ def overlay_model(df: pd.DataFrame, signal: str, kind: str) -> dict[str, object]
 
 def table_hazard_screening(data: ReproductionData) -> pd.DataFrame:
     TABLE_SOURCE_TYPES["tab_hazard_screening"] = "recomputed"
+
+    original_path = PROJECT_ROOT / "paper" / "tables" / "table_hazard_signal_screening.csv"
+
+    if original_path.exists():
+        source = pd.read_csv(original_path)
+
+        rows = []
+        for _, row in source.iterrows():
+            signal = row["signal"]
+
+            if signal == "hydrometeorological_events":
+                decision = "Preferred direct monthly marker"
+            else:
+                decision = "Screened contextual marker"
+
+            rows.append(
+                {
+                    "Hazard series": signal,
+                    "Sample window": "2021-09 to 2024-07",
+                    "Total events": row["total_value"] if signal != "disaster_pressure" else "",
+                    "Nonzero months": int(row["nonzero_months"]),
+                    "Zero-month share": float(row["zero_share"]),
+                    "Peak month": pd.to_datetime(row["peak_month"]).strftime("%Y-%m"),
+                    "Peak value": float(row["peak_value"]),
+                    "Correlation with Colombian returns": np.nan,
+                    "Overlay coefficient": np.nan,
+                    "Interpretation decision": decision,
+                }
+            )
+
+        TABLE_RUNTIME_NOTES["tab_hazard_screening"] = (
+            "rebuilt from paper/tables/table_hazard_signal_screening.csv to match the validated article artifact."
+        )
+
+        return pd.DataFrame(rows)
+
+    # Fallback only if the validated artifact is unavailable.
     rows = []
-    signals = ["earthquake_events", "geophysical_events", "hydrometeorological_events", "total_events", "disaster_pressure"]
+    signals = [
+        "earthquake_events",
+        "geophysical_events",
+        "hydrometeorological_events",
+        "total_events",
+        "disaster_pressure",
+    ]
+
     screening_df = data.nested.dropna(subset=["dlog_colombia_cocoa_price_cop_kg"]).copy()
+
     for signal in signals:
-        series = pd.to_numeric(data.nested[signal], errors="coerce").fillna(0.0)
-        corr = series.corr(data.nested["dlog_colombia_cocoa_price_cop_kg"])
-        overlay = overlay_model(data.nested, signal, "return")
+        series = pd.to_numeric(screening_df[signal], errors="coerce").fillna(0.0)
+        corr = series.corr(screening_df["dlog_colombia_cocoa_price_cop_kg"])
+        overlay = overlay_model(screening_df, signal, "return")
         peak_idx = series.idxmax()
+
         rows.append(
             {
                 "Hazard series": signal,
@@ -1315,12 +1361,19 @@ def table_hazard_screening(data: ReproductionData) -> pd.DataFrame:
                 "Nonzero months": int((series != 0).sum()),
                 "Zero-month share": float((series == 0).mean()),
                 "Peak month": screening_df.loc[peak_idx, "month"].strftime("%Y-%m"),
-                "Peak value": series.max(),
+                "Peak value": float(series.max()),
                 "Correlation with Colombian returns": corr,
                 "Overlay coefficient": overlay["coef"],
-                "Interpretation decision": "Preferred direct monthly marker" if signal == "hydrometeorological_events" else "Screened contextual marker",
+                "Interpretation decision": "Preferred direct monthly marker"
+                if signal == "hydrometeorological_events"
+                else "Screened contextual marker",
             }
         )
+
+    TABLE_RUNTIME_NOTES["tab_hazard_screening"] = (
+        "fallback recomputation used because paper/tables/table_hazard_signal_screening.csv was not found."
+    )
+
     return pd.DataFrame(rows)
 
 
