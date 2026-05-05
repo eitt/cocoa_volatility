@@ -1,13 +1,20 @@
 \begin{table}
 \caption{Weather-extended domestic transmission and volatility models}
 \label{tab:weather_extended_models}
-\begin{tabular}{llrrrrl}
+\begin{tabular}{lrrlr}
 \toprule
-Model & Focus coefficient & Coefficient & p-value & N & Adj. R2 & Weather terms jointly interpreted as \\
+Model component & Coefficient & Std. error & $p$-value & Adj. $R^2$ \\
 \midrule
-Weather levels & log_world_cocoa_price_usd_mt & 0.977 & 0.000 & 53 & 0.966 & Contextual natural-capital stress proxies \\
-Weather returns & dlog_world_cocoa_price_usd_mt & 0.773 & 0.000 & 52 & 0.595 & Contextual natural-capital stress proxies \\
-Volatility overlay & world_cocoa_price_usd_mt_log_return_rolling_volatility & 0.907 & 0.000 & 47 & 0.912 & Contextual natural-capital stress proxies \\
+$\ln(P^{COL}_{t}) \leftarrow \ln(P^{WLD}_{t})$ & 0.977 & 0.037 & <0.001 & 0.966 \\
+$\ln(P^{COL}_{t}) \leftarrow$ solar radiation$_t$ ($z$) & 0.028 & 0.016 & 0.075 & 0.966 \\
+$\ln(P^{COL}_{t}) \leftarrow$ precipitation$_t$ ($z$) & 0.024 & 0.020 & 0.247 & 0.966 \\
+$\ln(P^{COL}_{t}) \leftarrow$ max temperature$_t$ ($z$) & -0.009 & 0.019 & 0.627 & 0.966 \\
+$\Delta \ln(P^{COL}_{t}) \leftarrow \Delta \ln(P^{WLD}_{t})$ & 0.773 & 0.157 & <0.001 & 0.595 \\
+$\Delta \ln(P^{COL}_{t}) \leftarrow$ max temperature$_{t-1}$ ($z$) & 0.023 & 0.015 & 0.119 & 0.595 \\
+$\Delta \ln(P^{COL}_{t}) \leftarrow$ precipitation$_{t-1}$ ($z$) & 0.003 & 0.010 & 0.725 & 0.595 \\
+$\Delta \ln(P^{COL}_{t}) \leftarrow$ solar radiation$_{t-1}$ ($z$) & -0.008 & 0.008 & 0.330 & 0.595 \\
+Domestic rolling volatility $\leftarrow$ world rolling volatility & 0.954 & 0.051 & <0.001 & 0.917 \\
+Domestic rolling volatility $\leftarrow$ weather stress$_{t-1}$ & 0.013 & 0.012 & 0.253 & 0.917 \\
 \bottomrule
 \end{tabular}
 \end{table}

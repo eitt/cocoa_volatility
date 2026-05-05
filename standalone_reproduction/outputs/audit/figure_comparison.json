@@ -25,7 +25,7 @@
     "Generated?":"Yes",
     "Source type":"regenerated from data",
     "Comparison status":"regenerated_minor_difference",
-    "Notes":"generated_pixels=2967x1468; reference_pixels=2957x1466; generated_file_size=422208; reference_file_size=372316; rms_difference=; pixel_dimension_delta=0.003370407819346141"
+    "Notes":"generated_pixels=2966x1468; reference_pixels=2957x1466; generated_file_size=426596; reference_file_size=372316; rms_difference=; pixel_dimension_delta=0.0030343897505057315"
   },
   {
     "Expected figure filename":"figure_monthly_event_totals.png",

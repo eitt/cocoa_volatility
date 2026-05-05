@@ -18,76 +18,76 @@
     "Generated?":"Yes",
     "Source type":"recomputed",
     "Comparison status":"recomputed_minor_difference",
-    "Notes":"Matched 20 of 55 draft numeric tokens within tolerance."
+    "Notes":"semantic cells matched=8\/20; row matches=4\/6; token fallback=20\/54"
   },
   {
     "Table label":"tab_stats_overview",
     "Generated?":"Yes",
     "Source type":"recomputed",
-    "Comparison status":"recomputed_minor_difference",
-    "Notes":"Matched 21 of 44 draft numeric tokens within tolerance."
+    "Comparison status":"recomputed_major_difference",
+    "Notes":"No comparable semantic numeric cells found.; token fallback=21\/43"
   },
   {
     "Table label":"tab_transmission_results",
     "Generated?":"Yes",
     "Source type":"recomputed",
-    "Comparison status":"recomputed_minor_difference",
-    "Notes":"Matched 15 of 25 draft numeric tokens within tolerance."
+    "Comparison status":"recomputed_major_difference",
+    "Notes":"No comparable semantic numeric cells found.; token fallback=15\/25"
   },
   {
     "Table label":"tab_structural_breaks",
     "Generated?":"Yes",
     "Source type":"recomputed",
-    "Comparison status":"recomputed_match",
-    "Notes":"Matched 11 of 12 draft numeric tokens within tolerance."
+    "Comparison status":"recomputed_major_difference",
+    "Notes":"Insufficient structured rows for semantic comparison.; token fallback=8\/10"
   },
   {
     "Table label":"tab_vulnerability_indicators",
     "Generated?":"Yes",
     "Source type":"recomputed",
-    "Comparison status":"recomputed_major_difference",
-    "Notes":"Matched 2 of 10 draft numeric tokens within tolerance."
+    "Comparison status":"recomputed_match",
+    "Notes":"semantic cells matched=4\/4; row matches=2\/2; token fallback=8\/8; vulnerability summary semantic match to final LaTeX=1.000; semantic cells matched=4\/4; row matches=2\/2"
   },
   {
     "Table label":"tab_weather_extended_models",
     "Generated?":"Yes",
     "Source type":"recomputed",
-    "Comparison status":"recomputed_major_difference",
-    "Notes":"Matched 13 of 46 draft numeric tokens within tolerance."
+    "Comparison status":"recomputed_match",
+    "Notes":"semantic cells matched=32\/32; row matches=8\/8; token fallback=45\/45; world-volatility coefficient aligns with draft reference within tolerance: 0.954.; volatility source: data\/processed\/final_series\/all_series_common_window_volatility_imputed.csv"
   },
   {
     "Table label":"tab_hazard_screening",
     "Generated?":"Yes",
     "Source type":"recomputed",
-    "Comparison status":"recomputed_minor_difference",
-    "Notes":"Matched 27 of 43 draft numeric tokens within tolerance."
+    "Comparison status":"recomputed_major_difference",
+    "Notes":"No comparable semantic numeric cells found.; token fallback=17\/30"
   },
   {
     "Table label":"tab_hazard_models",
     "Generated?":"Yes",
     "Source type":"recomputed",
-    "Comparison status":"recomputed_minor_difference",
-    "Notes":"Matched 15 of 27 draft numeric tokens within tolerance."
+    "Comparison status":"recomputed_major_difference",
+    "Notes":"No comparable semantic numeric cells found.; token fallback=15\/26"
   },
   {
     "Table label":"tab_mean_shifts",
     "Generated?":"Yes",
     "Source type":"recomputed",
-    "Comparison status":"recomputed_match",
-    "Notes":"Matched 8 of 9 draft numeric tokens within tolerance."
+    "Comparison status":"recomputed_major_difference",
+    "Notes":"Insufficient structured rows for semantic comparison.; token fallback=6\/7"
   },
   {
     "Table label":"tab_supp_granger",
     "Generated?":"Yes",
     "Source type":"recomputed",
-    "Comparison status":"recomputed_match",
-    "Notes":"Matched 33 of 34 draft numeric tokens within tolerance."
+    "Comparison status":"recomputed_major_difference",
+    "Notes":"No comparable semantic numeric cells found.; token fallback=33\/33"
   },
   {
     "Table label":"tab_supp_disaster_granger",
     "Generated?":"Yes",
     "Source type":"recomputed",
-    "Comparison status":"recomputed_major_difference",
-    "Notes":"Matched 3 of 22 draft numeric tokens within tolerance."
+    "Comparison status":"recomputed_match",
+    "Notes":"semantic cells matched=8\/8; row matches=2\/2; token fallback=20\/20; rebuilt directly from reports\/v2\/tables\/table_disaster_causality.csv."
   }
 ]

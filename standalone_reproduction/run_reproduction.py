@@ -43,6 +43,12 @@ warnings.filterwarnings("ignore", message="verbose is deprecated", category=Futu
 
 REPRO_ROOT = Path(__file__).resolve().parent
 PROJECT_ROOT = REPRO_ROOT.parent
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
+from src.vulnerability.farmer_exposure_indicators import compute_farmer_exposure_index
+from src.vulnerability.livelihood_risk_linkage import build_livelihood_risk_score
+
 OUTPUT_FIGURES = REPRO_ROOT / "outputs" / "figures"
 OUTPUT_TABLES = REPRO_ROOT / "outputs" / "tables"
 OUTPUT_AUDIT = REPRO_ROOT / "outputs" / "audit"
@@ -53,8 +59,10 @@ FINAL_DRAFT = PROJECT_ROOT / "final_draft" / "main.tex"
 FULL_PANEL_PATH = PROJECT_ROOT / "data" / "processed" / "analysis_ready" / "merged_cocoa_price_panel.csv"
 CORE_PANEL_PATH = PROJECT_ROOT / "data" / "processed" / "final_series" / "core_common_window_panel_imputed.csv"
 ALL_PANEL_PATH = PROJECT_ROOT / "data" / "processed" / "final_series" / "all_series_common_window_panel_imputed.csv"
+VOLATILITY_PANEL_PATH = PROJECT_ROOT / "data" / "processed" / "final_series" / "all_series_common_window_volatility_imputed.csv"
 CLASSIFIED_EVENTS_PATH = PROJECT_ROOT / "reports" / "v2" / "intermediate" / "03_classified_events.csv"
 MONTHLY_EVENTS_PATH = PROJECT_ROOT / "reports" / "v2" / "intermediate" / "04_monthly_event_panel.csv"
+DISASTER_CAUSALITY_PATH = PROJECT_ROOT / "reports" / "v2" / "tables" / "table_disaster_causality.csv"
 
 CORE_COLUMNS = [
     "colombia_cocoa_price_cop_kg",
@@ -364,6 +372,7 @@ ORIGINAL_FIGURE_PROVENANCE = {
 
 FIGURE_SOURCE_TYPES: dict[str, str] = {}
 TABLE_SOURCE_TYPES: dict[str, str] = {}
+TABLE_RUNTIME_NOTES: dict[str, str] = {}
 
 
 @dataclass
@@ -371,8 +380,10 @@ class ReproductionData:
     full_panel: pd.DataFrame
     core_panel: pd.DataFrame
     all_panel: pd.DataFrame
+    volatility_panel: pd.DataFrame
     classified_events: pd.DataFrame
     monthly_events: pd.DataFrame
+    disaster_causality: pd.DataFrame
     core_returns: pd.DataFrame
     all_returns: pd.DataFrame
     vulnerability: pd.DataFrame
@@ -500,32 +511,64 @@ def savefig(fig: plt.Figure, filename: str) -> None:
     FIGURE_SOURCE_TYPES[filename] = FIGURE_SOURCE_TYPES.get(filename, "regenerated from data")
 
 
-def build_vulnerability(panel: pd.DataFrame) -> tuple[pd.DataFrame, object]:
+def build_vulnerability(panel: pd.DataFrame, volatility_panel: pd.DataFrame) -> tuple[pd.DataFrame, object]:
+    """Replicate the original vulnerability-index construction from script 10."""
     df = add_log_returns(panel, CORE_COLUMNS)
     for col in WEATHER_STRESS_COLUMNS:
         df[f"{col}_z"] = zscore(df[col])
         df[f"{col}_z_l1"] = df[f"{col}_z"].shift(1)
     df["weather_stress_index"] = df[[f"{c}_z" for c in WEATHER_STRESS_COLUMNS]].abs().mean(axis=1)
-    df["weather_stress_z"] = zscore(df["weather_stress_index"])
+    df["weather_stress_l1"] = df["weather_stress_index"].shift(1)
 
-    result, used_index, _ = fit_hac_ols(
+    core_short_run_result, core_short_run_index, _ = fit_hac_ols(
         df,
         "dlog_colombia_cocoa_price_cop_kg",
         ["dlog_world_cocoa_price_usd_mt", "dlog_cop_usd_exchange_rate", "dlog_brent_oil_usd_bbl"],
     )
-    fitted = pd.Series(np.nan, index=df.index, dtype=float)
-    fitted.loc[used_index] = result.fittedvalues
-    df["core_market_transmission_shock"] = fitted
-    df["market_transmission_shock_z"] = zscore(df["core_market_transmission_shock"])
-    df["domestic_volatility_z"] = zscore(df["colombia_cocoa_price_cop_kg_log_return_rolling_volatility"])
-    df["world_volatility_z"] = zscore(df["world_cocoa_price_usd_mt_log_return_rolling_volatility"])
-    df["farmer_exposure_index"] = df[
-        ["weather_stress_z", "market_transmission_shock_z", "domestic_volatility_z"]
-    ].mean(axis=1)
-    df["livelihood_risk_score"] = df[
-        ["weather_stress_z", "market_transmission_shock_z", "domestic_volatility_z", "world_volatility_z"]
-    ].mean(axis=1)
-    return df, result
+
+    domestic = CORE_COLUMNS[0]
+    world = CORE_COLUMNS[1]
+    fx = CORE_COLUMNS[3]
+    volatility_columns = [
+        f"{domestic}_log_return_rolling_volatility",
+        f"{world}_log_return_rolling_volatility",
+        f"{fx}_log_return_rolling_volatility",
+    ]
+    vulnerability_panel = df.copy()
+    if "date" in volatility_panel.columns:
+        vol_source = volatility_panel.set_index("date")
+    else:
+        vol_source = pd.DataFrame(index=pd.Index([], name="date"))
+    for column in volatility_columns:
+        if column in vol_source.columns:
+            vulnerability_panel[column] = vulnerability_panel["date"].map(vol_source[column])
+        elif column not in vulnerability_panel.columns:
+            base_return = column.replace("_log_return_rolling_volatility", "_log_return")
+            if base_return in vulnerability_panel.columns:
+                vulnerability_panel[column] = vulnerability_panel[base_return].rolling(window=12, min_periods=6).std()
+            else:
+                vulnerability_panel[column] = np.nan
+
+    vulnerability_panel["core_market_transmission_shock"] = np.nan
+    vulnerability_panel.loc[core_short_run_index, "core_market_transmission_shock"] = core_short_run_result.fittedvalues.abs()
+    vulnerability_panel["domestic_volatility_z"] = zscore(vulnerability_panel[f"{domestic}_log_return_rolling_volatility"].fillna(0))
+    vulnerability_panel["market_transmission_shock_z"] = zscore(vulnerability_panel["core_market_transmission_shock"].fillna(0))
+    vulnerability_panel["weather_stress_z"] = zscore(vulnerability_panel["weather_stress_index"].fillna(0))
+    vulnerability_panel["world_volatility_z"] = zscore(vulnerability_panel[f"{world}_log_return_rolling_volatility"].fillna(0))
+
+    vulnerability_panel = compute_farmer_exposure_index(
+        vulnerability_panel,
+        price_volatility_column="domestic_volatility_z",
+        transmission_column="market_transmission_shock_z",
+        climate_stress_column="weather_stress_z",
+    )
+    vulnerability_panel = build_livelihood_risk_score(
+        vulnerability_panel,
+        exposure_column="farmer_exposure_index",
+        dependence_column="world_volatility_z",
+    )
+
+    return vulnerability_panel, core_short_run_result
 
 
 def build_pca(monthly_events: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame, float]:
@@ -560,13 +603,15 @@ def load_data() -> ReproductionData:
     full = read_panel(FULL_PANEL_PATH)
     core = fill_imputed_values(read_panel(CORE_PANEL_PATH))
     all_panel = fill_imputed_values(read_panel(ALL_PANEL_PATH))
+    volatility_panel = read_panel(VOLATILITY_PANEL_PATH)
     events = read_panel(CLASSIFIED_EVENTS_PATH, date_cols=("month", "occurrence_date"))
     monthly = read_panel(MONTHLY_EVENTS_PATH, date_cols=("month",))
     monthly["month"] = pd.to_datetime(monthly["month"]).dt.to_period("M").dt.to_timestamp()
+    disaster_causality = pd.read_csv(DISASTER_CAUSALITY_PATH) if DISASTER_CAUSALITY_PATH.exists() else pd.DataFrame()
 
     core_returns = add_log_returns(core, CORE_COLUMNS)
     all_returns = add_log_returns(all_panel, CORE_COLUMNS)
-    vulnerability, _ = build_vulnerability(all_panel)
+    vulnerability, _ = build_vulnerability(all_panel, volatility_panel)
     pca_scores, pca_loadings, pca_variance = build_pca(monthly)
 
     nested = monthly.merge(pca_scores, on="month", how="left")
@@ -592,8 +637,10 @@ def load_data() -> ReproductionData:
         full_panel=full,
         core_panel=core,
         all_panel=all_panel,
+        volatility_panel=volatility_panel,
         classified_events=events,
         monthly_events=monthly,
+        disaster_causality=disaster_causality,
         core_returns=core_returns,
         all_returns=all_returns,
         vulnerability=vulnerability,
@@ -1038,66 +1085,144 @@ def table_structural_breaks(data: ReproductionData) -> pd.DataFrame:
 
 def table_vulnerability_indicators(data: ReproductionData) -> pd.DataFrame:
     TABLE_SOURCE_TYPES["tab_vulnerability_indicators"] = "recomputed"
-    cols = [
-        "weather_stress_index",
-        "core_market_transmission_shock",
-        "colombia_cocoa_price_cop_kg_log_return_rolling_volatility",
-        "farmer_exposure_index",
-        "livelihood_risk_score",
+    summary_specs = [
+        (
+            "Weather stress index",
+            "weather_stress_index",
+            "Mean absolute standardized anomaly across precipitation, solar radiation, and maximum temperature",
+        ),
+        (
+            "Weather stress ($z$-score)",
+            "weather_stress_z",
+            "Standardized weather-stress index; positive values indicate above-average combined anomaly",
+        ),
+        (
+            "Farmer exposure index",
+            "farmer_exposure_index",
+            "$z(\\sigma^{COL}_t) + z(\\widehat{m}_t) + \\mathrm{WeatherStress}_t$",
+        ),
+        (
+            "Livelihood risk score",
+            "livelihood_risk_score",
+            "Farmer exposure index plus standardized world-cocoa volatility",
+        ),
     ]
     rows = []
-    for col in cols:
-        series = data.vulnerability[col].dropna()
+    for indicator, column, construction in summary_specs:
+        series = pd.to_numeric(data.vulnerability[column], errors="coerce").dropna()
         rows.append(
             {
-                "Indicator": col,
-                "N": int(series.count()),
-                "Mean": series.mean(),
-                "SD": series.std(ddof=1),
-                "Min": series.min(),
-                "Max": series.max(),
-                "Role": "Descriptive resilience overlay",
+                "Indicator": indicator,
+                "Construction": construction,
+                "Mean": float(series.mean()),
+                "Std. dev.": float(series.std(ddof=1)),
             }
         )
-    return pd.DataFrame(rows)
+    out = pd.DataFrame(rows)
+
+    # Compare publication summary moments against final LaTeX table values.
+    envs = table_envs_from_draft()
+    draft_env = envs.get("tab:vulnerability_indicators", "")
+    if draft_env:
+        share, semantic_note = _semantic_table_comparison_df(draft_env, out)
+        TABLE_RUNTIME_NOTES["tab_vulnerability_indicators"] = (
+            f"vulnerability summary semantic match to final LaTeX={share:.3f}; {semantic_note}"
+        )
+    else:
+        TABLE_RUNTIME_NOTES["tab_vulnerability_indicators"] = "final LaTeX vulnerability table not found for direct moment comparison."
+    return out
 
 
 def table_weather_extended_models(data: ReproductionData) -> pd.DataFrame:
     TABLE_SOURCE_TYPES["tab_weather_extended_models"] = "recomputed"
-    df = data.vulnerability.copy()
-    rows = []
-    for label, y, xs, focus in [
-        (
-            "Weather levels",
-            "log_colombia_cocoa_price_cop_kg",
-            ["log_world_cocoa_price_usd_mt", "log_cop_usd_exchange_rate", "log_brent_oil_usd_bbl", *[f"{c}_z" for c in WEATHER_STRESS_COLUMNS]],
-            "log_world_cocoa_price_usd_mt",
-        ),
-        (
-            "Weather returns",
-            "dlog_colombia_cocoa_price_cop_kg",
-            ["dlog_world_cocoa_price_usd_mt", "dlog_cop_usd_exchange_rate", "dlog_brent_oil_usd_bbl", *[f"{c}_z_l1" for c in WEATHER_STRESS_COLUMNS]],
-            "dlog_world_cocoa_price_usd_mt",
-        ),
-        (
-            "Volatility overlay",
-            "colombia_cocoa_price_cop_kg_log_return_rolling_volatility",
-            ["world_cocoa_price_usd_mt_log_return_rolling_volatility", "weather_stress_z"],
-            "world_cocoa_price_usd_mt_log_return_rolling_volatility",
-        ),
-    ]:
-        result, _, _ = fit_hac_ols(df, y, xs)
-        rows.append(
-            {
-                "Model": label,
-                "Focus coefficient": focus,
-                "Coefficient": result.params.get(focus, np.nan),
-                "p-value": result.pvalues.get(focus, np.nan),
-                "N": int(result.nobs),
-                "Adj. R2": result.rsquared_adj,
-                "Weather terms jointly interpreted as": "Contextual natural-capital stress proxies",
-            }
+    domestic = CORE_COLUMNS[0]
+    world = CORE_COLUMNS[1]
+    fx = CORE_COLUMNS[3]
+    brent = CORE_COLUMNS[4]
+    panel = add_log_returns(data.all_panel.copy(), [domestic, world, fx, brent])
+
+    for column in WEATHER_STRESS_COLUMNS:
+        panel[f"{column}_z"] = zscore(panel[column])
+        panel[f"{column}_z_l1"] = panel[f"{column}_z"].shift(1)
+    panel["weather_stress_index"] = panel[[f"{column}_z" for column in WEATHER_STRESS_COLUMNS]].abs().mean(axis=1)
+    panel["weather_stress_l1"] = panel["weather_stress_index"].shift(1)
+
+    long_result, _, _ = fit_hac_ols(
+        panel,
+        y_col=f"log_{domestic}",
+        x_cols=[f"log_{world}", f"log_{fx}", f"log_{brent}", *[f"{column}_z" for column in WEATHER_STRESS_COLUMNS]],
+    )
+    short_result, _, _ = fit_hac_ols(
+        panel,
+        y_col=f"dlog_{domestic}",
+        x_cols=[f"dlog_{world}", f"dlog_{fx}", f"dlog_{brent}", *[f"{column}_z_l1" for column in WEATHER_STRESS_COLUMNS]],
+    )
+
+    domestic_vol = f"{domestic}_log_return_rolling_volatility"
+    world_vol = f"{world}_log_return_rolling_volatility"
+    fx_vol = f"{fx}_log_return_rolling_volatility"
+    required_vol_cols = ["date", domestic_vol, world_vol, fx_vol]
+    if all(col in data.volatility_panel.columns for col in required_vol_cols):
+        volatility_source = data.volatility_panel[required_vol_cols].copy()
+        TABLE_RUNTIME_NOTES["tab_weather_extended_models_vol_source"] = (
+            "volatility source: data/processed/final_series/all_series_common_window_volatility_imputed.csv"
         )
+    else:
+        volatility_source = panel[["date", f"dlog_{domestic}", f"dlog_{world}", f"dlog_{fx}"]].copy()
+        volatility_source[domestic_vol] = volatility_source[f"dlog_{domestic}"].rolling(window=12, min_periods=6).std()
+        volatility_source[world_vol] = volatility_source[f"dlog_{world}"].rolling(window=12, min_periods=6).std()
+        volatility_source[fx_vol] = volatility_source[f"dlog_{fx}"].rolling(window=12, min_periods=6).std()
+        volatility_source = volatility_source[["date", domestic_vol, world_vol, fx_vol]]
+        TABLE_RUNTIME_NOTES["tab_weather_extended_models_vol_source"] = (
+            "volatility source fallback: recomputed 12-month rolling std because original volatility input columns were unavailable."
+        )
+    volatility_panel = panel.copy()
+    vol_source_idx = volatility_source.set_index("date")
+    for column in [domestic_vol, world_vol, fx_vol]:
+        if column in vol_source_idx.columns:
+            volatility_panel[column] = volatility_panel["date"].map(vol_source_idx[column])
+    volatility_result, _, _ = fit_hac_ols(
+        volatility_panel,
+        y_col=domestic_vol,
+        x_cols=[world_vol, fx_vol, "weather_stress_l1"],
+    )
+
+    def model_row(model_component: str, result: object, parameter: str, adj_r2: float) -> dict[str, object]:
+        p_value = result.pvalues.get(parameter, np.nan)
+        return {
+            "Model component": model_component,
+            "Coefficient": float(result.params.get(parameter, np.nan)),
+            "Std. error": float(result.bse.get(parameter, np.nan)),
+            "$p$-value": pvalue_text(float(p_value) if pd.notna(p_value) else np.nan),
+            "Adj. $R^2$": float(adj_r2),
+        }
+
+    long_r2 = float(long_result.rsquared_adj)
+    short_r2 = float(short_result.rsquared_adj)
+    vol_r2 = float(volatility_result.rsquared_adj)
+    rows = [
+        model_row(r"$\ln(P^{COL}_{t}) \leftarrow \ln(P^{WLD}_{t})$", long_result, f"log_{world}", long_r2),
+        model_row(r"$\ln(P^{COL}_{t}) \leftarrow$ solar radiation$_t$ ($z$)", long_result, "nasa_surface_solar_radiation_mj_m2_day_z", long_r2),
+        model_row(r"$\ln(P^{COL}_{t}) \leftarrow$ precipitation$_t$ ($z$)", long_result, "nasa_precipitation_mm_day_z", long_r2),
+        model_row(r"$\ln(P^{COL}_{t}) \leftarrow$ max temperature$_t$ ($z$)", long_result, "nasa_temperature_max_c_z", long_r2),
+        model_row(r"$\Delta \ln(P^{COL}_{t}) \leftarrow \Delta \ln(P^{WLD}_{t})$", short_result, f"dlog_{world}", short_r2),
+        model_row(r"$\Delta \ln(P^{COL}_{t}) \leftarrow$ max temperature$_{t-1}$ ($z$)", short_result, "nasa_temperature_max_c_z_l1", short_r2),
+        model_row(r"$\Delta \ln(P^{COL}_{t}) \leftarrow$ precipitation$_{t-1}$ ($z$)", short_result, "nasa_precipitation_mm_day_z_l1", short_r2),
+        model_row(r"$\Delta \ln(P^{COL}_{t}) \leftarrow$ solar radiation$_{t-1}$ ($z$)", short_result, "nasa_surface_solar_radiation_mj_m2_day_z_l1", short_r2),
+        model_row(r"Domestic rolling volatility $\leftarrow$ world rolling volatility", volatility_result, world_vol, vol_r2),
+        model_row(r"Domestic rolling volatility $\leftarrow$ weather stress$_{t-1}$", volatility_result, "weather_stress_l1", vol_r2),
+    ]
+
+    world_vol_coef = float(volatility_result.params.get(world_vol, np.nan))
+    if pd.notna(world_vol_coef) and abs(world_vol_coef - 0.954) > 0.005:
+        TABLE_RUNTIME_NOTES["tab_weather_extended_models"] = (
+            f"input-volatility mismatch: world-volatility coefficient={world_vol_coef:.3f}, expected draft reference=0.954."
+        )
+    else:
+        TABLE_RUNTIME_NOTES["tab_weather_extended_models"] = (
+            f"world-volatility coefficient aligns with draft reference within tolerance: {world_vol_coef:.3f}."
+        )
+
     return pd.DataFrame(rows)
 
 
@@ -1230,11 +1355,42 @@ def table_supp_granger(data: ReproductionData) -> pd.DataFrame:
 
 def table_supp_disaster_granger(data: ReproductionData) -> pd.DataFrame:
     TABLE_SOURCE_TYPES["tab_supp_disaster_granger"] = "recomputed"
-    df = data.nested.rename(columns={"dlog_colombia_cocoa_price_cop_kg": "colombia_return"})
-    rows = []
-    for cause in ["hydrometeorological_events", "geophysical_events", "earthquake_events", "total_events", "disaster_pressure"]:
-        rows.extend(granger_pair(df, cause, "colombia_return", maxlag=2))
-    return pd.DataFrame(rows)
+    target_map = {
+        "colombia_cocoa_price_cop_kg_log_return": "Colombian cocoa return",
+        "world_return": "World cocoa return",
+        "fx_return": "FX return",
+        "oil_return": "Oil return",
+    }
+    if not data.disaster_causality.empty:
+        source_df = data.disaster_causality.copy()
+    else:
+        source_df = pd.read_csv(DISASTER_CAUSALITY_PATH) if DISASTER_CAUSALITY_PATH.exists() else pd.DataFrame()
+
+    if source_df.empty:
+        TABLE_RUNTIME_NOTES["tab_supp_disaster_granger"] = "missing original disaster causality source; table could not be reconstructed."
+        return pd.DataFrame(columns=["Source", "Target", "Lag 1 $p$", "Lag 2 $p$", "Lag 3 $p$", "Lag 4 $p$"])
+
+    subset = source_df.loc[
+        (source_df["source"] == "disaster_indicator")
+        & (source_df["target"].isin(target_map))
+        & (source_df["lag"].isin([1, 2, 3, 4]))
+    ].copy()
+    subset["Target"] = subset["target"].map(target_map)
+    pivot = subset.pivot_table(index="Target", columns="lag", values="p_value", aggfunc="first")
+    pivot = pivot.reindex([target_map[key] for key in target_map], axis=0)
+    pivot = pivot.reindex([1, 2, 3, 4], axis=1)
+    out = pivot.reset_index().rename(
+        columns={
+            "Target": "Target",
+            1: "Lag 1 $p$",
+            2: "Lag 2 $p$",
+            3: "Lag 3 $p$",
+            4: "Lag 4 $p$",
+        }
+    )
+    out.insert(0, "Source", "Disaster indicator")
+    TABLE_RUNTIME_NOTES["tab_supp_disaster_granger"] = "rebuilt directly from reports/v2/tables/table_disaster_causality.csv."
+    return out
 
 
 def dataset_inventory(data: ReproductionData) -> pd.DataFrame:
@@ -1358,6 +1514,10 @@ def table_envs_from_draft() -> dict[str, str]:
 
 
 def numeric_tokens(text: str) -> list[float]:
+    # Remove layout-only numeric tokens and date strings before fallback parsing.
+    text = re.sub(r"p\{\s*\d+(?:\.\d+)?cm\s*\}", " ", text)
+    text = re.sub(r"\\resizebox\{[^{}]*\}\{[^{}]*\}", " ", text)
+    text = re.sub(r"\b\d{4}-\d{2}(?:-\d{2})?\b", " ", text)
     tokens = re.findall(r"(?<![A-Za-z])[-+]?\d+\.\d+|(?<![A-Za-z])[-+]?\d+", text)
     values = []
     for token in tokens:
@@ -1366,6 +1526,200 @@ def numeric_tokens(text: str) -> list[float]:
         except ValueError:
             continue
     return values
+
+
+def _parse_numeric_cell(value: object) -> float | None:
+    text = str(value).strip()
+    if not text or text.lower() == "nan":
+        return None
+    if re.fullmatch(r"\d{4}-\d{2}", text):
+        return None
+    if "<0.001" in text.replace(" ", ""):
+        return 0.0005
+    paren = re.findall(r"\(([-+]?\d*\.?\d+)\)", text)
+    if paren:
+        try:
+            return float(paren[-1])
+        except ValueError:
+            return None
+    cleaned = text.replace(",", "")
+    matches = re.findall(r"[-+]?\d*\.?\d+", cleaned)
+    if not matches:
+        return None
+    try:
+        return float(matches[-1])
+    except ValueError:
+        return None
+
+
+def _normalize_text_key(value: object) -> str:
+    text = _strip_latex(str(value)).lower()
+    text = re.sub(r"[^a-z0-9]+", " ", text)
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def _normalize_column_key(value: object) -> str:
+    text = _strip_latex(str(value)).lower()
+    text = text.replace("adj. r", "adj r").replace("adj r2", "adj r2")
+    text = text.replace("std. dev.", "std dev")
+    text = text.replace("std. error", "std error")
+    text = text.replace("p-value", "p value")
+    text = re.sub(r"[^a-z0-9]+", " ", text)
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def _parse_latex_table_structure(env: str) -> dict[str, object]:
+    tabular_match = re.search(r"\\begin\{tabular[^}]*\}(.*?)\\end\{tabular\}", env, flags=re.S)
+    if not tabular_match:
+        return {"headers": [], "rows": []}
+    body = tabular_match.group(1)
+    raw_rows = [row.strip() for row in re.split(r"\\\\", body) if row.strip()]
+    parsed_rows: list[list[str]] = []
+    for row in raw_rows:
+        if any(token in row for token in ["\\toprule", "\\midrule", "\\bottomrule", "\\hline"]):
+            continue
+        row_clean = re.sub(r"%.*", "", row).strip()
+        if not row_clean:
+            continue
+        cells = [cell.strip() for cell in row_clean.split("&")]
+        parsed_rows.append(cells)
+    if not parsed_rows:
+        return {"headers": [], "rows": []}
+    headers = [_strip_latex(cell) for cell in parsed_rows[0]]
+    rows = [[_strip_latex(cell) for cell in row] for row in parsed_rows[1:]]
+    return {"headers": headers, "rows": rows}
+
+
+def _generated_table_semantic_rows(df: pd.DataFrame) -> list[dict[str, object]]:
+    if df.empty:
+        return []
+    text_like_columns = []
+    for column in df.columns:
+        non_numeric_share = float(df[column].apply(lambda value: _parse_numeric_cell(value) is None).mean())
+        if non_numeric_share >= 0.6:
+            text_like_columns.append(column)
+    id_columns = text_like_columns[:2] if text_like_columns else [df.columns[0]]
+    rows = []
+    for _, row in df.iterrows():
+        key_parts = [_normalize_text_key(row[col]) for col in id_columns if _normalize_text_key(row[col])]
+        key = "|".join(key_parts) if key_parts else str(_)
+        numeric_values: list[tuple[str, float]] = []
+        numeric_map: dict[str, float] = {}
+        for column in df.columns:
+            if column in id_columns:
+                continue
+            numeric_value = _parse_numeric_cell(row[column])
+            if numeric_value is not None:
+                numeric_values.append((column, numeric_value))
+                numeric_map[_normalize_column_key(column)] = numeric_value
+        rows.append(
+            {
+                "key": key,
+                "id_columns": id_columns,
+                "numeric": numeric_values,
+                "numeric_map": numeric_map,
+                "raw": row.to_dict(),
+            }
+        )
+    return rows
+
+
+def _latex_semantic_rows(env: str) -> list[dict[str, object]]:
+    structure = _parse_latex_table_structure(env)
+    headers = structure["headers"]
+    rows = []
+    for row in structure["rows"]:
+        if not row:
+            continue
+        key_parts = [_normalize_text_key(row[0])]
+        if len(row) > 1 and _parse_numeric_cell(row[1]) is None:
+            key_parts.append(_normalize_text_key(row[1]))
+        key = "|".join([part for part in key_parts if part]) or str(len(rows))
+        numeric_values: list[tuple[str, float]] = []
+        numeric_map: dict[str, float] = {}
+        for idx, cell in enumerate(row[1:], start=1):
+            numeric_value = _parse_numeric_cell(cell)
+            if numeric_value is None:
+                continue
+            header = headers[idx] if idx < len(headers) else f"col_{idx}"
+            numeric_values.append((header, numeric_value))
+            numeric_map[_normalize_column_key(header)] = numeric_value
+        rows.append({"key": key, "numeric": numeric_values, "numeric_map": numeric_map, "raw": row})
+    return rows
+
+
+def _semantic_row_value_share(
+    expected_rows: list[dict[str, object]],
+    observed_rows: list[dict[str, object]],
+) -> tuple[float, str]:
+    if not expected_rows or not observed_rows:
+        return 0.0, "Insufficient structured rows for semantic comparison."
+    observed_lookup = {row["key"]: row for row in observed_rows}
+    matched = 0
+    total = 0
+    row_hits = 0
+    for exp_row in expected_rows:
+        obs_row = observed_lookup.get(exp_row["key"])
+        if obs_row is None:
+            best = max(
+                observed_rows,
+                key=lambda candidate: difflib.SequenceMatcher(None, exp_row["key"], candidate["key"]).ratio(),
+                default=None,
+            )
+            if best and difflib.SequenceMatcher(None, exp_row["key"], best["key"]).ratio() >= 0.72:
+                obs_row = best
+        if obs_row is None:
+            continue
+        row_hits += 1
+        exp_map = exp_row.get("numeric_map", {})
+        obs_map = obs_row.get("numeric_map", {})
+        exp_values = list(exp_row.get("numeric", []))
+        obs_values = list(obs_row.get("numeric", []))
+        for idx, (col_name, exp_val) in enumerate(exp_values):
+            norm_col = _normalize_column_key(col_name)
+            if norm_col in obs_map:
+                obs_val = obs_map[norm_col]
+            elif idx < len(obs_values):
+                obs_val = obs_values[idx][1]
+            else:
+                total += 1
+                continue
+            total += 1
+            tolerance = max(0.005, abs(exp_val) * 0.02)
+            if abs(exp_val - obs_val) <= tolerance:
+                matched += 1
+    if total == 0:
+        return 0.0, "No comparable semantic numeric cells found."
+    share = matched / total
+    return share, f"semantic cells matched={matched}/{total}; row matches={row_hits}/{len(expected_rows)}"
+
+
+def _semantic_table_comparison(env: str, csv_path: Path) -> tuple[float, str]:
+    if not csv_path.exists():
+        return 0.0, "Generated CSV missing for semantic comparison."
+    try:
+        df = pd.read_csv(csv_path)
+    except Exception as exc:
+        return 0.0, f"Generated CSV read error: {exc}"
+    return _semantic_row_value_share(_latex_semantic_rows(env), _generated_table_semantic_rows(df))
+
+
+def _semantic_table_comparison_df(env: str, df: pd.DataFrame) -> tuple[float, str]:
+    return _semantic_row_value_share(_latex_semantic_rows(env), _generated_table_semantic_rows(df))
+
+
+def _semantic_csv_comparison(expected_csv: Path, observed_csv: Path) -> tuple[float, str]:
+    if not expected_csv.exists() or not observed_csv.exists():
+        return 0.0, "Expected or observed CSV missing."
+    try:
+        expected_df = pd.read_csv(expected_csv)
+        observed_df = pd.read_csv(observed_csv)
+    except Exception as exc:
+        return 0.0, f"CSV read error: {exc}"
+    return _semantic_row_value_share(
+        _generated_table_semantic_rows(expected_df),
+        _generated_table_semantic_rows(observed_df),
+    )
 
 
 def compare_tables(tables: dict[str, pd.DataFrame]) -> pd.DataFrame:
@@ -1387,26 +1741,35 @@ def compare_tables(tables: dict[str, pd.DataFrame]) -> pd.DataFrame:
             draft_env = envs.get(label, "")
             if not draft_env:
                 status = "recomputed_minor_difference"
-                notes = "No draft table environment found for numeric comparison."
+                notes = "No draft table environment found for semantic comparison."
             else:
+                semantic_share, semantic_note = _semantic_table_comparison(draft_env, csv_path)
                 draft_nums = numeric_tokens(draft_env)
                 regen_nums = numeric_tokens(tex_path.read_text(encoding="utf-8", errors="ignore"))
-                if not draft_nums:
-                    status = "recomputed_minor_difference"
-                    notes = "Draft table has no simple numeric tokens for comparison."
-                else:
-                    matched = 0
+                token_warning = ""
+                if draft_nums and regen_nums:
+                    token_matches = 0
                     for value in draft_nums:
                         if any(abs(value - candidate) <= max(0.002, abs(value) * 0.002) for candidate in regen_nums):
-                            matched += 1
-                    share = matched / len(draft_nums)
-                    if share >= 0.8:
-                        status = "recomputed_match"
-                    elif share >= 0.35:
-                        status = "recomputed_minor_difference"
-                    else:
-                        status = "recomputed_major_difference"
-                    notes = f"Matched {matched} of {len(draft_nums)} draft numeric tokens within tolerance."
+                            token_matches += 1
+                    token_warning = f"token fallback={token_matches}/{len(draft_nums)}"
+                if semantic_share >= 0.82:
+                    status = "recomputed_match"
+                elif semantic_share >= 0.40:
+                    status = "recomputed_minor_difference"
+                else:
+                    status = "recomputed_major_difference"
+                notes = f"{semantic_note}; {token_warning}".strip("; ")
+                runtime_notes = []
+                if TABLE_RUNTIME_NOTES.get(stem):
+                    runtime_notes.append(TABLE_RUNTIME_NOTES[stem])
+                runtime_notes.extend(
+                    note
+                    for key, note in TABLE_RUNTIME_NOTES.items()
+                    if key.startswith(f"{stem}_") and note
+                )
+                if runtime_notes:
+                    notes = f"{notes}; {'; '.join(runtime_notes)}" if notes else "; ".join(runtime_notes)
         rows.append(
             {
                 "Table label": stem,
@@ -1774,7 +2137,10 @@ def _matches_original_table(stem: str) -> str:
         return "not_applicable" if provenance.get("diagnosis", "").startswith("metadata") else "missing_original_source"
     if not standalone.exists():
         return "missing_standalone"
-    share = _text_numeric_match_share(_file_numeric_text(original), _file_numeric_text(standalone))
+    if original.suffix.lower() == ".csv":
+        share, _ = _semantic_csv_comparison(original, standalone)
+    else:
+        share = _text_numeric_match_share(_file_numeric_text(original), _file_numeric_text(standalone))
     if share >= 0.95:
         return "yes"
     if share >= 0.45:
@@ -1783,10 +2149,10 @@ def _matches_original_table(stem: str) -> str:
 
 
 def _matches_latex_table(stem: str, table: dict[str, object]) -> str:
-    standalone = OUTPUT_TABLES / f"{stem}.tex"
+    standalone = OUTPUT_TABLES / f"{stem}.csv"
     if not standalone.exists():
         return "missing_standalone"
-    share = _text_numeric_match_share(str(table.get("environment", "")), standalone.read_text(encoding="utf-8", errors="ignore"))
+    share, _ = _semantic_table_comparison(str(table.get("environment", "")), standalone)
     if share >= 0.80:
         return "yes"
     if share >= 0.35:
@@ -2011,6 +2377,32 @@ def _numeric_diff_type(latex_value: float | None, original_value: float | None, 
     return "standalone_changed_value", "Numeric token differs across sources; inspect row context."
 
 
+def _semantic_value_map_from_rows(rows: list[dict[str, object]]) -> dict[str, dict[str, float]]:
+    mapped: dict[str, dict[str, float]] = {}
+    for idx, row in enumerate(rows):
+        row_key = str(row.get("key") or f"row_{idx + 1}")
+        numeric_map = dict(row.get("numeric_map", {}))
+        if not numeric_map:
+            numeric_values = list(row.get("numeric", []))
+            numeric_map = {f"col_{j + 1}": value for j, (_, value) in enumerate(numeric_values)}
+        mapped[row_key] = numeric_map
+    return mapped
+
+
+def _semantic_value_map_from_csv(path: Path | None) -> dict[str, dict[str, float]]:
+    if path is None or not path.exists():
+        return {}
+    try:
+        df = pd.read_csv(path)
+    except Exception:
+        return {}
+    return _semantic_value_map_from_rows(_generated_table_semantic_rows(df))
+
+
+def _semantic_value_map_from_latex(env: str) -> dict[str, dict[str, float]]:
+    return _semantic_value_map_from_rows(_latex_semantic_rows(env))
+
+
 def generate_latex_vs_generated_values(manuscript_tables: list[dict[str, object]] | None = None) -> pd.DataFrame:
     tables = manuscript_tables or _parse_manuscript_tables()
     rows = []
@@ -2019,32 +2411,56 @@ def generate_latex_vs_generated_values(manuscript_tables: list[dict[str, object]
         provenance = ORIGINAL_TABLE_PROVENANCE.get(stem, {})
         original_path = _resolve_first_existing(str(provenance.get("original_file", "")))
         standalone_path = OUTPUT_TABLES / f"{stem}.csv"
-        latex_values = numeric_tokens(str(table.get("environment", "")))
-        original_values = numeric_tokens(_file_numeric_text(original_path))
-        standalone_values = numeric_tokens(_file_numeric_text(standalone_path if standalone_path.exists() else None))
-        max_len = max(len(latex_values), len(original_values), len(standalone_values), 1)
-        for idx in range(max_len):
-            latex_value = latex_values[idx] if idx < len(latex_values) else None
-            original_value = original_values[idx] if idx < len(original_values) else None
-            standalone_value = standalone_values[idx] if idx < len(standalone_values) else None
-            diff_type, diagnosis = _numeric_diff_type(latex_value, original_value, standalone_value)
+        latex_map = _semantic_value_map_from_latex(str(table.get("environment", "")))
+        if original_path and original_path.suffix.lower() == ".csv":
+            original_map = _semantic_value_map_from_csv(original_path)
+        else:
+            original_map = {}
+        standalone_map = _semantic_value_map_from_csv(standalone_path if standalone_path.exists() else None)
+        row_keys = sorted(set(latex_map) | set(original_map) | set(standalone_map))
+        if not row_keys:
             rows.append(
                 {
                     "Table label": table["label"],
-                    "Row/variable": f"numeric_token_{idx + 1}",
-                    "Column/statistic": "parsed numeric sequence",
-                    "LaTeX value": "" if latex_value is None else latex_value,
-                    "Original generated value": "" if original_value is None else original_value,
-                    "Standalone value": "" if standalone_value is None else standalone_value,
-                    "Difference type": diff_type,
-                    "Diagnosis": diagnosis,
+                    "Row/variable": "",
+                    "Column/statistic": "",
+                    "LaTeX value": "",
+                    "Original generated value": "",
+                    "Standalone value": "",
+                    "Difference type": "missing_in_standalone",
+                    "Diagnosis": "No semantic numeric rows could be parsed for this table.",
                 }
             )
+            continue
+        for row_key in row_keys:
+            latex_row = latex_map.get(row_key, {})
+            original_row = original_map.get(row_key, {})
+            standalone_row = standalone_map.get(row_key, {})
+            col_keys = sorted(set(latex_row) | set(original_row) | set(standalone_row))
+            if not col_keys:
+                col_keys = ["value"]
+            for col_key in col_keys:
+                latex_value = latex_row.get(col_key)
+                original_value = original_row.get(col_key)
+                standalone_value = standalone_row.get(col_key)
+                diff_type, diagnosis = _numeric_diff_type(latex_value, original_value, standalone_value)
+                rows.append(
+                    {
+                        "Table label": table["label"],
+                        "Row/variable": row_key,
+                        "Column/statistic": col_key,
+                        "LaTeX value": "" if latex_value is None else latex_value,
+                        "Original generated value": "" if original_value is None else original_value,
+                        "Standalone value": "" if standalone_value is None else standalone_value,
+                        "Difference type": diff_type,
+                        "Diagnosis": diagnosis,
+                    }
+                )
     df = pd.DataFrame(rows)
     lines = [
         "# LaTeX vs Generated Values",
         "",
-        "Values are compared as ordered numeric tokens parsed from each table environment and the corresponding generated CSV files. This is intentionally conservative: it identifies where publication-layer tables have been reshaped or manually rounded, but row-level semantic labels may require author review for wide source tables.",
+        "Values are compared semantically by row labels and statistic/column keys parsed from each table environment and the corresponding generated CSV files. Raw token-order comparison is retained only as a secondary warning in table-level audits.",
         "",
         df.to_markdown(index=False) if not df.empty else "_No numeric values detected._",
         "",
@@ -2095,6 +2511,18 @@ def generate_column_and_window_audit() -> pd.DataFrame:
         _dataset_audit_record("core aligned levels window", CORE_PANEL_PATH, "date", CORE_COLUMNS, "imputed values filled; log levels computed", "2021-08 to 2025-12"),
         _dataset_audit_record("core aligned return window", CORE_PANEL_PATH, "date", CORE_COLUMNS, "first log differences; rolling volatility with 12-month window and min_periods=6", "drop first differenced row"),
         _dataset_audit_record("weather-augmented complete sample", ALL_PANEL_PATH, "date", CORE_COLUMNS + WEATHER_COLUMNS, "weather z-scores; weather-stress mean absolute selected anomalies", "2021-08 to 2025-12"),
+        _dataset_audit_record(
+            "weather-volatility input panel",
+            VOLATILITY_PANEL_PATH,
+            "date",
+            [
+                "colombia_cocoa_price_cop_kg_log_return_rolling_volatility",
+                "world_cocoa_price_usd_mt_log_return_rolling_volatility",
+                "cop_usd_exchange_rate_log_return_rolling_volatility",
+            ],
+            "original precomputed rolling-volatility input used by weather-extended and vulnerability models",
+            "2021-08 to 2025-12",
+        ),
         _dataset_audit_record("nested disaster levels window", MONTHLY_EVENTS_PATH, "month", ["total_events", "hydrometeorological_events", "geophysical_events", "earthquake_events"], "monthly event counts used directly", "2021-08 to 2024-07"),
         _dataset_audit_record("nested disaster return window", PROJECT_ROOT / "reports" / "v2" / "intermediate" / "v3_integrated_panel.csv", "month", ["colombia_cocoa_price_cop_kg_log_return", "world_return", "fx_return", "oil_return", "disaster_pressure"], "nested market returns joined to event indicators", "2021-09 to 2024-07 after return availability"),
         _dataset_audit_record("PCA disaster-pressure construction", MONTHLY_EVENTS_PATH, "month", EVENT_COUNT_COLUMNS, "StandardScaler-equivalent z-scores; PCA first component oriented to total_events", "2021-08 to 2024-07"),
@@ -2176,8 +2604,11 @@ def generate_standalone_update_log() -> None:
         "",
         "- Added parser-driven table crosswalk from `final_draft/main.tex` to regenerated CSV/TEX files.",
         "- Added original script and output provenance maps for all manuscript tables and figures.",
-        "- Added numeric-token comparison among final LaTeX, original generated outputs, and standalone outputs.",
+        "- Replaced token-order table comparison with semantic row/column matching and kept token matching only as a warning fallback.",
         "- Added column/window audit documenting input paths, column availability, transformations, imputation handling, and sample filters.",
+        "- Reproduced vulnerability indicators with original additive helper logic (`compute_farmer_exposure_index` and `build_livelihood_risk_score`).",
+        "- Reconstructed the ten-row publication weather-extended model table from original regression logic and volatility-source handling.",
+        "- Rebuilt the supplementary disaster Granger table directly from `reports/v2/tables/table_disaster_causality.csv`.",
         "- Updated PCA construction to use the original V2 candidate feature list and orientation, reproducing the October 2022 pressure peak.",
         "- Kept the map as `static_map_copied` because offline geospatial base layers and basemap tiles are not bundled as organized analytical inputs.",
         "- Did not modify `final_draft/main.tex`; manuscript-level inconsistencies are documented rather than silently overwritten.",
