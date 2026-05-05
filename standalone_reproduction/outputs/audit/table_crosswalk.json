@@ -65,7 +65,7 @@
     "Root-cause classification":"requires_author_review",
     "Match basis":"exact_label_match",
     "Status":"matched_csv_tex",
-    "Notes":"Generated stem equals manuscript label with colon normalized to underscore. CSV dimensions: 8 rows x 5 columns."
+    "Notes":"Generated stem equals manuscript label with colon normalized to underscore. CSV dimensions: 8 rows x 7 columns."
   },
   {
     "Manuscript order":5,
@@ -82,7 +82,7 @@
     "Root-cause classification":"requires_author_review",
     "Match basis":"exact_label_match",
     "Status":"matched_csv_tex",
-    "Notes":"Generated stem equals manuscript label with colon normalized to underscore. CSV dimensions: 4 rows x 6 columns."
+    "Notes":"Generated stem equals manuscript label with colon normalized to underscore. CSV dimensions: 10 rows x 7 columns."
   },
   {
     "Manuscript order":6,
@@ -99,7 +99,7 @@
     "Root-cause classification":"requires_author_review",
     "Match basis":"exact_label_match",
     "Status":"matched_csv_tex",
-    "Notes":"Generated stem equals manuscript label with colon normalized to underscore. CSV dimensions: 2 rows x 8 columns."
+    "Notes":"Generated stem equals manuscript label with colon normalized to underscore. CSV dimensions: 2 rows x 7 columns."
   },
   {
     "Manuscript order":7,
@@ -201,7 +201,7 @@
     "Root-cause classification":"requires_author_review",
     "Match basis":"exact_label_match",
     "Status":"matched_csv_tex",
-    "Notes":"Generated stem equals manuscript label with colon normalized to underscore. CSV dimensions: 60 rows x 5 columns."
+    "Notes":"Generated stem equals manuscript label with colon normalized to underscore. CSV dimensions: 20 rows x 5 columns."
   },
   {
     "Manuscript order":13,

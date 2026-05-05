@@ -2,7 +2,7 @@
 
 ## A. Executive Summary
 
-- Date/time of run: 2026-05-04T20:07:19
+- Date/time of run: 2026-05-04T20:44:42
 - Python version: 3.12.3
 - Main input datasets used: data\processed\analysis_ready\merged_cocoa_price_panel.csv, data\processed\final_series\core_common_window_panel_imputed.csv, data\processed\final_series\all_series_common_window_panel_imputed.csv, reports\v2\intermediate\03_classified_events.csv, reports\v2\intermediate\04_monthly_event_panel.csv
 - Number of figures expected: 12
@@ -10,7 +10,7 @@
 - Number of tables expected: 13
 - Number of tables generated: 13
 - Figure comparison counts: {"copied_static": 1, "regenerated_minor_difference": 11}
-- Table comparison counts: {"recomputed_major_difference": 7, "recomputed_match": 3, "recomputed_minor_difference": 1, "static_from_draft": 2}
+- Table comparison counts: {"recomputed_major_difference": 2, "recomputed_match": 6, "recomputed_minor_difference": 3, "static_from_draft": 2}
 
 ## B. Input Data Inventory
 
@@ -46,15 +46,15 @@
 | tab_data_card                | Yes          | static metadata | static_from_draft           | Metadata-style table encoded from manuscript and data inventory, not a statistical estimate.                                                                                                                                                           |
 | tab_sample_design            | Yes          | static metadata | static_from_draft           | Metadata-style table encoded from manuscript and data inventory, not a statistical estimate.                                                                                                                                                           |
 | tab_descriptive_stats        | Yes          | recomputed      | recomputed_minor_difference | semantic cells matched=8/20; row matches=4/6; token fallback=20/54                                                                                                                                                                                     |
-| tab_stats_overview           | Yes          | recomputed      | recomputed_major_difference | No comparable semantic numeric cells found.; token fallback=21/43                                                                                                                                                                                      |
-| tab_transmission_results     | Yes          | recomputed      | recomputed_major_difference | No comparable semantic numeric cells found.; token fallback=15/25                                                                                                                                                                                      |
-| tab_structural_breaks        | Yes          | recomputed      | recomputed_major_difference | Insufficient structured rows for semantic comparison.; token fallback=8/10                                                                                                                                                                             |
+| tab_stats_overview           | Yes          | recomputed      | recomputed_minor_difference | No comparable semantic numeric cells found.; token fallback=31/43                                                                                                                                                                                      |
+| tab_transmission_results     | Yes          | recomputed      | recomputed_match            | No comparable semantic numeric cells found.; token fallback=25/25                                                                                                                                                                                      |
+| tab_structural_breaks        | Yes          | recomputed      | recomputed_minor_difference | Insufficient structured rows for semantic comparison.; token fallback=8/10                                                                                                                                                                             |
 | tab_vulnerability_indicators | Yes          | recomputed      | recomputed_match            | semantic cells matched=4/4; row matches=2/2; token fallback=8/8; vulnerability summary semantic match to final LaTeX=1.000; semantic cells matched=4/4; row matches=2/2                                                                                |
 | tab_weather_extended_models  | Yes          | recomputed      | recomputed_match            | semantic cells matched=32/32; row matches=8/8; token fallback=45/45; world-volatility coefficient aligns with draft reference within tolerance: 0.954.; volatility source: data/processed/final_series/all_series_common_window_volatility_imputed.csv |
 | tab_hazard_screening         | Yes          | recomputed      | recomputed_major_difference | No comparable semantic numeric cells found.; token fallback=17/30                                                                                                                                                                                      |
 | tab_hazard_models            | Yes          | recomputed      | recomputed_major_difference | No comparable semantic numeric cells found.; token fallback=15/26                                                                                                                                                                                      |
-| tab_mean_shifts              | Yes          | recomputed      | recomputed_major_difference | Insufficient structured rows for semantic comparison.; token fallback=6/7                                                                                                                                                                              |
-| tab_supp_granger             | Yes          | recomputed      | recomputed_major_difference | No comparable semantic numeric cells found.; token fallback=33/33                                                                                                                                                                                      |
+| tab_mean_shifts              | Yes          | recomputed      | recomputed_match            | Insufficient structured rows for semantic comparison.; token fallback=6/7                                                                                                                                                                              |
+| tab_supp_granger             | Yes          | recomputed      | recomputed_match            | No comparable semantic numeric cells found.; token fallback=33/33                                                                                                                                                                                      |
 | tab_supp_disaster_granger    | Yes          | recomputed      | recomputed_match            | semantic cells matched=8/8; row matches=2/2; token fallback=20/20; rebuilt directly from reports/v2/tables/table_disaster_causality.csv.                                                                                                               |
 
 ## E. Statistical Validation Notes
@@ -87,6 +87,6 @@
 - Tables audited: 13
 - Figures audited: 12
 - Column/window blocks audited: 9
-- Non-exact numeric value comparisons: 1372
+- Non-exact numeric value comparisons: 1423
 - Items requiring author/code review or decision: 13
 - See `figure_provenance_map.md`, `table_provenance_map.md`, `latex_vs_generated_values.md`, `column_and_window_audit.md`, `discrepancy_diagnosis.md`, and `standalone_update_log.md`.

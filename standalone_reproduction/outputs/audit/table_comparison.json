@@ -24,21 +24,21 @@
     "Table label":"tab_stats_overview",
     "Generated?":"Yes",
     "Source type":"recomputed",
-    "Comparison status":"recomputed_major_difference",
-    "Notes":"No comparable semantic numeric cells found.; token fallback=21\/43"
+    "Comparison status":"recomputed_minor_difference",
+    "Notes":"No comparable semantic numeric cells found.; token fallback=31\/43"
   },
   {
     "Table label":"tab_transmission_results",
     "Generated?":"Yes",
     "Source type":"recomputed",
-    "Comparison status":"recomputed_major_difference",
-    "Notes":"No comparable semantic numeric cells found.; token fallback=15\/25"
+    "Comparison status":"recomputed_match",
+    "Notes":"No comparable semantic numeric cells found.; token fallback=25\/25"
   },
   {
     "Table label":"tab_structural_breaks",
     "Generated?":"Yes",
     "Source type":"recomputed",
-    "Comparison status":"recomputed_major_difference",
+    "Comparison status":"recomputed_minor_difference",
     "Notes":"Insufficient structured rows for semantic comparison.; token fallback=8\/10"
   },
   {
@@ -73,14 +73,14 @@
     "Table label":"tab_mean_shifts",
     "Generated?":"Yes",
     "Source type":"recomputed",
-    "Comparison status":"recomputed_major_difference",
+    "Comparison status":"recomputed_match",
     "Notes":"Insufficient structured rows for semantic comparison.; token fallback=6\/7"
   },
   {
     "Table label":"tab_supp_granger",
     "Generated?":"Yes",
     "Source type":"recomputed",
-    "Comparison status":"recomputed_major_difference",
+    "Comparison status":"recomputed_match",
     "Notes":"No comparable semantic numeric cells found.; token fallback=33\/33"
   },
   {

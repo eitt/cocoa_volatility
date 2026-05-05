@@ -1,14 +1,20 @@
 \begin{table}
 \caption{Domestic and downstream price transmission results}
 \label{tab:transmission_results}
-\begin{tabular}{llrrrr}
+\begin{tabular}{llrrlrr}
 \toprule
-Model & Focus coefficient & Coefficient & p-value & N & Adj. R2 \\
+Model & Component & Coefficient & Std. error & $p$-value & N & Adj. $R^2$ \\
 \midrule
-Domestic levels & log_world_cocoa_price_usd_mt & 0.990 & 0.000 & 53 & 0.965 \\
-Domestic returns & dlog_world_cocoa_price_usd_mt & 0.796 & 0.000 & 52 & 0.581 \\
-EU levels & log_world_cocoa_price_usd_mt & 0.296 & 0.018 & 53 & 0.727 \\
-EU returns & dlog_world_cocoa_price_usd_mt & -0.023 & 0.023 & 52 & -0.007 \\
+Domestic levels & World cocoa benchmark & 0.990 & 0.037 & <0.001 & 53 & 0.965 \\
+Domestic levels & COP/USD exchange rate & 0.902 & 0.147 & <0.001 & 53 & 0.965 \\
+Domestic levels & Brent oil price & 0.140 & 0.084 & 0.096 & 53 & 0.965 \\
+Domestic returns & World cocoa return & 0.796 & 0.180 & <0.001 & 52 & 0.581 \\
+Domestic returns & FX return & 0.218 & 0.204 & 0.287 & 52 & 0.581 \\
+Domestic returns & Oil return & 0.029 & 0.067 & 0.665 & 52 & 0.581 \\
+EU levels & World cocoa benchmark & 0.296 & 0.126 & 0.018 & 53 & 0.727 \\
+EU levels & Colombian cocoa price & -0.061 & 0.122 & 0.621 & 53 & 0.727 \\
+EU returns & World cocoa return & -0.023 & 0.010 & 0.023 & 52 & -0.007 \\
+EU returns & Colombian cocoa return & 0.017 & 0.013 & 0.186 & 52 & -0.007 \\
 \bottomrule
 \end{tabular}
 \end{table}

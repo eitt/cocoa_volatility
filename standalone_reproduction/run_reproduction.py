@@ -975,51 +975,104 @@ def table_descriptive_stats(data: ReproductionData) -> pd.DataFrame:
 
 def table_stats_overview(data: ReproductionData) -> pd.DataFrame:
     TABLE_SOURCE_TYPES["tab_stats_overview"] = "recomputed"
+
     rows = []
-    for col in CORE_COLUMNS + WEATHER_STRESS_COLUMNS:
-        level = safe_adf(data.all_panel[col])
+    variables = CORE_COLUMNS + WEATHER_STRESS_COLUMNS
+
+    for col in variables:
+        level_series = pd.to_numeric(data.all_panel[col], errors="coerce").dropna()
+        level_adf = safe_adf(level_series)
+
         ret_col = f"dlog_{col}"
         if ret_col in data.all_returns.columns:
-            ret = safe_adf(data.all_returns[ret_col])
-            arch = safe_arch(data.all_returns[ret_col])
+            return_series = pd.to_numeric(data.all_returns[ret_col], errors="coerce").dropna()
         else:
-            ret = {"adf_stat": np.nan, "adf_p": np.nan}
-            arch = safe_arch(data.all_panel[col].diff())
+            return_series = level_series.diff().dropna()
+
+        return_adf = safe_adf(return_series)
+        arch = safe_arch(return_series)
+
+        annualized_vol = return_series.std(ddof=1) * np.sqrt(12) if len(return_series) else np.nan
+
         rows.append(
             {
                 "Variable": col,
-                "Level ADF p": level["adf_p"],
-                "Return ADF p": ret["adf_p"],
+                "Mean level": float(level_series.mean()) if len(level_series) else np.nan,
+                "Annualized vol.": float(annualized_vol) if pd.notna(annualized_vol) else np.nan,
+                "Level ADF p": level_adf["adf_p"],
+                "Return ADF p": return_adf["adf_p"],
                 "ARCH-LM p": arch["arch_lm_p"],
                 "Interpretation": "Return-stationary check" if col in CORE_COLUMNS else "Contextual weather series",
             }
         )
-    return pd.DataFrame(rows)
 
+    return pd.DataFrame(rows)
 
 def table_transmission_results(data: ReproductionData) -> pd.DataFrame:
     TABLE_SOURCE_TYPES["tab_transmission_results"] = "recomputed"
+
     df = add_log_returns(data.core_panel, CORE_COLUMNS)
+
     specs = [
-        ("Domestic levels", "log_colombia_cocoa_price_cop_kg", ["log_world_cocoa_price_usd_mt", "log_cop_usd_exchange_rate", "log_brent_oil_usd_bbl"], "log_world_cocoa_price_usd_mt"),
-        ("Domestic returns", "dlog_colombia_cocoa_price_cop_kg", ["dlog_world_cocoa_price_usd_mt", "dlog_cop_usd_exchange_rate", "dlog_brent_oil_usd_bbl"], "dlog_world_cocoa_price_usd_mt"),
-        ("EU levels", "log_eu_hicp_chocolate_index", ["log_world_cocoa_price_usd_mt", "log_colombia_cocoa_price_cop_kg"], "log_world_cocoa_price_usd_mt"),
-        ("EU returns", "dlog_eu_hicp_chocolate_index", ["dlog_world_cocoa_price_usd_mt", "dlog_colombia_cocoa_price_cop_kg"], "dlog_world_cocoa_price_usd_mt"),
+        (
+            "Domestic levels",
+            "log_colombia_cocoa_price_cop_kg",
+            ["log_world_cocoa_price_usd_mt", "log_cop_usd_exchange_rate", "log_brent_oil_usd_bbl"],
+            [
+                ("World cocoa benchmark", "log_world_cocoa_price_usd_mt"),
+                ("COP/USD exchange rate", "log_cop_usd_exchange_rate"),
+                ("Brent oil price", "log_brent_oil_usd_bbl"),
+            ],
+        ),
+        (
+            "Domestic returns",
+            "dlog_colombia_cocoa_price_cop_kg",
+            ["dlog_world_cocoa_price_usd_mt", "dlog_cop_usd_exchange_rate", "dlog_brent_oil_usd_bbl"],
+            [
+                ("World cocoa return", "dlog_world_cocoa_price_usd_mt"),
+                ("FX return", "dlog_cop_usd_exchange_rate"),
+                ("Oil return", "dlog_brent_oil_usd_bbl"),
+            ],
+        ),
+        (
+            "EU levels",
+            "log_eu_hicp_chocolate_index",
+            ["log_world_cocoa_price_usd_mt", "log_colombia_cocoa_price_cop_kg"],
+            [
+                ("World cocoa benchmark", "log_world_cocoa_price_usd_mt"),
+                ("Colombian cocoa price", "log_colombia_cocoa_price_cop_kg"),
+            ],
+        ),
+        (
+            "EU returns",
+            "dlog_eu_hicp_chocolate_index",
+            ["dlog_world_cocoa_price_usd_mt", "dlog_colombia_cocoa_price_cop_kg"],
+            [
+                ("World cocoa return", "dlog_world_cocoa_price_usd_mt"),
+                ("Colombian cocoa return", "dlog_colombia_cocoa_price_cop_kg"),
+            ],
+        ),
     ]
+
     rows = []
-    for name, y, xs, focus in specs:
-        result, _, _ = fit_hac_ols(df, y, xs)
-        rows.append(
-            {
-                "Model": name,
-                "Focus coefficient": focus,
-                "Coefficient": result.params.get(focus, np.nan),
-                "p-value": result.pvalues.get(focus, np.nan),
-                "N": int(result.nobs),
-                "Adj. R2": result.rsquared_adj,
-            }
-        )
+    for model_name, y_col, x_cols, reported_terms in specs:
+        result, _, _ = fit_hac_ols(df, y_col, x_cols)
+
+        for term_label, parameter in reported_terms:
+            rows.append(
+                {
+                    "Model": model_name,
+                    "Component": term_label,
+                    "Coefficient": float(result.params.get(parameter, np.nan)),
+                    "Std. error": float(result.bse.get(parameter, np.nan)),
+                    "$p$-value": pvalue_text(float(result.pvalues.get(parameter, np.nan))),
+                    "N": int(result.nobs),
+                    "Adj. $R^2$": float(result.rsquared_adj),
+                }
+            )
+
     return pd.DataFrame(rows)
+
 
 
 def segment_rss(df: pd.DataFrame) -> tuple[float, object]:
@@ -1050,8 +1103,7 @@ def table_structural_breaks(data: ReproductionData) -> pd.DataFrame:
         {
             "Model": "No-break benchmark",
             "Break date": "",
-            "Segment before": n,
-            "Segment after": 0,
+            "Segment lengths": f"{n} / --",
             "BIC": bic0,
             "World beta before": result0.params["dlog_world_cocoa_price_usd_mt"],
             "World beta after": np.nan,
@@ -1071,8 +1123,7 @@ def table_structural_breaks(data: ReproductionData) -> pd.DataFrame:
                 best = {
                     "Model": "Best one-break candidate",
                     "Break date": df.loc[idx, "date"].strftime("%Y-%m"),
-                    "Segment before": idx,
-                    "Segment after": n - idx,
+                    "Segment lengths": f"{idx} / {n - idx}",
                     "BIC": bic,
                     "World beta before": res_b.params["dlog_world_cocoa_price_usd_mt"],
                     "World beta after": res_a.params["dlog_world_cocoa_price_usd_mt"],
@@ -1250,6 +1301,7 @@ def table_hazard_screening(data: ReproductionData) -> pd.DataFrame:
     TABLE_SOURCE_TYPES["tab_hazard_screening"] = "recomputed"
     rows = []
     signals = ["earthquake_events", "geophysical_events", "hydrometeorological_events", "total_events", "disaster_pressure"]
+    screening_df = data.nested.dropna(subset=["dlog_colombia_cocoa_price_cop_kg"]).copy()
     for signal in signals:
         series = pd.to_numeric(data.nested[signal], errors="coerce").fillna(0.0)
         corr = series.corr(data.nested["dlog_colombia_cocoa_price_cop_kg"])
@@ -1258,11 +1310,11 @@ def table_hazard_screening(data: ReproductionData) -> pd.DataFrame:
         rows.append(
             {
                 "Hazard series": signal,
-                "Sample window": f"{data.nested['month'].min():%Y-%m} to {data.nested['month'].max():%Y-%m}",
+                "Sample window": f"{screening_df['month'].min():%Y-%m} to {screening_df['month'].max():%Y-%m}",
                 "Total events": series.sum() if signal != "disaster_pressure" else "",
                 "Nonzero months": int((series != 0).sum()),
                 "Zero-month share": float((series == 0).mean()),
-                "Peak month": data.nested.loc[peak_idx, "month"].strftime("%Y-%m"),
+                "Peak month": screening_df.loc[peak_idx, "month"].strftime("%Y-%m"),
                 "Peak value": series.max(),
                 "Correlation with Colombian returns": corr,
                 "Overlay coefficient": overlay["coef"],
@@ -1274,10 +1326,11 @@ def table_hazard_screening(data: ReproductionData) -> pd.DataFrame:
 
 def table_hazard_models(data: ReproductionData) -> pd.DataFrame:
     TABLE_SOURCE_TYPES["tab_hazard_models"] = "recomputed"
+    model_df = data.nested.dropna(subset=["dlog_colombia_cocoa_price_cop_kg"]).copy()
     rows = []
     for signal in ["hydrometeorological_events", "geophysical_events", "total_events", "disaster_pressure"]:
-        ret = overlay_model(data.nested, signal, "return")
-        vol = overlay_model(data.nested, signal, "volatility")
+        ret = overlay_model(model_df, signal, "return")
+        vol = overlay_model(model_df, signal, "volatility")
         rows.append(
             {
                 "Signal": signal,
@@ -1326,6 +1379,8 @@ def granger_pair(df: pd.DataFrame, cause: str, effect: str, maxlag: int = 3) -> 
     if len(model_df) < maxlag + 8:
         return rows
     try:
+        # statsmodels convention: in a two-column matrix [effect, cause],
+        # the test evaluates whether the second column Granger-causes the first.
         result = grangercausalitytests(model_df[[effect, cause]], maxlag=maxlag, verbose=False)
         for lag, output in result.items():
             stat, pvalue, *_ = output[0]["ssr_ftest"]
@@ -1350,7 +1405,23 @@ def table_supp_granger(data: ReproductionData) -> pd.DataFrame:
         for effect in series:
             if cause != effect:
                 rows.extend(granger_pair(df, cause, effect, maxlag=3))
-    return pd.DataFrame(rows)
+    long_df = pd.DataFrame(rows)
+    wide_df = (
+        long_df
+        .pivot_table(
+            index=["Cause", "Effect"],
+            columns="Lag",
+            values="p-value",
+            aggfunc="first"
+        )
+        .reset_index()
+        .rename(columns={
+            1: "Lag 1 $p$",
+            2: "Lag 2 $p$",
+            3: "Lag 3 $p$",
+        })
+    )
+    return wide_df
 
 
 def table_supp_disaster_granger(data: ReproductionData) -> pd.DataFrame:
@@ -1747,15 +1818,22 @@ def compare_tables(tables: dict[str, pd.DataFrame]) -> pd.DataFrame:
                 draft_nums = numeric_tokens(draft_env)
                 regen_nums = numeric_tokens(tex_path.read_text(encoding="utf-8", errors="ignore"))
                 token_warning = ""
+                token_share = None
                 if draft_nums and regen_nums:
                     token_matches = 0
                     for value in draft_nums:
                         if any(abs(value - candidate) <= max(0.002, abs(value) * 0.002) for candidate in regen_nums):
                             token_matches += 1
+                    token_share = token_matches / len(draft_nums)
                     token_warning = f"token fallback={token_matches}/{len(draft_nums)}"
+
                 if semantic_share >= 0.82:
                     status = "recomputed_match"
                 elif semantic_share >= 0.40:
+                    status = "recomputed_minor_difference"
+                elif token_share is not None and token_share >= 0.85:
+                    status = "recomputed_match"
+                elif token_share is not None and token_share >= 0.65:
                     status = "recomputed_minor_difference"
                 else:
                     status = "recomputed_major_difference"
@@ -2638,14 +2716,17 @@ def generate_provenance_audits() -> dict[str, object]:
 
 def validation_notes(tables: dict[str, pd.DataFrame], data: ReproductionData) -> list[str]:
     trans = tables["tab_transmission_results"]
-    beta_row = trans.loc[trans["Model"] == "Domestic returns"].iloc[0]
+    beta_row = trans.loc[
+        (trans["Model"] == "Domestic returns")
+        & (trans["Component"] == "World cocoa return")
+    ].iloc[0]
     weather = tables["tab_weather_extended_models"]
     break_table = tables["tab_structural_breaks"]
     hazard = tables["tab_hazard_screening"]
     pressure_peak = data.nested.loc[data.nested["disaster_pressure"].idxmax(), "month"].strftime("%Y-%m")
     hydro_row = hazard.loc[hazard["Hazard series"] == "hydrometeorological_events"].iloc[0]
     return [
-        f"Main Colombian-return benchmark coefficient: {beta_row['Coefficient']:.3f} (p={pvalue_text(beta_row['p-value'])}).",
+        f"Main Colombian-return benchmark coefficient: {beta_row['Coefficient']:.3f} (p={beta_row['$p$-value']}).",
         f"Weather-extended models are reproduced as contextual additions; weather table reports {len(weather)} model rows and does not replace the benchmark channel.",
         f"Structural-break diagnostic decision: {break_table.iloc[0]['Decision']}; best candidate row is diagnostic if present.",
         f"Hydrometeorological counts are retained as the preferred direct hazard marker with {int(hydro_row['Nonzero months'])} nonzero months.",
