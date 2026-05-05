@@ -1,0 +1,11 @@
+Cause,Effect,Lag,F statistic,p-value
+hydrometeorological_events,colombia_return,1,0.02655955428853279,0.8715990145841928
+hydrometeorological_events,colombia_return,2,1.0191513763606217,0.37390130092241497
+geophysical_events,colombia_return,1,2.056579745411728,0.16156098154258355
+geophysical_events,colombia_return,2,0.9475783848684552,0.3997612975288215
+earthquake_events,colombia_return,1,0.06720941585063601,0.7971579269590309
+earthquake_events,colombia_return,2,0.06190801935516168,0.9400976342706153
+total_events,colombia_return,1,6.2140422193721285,0.018224325595498702
+total_events,colombia_return,2,4.088777934080809,0.02767345085574343
+disaster_pressure,colombia_return,1,0.026868248503307057,0.8708618158527782
+disaster_pressure,colombia_return,2,0.014584272349893214,0.9855290443273274

@@ -1,0 +1,86 @@
+[
+  {
+    "Expected figure filename":"fig0_san_vicente_chucuri_map.png",
+    "Generated?":"Yes",
+    "Source type":"copied static",
+    "Comparison status":"copied_static",
+    "Notes":"Static map copied because local geospatial base layers are not bundled for offline regeneration."
+  },
+  {
+    "Expected figure filename":"figure_v1_long_run_coverage.png",
+    "Generated?":"Yes",
+    "Source type":"regenerated from data",
+    "Comparison status":"regenerated_minor_difference",
+    "Notes":"generated_pixels=2971x1405; reference_pixels=3435x1560; generated_file_size=210482; reference_file_size=88770; rms_difference=; pixel_dimension_delta=0.13508005822416302"
+  },
+  {
+    "Expected figure filename":"figure_indexed_core_series_common_window_imputed.png",
+    "Generated?":"Yes",
+    "Source type":"regenerated from data",
+    "Comparison status":"regenerated_minor_difference",
+    "Notes":"generated_pixels=2967x1468; reference_pixels=2959x1466; generated_file_size=297080; reference_file_size=313693; rms_difference=; pixel_dimension_delta=0.002696326255476913"
+  },
+  {
+    "Expected figure filename":"figure_weather_vulnerability_index.png",
+    "Generated?":"Yes",
+    "Source type":"regenerated from data",
+    "Comparison status":"regenerated_minor_difference",
+    "Notes":"generated_pixels=2967x1468; reference_pixels=2957x1466; generated_file_size=422208; reference_file_size=372316; rms_difference=; pixel_dimension_delta=0.003370407819346141"
+  },
+  {
+    "Expected figure filename":"figure_monthly_event_totals.png",
+    "Generated?":"Yes",
+    "Source type":"regenerated from data",
+    "Comparison status":"regenerated_minor_difference",
+    "Notes":"generated_pixels=2967x1408; reference_pixels=2500x1337; generated_file_size=185781; reference_file_size=149597; rms_difference=; pixel_dimension_delta=0.15739804516346478"
+  },
+  {
+    "Expected figure filename":"figure_hazard_domain_mix.png",
+    "Generated?":"Yes",
+    "Source type":"regenerated from data",
+    "Comparison status":"regenerated_minor_difference",
+    "Notes":"generated_pixels=2967x1408; reference_pixels=2500x1429; generated_file_size=131673; reference_file_size=220027; rms_difference=; pixel_dimension_delta=0.15739804516346478"
+  },
+  {
+    "Expected figure filename":"figure_contextual_overlay_alignment.png",
+    "Generated?":"Yes",
+    "Source type":"regenerated from data",
+    "Comparison status":"regenerated_minor_difference",
+    "Notes":"generated_pixels=2970x2365; reference_pixels=3270x2661; generated_file_size=360623; reference_file_size=447193; rms_difference=; pixel_dimension_delta=0.11123637730176625"
+  },
+  {
+    "Expected figure filename":"figure_pca_loadings.png",
+    "Generated?":"Yes",
+    "Source type":"regenerated from data",
+    "Comparison status":"regenerated_minor_difference",
+    "Notes":"generated_pixels=2372x1614; reference_pixels=3124x1499; generated_file_size=241644; reference_file_size=226597; rms_difference=; pixel_dimension_delta=0.2407170294494238"
+  },
+  {
+    "Expected figure filename":"pca_indicator_change_points.png",
+    "Generated?":"Yes",
+    "Source type":"regenerated from data",
+    "Comparison status":"regenerated_minor_difference",
+    "Notes":"generated_pixels=2964x1468; reference_pixels=2537x1338; generated_file_size=287896; reference_file_size=169008; rms_difference=; pixel_dimension_delta=0.1440620782726046"
+  },
+  {
+    "Expected figure filename":"figure_climate_series_panels_common_window.png",
+    "Generated?":"Yes",
+    "Source type":"regenerated from data",
+    "Comparison status":"regenerated_minor_difference",
+    "Notes":"generated_pixels=3570x5845; reference_pixels=3560x5777; generated_file_size=933751; reference_file_size=934277; rms_difference=; pixel_dimension_delta=0.011633875106928999"
+  },
+  {
+    "Expected figure filename":"figure_v3_actual_vs_fitted.png",
+    "Generated?":"Yes",
+    "Source type":"regenerated from data",
+    "Comparison status":"regenerated_minor_difference",
+    "Notes":"generated_pixels=2967x1408; reference_pixels=2536x1328; generated_file_size=210567; reference_file_size=173533; rms_difference=; pixel_dimension_delta=0.14526457701381867"
+  },
+  {
+    "Expected figure filename":"figure_top_municipalities.png",
+    "Generated?":"Yes",
+    "Source type":"regenerated from data",
+    "Comparison status":"regenerated_minor_difference",
+    "Notes":"generated_pixels=2370x1464; reference_pixels=2556x1498; generated_file_size=118799; reference_file_size=101708; rms_difference=; pixel_dimension_delta=0.07276995305164319"
+  }
+]

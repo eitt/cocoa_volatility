@@ -1,0 +1,8 @@
+Variable block,Source,Frequency,Unit,Role
+Colombian cocoa price,AgroNet,Monthly,COP/kg,Core dependent market series
+World cocoa benchmark,World Bank Pink Sheet,Monthly,USD/metric ton,Global benchmark exposure
+EU chocolate index,Eurostat HICP,Monthly,Index,Downstream price series
+COP/USD,Banco de la Republica,Monthly,COP/USD,Exchange-rate control
+Brent oil,EIA,Monthly,USD/barrel,Energy and logistics proxy
+NASA POWER weather,NASA POWER,Monthly,Weather variables,Natural-capital stress context
+Santander disaster registry,UNGRD-style registry extract,Event/month,Counts,Nested territorial pressure layer

@@ -20,7 +20,7 @@ Generated locally from `final_draft/main.tex`, `final_draft/cocoa_volatility.bib
 | GundersonHolling2002 | Yes | Yes | No |  |  |  | missing |
 | hakkio_rush_1991 | Yes | Yes | No |  |  |  | missing |
 | Hussain2016 | Yes | Yes | Yes | Hussain2016.pdf | papers/disaster_resilience_review/10.1007_s12571-016-0607-5__Household_food_security_in_the_face_of_climate_change_in_the_Hindu-Kush_Himalayan_region.pdf | DOI / title | verified |
-| IfejikaSperanza2013 | Yes | Yes | Yes | IfejikaSperanza2013.pdf | papers/cocoa_claim_support/Assessing_Climate_Smart_Agriculture_and_Its_Determinants_of_Practice_in_Ghana_A_Case_of_the_Cocoa_Production_System.pdf | manual inspection | replaced |
+| IfejikaSperanza2013 | Yes | Yes | Yes | IfejikaSperanza2013.pdf | papers/cocoa_claim_support/Assessing_Climate_Smart_Agriculture_and_Its_Determinants_of_Practice_in_Ghana_A_Case_of_the_Cocoa_Production_System.pdf | manual inspection | verified |
 | Jacobi2013 | Yes | Yes | Yes | Jacobi2013.pdf | papers/10.1017_s174217051300029x__Agroecosystem_resilience_and_farmers_perceptions_of_climate_change_impacts_on_cocoa_farms_in_.pdf | DOI | verified |
 | Jacobi2014 | Yes | Yes | Yes | Jacobi2014.pdf | papers/10.1017_s174217051300029x__Agroecosystem_resilience_and_farmers_perceptions_of_climate_change_impacts_on_cocoa_farms_in_.pdf | manual inspection | verified |
 | JimenezRodriguez2022 | Yes | Yes | Yes | JimenezRodriguez2022.pdf | Weber/Commodity_price_pass-through_along_the_pricing_chain.pdf | title | verified |

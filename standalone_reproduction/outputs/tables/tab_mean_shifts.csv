@@ -1,0 +1,2 @@
+Event month,Selection basis,Window length,Pre mean Colombian return,Post mean Colombian return,Welch p,Levene p,KS p,Warning
+2022-10,Peak contextual pressure month,six months before and after,0.0016569065066433335,0.043728386401743556,0.074081577248001,0.545724991605508,0.474025974025974,Endogenous event selection; exploratory episode stratification only

@@ -1,0 +1,93 @@
+[
+  {
+    "Table label":"tab_data_card",
+    "Generated?":"Yes",
+    "Source type":"static metadata",
+    "Comparison status":"static_from_draft",
+    "Notes":"Metadata-style table encoded from manuscript and data inventory, not a statistical estimate."
+  },
+  {
+    "Table label":"tab_sample_design",
+    "Generated?":"Yes",
+    "Source type":"static metadata",
+    "Comparison status":"static_from_draft",
+    "Notes":"Metadata-style table encoded from manuscript and data inventory, not a statistical estimate."
+  },
+  {
+    "Table label":"tab_descriptive_stats",
+    "Generated?":"Yes",
+    "Source type":"recomputed",
+    "Comparison status":"recomputed_minor_difference",
+    "Notes":"Matched 20 of 55 draft numeric tokens within tolerance."
+  },
+  {
+    "Table label":"tab_stats_overview",
+    "Generated?":"Yes",
+    "Source type":"recomputed",
+    "Comparison status":"recomputed_minor_difference",
+    "Notes":"Matched 21 of 44 draft numeric tokens within tolerance."
+  },
+  {
+    "Table label":"tab_transmission_results",
+    "Generated?":"Yes",
+    "Source type":"recomputed",
+    "Comparison status":"recomputed_minor_difference",
+    "Notes":"Matched 15 of 25 draft numeric tokens within tolerance."
+  },
+  {
+    "Table label":"tab_structural_breaks",
+    "Generated?":"Yes",
+    "Source type":"recomputed",
+    "Comparison status":"recomputed_match",
+    "Notes":"Matched 11 of 12 draft numeric tokens within tolerance."
+  },
+  {
+    "Table label":"tab_vulnerability_indicators",
+    "Generated?":"Yes",
+    "Source type":"recomputed",
+    "Comparison status":"recomputed_major_difference",
+    "Notes":"Matched 2 of 10 draft numeric tokens within tolerance."
+  },
+  {
+    "Table label":"tab_weather_extended_models",
+    "Generated?":"Yes",
+    "Source type":"recomputed",
+    "Comparison status":"recomputed_major_difference",
+    "Notes":"Matched 13 of 46 draft numeric tokens within tolerance."
+  },
+  {
+    "Table label":"tab_hazard_screening",
+    "Generated?":"Yes",
+    "Source type":"recomputed",
+    "Comparison status":"recomputed_minor_difference",
+    "Notes":"Matched 27 of 43 draft numeric tokens within tolerance."
+  },
+  {
+    "Table label":"tab_hazard_models",
+    "Generated?":"Yes",
+    "Source type":"recomputed",
+    "Comparison status":"recomputed_minor_difference",
+    "Notes":"Matched 15 of 27 draft numeric tokens within tolerance."
+  },
+  {
+    "Table label":"tab_mean_shifts",
+    "Generated?":"Yes",
+    "Source type":"recomputed",
+    "Comparison status":"recomputed_match",
+    "Notes":"Matched 8 of 9 draft numeric tokens within tolerance."
+  },
+  {
+    "Table label":"tab_supp_granger",
+    "Generated?":"Yes",
+    "Source type":"recomputed",
+    "Comparison status":"recomputed_match",
+    "Notes":"Matched 33 of 34 draft numeric tokens within tolerance."
+  },
+  {
+    "Table label":"tab_supp_disaster_granger",
+    "Generated?":"Yes",
+    "Source type":"recomputed",
+    "Comparison status":"recomputed_major_difference",
+    "Notes":"Matched 3 of 22 draft numeric tokens within tolerance."
+  }
+]

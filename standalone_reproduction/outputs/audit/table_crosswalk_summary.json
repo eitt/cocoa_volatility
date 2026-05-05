@@ -1,0 +1,11 @@
+{
+  "manuscript_tables_detected": 13,
+  "generated_csv_detected": 13,
+  "generated_tex_detected": 13,
+  "matched_csv_tex": 13,
+  "missing_generated_tables": 0,
+  "extra_generated_table_stems": 0,
+  "extra_generated_files": 0,
+  "ambiguous_matches": 0,
+  "path": "outputs\\audit\\table_crosswalk.md"
+}

@@ -1,0 +1,7 @@
+Sample,Start,End,Observations,Use
+Full merged monthly panel,1960-01,2026-03,795,Defines estimation or contextual overlay window
+Core aligned levels window,2021-08,2025-12,53,Defines estimation or contextual overlay window
+Core aligned return window,2021-09,2025-12,52,Defines estimation or contextual overlay window
+Weather-augmented complete sample,2021-08,2025-12,53,Defines estimation or contextual overlay window
+Nested disaster levels window,2021-08,2024-07,36,Defines estimation or contextual overlay window
+Nested disaster return window,2021-09,2024-07,35,Defines estimation or contextual overlay window

@@ -1,0 +1,4 @@
+Model,Focus coefficient,Coefficient,p-value,N,Adj. R2,Weather terms jointly interpreted as
+Weather levels,log_world_cocoa_price_usd_mt,0.9765017705336049,9.41941816477835e-156,53,0.9663762782016054,Contextual natural-capital stress proxies
+Weather returns,dlog_world_cocoa_price_usd_mt,0.7725052284097014,8.77532375188129e-07,52,0.5951429725883288,Contextual natural-capital stress proxies
+Volatility overlay,world_cocoa_price_usd_mt_log_return_rolling_volatility,0.9066787488103881,7.201192114752227e-124,47,0.9118227316784542,Contextual natural-capital stress proxies

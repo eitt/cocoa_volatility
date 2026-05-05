@@ -1,0 +1,9 @@
+Variable,Level ADF p,Return ADF p,ARCH-LM p,Interpretation
+colombia_cocoa_price_cop_kg,0.6430774503564873,6.5276775662079105e-06,0.7675622418284415,Return-stationary check
+world_cocoa_price_usd_mt,0.648188205988426,1.594585702419512e-06,0.013199971178278034,Return-stationary check
+eu_hicp_chocolate_index,0.9843622737702696,0.012945567986698036,0.005391938697371149,Return-stationary check
+cop_usd_exchange_rate,0.5245757178406786,3.3792443032013653e-09,0.9033878953221477,Return-stationary check
+brent_oil_usd_bbl,0.4603412190255464,0.08098173950341264,0.08330927561213013,Return-stationary check
+nasa_precipitation_mm_day,0.0002730179935272597,,0.5476762190686919,Contextual weather series
+nasa_surface_solar_radiation_mj_m2_day,2.245178936890741e-06,,0.36229370163674357,Contextual weather series
+nasa_temperature_max_c,0.017505250512756837,,0.3740083248048673,Contextual weather series

@@ -1,0 +1,47 @@
+[
+  {
+    "Dataset path":"data\\processed\\analysis_ready\\merged_cocoa_price_panel.csv",
+    "File type":".csv",
+    "Rows":795,
+    "Columns":18,
+    "Date range":"1960-01 to 2026-03",
+    "Key columns detected":"colombia_cocoa_price_cop_kg, world_cocoa_price_usd_mt, eu_hicp_chocolate_index, cop_usd_exchange_rate, brent_oil_usd_bbl, nasa_precipitation_mm_day, nasa_temperature_c, nasa_temperature_max_c, nasa_temperature_min_c, nasa_relative_humidity_pct, nasa_wind_speed_ms, nasa_surface_solar_radiation_mj_m2_day",
+    "Assumptions made":"Selected as organized reproduction input; not a figure\/table output."
+  },
+  {
+    "Dataset path":"data\\processed\\final_series\\core_common_window_panel_imputed.csv",
+    "File type":".csv",
+    "Rows":53,
+    "Columns":11,
+    "Date range":"2021-08 to 2025-12",
+    "Key columns detected":"colombia_cocoa_price_cop_kg, world_cocoa_price_usd_mt, eu_hicp_chocolate_index, cop_usd_exchange_rate, brent_oil_usd_bbl",
+    "Assumptions made":"Selected as organized reproduction input; not a figure\/table output."
+  },
+  {
+    "Dataset path":"data\\processed\\final_series\\all_series_common_window_panel_imputed.csv",
+    "File type":".csv",
+    "Rows":53,
+    "Columns":25,
+    "Date range":"2021-08 to 2025-12",
+    "Key columns detected":"colombia_cocoa_price_cop_kg, world_cocoa_price_usd_mt, eu_hicp_chocolate_index, cop_usd_exchange_rate, brent_oil_usd_bbl, nasa_precipitation_mm_day, nasa_temperature_c, nasa_temperature_max_c, nasa_temperature_min_c, nasa_relative_humidity_pct, nasa_wind_speed_ms, nasa_surface_solar_radiation_mj_m2_day",
+    "Assumptions made":"Selected as organized reproduction input; not a figure\/table output."
+  },
+  {
+    "Dataset path":"reports\\v2\\intermediate\\03_classified_events.csv",
+    "File type":".csv",
+    "Rows":594,
+    "Columns":78,
+    "Date range":"2021-08 to 2024-07",
+    "Key columns detected":"hazard_domain_en",
+    "Assumptions made":"Selected as organized reproduction input; not a figure\/table output."
+  },
+  {
+    "Dataset path":"reports\\v2\\intermediate\\04_monthly_event_panel.csv",
+    "File type":".csv",
+    "Rows":36,
+    "Columns":23,
+    "Date range":"2021-08 to 2024-07",
+    "Key columns detected":"total_events, hydrometeorological_events",
+    "Assumptions made":"Selected as organized reproduction input; not a figure\/table output."
+  }
+]
